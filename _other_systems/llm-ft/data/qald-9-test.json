@@ -1,0 +1,752 @@
+[
+    {
+        "question": "What is the time zone of Salt Lake City?",
+        "query": "PREFIX res: <http://dbpedia.org/resource/> PREFIX dbp: <http://dbpedia.org/property/> SELECT DISTINCT ?uri WHERE { res:Salt_Lake_City <http://dbpedia.org/ontology/timeZone> ?uri }",
+        "topic_entities": "http://dbpedia.org/resource/Salt_Lake_City (Salt Lake City)"
+    },
+    {
+        "question": "Who killed Caesar?",
+        "query": "PREFIX dct: <http://purl.org/dc/terms/> PREFIX dbc: <http://dbpedia.org/resource/Category:> SELECT DISTINCT ?uri WHERE { ?uri dct:subject dbc:Assassins_of_Julius_Caesar }",
+        "topic_entities": "http://dbpedia.org/resource/Category:Assassins_of_Julius_Caesar (Category:Assassins of Julius Caesar)"
+    },
+    {
+        "question": "What is the highest mountain in Germany?",
+        "query": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX onto: <http://dbpedia.org/ontology/> SELECT ?uri WHERE { ?uri rdf:type onto:Mountain ; onto:elevation ?elevation ; onto:locatedInArea <http://dbpedia.org/resource/Germany> } ORDER BY DESC(?elevation) LIMIT 1",
+        "topic_entities": "http://dbpedia.org/ontology/Mountain (Mountain), http://dbpedia.org/resource/Germany (Germany)"
+    },
+    {
+        "question": "Which American presidents were in office during the Vietnam War?",
+        "query": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> PREFIX dct: <http://purl.org/dc/terms/> PREFIX dbc: <http://dbpedia.org/resource/Category:> SELECT ?uri WHERE { ?uri dct:subject dbc:Presidents_of_the_United_States . res:Vietnam_War dbo:commander ?uri }",
+        "topic_entities": "http://dbpedia.org/resource/Category:Presidents_of_the_United_States (Category:Presidents of the United States), http://dbpedia.org/resource/Vietnam_War (Vietnam War)"
+    },
+    {
+        "question": "Butch Otter is the governor of which U.S. state?",
+        "query": "SELECT DISTINCT ?uri WHERE { ?uri a <http://dbpedia.org/class/yago/WikicatStatesOfTheUnitedStates> ; <http://dbpedia.org/property/governor> <http://dbpedia.org/resource/Butch_Otter> }",
+        "topic_entities": "http://dbpedia.org/resource/Butch_Otter (Butch Otter)"
+    },
+    {
+        "question": "How many gold medals did Michael Phelps win at the 2008 Olympics?",
+        "query": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX dbr: <http://dbpedia.org/resource/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> SELECT (Count(?sub) as ?c) WHERE { ?sub dbo:goldMedalist dbr:Michael_Phelps . filter (contains (str(?sub), \"2008\") && contains (str(?sub), \"Olympics\")) }",
+        "topic_entities": "http://dbpedia.org/resource/Michael_Phelps (Michael Phelps)"
+    },
+    {
+        "question": "Which artists were born on the same date as Rachel Stevens?",
+        "query": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX dbr: <http://dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { ?uri a dbo:Artist . dbr:Rachel_Stevens dbo:birthDate ?birthdate . ?uri dbo:birthDate ?birthdate }",
+        "topic_entities": "http://dbpedia.org/ontology/Artist (Artist), http://dbpedia.org/resource/Rachel_Stevens (Rachel Stevens)"
+    },
+    {
+        "question": "What is the profession of Frank Herbert?",
+        "query": "PREFIX dbpedia2: <http://dbpedia.org/property/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?string WHERE { res:Frank_Herbert dbpedia2:occupation ?string }",
+        "topic_entities": "http://dbpedia.org/resource/Frank_Herbert (Frank Herbert)"
+    },
+    {
+        "question": "Are Taiko some kind of Japanese musical instrument?",
+        "query": "ASK WHERE { <http://dbpedia.org/resource/Taiko> a <http://dbpedia.org/class/yago/WikicatJapaneseMusicalInstruments> }",
+        "topic_entities": "http://dbpedia.org/resource/Taiko (Taiko)"
+    },
+    {
+        "question": "How many seats does the home stadium of FC Porto have?",
+        "query": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX dbp: <http://dbpedia.org/property/> PREFIX dbr: <http://dbpedia.org/resource/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX db: <http://dbpedia.org/> SELECT ?capacity WHERE { { dbr:FC_Porto dbo:ground ?ground . ?ground dbo:capacity ?capacity } UNION { dbr:FC_Porto dbo:ground ?ground . ?ground dbp:capacity ?capacity } }",
+        "topic_entities": "http://dbpedia.org/resource/FC_Porto (FC Porto)"
+    },
+    {
+        "question": "Which frequent flyer program has the most airlines?",
+        "query": "SELECT ?uri WHERE { ?airline <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Airline> . ?airline <http://dbpedia.org/property/frequentFlyer> ?uri. } GROUP BY ?uri ORDER BY DESC(COUNT(DISTINCT ?airline)) OFFSET 0 LIMIT 1",
+        "topic_entities": "http://dbpedia.org/ontology/Airline (Airline)"
+    },
+    {
+        "question": "Which European countries have a constitutional monarchy?",
+        "query": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX dct: <http://purl.org/dc/terms/> PREFIX dbc: <http://dbpedia.org/resource/Category:> PREFIX dbr: <http://dbpedia.org/resource/> SELECT ?uri WHERE { ?uri dct:subject dbc:Countries_in_Europe ; dbo:governmentType dbr:Constitutional_monarchy }",
+        "topic_entities": "http://dbpedia.org/resource/Category:Countries_in_Europe (Category:Countries in Europe), http://dbpedia.org/resource/Constitutional_monarchy (Constitutional monarchy)"
+    },
+    {
+        "question": "Which countries have places with more than two caves?",
+        "query": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> SELECT DISTINCT ?uri WHERE { ?cave rdf:type dbo:Cave ; dbo:location ?uri . ?uri rdf:type dbo:Country } GROUP BY ?uri HAVING ( COUNT(?cave) > 2 )",
+        "topic_entities": "http://dbpedia.org/ontology/Country (Country), http://dbpedia.org/ontology/Cave (Cave)"
+    },
+    {
+        "question": "Which airports are located in California, USA?",
+        "query": "SELECT DISTINCT ?uri WHERE { ?uri a <http://dbpedia.org/ontology/Airport> { ?uri <http://dbpedia.org/ontology/location> <http://dbpedia.org/resource/California> } UNION { ?uri <http://dbpedia.org/ontology/city> <http://dbpedia.org/resource/California> } UNION { ?uri <http://dbpedia.org/ontology/city> ?city . ?city <http://dbpedia.org/ontology/isPartOf> <http://dbpedia.org/resource/California> } UNION { ?uri <http://dbpedia.org/ontology/operator> <http://dbpedia.org/resource/California> } }",
+        "topic_entities": "http://dbpedia.org/ontology/Airport (Airport), http://dbpedia.org/resource/California (California)"
+    },
+    {
+        "question": "What are the nicknames of San Francisco?",
+        "query": "PREFIX res: <http://dbpedia.org/resource/> PREFIX dbp: <http://dbpedia.org/property/> PREFIX foaf:<http://xmlns.com/foaf/0.1/> SELECT DISTINCT ?string WHERE { res:San_Francisco foaf:nick ?string }",
+        "topic_entities": "http://dbpedia.org/resource/San_Francisco (San Francisco)"
+    },
+    {
+        "question": "What is Angela Merkel\u2019s birth name?",
+        "query": "PREFIX res: <http://dbpedia.org/resource/> PREFIX dbp: <http://dbpedia.org/property/> SELECT DISTINCT ?string WHERE { res:Angela_Merkel dbp:birthName ?string }",
+        "topic_entities": "http://dbpedia.org/resource/Angela_Merkel (Angela Merkel)"
+    },
+    {
+        "question": "Who is the mayor of Berlin?",
+        "query": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { res:Berlin dbp:leader ?uri }",
+        "topic_entities": "http://dbpedia.org/resource/Berlin (Berlin)"
+    },
+    {
+        "question": "Which countries in the European Union adopted the Euro?",
+        "query": "SELECT DISTINCT ?uri WHERE { ?uri a <http://dbpedia.org/ontology/Country> { ?uri <http://dbpedia.org/ontology/currency> <http://dbpedia.org/resource/Euro> } UNION { ?uri <http://dbpedia.org/property/currencyCode> \"EUR\"@en } }",
+        "topic_entities": "http://dbpedia.org/ontology/Country (Country), http://dbpedia.org/resource/Euro (Euro)"
+    },
+    {
+        "question": "Which software has been published by Mean Hamster Software?",
+        "query": "PREFIX res: <http://dbpedia.org/resource/> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX onto: <http://dbpedia.org/ontology/> PREFIX prop: <http://dbpedia.org/property/> SELECT DISTINCT ?uri WHERE { ?uri rdf:type onto:Software { ?uri prop:publisher \"Mean Hamster Software\"@en } UNION { ?uri onto:publisher res:Mean_Hamster_Software } }",
+        "topic_entities": "http://dbpedia.org/ontology/Software (Software), http://dbpedia.org/resource/Mean_Hamster_Software (Mean Hamster Software)"
+    },
+    {
+        "question": "Which country was Bill Gates born in?",
+        "query": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX dbr: <http://dbpedia.org/resource/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> SELECT DISTINCT ?country WHERE { { dbr:Bill_Gates dbo:birthPlace ?birthPlace . ?birthPlace dbo:country ?country } UNION { dbr:Bill_Gates dbo:birthPlace ?birthPlace . ?birthPlace dbo:isPartOf ?place . ?place dbo:country ?country } }",
+        "topic_entities": "http://dbpedia.org/resource/Bill_Gates (Bill Gates)"
+    },
+    {
+        "question": "How many grand-children did Jacques Cousteau have?",
+        "query": "SELECT (COUNT(DISTINCT ?y) AS ?c) WHERE { <http://dbpedia.org/resource/Jacques_Cousteau> <http://dbpedia.org/ontology/child> ?x . ?x <http://dbpedia.org/ontology/child> ?y . }",
+        "topic_entities": "http://dbpedia.org/resource/Jacques_Cousteau (Jacques Cousteau)"
+    },
+    {
+        "question": "Give me all professional skateboarders from Sweden.",
+        "query": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX dbp: <http://dbpedia.org/property/> PREFIX dbr: <http://dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { ?uri dbo:occupation dbr:Skateboarder { ?uri dbo:birthPlace dbr:Sweden } UNION { ?uri dbo:birthPlace ?place . ?place dbo:country dbr:Sweden } }",
+        "topic_entities": "http://dbpedia.org/resource/Sweden (Sweden), http://dbpedia.org/resource/Skateboarder (Skateboarder)"
+    },
+    {
+        "question": "Which monarchs of the United Kingdom were married to a German?",
+        "query": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX yago: <http://dbpedia.org/class/yago/> PREFIX res: <http://dbpedia.org/resource/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> SELECT DISTINCT ?uri WHERE { ?uri rdf:type yago:WikicatMonarchsOfTheUnitedKingdom ; dbo:spouse ?spouse . ?spouse dbo:birthPlace res:Germany }",
+        "topic_entities": "http://dbpedia.org/resource/Germany (Germany)"
+    },
+    {
+        "question": "Give me all Argentine films.",
+        "query": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX yago: <http://dbpedia.org/class/yago/> PREFIX res: <http://dbpedia.org/resource/> PREFIX dbp: <http://dbpedia.org/property/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> SELECT DISTINCT ?uri WHERE { { ?uri rdf:type yago:ArgentineFilms } UNION { ?uri rdf:type dbo:Film { ?uri dbo:country res:Argentina } UNION { ?uri dbp:country \"Argentina\"@en } } }",
+        "topic_entities": "http://dbpedia.org/ontology/Film (Film), http://dbpedia.org/resource/Argentina (Argentina)"
+    },
+    {
+        "question": "How did Michael Jackson die?",
+        "query": "SELECT DISTINCT ?s WHERE { <http://dbpedia.org/resource/Michael_Jackson> <http://dbpedia.org/property/deathCause> ?s }",
+        "topic_entities": "http://dbpedia.org/resource/Michael_Jackson (Michael Jackson)"
+    },
+    {
+        "question": "Which U.S. state has been admitted latest?",
+        "query": "PREFIX dbc: <http://dbpedia.org/resource/Category:> PREFIX dct: <http://purl.org/dc/terms/> SELECT DISTINCT ?uri WHERE { ?uri dct:subject dbc:States_of_the_United_States ; <http://dbpedia.org/property/admittancedate> ?x } ORDER BY DESC(?x) LIMIT 1",
+        "topic_entities": "http://dbpedia.org/resource/Category:States_of_the_United_States (Category:States of the United States)"
+    },
+    {
+        "question": "Which classes does the Millepede belong to?",
+        "query": "PREFIX res: <http://dbpedia.org/resource/> PREFIX dbp: <http://dbpedia.org/property/> SELECT DISTINCT ?String WHERE { res:Millipede dbp:taxon ?String }",
+        "topic_entities": "http://dbpedia.org/resource/Millipede (Millipede)"
+    },
+    {
+        "question": "Give me the homepage of Forbes.",
+        "query": "PREFIX res: <http://dbpedia.org/resource/> PREFIX foaf: <http://xmlns.com/foaf/0.1/> SELECT DISTINCT ?string WHERE { res:Forbes foaf:homepage ?string }",
+        "topic_entities": "http://dbpedia.org/resource/Forbes (Forbes)"
+    },
+    {
+        "question": "Who is the husband of Amanda Palmer?",
+        "query": "SELECT DISTINCT ?uri WHERE { ?uri <http://dbpedia.org/ontology/spouse> <http://dbpedia.org/resource/Amanda_Palmer> }",
+        "topic_entities": "http://dbpedia.org/resource/Amanda_Palmer (Amanda Palmer)"
+    },
+    {
+        "question": "Who painted The Storm on the Sea of Galilee?",
+        "query": "PREFIX res: <http://dbpedia.org/resource/> PREFIX dbp: <http://dbpedia.org/property/> SELECT DISTINCT ?uri WHERE { res:The_Storm_on_the_Sea_of_Galilee dbo:author ?uri }",
+        "topic_entities": "http://dbpedia.org/resource/The_Storm_on_the_Sea_of_Galilee (The Storm on the Sea of Galilee)"
+    },
+    {
+        "question": "What is the highest place of Karakoram?",
+        "query": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { res:Karakoram dbp:highest ?uri }",
+        "topic_entities": "http://dbpedia.org/resource/Karakoram (Karakoram)"
+    },
+    {
+        "question": "When did Finland join the EU?",
+        "query": "PREFIX res: <http://dbpedia.org/resource/> PREFIX dbp: <http://dbpedia.org/property/> SELECT DISTINCT ?date WHERE { res:Finland dbp:accessioneudate ?date }",
+        "topic_entities": "http://dbpedia.org/resource/Finland (Finland)"
+    },
+    {
+        "question": "Which actors play in Big Bang Theory?",
+        "query": "SELECT DISTINCT ?uri WHERE { <http://dbpedia.org/resource/The_Big_Bang_Theory> <http://dbpedia.org/ontology/starring> ?uri }",
+        "topic_entities": "http://dbpedia.org/resource/The_Big_Bang_Theory (The Big Bang Theory)"
+    },
+    {
+        "question": "Which computer scientist won an oscar?",
+        "query": "SELECT DISTINCT ?uri WHERE { ?uri <http://dbpedia.org/ontology/field> <http://dbpedia.org/resource/Computer_science> ; <http://dbpedia.org/ontology/award> <http://dbpedia.org/resource/Academy_Award> }",
+        "topic_entities": "http://dbpedia.org/resource/Academy_Award (Academy Award), http://dbpedia.org/resource/Computer_science (Computer science)"
+    },
+    {
+        "question": "Who wrote Harry Potter?",
+        "query": "SELECT DISTINCT ?uri WHERE { <http://dbpedia.org/resource/Harry_Potter> <http://dbpedia.org/property/author> ?uri }",
+        "topic_entities": "http://dbpedia.org/resource/Harry_Potter (Harry Potter)"
+    },
+    {
+        "question": "Give me all writers that won the Nobel Prize in literature.",
+        "query": "SELECT DISTINCT ?uri WHERE { ?uri a <http://dbpedia.org/ontology/Writer> ; <http://dbpedia.org/ontology/award> <http://dbpedia.org/resource/Nobel_Prize_in_Literature> }",
+        "topic_entities": "http://dbpedia.org/ontology/Writer (Writer), http://dbpedia.org/resource/Nobel_Prize_in_Literature (Nobel Prize in Literature)"
+    },
+    {
+        "question": "Give me English actors starring in Lovesick.",
+        "query": "PREFIX dbo: <http://dbpedia.org/ontology/> SELECT DISTINCT ?uri WHERE { <http://dbpedia.org/resource/Lovesick_(1983_film)> dbo:starring ?uri . ?uri dbo:birthPlace ?city . ?city dbo:country <http://dbpedia.org/resource/United_Kingdom> }",
+        "topic_entities": "http://dbpedia.org/resource/Lovesick_(1983_film) (Lovesick (1983 film)), http://dbpedia.org/resource/United_Kingdom (United Kingdom)"
+    },
+    {
+        "question": "What is the nick name of Baghdad?",
+        "query": "PREFIX dbr: <http://dbpedia.org/resource/> PREFIX foaf: <http://xmlns.com/foaf/0.1/> SELECT ?nm WHERE { dbr:Baghdad foaf:nick ?nm }",
+        "topic_entities": "http://dbpedia.org/resource/Baghdad (Baghdad)"
+    },
+    {
+        "question": "In which city was the president of Montenegro born?",
+        "query": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX dbr: <http://dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { ?x <http://dbpedia.org/property/title> dbr:President_of_Montenegro ; dbo:birthPlace ?uri . ?uri dbo:type dbr:Capital_city }",
+        "topic_entities": "http://dbpedia.org/resource/Capital_city (Capital city), http://dbpedia.org/resource/President_of_Montenegro (President of Montenegro)"
+    },
+    {
+        "question": "Which U.S. state has the highest population density?",
+        "query": "SELECT ?uri WHERE { ?uri <http://dbpedia.org/ontology/country> <http://dbpedia.org/resource/United_States> . ?uri <http://dbpedia.org/ontology/capital> ?capital . ?uri <http://dbpedia.org/property/densityrank> ?density . OPTIONAL {?uri <http://www.w3.org/2000/01/rdf-schema#label> ?string. FILTER (lang(?string) = 'en') } } ORDER BY ASC(?density) LIMIT 1",
+        "topic_entities": "http://dbpedia.org/resource/United_States (United States)"
+    },
+    {
+        "question": "What is the longest river in China?",
+        "query": "SELECT DISTINCT ?uri WHERE { ?uri a <http://dbpedia.org/ontology/River> ; <http://dbpedia.org/ontology/country> <http://dbpedia.org/resource/China> ; <http://dbpedia.org/property/length> ?l } ORDER BY DESC(?l) OFFSET 0 LIMIT 1",
+        "topic_entities": "http://dbpedia.org/ontology/River (River), http://dbpedia.org/resource/China (China)"
+    },
+    {
+        "question": "What is the area code of Berlin?",
+        "query": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?string WHERE { res:Berlin dbo:areaCode ?string }",
+        "topic_entities": "http://dbpedia.org/resource/Berlin (Berlin)"
+    },
+    {
+        "question": "How many scientists graduated from an Ivy League university?",
+        "query": "SELECT (COUNT(DISTINCT ?uri) AS ?c) WHERE { ?uri a <http://dbpedia.org/ontology/Scientist> ; <http://dbpedia.org/ontology/almaMater> ?university . ?university <http://dbpedia.org/ontology/affiliation> <http://dbpedia.org/resource/Ivy_League> ; a <http://dbpedia.org/ontology/University> }",
+        "topic_entities": "http://dbpedia.org/ontology/University (University), http://dbpedia.org/ontology/Scientist (Scientist), http://dbpedia.org/resource/Ivy_League (Ivy League)"
+    },
+    {
+        "question": "Which professional surfers were born in Australia?",
+        "query": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> PREFIX dbr: <http://dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { { ?uri dbo:occupation res:Surfer ; dbo:birthPlace res:Australia } UNION { ?uri dbo:occupation res:Surfer ; dbo:birthPlace ?place . ?place dbo:country res:Australia } }",
+        "topic_entities": "http://dbpedia.org/resource/Surfer (Surfer), http://dbpedia.org/resource/Australia (Australia)"
+    },
+    {
+        "question": "Give me all Dutch parties.",
+        "query": "SELECT DISTINCT ?uri WHERE { ?uri a <http://dbpedia.org/ontology/PoliticalParty> ; <http://dbpedia.org/ontology/country> <http://dbpedia.org/resource/Netherlands> }",
+        "topic_entities": "http://dbpedia.org/ontology/PoliticalParty (PoliticalParty), http://dbpedia.org/resource/Netherlands (Netherlands)"
+    },
+    {
+        "question": "How many moons does Mars have?",
+        "query": "SELECT DISTINCT ?n WHERE { <http://dbpedia.org/resource/Mars> <http://dbpedia.org/property/satellites> ?n }",
+        "topic_entities": "http://dbpedia.org/resource/Mars (Mars)"
+    },
+    {
+        "question": "What is Batman's real name?",
+        "query": "SELECT DISTINCT ?label WHERE { <http://dbpedia.org/resource/Batman> <http://xmlns.com/foaf/0.1/name> ?label FILTER ( str(?label) != \"Batman\" ) }",
+        "topic_entities": "http://dbpedia.org/resource/Batman (Batman)"
+    },
+    {
+        "question": "What is Elon Musk famous for?",
+        "query": "SELECT DISTINCT ?uri WHERE { <http://dbpedia.org/resource/Elon_Musk> <http://dbpedia.org/ontology/knownFor> ?uri }",
+        "topic_entities": "http://dbpedia.org/resource/Elon_Musk (Elon Musk)"
+    },
+    {
+        "question": "Who is the author of WikiLeaks?",
+        "query": "PREFIX res: <http://dbpedia.org/resource/> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX onto: <http://dbpedia.org/ontology/> SELECT ?uri WHERE { res:WikiLeaks onto:author ?uri }",
+        "topic_entities": "http://dbpedia.org/resource/WikiLeaks (WikiLeaks)"
+    },
+    {
+        "question": "Sean Parnell was the governor of which U.S. state?",
+        "query": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { res:Sean_Parnell dbo:region ?uri }",
+        "topic_entities": "http://dbpedia.org/resource/Sean_Parnell (Sean Parnell)"
+    },
+    {
+        "question": "How many years was the Ford Model T manufactured?",
+        "query": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> PREFIX res: <http://dbpedia.org/resource/> SELECT ?years WHERE { res:Ford_Model_T dbo:productionEndYear ?end ; dbo:productionStartYear ?start. BIND ( ( year(xsd:date(?end)) - year(xsd:date(?start)) ) AS ?years) }",
+        "topic_entities": "http://dbpedia.org/resource/Ford_Model_T (Ford Model T)"
+    },
+    {
+        "question": "When was Carlo Giuliani shot?",
+        "query": "PREFIX res: <http://dbpedia.org/resource/> PREFIX dbp: <http://dbpedia.org/property/> SELECT DISTINCT ?date WHERE { res:Death_of_Carlo_Giuliani dbo:deathDate ?date }",
+        "topic_entities": "http://dbpedia.org/resource/Death_of_Carlo_Giuliani (Death of Carlo Giuliani)"
+    },
+    {
+        "question": "Give me all animals that are extinct.",
+        "query": "SELECT DISTINCT ?uri WHERE { ?uri a <http://dbpedia.org/ontology/Animal> ; <http://dbpedia.org/ontology/conservationStatus> \"EX\" }",
+        "topic_entities": "http://dbpedia.org/ontology/Animal (Animal)"
+    },
+    {
+        "question": "Who was the wife of President Lincoln?",
+        "query": "PREFIX dbr: <http://dbpedia.org/resource/> PREFIX onto: <http://dbpedia.org/ontology/> SELECT ?uri ?string WHERE { dbr:Abraham_Lincoln onto:spouse ?uri }",
+        "topic_entities": "http://dbpedia.org/resource/Abraham_Lincoln (Abraham Lincoln)"
+    },
+    {
+        "question": "How many awards has Bertrand Russell?",
+        "query": "PREFIX dbr: <http://dbpedia.org/resource/> PREFIX dbp: <http://dbpedia.org/property/> SELECT (COUNT(?Awards) AS ?Counter) WHERE { dbr:Bertrand_Russell dbp:awards ?Awards }",
+        "topic_entities": "http://dbpedia.org/resource/Bertrand_Russell (Bertrand Russell)"
+    },
+    {
+        "question": "Is Pamela Anderson a vegan?",
+        "query": "PREFIX dbr: <http://dbpedia.org/resource/> ASK WHERE { dbr:Pamela_Anderson a <http://dbpedia.org/class/yago/WikicatAmericanVegans> }",
+        "topic_entities": "http://dbpedia.org/resource/Pamela_Anderson (Pamela Anderson)"
+    },
+    {
+        "question": "Which space probes were sent into orbit around the sun?",
+        "query": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX dbc: <http://dbpedia.org/resource/Category:> PREFIX dct: <http://purl.org/dc/terms/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> SELECT DISTINCT ?s WHERE { ?s dct:subject dbc:Missions_to_the_Sun ; rdf:type ?type FILTER ( ?type IN (dbo:Satellite, dbo:ArtificialSatellite) ) }",
+        "topic_entities": "http://dbpedia.org/ontology/ArtificialSatellite (ArtificialSatellite), http://dbpedia.org/ontology/Satellite (Satellite), http://dbpedia.org/resource/Category:Missions_to_the_Sun (Category:Missions to the Sun)"
+    },
+    {
+        "question": "Which German cities have more than 250000 inhabitants?",
+        "query": "SELECT DISTINCT ?uri WHERE { { ?uri a <http://dbpedia.org/ontology/City> } UNION { ?uri a <http://dbpedia.org/ontology/Town> } ?uri <http://dbpedia.org/ontology/country> <http://dbpedia.org/resource/Germany> ; <http://dbpedia.org/ontology/populationTotal> ?population FILTER ( ?population > 250000 ) }",
+        "topic_entities": "http://dbpedia.org/ontology/Town (Town), http://dbpedia.org/ontology/City (City), http://dbpedia.org/resource/Germany (Germany)"
+    },
+    {
+        "question": "Who is the daughter of Robert Kennedy married to?",
+        "query": "SELECT DISTINCT ?uri WHERE { <http://dbpedia.org/resource/Robert_F._Kennedy> <http://dbpedia.org/ontology/child> ?child . ?child <http://dbpedia.org/ontology/spouse> ?uri }",
+        "topic_entities": "http://dbpedia.org/resource/Robert_F._Kennedy (Robert F. Kennedy)"
+    },
+    {
+        "question": "How many students does the Free University of Amsterdam have?",
+        "query": "SELECT DISTINCT ?num WHERE { dbr:Vrije_Universiteit_Amsterdam <http://dbpedia.org/ontology/numberOfStudents> ?num }",
+        "topic_entities": "http://dbpedia.org/resource/Vrije_Universiteit_Amsterdam (Vrije Universiteit Amsterdam)"
+    },
+    {
+        "question": "What is the revenue of IBM?",
+        "query": "PREFIX res: <http://dbpedia.org/resource/> PREFIX onto: <http://dbpedia.org/ontology/> SELECT ?number WHERE { res:IBM onto:revenue ?number }",
+        "topic_entities": "http://dbpedia.org/resource/IBM (IBM)"
+    },
+    {
+        "question": "How many James Bond movies do exist?",
+        "query": "SELECT (COUNT(DISTINCT ?uri) AS ?c) WHERE { ?uri dct:subject <http://dbpedia.org/resource/Category:James_Bond_films> }",
+        "topic_entities": "http://dbpedia.org/resource/Category:James_Bond_films (Category:James Bond films)"
+    },
+    {
+        "question": "Who does the voice of Bart Simpson?",
+        "query": "SELECT DISTINCT ?uri WHERE { <http://dbpedia.org/resource/Bart_Simpson> <http://dbpedia.org/property/voiceactor> ?uri }",
+        "topic_entities": "http://dbpedia.org/resource/Bart_Simpson (Bart Simpson)"
+    },
+    {
+        "question": "Who was Tom Hanks married to?",
+        "query": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> SELECT DISTINCT ?uri WHERE { dbr:Tom_Hanks dbo:spouse ?uri }",
+        "topic_entities": "http://dbpedia.org/resource/Tom_Hanks (Tom Hanks)"
+    },
+    {
+        "question": "Through which countries does the Yenisei river flow?",
+        "query": "PREFIX res: <http://dbpedia.org/resource/> PREFIX dbp: <http://dbpedia.org/property/> SELECT DISTINCT ?uri WHERE { res:Yenisei_River <http://dbpedia.org/ontology/country> ?uri }",
+        "topic_entities": "http://dbpedia.org/resource/Yenisei_River (Yenisei River)"
+    },
+    {
+        "question": "Give me all cars that are produced in Germany.",
+        "query": "SELECT DISTINCT ?uri WHERE { ?uri a <http://dbpedia.org/ontology/Automobile> { ?uri <http://dbpedia.org/ontology/assembly> <http://dbpedia.org/resource/Germany> } UNION { ?uri <http://dbpedia.org/property/assembly> <http://dbpedia.org/resource/Germany> } UNION { { ?uri <http://dbpedia.org/ontology/manufacturer> ?x } UNION { ?uri <http://dbpedia.org/property/manufacturer> ?x } { ?x <http://dbpedia.org/ontology/locationCountry> <http://dbpedia.org/resource/Germany> } UNION { ?x <http://dbpedia.org/ontology/location> <http://dbpedia.org/resource/Germany> } } }",
+        "topic_entities": "http://dbpedia.org/ontology/Automobile (Automobile), http://dbpedia.org/resource/Germany (Germany)"
+    },
+    {
+        "question": "When did Michael Jackson die?",
+        "query": "SELECT DISTINCT ?date WHERE { <http://dbpedia.org/resource/Michael_Jackson> <http://dbpedia.org/property/deathDate> ?date }",
+        "topic_entities": "http://dbpedia.org/resource/Michael_Jackson (Michael Jackson)"
+    },
+    {
+        "question": "What is the highest volcano in Africa?",
+        "query": "SELECT DISTINCT ?uri WHERE { ?uri a <http://dbpedia.org/ontology/Volcano> ; <http://dbpedia.org/ontology/locatedInArea> ?area . ?area dct:subject dbc:Countries_in_Africa . ?uri <http://dbpedia.org/ontology/elevation> ?elevation } ORDER BY DESC(?elevation) LIMIT 1",
+        "topic_entities": "http://dbpedia.org/ontology/Volcano (Volcano), http://dbpedia.org/resource/Category:Countries_in_Africa (Category:Countries in Africa)"
+    },
+    {
+        "question": "Which poet wrote the most books?",
+        "query": "SELECT DISTINCT ?uri WHERE { ?uri <http://dbpedia.org/ontology/occupation> <http://dbpedia.org/resource/Poet> . ?x <http://dbpedia.org/ontology/author> ?uri . ?x <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Book> . } GROUP BY ?uri ORDER BY DESC(COUNT(?x)) OFFSET 0 LIMIT 1",
+        "topic_entities": "http://dbpedia.org/ontology/Book (Book), http://dbpedia.org/resource/Poet (Poet)"
+    },
+    {
+        "question": "Give me all gangsters from the prohibition era.",
+        "query": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX dct: <http://purl.org/dc/terms/> PREFIX dbc: <http://dbpedia.org/resource/Category:> PREFIX dbr: <http://dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { ?uri dbo:occupation dbr:Gangster ; dct:subject dbc:Prohibition-era_gangsters }",
+        "topic_entities": "http://dbpedia.org/resource/Category:Prohibition-era_gangsters (Category:Prohibition-era gangsters), http://dbpedia.org/resource/Gangster (Gangster)"
+    },
+    {
+        "question": "Give me all spacecrafts that flew to Mars.",
+        "query": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX dbc: <http://dbpedia.org/resource/Category:> PREFIX dct: <http://purl.org/dc/terms/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> SELECT DISTINCT ?s WHERE { ?s dct:subject dbc:Mars_rovers ; rdf:type ?type FILTER ( ?type IN (dbo:Satellite, dbo:ArtificialSatellite) ) }",
+        "topic_entities": "http://dbpedia.org/ontology/ArtificialSatellite (ArtificialSatellite), http://dbpedia.org/ontology/Satellite (Satellite), http://dbpedia.org/resource/Category:Mars_rovers (Category:Mars rovers)"
+    },
+    {
+        "question": "Show me all Czech movies.",
+        "query": "SELECT DISTINCT ?uri WHERE { ?uri a <http://dbpedia.org/ontology/Film> ; <http://dbpedia.org/ontology/country> <http://dbpedia.org/resource/Czech_Republic> }",
+        "topic_entities": "http://dbpedia.org/ontology/Film (Film), http://dbpedia.org/resource/Czech_Republic (Czech Republic)"
+    },
+    {
+        "question": "Give me all taikonauts.",
+        "query": "SELECT DISTINCT ?uri WHERE { { ?uri a <http://dbpedia.org/ontology/Astronaut> ; <http://dbpedia.org/ontology/nationality> <http://dbpedia.org/resource/People's_Republic_of_China> } UNION { ?uri a <http://dbpedia.org/ontology/Astronaut> ; <http://dbpedia.org/ontology/nationality> <http://dbpedia.org/resource/China> } }",
+        "topic_entities": "http://dbpedia.org/ontology/Astronaut (Astronaut), http://dbpedia.org/resource/China (China), http://dbpedia.org/resource/People's_Republic_of_China (People's Republic of China)"
+    },
+    {
+        "question": "Which countries have more than ten volcanoes?",
+        "query": "SELECT DISTINCT ?uri WHERE { ?x a <http://dbpedia.org/ontology/Volcano> ; <http://dbpedia.org/ontology/locatedInArea> ?uri . ?uri a <http://dbpedia.org/ontology/Country> } GROUP BY ?uri HAVING ( COUNT(?x) > 10 )",
+        "topic_entities": "http://dbpedia.org/ontology/Country (Country), http://dbpedia.org/ontology/Volcano (Volcano)"
+    },
+    {
+        "question": "Give me all movies with Tom Cruise.",
+        "query": "PREFIX res: <http://dbpedia.org/resource/> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX onto: <http://dbpedia.org/ontology/> PREFIX prop: <http://dbpedia.org/property/> SELECT DISTINCT ?uri WHERE { ?uri rdf:type onto:Film { ?uri prop:starring res:Tom_Cruise } UNION { ?uri onto:starring res:Tom_Cruise } OPTIONAL { ?uri rdfs:label ?string FILTER ( lang(?string) = \"en\" ) } }",
+        "topic_entities": "http://dbpedia.org/ontology/Film (Film), http://dbpedia.org/resource/Tom_Cruise (Tom Cruise)"
+    },
+    {
+        "question": "When did Dracula's creator die?",
+        "query": "SELECT DISTINCT ?date WHERE { <http://dbpedia.org/resource/Count_Dracula> <http://dbpedia.org/ontology/creator> ?x . ?x <http://dbpedia.org/ontology/deathDate> ?date. }",
+        "topic_entities": "http://dbpedia.org/resource/Count_Dracula (Count Dracula)"
+    },
+    {
+        "question": "Who created English Wikipedia?",
+        "query": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX onto: <http://dbpedia.org/ontology/> SELECT ?uri WHERE { <http://dbpedia.org/resource/Wikipedia> onto:author ?uri }",
+        "topic_entities": "http://dbpedia.org/resource/Wikipedia (Wikipedia)"
+    },
+    {
+        "question": "Give me all female German chancellors.",
+        "query": "PREFIX res: <http://dbpedia.org/resource/> PREFIX dbp: <http://dbpedia.org/property/> SELECT DISTINCT ?uri WHERE { res:Chancellor_of_Germany dbp:incumbent ?uri }",
+        "topic_entities": "http://dbpedia.org/resource/Chancellor_of_Germany (Chancellor of Germany)"
+    },
+    {
+        "question": "Who owns Aldi?",
+        "query": "PREFIX res: <http://dbpedia.org/resource/> PREFIX dbp: <http://dbpedia.org/property/> SELECT DISTINCT ?uri WHERE { res:Aldi dbp:founders ?uri }",
+        "topic_entities": "http://dbpedia.org/resource/Aldi (Aldi)"
+    },
+    {
+        "question": "Which books were written by Danielle Steel?",
+        "query": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX foaf: <http://xmlns.com/foaf/0.1/> PREFIX onto: <http://dbpedia.org/ontology/> SELECT ?uri WHERE { ?uri rdf:type onto:Book ; onto:author <http://dbpedia.org/resource/Danielle_Steel> }",
+        "topic_entities": "http://dbpedia.org/ontology/Book (Book), http://dbpedia.org/resource/Danielle_Steel (Danielle Steel)"
+    },
+    {
+        "question": "Who was influenced by Socrates?",
+        "query": "SELECT DISTINCT ?uri WHERE { ?uri <http://dbpedia.org/ontology/influencedBy> <http://dbpedia.org/resource/Socrates> }",
+        "topic_entities": "http://dbpedia.org/resource/Socrates (Socrates)"
+    },
+    {
+        "question": "How deep is Lake Chiemsee?",
+        "query": "SELECT DISTINCT ?n WHERE { <http://dbpedia.org/resource/Chiemsee> <http://dbpedia.org/ontology/maximumDepth> ?n }",
+        "topic_entities": "http://dbpedia.org/resource/Chiemsee (Chiemsee)"
+    },
+    {
+        "question": "Which companies work in the aerospace industry as well as in medicine?",
+        "query": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX dbr: <http://dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { ?uri a dbo:Company ; dbo:industry dbr:Aerospace ; dbo:industry dbr:Medical }",
+        "topic_entities": "http://dbpedia.org/ontology/Company (Company), http://dbpedia.org/resource/Medical (Medical), http://dbpedia.org/resource/Aerospace (Aerospace)"
+    },
+    {
+        "question": "Which professional surfers were born on the Philippines?",
+        "query": "PREFIX dbr: <http://dbpedia.org/resource/> PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { ?uri dbo:occupation dbr:Surfer ; dbo:birthPlace res:Philippines }",
+        "topic_entities": "http://dbpedia.org/resource/Surfer (Surfer), http://dbpedia.org/resource/Philippines (Philippines)"
+    },
+    {
+        "question": "Who were the parents of Queen Victoria?",
+        "query": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { res:Queen_Victoria dbo:parent ?uri }",
+        "topic_entities": "http://dbpedia.org/resource/Queen_Victoria (Queen Victoria)"
+    },
+    {
+        "question": "Are there any castles in the United States?",
+        "query": "PREFIX dct: <http://purl.org/dc/terms/> PREFIX dbc: <http://dbpedia.org/resource/Category:> ASK WHERE { ?uri dct:subject dbc:Castles_in_the_United_States }",
+        "topic_entities": "http://dbpedia.org/resource/Category:Castles_in_the_United_States (Category:Castles in the United States)"
+    },
+    {
+        "question": "Which languages are spoken in Estonia?",
+        "query": "SELECT DISTINCT ?uri WHERE { ?uri <http://dbpedia.org/ontology/spokenIn> <http://dbpedia.org/resource/Estonia> }",
+        "topic_entities": "http://dbpedia.org/resource/Estonia (Estonia)"
+    },
+    {
+        "question": "Give me a list of all critically endangered birds.",
+        "query": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX dct: <http://purl.org/dc/terms/> PREFIX dbc: <http://dbpedia.org/resource/Category:> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> SELECT DISTINCT ?uri ?p WHERE { ?uri rdf:type dbo:Bird { ?uri dbo:conservationStatus \"CR\" } UNION { ?uri dct:subject dbc:Critically_endangered_animals } }",
+        "topic_entities": "http://dbpedia.org/ontology/Bird (Bird), http://dbpedia.org/resource/Category:Critically_endangered_animals (Category:Critically endangered animals)"
+    },
+    {
+        "question": "Which countries are connected by the Rhine?",
+        "query": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX dbp: <http://dbpedia.org/property/> PREFIX dbo: <http://dbpedia.org/ontology/> SELECT DISTINCT ?uri WHERE { {<http://dbpedia.org/resource/Rhine> dbo:country ?uri } UNION {dbr:Rhine dbp:country ?uri} }",
+        "topic_entities": "http://dbpedia.org/resource/Rhine (Rhine)"
+    },
+    {
+        "question": "Who was the father of Queen Elizabeth II?",
+        "query": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT * WHERE { <http://dbpedia.org/resource/Elizabeth_II> <http://dbpedia.org/property/father> ?father . }",
+        "topic_entities": "http://dbpedia.org/resource/Elizabeth_II (Elizabeth II)"
+    },
+    {
+        "question": "Give me all chemical elements.",
+        "query": "PREFIX dct: <http://purl.org/dc/terms/> PREFIX dbc: <http://dbpedia.org/resource/Category:> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX owl: <http://www.w3.org/2002/07/owl#> SELECT DISTINCT ?uri WHERE { ?uri rdf:type owl:Thing ; dct:subject dbc:Chemical_elements }",
+        "topic_entities": "http://dbpedia.org/resource/Category:Chemical_elements (Category:Chemical elements)"
+    },
+    {
+        "question": "Give me all American presidents of the last 20 years.",
+        "query": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX dbp: <http://dbpedia.org/property/> PREFIX dct: <http://purl.org/dc/terms/> PREFIX dbc: <http://dbpedia.org/resource/Category:> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Person ; dct:subject dbc:Presidents_of_the_United_States ; dbo:activeYearsEndDate ?termEnd FILTER ( ( year(now()) - year(?termEnd) ) <= 20 ) }",
+        "topic_entities": "http://dbpedia.org/ontology/Person (Person), http://dbpedia.org/resource/Category:Presidents_of_the_United_States (Category:Presidents of the United States)"
+    },
+    {
+        "question": "When is the movie Worst Case Scenario going to be in cinemas in the Netherlands?",
+        "query": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX dbr: <http://dbpedia.org/resource/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX foaf: <http://xmlns.com/foaf/0.1/> SELECT DISTINCT ?rel WHERE { <http://dbpedia.org/resource/Worst_Case_Scenario_(film)> ?p ?o ; dbo:releaseDate ?rel FILTER contains(lcase(str(?o)), \"netherlands\") }",
+        "topic_entities": "http://dbpedia.org/resource/Worst_Case_Scenario_(film) (Worst Case Scenario (film))"
+    },
+    {
+        "question": "Whom did Lance Bass marry?",
+        "query": "SELECT DISTINCT ?uri WHERE { {<http://dbpedia.org/resource/Lance_Bass> dbo:spouse ?uri} UNION {?uri dbo:spouse <http://dbpedia.org/resource/Lance_Bass>} }",
+        "topic_entities": "http://dbpedia.org/resource/Lance_Bass (Lance Bass)"
+    },
+    {
+        "question": "Which subsidiary of TUI Travel serves both Glasgow and Dublin?",
+        "query": "SELECT DISTINCT ?uri WHERE { <http://dbpedia.org/resource/TUI_Travel> <http://dbpedia.org/ontology/subsidiary> ?uri . ?uri <http://dbpedia.org/ontology/targetAirport> <http://dbpedia.org/resource/Glasgow_International_Airport> ; <http://dbpedia.org/ontology/targetAirport> <http://dbpedia.org/resource/Dublin_Airport> }",
+        "topic_entities": "http://dbpedia.org/resource/Glasgow_International_Airport (Glasgow International Airport), http://dbpedia.org/resource/TUI_Travel (TUI Travel), http://dbpedia.org/resource/Dublin_Airport (Dublin Airport)"
+    },
+    {
+        "question": "What languages are spoken in Pakistan?",
+        "query": "SELECT DISTINCT ?uri WHERE { <http://dbpedia.org/resource/Pakistan> <http://dbpedia.org/ontology/language> ?uri }",
+        "topic_entities": "http://dbpedia.org/resource/Pakistan (Pakistan)"
+    },
+    {
+        "question": "Who is the daughter of Bill Clinton married to?",
+        "query": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX dbp: <http://dbpedia.org/property/> PREFIX dbr: <http://dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { dbr:Bill_Clinton dbo:child ?child . ?child dbo:spouse ?uri . ?uri rdfs:label ?string }",
+        "topic_entities": "http://dbpedia.org/resource/Bill_Clinton (Bill Clinton)"
+    },
+    {
+        "question": "Who was on the Apollo 11 mission?",
+        "query": "SELECT DISTINCT ?uri WHERE { <http://dbpedia.org/resource/Apollo_11> <http://dbpedia.org/property/crewMembers> ?uri }",
+        "topic_entities": "http://dbpedia.org/resource/Apollo_11 (Apollo 11)"
+    },
+    {
+        "question": "What is the wavelength of Indigo?",
+        "query": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX dbr: <http://dbpedia.org/resource/> SELECT ?n WHERE { dbr:Indigo dbo:wavelength ?n }",
+        "topic_entities": "http://dbpedia.org/resource/Indigo (Indigo)"
+    },
+    {
+        "question": "Give me all B-sides of the Ramones.",
+        "query": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> PREFIX dbp: <http://dbpedia.org/property/> SELECT DISTINCT ?string WHERE { ?x dbo:musicalArtist res:Ramones ; dbo:bSide ?string }",
+        "topic_entities": "http://dbpedia.org/resource/Ramones (Ramones)"
+    },
+    {
+        "question": "Who was called Scarface?",
+        "query": "PREFIX dbo: <http://dbpedia.org/ontology/> SELECT ?uri WHERE { ?uri dbo:alias ?alias FILTER contains(lcase(?alias), \"scarface\") }",
+        "topic_entities": ""
+    },
+    {
+        "question": "Which rivers flow into the North Sea?",
+        "query": "SELECT DISTINCT ?uri WHERE { ?uri a <http://dbpedia.org/ontology/River> ; <http://dbpedia.org/ontology/riverMouth> <http://dbpedia.org/resource/North_Sea> }",
+        "topic_entities": "http://dbpedia.org/ontology/River (River), http://dbpedia.org/resource/North_Sea (North Sea)"
+    },
+    {
+        "question": "Where is Fort Knox located?",
+        "query": "SELECT DISTINCT ?uri WHERE { <http://dbpedia.org/resource/Fort_Knox> <http://dbpedia.org/ontology/location> ?uri. ?uri a <http://dbpedia.org/ontology/Place>. }",
+        "topic_entities": "http://dbpedia.org/ontology/Place (Place), http://dbpedia.org/resource/Fort_Knox (Fort Knox)"
+    },
+    {
+        "question": "Which daughters of British earls died at the same place they were born at?",
+        "query": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX yago: <http://dbpedia.org/class/yago/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> SELECT DISTINCT ?uri WHERE { ?uri rdf:type yago:WikicatDaughtersOfBritishEarls ; dbo:birthPlace ?x ; dbo:deathPlace ?y FILTER ( ?x = ?y ) }",
+        "topic_entities": ""
+    },
+    {
+        "question": "How many emperors did China have?",
+        "query": "SELECT (COUNT(DISTINCT ?uri) AS ?c) WHERE { ?uri <http://dbpedia.org/property/title> <http://dbpedia.org/resource/Emperor_of_China> . }",
+        "topic_entities": "http://dbpedia.org/resource/Emperor_of_China (Emperor of China)"
+    },
+    {
+        "question": "What are the names of the Teenage Mutant Ninja Turtles?",
+        "query": "PREFIX foaf:<http://xmlns.com/foaf/0.1/> SELECT DISTINCT ?s WHERE { <http://dbpedia.org/resource/Teenage_Mutant_Ninja_Turtles> <http://dbpedia.org/property/members> ?x . ?x foaf:givenName ?s }",
+        "topic_entities": "http://dbpedia.org/resource/Teenage_Mutant_Ninja_Turtles (Teenage Mutant Ninja Turtles)"
+    },
+    {
+        "question": "Where does Piccadilly start?",
+        "query": "SELECT DISTINCT ?uri WHERE { ?uri <http://dbpedia.org/ontology/routeStart> <http://dbpedia.org/resource/Piccadilly> }",
+        "topic_entities": "http://dbpedia.org/resource/Piccadilly (Piccadilly)"
+    },
+    {
+        "question": "What is the name of the university where Obama's wife studied?",
+        "query": "SELECT DISTINCT ?s WHERE { <http://dbpedia.org/resource/Barack_Obama> <http://dbpedia.org/ontology/spouse> ?x . ?x <http://dbpedia.org/ontology/almaMater> ?s }",
+        "topic_entities": "http://dbpedia.org/resource/Barack_Obama (Barack Obama)"
+    },
+    {
+        "question": "When did Paraguay proclaim its independence?",
+        "query": "SELECT DISTINCT ?date WHERE { <http://dbpedia.org/resource/Paraguay> <http://dbpedia.org/ontology/foundingDate> ?date }",
+        "topic_entities": "http://dbpedia.org/resource/Paraguay (Paraguay)"
+    },
+    {
+        "question": "How short is the shortest active NBA player?",
+        "query": "SELECT DISTINCT ?n WHERE { ?x a <http://dbpedia.org/ontology/BasketballPlayer> ; <http://dbpedia.org/ontology/league> <http://dbpedia.org/resource/National_Basketball_Association> ; <http://dbpedia.org/ontology/height> ?n FILTER NOT EXISTS { ?x <http://dbpedia.org/ontology/activeYearsEndYear> ?d } } ORDER BY ASC(?n) OFFSET 0 LIMIT 1",
+        "topic_entities": "http://dbpedia.org/ontology/BasketballPlayer (BasketballPlayer), http://dbpedia.org/resource/National_Basketball_Association (National Basketball Association)"
+    },
+    {
+        "question": "Where did Abraham Lincoln die?",
+        "query": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> SELECT DISTINCT ?uri WHERE { res:Abraham_Lincoln dbo:deathPlace ?uri }",
+        "topic_entities": "http://dbpedia.org/resource/Abraham_Lincoln (Abraham Lincoln)"
+    },
+    {
+        "question": "When was Jack Wolfskin founded?",
+        "query": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?year WHERE { res:Jack_Wolfskin dbo:foundingYear ?year }",
+        "topic_entities": "http://dbpedia.org/resource/Jack_Wolfskin (Jack Wolfskin)"
+    },
+    {
+        "question": "In which city is the headquarter of Air China?",
+        "query": "SELECT DISTINCT ?uri WHERE { <http://dbpedia.org/resource/Air_China> <http://dbpedia.org/ontology/headquarter> ?uri . ?uri a <http://dbpedia.org/class/yago/City108524735> }",
+        "topic_entities": "http://dbpedia.org/resource/Air_China (Air China)"
+    },
+    {
+        "question": "What is the founding year of the brewery that produces Pilsner Urquell?",
+        "query": "PREFIX dbo: <http://dbpedia.org/ontology/> SELECT DISTINCT ?num WHERE { <http://dbpedia.org/resource/Pilsner_Urquell> <http://dbpedia.org/property/brewery> ?uri . ?uri dbo:foundingYear ?num }",
+        "topic_entities": "http://dbpedia.org/resource/Pilsner_Urquell (Pilsner Urquell)"
+    },
+    {
+        "question": "When did the Boston Tea Party take place?",
+        "query": "SELECT DISTINCT ?d WHERE { <http://dbpedia.org/resource/Boston_Tea_Party> <http://dbpedia.org/property/date> ?d }",
+        "topic_entities": "http://dbpedia.org/resource/Boston_Tea_Party (Boston Tea Party)"
+    },
+    {
+        "question": "Which animals are critically endangered?",
+        "query": "SELECT DISTINCT ?uri WHERE { ?uri a <http://dbpedia.org/ontology/Animal> ; <http://dbpedia.org/ontology/conservationStatus> \"CR\" }",
+        "topic_entities": "http://dbpedia.org/ontology/Animal (Animal)"
+    },
+    {
+        "question": "Which politicians were married to a German?",
+        "query": "SELECT DISTINCT ?uri WHERE { ?uri a <http://dbpedia.org/ontology/Politician> ; <http://dbpedia.org/ontology/spouse> ?spouse { ?spouse <http://dbpedia.org/ontology/birthPlace> <http://dbpedia.org/resource/Germany> } UNION { ?spouse <http://dbpedia.org/ontology/birthPlace> ?p . ?p <http://dbpedia.org/ontology/country> <http://dbpedia.org/resource/Germany> } }",
+        "topic_entities": "http://dbpedia.org/ontology/Politician (Politician), http://dbpedia.org/resource/Germany (Germany)"
+    },
+    {
+        "question": "How big is the earth's diameter?",
+        "query": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT (( xsd:double(?radius) * 2 ) AS ?diameter) WHERE { res:Earth dbo:meanRadius ?radius }",
+        "topic_entities": "http://dbpedia.org/resource/Earth (Earth)"
+    },
+    {
+        "question": "Is the wife of President Obama called Michelle?",
+        "query": "PREFIX res: <http://dbpedia.org/resource/> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX onto: <http://dbpedia.org/ontology/> ASK WHERE { res:Barack_Obama onto:spouse ?spouse . ?spouse rdfs:label ?name FILTER regex(?name, \"Michelle\") }",
+        "topic_entities": "http://dbpedia.org/resource/Barack_Obama (Barack Obama)"
+    },
+    {
+        "question": "Which U.S. state has the abbreviation MN?",
+        "query": "SELECT DISTINCT ?uri WHERE { ?uri a yago:WikicatStatesOfTheUnitedStates ; <http://dbpedia.org/property/postalabbreviation> \"MN\"@en }",
+        "topic_entities": ""
+    },
+    {
+        "question": "When did Muhammad die?",
+        "query": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?date WHERE { res:Muhammad dbo:deathDate ?date }",
+        "topic_entities": "http://dbpedia.org/resource/Muhammad (Muhammad)"
+    },
+    {
+        "question": "What is the atmosphere of the Moon composed of?",
+        "query": "SELECT DISTINCT ?uri WHERE { <http://dbpedia.org/resource/Moon> <http://dbpedia.org/property/atmosphereComposition> ?uri }",
+        "topic_entities": "http://dbpedia.org/resource/Moon (Moon)"
+    },
+    {
+        "question": "Who is the governor of Texas?",
+        "query": "PREFIX res: <http://dbpedia.org/resource/> PREFIX dbp: <http://dbpedia.org/property/> SELECT DISTINCT ?string WHERE { res:Texas dbp:governor ?string }",
+        "topic_entities": "http://dbpedia.org/resource/Texas (Texas)"
+    },
+    {
+        "question": "Which movies did Kurosawa direct?",
+        "query": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> SELECT ?uri WHERE { ?uri rdf:type dbo:Film ; dbo:director res:Akira_Kurosawa }",
+        "topic_entities": "http://dbpedia.org/ontology/Film (Film), http://dbpedia.org/resource/Akira_Kurosawa (Akira Kurosawa)"
+    },
+    {
+        "question": "What was the name of the famous battle in 1836 in San Antonio?",
+        "query": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX dbr: <http://dbpedia.org/resource/> SELECT ?uri WHERE { ?uri a dbo:MilitaryConflict ; dbo:place dbr:San_Antonio ; dbo:date ?date FILTER ( ?date > \"1835-12-31T00:00:00Z\"^^xsd:dateTime ) FILTER ( ?date <= \"1836-12-31T00:00:00Z\"^^xsd:dateTime ) }",
+        "topic_entities": "http://dbpedia.org/ontology/MilitaryConflict (MilitaryConflict), http://dbpedia.org/resource/San_Antonio (San Antonio)"
+    },
+    {
+        "question": "Give me the official websites of actors of the television show Charmed.",
+        "query": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX foaf: <http://xmlns.com/foaf/0.1/> PREFIX onto: <http://dbpedia.org/ontology/> SELECT DISTINCT ?uri WHERE { <http://dbpedia.org/resource/Charmed> onto:starring ?actors . ?actors foaf:homepage ?uri }",
+        "topic_entities": "http://dbpedia.org/resource/Charmed (Charmed)"
+    },
+    {
+        "question": "How many calories does a baguette have?",
+        "query": "SELECT DISTINCT ?n WHERE { <http://dbpedia.org/resource/Baguette> <http://dbpedia.org/property/calories> ?n }",
+        "topic_entities": "http://dbpedia.org/resource/Baguette (Baguette)"
+    },
+    {
+        "question": "Give me all libraries established before 1400.",
+        "query": "SELECT DISTINCT ?uri WHERE { ?uri a <http://dbpedia.org/ontology/Library> ; <http://dbpedia.org/property/established> ?year FILTER ( ?year < 1400 ) }",
+        "topic_entities": "http://dbpedia.org/ontology/Library (Library)"
+    },
+    {
+        "question": "Give me all Frisian islands that belong to the Netherlands.",
+        "query": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX yago: <http://dbpedia.org/class/yago/> PREFIX res: <http://dbpedia.org/resource/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> SELECT DISTINCT ?uri WHERE { ?uri rdf:type yago:WikicatFrisianIslands ; dbo:country res:Netherlands }",
+        "topic_entities": "http://dbpedia.org/resource/Netherlands (Netherlands)"
+    },
+    {
+        "question": "Which museum exhibits The Scream by Munch?",
+        "query": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { res:The_Scream dbo:museum ?uri }",
+        "topic_entities": "http://dbpedia.org/resource/The_Scream (The Scream)"
+    },
+    {
+        "question": "When was the De Beers company founded?",
+        "query": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?date WHERE { res:De_Beers dbo:foundingYear ?date }",
+        "topic_entities": "http://dbpedia.org/resource/De_Beers (De Beers)"
+    },
+    {
+        "question": "Who became president after JFK died?",
+        "query": "SELECT DISTINCT ?uri WHERE { <http://dbpedia.org/resource/John_F._Kennedy> <http://dbpedia.org/property/presidentEnd> ?x . ?uri <http://dbpedia.org/property/presidentStart> ?x; a <http://dbpedia.org/ontology/Person>. }",
+        "topic_entities": "http://dbpedia.org/ontology/Person (Person), http://dbpedia.org/resource/John_F._Kennedy (John F. Kennedy)"
+    },
+    {
+        "question": "Who are the parents of the wife of Juan Carlos I?",
+        "query": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { res:Juan_Carlos_I_of_Spain dbo:spouse ?x . ?x dbo:parent ?uri }",
+        "topic_entities": "http://dbpedia.org/resource/Juan_Carlos_I_of_Spain (Juan Carlos I of Spain)"
+    },
+    {
+        "question": "Who is the novelist of the work a song of ice and fire?",
+        "query": "PREFIX dbr: <http://dbpedia.org/resource/> PREFIX dbp: <http://dbpedia.org/property/> SELECT ?Novelist WHERE { dbr:A_Song_of_Ice_and_Fire dbp:author ?Novelist }",
+        "topic_entities": "http://dbpedia.org/resource/A_Song_of_Ice_and_Fire (A Song of Ice and Fire)"
+    },
+    {
+        "question": "In which studio did the Beatles record their first album?",
+        "query": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX dbp: <http://dbpedia.org/property/> PREFIX dbr: <http://dbpedia.org/resource/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX db: <http://dbpedia.org/> SELECT ?studio WHERE { ?album dbo:artist dbr:The_Beatles ; rdf:type dbo:Album ; dbo:releaseDate ?date ; dbp:studio ?studio } ORDER BY ASC(?date) LIMIT 1",
+        "topic_entities": "http://dbpedia.org/ontology/Album (Album), http://dbpedia.org/resource/The_Beatles (The Beatles)"
+    },
+    {
+        "question": "Which beer brewing companies are located in North-Rhine Westphalia?",
+        "query": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX dct: <http://purl.org/dc/terms/> PREFIX dbc: <http://dbpedia.org/resource/Category:> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> SELECT ?company WHERE { ?company dct:subject dbc:Companies_based_in_North_Rhine-Westphalia ; rdf:type dbo:Brewery }",
+        "topic_entities": "http://dbpedia.org/ontology/Brewery (Brewery), http://dbpedia.org/resource/Category:Companies_based_in_North_Rhine-Westphalia (Category:Companies based in North Rhine-Westphalia)"
+    },
+    {
+        "question": "When did princess Diana die?",
+        "query": "SELECT DISTINCT ?d WHERE { <http://dbpedia.org/resource/Diana,_Princess_of_Wales> <http://dbpedia.org/ontology/deathDate> ?d }",
+        "topic_entities": "http://dbpedia.org/resource/Diana,_Princess_of_Wales (Diana, Princess of Wales)"
+    },
+    {
+        "question": "Who founded Intel?",
+        "query": "SELECT DISTINCT ?uri WHERE { <http://dbpedia.org/resource/Intel> <http://dbpedia.org/property/founders> ?uri }",
+        "topic_entities": "http://dbpedia.org/resource/Intel (Intel)"
+    },
+    {
+        "question": "Who is the youngest player in the Premier League?",
+        "query": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { ?uri dbo:team ?team . ?league dbo:league res:Premier_League . ?league dbo:team ?team . ?uri dbo:birthDate ?date } ORDER BY DESC(?date) LIMIT 1",
+        "topic_entities": "http://dbpedia.org/resource/Premier_League (Premier League)"
+    },
+    {
+        "question": "Which instruments does Cat Stevens play?",
+        "query": "SELECT DISTINCT ?uri WHERE { <http://dbpedia.org/resource/Cat_Stevens> <http://dbpedia.org/ontology/instrument> ?uri }",
+        "topic_entities": "http://dbpedia.org/resource/Cat_Stevens (Cat Stevens)"
+    },
+    {
+        "question": "How many rivers and lakes are in South Carolina?",
+        "query": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX dct: <http://purl.org/dc/terms/> PREFIX dbc: <http://dbpedia.org/resource/Category:> PREFIX dbr: <http://dbpedia.org/resource/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> SELECT (COUNT(DISTINCT ?uri) AS ?count) WHERE { { ?uri dbo:location dbr:South_Carolina ; rdf:type dbo:Lake } UNION { ?uri dct:subject dbc:Rivers_and_streams_of_South_Carolina } }",
+        "topic_entities": "http://dbpedia.org/ontology/Lake (Lake), http://dbpedia.org/resource/South_Carolina (South Carolina), http://dbpedia.org/resource/Category:Rivers_and_streams_of_South_Carolina (Category:Rivers and streams of South Carolina)"
+    },
+    {
+        "question": "Who was called Rodzilla?",
+        "query": "SELECT DISTINCT ?uri WHERE { ?uri <http://xmlns.com/foaf/0.1/nick> \"Rodzilla\"@en }",
+        "topic_entities": ""
+    },
+    {
+        "question": "Give me the capitals of all countries in Africa.",
+        "query": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX dbc: <http://dbpedia.org/resource/Category:> PREFIX dct: <http://purl.org/dc/terms/> SELECT DISTINCT ?uri WHERE { ?country dct:subject dbc:Countries_in_Africa ; dbo:capital ?uri }",
+        "topic_entities": "http://dbpedia.org/resource/Category:Countries_in_Africa (Category:Countries in Africa)"
+    },
+    {
+        "question": "Which bridges are of the same type as the Manhattan Bridge?",
+        "query": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX dbr: <http://dbpedia.org/resource/> SELECT DISTINCT ?bridge WHERE { dbr:Manhattan_Bridge dbo:type ?type . ?bridge dbo:type ?type ; rdf:type dbo:Bridge }",
+        "topic_entities": "http://dbpedia.org/ontology/Bridge (Bridge), http://dbpedia.org/resource/Manhattan_Bridge (Manhattan Bridge)"
+    },
+    {
+        "question": "How many companies were founded by the founder of Facebook?",
+        "query": "SELECT (COUNT(DISTINCT ?x) AS ?c) WHERE { <http://dbpedia.org/resource/Facebook> <http://dbpedia.org/ontology/foundedBy> ?uri . ?x <http://dbpedia.org/ontology/foundedBy> ?uri }",
+        "topic_entities": "http://dbpedia.org/resource/Facebook (Facebook)"
+    },
+    {
+        "question": "Show me hiking trails in the Grand Canyon where there's no danger of flash floods.",
+        "query": "SELECT DISTINCT ?uri WHERE { ?uri <http://dbpedia.org/property/trailheads> <http://dbpedia.org/resource/Grand_Canyon> FILTER NOT EXISTS { ?uri <http://dbpedia.org/property/hazards> <http://dbpedia.org/resource/Flash_flood> } }",
+        "topic_entities": "http://dbpedia.org/resource/Grand_Canyon (Grand Canyon), http://dbpedia.org/resource/Flash_flood (Flash flood)"
+    },
+    {
+        "question": "Which book has the most pages?",
+        "query": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Book ; dbo:numberOfPages ?n } ORDER BY DESC(?n) OFFSET 0 LIMIT 1",
+        "topic_entities": "http://dbpedia.org/ontology/Book (Book)"
+    },
+    {
+        "question": "What is the largest state in the United States?",
+        "query": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX dct: <http://purl.org/dc/terms/> PREFIX dbc: <http://dbpedia.org/resource/Category:> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> SELECT ?uri WHERE { ?uri dct:subject dbc:States_of_the_United_States ; rdf:type dbo:AdministrativeRegion ; dbo:areaTotal ?area } ORDER BY DESC(?area) OFFSET 0 LIMIT 1",
+        "topic_entities": "http://dbpedia.org/ontology/AdministrativeRegion (AdministrativeRegion), http://dbpedia.org/resource/Category:States_of_the_United_States (Category:States of the United States)"
+    },
+    {
+        "question": "Give me the websites of companies with more than 500000 employees.",
+        "query": "PREFIX foaf: <http://xmlns.com/foaf/0.1/> PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> SELECT distinct ?web WHERE { ?sub dbo:numberOfEmployees ?obj . ?sub foaf:homepage ?web FILTER( xsd:integer(?obj) > 500000 ) . }",
+        "topic_entities": ""
+    },
+    {
+        "question": "What were the names of the three ships by Columbus?",
+        "query": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX dct: <http://purl.org/dc/terms/> PREFIX dbc: <http://dbpedia.org/resource/Category:> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> SELECT ?uri WHERE { ?uri rdf:type dbo:Ship ; dct:subject dbc:Christopher_Columbus ; dct:subject dbc:Exploration_ships }",
+        "topic_entities": "http://dbpedia.org/ontology/Ship (Ship), http://dbpedia.org/resource/Category:Exploration_ships (Category:Exploration ships), http://dbpedia.org/resource/Category:Christopher_Columbus (Category:Christopher Columbus)"
+    }
+]

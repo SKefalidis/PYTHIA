@@ -1,0 +1,3077 @@
+[
+    {
+        "question": "which creatures not speaking draconic language do have chaotic good alignment?",
+        "results": "The question asks: which creatures that do not speak the Draconic language have a chaotic good alignment?\n\nIn many fantasy role-playing game settings (such as Dungeons & Dragons), creatures with chaotic good alignment are typically those who value freedom, kindness, and individuality, and act with good intentions but without strict adherence to law or order.\n\nDraconic is a language primarily spoken by dragons and some related creatures.\n\nSo, the question is: which chaotic good creatures do not speak Draconic?\n\nCommon chaotic good creatures that do not speak Draconic include:\n\n- Celestials such as angels, devas, and unicorns (often speak Celestial or other languages)\n- Some fey creatures like dryads or pixies (speak Sylvan)\n- Some humanoids like certain elves or halflings (speak Elvish, Common, etc.)\n- Some outsiders or elementals aligned chaotic good\n\nTherefore, creatures with chaotic good alignment that do not speak Draconic include:\n\n- Unicorns\n- Pixies\n- Dryads\n- Some angels or devas\n- Certain chaotic good-aligned humanoids (elves, halflings)\n\nIn summary, many chaotic good creatures do not speak Draconic.\n\nIf you want a specific list, it depends on the source material, but generally:\n\nAnswer: Creatures such as unicorns, pixies, dryads, and angels are chaotic good and do not speak Draconic.",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 30.361552238464355,
+            "SPARQL_CALLS": 29,
+            "SPARQL_TIME": 5.585712671279907,
+            "LLM_CALLS": 19,
+            "LLM_INPUTS": 8269,
+            "LLM_OUTPUTS": 937,
+            "LLM_TIME": 24.764967441558838
+        }
+    },
+    {
+        "question": "does Caypup have more special abilities than Aasimar?",
+        "results": "{Yes}. Based on the given knowledge triplets, Aasimar has two special abilities: channelPositiveEnergy and rebukeDeath, while Caypup has one special ability: familiarService. Therefore, Aasimar has more special abilities than Caypup. The answer to the question is {No, Caypup does not have more special abilities than Aasimar}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "aasimar",
+                        "bst:hasSpecAbils",
+                        "bst:channelPositiveEnergy"
+                    ],
+                    [
+                        "aasimar",
+                        "bst:hasSpecAbils",
+                        "bst:rebukeDeath"
+                    ],
+                    [
+                        "caypup",
+                        "bst:hasSpecAbils",
+                        "bst:familiarService"
+                    ]
+                ]
+            ],
+            [
+                [
+                    [
+                        "bst:channelPositiveEnergy",
+                        "rdf:type",
+                        "bst:SpecialAbilities"
+                    ],
+                    [
+                        "bst:channelPositiveEnergy",
+                        "rdf:type",
+                        "owl:NamedIndividual"
+                    ],
+                    [
+                        "bst:rebukeDeath",
+                        "rdf:type",
+                        "bst:SpecialAbilities"
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 20.421651124954224,
+            "SPARQL_CALLS": 22,
+            "SPARQL_TIME": 2.701847791671753,
+            "LLM_CALLS": 14,
+            "LLM_INPUTS": 5962,
+            "LLM_OUTPUTS": 423,
+            "LLM_TIME": 17.717323064804077
+        }
+    },
+    {
+        "question": "how many creatures with non-neutral alignment do speak treant language?",
+        "results": "First, creatures that speak the Treant language are typically treants and certain other forest-related beings.  \nSecond, among these, some may have non-neutral alignments (either good or evil).  \nHowever, the exact number of creatures with non-neutral alignment that speak the Treant language is not specified in common sources.  \n\nTherefore, the answer is: {The exact number is not specified or unknown}.",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 29.901872634887695,
+            "SPARQL_CALLS": 33,
+            "SPARQL_TIME": 5.299655914306641,
+            "LLM_CALLS": 23,
+            "LLM_INPUTS": 9287,
+            "LLM_OUTPUTS": 727,
+            "LLM_TIME": 24.588716983795166
+        }
+    },
+    {
+        "question": "what spells Aasimar and Caypup do have in common?",
+        "results": "To determine what spells Aasimar and Caypup have in common, we need to consider the context in which these terms are used.\n\n- Aasimar is a race or character type commonly found in fantasy role-playing games like Dungeons & Dragons. Aasimar often have innate spell-like abilities or access to certain spells due to their celestial heritage.\n\n- Caypup is less commonly known; it might be a misspelling or a specific character, creature, or race from a particular game or setting. If you meant \"Catfolk\" or another similar term, please clarify.\n\nAssuming Caypup refers to a specific character or race with spellcasting abilities, the spells they have in common with Aasimar would depend on the game or source material.\n\nCould you please provide more context or specify the source (e.g., a particular game, book, or setting) so I can give a precise answer?",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 27.660882472991943,
+            "SPARQL_CALLS": 30,
+            "SPARQL_TIME": 3.9771597385406494,
+            "LLM_CALLS": 20,
+            "LLM_INPUTS": 8786,
+            "LLM_OUTPUTS": 859,
+            "LLM_TIME": 23.675138235092163
+        }
+    },
+    {
+        "question": "is the number of creatures speaking both abyssal and aklo languages greater than infernal and terran?",
+        "results": "To answer this question, we need to compare the number of creatures that speak both abyssal and aklo languages with the number of creatures that speak both infernal and terran languages.\n\n- Number of creatures speaking both abyssal and aklo: X\n- Number of creatures speaking both infernal and terran: Y\n\nIf X > Y, then the answer is yes; otherwise, no.\n\nHowever, since no specific data or numbers are provided here about creatures speaking these language pairs, I cannot determine which number is greater.\n\nThe answer is: {Cannot determine from the given information}.",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 51.21555495262146,
+            "SPARQL_CALLS": 39,
+            "SPARQL_TIME": 5.871814012527466,
+            "LLM_CALLS": 28,
+            "LLM_INPUTS": 11313,
+            "LLM_OUTPUTS": 1774,
+            "LLM_TIME": 45.3346893787384
+        }
+    },
+    {
+        "question": "what is the most common alignment type?",
+        "results": "First, the most common alignment type in many role-playing games and character analyses is \"Neutral.\" Second, in the Dungeons & Dragons alignment system, \"Neutral\" or \"True Neutral\" is often considered the most common alignment among characters. The answer is {Neutral}.",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 1.0684337615966797,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0.0,
+            "LLM_CALLS": 1,
+            "LLM_INPUTS": 388,
+            "LLM_OUTPUTS": 54,
+            "LLM_TIME": 1.0684120655059814
+        }
+    },
+    {
+        "question": "how many types of robots are among creatures?",
+        "results": "Based on the given knowledge triplets, there is information about \"Beast\" being a subclass of \"owl:Thing\" and being an \"owl:Class,\" but there is no information about robots or types of robots among creatures. Therefore, with the provided knowledge triplets, it is not possible to determine how many types of robots are among creatures. Additional information about robots and their classification among creatures would be needed to answer this question.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Beast",
+                        "rdfs:subClassOf",
+                        "owl:Thing"
+                    ],
+                    [
+                        "Beast",
+                        "rdf:type",
+                        "owl:Class"
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 10.47790002822876,
+            "SPARQL_CALLS": 15,
+            "SPARQL_TIME": 2.1207001209259033,
+            "LLM_CALLS": 6,
+            "LLM_INPUTS": 3190,
+            "LLM_OUTPUTS": 346,
+            "LLM_TIME": 8.351356983184814
+        }
+    },
+    {
+        "question": "is there any type of troll with good alignment?",
+        "results": "Based on the given knowledge triplets, there is no direct mention of any type of troll or its alignment. The triplets mention alignments such as chaoticGood and neutralGood, and an entity called YoungCopperDragon with chaoticGood alignment, but no troll is referenced.\n\nTherefore, from the provided knowledge, we cannot confirm the existence of any type of troll with good alignment. Additional information about trolls and their possible alignments would be needed to answer this question.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "chaoticGood",
+                        "bst:hasAlignment",
+                        "bst:YoungCopperDragon"
+                    ],
+                    [
+                        "chaoticGood",
+                        "rdf:type",
+                        "bst:Alignment"
+                    ],
+                    [
+                        "neutralGood",
+                        "rdf:type",
+                        "bst:Alignment"
+                    ]
+                ]
+            ],
+            [
+                [
+                    [
+                        "bst:Alignment",
+                        "rdf:type",
+                        "owl:Class"
+                    ],
+                    [
+                        "bst:YoungCopperDragon",
+                        "bst:hasRefValue",
+                        "8"
+                    ],
+                    [
+                        "bst:Alignment",
+                        "rdfs:subClassOf",
+                        "owl:Thing"
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 25.469404458999634,
+            "SPARQL_CALLS": 35,
+            "SPARQL_TIME": 4.643078804016113,
+            "LLM_CALLS": 20,
+            "LLM_INPUTS": 8246,
+            "LLM_OUTPUTS": 683,
+            "LLM_TIME": 20.82040762901306
+        }
+    },
+    {
+        "question": "are creatures with good alignment more common than evil?",
+        "results": "The prevalence of creatures with good alignment versus evil alignment depends on the specific fictional universe or context being referred to. In many fantasy settings, such as Dungeons & Dragons, the distribution of good and evil creatures varies by world and storyline. There is no universal rule that creatures with good alignment are more common than those with evil alignment. It ultimately depends on the lore and setting in question.",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 1.9350535869598389,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0.0,
+            "LLM_CALLS": 1,
+            "LLM_INPUTS": 390,
+            "LLM_OUTPUTS": 77,
+            "LLM_TIME": 1.9350359439849854
+        }
+    },
+    {
+        "question": "what creatures do have cold resist?",
+        "results": "{Yes}. Based on the given knowledge triplets, the creature \"aasimar\" has cold resistance. Therefore, the answer to the question is {aasimar}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "cold",
+                        "bst:hasResists",
+                        "bst:aasimar"
+                    ],
+                    [
+                        "cold",
+                        "rdf:type",
+                        "bst:Resists"
+                    ],
+                    [
+                        "cold",
+                        "rdf:type",
+                        "owl:NamedIndividual"
+                    ]
+                ]
+            ],
+            [
+                [
+                    [
+                        "bst:Resists",
+                        "rdfs:range",
+                        "bst:hasResists"
+                    ],
+                    [
+                        "bst:Resists",
+                        "rdf:type",
+                        "owl:Class"
+                    ],
+                    [
+                        "bst:aasimar",
+                        "bst:hasEnvironment",
+                        "bst:mountain"
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 11.729478120803833,
+            "SPARQL_CALLS": 19,
+            "SPARQL_TIME": 2.7836201190948486,
+            "LLM_CALLS": 9,
+            "LLM_INPUTS": 4339,
+            "LLM_OUTPUTS": 291,
+            "LLM_TIME": 8.941607475280762
+        }
+    },
+    {
+        "question": "what percentage of dragons do speak both draconic and common languages?",
+        "results": "There is no standard or widely accepted percentage of dragons that speak both Draconic and Common languages, as this depends on the fictional setting or game system you are referring to. For example, in Dungeons & Dragons lore, many dragons can speak Draconic and often Common as well, but an exact percentage is not specified. If you have a specific source or context in mind, please provide it for a more precise answer.",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 29.502785444259644,
+            "SPARQL_CALLS": 38,
+            "SPARQL_TIME": 6.136947154998779,
+            "LLM_CALLS": 19,
+            "LLM_INPUTS": 8559,
+            "LLM_OUTPUTS": 709,
+            "LLM_TIME": 23.351587295532227
+        }
+    },
+    {
+        "question": "what are the top-5 languages by popularity among creatures?",
+        "results": "I'm not sure what you mean by \"languages by popularity among creatures.\" Could you please clarify if you mean human languages spoken by people, programming languages used in AI or robotics, or something else?",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 0.8124673366546631,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0.0,
+            "LLM_CALLS": 1,
+            "LLM_INPUTS": 392,
+            "LLM_OUTPUTS": 39,
+            "LLM_TIME": 0.8124442100524902
+        }
+    },
+    {
+        "question": "do dragons in average speak more languages than demons?",
+        "results": "There is no definitive or standardized source that quantifies the average number of languages spoken by dragons versus demons, as both are mythical creatures whose characteristics vary widely across different stories, games, and mythologies. Therefore, it is not possible to conclusively say whether dragons speak more languages on average than demons.",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 15.043204069137573,
+            "SPARQL_CALLS": 27,
+            "SPARQL_TIME": 3.694958209991455,
+            "LLM_CALLS": 11,
+            "LLM_INPUTS": 5993,
+            "LLM_OUTPUTS": 496,
+            "LLM_TIME": 11.341302394866943
+        }
+    },
+    {
+        "question": "what creatures do speak both common and undercommon languages?",
+        "results": "First, creatures that speak both Common and Undercommon languages are typically found in fantasy settings such as Dungeons & Dragons. Second, creatures like Drow (dark elves) are known to speak both Common and Undercommon. The answer is {Drow}.",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 24.19111657142639,
+            "SPARQL_CALLS": 31,
+            "SPARQL_TIME": 5.013253688812256,
+            "LLM_CALLS": 19,
+            "LLM_INPUTS": 8339,
+            "LLM_OUTPUTS": 577,
+            "LLM_TIME": 19.161861419677734
+        }
+    },
+    {
+        "question": "how many creatures do speak abyssal, sylvan and elven languages?",
+        "results": "To determine how many creatures speak Abyssal, Sylvan, and Elven languages, we need to consider the typical speakers of each language in common fantasy settings such as Dungeons & Dragons:\n\n- Abyssal is usually spoken by demons and other fiendish creatures.\n- Sylvan is spoken by fey creatures like dryads, satyrs, and other forest beings.\n- Elven is spoken by elves and related races.\n\nSince the question asks \"how many creatures do speak Abyssal, Sylvan and Elven languages,\" it could mean:\n\n1. How many creatures speak all three languages (Abyssal, Sylvan, and Elven)?\n2. How many creatures speak any of these languages?\n\nIf the question is about creatures that speak all three languages simultaneously, that number is very small or possibly zero, as these languages belong to very different creature types.\n\nIf the question is about the total number of creatures that speak any of these languages, the answer depends on the specific bestiary or source material.\n\nWithout a specific source or context, an exact number cannot be given.\n\nCould you please clarify if you want the number of creatures that speak all three languages or the total number of creatures that speak any of these languages? Also, if you have a specific source or game edition in mind, please specify.",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 37.99397420883179,
+            "SPARQL_CALLS": 36,
+            "SPARQL_TIME": 5.654598712921143,
+            "LLM_CALLS": 21,
+            "LLM_INPUTS": 9068,
+            "LLM_OUTPUTS": 1409,
+            "LLM_TIME": 32.32684135437012
+        }
+    },
+    {
+        "question": "is there any type of zombie with chaotic evil or chaotic neutral alignment?",
+        "results": "{Yes}. Based on the given knowledge triplets, there are types of zombies or related creatures with chaotic evil alignment, such as Dahzagan, FloodTroll, and FormlessSpawn. Therefore, the answer to the question is {Yes, there are types of zombies or similar entities with chaotic evil alignment}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "chaoticEvil",
+                        "bst:hasAlignment",
+                        "bst:Dahzagan"
+                    ],
+                    [
+                        "chaoticEvil",
+                        "bst:hasAlignment",
+                        "bst:FloodTroll"
+                    ],
+                    [
+                        "chaoticEvil",
+                        "bst:hasAlignment",
+                        "bst:FormlessSpawn"
+                    ]
+                ]
+            ],
+            [
+                [
+                    [
+                        "bst:Dahzagan",
+                        "bst:hasRefValue",
+                        "4"
+                    ],
+                    [
+                        "bst:FormlessSpawn",
+                        "bst:cha",
+                        "15"
+                    ],
+                    [
+                        "bst:FloodTroll",
+                        "bst:hasRefValue",
+                        "5"
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 21.876412391662598,
+            "SPARQL_CALLS": 25,
+            "SPARQL_TIME": 3.6690642833709717,
+            "LLM_CALLS": 16,
+            "LLM_INPUTS": 6503,
+            "LLM_OUTPUTS": 555,
+            "LLM_TIME": 18.202320337295532
+        }
+    },
+    {
+        "question": "does Trox speak more languages than Sunlord?",
+        "results": "Based on the given knowledge triplets:\n\n- Sunlord has the language bst:CommonL.\n- Trox has the language bst:TerranL.\n- Sunlord has a reference value of 12 (though it is unclear what this value represents exactly).\n- Both bst:CommonL and bst:TerranL are named individuals representing languages.\n\nThere is no explicit information about the number of languages each speaks, only one language is listed per individual. Therefore, from the triplets, Trox and Sunlord each speak one language.\n\nHence, Trox does not speak more languages than Sunlord based on the given data. The answer is: No.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Sunlord",
+                        "bst:hasLanguages",
+                        "bst:CommonL"
+                    ],
+                    [
+                        "Trox",
+                        "bst:hasLanguages",
+                        "bst:TerranL"
+                    ],
+                    [
+                        "Sunlord",
+                        "bst:hasRefValue",
+                        "12"
+                    ]
+                ]
+            ],
+            [
+                [
+                    [
+                        "bst:TerranL",
+                        "rdf:type",
+                        "owl:NamedIndividual"
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 15.083487749099731,
+            "SPARQL_CALLS": 21,
+            "SPARQL_TIME": 3.2357614040374756,
+            "LLM_CALLS": 12,
+            "LLM_INPUTS": 5838,
+            "LLM_OUTPUTS": 476,
+            "LLM_TIME": 11.838569402694702
+        }
+    },
+    {
+        "question": "does Einherji and Balor have any common language?",
+        "results": "{Yes}. Based on the given knowledge triplets, Einherji has the languages Celestial and Common, while Balor has the language Draconic. Since there is no overlap between the languages spoken by Einherji and Balor, they do not have any common language. Therefore, the answer to the question is {No, Einherji and Balor do not have any common language}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Einherji",
+                        "bst:hasLanguages",
+                        "bst:CelestialL"
+                    ],
+                    [
+                        "Einherji",
+                        "bst:hasLanguages",
+                        "bst:CommonL"
+                    ],
+                    [
+                        "Balor",
+                        "bst:hasLanguages",
+                        "bst:DraconicL"
+                    ]
+                ]
+            ],
+            [
+                [
+                    [
+                        "bst:CelestialL",
+                        "rdf:type",
+                        "bst:Language"
+                    ],
+                    [
+                        "bst:CelestialL",
+                        "rdf:type",
+                        "owl:NamedIndividual"
+                    ],
+                    [
+                        "bst:CommonL",
+                        "rdf:type",
+                        "bst:Language"
+                    ]
+                ]
+            ],
+            [
+                [
+                    [
+                        "bst:Language",
+                        "rdf:type",
+                        "owl:Class"
+                    ],
+                    [
+                        "bst:Language",
+                        "rdfs:domain",
+                        "bst:spokenBy"
+                    ],
+                    [
+                        "bst:Language",
+                        "rdfs:range",
+                        "bst:hasLanguages"
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 19.566627740859985,
+            "SPARQL_CALLS": 29,
+            "SPARQL_TIME": 4.485518932342529,
+            "LLM_CALLS": 16,
+            "LLM_INPUTS": 7428,
+            "LLM_OUTPUTS": 475,
+            "LLM_TIME": 15.069405794143677
+        }
+    },
+    {
+        "question": "how many creatures with lawful neutral alignment can speak giant language?",
+        "results": "To determine how many creatures with a lawful neutral alignment can speak the Giant language, we need to consider the source material, typically from Dungeons & Dragons (D&D) or similar role-playing game bestiaries.\n\nIn D&D 5th Edition, for example, creatures that speak Giant and have a lawful neutral alignment often include various types of giants themselves, as giants are typically lawful neutral or lawful evil.\n\nCommon lawful neutral creatures that speak Giant include:\n\n- Hill Giant (usually chaotic neutral, so not lawful neutral)\n- Stone Giant (usually neutral, sometimes lawful neutral)\n- Frost Giant (usually lawful evil)\n- Fire Giant (usually lawful evil)\n- Cloud Giant (usually lawful neutral)\n- Storm Giant (usually lawful good)\n\nFrom this, the lawful neutral giants that speak Giant language are primarily:\n\n- Stone Giant (sometimes neutral, sometimes lawful neutral depending on source)\n- Cloud Giant (lawful neutral)\n\nOther creatures that might speak Giant but are not necessarily lawful neutral are excluded.\n\nTherefore, the number of creatures with lawful neutral alignment that can speak Giant language is at least two: Stone Giant and Cloud Giant.\n\nIf considering only official 5e Monster Manual entries:\n\n- Stone Giant: Neutral (not lawful neutral)\n- Cloud Giant: Lawful Neutral\n\nSo strictly, only Cloud Giants are lawful neutral and speak Giant.\n\nHence, the answer depends on the exact source and interpretation.\n\n**Final answer:** At least one creature, the Cloud Giant, is lawful neutral and can speak Giant language.",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 32.11277747154236,
+            "SPARQL_CALLS": 38,
+            "SPARQL_TIME": 5.297482013702393,
+            "LLM_CALLS": 19,
+            "LLM_INPUTS": 8519,
+            "LLM_OUTPUTS": 964,
+            "LLM_TIME": 26.8089337348938
+        }
+    },
+    {
+        "question": "which ogres with lawful evil alignment can speak common language?",
+        "results": "Based on the given knowledge triplets:\n\n- The entity 'bst:Duergar' has the language 'CommonL' (common language).\n- The entity 'bst:DuergarTyrant' has the alignment 'lawfulEvil'.\n- 'lawfulEvil' is a type of alignment.\n\nFrom this, we can infer that the lawful evil aligned ogres that can speak the common language are the Duergar Tyrants, since they have the lawful evil alignment and are related to Duergar, who speak Common.\n\nTherefore, the answer is: {Duergar Tyrant}",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "CommonL",
+                        "bst:hasLanguages",
+                        "bst:Duergar"
+                    ],
+                    [
+                        "lawfulEvil",
+                        "bst:hasAlignment",
+                        "bst:DuergarTyrant"
+                    ],
+                    [
+                        "lawfulEvil",
+                        "rdf:type",
+                        "bst:Alignment"
+                    ]
+                ]
+            ],
+            [
+                [
+                    [
+                        "bst:Alignment",
+                        "rdf:type",
+                        "owl:Class"
+                    ],
+                    [
+                        "bst:Duergar",
+                        "bst:cha",
+                        "4"
+                    ],
+                    [
+                        "bst:DuergarTyrant",
+                        "bst:cha",
+                        "6"
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 20.534557580947876,
+            "SPARQL_CALLS": 29,
+            "SPARQL_TIME": 4.3225319385528564,
+            "LLM_CALLS": 14,
+            "LLM_INPUTS": 6700,
+            "LLM_OUTPUTS": 584,
+            "LLM_TIME": 16.203777074813843
+        }
+    },
+    {
+        "question": "what is the second most common alignment type for spiders?",
+        "results": "I'm not sure what you mean by \"alignment type\" for spiders. Could you please clarify or provide more context? Are you referring to their ecological role, web structure, or something else?",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 16.505845069885254,
+            "SPARQL_CALLS": 28,
+            "SPARQL_TIME": 3.7476143836975098,
+            "LLM_CALLS": 12,
+            "LLM_INPUTS": 6235,
+            "LLM_OUTPUTS": 478,
+            "LLM_TIME": 12.750657558441162
+        }
+    },
+    {
+        "question": "what alignment type is the most common for elementals?",
+        "results": "Based on the given knowledge triplets, there is no information about elementals or their alignment types. Therefore, the most common alignment type for elementals cannot be determined from the provided data. Additional knowledge about elementals and their typical alignments would be needed to answer this question.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Beast",
+                        "rdf:type",
+                        "owl:Class"
+                    ],
+                    [
+                        "Beast",
+                        "rdfs:subClassOf",
+                        "owl:Thing"
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 16.329853296279907,
+            "SPARQL_CALLS": 15,
+            "SPARQL_TIME": 2.179522752761841,
+            "LLM_CALLS": 6,
+            "LLM_INPUTS": 3197,
+            "LLM_OUTPUTS": 288,
+            "LLM_TIME": 14.144489049911499
+        }
+    },
+    {
+        "question": "what alignment type is the rarest for creatures speaking auran language?",
+        "results": "First, creatures that speak the Auran language are typically associated with air elementals or air-related beings in fantasy settings.  \nSecond, among alignment types (such as Lawful Good, Neutral Good, Chaotic Good, Lawful Neutral, True Neutral, Chaotic Neutral, Lawful Evil, Neutral Evil, Chaotic Evil), the rarest alignment for creatures speaking Auran is often considered to be Lawful Evil.  \nThe answer is {Lawful Evil}.",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 25.61950945854187,
+            "SPARQL_CALLS": 27,
+            "SPARQL_TIME": 3.924189805984497,
+            "LLM_CALLS": 16,
+            "LLM_INPUTS": 7491,
+            "LLM_OUTPUTS": 919,
+            "LLM_TIME": 21.68658947944641
+        }
+    },
+    {
+        "question": "do skeletons have a greater percentage of true neutral alignment than zombies?",
+        "results": "The question asks whether skeletons have a greater percentage of true neutral alignment than zombies.\n\nIn typical fantasy role-playing game lore (such as Dungeons & Dragons), skeletons and zombies are both types of undead creatures. Their alignments can vary depending on the specific game edition or source, but generally:\n\n- Skeletons are often portrayed as mindless undead animated by necromantic magic, usually neutral evil or neutral.\n- Zombies are also mindless undead, often neutral evil or neutral.\n\nHowever, specific percentages of alignment types (like true neutral) are not commonly detailed in official sources for these creatures. Without precise statistical data, it's not possible to definitively say that skeletons have a greater percentage of true neutral alignment than zombies.\n\nTherefore, based on typical lore, neither skeletons nor zombies are predominantly true neutral, and there is no clear evidence that skeletons have a greater percentage of true neutral alignment than zombies.\n\nThe answer is: {No, there is no evidence that skeletons have a greater percentage of true neutral alignment than zombies.}",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 27.13885760307312,
+            "SPARQL_CALLS": 40,
+            "SPARQL_TIME": 5.712899923324585,
+            "LLM_CALLS": 16,
+            "LLM_INPUTS": 8025,
+            "LLM_OUTPUTS": 935,
+            "LLM_TIME": 21.414271354675293
+        }
+    },
+    {
+        "question": "do raven and ghoul have the same alignment?",
+        "results": "{Yes}. Based on the given knowledge triplets, Ghoul has the alignment chaotic evil, while Raven has the alignment true neutral. Therefore, the answer to the question is {No, raven and ghoul do not have the same alignment}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Ghoul",
+                        "bst:hasAlignment",
+                        "bst:chaoticEvil"
+                    ],
+                    [
+                        "Raven",
+                        "bst:hasAlignment",
+                        "bst:trueNeutral"
+                    ],
+                    [
+                        "Raven",
+                        "rdf:type",
+                        "bst:Beast"
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 6.756873607635498,
+            "SPARQL_CALLS": 10,
+            "SPARQL_TIME": 1.2238085269927979,
+            "LLM_CALLS": 5,
+            "LLM_INPUTS": 2386,
+            "LLM_OUTPUTS": 154,
+            "LLM_TIME": 5.531848907470703
+        }
+    },
+    {
+        "question": "what percentage of wolves does have chaotic alignment?",
+        "results": "There is no scientifically established percentage of wolves that have a \"chaotic alignment,\" as \"chaotic alignment\" is a concept from role-playing games like Dungeons & Dragons and does not apply to real animal behavior. Wolves' behavior is studied in terms of social structure, pack dynamics, and ecology, not moral or alignment categories.",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 14.929256677627563,
+            "SPARQL_CALLS": 20,
+            "SPARQL_TIME": 2.737579822540283,
+            "LLM_CALLS": 11,
+            "LLM_INPUTS": 6027,
+            "LLM_OUTPUTS": 496,
+            "LLM_TIME": 12.18510365486145
+        }
+    },
+    {
+        "question": "what percentage of angels does speak aquan language?",
+        "results": "There is no standard or widely recognized percentage of angels that speak the Aquan language, as angels and the Aquan language are concepts from fantasy settings (such as Dungeons & Dragons) rather than real-world entities. In such fictional contexts, the ability of angels to speak Aquan would depend on the specific lore or game rules being used. If you have a particular source or setting in mind, please provide more details!",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 24.742707014083862,
+            "SPARQL_CALLS": 38,
+            "SPARQL_TIME": 5.217311382293701,
+            "LLM_CALLS": 15,
+            "LLM_INPUTS": 7394,
+            "LLM_OUTPUTS": 693,
+            "LLM_TIME": 19.516804218292236
+        }
+    },
+    {
+        "question": "what is an average number of languages for creatures?",
+        "results": "The average number of languages spoken by creatures (humans) varies widely depending on the population and region. Globally, most people speak one or two languages on average. Many individuals are monolingual, while others are bilingual or multilingual. Studies suggest that around 43% of the world's population is bilingual or multilingual. Therefore, an average estimate would be approximately 1.5 to 2 languages per person.",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 16.009490251541138,
+            "SPARQL_CALLS": 21,
+            "SPARQL_TIME": 2.852043628692627,
+            "LLM_CALLS": 10,
+            "LLM_INPUTS": 5447,
+            "LLM_OUTPUTS": 459,
+            "LLM_TIME": 13.151019811630249
+        }
+    },
+    {
+        "question": "what is the maximum value for the numerical offensive attribute?",
+        "results": "The maximum value for the numerical offensive attribute depends on the specific context or system you are referring to (e.g., a video game, sports rating system, or another domain). Could you please provide more details about the context or system so I can give you an accurate answer?",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 18.007509469985962,
+            "SPARQL_CALLS": 29,
+            "SPARQL_TIME": 3.8678557872772217,
+            "LLM_CALLS": 13,
+            "LLM_INPUTS": 6719,
+            "LLM_OUTPUTS": 467,
+            "LLM_TIME": 14.132089376449585
+        }
+    },
+    {
+        "question": "is Sangudaemon faster than Eblis?",
+        "results": "{Yes}. Based on the given knowledge triplets, both Sangudaemon and Eblis have the same speed value of 30. Therefore, Sangudaemon is not faster than Eblis; they have equal speed. The answer to the question is {No, Sangudaemon is not faster than Eblis; they have the same speed}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Eblis",
+                        "bst:hasSpeedValue",
+                        "30"
+                    ],
+                    [
+                        "Sangudaemon",
+                        "bst:hasSpeedValue",
+                        "30"
+                    ],
+                    [
+                        "Eblis",
+                        "bst:dex",
+                        "16"
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 6.4139440059661865,
+            "SPARQL_CALLS": 10,
+            "SPARQL_TIME": 1.2144560813903809,
+            "LLM_CALLS": 3,
+            "LLM_INPUTS": 1949,
+            "LLM_OUTPUTS": 156,
+            "LLM_TIME": 5.198547601699829
+        }
+    },
+    {
+        "question": "what is the mean speed value for spiders?",
+        "results": "The mean speed value for spiders varies depending on the species, but generally, many spiders move at speeds ranging from about 0.1 meters per second up to around 1 meter per second. Some fast-running spiders, like the giant house spider, can reach speeds up to 1 meter per second or slightly more. Therefore, a rough average mean speed for spiders could be estimated around 0.5 meters per second.",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 14.907840967178345,
+            "SPARQL_CALLS": 21,
+            "SPARQL_TIME": 2.881547689437866,
+            "LLM_CALLS": 10,
+            "LLM_INPUTS": 5417,
+            "LLM_OUTPUTS": 424,
+            "LLM_TIME": 12.018508195877075
+        }
+    },
+    {
+        "question": "what are top 5 by speed chaotic evil creatures?",
+        "results": "Based on the given knowledge triplets, we know that \"chaoticEvil\" is an alignment and that the Ancient White Dragon has this alignment and a speed value of 30. However, the triplets do not provide information about other chaotic evil creatures or their speeds.\n\nTo answer the question about the top 5 chaotic evil creatures by speed, we would need additional data listing other chaotic evil creatures and their speed values.\n\nWith the current information, the only known chaotic evil creature and its speed is:\n\n1. Ancient White Dragon - speed 30\n\nTherefore, the answer cannot be fully provided with the given knowledge. Additional information is required to list the top 5 chaotic evil creatures by speed.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "chaoticEvil",
+                        "rdf:type",
+                        "bst:Alignment"
+                    ],
+                    [
+                        "chaoticEvil",
+                        "rdf:type",
+                        "owl:NamedIndividual"
+                    ],
+                    [
+                        "chaoticEvil",
+                        "bst:hasAlignment",
+                        "bst:AncientWhiteDragon"
+                    ]
+                ]
+            ],
+            [
+                [
+                    [
+                        "bst:Alignment",
+                        "rdf:type",
+                        "owl:Class"
+                    ],
+                    [
+                        "bst:AncientWhiteDragon",
+                        "bst:hasSpeedValue",
+                        "30"
+                    ],
+                    [
+                        "bst:Alignment",
+                        "rdfs:subClassOf",
+                        "owl:Thing"
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 18.80280327796936,
+            "SPARQL_CALLS": 30,
+            "SPARQL_TIME": 4.384474992752075,
+            "LLM_CALLS": 12,
+            "LLM_INPUTS": 6126,
+            "LLM_OUTPUTS": 609,
+            "LLM_TIME": 14.407829761505127
+        }
+    },
+    {
+        "question": "what are creatures speaking sphinx language with speed value more than 20?",
+        "results": "{Yes}. Based on the given knowledge triplets, the creatures speaking the Sphinx language (SphinxL) are Androsphinx, Criosphinx, and Gynosphinx. Their speed values are 40, 30, and 40 respectively, all of which are greater than 20. Therefore, the answer to the question is {Androsphinx, Criosphinx, Gynosphinx}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "SphinxL",
+                        "bst:hasLanguages",
+                        "bst:Androsphinx"
+                    ],
+                    [
+                        "SphinxL",
+                        "bst:hasLanguages",
+                        "bst:Criosphinx"
+                    ],
+                    [
+                        "SphinxL",
+                        "bst:hasLanguages",
+                        "bst:Gynosphinx"
+                    ]
+                ]
+            ],
+            [
+                [
+                    [
+                        "bst:Androsphinx",
+                        "bst:hasSpeedValue",
+                        "40"
+                    ],
+                    [
+                        "bst:Criosphinx",
+                        "bst:hasSpeedValue",
+                        "30"
+                    ],
+                    [
+                        "bst:Gynosphinx",
+                        "bst:hasSpeedValue",
+                        "40"
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 14.732059001922607,
+            "SPARQL_CALLS": 19,
+            "SPARQL_TIME": 2.402134656906128,
+            "LLM_CALLS": 11,
+            "LLM_INPUTS": 5080,
+            "LLM_OUTPUTS": 391,
+            "LLM_TIME": 12.327436923980713
+        }
+    },
+    {
+        "question": "what values of health points are related to creatures with the lowest level?",
+        "results": "To determine the health points (HP) values related to creatures with the lowest level, we need to identify the creatures that have the minimum level and then look at their corresponding HP values.\n\nFirst, find the creatures with the lowest level (e.g., level 1 or the minimum level in the dataset).\nSecond, note the HP values associated with these low-level creatures.\n\nThe answer is: {Health points values corresponding to the creatures at the lowest level, typically the smallest HP values in the dataset}.",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 17.389692544937134,
+            "SPARQL_CALLS": 27,
+            "SPARQL_TIME": 3.6238136291503906,
+            "LLM_CALLS": 11,
+            "LLM_INPUTS": 5991,
+            "LLM_OUTPUTS": 586,
+            "LLM_TIME": 13.759130716323853
+        }
+    },
+    {
+        "question": "what is the maximum value of health point for creatures with chaotic good alignment?",
+        "results": "There is no standard or universally defined maximum value of health points (HP) specifically for creatures with a chaotic good alignment. Health points are typically determined by the creature's species, class, level, and other game-specific mechanics rather than alignment. Alignment (such as chaotic good) describes a creature's moral and ethical perspective, not its physical attributes like HP.\n\nIf you are referring to a specific game or system (e.g., Dungeons & Dragons), please provide that context so I can give a more precise answer.",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 17.280999183654785,
+            "SPARQL_CALLS": 15,
+            "SPARQL_TIME": 2.2946677207946777,
+            "LLM_CALLS": 12,
+            "LLM_INPUTS": 5928,
+            "LLM_OUTPUTS": 626,
+            "LLM_TIME": 14.97951340675354
+        }
+    },
+    {
+        "question": "what values of experience points are related to creatures with the highest level?",
+        "results": "Based on the given knowledge triplets:\n\n- \"Beast\" is a subclass of \"owl:Thing\" and is an \"owl:Class\".\n- The property \"bst:hasCRvalue\" has domain \"Beast\" and range \"xsd:float\".\n\nThis indicates that creatures classified as \"Beast\" have a \"CR value\" (Challenge Rating value) represented as a float number.\n\nHowever, the triplets do not provide explicit information about the levels of creatures or the experience points associated with the highest level creatures.\n\nTo answer the question about what values of experience points are related to creatures with the highest level, additional knowledge about the mapping between creature levels, challenge ratings, and experience points is needed.\n\nIn typical role-playing game systems (such as Dungeons & Dragons), creatures with the highest levels or challenge ratings have correspondingly high experience point values, but the exact values depend on the system's rules.\n\nTherefore, based on the given triplets alone, it is not possible to determine the experience points related to creatures with the highest level. Additional data linking creature levels or challenge ratings to experience points is required.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Beast",
+                        "rdfs:subClassOf",
+                        "owl:Thing"
+                    ],
+                    [
+                        "Beast",
+                        "rdf:type",
+                        "owl:Class"
+                    ],
+                    [
+                        "Beast",
+                        "rdfs:domain",
+                        "bst:hasCRvalue"
+                    ]
+                ]
+            ],
+            [
+                [
+                    [
+                        "bst:hasCRvalue",
+                        "rdfs:range",
+                        "xsd:float"
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 15.833329439163208,
+            "SPARQL_CALLS": 23,
+            "SPARQL_TIME": 3.1403274536132812,
+            "LLM_CALLS": 9,
+            "LLM_INPUTS": 5033,
+            "LLM_OUTPUTS": 634,
+            "LLM_TIME": 12.688704252243042
+        }
+    },
+    {
+        "question": "what is the average challenge rating for creatures speaking celestial language?",
+        "results": "{Yes}. Based on the given knowledge triplets, the creatures that speak the Celestial language are Aequoreal, Judgement Devil Ashmede, and Lammasu, with challenge ratings (CR) of 2, 13, and 8 respectively. The average challenge rating is (2 + 13 + 8) / 3 = 23 / 3 \u2248 7.67. Therefore, the answer to the question is {approximately 7.67}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "CelestialL",
+                        "bst:hasLanguages",
+                        "bst:Aequoreal"
+                    ],
+                    [
+                        "CelestialL",
+                        "bst:hasLanguages",
+                        "bst:JudgementDevilAshmede"
+                    ],
+                    [
+                        "CelestialL",
+                        "bst:hasLanguages",
+                        "bst:Lammasu"
+                    ]
+                ]
+            ],
+            [
+                [
+                    [
+                        "bst:Aequoreal",
+                        "bst:hasCRValue",
+                        "2"
+                    ],
+                    [
+                        "bst:JudgementDevilAshmede",
+                        "bst:hasCRValue",
+                        "13"
+                    ],
+                    [
+                        "bst:Lammasu",
+                        "bst:hasCRValue",
+                        "8"
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 20.2977876663208,
+            "SPARQL_CALLS": 19,
+            "SPARQL_TIME": 2.6116607189178467,
+            "LLM_CALLS": 11,
+            "LLM_INPUTS": 5018,
+            "LLM_OUTPUTS": 681,
+            "LLM_TIME": 17.68180823326111
+        }
+    },
+    {
+        "question": "which elemental creatures do have a challenge rating more than 10?",
+        "results": "Based on the given knowledge triplets, which only state that 'Beast' is a subclass of 'owl:Thing' and that 'Beast' is an 'owl:Class', there is no information about elemental creatures or their challenge ratings. Therefore, it is not possible to determine which elemental creatures have a challenge rating greater than 10 from the provided data.\n\nIf you need information about elemental creatures with challenge ratings above 10, please provide relevant knowledge triplets or specify the source to consult.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Beast",
+                        "rdfs:subClassOf",
+                        "owl:Thing"
+                    ],
+                    [
+                        "Beast",
+                        "rdf:type",
+                        "owl:Class"
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 10.29276704788208,
+            "SPARQL_CALLS": 15,
+            "SPARQL_TIME": 2.192091226577759,
+            "LLM_CALLS": 6,
+            "LLM_INPUTS": 3212,
+            "LLM_OUTPUTS": 341,
+            "LLM_TIME": 8.09463095664978
+        }
+    },
+    {
+        "question": "what creatures speaking terran language do have an initiative value more than 2 and less than 5?",
+        "results": "To answer the question \"what creatures speaking Terran language do have an initiative value more than 2 and less than 5?\", we need to identify creatures that:\n\n1. Speak the Terran language.\n2. Have an initiative value greater than 2 and less than 5 (i.e., initiative values of 3 or 4).\n\nSince no specific source or dataset is provided, I will assume this refers to creatures from a role-playing game or fantasy setting where initiative and languages are defined, such as Dungeons & Dragons.\n\nIn D&D 5e, initiative is typically determined by a Dexterity modifier plus a d20 roll, so creatures don't have fixed initiative values, but some stat blocks provide typical initiative modifiers.\n\nAlternatively, if this is from a specific game or dataset, please provide more context.\n\nIf you want a general answer based on common fantasy creatures that speak Terran (the language of earth elementals and earth-related creatures) and have moderate initiative modifiers (3 or 4), here are some possibilities:\n\n- Earth Elemental: Speaks Terran, but usually has a Dexterity modifier of 0, so initiative modifier 0.\n- Other earth-related creatures might speak Terran.\n\nGiven the lack of specific data, I cannot provide a definitive list.\n\nIf you provide a list of creatures with their languages and initiative values, I can filter accordingly.\n\nPlease provide more details or specify the source.",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 25.96385645866394,
+            "SPARQL_CALLS": 29,
+            "SPARQL_TIME": 4.543070077896118,
+            "LLM_CALLS": 14,
+            "LLM_INPUTS": 6993,
+            "LLM_OUTPUTS": 845,
+            "LLM_TIME": 21.408440113067627
+        }
+    },
+    {
+        "question": "what is the minimum non-negative initiative value for creatures with true neutral alignment?",
+        "results": "The minimum non-negative initiative value for creatures with a true neutral alignment is not inherently determined by their alignment alone. Initiative values in most role-playing games (such as Dungeons & Dragons) are typically determined by a creature's Dexterity modifier and any other bonuses or penalties, rather than their alignment.\n\nTherefore, the minimum non-negative initiative value for a true neutral creature would be 0, assuming the creature has a Dexterity modifier of 0 and no other modifiers affecting initiative.\n\nThe answer is {0}.",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 27.773020267486572,
+            "SPARQL_CALLS": 29,
+            "SPARQL_TIME": 4.74165940284729,
+            "LLM_CALLS": 16,
+            "LLM_INPUTS": 7732,
+            "LLM_OUTPUTS": 864,
+            "LLM_TIME": 23.017396926879883
+        }
+    },
+    {
+        "question": "what are top 3 golem types by experience points?",
+        "results": "The provided knowledge triplets do not contain information about golem types or their experience points. Therefore, based on the given data, it is not possible to determine the top 3 golem types by experience points. Additional information about golem types and their experience points is needed to answer this question.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Beast",
+                        "rdf:type",
+                        "owl:Class"
+                    ],
+                    [
+                        "Beast",
+                        "rdfs:subClassOf",
+                        "owl:Thing"
+                    ],
+                    [
+                        "Beast",
+                        "rdf:first",
+                        "38b694b1e5224073b2816765b0fc6f84116"
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 9.267786741256714,
+            "SPARQL_CALLS": 15,
+            "SPARQL_TIME": 2.150880813598633,
+            "LLM_CALLS": 6,
+            "LLM_INPUTS": 3413,
+            "LLM_OUTPUTS": 311,
+            "LLM_TIME": 7.112198114395142
+        }
+    },
+    {
+        "question": "is Abaia superior to vampires in terms of base attributes?",
+        "results": "Based on the given knowledge triplets, we have base attributes for Vampire: attack (atk) = 4 and strength (str) = 16. However, there is no information provided about Abaia's base attributes. Therefore, it is not possible to determine if Abaia is superior to vampires in terms of base attributes with the current data. Additional information about Abaia's base attributes is needed to answer this question.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "base",
+                        "rdf:type",
+                        "owl:DatatypeProperty"
+                    ],
+                    [
+                        "Vampire",
+                        "bst:atk",
+                        "4"
+                    ],
+                    [
+                        "Vampire",
+                        "bst:str",
+                        "16"
+                    ]
+                ]
+            ],
+            []
+        ],
+        "metrics": {
+            "TIME": 11.728293657302856,
+            "SPARQL_CALLS": 19,
+            "SPARQL_TIME": 2.3541228771209717,
+            "LLM_CALLS": 8,
+            "LLM_INPUTS": 4099,
+            "LLM_OUTPUTS": 328,
+            "LLM_TIME": 9.372208833694458
+        }
+    },
+    {
+        "question": "is Abaia superior to vampires in terms of base attributes?",
+        "results": "Based on the given knowledge triplets, we have base attributes for Vampire: attack (atk) = 4 and strength (str) = 16. However, there is no information provided about Abaia's base attributes. Therefore, it is not possible to determine if Abaia is superior to vampires in terms of base attributes with the current data. Additional information about Abaia's base attributes is needed to answer the question.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "base",
+                        "rdf:type",
+                        "owl:DatatypeProperty"
+                    ],
+                    [
+                        "Vampire",
+                        "bst:atk",
+                        "4"
+                    ],
+                    [
+                        "Vampire",
+                        "bst:str",
+                        "16"
+                    ]
+                ]
+            ],
+            []
+        ],
+        "metrics": {
+            "TIME": 13.211385488510132,
+            "SPARQL_CALLS": 19,
+            "SPARQL_TIME": 2.3541228771209717,
+            "LLM_CALLS": 9,
+            "LLM_INPUTS": 4874,
+            "LLM_OUTPUTS": 413,
+            "LLM_TIME": 10.847528457641602
+        }
+    },
+    {
+        "question": "is Dhampir superior to Gorgon in terms of mean base attributes?",
+        "results": "Based on the given knowledge triplets, we only have partial base attribute values for Dhampir: strength (str) = 13 and dexterity (dex) = 17. There is no information provided about Gorgon's base attributes or the full set of Dhampir's base attributes.\n\nTherefore, with the current data, it is not possible to determine if Dhampir is superior to Gorgon in terms of mean base attributes. Additional attribute values for both Dhampir and Gorgon are needed to make this comparison.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "base",
+                        "rdf:type",
+                        "owl:DatatypeProperty"
+                    ],
+                    [
+                        "Dhampir",
+                        "bst:str",
+                        "13"
+                    ],
+                    [
+                        "Dhampir",
+                        "bst:dex",
+                        "17"
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 10.139479875564575,
+            "SPARQL_CALLS": 19,
+            "SPARQL_TIME": 2.340521812438965,
+            "LLM_CALLS": 7,
+            "LLM_INPUTS": 3882,
+            "LLM_OUTPUTS": 325,
+            "LLM_TIME": 7.796948671340942
+        }
+    },
+    {
+        "question": "is Boggard superior to Selkie in terms of deffencive attributes?",
+        "results": "{Yes}. Based on the given knowledge triplets, Boggard has an AC (Armor Class) value of 11, and Selkie has an AC value of 18. Since a higher AC value indicates better defensive attributes, Selkie is superior to Boggard in terms of defensive attributes. Therefore, the answer to the question is {No, Boggard is not superior to Selkie in terms of defensive attributes}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "defValues",
+                        "rdf:type",
+                        "owl:DatatypeProperty"
+                    ],
+                    [
+                        "Boggard",
+                        "bst:hasACValue",
+                        "11"
+                    ],
+                    [
+                        "Selkie",
+                        "bst:hasACValue",
+                        "18"
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 7.800395488739014,
+            "SPARQL_CALLS": 15,
+            "SPARQL_TIME": 1.8489885330200195,
+            "LLM_CALLS": 5,
+            "LLM_INPUTS": 2701,
+            "LLM_OUTPUTS": 248,
+            "LLM_TIME": 5.949815273284912
+        }
+    },
+    {
+        "question": "is Centaur superior to Medusa in terms of mean defensive attributes?",
+        "results": "{Yes}. Based on the given knowledge triplets, Centaur has a defensive attribute value (bst:hasACValue) of 20, while Medusa has a value of 15. Since 20 is greater than 15, Centaur is superior to Medusa in terms of mean defensive attributes. Therefore, the answer to the question is {Yes}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "defValues",
+                        "rdf:type",
+                        "owl:DatatypeProperty"
+                    ],
+                    [
+                        "Centaur",
+                        "bst:hasACValue",
+                        "20"
+                    ],
+                    [
+                        "Medusa",
+                        "bst:hasACValue",
+                        "15"
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 8.545360565185547,
+            "SPARQL_CALLS": 14,
+            "SPARQL_TIME": 1.7023084163665771,
+            "LLM_CALLS": 5,
+            "LLM_INPUTS": 2684,
+            "LLM_OUTPUTS": 322,
+            "LLM_TIME": 6.841748952865601
+        }
+    },
+    {
+        "question": "is Biclops superior to Mastodon in terms of statistics sum?",
+        "results": "Based on the given knowledge triplets:\n\n- Mastodon has a statistic value of 14 (bst:str = 14).\n- Biclops has a statistic value of 12 (bst:hasCRValue = 12).\n\nAssuming these values represent comparable statistics sums, Mastodon's value (14) is greater than Biclops' value (12).\n\nTherefore, Mastodon is superior to Biclops in terms of the statistics sum.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "statistics",
+                        "rdf:type",
+                        "owl:DatatypeProperty"
+                    ],
+                    [
+                        "Mastodon",
+                        "bst:str",
+                        "14"
+                    ],
+                    [
+                        "Biclops",
+                        "bst:hasCRValue",
+                        "12"
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 12.31064486503601,
+            "SPARQL_CALLS": 18,
+            "SPARQL_TIME": 2.2284929752349854,
+            "LLM_CALLS": 7,
+            "LLM_INPUTS": 3889,
+            "LLM_OUTPUTS": 477,
+            "LLM_TIME": 10.080560207366943
+        }
+    },
+    {
+        "question": "is Satyr superior to Cacodaemon in terms of mean statistics?",
+        "results": "Based on the given knowledge triplets, we have statistics values only for Cacodaemon: HP value of 19 and attack (atk) of 3. There is no information provided about Satyr's statistics. Therefore, it is not possible to determine if Satyr is superior to Cacodaemon in terms of mean statistics with the current data. Additional statistics for Satyr are needed to answer the question.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "statistics",
+                        "rdf:type",
+                        "owl:DatatypeProperty"
+                    ],
+                    [
+                        "Cacodaemon",
+                        "bst:hasHPvalue",
+                        "19"
+                    ],
+                    [
+                        "Cacodaemon",
+                        "bst:atk",
+                        "3"
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 11.887379884719849,
+            "SPARQL_CALLS": 20,
+            "SPARQL_TIME": 2.4473352432250977,
+            "LLM_CALLS": 7,
+            "LLM_INPUTS": 3904,
+            "LLM_OUTPUTS": 442,
+            "LLM_TIME": 9.438337564468384
+        }
+    },
+    {
+        "question": "what is the dominant statistics for golems in average?",
+        "results": "The provided knowledge triplets do not contain any information about golems or their statistics. Therefore, based on the given data, it is not possible to determine the dominant statistics for golems on average. Additional information about golems and their attributes would be needed to answer this question.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "statistics",
+                        "rdf:type",
+                        "owl:DatatypeProperty"
+                    ],
+                    [
+                        "Beast",
+                        "rdf:type",
+                        "owl:Class"
+                    ],
+                    [
+                        "Beast",
+                        "rdfs:subClassOf",
+                        "owl:Thing"
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 13.876350402832031,
+            "SPARQL_CALLS": 23,
+            "SPARQL_TIME": 3.1501970291137695,
+            "LLM_CALLS": 9,
+            "LLM_INPUTS": 4377,
+            "LLM_OUTPUTS": 425,
+            "LLM_TIME": 10.719946384429932
+        }
+    },
+    {
+        "question": "what is the lowest statistics in average for wolves?",
+        "results": "Based on the given knowledge triplets, there is no information related to wolves or their statistics, including any average values. Therefore, it is not possible to determine the lowest statistics in average for wolves from the provided data. Additional information about wolves and their statistics would be needed to answer this question.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "statistics",
+                        "rdf:type",
+                        "owl:DatatypeProperty"
+                    ],
+                    [
+                        "Beast",
+                        "rdf:type",
+                        "owl:Class"
+                    ],
+                    [
+                        "Beast",
+                        "rdfs:subClassOf",
+                        "owl:Thing"
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 14.696473836898804,
+            "SPARQL_CALLS": 22,
+            "SPARQL_TIME": 3.016817092895508,
+            "LLM_CALLS": 9,
+            "LLM_INPUTS": 4365,
+            "LLM_OUTPUTS": 528,
+            "LLM_TIME": 11.675294876098633
+        }
+    },
+    {
+        "question": "what is the dominant defencive attribute for skeletons in average?",
+        "results": "Based on the given knowledge triplets, there is no information related to skeletons or their dominant defensive attribute. The triplets only define some ontology elements such as 'defValues' as a datatype property, and 'Beast' as a class subclass of 'owl:Thing'. Therefore, the dominant defensive attribute for skeletons on average cannot be determined from the provided data. Additional information about skeletons and their defensive attributes is needed to answer the question.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "defValues",
+                        "rdf:type",
+                        "owl:DatatypeProperty"
+                    ],
+                    [
+                        "Beast",
+                        "rdf:type",
+                        "owl:Class"
+                    ],
+                    [
+                        "Beast",
+                        "rdfs:subClassOf",
+                        "owl:Thing"
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 13.765098333358765,
+            "SPARQL_CALLS": 24,
+            "SPARQL_TIME": 3.248305320739746,
+            "LLM_CALLS": 9,
+            "LLM_INPUTS": 4428,
+            "LLM_OUTPUTS": 452,
+            "LLM_TIME": 10.510484457015991
+        }
+    },
+    {
+        "question": "what is the lowest defensive attribute for ogres in average?",
+        "results": "Based on the given knowledge triplets, there is no information about ogres or their defensive attributes. The triplets only mention general ontology elements like 'defValues' as a datatype property and 'Beast' as a class, but no specific data about ogres or their defense stats.\n\nTherefore, with the provided knowledge, it is not possible to determine the lowest defensive attribute for ogres on average. Additional data about ogres and their defensive attributes would be required to answer this question.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "defValues",
+                        "rdf:type",
+                        "owl:DatatypeProperty"
+                    ],
+                    [
+                        "Beast",
+                        "rdf:type",
+                        "owl:Class"
+                    ],
+                    [
+                        "Beast",
+                        "rdfs:subClassOf",
+                        "owl:Thing"
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 16.81903386116028,
+            "SPARQL_CALLS": 24,
+            "SPARQL_TIME": 3.227041244506836,
+            "LLM_CALLS": 9,
+            "LLM_INPUTS": 4412,
+            "LLM_OUTPUTS": 641,
+            "LLM_TIME": 13.585588455200195
+        }
+    },
+    {
+        "question": "does creatures have more offencive attributes than defencive?",
+        "results": "To determine whether creatures have more offensive attributes than defensive attributes, we would need specific information about the creatures in question and the attributes classified as offensive or defensive.\n\nCould you please provide more context or specify which creatures or dataset you are referring to? This will help me give a more accurate answer.",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 27.5931293964386,
+            "SPARQL_CALLS": 23,
+            "SPARQL_TIME": 3.136991024017334,
+            "LLM_CALLS": 14,
+            "LLM_INPUTS": 6913,
+            "LLM_OUTPUTS": 1172,
+            "LLM_TIME": 24.44916534423828
+        }
+    },
+    {
+        "question": "which creatures speaking aklo language do have the maximum attack parameter?",
+        "results": "Based on the given knowledge triplets:\n\n- \"AkloL\" is a language (rdf:type owl:NamedIndividual and bst:Language).\n- \"bst:Transposer\" is an entity that \"hasLanguages\" AkloL.\n- \"bst:Transposer\" has an attack parameter (bst:atk) of 4.\n- No other creatures or entities speaking AkloL are mentioned.\n\nTherefore, the creature speaking the Aklo language with the maximum attack parameter, based on the provided data, is the \"bst:Transposer\" with an attack value of 4.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "AkloL",
+                        "bst:hasLanguages",
+                        "bst:Transposer"
+                    ],
+                    [
+                        "AkloL",
+                        "rdf:type",
+                        "bst:Language"
+                    ],
+                    [
+                        "AkloL",
+                        "rdf:type",
+                        "owl:NamedIndividual"
+                    ]
+                ]
+            ],
+            [
+                [
+                    [
+                        "bst:Transposer",
+                        "bst:atk",
+                        "4"
+                    ],
+                    [
+                        "bst:Language",
+                        "rdf:type",
+                        "owl:Class"
+                    ],
+                    [
+                        "bst:Transposer",
+                        "bst:hasXPValue",
+                        "1600"
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 16.437922716140747,
+            "SPARQL_CALLS": 24,
+            "SPARQL_TIME": 3.5720956325531006,
+            "LLM_CALLS": 10,
+            "LLM_INPUTS": 5399,
+            "LLM_OUTPUTS": 500,
+            "LLM_TIME": 12.857989311218262
+        }
+    },
+    {
+        "question": "what is the average attack parameter for robots?",
+        "results": "Could you please specify which robots or the context you are referring to? The average attack parameter can vary widely depending on the type of robots, their design, or the source material.",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 12.936724662780762,
+            "SPARQL_CALLS": 21,
+            "SPARQL_TIME": 2.8832929134368896,
+            "LLM_CALLS": 10,
+            "LLM_INPUTS": 5423,
+            "LLM_OUTPUTS": 393,
+            "LLM_TIME": 10.04726505279541
+        }
+    },
+    {
+        "question": "how many creatures with neutral evil alignment do have combat maneuver bonus less than 4?",
+        "results": "Based on the given knowledge triplets:\n\n- 'neutralEvil' is an alignment type.\n- 'neutralEvil' is the alignment of 'bst:GhoulDireWolf'.\n- 'bst:GhoulDireWolf' has a combat maneuver bonus (cmb) of 18.\n\nSince the only creature with neutral evil alignment mentioned is 'bst:GhoulDireWolf', and its cmb is 18, which is not less than 4, there are no creatures with neutral evil alignment that have a combat maneuver bonus less than 4.\n\nTherefore, the answer is: 0.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "neutralEvil",
+                        "rdf:type",
+                        "bst:Alignment"
+                    ],
+                    [
+                        "neutralEvil",
+                        "rdf:type",
+                        "owl:NamedIndividual"
+                    ],
+                    [
+                        "neutralEvil",
+                        "bst:hasAlignment",
+                        "bst:GhoulDireWolf"
+                    ]
+                ]
+            ],
+            [
+                [
+                    [
+                        "bst:Alignment",
+                        "rdf:type",
+                        "owl:Class"
+                    ],
+                    [
+                        "bst:GhoulDireWolf",
+                        "bst:cmb",
+                        "18"
+                    ],
+                    [
+                        "bst:Alignment",
+                        "rdfs:subClassOf",
+                        "owl:Thing"
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 24.100199460983276,
+            "SPARQL_CALLS": 30,
+            "SPARQL_TIME": 5.311553001403809,
+            "LLM_CALLS": 12,
+            "LLM_INPUTS": 6172,
+            "LLM_OUTPUTS": 987,
+            "LLM_TIME": 18.7820725440979
+        }
+    },
+    {
+        "question": "what is the minimum combat maneuver bonus for creatures speaking ignan language?",
+        "results": "{Yes}. Based on the given knowledge triplets, the creature \"Thoqqua\" speaks the Ignan language (\"IgnanL\" has language \"Thoqqua\") and has a combat maneuver bonus (\"bst:cmb\") of 4. Therefore, the minimum combat maneuver bonus for creatures speaking the Ignan language is {4}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "IgnanL",
+                        "bst:hasLanguages",
+                        "bst:Thoqqua"
+                    ],
+                    [
+                        "IgnanL",
+                        "rdf:type",
+                        "owl:NamedIndividual"
+                    ]
+                ]
+            ],
+            [
+                [
+                    [
+                        "bst:Thoqqua",
+                        "bst:cmb",
+                        "4"
+                    ],
+                    [
+                        "bst:Thoqqua",
+                        "bst:hasCRValue",
+                        "2"
+                    ],
+                    [
+                        "bst:Thoqqua",
+                        "bst:hasInitValue",
+                        "1"
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 9.83231234550476,
+            "SPARQL_CALLS": 14,
+            "SPARQL_TIME": 2.1656177043914795,
+            "LLM_CALLS": 7,
+            "LLM_INPUTS": 3634,
+            "LLM_OUTPUTS": 299,
+            "LLM_TIME": 7.662549257278442
+        }
+    },
+    {
+        "question": "how many demons do have combat maneuver defense level greater than the average for all creatures?",
+        "results": "To answer how many demons have a Combat Maneuver Defense (CMD) level greater than the average for all creatures, we need the following steps:\n\n1. Determine the CMD values for all creatures.\n2. Calculate the average CMD value across all creatures.\n3. Identify which creatures are demons.\n4. Count how many demons have a CMD greater than the average CMD.\n\nSince you have not provided specific data or a dataset of creatures and their CMD values, I cannot compute an exact number.\n\nIf you can provide the list of creatures with their CMD values and specify which are demons, I can help calculate the answer. Alternatively, if you have access to a database or source, you can:\n\n- Sum all CMD values and divide by the total number of creatures to get the average CMD.\n- Filter the list to only demons.\n- Count how many demons have CMD > average CMD.\n\nPlease provide the data or clarify if you want a general method or an example.",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 18.27485179901123,
+            "SPARQL_CALLS": 27,
+            "SPARQL_TIME": 3.593033790588379,
+            "LLM_CALLS": 11,
+            "LLM_INPUTS": 6020,
+            "LLM_OUTPUTS": 645,
+            "LLM_TIME": 14.67537808418274
+        }
+    },
+    {
+        "question": "what is the maximum combat maneuver defense level for creatures with neutral good alignment?",
+        "results": "First, the maximum combat maneuver defense (CMD) level for creatures depends on their statistics and abilities, not directly on alignment. Second, alignment such as neutral good does not inherently set a maximum CMD level. Therefore, there is no specific maximum CMD level tied to creatures with neutral good alignment.\n\nThe answer is {There is no maximum CMD level specifically for neutral good creatures; CMD depends on individual creature stats and abilities}.",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 22.414584636688232,
+            "SPARQL_CALLS": 30,
+            "SPARQL_TIME": 4.129467010498047,
+            "LLM_CALLS": 14,
+            "LLM_INPUTS": 7164,
+            "LLM_OUTPUTS": 739,
+            "LLM_TIME": 18.277671098709106
+        }
+    },
+    {
+        "question": "what creatures speaking dwarven language do have armor class greater than 12?",
+        "results": "{Yes}. Based on the given knowledge triplets, the creature that speaks the Dwarven language (\"DwarvenL\") is \"bst:Urskan,\" which has an armor class (AC) value of 21, which is greater than 12. Therefore, the answer to the question is {bst:Urskan}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "DwarvenL",
+                        "bst:hasLanguages",
+                        "bst:Urskan"
+                    ]
+                ]
+            ],
+            [
+                [
+                    [
+                        "bst:Urskan",
+                        "bst:hasACValue",
+                        "21"
+                    ],
+                    [
+                        "bst:Urskan",
+                        "rdf:type",
+                        "bst:Beast"
+                    ],
+                    [
+                        "bst:Urskan",
+                        "bst:hasXPValue",
+                        "3200"
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 8.648728132247925,
+            "SPARQL_CALLS": 9,
+            "SPARQL_TIME": 1.0929667949676514,
+            "LLM_CALLS": 7,
+            "LLM_INPUTS": 3391,
+            "LLM_OUTPUTS": 266,
+            "LLM_TIME": 7.554330348968506
+        }
+    },
+    {
+        "question": "what is the average armor class for angels?",
+        "results": "The provided knowledge triplets do not contain any information about angels or their armor class. Therefore, based on the given data, it is not possible to determine the average armor class for angels. Additional information or knowledge about angels and their armor class would be needed to answer this question.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Beast",
+                        "rdfs:subClassOf",
+                        "owl:Thing"
+                    ],
+                    [
+                        "Beast",
+                        "rdf:type",
+                        "owl:Class"
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 9.088915586471558,
+            "SPARQL_CALLS": 15,
+            "SPARQL_TIME": 2.138338565826416,
+            "LLM_CALLS": 6,
+            "LLM_INPUTS": 3188,
+            "LLM_OUTPUTS": 283,
+            "LLM_TIME": 6.94524073600769
+        }
+    },
+    {
+        "question": "what is the minimum flat footed value for creatures with lawful good alignment?",
+        "results": "There is no standard or universal \"minimum flat-footed value\" specifically tied to creatures with a lawful good alignment in common role-playing game systems like Dungeons & Dragons or Pathfinder. The \"flat-footed\" condition typically refers to a state where a creature loses its Dexterity bonus to AC, often at the start of combat before it has acted, and this value depends on the creature's stats rather than alignment.\n\nIf you are referring to a specific game or system, please provide more details so I can give a precise answer.",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 20.027206659317017,
+            "SPARQL_CALLS": 25,
+            "SPARQL_TIME": 3.180283308029175,
+            "LLM_CALLS": 13,
+            "LLM_INPUTS": 6806,
+            "LLM_OUTPUTS": 773,
+            "LLM_TIME": 16.844432592391968
+        }
+    },
+    {
+        "question": "how many trolls do have flat footed value between 13 and 18?",
+        "results": "Based on the given knowledge triplets, there is no information about trolls or their flat footed values. Therefore, it is not possible to determine how many trolls have a flat footed value between 13 and 18. Additional data about trolls and their attributes would be needed to answer this question.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Beast",
+                        "rdf:type",
+                        "owl:Class"
+                    ],
+                    [
+                        "Beast",
+                        "rdfs:subClassOf",
+                        "owl:Thing"
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 8.476540327072144,
+            "SPARQL_CALLS": 12,
+            "SPARQL_TIME": 1.7908837795257568,
+            "LLM_CALLS": 6,
+            "LLM_INPUTS": 3230,
+            "LLM_OUTPUTS": 249,
+            "LLM_TIME": 6.680028915405273
+        }
+    },
+    {
+        "question": "what is the maximum fort value for creatures speaking goblin language?",
+        "results": "{Yes}. Based on the given knowledge triplets, the language \"GoblinL\" is spoken by the creature \"bst:WyrmForestDragon,\" which has a fort value of 23. Since no other creatures speaking GoblinL are mentioned, the maximum fort value for creatures speaking the Goblin language is {23}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "GoblinL",
+                        "bst:hasLanguages",
+                        "bst:WyrmForestDragon"
+                    ],
+                    [
+                        "GoblinL",
+                        "rdf:type",
+                        "bst:Language"
+                    ]
+                ]
+            ],
+            [
+                [
+                    [
+                        "bst:WyrmForestDragon",
+                        "bst:hasFortValue",
+                        "23"
+                    ],
+                    [
+                        "bst:Language",
+                        "rdfs:domain",
+                        "bst:spokenBy"
+                    ],
+                    [
+                        "bst:Language",
+                        "rdfs:range",
+                        "bst:hasLanguages"
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 9.9119291305542,
+            "SPARQL_CALLS": 14,
+            "SPARQL_TIME": 1.7903590202331543,
+            "LLM_CALLS": 7,
+            "LLM_INPUTS": 3663,
+            "LLM_OUTPUTS": 363,
+            "LLM_TIME": 8.119383573532104
+        }
+    },
+    {
+        "question": "is there any creature with true neutral alignment with fort value equal to 6?",
+        "results": "I don't have access to a specific database of creatures with their alignments and fortitude values. Could you please specify the game or system you are referring to (e.g., Dungeons & Dragons, Pathfinder), so I can provide a more accurate answer?",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 20.2565495967865,
+            "SPARQL_CALLS": 20,
+            "SPARQL_TIME": 3.254086494445801,
+            "LLM_CALLS": 13,
+            "LLM_INPUTS": 6349,
+            "LLM_OUTPUTS": 718,
+            "LLM_TIME": 16.991132259368896
+        }
+    },
+    {
+        "question": "what is the average number of health points for creatures speaking gnome language?",
+        "results": "{Yes}. Based on the given knowledge triplets, the creatures that speak the gnome language (GnomeL) are Ancient Magma Dragon, Ancient Solar Dragon, and Bronze Dragon Mature Adult. Their health points (HP) values are 310, 362, and 207 respectively. The average HP is (310 + 362 + 207) / 3 = 879 / 3 = 293. Therefore, the answer to the question is {293}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "GnomeL",
+                        "bst:hasLanguages",
+                        "bst:AncientMagmaDragon"
+                    ],
+                    [
+                        "GnomeL",
+                        "bst:hasLanguages",
+                        "bst:AncientSolarDragon"
+                    ],
+                    [
+                        "GnomeL",
+                        "bst:hasLanguages",
+                        "bst:BronzeDragonMatureAdult"
+                    ]
+                ]
+            ],
+            [
+                [
+                    [
+                        "bst:AncientMagmaDragon",
+                        "bst:hasHPvalue",
+                        "310"
+                    ],
+                    [
+                        "bst:AncientSolarDragon",
+                        "bst:hasHPvalue",
+                        "362"
+                    ],
+                    [
+                        "bst:BronzeDragonMatureAdult",
+                        "bst:hasHPvalue",
+                        "207"
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 17.66299557685852,
+            "SPARQL_CALLS": 19,
+            "SPARQL_TIME": 2.3509504795074463,
+            "LLM_CALLS": 11,
+            "LLM_INPUTS": 5075,
+            "LLM_OUTPUTS": 605,
+            "LLM_TIME": 15.309374809265137
+        }
+    },
+    {
+        "question": "what is the minimum number of health points for dragons with strenghts attribute more than 10?",
+        "results": "To answer the question \"what is the minimum number of health points for dragons with strengths attribute more than 10?\", I would need specific data or a dataset that lists dragons, their strength attributes, and their health points.\n\nSince no such data is provided here, I cannot determine the exact minimum number of health points for dragons with strength attributes greater than 10.\n\nIf you can provide the dataset or more context, I can help analyze it to find the answer.",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 19.726667165756226,
+            "SPARQL_CALLS": 27,
+            "SPARQL_TIME": 3.61669659614563,
+            "LLM_CALLS": 11,
+            "LLM_INPUTS": 6036,
+            "LLM_OUTPUTS": 616,
+            "LLM_TIME": 16.10311269760132
+        }
+    },
+    {
+        "question": "how many creatures speaking halfling language do have ref value more than 10 and atack parameter less than 15?",
+        "results": "To answer your question, I would need access to a dataset or source that lists creatures with their languages, reference values (ref value), and attack parameters. Since that data is not provided here, I cannot determine the exact number.\n\nIf you can provide the list or dataset of creatures with their attributes, I can help analyze it to find how many creatures that speak the Halfling language have a ref value greater than 10 and an attack parameter less than 15.",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 19.8475182056427,
+            "SPARQL_CALLS": 27,
+            "SPARQL_TIME": 3.6974282264709473,
+            "LLM_CALLS": 12,
+            "LLM_INPUTS": 6326,
+            "LLM_OUTPUTS": 780,
+            "LLM_TIME": 16.142562866210938
+        }
+    },
+    {
+        "question": "what creatures with chaotic evil alignment do have the maximum ref value?",
+        "results": "{Yes}. Based on the given knowledge triplets, the creatures with chaotic evil alignment are Pazuzu, BalorLord, and HornedDemonKalavakus. Their respective ref values are 32, 17, and 8. The creature with the maximum ref value among them is Pazuzu with a ref value of 32. Therefore, the answer to the question is {Pazuzu}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "chaoticEvil",
+                        "bst:hasAlignment",
+                        "bst:Pazuzu"
+                    ],
+                    [
+                        "chaoticEvil",
+                        "bst:hasAlignment",
+                        "bst:BalorLord"
+                    ],
+                    [
+                        "chaoticEvil",
+                        "bst:hasAlignment",
+                        "bst:HornedDemonKalavakus"
+                    ]
+                ]
+            ],
+            [
+                [
+                    [
+                        "bst:HornedDemonKalavakus",
+                        "bst:hasRefValue",
+                        "8"
+                    ],
+                    [
+                        "bst:Pazuzu",
+                        "bst:hasRefValue",
+                        "32"
+                    ],
+                    [
+                        "bst:BalorLord",
+                        "bst:hasRefValue",
+                        "17"
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 15.991930961608887,
+            "SPARQL_CALLS": 20,
+            "SPARQL_TIME": 2.8127524852752686,
+            "LLM_CALLS": 12,
+            "LLM_INPUTS": 5313,
+            "LLM_OUTPUTS": 388,
+            "LLM_TIME": 13.175112247467041
+        }
+    },
+    {
+        "question": "is there any spider type with touch value equal to 11?",
+        "results": "Based on the given knowledge triplets, there is information about a class called \"Beast\" and a property \"bst:hasInitValue\" which has an integer range. However, there is no specific information about any spider type or any entity with a \"touch\" value equal to 11. Therefore, with the provided knowledge triplets, it is not possible to determine if there is any spider type with a touch value equal to 11.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Beast",
+                        "rdf:type",
+                        "owl:Class"
+                    ],
+                    [
+                        "Beast",
+                        "rdfs:subClassOf",
+                        "owl:Thing"
+                    ],
+                    [
+                        "Beast",
+                        "rdfs:domain",
+                        "bst:hasInitValue"
+                    ]
+                ]
+            ],
+            [
+                [
+                    [
+                        "bst:hasInitValue",
+                        "rdfs:range",
+                        "xsd:integer"
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 14.005081176757812,
+            "SPARQL_CALLS": 23,
+            "SPARQL_TIME": 3.1408960819244385,
+            "LLM_CALLS": 9,
+            "LLM_INPUTS": 5027,
+            "LLM_OUTPUTS": 459,
+            "LLM_TIME": 10.858280897140503
+        }
+    },
+    {
+        "question": "what is the minimum touch value for creatures speaking druidic language with initiative value less than 2?",
+        "results": "The question asks for the minimum touch value for creatures that speak the druidic language and have an initiative value less than 2.\n\nHowever, there is no standard or widely recognized game or system rule that directly links \"touch value,\" \"druidic language,\" and \"initiative value\" in this way without additional context.\n\nIf this is related to a specific game system (e.g., Dungeons & Dragons, Pathfinder, or a custom RPG), please provide more details or clarify the context so I can give an accurate answer.\n\nCould you please specify the game or system you are referring to?",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 18.588492155075073,
+            "SPARQL_CALLS": 24,
+            "SPARQL_TIME": 3.313518524169922,
+            "LLM_CALLS": 11,
+            "LLM_INPUTS": 6033,
+            "LLM_OUTPUTS": 746,
+            "LLM_TIME": 15.267826318740845
+        }
+    },
+    {
+        "question": "what percentage of creatures with neutral evil alignment do have will value less than 1?",
+        "results": "I don't have specific statistical data on the percentage of creatures with a neutral evil alignment that have a will value less than 1. This kind of detailed alignment and attribute distribution is typically found in specific role-playing game sourcebooks or databases, and the exact percentages can vary depending on the game edition or system. If you can specify the game or source, I might be able to help find more precise information.",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 27.86628818511963,
+            "SPARQL_CALLS": 20,
+            "SPARQL_TIME": 3.3098435401916504,
+            "LLM_CALLS": 13,
+            "LLM_INPUTS": 6338,
+            "LLM_OUTPUTS": 1097,
+            "LLM_TIME": 24.543764352798462
+        }
+    },
+    {
+        "question": "what is the average will value for creatures speaking orc language?",
+        "results": "{Yes}. Based on the given knowledge triplets, the language OrcL is spoken by the SavageGreenHorde, and the SavageGreenHorde has a will value of 4. Therefore, the average will value for creatures speaking the orc language (OrcL) is {4}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "OrcL",
+                        "bst:hasLanguages",
+                        "bst:SavageGreenHorde"
+                    ],
+                    [
+                        "OrcL",
+                        "rdf:type",
+                        "bst:Language"
+                    ],
+                    [
+                        "OrcL",
+                        "rdf:type",
+                        "owl:NamedIndividual"
+                    ]
+                ]
+            ],
+            [
+                [
+                    [
+                        "bst:SavageGreenHorde",
+                        "bst:hasWillValue",
+                        "4"
+                    ],
+                    [
+                        "bst:Language",
+                        "rdfs:domain",
+                        "bst:spokenBy"
+                    ],
+                    [
+                        "bst:Language",
+                        "rdfs:range",
+                        "bst:hasLanguages"
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 11.444397687911987,
+            "SPARQL_CALLS": 19,
+            "SPARQL_TIME": 2.830420732498169,
+            "LLM_CALLS": 8,
+            "LLM_INPUTS": 4143,
+            "LLM_OUTPUTS": 321,
+            "LLM_TIME": 8.609609603881836
+        }
+    },
+    {
+        "question": "what types of zombies do have charisma attribute between 3 and 7?",
+        "results": "Based on the given knowledge triplets, there is no information about zombies or their charisma attributes. Therefore, it is not possible to determine which types of zombies have a charisma attribute between 3 and 7 from the provided data. Additional information about zombies and their attributes would be needed to answer this question.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Beast",
+                        "rdf:type",
+                        "owl:Class"
+                    ],
+                    [
+                        "Beast",
+                        "rdfs:subClassOf",
+                        "owl:Thing"
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 9.42736554145813,
+            "SPARQL_CALLS": 15,
+            "SPARQL_TIME": 2.1523690223693848,
+            "LLM_CALLS": 6,
+            "LLM_INPUTS": 3224,
+            "LLM_OUTPUTS": 301,
+            "LLM_TIME": 7.269371747970581
+        }
+    },
+    {
+        "question": "is there any creature type with lawful evil alignment having charisma attribute greater than sum of strength and intelligence?",
+        "results": "Based on the given knowledge triplets:\n\n- The creature type \"ScreamingDevilkin\" has the alignment \"lawfulEvil\".\n- \"ScreamingDevilkin\" has a charisma (cha) attribute of 12.\n- \"ScreamingDevilkin\" has a strength (str) attribute of 10.\n- There is no intelligence (int) attribute value provided for \"ScreamingDevilkin\" in the triplets.\n\nSince the intelligence attribute is missing, we cannot calculate the sum of strength and intelligence to compare with charisma. Therefore, with the current knowledge, it is not possible to determine if there exists a lawful evil creature type whose charisma is greater than the sum of strength and intelligence.\n\nIf additional intelligence attribute data is provided, the comparison can be made.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "lawfulEvil",
+                        "bst:hasAlignment",
+                        "bst:ScreamingDevilkin"
+                    ],
+                    [
+                        "lawfulEvil",
+                        "rdf:type",
+                        "bst:Alignment"
+                    ],
+                    [
+                        "lawfulEvil",
+                        "rdf:type",
+                        "owl:NamedIndividual"
+                    ]
+                ]
+            ],
+            [
+                [
+                    [
+                        "bst:Alignment",
+                        "rdf:type",
+                        "owl:Class"
+                    ],
+                    [
+                        "bst:ScreamingDevilkin",
+                        "bst:cha",
+                        "12"
+                    ],
+                    [
+                        "bst:ScreamingDevilkin",
+                        "bst:str",
+                        "10"
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 20.93279457092285,
+            "SPARQL_CALLS": 25,
+            "SPARQL_TIME": 3.6315267086029053,
+            "LLM_CALLS": 11,
+            "LLM_INPUTS": 5769,
+            "LLM_OUTPUTS": 671,
+            "LLM_TIME": 17.293609142303467
+        }
+    },
+    {
+        "question": "how many creatures speaking protean language do have constitution greater than 10?",
+        "results": "Based on the given knowledge triplets:\n\n- The entity \"ProteanL\" has language \"ProteanVoidworm\" (ProteanL bst:hasLanguages bst:ProteanVoidworm).\n- \"ProteanVoidworm\" has constitution (con) value 10 (bst:ProteanVoidworm bst:con 10).\n\nThe question asks: how many creatures speaking Protean language have constitution greater than 10?\n\nFrom the triplets, we only have one creature associated with the Protean language: \"ProteanVoidworm,\" which has constitution equal to 10, not greater than 10.\n\nTherefore, the number of creatures speaking Protean language with constitution greater than 10 is 0.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "ProteanL",
+                        "bst:hasLanguages",
+                        "bst:ProteanVoidworm"
+                    ],
+                    [
+                        "ProteanL",
+                        "rdf:type",
+                        "owl:NamedIndividual"
+                    ]
+                ]
+            ],
+            [
+                [
+                    [
+                        "bst:ProteanVoidworm",
+                        "bst:con",
+                        "10"
+                    ],
+                    [
+                        "bst:ProteanVoidworm",
+                        "bst:hasCRValue",
+                        "2"
+                    ],
+                    [
+                        "bst:ProteanVoidworm",
+                        "bst:hasHPvalue",
+                        "16"
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 12.702310800552368,
+            "SPARQL_CALLS": 14,
+            "SPARQL_TIME": 2.0072669982910156,
+            "LLM_CALLS": 8,
+            "LLM_INPUTS": 4469,
+            "LLM_OUTPUTS": 468,
+            "LLM_TIME": 10.68896222114563
+        }
+    },
+    {
+        "question": "what is the maximum value of constitution attribute for elementals?",
+        "results": "Based on the given knowledge triplets, there is no information about elementals or their constitution attribute, nor any values related to constitution. The triplets only mention that 'Beast' is a subclass of 'owl:Thing' and that 'Beast' is an 'owl:Class'. Therefore, there is insufficient information to determine the maximum value of the constitution attribute for elementals. Additional data about elementals and their constitution attribute values is needed to answer this question.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Beast",
+                        "rdfs:subClassOf",
+                        "owl:Thing"
+                    ],
+                    [
+                        "Beast",
+                        "rdf:type",
+                        "owl:Class"
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 10.443419694900513,
+            "SPARQL_CALLS": 15,
+            "SPARQL_TIME": 2.1231815814971924,
+            "LLM_CALLS": 6,
+            "LLM_INPUTS": 3199,
+            "LLM_OUTPUTS": 339,
+            "LLM_TIME": 8.31403636932373
+        }
+    },
+    {
+        "question": "what is the average dexterity attribute for creatures with true neutral alignment?",
+        "results": "Based on the given knowledge triplets:\n\n- The creature \"SinSeeker\" has the alignment \"trueNeutral\".\n- The dexterity (dex) attribute of \"SinSeeker\" is 15.\n\nSince \"SinSeeker\" is the only creature with true neutral alignment mentioned, the average dexterity attribute for creatures with true neutral alignment is 15.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "trueNeutral",
+                        "bst:hasAlignment",
+                        "bst:SinSeeker"
+                    ],
+                    [
+                        "trueNeutral",
+                        "rdf:type",
+                        "bst:Alignment"
+                    ],
+                    [
+                        "trueNeutral",
+                        "rdf:type",
+                        "owl:NamedIndividual"
+                    ]
+                ]
+            ],
+            [
+                [
+                    [
+                        "bst:SinSeeker",
+                        "bst:dex",
+                        "15"
+                    ],
+                    [
+                        "bst:Alignment",
+                        "rdf:type",
+                        "owl:Class"
+                    ],
+                    [
+                        "bst:SinSeeker",
+                        "bst:hasRefValue",
+                        "5"
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 16.689782857894897,
+            "SPARQL_CALLS": 25,
+            "SPARQL_TIME": 3.879199981689453,
+            "LLM_CALLS": 10,
+            "LLM_INPUTS": 5412,
+            "LLM_OUTPUTS": 491,
+            "LLM_TIME": 12.7998685836792
+        }
+    },
+    {
+        "question": "which creatures speaking aboleth language do have dexterity greater than average for all creatures?",
+        "results": "{Yes}. Based on the given knowledge triplets, the creature \"bst:Aboleth\" speaks the \"AbolethL\" language and has a dexterity (dex) score of 12. Since a dexterity of 12 is generally considered greater than average for creatures (average being around 10), the answer to the question is {Aboleth}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "AbolethL",
+                        "bst:hasLanguages",
+                        "bst:Aboleth"
+                    ],
+                    [
+                        "AbolethL",
+                        "rdf:type",
+                        "bst:Language"
+                    ],
+                    [
+                        "AbolethL",
+                        "rdf:type",
+                        "owl:NamedIndividual"
+                    ]
+                ]
+            ],
+            [
+                [
+                    [
+                        "bst:Aboleth",
+                        "bst:dex",
+                        "12"
+                    ],
+                    [
+                        "bst:Language",
+                        "rdf:type",
+                        "owl:Class"
+                    ],
+                    [
+                        "bst:Aboleth",
+                        "bst:hasXPValue",
+                        "3200"
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 15.514784097671509,
+            "SPARQL_CALLS": 19,
+            "SPARQL_TIME": 2.6845896244049072,
+            "LLM_CALLS": 8,
+            "LLM_INPUTS": 4240,
+            "LLM_OUTPUTS": 511,
+            "LLM_TIME": 12.823522329330444
+        }
+    },
+    {
+        "question": "how many robots do have intelligence attribute less than 7 and speed value more than 10?",
+        "results": "To answer this question, I need data about robots with their intelligence attributes and speed values. Could you please provide the list or dataset of robots with their intelligence and speed values?",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 17.92328119277954,
+            "SPARQL_CALLS": 28,
+            "SPARQL_TIME": 3.766714572906494,
+            "LLM_CALLS": 12,
+            "LLM_INPUTS": 6342,
+            "LLM_OUTPUTS": 529,
+            "LLM_TIME": 14.149474620819092
+        }
+    },
+    {
+        "question": "what is the minimum intelligence attribute for creatures with chaotic neutral alignment?",
+        "results": "{Yes}. Based on the given knowledge triplets, the creature with chaotic neutral alignment is the Marid Genie, which has an intelligence (int) attribute of 14. Therefore, the minimum intelligence attribute for creatures with chaotic neutral alignment is {14}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "chaoticNeutral",
+                        "bst:hasAlignment",
+                        "bst:MaridGenie"
+                    ],
+                    [
+                        "chaoticNeutral",
+                        "owl:hasValue",
+                        "38b694b1e5224073b2816765b0fc6f84127"
+                    ],
+                    [
+                        "chaoticNeutral",
+                        "owl:hasValue",
+                        "38b694b1e5224073b2816765b0fc6f84179"
+                    ]
+                ]
+            ],
+            [
+                [
+                    [
+                        "bst:MaridGenie",
+                        "bst:cha",
+                        "16"
+                    ],
+                    [
+                        "bst:MaridGenie",
+                        "bst:int",
+                        "14"
+                    ],
+                    [
+                        "bst:MaridGenie",
+                        "rdf:type",
+                        "bst:Beast"
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 9.22509241104126,
+            "SPARQL_CALLS": 10,
+            "SPARQL_TIME": 1.4688982963562012,
+            "LLM_CALLS": 8,
+            "LLM_INPUTS": 3773,
+            "LLM_OUTPUTS": 226,
+            "LLM_TIME": 7.7541444301605225
+        }
+    },
+    {
+        "question": "what percentage of creatures speaking daemonic language do have strength attribute greater than 20?",
+        "results": "Based on the given knowledge triplets, there is no information about creatures speaking the daemonic language, their strength attributes, or any percentages related to these attributes. Therefore, it is not possible to answer the question with the provided data. Additional information about the creatures, their language, and strength attributes would be required to determine the percentage.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "DaemonicL",
+                        "rdf:type",
+                        "owl:NamedIndividual"
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 14.433306217193604,
+            "SPARQL_CALLS": 9,
+            "SPARQL_TIME": 1.4160189628601074,
+            "LLM_CALLS": 6,
+            "LLM_INPUTS": 3038,
+            "LLM_OUTPUTS": 529,
+            "LLM_TIME": 13.011994361877441
+        }
+    },
+    {
+        "question": "is there any golem type with strength attribute lower than charisma?",
+        "results": "To answer whether there is any golem type with a Strength attribute lower than its Charisma attribute, we need to consider typical golem types and their attribute distributions.\n\nIn most traditional fantasy settings (such as Dungeons & Dragons), golems are constructs that usually have high Strength and low Charisma, often Charisma being very low or even zero because they are mindless or have no personality.\n\nFor example:\n\n- Stone Golem: Very high Strength, very low Charisma.\n- Flesh Golem: High Strength, low Charisma.\n- Clay Golem: High Strength, low Charisma.\n\nSince golems are constructs, they typically have low Charisma scores (often 1 or 0) and high Strength scores (often 18 or higher).\n\nTherefore, it is very unlikely that any standard golem type has a Strength attribute lower than its Charisma attribute.\n\n**Answer:** No, there is no golem type with a Strength attribute lower than its Charisma attribute.",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 21.425907850265503,
+            "SPARQL_CALLS": 28,
+            "SPARQL_TIME": 3.7523746490478516,
+            "LLM_CALLS": 12,
+            "LLM_INPUTS": 6252,
+            "LLM_OUTPUTS": 690,
+            "LLM_TIME": 17.666693687438965
+        }
+    },
+    {
+        "question": "what is the average wisdom attribute for creatures with lawful neutral alignment?",
+        "results": "{Yes}. Based on the given knowledge triplets, the creature with lawful neutral alignment is 'bst:PashaNobleShaitan', which has a wisdom (bst:wis) attribute value of 14. Since this is the only creature with lawful neutral alignment mentioned, the average wisdom attribute for creatures with lawful neutral alignment is {14}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "lawfulNeutral",
+                        "bst:hasAlignment",
+                        "bst:PashaNobleShaitan"
+                    ],
+                    [
+                        "lawfulNeutral",
+                        "owl:hasValue",
+                        "38b694b1e5224073b2816765b0fc6f84173"
+                    ],
+                    [
+                        "lawfulNeutral",
+                        "owl:hasValue",
+                        "38b694b1e5224073b2816765b0fc6f84181"
+                    ]
+                ]
+            ],
+            [
+                [
+                    [
+                        "bst:PashaNobleShaitan",
+                        "bst:wis",
+                        "14"
+                    ],
+                    [
+                        "bst:PashaNobleShaitan",
+                        "rdf:type",
+                        "bst:Beast"
+                    ],
+                    [
+                        "bst:PashaNobleShaitan",
+                        "bst:hasWillValue",
+                        "13"
+                    ]
+                ]
+            ],
+            [
+                [
+                    [
+                        "bst:Beast",
+                        "rdfs:range",
+                        "bst:spokenBy"
+                    ],
+                    [
+                        "bst:Beast",
+                        "rdf:type",
+                        "owl:Class"
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 14.725027799606323,
+            "SPARQL_CALLS": 15,
+            "SPARQL_TIME": 2.285296678543091,
+            "LLM_CALLS": 11,
+            "LLM_INPUTS": 5459,
+            "LLM_OUTPUTS": 402,
+            "LLM_TIME": 12.43293023109436
+        }
+    },
+    {
+        "question": "which creatures speaking necril and abyssal languages do have wisdom attribute more than 4?",
+        "results": "To answer this question, we need to identify creatures that:\n\n1. Speak both Necril and Abyssal languages.\n2. Have a Wisdom attribute greater than 4.\n\nSince Necril and Abyssal are languages typically found in fantasy role-playing game settings (like Dungeons & Dragons), creatures that speak these languages are often fiends, demons, or other extraplanar beings.\n\n- Abyssal is commonly spoken by demons and other chaotic evil creatures from the Abyss.\n- Necril is a less common language, often associated with undead or certain fiendish creatures.\n\nCreatures that speak both languages and have Wisdom > 4 are quite rare.\n\nOne known creature that fits these criteria is the **Balor**:\n\n- Balors speak Abyssal and Necril.\n- They have a Wisdom score of 16 (which is greater than 4).\n\nAnother possible creature is the **Marilith**:\n\n- Mariliths speak Abyssal and Necril.\n- They have a Wisdom score of 15.\n\nTherefore, creatures speaking both Necril and Abyssal with Wisdom > 4 include:\n\n- Balor\n- Marilith\n\nIf you need a more exhaustive list, please specify the game edition or source.",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 27.512502193450928,
+            "SPARQL_CALLS": 32,
+            "SPARQL_TIME": 4.665098190307617,
+            "LLM_CALLS": 17,
+            "LLM_INPUTS": 7991,
+            "LLM_OUTPUTS": 881,
+            "LLM_TIME": 22.83752703666687
+        }
+    },
+    {
+        "question": "what are the sums of the statistics for creatures speaking both gnoll and elven languages?",
+        "results": "I need more information about the specific creatures and their statistics to calculate the sums for those that speak both gnoll and elven languages. Could you please provide the list or data of creatures with their language abilities and statistics?",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 31.722110271453857,
+            "SPARQL_CALLS": 42,
+            "SPARQL_TIME": 5.724426031112671,
+            "LLM_CALLS": 21,
+            "LLM_INPUTS": 9400,
+            "LLM_OUTPUTS": 893,
+            "LLM_TIME": 25.988096237182617
+        }
+    },
+    {
+        "question": "do Griffon and Hippogriff have the same alignment?",
+        "results": "{Yes}. Based on the given knowledge triplets, both Griffon and Hippogriff have the alignment \"trueNeutral.\" Therefore, the answer to the question is {Yes, Griffon and Hippogriff have the same alignment, trueNeutral}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Griffon",
+                        "bst:hasAlignment",
+                        "bst:trueNeutral"
+                    ],
+                    [
+                        "Hippogriff",
+                        "bst:hasAlignment",
+                        "bst:trueNeutral"
+                    ],
+                    [
+                        "Griffon",
+                        "rdf:type",
+                        "bst:Beast"
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 5.932517051696777,
+            "SPARQL_CALLS": 10,
+            "SPARQL_TIME": 1.2232120037078857,
+            "LLM_CALLS": 5,
+            "LLM_INPUTS": 2403,
+            "LLM_OUTPUTS": 149,
+            "LLM_TIME": 4.708373785018921
+        }
+    },
+    {
+        "question": "does Androsphinx have a greater sum of intellegence and wisdom attributes than Blood Queen?",
+        "results": "Let's calculate the sum of intelligence (int) and wisdom (wis) attributes for both entities:\n\n- Blood Queen:\n  - Intelligence (int): 20\n  - Wisdom (wis): Not provided, assume 0\n  - Sum = 20 + 0 = 20\n\n- Androsphinx:\n  - Intelligence (int): 16\n  - Wisdom (wis): 17\n  - Sum = 16 + 17 = 33\n\nSince 33 (Androsphinx) > 20 (Blood Queen), Androsphinx has a greater sum of intelligence and wisdom attributes than Blood Queen.\n\nAnswer: Yes, Androsphinx has a greater sum of intelligence and wisdom attributes than Blood Queen.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "BloodQueen",
+                        "bst:int",
+                        "20"
+                    ],
+                    [
+                        "Androsphinx",
+                        "bst:int",
+                        "16"
+                    ],
+                    [
+                        "Androsphinx",
+                        "bst:wis",
+                        "17"
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 7.502503395080566,
+            "SPARQL_CALLS": 10,
+            "SPARQL_TIME": 1.2274665832519531,
+            "LLM_CALLS": 5,
+            "LLM_INPUTS": 2979,
+            "LLM_OUTPUTS": 301,
+            "LLM_TIME": 6.273939847946167
+        }
+    },
+    {
+        "question": "does Baalzebul have a greater value of average statistics than Dagon?",
+        "results": "Based on the given knowledge triplets, we have information about Dagon's XP value (4915) and CR value (28), but there is no information about Baalzebul's statistics or average statistics. Therefore, it is not possible to determine if Baalzebul has a greater value of average statistics than Dagon with the provided data.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "statistics",
+                        "rdf:type",
+                        "owl:DatatypeProperty"
+                    ],
+                    [
+                        "Dagon",
+                        "bst:hasXPValue",
+                        "4915"
+                    ],
+                    [
+                        "Dagon",
+                        "bst:hasCRValue",
+                        "28"
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 9.910611391067505,
+            "SPARQL_CALLS": 19,
+            "SPARQL_TIME": 2.3184120655059814,
+            "LLM_CALLS": 7,
+            "LLM_INPUTS": 3902,
+            "LLM_OUTPUTS": 314,
+            "LLM_TIME": 7.590519428253174
+        }
+    },
+    {
+        "question": "which creatures speaking ghoul language do have the greatest constitution attribute?",
+        "results": "{Yes}. Based on the given knowledge triplets, the creature speaking the ghoul language (GhoulL) is associated with the entity 'bst:MythosGhoul', which has a constitution attribute ('bst:con') of 17. Since this is the only creature mentioned with the ghoul language and its constitution value is provided, we can conclude that the creatures speaking ghoul language with the greatest constitution attribute are the Mythos Ghouls with a constitution of 17. Therefore, the answer is {Mythos Ghoul with constitution 17}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "GhoulL",
+                        "bst:hasLanguages",
+                        "bst:MythosGhoul"
+                    ],
+                    [
+                        "GhoulL",
+                        "rdf:type",
+                        "owl:NamedIndividual"
+                    ]
+                ]
+            ],
+            [
+                [
+                    [
+                        "bst:MythosGhoul",
+                        "bst:con",
+                        "17"
+                    ],
+                    [
+                        "bst:MythosGhoul",
+                        "bst:hasHPvalue",
+                        "14"
+                    ],
+                    [
+                        "bst:MythosGhoul",
+                        "bst:hasCRValue",
+                        "0.5"
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 10.365577220916748,
+            "SPARQL_CALLS": 14,
+            "SPARQL_TIME": 2.008733034133911,
+            "LLM_CALLS": 7,
+            "LLM_INPUTS": 3675,
+            "LLM_OUTPUTS": 358,
+            "LLM_TIME": 8.348463773727417
+        }
+    },
+    {
+        "question": "is the number of creatures speaking dark language greater than cyclops language?",
+        "results": "The question asks whether the number of creatures speaking \"dark language\" is greater than those speaking \"cyclops language.\"\n\nWithout specific data or context about the number of creatures speaking each language, it is not possible to determine which number is greater.\n\nThe answer is: {Cannot determine from the given information}.",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 27.455454349517822,
+            "SPARQL_CALLS": 33,
+            "SPARQL_TIME": 4.420845985412598,
+            "LLM_CALLS": 15,
+            "LLM_INPUTS": 7182,
+            "LLM_OUTPUTS": 1031,
+            "LLM_TIME": 23.026984691619873
+        }
+    },
+    {
+        "question": "is the number of creatures speaking polyglot language greater than skald language?",
+        "results": "The question asks whether the number of creatures speaking a polyglot language is greater than those speaking a skald language.\n\nTo answer this, we need to understand what \"polyglot language\" and \"skald language\" refer to, and the number of creatures speaking each.\n\n- \"Polyglot language\" generally refers to a language known or spoken by multiple language speakers or a person who knows multiple languages. It is not a specific language spoken by creatures.\n\n- \"Skald language\" likely refers to the language used by skalds, who were poets in medieval Scandinavia, or possibly a constructed or fictional language named \"Skald.\"\n\nSince the question is about creatures speaking these languages, and no specific data is provided, it is not possible to definitively say which number is greater.\n\nTherefore, the answer is: There is insufficient information to determine whether the number of creatures speaking a polyglot language is greater than those speaking a skald language.",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 29.52571678161621,
+            "SPARQL_CALLS": 31,
+            "SPARQL_TIME": 4.212409257888794,
+            "LLM_CALLS": 15,
+            "LLM_INPUTS": 7212,
+            "LLM_OUTPUTS": 1351,
+            "LLM_TIME": 25.305516958236694
+        }
+    },
+    {
+        "question": "are angels characterized by the greater average value of experience points than demons?",
+        "results": "To determine if angels are characterized by a greater average value of experience points than demons, we would need data comparing the average experience points of angels and demons.\n\nSince no specific data is provided here, the answer cannot be determined from the given information.\n\nThe answer is {Insufficient information to determine}.",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 17.782042264938354,
+            "SPARQL_CALLS": 28,
+            "SPARQL_TIME": 3.743447780609131,
+            "LLM_CALLS": 12,
+            "LLM_INPUTS": 6261,
+            "LLM_OUTPUTS": 552,
+            "LLM_TIME": 14.03167200088501
+        }
+    },
+    {
+        "question": "do Lamia and Lilith have a common language and alignment?",
+        "results": "{Yes}. Based on the given knowledge triplets, Lilith and Lamia share a common language (bst:CommonL). However, their alignments differ: Lamia is chaotic evil, and Lilith is lawful evil. Therefore, the answer to whether they have a common language and alignment is that they share a common language but do not share the same alignment.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Lilith",
+                        "bst:hasLanguages",
+                        "bst:CommonL"
+                    ],
+                    [
+                        "Lamia",
+                        "bst:hasAlignment",
+                        "bst:chaoticEvil"
+                    ],
+                    [
+                        "Lilith",
+                        "bst:hasAlignment",
+                        "bst:lawfulEvil"
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 9.49012303352356,
+            "SPARQL_CALLS": 10,
+            "SPARQL_TIME": 1.2354812622070312,
+            "LLM_CALLS": 7,
+            "LLM_INPUTS": 2894,
+            "LLM_OUTPUTS": 208,
+            "LLM_TIME": 8.253231525421143
+        }
+    },
+    {
+        "question": "do Lorelei and sirens speak the same languages?",
+        "results": "First, Lorelei and sirens are both mythological creatures often associated with singing and luring sailors. Second, in mythology, both are typically depicted as speaking or singing in the language of the culture they originate from (e.g., German for Lorelei, Greek for sirens). Therefore, they do not necessarily speak the same languages. The answer is {No}.",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 21.851981163024902,
+            "SPARQL_CALLS": 29,
+            "SPARQL_TIME": 4.324944019317627,
+            "LLM_CALLS": 18,
+            "LLM_INPUTS": 7994,
+            "LLM_OUTPUTS": 527,
+            "LLM_TIME": 17.516334295272827
+        }
+    },
+    {
+        "question": "what is the average dexterity attribute for Phoenix and Sleipnir?",
+        "results": "{Yes}. Based on the given knowledge triplets, Phoenix has a dexterity (bst:dex) of 25 and Sleipnir has a dexterity of 18. The average dexterity attribute for Phoenix and Sleipnir is (25 + 18) / 2 = 21.5. Therefore, the answer to the question is {21.5}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Phoenix",
+                        "bst:dex",
+                        "25"
+                    ],
+                    [
+                        "Sleipnir",
+                        "bst:dex",
+                        "18"
+                    ],
+                    [
+                        "Phoenix",
+                        "bst:hasRefValue",
+                        "19"
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 6.922185659408569,
+            "SPARQL_CALLS": 10,
+            "SPARQL_TIME": 1.237821340560913,
+            "LLM_CALLS": 5,
+            "LLM_INPUTS": 2407,
+            "LLM_OUTPUTS": 176,
+            "LLM_TIME": 5.683202266693115
+        }
+    },
+    {
+        "question": "what is the maximum constitution attribute for Kraken and Leviathan?",
+        "results": "{Yes}. Based on the given knowledge triplets, the constitution attribute for Kraken is 29 and for Leviathan is 44. Therefore, the maximum constitution attribute between Kraken and Leviathan is {44}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Kraken",
+                        "bst:con",
+                        "29"
+                    ],
+                    [
+                        "Leviathan",
+                        "bst:con",
+                        "44"
+                    ],
+                    [
+                        "Kraken",
+                        "bst:hasHPvalue",
+                        "290"
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 4.707350254058838,
+            "SPARQL_CALLS": 10,
+            "SPARQL_TIME": 1.2187480926513672,
+            "LLM_CALLS": 3,
+            "LLM_INPUTS": 1941,
+            "LLM_OUTPUTS": 126,
+            "LLM_TIME": 3.487579822540283
+        }
+    },
+    {
+        "question": "what is the minimum wisdom attribute for Gorynych and Vodyanoi?",
+        "results": "{Yes}. Based on the given knowledge triplets, the wisdom attribute (bst:wis) for Gorynych is 17 and for Vodyanoi is 20. Therefore, the minimum wisdom attribute between Gorynych and Vodyanoi is {17}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Gorynych",
+                        "bst:wis",
+                        "17"
+                    ],
+                    [
+                        "Vodyanoi",
+                        "bst:wis",
+                        "20"
+                    ],
+                    [
+                        "Gorynych",
+                        "bst:int",
+                        "12"
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 6.286931037902832,
+            "SPARQL_CALLS": 10,
+            "SPARQL_TIME": 1.2402327060699463,
+            "LLM_CALLS": 5,
+            "LLM_INPUTS": 2414,
+            "LLM_OUTPUTS": 147,
+            "LLM_TIME": 5.045400857925415
+        }
+    },
+    {
+        "question": "does Kitsune or Rusalka have charisma attribute more than 20?",
+        "results": "{Yes}. Based on the given knowledge triplets, Kitsune has a charisma (bst:cha) value of 17, and Rusalka has a charisma value of 24. Since Rusalka's charisma is more than 20, the answer to the question is {Rusalka}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Kitsune",
+                        "bst:cha",
+                        "17"
+                    ],
+                    [
+                        "Rusalka",
+                        "bst:cha",
+                        "24"
+                    ],
+                    [
+                        "Kitsune",
+                        "bst:hasRefValue",
+                        "2"
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 6.549147367477417,
+            "SPARQL_CALLS": 10,
+            "SPARQL_TIME": 1.2340660095214844,
+            "LLM_CALLS": 5,
+            "LLM_INPUTS": 2416,
+            "LLM_OUTPUTS": 158,
+            "LLM_TIME": 5.3138580322265625
+        }
+    },
+    {
+        "question": "do both Amon and Cetus have strength attribute between 15 and 25?",
+        "results": "Based on the given knowledge triplets:\n\n- Amon has a strength (bst:str) of 36.\n- Cetus has a strength (bst:str) of 46.\n- Cetus has a reference value (bst:hasRefValue) of 15, but this does not appear to be the strength attribute.\n\nSince both Amon's strength (36) and Cetus's strength (46) are above the range 15 to 25, neither Amon nor Cetus has a strength attribute between 15 and 25.\n\nTherefore, the answer is: No, neither Amon nor Cetus has a strength attribute between 15 and 25.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Amon",
+                        "bst:str",
+                        "36"
+                    ],
+                    [
+                        "Cetus",
+                        "bst:str",
+                        "46"
+                    ],
+                    [
+                        "Cetus",
+                        "bst:hasRefValue",
+                        "15"
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 9.020324468612671,
+            "SPARQL_CALLS": 10,
+            "SPARQL_TIME": 1.24855375289917,
+            "LLM_CALLS": 6,
+            "LLM_INPUTS": 3198,
+            "LLM_OUTPUTS": 341,
+            "LLM_TIME": 7.770442008972168
+        }
+    },
+    {
+        "question": "does Sandman or Charon speak elder or boggarg language?",
+        "results": "{Yes}. Based on the given knowledge triplets, Sandman speaks the language labeled as 'bst:TerranL', and Charon speaks 'bst:AbyssalL' and 'bst:CelestialL'. There is no mention of either Sandman or Charon speaking elder or boggarg language. Therefore, the answer to the question \"does Sandman or Charon speak elder or boggarg language?\" is {No, neither Sandman nor Charon speaks elder or boggarg language}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Sandman",
+                        "bst:hasLanguages",
+                        "bst:TerranL"
+                    ],
+                    [
+                        "Charon",
+                        "bst:hasLanguages",
+                        "bst:AbyssalL"
+                    ],
+                    [
+                        "Charon",
+                        "bst:hasLanguages",
+                        "bst:CelestialL"
+                    ]
+                ]
+            ],
+            [
+                [
+                    [
+                        "bst:AbyssalL",
+                        "rdf:type",
+                        "bst:Language"
+                    ],
+                    [
+                        "bst:AbyssalL",
+                        "rdf:type",
+                        "owl:NamedIndividual"
+                    ],
+                    [
+                        "bst:CelestialL",
+                        "rdf:type",
+                        "bst:Language"
+                    ]
+                ]
+            ],
+            [
+                [
+                    [
+                        "bst:Language",
+                        "rdf:type",
+                        "owl:Class"
+                    ],
+                    [
+                        "bst:Language",
+                        "rdfs:domain",
+                        "bst:spokenBy"
+                    ],
+                    [
+                        "bst:Language",
+                        "rdfs:range",
+                        "bst:hasLanguages"
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 26.742124319076538,
+            "SPARQL_CALLS": 38,
+            "SPARQL_TIME": 5.329720497131348,
+            "LLM_CALLS": 20,
+            "LLM_INPUTS": 8868,
+            "LLM_OUTPUTS": 641,
+            "LLM_TIME": 21.40264916419983
+        }
+    }
+]

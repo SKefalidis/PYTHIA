@@ -1,0 +1,20 @@
+PREFIX orkgp: <http://orkg.org/orkg/predicate/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT
+  ?id
+  (GROUP_CONCAT(DISTINCT ?info; SEPARATOR=";;;") AS ?infos)
+WHERE {
+  # Get additional information
+  {
+    VALUES ?id { {IDS} }
+    ?id rdf:type/rdfs:label ?type
+    BIND(CONCAT("is a ", ?type) AS ?info)
+  } UNION {
+    VALUES ?id { {IDS} }
+    ?id orkgp:description ?info 
+  }
+}
+GROUP BY ?id

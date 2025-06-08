@@ -1,0 +1,25 @@
+version: "0.1"
+index_dir: "./indices/"
+
+pythia:
+  execute_sparql: true # whether to execute SPARQL queries against the endpoint instead of just returning them
+
+# query database, used for few-shot learning
+qd:
+  top_k: 3
+
+llm:
+  provider: "openai"
+  model: "gpt-4.1-mini"
+  api_key: env(OPENAI_API_KEY:null)
+
+agent_max_tokens: 768
+agent_max_steps: 10
+agent_no_relational_model: false # whether to disable the relational model
+
+endpoint:
+  server: env(ENDPOINT_SERVER:null) # either a complete repository URL or just the server address (no http, only IP address and port) in which case the default repository names will be used (only works for GraphDB)
+  server_manager: null # not necessary, used to reset server repositories between runs, if not provided, repositories will not be reset
+  username: env(ENDPOINT_USER:null)
+  password: env(ENDPOINT_PASSWORD:null)
+  graph_search_server: env(GRAPH_SEARCH_SERVER:null) # necessary for graph search tool

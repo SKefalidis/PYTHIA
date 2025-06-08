@@ -1,0 +1,4613 @@
+[
+    {
+        "question": "What is the time zone of Salt Lake City?",
+        "answer": [
+            [
+                "Mountain Standard Time",
+                " MST"
+            ]
+        ],
+        "elapsed": 0.5550625324249268,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5548794269561768,
+            "LLM_INPUTS": 226,
+            "LLM_OUTPUTS": 9
+        }
+    },
+    {
+        "question": "Who killed Caesar?",
+        "answer": [],
+        "elapsed": 0.48642468452453613,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.4862966537475586,
+            "LLM_INPUTS": 220,
+            "LLM_OUTPUTS": 9
+        }
+    },
+    {
+        "question": "What is the highest mountain in Germany?",
+        "answer": [
+            [
+                "Zugspitze"
+            ]
+        ],
+        "elapsed": 0.500777006149292,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5006570816040039,
+            "LLM_INPUTS": 224,
+            "LLM_OUTPUTS": 8
+        }
+    },
+    {
+        "question": "Which American presidents were in office during the Vietnam War?",
+        "answer": [
+            [
+                "Dwight D. Eisenhower"
+            ],
+            [
+                "John F. Kennedy"
+            ],
+            [
+                "Lyndon B. Johnson"
+            ],
+            [
+                "Richard Nixon"
+            ],
+            [
+                "Gerald Ford"
+            ]
+        ],
+        "elapsed": 0.6728518009185791,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.6727256774902344,
+            "LLM_INPUTS": 227,
+            "LLM_OUTPUTS": 29
+        }
+    },
+    {
+        "question": "Butch Otter is the governor of which U.S. state?",
+        "answer": [
+            [
+                "Idaho"
+            ]
+        ],
+        "elapsed": 0.46125197410583496,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.4611241817474365,
+            "LLM_INPUTS": 230,
+            "LLM_OUTPUTS": 6
+        }
+    },
+    {
+        "question": "How many gold medals did Michael Phelps win at the 2008 Olympics?",
+        "answer": [
+            [
+                "8"
+            ]
+        ],
+        "elapsed": 0.41561079025268555,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.4154949188232422,
+            "LLM_INPUTS": 232,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "Which artists were born on the same date as Rachel Stevens?",
+        "answer": [
+            [
+                "Rachel Stevens"
+            ],
+            [
+                "Demi Lovato"
+            ],
+            [
+                "Oscar Isaac"
+            ]
+        ],
+        "elapsed": 0.542229413986206,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5421276092529297,
+            "LLM_INPUTS": 228,
+            "LLM_OUTPUTS": 14
+        }
+    },
+    {
+        "question": "What is the profession of Frank Herbert?",
+        "answer": [
+            [
+                "Author"
+            ]
+        ],
+        "elapsed": 0.42983007431030273,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.42970919609069824,
+            "LLM_INPUTS": 224,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "Are Taiko some kind of Japanese musical instrument?",
+        "answer": [
+            [
+                "True"
+            ]
+        ],
+        "elapsed": 0.42772459983825684,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.4276087284088135,
+            "LLM_INPUTS": 226,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "How many seats does the home stadium of FC Porto have?",
+        "answer": [
+            [
+                "50",
+                "431"
+            ]
+        ],
+        "elapsed": 0.5878078937530518,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5876836776733398,
+            "LLM_INPUTS": 228,
+            "LLM_OUTPUTS": 7
+        }
+    },
+    {
+        "question": "Which frequent flyer program has the most airlines?",
+        "answer": [
+            [
+                "oneworld"
+            ]
+        ],
+        "elapsed": 0.4726254940032959,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.4725179672241211,
+            "LLM_INPUTS": 225,
+            "LLM_OUTPUTS": 6
+        }
+    },
+    {
+        "question": "Which European countries have a constitutional monarchy?",
+        "answer": [
+            [
+                "Belgium"
+            ],
+            [
+                "Denmark"
+            ],
+            [
+                "Liechtenstein"
+            ],
+            [
+                "Luxembourg"
+            ],
+            [
+                "Monaco"
+            ],
+            [
+                "Netherlands"
+            ],
+            [
+                "Norway"
+            ],
+            [
+                "Spain"
+            ],
+            [
+                "Sweden"
+            ],
+            [
+                "United Kingdom"
+            ]
+        ],
+        "elapsed": 0.7835581302642822,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.7834537029266357,
+            "LLM_INPUTS": 224,
+            "LLM_OUTPUTS": 34
+        }
+    },
+    {
+        "question": "Which countries have places with more than two caves?",
+        "answer": [
+            [
+                "Slovenia"
+            ],
+            [
+                "Spain"
+            ],
+            [
+                "United States"
+            ],
+            [
+                "China"
+            ],
+            [
+                "France"
+            ],
+            [
+                "Mexico"
+            ],
+            [
+                "Vietnam"
+            ]
+        ],
+        "elapsed": 0.6216964721679688,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.6215593814849854,
+            "LLM_INPUTS": 226,
+            "LLM_OUTPUTS": 20
+        }
+    },
+    {
+        "question": "Which airports are located in California, USA?",
+        "answer": [
+            [
+                "Los Angeles International Airport LAX"
+            ],
+            [
+                "San Francisco International Airport SFO"
+            ],
+            [
+                "San Diego International Airport SAN"
+            ],
+            [
+                "Oakland International Airport OAK"
+            ],
+            [
+                "Sacramento International Airport SMF"
+            ],
+            [
+                "San Jose International Airport SJC"
+            ],
+            [
+                "John Wayne Airport SNA"
+            ],
+            [
+                "Ontario International Airport ONT"
+            ],
+            [
+                "Fresno Yosemite International Airport FAT"
+            ],
+            [
+                "Long Beach Airport LGB"
+            ]
+        ],
+        "elapsed": 1.2693700790405273,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.2692358493804932,
+            "LLM_INPUTS": 225,
+            "LLM_OUTPUTS": 71
+        }
+    },
+    {
+        "question": "What are the nicknames of San Francisco?",
+        "answer": [
+            [
+                "The City by the Bay"
+            ],
+            [
+                "Fog City"
+            ],
+            [
+                "The Golden City"
+            ],
+            [
+                "San Fran"
+            ],
+            [
+                "SF"
+            ],
+            [
+                "Frisco"
+            ],
+            [
+                "The Paris of the West"
+            ],
+            [
+                "The City"
+            ]
+        ],
+        "elapsed": 0.7251675128936768,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.725003719329834,
+            "LLM_INPUTS": 225,
+            "LLM_OUTPUTS": 33
+        }
+    },
+    {
+        "question": "What is Angela Merkel\u2019s birth name?",
+        "answer": [
+            [
+                "Angela Dorothea Kasner"
+            ]
+        ],
+        "elapsed": 0.536552906036377,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5363960266113281,
+            "LLM_INPUTS": 224,
+            "LLM_OUTPUTS": 10
+        }
+    },
+    {
+        "question": "Who is the mayor of Berlin?",
+        "answer": [
+            [
+                "Klaus Wowereit"
+            ]
+        ],
+        "elapsed": 0.5310947895050049,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5309391021728516,
+            "LLM_INPUTS": 223,
+            "LLM_OUTPUTS": 9
+        }
+    },
+    {
+        "question": "Which countries in the European Union adopted the Euro?",
+        "answer": [
+            [
+                "Austria"
+            ],
+            [
+                "Belgium"
+            ],
+            [
+                "Cyprus"
+            ],
+            [
+                "Estonia"
+            ],
+            [
+                "Finland"
+            ],
+            [
+                "France"
+            ],
+            [
+                "Germany"
+            ],
+            [
+                "Greece"
+            ],
+            [
+                "Ireland"
+            ],
+            [
+                "Italy"
+            ],
+            [
+                "Latvia"
+            ],
+            [
+                "Lithuania"
+            ],
+            [
+                "Luxembourg"
+            ],
+            [
+                "Malta"
+            ],
+            [
+                "Netherlands"
+            ],
+            [
+                "Portugal"
+            ],
+            [
+                "Slovakia"
+            ],
+            [
+                "Slovenia"
+            ],
+            [
+                "Spain"
+            ]
+        ],
+        "elapsed": 1.1496455669403076,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.1494817733764648,
+            "LLM_INPUTS": 226,
+            "LLM_OUTPUTS": 58
+        }
+    },
+    {
+        "question": "Which software has been published by Mean Hamster Software?",
+        "answer": [
+            [
+                "Puzzlegeddon"
+            ],
+            [
+                "Spider: The Secret of Bryce Manor"
+            ]
+        ],
+        "elapsed": 0.6035761833190918,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.6034524440765381,
+            "LLM_INPUTS": 227,
+            "LLM_OUTPUTS": 17
+        }
+    },
+    {
+        "question": "Which country was Bill Gates born in?",
+        "answer": [
+            [
+                "United States"
+            ]
+        ],
+        "elapsed": 0.5084986686706543,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.508326530456543,
+            "LLM_INPUTS": 224,
+            "LLM_OUTPUTS": 6
+        }
+    },
+    {
+        "question": "How many grand-children did Jacques Cousteau have?",
+        "answer": [
+            [
+                "Five"
+            ]
+        ],
+        "elapsed": 0.44382786750793457,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.4437112808227539,
+            "LLM_INPUTS": 228,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "Give me all professional skateboarders from Sweden.",
+        "answer": [],
+        "elapsed": 0.4637007713317871,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.4635794162750244,
+            "LLM_INPUTS": 225,
+            "LLM_OUTPUTS": 8
+        }
+    },
+    {
+        "question": "Which monarchs of the United Kingdom were married to a German?",
+        "answer": [
+            [
+                "Queen Victoria Prince Albert"
+            ],
+            [
+                "King George I Sophia Dorothea of Celle"
+            ],
+            [
+                "King George II Caroline of Ansbach"
+            ],
+            [
+                "King George III Charlotte of Mecklenburg-Strelitz"
+            ],
+            [
+                "King George IV Caroline of Brunswick"
+            ],
+            [
+                "King William IV Adelaide of Saxe-Meiningen"
+            ],
+            [
+                "Queen Victoria Prince Albert"
+            ],
+            [
+                "King Edward VII Alexandra of Denmark (not German",
+                " so excluded)"
+            ],
+            [
+                "King George V Mary of Teck"
+            ],
+            [
+                "King George VI Elizabeth Bowes-Lyon (not German",
+                " so excluded)"
+            ]
+        ],
+        "elapsed": 1.4077696800231934,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.407642126083374,
+            "LLM_INPUTS": 229,
+            "LLM_OUTPUTS": 95
+        }
+    },
+    {
+        "question": "Give me all Argentine films.",
+        "answer": [],
+        "elapsed": 0.6877844333648682,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.687671422958374,
+            "LLM_INPUTS": 222,
+            "LLM_OUTPUTS": 32
+        }
+    },
+    {
+        "question": "How did Michael Jackson die?",
+        "answer": [
+            [
+                "Acute propofol and benzodiazepine intoxication"
+            ]
+        ],
+        "elapsed": 0.6236801147460938,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.6235618591308594,
+            "LLM_INPUTS": 222,
+            "LLM_OUTPUTS": 16
+        }
+    },
+    {
+        "question": "Which U.S. state has been admitted latest?",
+        "answer": [
+            [
+                "Hawaii"
+            ],
+            [
+                "1959"
+            ]
+        ],
+        "elapsed": 0.4956095218658447,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.49548864364624023,
+            "LLM_INPUTS": 226,
+            "LLM_OUTPUTS": 9
+        }
+    },
+    {
+        "question": "Which classes does the Millepede belong to?",
+        "answer": [
+            [
+                "Insecta"
+            ],
+            [
+                "Coleoptera"
+            ]
+        ],
+        "elapsed": 1.003084421157837,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.0029654502868652,
+            "LLM_INPUTS": 226,
+            "LLM_OUTPUTS": 52
+        }
+    },
+    {
+        "question": "Give me the homepage of Forbes.",
+        "answer": [
+            [
+                "https://www.forbes.com"
+            ]
+        ],
+        "elapsed": 0.6549263000488281,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.6548049449920654,
+            "LLM_INPUTS": 223,
+            "LLM_OUTPUTS": 10
+        }
+    },
+    {
+        "question": "Who is the husband of Amanda Palmer?",
+        "answer": [
+            [
+                "Neil Gaiman"
+            ]
+        ],
+        "elapsed": 0.45298290252685547,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.4528660774230957,
+            "LLM_INPUTS": 224,
+            "LLM_OUTPUTS": 7
+        }
+    },
+    {
+        "question": "Who painted The Storm on the Sea of Galilee?",
+        "answer": [
+            [
+                "Rembrandt van Rijn"
+            ]
+        ],
+        "elapsed": 0.4672527313232422,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.467132568359375,
+            "LLM_INPUTS": 227,
+            "LLM_OUTPUTS": 8
+        }
+    },
+    {
+        "question": "What is the highest place of Karakoram?",
+        "answer": [
+            [
+                "K2"
+            ]
+        ],
+        "elapsed": 0.4481832981109619,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.4480628967285156,
+            "LLM_INPUTS": 226,
+            "LLM_OUTPUTS": 6
+        }
+    },
+    {
+        "question": "When did Finland join the EU?",
+        "answer": [
+            [
+                "1995"
+            ]
+        ],
+        "elapsed": 0.48491549491882324,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.48476743698120117,
+            "LLM_INPUTS": 223,
+            "LLM_OUTPUTS": 6
+        }
+    },
+    {
+        "question": "Which actors play in Big Bang Theory?",
+        "answer": [
+            [
+                "Johnny Galecki"
+            ],
+            [
+                "Jim Parsons"
+            ],
+            [
+                "Kaley Cuoco"
+            ],
+            [
+                "Simon Helberg"
+            ],
+            [
+                "Kunal Nayyar"
+            ],
+            [
+                "Mayim Bialik"
+            ],
+            [
+                "Melissa Rauch"
+            ],
+            [
+                "Kevin Sussman"
+            ]
+        ],
+        "elapsed": 0.9980618953704834,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.997931957244873,
+            "LLM_INPUTS": 224,
+            "LLM_OUTPUTS": 38
+        }
+    },
+    {
+        "question": "Which computer scientist won an oscar?",
+        "answer": [
+            [
+                "Ed Catmull"
+            ]
+        ],
+        "elapsed": 0.4664759635925293,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.46628546714782715,
+            "LLM_INPUTS": 224,
+            "LLM_OUTPUTS": 8
+        }
+    },
+    {
+        "question": "Who wrote Harry Potter?",
+        "answer": [
+            [
+                "J.K. Rowling"
+            ]
+        ],
+        "elapsed": 0.4942951202392578,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.4941365718841553,
+            "LLM_INPUTS": 221,
+            "LLM_OUTPUTS": 8
+        }
+    },
+    {
+        "question": "Give me all writers that won the Nobel Prize in literature.",
+        "answer": [
+            [
+                "Sully Prudhomme"
+            ],
+            [
+                "Theodor Mommsen"
+            ],
+            [
+                "Bj\u00f8rnstjerne Bj\u00f8rnson"
+            ],
+            [
+                "Emile Zola"
+            ],
+            [
+                "Henryk Sienkiewicz"
+            ],
+            [
+                "Giosu\u00e8 Carducci"
+            ],
+            [
+                "Rudyard Kipling"
+            ],
+            [
+                "Romain Rolland"
+            ],
+            [
+                "Rabindranath Tagore"
+            ],
+            [
+                "Verner von Heidenstam"
+            ],
+            [
+                "Carl Friedrich Georg Spitteler"
+            ],
+            [
+                "W\u0142adys\u0142aw Reymont"
+            ],
+            [
+                "George Bernard Shaw"
+            ],
+            [
+                "Anton Chekhov"
+            ],
+            [
+                "Knut Hamsun"
+            ],
+            [
+                "Sigrid Undset"
+            ],
+            [
+                "George Bernard Shaw"
+            ],
+            [
+                "Jos\u00e9 Echegaray"
+            ],
+            [
+                "Grazia Deledda"
+            ],
+            [
+                "Romain Rolland"
+            ],
+            [
+                "Thomas Mann"
+            ],
+            [
+                "Frans Eemil Sillanp\u00e4\u00e4"
+            ],
+            [
+                "Hermann Hesse"
+            ],
+            [
+                "Pearl S. Buck"
+            ],
+            [
+                "Archibald MacLeish"
+            ],
+            [
+                "Gabriela Mistral"
+            ],
+            [
+                "William Faulkner"
+            ],
+            [
+                "T. S. Eliot"
+            ],
+            [
+                "Winston Churchill"
+            ],
+            [
+                "Saint-John Perse"
+            ],
+            [
+                "John Steinbeck"
+            ],
+            [
+                "Eugene O'Neill"
+            ],
+            [
+                "Svetlana Alexievich"
+            ],
+            [
+                "Aleksandr Solzhenitsyn"
+            ],
+            [
+                "Gabriel Garc\u00eda M\u00e1rquez"
+            ],
+            [
+                "Naguib Mahfouz"
+            ],
+            [
+                "Derek Walcott"
+            ],
+            [
+                "Wole Soyinka"
+            ],
+            [
+                "Seamus Heaney"
+            ],
+            [
+                "V. S. Naipaul"
+            ],
+            [
+                "Orhan Pamuk"
+            ],
+            [
+                "J. M. Coetzee"
+            ],
+            [
+                "Doris Lessing"
+            ],
+            [
+                "Mario Vargas Llosa"
+            ],
+            [
+                "Alice Munro"
+            ],
+            [
+                "Mo Yan"
+            ],
+            [
+                "Patrick Modiano"
+            ],
+            [
+                "Svetlana Alexievich"
+            ],
+            [
+                "Bob Dylan"
+            ],
+            [
+                "Kazuo Ishiguro"
+            ]
+        ],
+        "elapsed": 4.097171306610107,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 4.097010612487793,
+            "LLM_INPUTS": 228,
+            "LLM_OUTPUTS": 322
+        }
+    },
+    {
+        "question": "Give me English actors starring in Lovesick.",
+        "answer": [
+            [
+                "Johnny Flynn"
+            ],
+            [
+                "Antonia Thomas"
+            ],
+            [
+                "Daniel Ings"
+            ]
+        ],
+        "elapsed": 0.5499489307403564,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5498301982879639,
+            "LLM_INPUTS": 225,
+            "LLM_OUTPUTS": 14
+        }
+    },
+    {
+        "question": "What is the nick name of Baghdad?",
+        "answer": [
+            [
+                "The City of Peace"
+            ]
+        ],
+        "elapsed": 0.49921178817749023,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.4990866184234619,
+            "LLM_INPUTS": 224,
+            "LLM_OUTPUTS": 8
+        }
+    },
+    {
+        "question": "In which city was the president of Montenegro born?",
+        "answer": [
+            [
+                "Nik\u0161i\u0107"
+            ]
+        ],
+        "elapsed": 0.5198485851287842,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5197265148162842,
+            "LLM_INPUTS": 226,
+            "LLM_OUTPUTS": 7
+        }
+    },
+    {
+        "question": "Which U.S. state has the highest population density?",
+        "answer": [
+            [
+                "New Jersey"
+            ]
+        ],
+        "elapsed": 0.47129011154174805,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.4711570739746094,
+            "LLM_INPUTS": 227,
+            "LLM_OUTPUTS": 6
+        }
+    },
+    {
+        "question": "What is the longest river in China?",
+        "answer": [
+            [
+                "Yangtze River"
+            ]
+        ],
+        "elapsed": 0.4642808437347412,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.4641587734222412,
+            "LLM_INPUTS": 224,
+            "LLM_OUTPUTS": 8
+        }
+    },
+    {
+        "question": "What is the area code of Berlin?",
+        "answer": [
+            [
+                "030"
+            ]
+        ],
+        "elapsed": 0.47042107582092285,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.47030186653137207,
+            "LLM_INPUTS": 224,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "How many scientists graduated from an Ivy League university?",
+        "answer": [
+            [
+                "Unknown"
+            ]
+        ],
+        "elapsed": 0.5259284973144531,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.52579665184021,
+            "LLM_INPUTS": 226,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "Which professional surfers were born in Australia?",
+        "answer": [
+            [
+                "Mick Fanning"
+            ],
+            [
+                "Layne Beachley"
+            ],
+            [
+                "Stephanie Gilmore"
+            ],
+            [
+                "Mark Richards"
+            ],
+            [
+                "Tom Carroll"
+            ]
+        ],
+        "elapsed": 0.6559014320373535,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.6557714939117432,
+            "LLM_INPUTS": 224,
+            "LLM_OUTPUTS": 23
+        }
+    },
+    {
+        "question": "Give me all Dutch parties.",
+        "answer": [
+            [
+                "People's Party for Freedom and Democracy",
+                " Volkspartij voor Vrijheid en Democratie",
+                " VVD"
+            ],
+            [
+                "Labour Party",
+                " Partij van de Arbeid",
+                " PvdA"
+            ],
+            [
+                "Christian Democratic Appeal",
+                " Christen-Democratisch App\u00e8l",
+                " CDA"
+            ],
+            [
+                "Democrats 66",
+                " Democraten 66",
+                " D66"
+            ],
+            [
+                "Party for Freedom",
+                " Partij voor de Vrijheid",
+                " PVV"
+            ],
+            [
+                "Socialist Party",
+                " Socialistische Partij",
+                " SP"
+            ],
+            [
+                "GreenLeft",
+                " GroenLinks"
+            ],
+            [
+                "Reformed Political Party",
+                " Staatkundig Gereformeerde Partij",
+                " SGP"
+            ],
+            [
+                "Party for the Animals",
+                " Partij voor de Dieren",
+                " PvdD"
+            ],
+            [
+                "50PLUS"
+            ],
+            [
+                "DENK"
+            ]
+        ],
+        "elapsed": 1.8843045234680176,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.8841230869293213,
+            "LLM_INPUTS": 222,
+            "LLM_OUTPUTS": 135
+        }
+    },
+    {
+        "question": "How many moons does Mars have?",
+        "answer": [
+            [
+                "2"
+            ]
+        ],
+        "elapsed": 0.43950557708740234,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.4393928050994873,
+            "LLM_INPUTS": 223,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "What is Batman's real name?",
+        "answer": [
+            [
+                "Bruce Wayne"
+            ]
+        ],
+        "elapsed": 0.4257545471191406,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.42563748359680176,
+            "LLM_INPUTS": 223,
+            "LLM_OUTPUTS": 6
+        }
+    },
+    {
+        "question": "What is Elon Musk famous for?",
+        "answer": [
+            [
+                "CEO of Tesla and SpaceX",
+                " Pioneer in electric vehicles and space exploration",
+                " Co-founder of PayPal"
+            ]
+        ],
+        "elapsed": 0.616243839263916,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.616138219833374,
+            "LLM_INPUTS": 223,
+            "LLM_OUTPUTS": 24
+        }
+    },
+    {
+        "question": "Who is the author of WikiLeaks?",
+        "answer": [
+            [
+                "Julian Assange"
+            ]
+        ],
+        "elapsed": 0.4476776123046875,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.44757843017578125,
+            "LLM_INPUTS": 224,
+            "LLM_OUTPUTS": 8
+        }
+    },
+    {
+        "question": "Sean Parnell was the governor of which U.S. state?",
+        "answer": [
+            [
+                "Alaska"
+            ]
+        ],
+        "elapsed": 0.5384488105773926,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5383250713348389,
+            "LLM_INPUTS": 230,
+            "LLM_OUTPUTS": 6
+        }
+    },
+    {
+        "question": "How many years was the Ford Model T manufactured?",
+        "answer": [
+            [
+                "19"
+            ]
+        ],
+        "elapsed": 0.440845251083374,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.44071245193481445,
+            "LLM_INPUTS": 226,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "When was Carlo Giuliani shot?",
+        "answer": [
+            [
+                "2001-07-20"
+            ]
+        ],
+        "elapsed": 0.49563026428222656,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.49550414085388184,
+            "LLM_INPUTS": 223,
+            "LLM_OUTPUTS": 10
+        }
+    },
+    {
+        "question": "Give me all animals that are extinct.",
+        "answer": [
+            [
+                "Dodo"
+            ],
+            [
+                "Tasmanian tiger"
+            ],
+            [
+                "Passenger pigeon"
+            ],
+            [
+                "Great auk"
+            ],
+            [
+                "Steller's sea cow"
+            ],
+            [
+                "Quagga"
+            ],
+            [
+                "Pyrenean ibex"
+            ]
+        ],
+        "elapsed": 0.7457764148712158,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.745607852935791,
+            "LLM_INPUTS": 224,
+            "LLM_OUTPUTS": 33
+        }
+    },
+    {
+        "question": "Who was the wife of President Lincoln?",
+        "answer": [
+            [
+                "Mary Todd Lincoln"
+            ]
+        ],
+        "elapsed": 0.46996378898620605,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.46982526779174805,
+            "LLM_INPUTS": 224,
+            "LLM_OUTPUTS": 7
+        }
+    },
+    {
+        "question": "How many awards has Bertrand Russell?",
+        "answer": [
+            [
+                "2"
+            ]
+        ],
+        "elapsed": 0.4696943759918213,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.46957874298095703,
+            "LLM_INPUTS": 223,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "Is Pamela Anderson a vegan?",
+        "answer": [
+            [
+                "False"
+            ]
+        ],
+        "elapsed": 0.4357309341430664,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.4356117248535156,
+            "LLM_INPUTS": 222,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "Which space probes were sent into orbit around the sun?",
+        "answer": [
+            [
+                "Helios 1"
+            ],
+            [
+                "Helios 2"
+            ],
+            [
+                "Parker Solar Probe"
+            ]
+        ],
+        "elapsed": 0.7152831554412842,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.7151989936828613,
+            "LLM_INPUTS": 227,
+            "LLM_OUTPUTS": 18
+        }
+    },
+    {
+        "question": "Which German cities have more than 250000 inhabitants?",
+        "answer": [
+            [
+                "Berlin",
+                " 3",
+                "500",
+                "000"
+            ],
+            [
+                "Hamburg",
+                " 1",
+                "800",
+                "000"
+            ],
+            [
+                "Munich",
+                " 1",
+                "450",
+                "000"
+            ],
+            [
+                "Cologne",
+                " 1",
+                "050",
+                "000"
+            ],
+            [
+                "Frankfurt",
+                " 700",
+                "000"
+            ],
+            [
+                "Stuttgart",
+                " 600",
+                "000"
+            ],
+            [
+                "D\u00fcsseldorf",
+                " 600",
+                "000"
+            ],
+            [
+                "Dortmund",
+                " 580",
+                "000"
+            ],
+            [
+                "Essen",
+                " 580",
+                "000"
+            ],
+            [
+                "Leipzig",
+                " 570",
+                "000"
+            ],
+            [
+                "Bremen",
+                " 550",
+                "000"
+            ],
+            [
+                "Dresden",
+                " 540",
+                "000"
+            ],
+            [
+                "Hanover",
+                " 520",
+                "000"
+            ],
+            [
+                "Nuremberg",
+                " 510",
+                "000"
+            ],
+            [
+                "Duisburg",
+                " 490",
+                "000"
+            ],
+            [
+                "Bochum",
+                " 365",
+                "000"
+            ],
+            [
+                "Wuppertal",
+                " 350",
+                "000"
+            ],
+            [
+                "Bielefeld",
+                " 330",
+                "000"
+            ],
+            [
+                "Bonn",
+                " 320",
+                "000"
+            ],
+            [
+                "M\u00fcnster",
+                " 310",
+                "000"
+            ],
+            [
+                "Karlsruhe",
+                " 300",
+                "000"
+            ],
+            [
+                "Mannheim",
+                " 310",
+                "000"
+            ],
+            [
+                "Augsburg",
+                " 280",
+                "000"
+            ],
+            [
+                "Wiesbaden",
+                " 280",
+                "000"
+            ],
+            [
+                "Gelsenkirchen",
+                " 260",
+                "000"
+            ],
+            [
+                "M\u00f6nchengladbach",
+                " 260",
+                "000"
+            ],
+            [
+                "Braunschweig",
+                " 250",
+                "000"
+            ]
+        ],
+        "elapsed": 3.4326012134552,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 3.4324965476989746,
+            "LLM_INPUTS": 227,
+            "LLM_OUTPUTS": 247
+        }
+    },
+    {
+        "question": "Who is the daughter of Robert Kennedy married to?",
+        "answer": [
+            [
+                "David Sheffield"
+            ]
+        ],
+        "elapsed": 0.4826772212982178,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.4825608730316162,
+            "LLM_INPUTS": 226,
+            "LLM_OUTPUTS": 6
+        }
+    },
+    {
+        "question": "How many students does the Free University of Amsterdam have?",
+        "answer": [
+            [
+                "30000"
+            ]
+        ],
+        "elapsed": 0.4365396499633789,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.43642210960388184,
+            "LLM_INPUTS": 227,
+            "LLM_OUTPUTS": 6
+        }
+    },
+    {
+        "question": "What is the revenue of IBM?",
+        "answer": [
+            [
+                "79590000000"
+            ]
+        ],
+        "elapsed": 0.4797549247741699,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.4796419143676758,
+            "LLM_INPUTS": 223,
+            "LLM_OUTPUTS": 8
+        }
+    },
+    {
+        "question": "How many James Bond movies do exist?",
+        "answer": [
+            [
+                "24"
+            ]
+        ],
+        "elapsed": 0.5738186836242676,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5737051963806152,
+            "LLM_INPUTS": 224,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "Who does the voice of Bart Simpson?",
+        "answer": [
+            [
+                "Nancy Cartwright"
+            ]
+        ],
+        "elapsed": 0.45648622512817383,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.45637965202331543,
+            "LLM_INPUTS": 224,
+            "LLM_OUTPUTS": 7
+        }
+    },
+    {
+        "question": "Who was Tom Hanks married to?",
+        "answer": [
+            [
+                "Samantha Lewes"
+            ],
+            [
+                "Rita Wilson"
+            ]
+        ],
+        "elapsed": 0.5065147876739502,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5064153671264648,
+            "LLM_INPUTS": 224,
+            "LLM_OUTPUTS": 12
+        }
+    },
+    {
+        "question": "Through which countries does the Yenisei river flow?",
+        "answer": [
+            [
+                "Russia"
+            ]
+        ],
+        "elapsed": 0.6588847637176514,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.6587512493133545,
+            "LLM_INPUTS": 227,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "Give me all cars that are produced in Germany.",
+        "answer": [
+            [
+                "Volkswagen"
+            ],
+            [
+                "BMW"
+            ],
+            [
+                "Mercedes-Benz"
+            ],
+            [
+                "Audi"
+            ],
+            [
+                "Porsche"
+            ],
+            [
+                "Opel"
+            ]
+        ],
+        "elapsed": 0.7052481174468994,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.7051570415496826,
+            "LLM_INPUTS": 226,
+            "LLM_OUTPUTS": 19
+        }
+    },
+    {
+        "question": "When did Michael Jackson die?",
+        "answer": [
+            [
+                "2009-06-25"
+            ]
+        ],
+        "elapsed": 0.5639762878417969,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.563849925994873,
+            "LLM_INPUTS": 222,
+            "LLM_OUTPUTS": 10
+        }
+    },
+    {
+        "question": "What is the highest volcano in Africa?",
+        "answer": [
+            [
+                "Mount Kilimanjaro"
+            ]
+        ],
+        "elapsed": 0.5220241546630859,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5219078063964844,
+            "LLM_INPUTS": 224,
+            "LLM_OUTPUTS": 9
+        }
+    },
+    {
+        "question": "Which poet wrote the most books?",
+        "answer": [
+            [
+                "Pablo Neruda"
+            ]
+        ],
+        "elapsed": 0.6418936252593994,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.6417720317840576,
+            "LLM_INPUTS": 223,
+            "LLM_OUTPUTS": 8
+        }
+    },
+    {
+        "question": "Give me all gangsters from the prohibition era.",
+        "answer": [
+            [
+                "Al Capone Chicago"
+            ],
+            [
+                "Bugsy Siegel New York/Las Vegas"
+            ],
+            [
+                "Lucky Luciano New York"
+            ],
+            [
+                "Meyer Lansky New York"
+            ],
+            [
+                "Dutch Schultz New York"
+            ],
+            [
+                "Johnny Torrio Chicago"
+            ],
+            [
+                "Gratton \u201cBig Jim\u201d Colosimo Chicago"
+            ],
+            [
+                "Frank Costello New York"
+            ],
+            [
+                "Owney Madden New York"
+            ]
+        ],
+        "elapsed": 1.691798210144043,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.691723346710205,
+            "LLM_INPUTS": 226,
+            "LLM_OUTPUTS": 64
+        }
+    },
+    {
+        "question": "Give me all spacecrafts that flew to Mars.",
+        "answer": [
+            [
+                "Mariner 4"
+            ],
+            [
+                "Mariner 6"
+            ],
+            [
+                "Mariner 7"
+            ],
+            [
+                "Mariner 9"
+            ],
+            [
+                "Viking 1"
+            ],
+            [
+                "Viking 2"
+            ],
+            [
+                "Phobos 1"
+            ],
+            [
+                "Phobos 2"
+            ],
+            [
+                "Mars Global Surveyor"
+            ],
+            [
+                "Mars Pathfinder"
+            ],
+            [
+                "Mars Odyssey"
+            ],
+            [
+                "Mars Express"
+            ],
+            [
+                "Mars Reconnaissance Orbiter"
+            ],
+            [
+                "Mars Exploration Rover Spirit"
+            ],
+            [
+                "Mars Exploration Rover Opportunity"
+            ],
+            [
+                "Phoenix Mars Lander"
+            ],
+            [
+                "Mars Science Laboratory (Curiosity)"
+            ],
+            [
+                "Mangalyaan (Mars Orbiter Mission)"
+            ],
+            [
+                "ExoMars Trace Gas Orbiter"
+            ]
+        ],
+        "elapsed": 1.4722418785095215,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.4721503257751465,
+            "LLM_INPUTS": 226,
+            "LLM_OUTPUTS": 103
+        }
+    },
+    {
+        "question": "Show me all Czech movies.",
+        "answer": [
+            [
+                "False"
+            ]
+        ],
+        "elapsed": 0.42401576042175293,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.42391085624694824,
+            "LLM_INPUTS": 222,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "Give me all taikonauts.",
+        "answer": [
+            [
+                "Yang Liwei"
+            ],
+            [
+                "Fei Junlong"
+            ],
+            [
+                "Nie Haisheng"
+            ],
+            [
+                "Zhai Zhigang"
+            ],
+            [
+                "Liu Boming"
+            ],
+            [
+                "Zhang Hongbo"
+            ],
+            [
+                "Jing Haipeng"
+            ],
+            [
+                "Zhang Xiaoguang"
+            ],
+            [
+                "Wang Yaping"
+            ],
+            [
+                "Liu Yang"
+            ],
+            [
+                "Chen Dong"
+            ],
+            [
+                "Zhang Lu"
+            ],
+            [
+                "Tanmoy"
+            ],
+            [
+                "Tang Hongbo"
+            ],
+            [
+                "Liu Wang"
+            ]
+        ],
+        "elapsed": 1.6724293231964111,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.6723217964172363,
+            "LLM_INPUTS": 223,
+            "LLM_OUTPUTS": 91
+        }
+    },
+    {
+        "question": "Which countries have more than ten volcanoes?",
+        "answer": [
+            [
+                "Indonesia",
+                " more than 130"
+            ],
+            [
+                "United States",
+                " more than 150 (including Alaska and Hawaii)"
+            ],
+            [
+                "Japan",
+                " about 110"
+            ],
+            [
+                "Russia",
+                " about 160"
+            ],
+            [
+                "Chile",
+                " about 90"
+            ],
+            [
+                "Italy",
+                " about 15"
+            ],
+            [
+                "Philippines",
+                " about 30"
+            ]
+        ],
+        "elapsed": 2.1328656673431396,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 2.1327240467071533,
+            "LLM_INPUTS": 225,
+            "LLM_OUTPUTS": 54
+        }
+    },
+    {
+        "question": "Give me all movies with Tom Cruise.",
+        "answer": [
+            [
+                "Top Gun"
+            ],
+            [
+                "Rain Man"
+            ],
+            [
+                "A Few Good Men"
+            ],
+            [
+                "Jerry Maguire"
+            ],
+            [
+                "Mission: Impossible"
+            ],
+            [
+                "Mission: Impossible II"
+            ],
+            [
+                "Mission: Impossible III"
+            ],
+            [
+                "Collateral"
+            ],
+            [
+                "War of the Worlds"
+            ],
+            [
+                "Valkyrie"
+            ],
+            [
+                "Mission: Impossible \u2013 Ghost Protocol"
+            ],
+            [
+                "Jack Reacher"
+            ],
+            [
+                "Oblivion"
+            ],
+            [
+                "Edge of Tomorrow"
+            ],
+            [
+                "Mission: Impossible \u2013 Rogue Nation"
+            ]
+        ],
+        "elapsed": 1.0678198337554932,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.0676696300506592,
+            "LLM_INPUTS": 224,
+            "LLM_OUTPUTS": 70
+        }
+    },
+    {
+        "question": "When did Dracula's creator die?",
+        "answer": [
+            [
+                "1916"
+            ]
+        ],
+        "elapsed": 0.6345560550689697,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.634483814239502,
+            "LLM_INPUTS": 223,
+            "LLM_OUTPUTS": 6
+        }
+    },
+    {
+        "question": "Who created English Wikipedia?",
+        "answer": [
+            [
+                "Jimmy Wales",
+                "Larry Sanger"
+            ]
+        ],
+        "elapsed": 0.4815859794616699,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.4815027713775635,
+            "LLM_INPUTS": 221,
+            "LLM_OUTPUTS": 10
+        }
+    },
+    {
+        "question": "Give me all female German chancellors.",
+        "answer": [
+            [
+                "Angela Merkel"
+            ]
+        ],
+        "elapsed": 0.42214488983154297,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.4220540523529053,
+            "LLM_INPUTS": 225,
+            "LLM_OUTPUTS": 6
+        }
+    },
+    {
+        "question": "Who owns Aldi?",
+        "answer": [
+            [
+                "Aldi Group",
+                "M\u00fcller family",
+                "Germany"
+            ]
+        ],
+        "elapsed": 0.525428295135498,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5253300666809082,
+            "LLM_INPUTS": 220,
+            "LLM_OUTPUTS": 13
+        }
+    },
+    {
+        "question": "Which books were written by Danielle Steel?",
+        "answer": [
+            [
+                "The Promise"
+            ],
+            [
+                "Palomino"
+            ],
+            [
+                "Daddy"
+            ],
+            [
+                "The Ring"
+            ],
+            [
+                "Crossings"
+            ],
+            [
+                "Heartbeat"
+            ],
+            [
+                "Star"
+            ],
+            [
+                "Jewels"
+            ],
+            [
+                "Kaleidoscope"
+            ],
+            [
+                "Message from Nam"
+            ],
+            [
+                "Zoya"
+            ],
+            [
+                "Fine Things"
+            ],
+            [
+                "Accident"
+            ],
+            [
+                "Heartbeat"
+            ],
+            [
+                "Now and Forever"
+            ],
+            [
+                "Season of Passion"
+            ],
+            [
+                "Sisters"
+            ],
+            [
+                "Babe"
+            ],
+            [
+                "Thurston House"
+            ],
+            [
+                "The Gift"
+            ],
+            [
+                "Family Album"
+            ],
+            [
+                "Daddy"
+            ],
+            [
+                "No Greater Love"
+            ],
+            [
+                "Mixed Blessings"
+            ],
+            [
+                "I'll Wait for You"
+            ],
+            [
+                "Five Days in Paris"
+            ],
+            [
+                "Keys to Paradise"
+            ],
+            [
+                "Vanished"
+            ],
+            [
+                "Safe Harbour"
+            ],
+            [
+                "Heartbeat"
+            ],
+            [
+                "Big Girl"
+            ],
+            [
+                "Southern Lights"
+            ],
+            [
+                "Silent Honor"
+            ],
+            [
+                "Bright Windows"
+            ],
+            [
+                "Sunset in St. Tropez"
+            ],
+            [
+                "The Leopard"
+            ],
+            [
+                "One Day at a Time"
+            ],
+            [
+                "Power Play"
+            ],
+            [
+                "Holiday"
+            ],
+            [
+                "Special Delivery"
+            ],
+            [
+                "Violets Are Blue"
+            ],
+            [
+                "Heartbeat"
+            ]
+        ],
+        "elapsed": 2.449517250061035,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 2.44941782951355,
+            "LLM_INPUTS": 224,
+            "LLM_OUTPUTS": 171
+        }
+    },
+    {
+        "question": "Who was influenced by Socrates?",
+        "answer": [
+            [
+                "Plato"
+            ],
+            [
+                "Aristotle"
+            ],
+            [
+                "Xenophon"
+            ],
+            [
+                "Antisthenes"
+            ],
+            [
+                "Crito"
+            ],
+            [
+                "Alcibiades"
+            ],
+            [
+                "Critias"
+            ]
+        ],
+        "elapsed": 1.1023104190826416,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.1022312641143799,
+            "LLM_INPUTS": 223,
+            "LLM_OUTPUTS": 31
+        }
+    },
+    {
+        "question": "How deep is Lake Chiemsee?",
+        "answer": [
+            [
+                "72 meters"
+            ]
+        ],
+        "elapsed": 0.4535524845123291,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.4534752368927002,
+            "LLM_INPUTS": 224,
+            "LLM_OUTPUTS": 6
+        }
+    },
+    {
+        "question": "Which companies work in the aerospace industry as well as in medicine?",
+        "answer": [
+            [
+                "Boeing",
+                " medical technology through Boeing subsidiary or partnerships"
+            ],
+            [
+                "General Electric",
+                " aerospace engines and medical imaging equipment"
+            ],
+            [
+                "Honeywell",
+                " aerospace systems and medical technologies"
+            ],
+            [
+                "Siemens",
+                " aerospace and medical imaging technologies"
+            ],
+            [
+                "Lockheed Martin",
+                " aerospace and health-related research & technologies"
+            ]
+        ],
+        "elapsed": 1.056485652923584,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.0563981533050537,
+            "LLM_INPUTS": 229,
+            "LLM_OUTPUTS": 55
+        }
+    },
+    {
+        "question": "Which professional surfers were born on the Philippines?",
+        "answer": [
+            [
+                "Gabriel Medina"
+            ]
+        ],
+        "elapsed": 0.44400548934936523,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.4439268112182617,
+            "LLM_INPUTS": 225,
+            "LLM_OUTPUTS": 7
+        }
+    },
+    {
+        "question": "Who were the parents of Queen Victoria?",
+        "answer": [
+            [
+                "Edward Augustus",
+                " Duke of Kent and Strathearn"
+            ],
+            [
+                "Princess Victoria of Saxe-Coburg-Saalfeld"
+            ]
+        ],
+        "elapsed": 0.6469218730926514,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.6468424797058105,
+            "LLM_INPUTS": 224,
+            "LLM_OUTPUTS": 26
+        }
+    },
+    {
+        "question": "Are there any castles in the United States?",
+        "answer": [
+            [
+                "True"
+            ]
+        ],
+        "elapsed": 0.44394516944885254,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.4438667297363281,
+            "LLM_INPUTS": 225,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "Which languages are spoken in Estonia?",
+        "answer": [
+            [
+                "Estonian"
+            ],
+            [
+                "Russian"
+            ],
+            [
+                "Ukrainian"
+            ],
+            [
+                "Finnish"
+            ],
+            [
+                "English"
+            ],
+            [
+                "German"
+            ],
+            [
+                "Swedish"
+            ]
+        ],
+        "elapsed": 0.642817497253418,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.6427369117736816,
+            "LLM_INPUTS": 223,
+            "LLM_OUTPUTS": 23
+        }
+    },
+    {
+        "question": "Give me a list of all critically endangered birds.",
+        "answer": [
+            [
+                "Northern Bald Ibis"
+            ],
+            [
+                "Spoon-billed Sandpiper"
+            ],
+            [
+                "Seychelles Magpie-robin"
+            ],
+            [
+                "Javan Hawk-Eagle"
+            ],
+            [
+                "California Condor"
+            ],
+            [
+                "Imperial Amazon"
+            ],
+            [
+                "Azores Bullfinch"
+            ],
+            [
+                "Forest Owlet"
+            ],
+            [
+                "Banggai Crow"
+            ],
+            [
+                "Sclater's Crowned Pigeon"
+            ]
+        ],
+        "elapsed": 1.2524795532226562,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.2523956298828125,
+            "LLM_INPUTS": 226,
+            "LLM_OUTPUTS": 85
+        }
+    },
+    {
+        "question": "Which countries are connected by the Rhine?",
+        "answer": [
+            [
+                "Switzerland"
+            ],
+            [
+                "Liechtenstein"
+            ],
+            [
+                "Austria"
+            ],
+            [
+                "Germany"
+            ],
+            [
+                "France"
+            ],
+            [
+                "Netherlands"
+            ]
+        ],
+        "elapsed": 1.008086919784546,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.0080063343048096,
+            "LLM_INPUTS": 224,
+            "LLM_OUTPUTS": 20
+        }
+    },
+    {
+        "question": "Who was the father of Queen Elizabeth II?",
+        "answer": [
+            [
+                "George VI"
+            ]
+        ],
+        "elapsed": 0.41556262969970703,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.4154846668243408,
+            "LLM_INPUTS": 225,
+            "LLM_OUTPUTS": 6
+        }
+    },
+    {
+        "question": "Give me all chemical elements.",
+        "answer": [
+            [
+                "Hydrogen",
+                "H"
+            ],
+            [
+                "Helium",
+                "He"
+            ],
+            [
+                "Lithium",
+                "Li"
+            ],
+            [
+                "Beryllium",
+                "Be"
+            ],
+            [
+                "Boron",
+                "B"
+            ],
+            [
+                "Carbon",
+                "C"
+            ],
+            [
+                "Nitrogen",
+                "N"
+            ],
+            [
+                "Oxygen",
+                "O"
+            ],
+            [
+                "Fluorine",
+                "F"
+            ],
+            [
+                "Neon",
+                "Ne"
+            ],
+            [
+                "Sodium",
+                "Na"
+            ],
+            [
+                "Magnesium",
+                "Mg"
+            ],
+            [
+                "Aluminum",
+                "Al"
+            ],
+            [
+                "Silicon",
+                "Si"
+            ],
+            [
+                "Phosphorus",
+                "P"
+            ],
+            [
+                "Sulfur",
+                "S"
+            ],
+            [
+                "Chlorine",
+                "Cl"
+            ],
+            [
+                "Argon",
+                "Ar"
+            ],
+            [
+                "Potassium",
+                "K"
+            ],
+            [
+                "Calcium",
+                "Ca"
+            ],
+            [
+                "Scandium",
+                "Sc"
+            ],
+            [
+                "Titanium",
+                "Ti"
+            ],
+            [
+                "Vanadium",
+                "V"
+            ],
+            [
+                "Chromium",
+                "Cr"
+            ],
+            [
+                "Manganese",
+                "Mn"
+            ],
+            [
+                "Iron",
+                "Fe"
+            ],
+            [
+                "Cobalt",
+                "Co"
+            ],
+            [
+                "Nickel",
+                "Ni"
+            ],
+            [
+                "Copper",
+                "Cu"
+            ],
+            [
+                "Zinc",
+                "Zn"
+            ],
+            [
+                "Gallium",
+                "Ga"
+            ],
+            [
+                "Germanium",
+                "Ge"
+            ],
+            [
+                "Arsenic",
+                "As"
+            ],
+            [
+                "Selenium",
+                "Se"
+            ],
+            [
+                "Bromine",
+                "Br"
+            ],
+            [
+                "Krypton",
+                "Kr"
+            ],
+            [
+                "Rubidium",
+                "Rb"
+            ],
+            [
+                "Strontium",
+                "Sr"
+            ],
+            [
+                "Yttrium",
+                "Y"
+            ],
+            [
+                "Zirconium",
+                "Zr"
+            ],
+            [
+                "Niobium",
+                "Nb"
+            ],
+            [
+                "Molybdenum",
+                "Mo"
+            ],
+            [
+                "Technetium",
+                "Tc"
+            ],
+            [
+                "Ruthenium",
+                "Ru"
+            ],
+            [
+                "Rhodium",
+                "Rh"
+            ],
+            [
+                "Palladium",
+                "Pd"
+            ],
+            [
+                "Silver",
+                "Ag"
+            ],
+            [
+                "Cadmium",
+                "Cd"
+            ],
+            [
+                "Indium",
+                "In"
+            ],
+            [
+                "Tin",
+                "Sn"
+            ],
+            [
+                "Antimony",
+                "Sb"
+            ],
+            [
+                "Tellurium",
+                "Te"
+            ],
+            [
+                "Iodine",
+                "I"
+            ],
+            [
+                "Xenon",
+                "Xe"
+            ],
+            [
+                "Cesium",
+                "Cs"
+            ],
+            [
+                "Barium",
+                "Ba"
+            ],
+            [
+                "Lanthanum",
+                "La"
+            ],
+            [
+                "Cerium",
+                "Ce"
+            ],
+            [
+                "Praseodymium",
+                "Pr"
+            ],
+            [
+                "Neodymium",
+                "Nd"
+            ],
+            [
+                "Promethium",
+                "Pm"
+            ],
+            [
+                "Samarium",
+                "Sm"
+            ],
+            [
+                "Europium",
+                "Eu"
+            ],
+            [
+                "Gadolinium",
+                "Gd"
+            ],
+            [
+                "Terbium",
+                "Tb"
+            ],
+            [
+                "Dysprosium",
+                "Dy"
+            ],
+            [
+                "Holmium",
+                "Ho"
+            ],
+            [
+                "Erbium",
+                "Er"
+            ],
+            [
+                "Thulium",
+                "Tm"
+            ],
+            [
+                "Ytterbium",
+                "Yb"
+            ],
+            [
+                "Lutetium",
+                "Lu"
+            ],
+            [
+                "Hafnium",
+                "Hf"
+            ],
+            [
+                "Tantalum",
+                "Ta"
+            ],
+            [
+                "Tungsten",
+                "W"
+            ],
+            [
+                "Rhenium",
+                "Re"
+            ],
+            [
+                "Osmium",
+                "Os"
+            ],
+            [
+                "Iridium",
+                "Ir"
+            ],
+            [
+                "Platinum",
+                "Pt"
+            ],
+            [
+                "Gold",
+                "Au"
+            ],
+            [
+                "Mercury",
+                "Hg"
+            ],
+            [
+                "Thallium",
+                "Tl"
+            ],
+            [
+                "Lead",
+                "Pb"
+            ],
+            [
+                "Bismuth",
+                "Bi"
+            ],
+            [
+                "Polonium",
+                "Po"
+            ],
+            [
+                "Astatine",
+                "At"
+            ],
+            [
+                "Radon",
+                "Rn"
+            ],
+            [
+                "Francium",
+                "Fr"
+            ],
+            [
+                "Radium",
+                "Ra"
+            ],
+            [
+                "Actinium",
+                "Ac"
+            ],
+            [
+                "Thorium",
+                "Th"
+            ],
+            [
+                "Protactinium",
+                "Pa"
+            ],
+            [
+                "Uranium",
+                "U"
+            ],
+            [
+                "Neptunium",
+                "Np"
+            ],
+            [
+                "Plutonium",
+                "Pu"
+            ],
+            [
+                "Americium",
+                "Am"
+            ],
+            [
+                "Curium",
+                "Cm"
+            ],
+            [
+                "Berkelium",
+                "Bk"
+            ],
+            [
+                "Californium",
+                "Cf"
+            ],
+            [
+                "Einsteinium",
+                "Es"
+            ],
+            [
+                "Fermium",
+                "Fm"
+            ],
+            [
+                "Mendelevium",
+                "Md"
+            ],
+            [
+                "Nobelium",
+                "No"
+            ],
+            [
+                "Lawrencium",
+                "Lr"
+            ],
+            [
+                "Rutherfordium",
+                "Rf"
+            ],
+            [
+                "Dubnium",
+                "Db"
+            ],
+            [
+                "Seaborgium",
+                "Sg"
+            ],
+            [
+                "Bohrium",
+                "Bh"
+            ],
+            [
+                "Hassium",
+                "Hs"
+            ],
+            [
+                "Meitnerium",
+                "Mt"
+            ],
+            [
+                "Darmstadtium",
+                "Ds"
+            ],
+            [
+                "Roentgenium",
+                "Rg"
+            ],
+            [
+                "Copernicium",
+                "Cn"
+            ],
+            [
+                "Nihonium",
+                "Nh"
+            ],
+            [
+                "Flerovium",
+                "Fl"
+            ],
+            [
+                "Moscovium",
+                "Mc"
+            ],
+            [
+                "Livermorium",
+                "Lv"
+            ],
+            [
+                "Tennessine",
+                "Ts"
+            ],
+            [
+                "Oganesson",
+                "Og"
+            ]
+        ],
+        "elapsed": 7.687811613082886,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 7.687615633010864,
+            "LLM_INPUTS": 222,
+            "LLM_OUTPUTS": 659
+        }
+    },
+    {
+        "question": "Give me all American presidents of the last 20 years.",
+        "answer": [
+            [
+                "Bill Clinton",
+                "1993",
+                "2001"
+            ],
+            [
+                "George W. Bush",
+                "2001",
+                "2009"
+            ],
+            [
+                "Barack Obama",
+                "2009",
+                "2017"
+            ]
+        ],
+        "elapsed": 0.7821335792541504,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.7820141315460205,
+            "LLM_INPUTS": 228,
+            "LLM_OUTPUTS": 33
+        }
+    },
+    {
+        "question": "When is the movie Worst Case Scenario going to be in cinemas in the Netherlands?",
+        "answer": [
+            [
+                "2016"
+            ]
+        ],
+        "elapsed": 0.5285048484802246,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5284245014190674,
+            "LLM_INPUTS": 232,
+            "LLM_OUTPUTS": 6
+        }
+    },
+    {
+        "question": "Whom did Lance Bass marry?",
+        "answer": [
+            [
+                "Michael Turchin"
+            ]
+        ],
+        "elapsed": 0.7969455718994141,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.7968568801879883,
+            "LLM_INPUTS": 223,
+            "LLM_OUTPUTS": 8
+        }
+    },
+    {
+        "question": "Which subsidiary of TUI Travel serves both Glasgow and Dublin?",
+        "answer": [
+            [
+                "Thomson Airways"
+            ]
+        ],
+        "elapsed": 0.6563951969146729,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.6563160419464111,
+            "LLM_INPUTS": 228,
+            "LLM_OUTPUTS": 8
+        }
+    },
+    {
+        "question": "What languages are spoken in Pakistan?",
+        "answer": [
+            [
+                "Urdu"
+            ],
+            [
+                "English"
+            ],
+            [
+                "Punjabi"
+            ],
+            [
+                "Sindhi"
+            ],
+            [
+                "Pashto"
+            ],
+            [
+                "Balochi"
+            ],
+            [
+                "Saraiki"
+            ]
+        ],
+        "elapsed": 0.8361022472381592,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.8360202312469482,
+            "LLM_INPUTS": 223,
+            "LLM_OUTPUTS": 24
+        }
+    },
+    {
+        "question": "Who is the daughter of Bill Clinton married to?",
+        "answer": [
+            [
+                "Marc Mezvinsky"
+            ]
+        ],
+        "elapsed": 0.5003476142883301,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5002613067626953,
+            "LLM_INPUTS": 226,
+            "LLM_OUTPUTS": 8
+        }
+    },
+    {
+        "question": "Who was on the Apollo 11 mission?",
+        "answer": [
+            [
+                "Neil Armstrong"
+            ],
+            [
+                "Buzz Aldrin"
+            ],
+            [
+                "Michael Collins"
+            ]
+        ],
+        "elapsed": 0.880007266998291,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.8799376487731934,
+            "LLM_INPUTS": 225,
+            "LLM_OUTPUTS": 13
+        }
+    },
+    {
+        "question": "What is the wavelength of Indigo?",
+        "answer": [
+            [
+                "445 nm",
+                " 450 nm"
+            ]
+        ],
+        "elapsed": 0.5340657234191895,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5339794158935547,
+            "LLM_INPUTS": 223,
+            "LLM_OUTPUTS": 10
+        }
+    },
+    {
+        "question": "Give me all B-sides of the Ramones.",
+        "answer": [
+            [
+                "I Don\u2019t Wanna Be Learned I Waited"
+            ],
+            [
+                "Havana Affair (live)"
+            ],
+            [
+                "Here Today",
+                " Gone Tomorrow"
+            ],
+            [
+                "Slug"
+            ],
+            [
+                "Why Is It Always This Way?"
+            ],
+            [
+                "She\u2019s The One"
+            ],
+            [
+                "I Don\u2019t Want to Grow Up"
+            ],
+            [
+                "Beat on the Brat (single version)"
+            ],
+            [
+                "Sheena Is a Punk Rocker (single version)"
+            ],
+            [
+                "Do You Wanna Dance?"
+            ],
+            [
+                "Surfin\u2019 Bird"
+            ],
+            [
+                "Cretin Hop"
+            ],
+            [
+                "Danny Says"
+            ],
+            [
+                "Go Mental"
+            ],
+            [
+                "Slug"
+            ],
+            [
+                "Little Bit O' Soul"
+            ],
+            [
+                "I Just Want to Have Something To Do (live)"
+            ],
+            [
+                "Chasing the Night"
+            ],
+            [
+                "I Don\u2019t Wanna Walk Around With You"
+            ],
+            [
+                "Pinhead"
+            ],
+            [
+                "Somebody Put Something In My Drink"
+            ],
+            [
+                "Indian Giver"
+            ],
+            [
+                "This Ain\u2019t Havana"
+            ],
+            [
+                "My Brain Is Hanging Upside Down (Bonzo Goes To Bitburg)"
+            ],
+            [
+                "Animal Boy (live)"
+            ],
+            [
+                "I Want You Around (live)"
+            ],
+            [
+                "I Don't Want to Grow Up (live)"
+            ],
+            [
+                "Take It As It Comes"
+            ],
+            [
+                "Surf City (live)"
+            ],
+            [
+                "Downbound Train (live)"
+            ],
+            [
+                "Beat on the Brat (live)"
+            ],
+            [
+                "Cretin Hop (live)"
+            ],
+            [
+                "Teenage Lobotomy (live)"
+            ],
+            [
+                "Scattergun"
+            ],
+            [
+                "Carry Me Home"
+            ],
+            [
+                "End of the Century (live)"
+            ],
+            [
+                "Sorry For You"
+            ],
+            [
+                "Strenght to Endure"
+            ],
+            [
+                "Sheert Buttons"
+            ],
+            [
+                "Decoherence"
+            ],
+            [
+                "Are You Gonna Be My Girl?"
+            ],
+            [
+                "Locket Love"
+            ]
+        ],
+        "elapsed": 4.819611310958862,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 4.819489002227783,
+            "LLM_INPUTS": 227,
+            "LLM_OUTPUTS": 262
+        }
+    },
+    {
+        "question": "Who was called Scarface?",
+        "answer": [
+            [
+                "Al Capone"
+            ]
+        ],
+        "elapsed": 0.4837193489074707,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.4836277961730957,
+            "LLM_INPUTS": 222,
+            "LLM_OUTPUTS": 7
+        }
+    },
+    {
+        "question": "Which rivers flow into the North Sea?",
+        "answer": [],
+        "elapsed": 0.5883512496948242,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5882625579833984,
+            "LLM_INPUTS": 224,
+            "LLM_OUTPUTS": 21
+        }
+    },
+    {
+        "question": "Where is Fort Knox located?",
+        "answer": [
+            [
+                "Kentucky",
+                " United States"
+            ]
+        ],
+        "elapsed": 0.4465315341949463,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.44645214080810547,
+            "LLM_INPUTS": 222,
+            "LLM_OUTPUTS": 9
+        }
+    },
+    {
+        "question": "Which daughters of British earls died at the same place they were born at?",
+        "answer": [
+            [
+                "Lady Elizabeth Bowes-Lyon"
+            ],
+            [
+                "Lady Mary Cecilia Bowes-Lyon"
+            ]
+        ],
+        "elapsed": 0.5968372821807861,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5967395305633545,
+            "LLM_INPUTS": 232,
+            "LLM_OUTPUTS": 18
+        }
+    },
+    {
+        "question": "How many emperors did China have?",
+        "answer": [
+            [
+                "Between 200 and 300"
+            ]
+        ],
+        "elapsed": 0.5115909576416016,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5115029811859131,
+            "LLM_INPUTS": 224,
+            "LLM_OUTPUTS": 10
+        }
+    },
+    {
+        "question": "What are the names of the Teenage Mutant Ninja Turtles?",
+        "answer": [
+            [
+                "Leonardo"
+            ],
+            [
+                "Michelangelo"
+            ],
+            [
+                "Donatello"
+            ],
+            [
+                "Raphael"
+            ]
+        ],
+        "elapsed": 0.5788094997406006,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5787196159362793,
+            "LLM_INPUTS": 229,
+            "LLM_OUTPUTS": 16
+        }
+    },
+    {
+        "question": "Where does Piccadilly start?",
+        "answer": [
+            [
+                "Piccadilly starts at Hyde Park Corner",
+                " London"
+            ]
+        ],
+        "elapsed": 0.5571587085723877,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5570793151855469,
+            "LLM_INPUTS": 223,
+            "LLM_OUTPUTS": 14
+        }
+    },
+    {
+        "question": "What is the name of the university where Obama's wife studied?",
+        "answer": [
+            [
+                "Princeton University"
+            ],
+            [
+                "Harvard Law School"
+            ]
+        ],
+        "elapsed": 0.5241649150848389,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5240662097930908,
+            "LLM_INPUTS": 228,
+            "LLM_OUTPUTS": 12
+        }
+    },
+    {
+        "question": "When did Paraguay proclaim its independence?",
+        "answer": [
+            [
+                "1811"
+            ]
+        ],
+        "elapsed": 0.4842531681060791,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.4841635227203369,
+            "LLM_INPUTS": 223,
+            "LLM_OUTPUTS": 6
+        }
+    },
+    {
+        "question": "How short is the shortest active NBA player?",
+        "answer": [
+            [
+                "5 feet 3 inches"
+            ]
+        ],
+        "elapsed": 0.822782039642334,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.8226213455200195,
+            "LLM_INPUTS": 225,
+            "LLM_OUTPUTS": 9
+        }
+    },
+    {
+        "question": "Where did Abraham Lincoln die?",
+        "answer": [
+            [
+                "Ford's Theatre",
+                " Washington",
+                " D.C."
+            ]
+        ],
+        "elapsed": 0.5070409774780273,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5069499015808105,
+            "LLM_INPUTS": 222,
+            "LLM_OUTPUTS": 12
+        }
+    },
+    {
+        "question": "When was Jack Wolfskin founded?",
+        "answer": [
+            [
+                "1981"
+            ]
+        ],
+        "elapsed": 0.7989447116851807,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.798858642578125,
+            "LLM_INPUTS": 223,
+            "LLM_OUTPUTS": 6
+        }
+    },
+    {
+        "question": "In which city is the headquarter of Air China?",
+        "answer": [
+            [
+                "Beijing"
+            ]
+        ],
+        "elapsed": 0.45131754875183105,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.4512295722961426,
+            "LLM_INPUTS": 227,
+            "LLM_OUTPUTS": 6
+        }
+    },
+    {
+        "question": "What is the founding year of the brewery that produces Pilsner Urquell?",
+        "answer": [
+            [
+                "1842"
+            ]
+        ],
+        "elapsed": 0.7656724452972412,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.7655744552612305,
+            "LLM_INPUTS": 233,
+            "LLM_OUTPUTS": 6
+        }
+    },
+    {
+        "question": "When did the Boston Tea Party take place?",
+        "answer": [
+            [
+                "1773-12-16"
+            ]
+        ],
+        "elapsed": 0.4567570686340332,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.45667004585266113,
+            "LLM_INPUTS": 225,
+            "LLM_OUTPUTS": 10
+        }
+    },
+    {
+        "question": "Which animals are critically endangered?",
+        "answer": [
+            [
+                "Amur leopard"
+            ],
+            [
+                "Vaquita"
+            ],
+            [
+                "Javan rhinoceros"
+            ],
+            [
+                "Sumatran orangutan"
+            ],
+            [
+                "Sumatran tiger"
+            ],
+            [
+                "Yangtze giant softshell turtle"
+            ]
+        ],
+        "elapsed": 0.9963815212249756,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.9962944984436035,
+            "LLM_INPUTS": 222,
+            "LLM_OUTPUTS": 36
+        }
+    },
+    {
+        "question": "Which politicians were married to a German?",
+        "answer": [
+            [
+                "John F. Kennedy Jacqueline Kennedy"
+            ],
+            [
+                "Bill Clinton Hillary Clinton"
+            ],
+            [
+                "Wim Duisenberg Elsevier Geertruida (German descent)"
+            ],
+            [
+                "Willy Brandt Rut Brandt"
+            ],
+            [
+                "David Cameron Samantha Cameron (German descent)"
+            ]
+        ],
+        "elapsed": 1.0524780750274658,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.0524001121520996,
+            "LLM_INPUTS": 224,
+            "LLM_OUTPUTS": 45
+        }
+    },
+    {
+        "question": "How big is the earth's diameter?",
+        "answer": [
+            [
+                "12742 km"
+            ]
+        ],
+        "elapsed": 0.47519779205322266,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.47512102127075195,
+            "LLM_INPUTS": 224,
+            "LLM_OUTPUTS": 7
+        }
+    },
+    {
+        "question": "Is the wife of President Obama called Michelle?",
+        "answer": [
+            [
+                "True"
+            ]
+        ],
+        "elapsed": 0.46550989151000977,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.4654269218444824,
+            "LLM_INPUTS": 225,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "Which U.S. state has the abbreviation MN?",
+        "answer": [
+            [
+                "Minnesota"
+            ]
+        ],
+        "elapsed": 0.467099666595459,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.4670231342315674,
+            "LLM_INPUTS": 226,
+            "LLM_OUTPUTS": 6
+        }
+    },
+    {
+        "question": "When did Muhammad die?",
+        "answer": [
+            [
+                "632"
+            ]
+        ],
+        "elapsed": 0.7076444625854492,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.7075567245483398,
+            "LLM_INPUTS": 221,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "What is the atmosphere of the Moon composed of?",
+        "answer": [
+            [
+                "helium"
+            ],
+            [
+                "neon"
+            ],
+            [
+                "hydrogen"
+            ],
+            [
+                "argon"
+            ],
+            [
+                "methane"
+            ],
+            [
+                "ammonia"
+            ],
+            [
+                "carbon dioxide"
+            ]
+        ],
+        "elapsed": 1.0059354305267334,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.0058386325836182,
+            "LLM_INPUTS": 226,
+            "LLM_OUTPUTS": 24
+        }
+    },
+    {
+        "question": "Who is the governor of Texas?",
+        "answer": [
+            [
+                "Greg Abbott"
+            ]
+        ],
+        "elapsed": 0.47125887870788574,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.47118163108825684,
+            "LLM_INPUTS": 223,
+            "LLM_OUTPUTS": 6
+        }
+    },
+    {
+        "question": "Which movies did Kurosawa direct?",
+        "answer": [
+            [
+                "Rashomon",
+                " 1950"
+            ],
+            [
+                "Seven Samurai",
+                " 1954"
+            ],
+            [
+                "Ikiru",
+                " 1952"
+            ],
+            [
+                "Yojimbo",
+                " 1961"
+            ],
+            [
+                "Throne of Blood",
+                " 1957"
+            ],
+            [
+                "Ran",
+                " 1985"
+            ],
+            [
+                "The Hidden Fortress",
+                " 1958"
+            ],
+            [
+                "High and Low",
+                " 1963"
+            ],
+            [
+                "Red Beard",
+                " 1965"
+            ]
+        ],
+        "elapsed": 3.8627960681915283,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 3.862699508666992,
+            "LLM_INPUTS": 224,
+            "LLM_OUTPUTS": 71
+        }
+    },
+    {
+        "question": "What was the name of the famous battle in 1836 in San Antonio?",
+        "answer": [
+            [
+                "Battle of the Alamo"
+            ]
+        ],
+        "elapsed": 0.4618246555328369,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.4617290496826172,
+            "LLM_INPUTS": 232,
+            "LLM_OUTPUTS": 9
+        }
+    },
+    {
+        "question": "Give me the official websites of actors of the television show Charmed.",
+        "answer": [
+            [
+                "http://www.hollymariecomb.com"
+            ],
+            [
+                "http://www.alyssamilano.com"
+            ],
+            [
+                "http://www.rose-mcdonald.com"
+            ]
+        ],
+        "elapsed": 0.6930272579193115,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.6929285526275635,
+            "LLM_INPUTS": 230,
+            "LLM_OUTPUTS": 34
+        }
+    },
+    {
+        "question": "How many calories does a baguette have?",
+        "answer": [
+            [
+                "250-300"
+            ]
+        ],
+        "elapsed": 0.4872455596923828,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.48715853691101074,
+            "LLM_INPUTS": 225,
+            "LLM_OUTPUTS": 7
+        }
+    },
+    {
+        "question": "Give me all libraries established before 1400.",
+        "answer": [
+            [
+                "Library of Alexandria",
+                " Egypt",
+                " c. 3rd century BCE"
+            ],
+            [
+                "Library of Nalanda",
+                " India",
+                " c. 5th century CE"
+            ],
+            [
+                "House of Wisdom",
+                " Baghdad",
+                " 8th century CE"
+            ],
+            [
+                "Library of Al-Qarawiyyin",
+                " Morocco",
+                " 859 CE"
+            ],
+            [
+                "Bodleian Library",
+                " Oxford",
+                " 1320 CE"
+            ]
+        ],
+        "elapsed": 1.3296866416931152,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.3295643329620361,
+            "LLM_INPUTS": 226,
+            "LLM_OUTPUTS": 71
+        }
+    },
+    {
+        "question": "Give me all Frisian islands that belong to the Netherlands.",
+        "answer": [
+            [
+                "Terschelling"
+            ],
+            [
+                "Ameland"
+            ],
+            [
+                "Schiermonnikoog"
+            ],
+            [
+                "Vlieland"
+            ],
+            [
+                "Texel"
+            ]
+        ],
+        "elapsed": 0.6029558181762695,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.6028261184692383,
+            "LLM_INPUTS": 228,
+            "LLM_OUTPUTS": 25
+        }
+    },
+    {
+        "question": "Which museum exhibits The Scream by Munch?",
+        "answer": [
+            [
+                "National Gallery",
+                " Oslo"
+            ]
+        ],
+        "elapsed": 0.4462299346923828,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.4461350440979004,
+            "LLM_INPUTS": 226,
+            "LLM_OUTPUTS": 8
+        }
+    },
+    {
+        "question": "When was the De Beers company founded?",
+        "answer": [
+            [
+                "1888"
+            ]
+        ],
+        "elapsed": 0.7246997356414795,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.7246236801147461,
+            "LLM_INPUTS": 225,
+            "LLM_OUTPUTS": 6
+        }
+    },
+    {
+        "question": "Who became president after JFK died?",
+        "answer": [
+            [
+                "Lyndon B. Johnson"
+            ]
+        ],
+        "elapsed": 0.5096807479858398,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5095841884613037,
+            "LLM_INPUTS": 223,
+            "LLM_OUTPUTS": 10
+        }
+    },
+    {
+        "question": "Who are the parents of the wife of Juan Carlos I?",
+        "answer": [
+            [
+                "Alfonso de Borb\u00f3n y Borb\u00f3n-Penthi\u00e8vre",
+                " Mar\u00eda de las Mercedes de Borb\u00f3n-Dos Sicilias y Orl\u00e9ans"
+            ]
+        ],
+        "elapsed": 0.9239399433135986,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.9238605499267578,
+            "LLM_INPUTS": 228,
+            "LLM_OUTPUTS": 36
+        }
+    },
+    {
+        "question": "Who is the novelist of the work a song of ice and fire?",
+        "answer": [
+            [
+                "George R. R. Martin"
+            ]
+        ],
+        "elapsed": 0.7660980224609375,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.7660205364227295,
+            "LLM_INPUTS": 230,
+            "LLM_OUTPUTS": 10
+        }
+    },
+    {
+        "question": "In which studio did the Beatles record their first album?",
+        "answer": [
+            [
+                "EMI Studios",
+                " Abbey Road Studios"
+            ]
+        ],
+        "elapsed": 0.46544408798217773,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.4653623104095459,
+            "LLM_INPUTS": 227,
+            "LLM_OUTPUTS": 11
+        }
+    },
+    {
+        "question": "Which beer brewing companies are located in North-Rhine Westphalia?",
+        "answer": [
+            [
+                "Krombacher Brauerei",
+                " Kreuztal"
+            ],
+            [
+                "Warsteiner Brauerei",
+                " Warstein"
+            ],
+            [
+                "Veltins Brauerei",
+                " Meschede-Grevenstein"
+            ],
+            [
+                "Bolten Brauerei",
+                " Korschenbroich"
+            ],
+            [
+                "Fr\u00fch K\u00f6lsch",
+                " Cologne"
+            ],
+            [
+                "Gaffel K\u00f6lsch",
+                " Cologne"
+            ],
+            [
+                "K\u00f6nig Brauerei",
+                " Duisburg"
+            ]
+        ],
+        "elapsed": 1.2461113929748535,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.2460253238677979,
+            "LLM_INPUTS": 230,
+            "LLM_OUTPUTS": 73
+        }
+    },
+    {
+        "question": "When did princess Diana die?",
+        "answer": [
+            [
+                "1997-08-31"
+            ]
+        ],
+        "elapsed": 0.48796534538269043,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.4878885746002197,
+            "LLM_INPUTS": 222,
+            "LLM_OUTPUTS": 10
+        }
+    },
+    {
+        "question": "Who founded Intel?",
+        "answer": [
+            [
+                "Robert Noyce"
+            ],
+            [
+                "Gordon Moore"
+            ]
+        ],
+        "elapsed": 0.5551025867462158,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5550060272216797,
+            "LLM_INPUTS": 220,
+            "LLM_OUTPUTS": 12
+        }
+    },
+    {
+        "question": "Who is the youngest player in the Premier League?",
+        "answer": [
+            [
+                "Borja Mayoral"
+            ]
+        ],
+        "elapsed": 0.5885140895843506,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5884332656860352,
+            "LLM_INPUTS": 226,
+            "LLM_OUTPUTS": 8
+        }
+    },
+    {
+        "question": "Which instruments does Cat Stevens play?",
+        "answer": [
+            [
+                "guitar"
+            ],
+            [
+                "piano"
+            ],
+            [
+                "sitar"
+            ],
+            [
+                "percussion"
+            ]
+        ],
+        "elapsed": 0.5674817562103271,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5673985481262207,
+            "LLM_INPUTS": 223,
+            "LLM_OUTPUTS": 15
+        }
+    },
+    {
+        "question": "How many rivers and lakes are in South Carolina?",
+        "answer": [
+            [
+                "100+ rivers"
+            ],
+            [
+                "200+ lakes"
+            ]
+        ],
+        "elapsed": 0.4914283752441406,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.49132680892944336,
+            "LLM_INPUTS": 226,
+            "LLM_OUTPUTS": 11
+        }
+    },
+    {
+        "question": "Who was called Rodzilla?",
+        "answer": [
+            [
+                "Rodman"
+            ],
+            [
+                "Dennis Rodman"
+            ]
+        ],
+        "elapsed": 0.5160038471221924,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5159223079681396,
+            "LLM_INPUTS": 222,
+            "LLM_OUTPUTS": 10
+        }
+    },
+    {
+        "question": "Give me the capitals of all countries in Africa.",
+        "answer": [
+            [
+                "Algiers",
+                " Algeria"
+            ],
+            [
+                "Luanda",
+                " Angola"
+            ],
+            [
+                "Porto-Novo",
+                " Benin"
+            ],
+            [
+                "Gaborone",
+                " Botswana"
+            ],
+            [
+                "Ouagadougou",
+                " Burkina Faso"
+            ],
+            [
+                "Bujumbura",
+                " Burundi"
+            ],
+            [
+                "Yaound\u00e9",
+                " Cameroon"
+            ],
+            [
+                "Bangui",
+                " Central African Republic"
+            ],
+            [
+                "N'Djamena",
+                " Chad"
+            ],
+            [
+                "Moroni",
+                " Comoros"
+            ],
+            [
+                "Brazzaville",
+                " Republic of the Congo"
+            ],
+            [
+                "Kinshasa",
+                " Democratic Republic of the Congo"
+            ],
+            [
+                "Abidjan",
+                " C\u00f4te d'Ivoire"
+            ],
+            [
+                "Djibouti",
+                " Djibouti"
+            ],
+            [
+                "Cairo",
+                " Egypt"
+            ],
+            [
+                "Malabo",
+                " Equatorial Guinea"
+            ],
+            [
+                "Asmara",
+                " Eritrea"
+            ],
+            [
+                "Addis Ababa",
+                " Ethiopia"
+            ],
+            [
+                "Libreville",
+                " Gabon"
+            ],
+            [
+                "Banjul",
+                " Gambia"
+            ],
+            [
+                "Accra",
+                " Ghana"
+            ],
+            [
+                "Conakry",
+                " Guinea"
+            ],
+            [
+                "Bissau",
+                " Guinea-Bissau"
+            ],
+            [
+                "Nairobi",
+                " Kenya"
+            ],
+            [
+                "Maseru",
+                " Lesotho"
+            ],
+            [
+                "Monrovia",
+                " Liberia"
+            ],
+            [
+                "Tripoli",
+                " Libya"
+            ],
+            [
+                "Antananarivo",
+                " Madagascar"
+            ],
+            [
+                "Lilongwe",
+                " Malawi"
+            ],
+            [
+                "Bamako",
+                " Mali"
+            ],
+            [
+                "Nouakchott",
+                " Mauritania"
+            ],
+            [
+                "Port Louis",
+                " Mauritius"
+            ],
+            [
+                "Rabat",
+                " Morocco"
+            ],
+            [
+                "Maputo",
+                " Mozambique"
+            ],
+            [
+                "Windhoek",
+                " Namibia"
+            ],
+            [
+                "Niamey",
+                " Niger"
+            ],
+            [
+                "Abuja",
+                " Nigeria"
+            ],
+            [
+                "Kigali",
+                " Rwanda"
+            ],
+            [
+                "S\u00e3o Tom\u00e9",
+                " S\u00e3o Tom\u00e9 and Pr\u00edncipe"
+            ],
+            [
+                "Dakar",
+                " Senegal"
+            ],
+            [
+                "Victoria",
+                " Seychelles"
+            ],
+            [
+                "Freetown",
+                " Sierra Leone"
+            ],
+            [
+                "Mogadishu",
+                " Somalia"
+            ],
+            [
+                "Pretoria",
+                " South Africa"
+            ],
+            [
+                "Juba",
+                " South Sudan"
+            ],
+            [
+                "Khartoum",
+                " Sudan"
+            ],
+            [
+                "Mbabane",
+                " Eswatini"
+            ],
+            [
+                "Dodoma",
+                " Tanzania"
+            ],
+            [
+                "Lom\u00e9",
+                " Togo"
+            ],
+            [
+                "Tunis",
+                " Tunisia"
+            ],
+            [
+                "Kampala",
+                " Uganda"
+            ],
+            [
+                "Lusaka",
+                " Zambia"
+            ],
+            [
+                "Harare",
+                " Zimbabwe"
+            ]
+        ],
+        "elapsed": 4.318792343139648,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 4.31866717338562,
+            "LLM_INPUTS": 226,
+            "LLM_OUTPUTS": 344
+        }
+    },
+    {
+        "question": "Which bridges are of the same type as the Manhattan Bridge?",
+        "answer": [
+            [
+                "Brooklyn Bridge"
+            ],
+            [
+                "Golden Gate Bridge"
+            ],
+            [
+                "George Washington Bridge"
+            ]
+        ],
+        "elapsed": 1.1139740943908691,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.113879680633545,
+            "LLM_INPUTS": 228,
+            "LLM_OUTPUTS": 45
+        }
+    },
+    {
+        "question": "How many companies were founded by the founder of Facebook?",
+        "answer": [
+            [
+                "2"
+            ]
+        ],
+        "elapsed": 0.4431493282318115,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.4430727958679199,
+            "LLM_INPUTS": 227,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "Show me hiking trails in the Grand Canyon where there's no danger of flash floods.",
+        "answer": [
+            [
+                "Rim Trail",
+                " South Rim",
+                " low flash flood risk"
+            ],
+            [
+                "Hermit Trail",
+                " South Rim",
+                " generally low flash flood risk"
+            ],
+            [
+                "Bright Angel Trail",
+                " mostly safe from flash floods due to elevation"
+            ]
+        ],
+        "elapsed": 0.929926872253418,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.9298291206359863,
+            "LLM_INPUTS": 232,
+            "LLM_OUTPUTS": 41
+        }
+    },
+    {
+        "question": "Which book has the most pages?",
+        "answer": [
+            [
+                "In Search of Lost Time by Marcel Proust"
+            ]
+        ],
+        "elapsed": 0.5836398601531982,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5835566520690918,
+            "LLM_INPUTS": 223,
+            "LLM_OUTPUTS": 14
+        }
+    },
+    {
+        "question": "What is the largest state in the United States?",
+        "answer": [
+            [
+                "Alaska"
+            ]
+        ],
+        "elapsed": 0.4291520118713379,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.42906975746154785,
+            "LLM_INPUTS": 226,
+            "LLM_OUTPUTS": 6
+        }
+    },
+    {
+        "question": "Give me the websites of companies with more than 500000 employees.",
+        "answer": [
+            [
+                "www.walmart.com"
+            ],
+            [
+                "www.amazon.com"
+            ],
+            [
+                "www.lenovo.com"
+            ]
+        ],
+        "elapsed": 0.5816912651062012,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5816061496734619,
+            "LLM_INPUTS": 230,
+            "LLM_OUTPUTS": 17
+        }
+    },
+    {
+        "question": "What were the names of the three ships by Columbus?",
+        "answer": [
+            [
+                "Santa Mar\u00eda",
+                "Pinta",
+                "Ni\u00f1a"
+            ]
+        ],
+        "elapsed": 0.4778015613555908,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.47771716117858887,
+            "LLM_INPUTS": 227,
+            "LLM_OUTPUTS": 11
+        }
+    }
+]

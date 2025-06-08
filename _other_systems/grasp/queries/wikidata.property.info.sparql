@@ -1,0 +1,20 @@
+PREFIX schema: <http://schema.org/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+
+SELECT
+  ?id
+  (GROUP_CONCAT(DISTINCT ?info; SEPARATOR=";;;") AS ?infos)
+WHERE {
+  # Get additional information
+  { 
+    VALUES ?id { {IDS} }
+    ?id schema:description ?info
+    FILTER(LANGMATCHES(LANG(?info), "en"))
+  } UNION {
+    VALUES ?id { {IDS} }
+    ?id wdt:P1647/rdfs:label ?supprop
+    FILTER(LANGMATCHES(LANG(?supprop), "en"))
+    BIND(CONCAT("is subproperty of ", ?supprop) AS ?info)
+  }
+}
+GROUP BY ?id

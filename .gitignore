@@ -1,0 +1,32 @@
+*_full.log
+/*log
+logs-and-results/pythia-qa-results/lc_quad_1/oracle/run_results_basic_lc_quad_1_test-data.json.json
+*.pyc
+*.class
+*.jar
+*.lst
+models/*.json
+indices/**
+src/engine/entity_linking/resources/indices/*/
+# src/engine/class_identifier/resources/knowledge_graph_classes/*.pkl
+src/engine/class_identifier/resources/indices/*/
+src/engine/evaluation/crd/logs/*
+test/*
+output/*
+**/target/
+
+datasets/grailqa/*.json
+datasets/dynamickgqa/*.json
+
+!output/README.md
+!tools/gost/GoST-1.1-SNAPSHOT.jar
+!indices/README.md
+
+# Other Systems
+_other_systems/llm-ft/models/**
+_other_systems/llm-ft/unsloth_compiled_cache/**
+_other_systems/llm-ft/scripts/outputs/**
+_other_systems/llm-ft/scripts/unsloth_compiled_cache/**
+
+# Local Configurations
+setup_pythia_exec.sh

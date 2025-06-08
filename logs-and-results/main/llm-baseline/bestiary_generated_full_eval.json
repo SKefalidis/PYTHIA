@@ -1,0 +1,1807 @@
+[
+    {
+        "question": "which creatures not speaking draconic language do have chaotic good alignment?",
+        "csv_answer": "Celestials, such as unicorns, pegasi, and some types of angels\nCertain fey creatures, like pixies and dryads\nSome chaotic good-aligned outsiders from Dungeons & Dragons settings, like certain types of archons or nature spirits",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.2345147132873535,
+            "LLM_INPUTS": 230,
+            "LLM_OUTPUTS": 56
+        }
+    },
+    {
+        "question": "does Caypup have more special abilities than Aasimar?",
+        "csv_answer": "False",
+        "results": {
+            "tp": 1,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 1,
+            "exact_match": true
+        },
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.357285737991333,
+            "LLM_INPUTS": 229,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "how many creatures with non-neutral alignment do speak treant language?",
+        "csv_answer": "2",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5544033050537109,
+            "LLM_INPUTS": 229,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "what spells Aasimar and Caypup do have in common?",
+        "csv_answer": "True",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5170485973358154,
+            "LLM_INPUTS": 230,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "is the number of creatures speaking both abyssal and aklo languages greater than infernal and terran?",
+        "csv_answer": "False",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.42920780181884766,
+            "LLM_INPUTS": 237,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "what is the most common alignment type?",
+        "csv_answer": "Lawful Good",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5651125907897949,
+            "LLM_INPUTS": 224,
+            "LLM_OUTPUTS": 7
+        }
+    },
+    {
+        "question": "how many types of robots are among creatures?",
+        "csv_answer": "6",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.3895866870880127,
+            "LLM_INPUTS": 225,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "are creatures with good alignment more common than evil?",
+        "csv_answer": "True",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.38943910598754883,
+            "LLM_INPUTS": 226,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "what creatures do have cold resist?",
+        "csv_answer": "Polar bears Arctic fish Antarctic krill Emperor penguins Reindeer Arctic foxes",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5871767997741699,
+            "LLM_INPUTS": 223,
+            "LLM_OUTPUTS": 19
+        }
+    },
+    {
+        "question": "what percentage of dragons do speak both draconic and common languages?",
+        "csv_answer": "100%",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5537636280059814,
+            "LLM_INPUTS": 230,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "what are the top-5 languages by popularity among creatures?",
+        "csv_answer": "English\nMandarin Chinese\nSpanish\nHindi\nArabic",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.6367683410644531,
+            "LLM_INPUTS": 228,
+            "LLM_OUTPUTS": 15
+        }
+    },
+    {
+        "question": "do dragons in average speak more languages than demons?",
+        "csv_answer": "False",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5134363174438477,
+            "LLM_INPUTS": 226,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "what creatures do speak both common and undercommon languages?",
+        "csv_answer": "Drow",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.41512346267700195,
+            "LLM_INPUTS": 227,
+            "LLM_OUTPUTS": 6
+        }
+    },
+    {
+        "question": "how many creatures do speak abyssal, sylvan and elven languages?",
+        "csv_answer": "1",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.4146995544433594,
+            "LLM_INPUTS": 231,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "is there any type of zombie with chaotic evil or chaotic neutral alignment?",
+        "csv_answer": "True",
+        "results": {
+            "tp": 1,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 1,
+            "exact_match": true
+        },
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.37612318992614746,
+            "LLM_INPUTS": 230,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "does Trox speak more languages than Sunlord?",
+        "csv_answer": "True",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5582315921783447,
+            "LLM_INPUTS": 226,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "does Einherji and Balor have any common language?",
+        "csv_answer": "Yes",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.3937058448791504,
+            "LLM_INPUTS": 228,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "how many creatures with lawful neutral alignment can speak giant language?",
+        "csv_answer": "1",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.4234442710876465,
+            "LLM_INPUTS": 228,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "which ogres with lawful evil alignment can speak common language?",
+        "csv_answer": "Ogre Mage, Lawful Evil, Common",
+        "results": {
+            "tp": 1,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 1,
+            "exact_match": true
+        },
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5332686901092529,
+            "LLM_INPUTS": 228,
+            "LLM_OUTPUTS": 14
+        }
+    },
+    {
+        "question": "what is the second most common alignment type for spiders?",
+        "csv_answer": "Toxic",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.4090428352355957,
+            "LLM_INPUTS": 227,
+            "LLM_OUTPUTS": 6
+        }
+    },
+    {
+        "question": "what alignment type is the most common for elementals?",
+        "csv_answer": "Neutral",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5052201747894287,
+            "LLM_INPUTS": 227,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "what alignment type is the rarest for creatures speaking auran language?",
+        "csv_answer": "Chaotic Good",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.4316096305847168,
+            "LLM_INPUTS": 230,
+            "LLM_OUTPUTS": 7
+        }
+    },
+    {
+        "question": "do skeletons have a greater percentage of true neutral alignment than zombies?",
+        "csv_answer": "True",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5338878631591797,
+            "LLM_INPUTS": 230,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "do raven and ghoul have the same alignment?",
+        "csv_answer": "False",
+        "results": {
+            "tp": 1,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 1,
+            "exact_match": true
+        },
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.4078826904296875,
+            "LLM_INPUTS": 226,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "what percentage of wolves does have chaotic alignment?",
+        "csv_answer": "0%",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5590183734893799,
+            "LLM_INPUTS": 225,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "what percentage of angels does speak aquan language?",
+        "csv_answer": "0%",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.40663981437683105,
+            "LLM_INPUTS": 226,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "what is an average number of languages for creatures?",
+        "csv_answer": "1",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.3923625946044922,
+            "LLM_INPUTS": 226,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "what is the maximum value for the numerical offensive attribute?",
+        "csv_answer": "100",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.597003698348999,
+            "LLM_INPUTS": 227,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "is Sangudaemon faster than Eblis?",
+        "csv_answer": "False",
+        "results": {
+            "tp": 1,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 1,
+            "exact_match": true
+        },
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.532426118850708,
+            "LLM_INPUTS": 226,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "what is the mean speed value for spiders?",
+        "csv_answer": "1.5 cm/s",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.4374973773956299,
+            "LLM_INPUTS": 225,
+            "LLM_OUTPUTS": 9
+        }
+    },
+    {
+        "question": "what are top 5 by speed chaotic evil creatures?",
+        "csv_answer": "Vrock, 60 feet per round\nShadow Demon, 60 feet per round\nBalor, 40 feet per round\nNightmare, 90 feet per round\nYochlol, 60 feet per round",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.179316520690918,
+            "LLM_INPUTS": 227,
+            "LLM_OUTPUTS": 49
+        }
+    },
+    {
+        "question": "what are creatures speaking sphinx language with speed value more than 20?",
+        "csv_answer": "Sphinx 21\nSphinx 25",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5553708076477051,
+            "LLM_INPUTS": 231,
+            "LLM_OUTPUTS": 13
+        }
+    },
+    {
+        "question": "what values of health points are related to creatures with the lowest level?",
+        "csv_answer": "1\n5\n10\n15\n20",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5644998550415039,
+            "LLM_INPUTS": 230,
+            "LLM_OUTPUTS": 13
+        }
+    },
+    {
+        "question": "what is the maximum value of health point for creatures with chaotic good alignment?",
+        "csv_answer": "There is no universally fixed maximum health point value for creatures with chaotic good alignment, as health points depend on the specific game, edition, or system in question rather than alignment alone.",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.0459578037261963,
+            "LLM_INPUTS": 231,
+            "LLM_OUTPUTS": 39
+        }
+    },
+    {
+        "question": "what values of experience points are related to creatures with the highest level?",
+        "csv_answer": "1048575",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.4439082145690918,
+            "LLM_INPUTS": 230,
+            "LLM_OUTPUTS": 7
+        }
+    },
+    {
+        "question": "what is the average challenge rating for creatures speaking celestial language?",
+        "csv_answer": "6",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.4009897708892822,
+            "LLM_INPUTS": 228,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "which elemental creatures do have a challenge rating more than 10?",
+        "csv_answer": "Elder Tempest, CR 17\nMarid, CR 11\nDao, CR 11\nDjinni, CR 11\nEfreeti, CR 11",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.0377137660980225,
+            "LLM_INPUTS": 229,
+            "LLM_OUTPUTS": 59
+        }
+    },
+    {
+        "question": "what creatures speaking terran language do have an initiative value more than 2 and less than 5?",
+        "csv_answer": "Terran language-speaking creatures with initiative value more than 2 and less than 5 include specific named creatures from Starcraft or could refer to common race units like Marines who speak Terran and might have initiative values within that range depending on system used. However, no standard universal \"initiative value\" is established in official lore or games.\n\nThus, based on common knowledge:\nTerran Marines have typical initiative values around 3-4 in some tabletop adaptations.",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.9930920600891113,
+            "LLM_INPUTS": 237,
+            "LLM_OUTPUTS": 132
+        }
+    },
+    {
+        "question": "what is the minimum non-negative initiative value for creatures with true neutral alignment?",
+        "csv_answer": "0",
+        "results": {
+            "tp": 1,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 1,
+            "exact_match": true
+        },
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.49472761154174805,
+            "LLM_INPUTS": 231,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "what are top 3 golem types by experience points?",
+        "csv_answer": "Iron Golem, 50 XP\nSnow Golem, 0 XP\nFlesh Golem, varies by game context (not standard in Minecraft)",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.7374362945556641,
+            "LLM_INPUTS": 228,
+            "LLM_OUTPUTS": 34
+        }
+    },
+    {
+        "question": "is Abaia superior to vampires in terms of base attributes?",
+        "csv_answer": "False",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5342442989349365,
+            "LLM_INPUTS": 228,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "is Dhampir superior to Gorgon in terms of mean base attributes?",
+        "csv_answer": "False",
+        "results": {
+            "tp": 1,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 1,
+            "exact_match": true
+        },
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.42971014976501465,
+            "LLM_INPUTS": 231,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "is Boggard superior to Selkie in terms of deffencive attributes?",
+        "csv_answer": "False",
+        "results": {
+            "tp": 1,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 1,
+            "exact_match": true
+        },
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.4165050983428955,
+            "LLM_INPUTS": 233,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "is Centaur superior to Medusa in terms of mean defensive attributes?",
+        "csv_answer": "False",
+        "results": {
+            "tp": 1,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 1,
+            "exact_match": true
+        },
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5893471240997314,
+            "LLM_INPUTS": 230,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "is Biclops superior to Mastodon in terms of statistics sum?",
+        "csv_answer": "False",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.46276187896728516,
+            "LLM_INPUTS": 230,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "is Satyr superior to Cacodaemon in terms of mean statistics?",
+        "csv_answer": "False",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5629208087921143,
+            "LLM_INPUTS": 231,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "what is the dominant statistics for golems in average?",
+        "csv_answer": "Strength",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.46553921699523926,
+            "LLM_INPUTS": 227,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "what is the lowest statistics in average for wolves?",
+        "csv_answer": "Pack size",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.42443418502807617,
+            "LLM_INPUTS": 226,
+            "LLM_OUTPUTS": 6
+        }
+    },
+    {
+        "question": "what is the dominant defencive attribute for skeletons in average?",
+        "csv_answer": "Evasion",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.39952540397644043,
+            "LLM_INPUTS": 230,
+            "LLM_OUTPUTS": 6
+        }
+    },
+    {
+        "question": "what is the lowest defensive attribute for ogres in average?",
+        "csv_answer": "Strength",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5568790435791016,
+            "LLM_INPUTS": 228,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "does creatures have more offencive attributes than defencive?",
+        "csv_answer": "False",
+        "results": {
+            "tp": 1,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 1,
+            "exact_match": true
+        },
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.39669227600097656,
+            "LLM_INPUTS": 229,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "which creatures speaking aklo language do have the maximum attack parameter?",
+        "csv_answer": "Star-Spawn of Cthulhu",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.4984724521636963,
+            "LLM_INPUTS": 229,
+            "LLM_OUTPUTS": 12
+        }
+    },
+    {
+        "question": "what is the average attack parameter for robots?",
+        "csv_answer": "There is no standardized \"average attack parameter\" for robots as it varies widely depending on the type, purpose, and context (e.g., industrial robots vs combat robots). Please specify the context for a precise answer.",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.9085373878479004,
+            "LLM_INPUTS": 225,
+            "LLM_OUTPUTS": 46
+        }
+    },
+    {
+        "question": "how many creatures with neutral evil alignment do have combat maneuver bonus less than 4?",
+        "csv_answer": "6",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.434833288192749,
+            "LLM_INPUTS": 233,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "what is the minimum combat maneuver bonus for creatures speaking ignan language?",
+        "csv_answer": "+0",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.44834375381469727,
+            "LLM_INPUTS": 230,
+            "LLM_OUTPUTS": 6
+        }
+    },
+    {
+        "question": "how many demons do have combat maneuver defense level greater than the average for all creatures?",
+        "csv_answer": "Cannot determine from provided information",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5826127529144287,
+            "LLM_INPUTS": 233,
+            "LLM_OUTPUTS": 9
+        }
+    },
+    {
+        "question": "what is the maximum combat maneuver defense level for creatures with neutral good alignment?",
+        "csv_answer": "No specific maximum combat maneuver defense level is assigned based solely on a creature's neutral good alignment.",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.7682387828826904,
+            "LLM_INPUTS": 231,
+            "LLM_OUTPUTS": 22
+        }
+    },
+    {
+        "question": "what creatures speaking dwarven language do have armor class greater than 12?",
+        "csv_answer": "Dwarf Fighter 16\nDwarf Cleric 15\nDuergar 17\nDuergar Warrior 18",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.8102672100067139,
+            "LLM_INPUTS": 231,
+            "LLM_OUTPUTS": 27
+        }
+    },
+    {
+        "question": "what is the average armor class for angels?",
+        "csv_answer": "17",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.43570446968078613,
+            "LLM_INPUTS": 225,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "what is the minimum flat footed value for creatures with lawful good alignment?",
+        "csv_answer": "10",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.4477884769439697,
+            "LLM_INPUTS": 231,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "how many trolls do have flat footed value between 13 and 18?",
+        "csv_answer": "5",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.41559815406799316,
+            "LLM_INPUTS": 232,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "what is the maximum fort value for creatures speaking goblin language?",
+        "csv_answer": "3",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5431861877441406,
+            "LLM_INPUTS": 229,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "is there any creature with true neutral alignment with fort value equal to 6?",
+        "csv_answer": "True",
+        "results": {
+            "tp": 1,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 1,
+            "exact_match": true
+        },
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.44969677925109863,
+            "LLM_INPUTS": 232,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "what is the average number of health points for creatures speaking gnome language?",
+        "csv_answer": "11",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.4040498733520508,
+            "LLM_INPUTS": 231,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "what is the minimum number of health points for dragons with strenghts attribute more than 10?",
+        "csv_answer": "50",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.4342362880706787,
+            "LLM_INPUTS": 236,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "how many creatures speaking halfling language do have ref value more than 10 and atack parameter less than 15?",
+        "csv_answer": "0",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.4938483238220215,
+            "LLM_INPUTS": 241,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "what creatures with chaotic evil alignment do have the maximum ref value?",
+        "csv_answer": "Demon Lords 14\nBalor 12\nMarilith 11",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.685715913772583,
+            "LLM_INPUTS": 229,
+            "LLM_OUTPUTS": 21
+        }
+    },
+    {
+        "question": "is there any spider type with touch value equal to 11?",
+        "csv_answer": "False",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.40004849433898926,
+            "LLM_INPUTS": 229,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "what is the minimum touch value for creatures speaking druidic language with initiative value less than 2?",
+        "csv_answer": "The question seems to mix game mechanics elements, possibly from Dungeons & Dragons or a similar RPG system. However, there is no standard or universal \"minimum touch value\" specifically tied to creatures that speak the Druidic language and have initiative values less than 2. Initiative and language do not typically impact touch AC or minimum touch values directly in standard rulesets.\n\nTherefore, based on typical RPG rules, there is no defined minimum touch value specifically related to \"creatures speaking Druidic with initiative < 2.\"",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 2.0253522396087646,
+            "LLM_INPUTS": 237,
+            "LLM_OUTPUTS": 107
+        }
+    },
+    {
+        "question": "what percentage of creatures with neutral evil alignment do have will value less than 1?",
+        "csv_answer": "0%",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.3867168426513672,
+            "LLM_INPUTS": 233,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "what is the average will value for creatures speaking orc language?",
+        "csv_answer": "5.5",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.604379415512085,
+            "LLM_INPUTS": 229,
+            "LLM_OUTPUTS": 7
+        }
+    },
+    {
+        "question": "what types of zombies do have charisma attribute between 3 and 7?",
+        "csv_answer": "Ghoul 3\nWight 4\nMummy 5\nBanshee 6",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.765188455581665,
+            "LLM_INPUTS": 231,
+            "LLM_OUTPUTS": 24
+        }
+    },
+    {
+        "question": "is there any creature type with lawful evil alignment having charisma attribute greater than sum of strength and intelligence?",
+        "csv_answer": "True",
+        "results": {
+            "tp": 1,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 1,
+            "exact_match": true
+        },
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.45885300636291504,
+            "LLM_INPUTS": 236,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "how many creatures speaking protean language do have constitution greater than 10?",
+        "csv_answer": "Unknown",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.411837100982666,
+            "LLM_INPUTS": 231,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "what is the maximum value of constitution attribute for elementals?",
+        "csv_answer": "20",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.6292786598205566,
+            "LLM_INPUTS": 228,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "what is the average dexterity attribute for creatures with true neutral alignment?",
+        "csv_answer": "11",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.40710878372192383,
+            "LLM_INPUTS": 230,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "which creatures speaking aboleth language do have dexterity greater than average for all creatures?",
+        "csv_answer": "Aboleth",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.49706602096557617,
+            "LLM_INPUTS": 234,
+            "LLM_OUTPUTS": 7
+        }
+    },
+    {
+        "question": "how many robots do have intelligence attribute less than 7 and speed value more than 10?",
+        "csv_answer": "I need more information about the dataset or list of robots to answer this question. Could you please provide the details of the robots including their intelligence and speed attributes?",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.8300495147705078,
+            "LLM_INPUTS": 235,
+            "LLM_OUTPUTS": 35
+        }
+    },
+    {
+        "question": "what is the minimum intelligence attribute for creatures with chaotic neutral alignment?",
+        "csv_answer": "3",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.4455556869506836,
+            "LLM_INPUTS": 229,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "what percentage of creatures speaking daemonic language do have strength attribute greater than 20?",
+        "csv_answer": "0%",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.39399051666259766,
+            "LLM_INPUTS": 233,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "what is the average wisdom attribute for creatures with lawful neutral alignment?",
+        "csv_answer": "11",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.4494357109069824,
+            "LLM_INPUTS": 229,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "which creatures speaking necril and abyssal languages do have wisdom attribute more than 4?",
+        "csv_answer": "Beholders, 5 (Wisdom), Necril, Abyssal\nDruags, 6 (Wisdom), Necril\nNight Hags, 7 (Wisdom), Abyssal\nVrocks, 5 (Wisdom), Abyssal",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.1484713554382324,
+            "LLM_INPUTS": 235,
+            "LLM_OUTPUTS": 61
+        }
+    },
+    {
+        "question": "what are the sums of the statistics for creatures speaking both gnoll and elven languages?",
+        "csv_answer": "The sum of statistics for creatures speaking both Gnoll and Elven languages depends on the specific creatures in question from Dungeons & Dragons or similar fantasy settings. Since standard creatures typically do not speak both languages jointly, there is no predefined creature with combined language traits of Gnoll and Elven in official stats. Therefore, without a specific creature provided, the sum of such statistics cannot be determined.",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.5548248291015625,
+            "LLM_INPUTS": 234,
+            "LLM_OUTPUTS": 81
+        }
+    },
+    {
+        "question": "do Griffon and Hippogriff have the same alignment?",
+        "csv_answer": "False",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.48949170112609863,
+            "LLM_INPUTS": 228,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "does Baalzebul have a greater value of average statistics than Dagon?",
+        "csv_answer": "True",
+        "results": {
+            "tp": 1,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 1,
+            "exact_match": true
+        },
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.4535810947418213,
+            "LLM_INPUTS": 232,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "which creatures speaking ghoul language do have the greatest constitution attribute?",
+        "csv_answer": "Oni",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.4002525806427002,
+            "LLM_INPUTS": 229,
+            "LLM_OUTPUTS": 6
+        }
+    },
+    {
+        "question": "is the number of creatures speaking dark language greater than cyclops language?",
+        "csv_answer": "True",
+        "results": {
+            "tp": 1,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 1,
+            "exact_match": true
+        },
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.4002094268798828,
+            "LLM_INPUTS": 230,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "is the number of creatures speaking polyglot language greater than skald language?",
+        "csv_answer": "False",
+        "results": {
+            "tp": 1,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 1,
+            "exact_match": true
+        },
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.404033899307251,
+            "LLM_INPUTS": 232,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "are angels characterized by the greater average value of experience points than demons?",
+        "csv_answer": "False",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.38126301765441895,
+            "LLM_INPUTS": 230,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "do Lorelei and sirens speak the same languages?",
+        "csv_answer": "False",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.42424964904785156,
+            "LLM_INPUTS": 227,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "what is the average dexterity attribute for Phoenix and Sleipnir?",
+        "csv_answer": "9, 7",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.48418736457824707,
+            "LLM_INPUTS": 230,
+            "LLM_OUTPUTS": 8
+        }
+    },
+    {
+        "question": "what is the maximum constitution attribute for Kraken and Leviathan?",
+        "csv_answer": "99, 99",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.4183013439178467,
+            "LLM_INPUTS": 228,
+            "LLM_OUTPUTS": 8
+        }
+    },
+    {
+        "question": "what is the minimum wisdom attribute for Gorynych and Vodyanoi?",
+        "csv_answer": "12\n14",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.39101076126098633,
+            "LLM_INPUTS": 231,
+            "LLM_OUTPUTS": 7
+        }
+    },
+    {
+        "question": "does Kitsune or Rusalka have charisma attribute more than 20?",
+        "csv_answer": "False",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.43387389183044434,
+            "LLM_INPUTS": 231,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "does Sandman or Charon speak elder or boggarg language?",
+        "csv_answer": "False",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5522215366363525,
+            "LLM_INPUTS": 230,
+            "LLM_OUTPUTS": 5
+        }
+    }
+]

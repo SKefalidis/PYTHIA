@@ -1,0 +1,41 @@
+PREFIX osmkey: <https://www.openstreetmap.org/wiki/Key:>
+
+SELECT
+  ?id
+  (SAMPLE(?label) AS ?main_label)
+  (GROUP_CONCAT(DISTINCT ?alias; SEPARATOR=";;;") AS ?aliases)
+WHERE {
+  # Get ids and their frequencies for score
+  {
+    SELECT ?id (SUM(?freq) AS ?total_freq) WHERE {
+      {
+        SELECT ?id ("SUB" AS ?pos) (COUNT(?id) AS ?freq) WHERE {
+          ?id osmkey:name [] .
+          ?id ?p ?o 
+        } GROUP BY ?id 
+      } UNION {
+        SELECT ?id ("OBJ" AS ?pos) (COUNT(?id) AS ?freq) WHERE {
+          ?id osmkey:name [] .
+          ?s ?p ?id .
+          FILTER(ISIRI(?id)) 
+        } GROUP BY ?id
+      }
+    } GROUP BY ?id
+  }
+
+  # Get label
+  ?id osmkey:name ?label .
+
+  # Get aliases
+  OPTIONAL {
+    { 
+      ?id osmkey:short_name ?alias 
+    } UNION {
+      ?id osmkey:name:en ?alias
+    } UNION {
+      ?id osmkey:name:de ?alias
+    }
+  }
+}
+GROUP BY ?id
+ORDER BY DESC(MAX(?total_freq))

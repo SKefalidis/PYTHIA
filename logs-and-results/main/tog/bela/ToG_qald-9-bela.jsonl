@@ -1,0 +1,4158 @@
+[
+    {
+        "question": "What is the time zone of Salt Lake City?",
+        "results": "{Yes}. Based on the given knowledge triplets, Salt Lake City is in the Mountain Time Zone. Therefore, the answer to the question is {Mountain Time Zone}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Salt Lake City",
+                        "dbp:timezone",
+                        "Mountain Time Zone"
+                    ],
+                    [
+                        "Salt Lake City",
+                        "onto:timeZone",
+                        "Mountain Time Zone"
+                    ],
+                    [
+                        "Time zone",
+                        "dbp:timezone",
+                        "Ambewela"
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 15.28316354751587,
+            "SPARQL_CALLS": 25,
+            "SPARQL_TIME": 4.5238258838653564,
+            "LLM_CALLS": 5,
+            "LLM_INPUTS": 3548,
+            "LLM_OUTPUTS": 159,
+            "LLM_TIME": 10.733876466751099
+        }
+    },
+    {
+        "question": "Who killed Caesar?",
+        "results": "{Yes}. Based on the given knowledge triplets, Trebonius was a trusted associate of Julius Caesar and was later among those who instigated the plot to assassinate him. Therefore, the answer to the question \"Who killed Caesar?\" includes Trebonius as one of the assassins.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Julius Caesar",
+                        "dbp:deathDate",
+                        "-0044-03-15"
+                    ],
+                    [
+                        "Julius Caesar",
+                        "onto:isPartOfMilitaryConflict",
+                        "Caesar's invasions of Britain"
+                    ]
+                ]
+            ],
+            [
+                [
+                    [
+                        "Caesar's invasions of Britain",
+                        "dbp:commander",
+                        "Trebonius"
+                    ],
+                    [
+                        "Caesar's invasions of Britain",
+                        "dbp:combatant",
+                        "Britons"
+                    ],
+                    [
+                        "Caesar's invasions of Britain",
+                        "dbp:combatant",
+                        "Roman Republic and Trinovantes"
+                    ]
+                ]
+            ],
+            [
+                [
+                    [
+                        "Trebonius",
+                        "dct:description",
+                        "politician and soldier"
+                    ],
+                    [
+                        "Trebonius",
+                        "onto:commander",
+                        "Caesar's invasions of Britain"
+                    ],
+                    [
+                        "Trebonius",
+                        "rdfs:comment",
+                        "Gaius Trebonius (c. 92 BC \u2013 January 43 BC) was a military commander and politician of the late Roman Republic, who became suffect consul in 45 BC. A trusted associate of Julius Caesar, he was later among those who instigated the plot to assassinate the dictator."
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 35.843531131744385,
+            "SPARQL_CALLS": 36,
+            "SPARQL_TIME": 5.574532985687256,
+            "LLM_CALLS": 9,
+            "LLM_INPUTS": 5619,
+            "LLM_OUTPUTS": 535,
+            "LLM_TIME": 30.261171102523804
+        }
+    },
+    {
+        "question": "What is the highest mountain in Germany?",
+        "results": "First, the highest mountain in Germany is Zugspitze. The answer is {Zugspitze}.",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 57.7525851726532,
+            "SPARQL_CALLS": 47,
+            "SPARQL_TIME": 14.13773250579834,
+            "LLM_CALLS": 13,
+            "LLM_INPUTS": 13106,
+            "LLM_OUTPUTS": 548,
+            "LLM_TIME": 43.18960165977478
+        }
+    },
+    {
+        "question": "Which American presidents were in office during the Vietnam War?",
+        "results": "First, the Vietnam War lasted from November 1, 1955, to April 30, 1975.  \nSecond, the American presidents in office during this period were:  \n- Dwight D. Eisenhower (1953\u20131961)  \n- John F. Kennedy (1961\u20131963)  \n- Lyndon B. Johnson (1963\u20131969)  \n- Richard Nixon (1969\u20131974)  \n- Gerald Ford (1974\u20131977)  \n\nThe answer is {Dwight D. Eisenhower, John F. Kennedy, Lyndon B. Johnson, Richard Nixon, Gerald Ford}.",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 133.87816977500916,
+            "SPARQL_CALLS": 69,
+            "SPARQL_TIME": 21.066540479660034,
+            "LLM_CALLS": 18,
+            "LLM_INPUTS": 12591,
+            "LLM_OUTPUTS": 1991,
+            "LLM_TIME": 111.94810771942139
+        }
+    },
+    {
+        "question": "Butch Otter is the governor of which U.S. state?",
+        "results": "{Yes}. Based on the given knowledge triplets, Butch Otter is associated with the state of Idaho. Therefore, the answer to the question is {Idaho}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "U.S. state",
+                        "onto:jurisdiction",
+                        "Oregon Department of Human Services"
+                    ],
+                    [
+                        "U.S. state",
+                        "dbp:government",
+                        "State governments of the United States"
+                    ],
+                    [
+                        "Butch Otter",
+                        "dbp:state",
+                        "Idaho"
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 17.809760093688965,
+            "SPARQL_CALLS": 21,
+            "SPARQL_TIME": 3.9205331802368164,
+            "LLM_CALLS": 6,
+            "LLM_INPUTS": 3299,
+            "LLM_OUTPUTS": 350,
+            "LLM_TIME": 13.837451457977295
+        }
+    },
+    {
+        "question": "How many gold medals did Michael Phelps win at the 2008 Olympics?",
+        "results": "First, Michael Phelps won 8 gold medals at the 2008 Olympics. The answer is {8}.",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 32.614373207092285,
+            "SPARQL_CALLS": 51,
+            "SPARQL_TIME": 7.612123489379883,
+            "LLM_CALLS": 11,
+            "LLM_INPUTS": 7385,
+            "LLM_OUTPUTS": 457,
+            "LLM_TIME": 24.98436665534973
+        }
+    },
+    {
+        "question": "Which artists were born on the same date as Rachel Stevens?",
+        "results": "Based on the given knowledge triplets, Rachel Stevens was born on April 9, 1978. However, there is no information provided about other artists born on the same date. Therefore, with the current data, it is not possible to identify which artists share the same birth date as Rachel Stevens.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Rachel Stevens",
+                        "dbp:birthDate",
+                        "1978-04-09"
+                    ],
+                    [
+                        "Rachel Stevens",
+                        "onto:birthDate",
+                        "1978-04-09"
+                    ],
+                    [
+                        "Rachel Stevens",
+                        "onto:birthDate",
+                        "1978-4-9"
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 9.409179925918579,
+            "SPARQL_CALLS": 8,
+            "SPARQL_TIME": 1.2266340255737305,
+            "LLM_CALLS": 4,
+            "LLM_INPUTS": 2620,
+            "LLM_OUTPUTS": 166,
+            "LLM_TIME": 8.181317806243896
+        }
+    },
+    {
+        "question": "What is the profession of Frank Herbert?",
+        "results": "{Yes}. Based on the given knowledge triplets, Frank Herbert was an American science fiction writer and novelist. Additionally, he was a newspaper journalist, photographer, short story writer, book reviewer, ecological consultant, and lecturer. Therefore, the answer to the question is {Frank Herbert was a novelist, science fiction writer, newspaper journalist, photographer, short story writer, book reviewer, ecological consultant, and lecturer}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Frank Herbert",
+                        "dbp:occupation",
+                        "Novelist"
+                    ],
+                    [
+                        "Frank Herbert",
+                        "dct:description",
+                        "American writer"
+                    ],
+                    [
+                        "Frank Herbert",
+                        "onto:abstract",
+                        "Frank Patrick Herbert, Jr. (October 8, 1920 \u2013 February 11, 1986) was an American science fiction writer best known for the novel Dune and its five sequels. Though he became famous for science fiction, he was also a newspaper journalist, photographer, short story writer, book reviewer, ecological consultant and lecturer. The Dune saga, set in the distant future and taking place over millennia, deals with complex themes such as human survival and evolution, ecology, and the intersection of religion, politics and power. Dune itself is the best-selling science fiction novel of all time and the series is widely considered to be among the classics of the genre."
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 6.754637718200684,
+            "SPARQL_CALLS": 8,
+            "SPARQL_TIME": 1.364830493927002,
+            "LLM_CALLS": 2,
+            "LLM_INPUTS": 1736,
+            "LLM_OUTPUTS": 122,
+            "LLM_TIME": 5.388200283050537
+        }
+    },
+    {
+        "question": "Are Taiko some kind of Japanese musical instrument?",
+        "results": "Yes, Taiko are a type of traditional Japanese musical instrument, specifically large drums used in various cultural and musical performances. The answer is {Yes}.",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 65.05944299697876,
+            "SPARQL_CALLS": 85,
+            "SPARQL_TIME": 26.609108209609985,
+            "LLM_CALLS": 16,
+            "LLM_INPUTS": 10946,
+            "LLM_OUTPUTS": 760,
+            "LLM_TIME": 37.94210243225098
+        }
+    },
+    {
+        "question": "How many seats does the home stadium of FC Porto have?",
+        "results": "{Yes}. Based on the given knowledge triplets, FC Porto's home stadium is Est\u00e1dio do Drag\u00e3o, and the capacity is given as 50,092 seats. Therefore, the answer to the question is {50,092}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "FC Porto",
+                        "dbp:capacity",
+                        "50092"
+                    ],
+                    [
+                        "FC Porto",
+                        "onto:capacity",
+                        "50092"
+                    ],
+                    [
+                        "FC Porto",
+                        "dbp:ground",
+                        "Est\u00e1dio do Drag\u00e3o"
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 6.040899276733398,
+            "SPARQL_CALLS": 9,
+            "SPARQL_TIME": 1.69978666305542,
+            "LLM_CALLS": 2,
+            "LLM_INPUTS": 1860,
+            "LLM_OUTPUTS": 88,
+            "LLM_TIME": 4.331127405166626
+        }
+    },
+    {
+        "question": "Which frequent flyer program has the most airlines?",
+        "results": "First, the frequent flyer program with the most airlines is typically the oneworld alliance, SkyTeam, or Star Alliance. Second, among these, Star Alliance has the largest number of member airlines. The answer is {Star Alliance}.",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 43.661375761032104,
+            "SPARQL_CALLS": 68,
+            "SPARQL_TIME": 9.387518405914307,
+            "LLM_CALLS": 16,
+            "LLM_INPUTS": 7651,
+            "LLM_OUTPUTS": 675,
+            "LLM_TIME": 34.24712681770325
+        }
+    },
+    {
+        "question": "Which European countries have a constitutional monarchy?",
+        "results": "First, European countries with constitutional monarchies include the United Kingdom, Sweden, Norway, Denmark, the Netherlands, Belgium, Spain, and Luxembourg. The answer is {United Kingdom, Sweden, Norway, Denmark, the Netherlands, Belgium, Spain, Luxembourg}.",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 70.6596109867096,
+            "SPARQL_CALLS": 110,
+            "SPARQL_TIME": 20.463988304138184,
+            "LLM_CALLS": 20,
+            "LLM_INPUTS": 12239,
+            "LLM_OUTPUTS": 1033,
+            "LLM_TIME": 50.00795340538025
+        }
+    },
+    {
+        "question": "Which countries have places with more than two caves?",
+        "results": "First, countries known for having multiple caves include the United States, France, Spain, China, and Mexico, among others. Second, these countries have numerous cave systems with more than two caves each. The answer is {United States, France, Spain, China, Mexico}.",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 2.2988364696502686,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0.0,
+            "LLM_CALLS": 1,
+            "LLM_INPUTS": 390,
+            "LLM_OUTPUTS": 55,
+            "LLM_TIME": 2.298814058303833
+        }
+    },
+    {
+        "question": "Which airports are located in California, USA?",
+        "results": "Based on the given knowledge triplets, there is no information about airports located in California, USA. The triplets only mention \"AirPort\" as a type related to wireless base stations and cards, which is unrelated to actual airports in California. Therefore, with the provided data, it is not possible to answer which airports are located in California, USA.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "AirPort",
+                        "dbp:type",
+                        "Wireless Base Stations and cards"
+                    ],
+                    [
+                        "AirPort",
+                        "rdfs:label",
+                        "AirPort"
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 42.96266317367554,
+            "SPARQL_CALLS": 50,
+            "SPARQL_TIME": 21.632048845291138,
+            "LLM_CALLS": 11,
+            "LLM_INPUTS": 10581,
+            "LLM_OUTPUTS": 419,
+            "LLM_TIME": 20.355560064315796
+        }
+    },
+    {
+        "question": "What are the nicknames of San Francisco?",
+        "results": "{Yes}. Based on the given knowledge triplets, the nicknames of San Francisco are \"The City,\" \"The City by the Bay,\" \"Fog City,\" \"San Fran,\" \"Frisco,\" \"The City that Knows How,\" \"Baghdad by the Bay,\" and \"The Paris of the West.\" Therefore, the answer to the question is {The City; The City by the Bay; Fog City; San Fran; Frisco; The City that Knows How; Baghdad by the Bay; The Paris of the West}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "San Francisco",
+                        "dbp:nickname",
+                        "The City; The City by the Bay; Fog City; San Fran; Frisco ; The City that Knows How ; Baghdad by the Bay ; The Paris of the West"
+                    ],
+                    [
+                        "San Francisco",
+                        "rdfs:label",
+                        "San Francisco"
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 8.738659620285034,
+            "SPARQL_CALLS": 7,
+            "SPARQL_TIME": 1.8901524543762207,
+            "LLM_CALLS": 2,
+            "LLM_INPUTS": 2913,
+            "LLM_OUTPUTS": 150,
+            "LLM_TIME": 6.788962125778198
+        }
+    },
+    {
+        "question": "What is Angela Merkel\u2019s birth name?",
+        "results": "{Yes}. Based on the given knowledge triplets, Angela Merkel\u2019s birth name is Angela Dorothea Kasner. Therefore, the answer to the question is {Angela Dorothea Kasner}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Angela Merkel",
+                        "dbp:birthName",
+                        "Angela Dorothea Kasner"
+                    ],
+                    [
+                        "Angela Merkel",
+                        "dct:description",
+                        "Chancellor of Germany"
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 6.165562152862549,
+            "SPARQL_CALLS": 7,
+            "SPARQL_TIME": 1.3582823276519775,
+            "LLM_CALLS": 2,
+            "LLM_INPUTS": 1704,
+            "LLM_OUTPUTS": 82,
+            "LLM_TIME": 4.803400039672852
+        }
+    },
+    {
+        "question": "Who is the mayor of Berlin?",
+        "results": "{Yes}. Based on the given knowledge triplets, the leader of Berlin is Michael M\u00fcller, and the leader's title is Governing Mayor of Berlin. Therefore, the answer to the question is {Michael M\u00fcller}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Berlin",
+                        "dbp:leader",
+                        "Michael M\u00fcller"
+                    ],
+                    [
+                        "Berlin",
+                        "dbp:leaderTitle",
+                        "Governing Mayor of Berlin"
+                    ],
+                    [
+                        "Berlin",
+                        "onto:city",
+                        "1937 German football championship"
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 13.993759393692017,
+            "SPARQL_CALLS": 14,
+            "SPARQL_TIME": 3.0108582973480225,
+            "LLM_CALLS": 3,
+            "LLM_INPUTS": 3789,
+            "LLM_OUTPUTS": 262,
+            "LLM_TIME": 10.934420108795166
+        }
+    },
+    {
+        "question": "Which countries in the European Union adopted the Euro?",
+        "results": "{Yes}. Based on the given knowledge triplets, the Euro is the official currency of the eurozone, which consists of 19 of the 28 member states of the European Union. These countries are Austria, Belgium, Cyprus, Estonia, Finland, France, Germany, Greece, Ireland, Italy, Latvia, Lithuania, Luxembourg, Malta, the Netherlands, Portugal, Slovakia, Slovenia, and Spain. Therefore, the answer to the question is {Austria, Belgium, Cyprus, Estonia, Finland, France, Germany, Greece, Ireland, Italy, Latvia, Lithuania, Luxembourg, Malta, the Netherlands, Portugal, Slovakia, Slovenia, and Spain}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "European Union",
+                        "dbp:currency",
+                        "Euro"
+                    ],
+                    [
+                        "Euro",
+                        "onto:abstract",
+                        "The euro (sign: \u20ac; code: EUR) is the official currency of the eurozone, which consists of 19 of the 28 member states of the European Union: Austria, Belgium, Cyprus, Estonia, Finland, France, Germany, Greece, Ireland, Italy, Latvia, Lithuania, Luxembourg, Malta, the Netherlands, Portugal, Slovakia, Slovenia, and Spain. The currency is also officially used by the institutions of the European Union and four other European countries, as well as unilaterally by two others, and is consequently used daily by some 337 million Europeans as of 2015. Outside of Europe, a number of overseas territories of EU members also use the euro as their currency. Additionally, 210 million people worldwide as of 2013 use currencies pegged to the euro. The euro is the second largest reserve currency as well as the second most traded currency in the world after the United States dollar.As of August 2014, with more than \u20ac995,000,000,000 in circulation, the euro has the highest combined value of banknotes and coins in circulation in the world, having surpassed the U.S. dollar.Based on International Monetary Fund estimates of 2008 GDP and purchasing power parity among the various currencies, the eurozone is the second largest economy in the world. The name euro was officially adopted on 16 December 1995. The euro was introduced to world financial markets as an accounting currency on 1 January 1999, replacing the former European Currency Unit (ECU) at a ratio of 1:1 (US$1.1743). Physical euro coins and banknotes entered into circulation on 1 January 2002, making it the day-to-day operating currency of its original members, and by May 2002 had completely replaced the former currencies. While the euro dropped subsequently to US$0.8252 within two years (26 October 2000), it has traded above the U.S. dollar since the end of 2002, peaking at US$1.6038 on 18 July 2008. Since late 2009, the euro has been immersed in the European sovereign-debt crisis which has led to the creation of the European Financial Stability Facility as well as other reforms aimed at stabilising the currency. In July 2012, the euro fell below US$1.21 for the first time in two years, following concerns raised over Greek debt and Spain's troubled banking sector. As of 21 September 2016, the euro\u2013dollar exchange rate stands at ~ US$1.1150."
+                    ],
+                    [
+                        "European Union",
+                        "dbp:membershipType",
+                        "Member states"
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 25.027162075042725,
+            "SPARQL_CALLS": 44,
+            "SPARQL_TIME": 7.148977279663086,
+            "LLM_CALLS": 6,
+            "LLM_INPUTS": 4545,
+            "LLM_OUTPUTS": 432,
+            "LLM_TIME": 17.84715461730957
+        }
+    },
+    {
+        "question": "Which software has been published by Mean Hamster Software?",
+        "results": "{Yes}. Based on the given knowledge triplets, Mean Hamster Software has published the software \"Crossbow (video game)\". Therefore, the answer to the question is {Crossbow (video game)}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Mean Hamster Software",
+                        "dbp:products",
+                        "Cat Wash, Passport to Perfume, Ye Olde Sandwich Shoppe, Everything Nice, Myst, Riven, Pet Shop Hop, Vegas Nights and Exidy games"
+                    ],
+                    [
+                        "Mean Hamster Software",
+                        "onto:product",
+                        "Myst"
+                    ],
+                    [
+                        "Mean Hamster Software",
+                        "dbp:publisher",
+                        "Crossbow (video game)"
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 7.272600889205933,
+            "SPARQL_CALLS": 18,
+            "SPARQL_TIME": 2.306624412536621,
+            "LLM_CALLS": 3,
+            "LLM_INPUTS": 1739,
+            "LLM_OUTPUTS": 99,
+            "LLM_TIME": 4.9649529457092285
+        }
+    },
+    {
+        "question": "Which country was Bill Gates born in?",
+        "results": "{Yes}. Based on the given knowledge triplets, Bill Gates was born in Seattle, Washington, U.S., which is in the United States. Therefore, the country Bill Gates was born in is {United States}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Bill Gates",
+                        "dbp:birthPlace",
+                        "Seattle, Washington, U.S."
+                    ],
+                    [
+                        "Bill Gates",
+                        "onto:birthPlace",
+                        "Seattle"
+                    ],
+                    [
+                        "Bill Gates",
+                        "dbp:nationality",
+                        "American"
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 5.267959356307983,
+            "SPARQL_CALLS": 9,
+            "SPARQL_TIME": 1.6512436866760254,
+            "LLM_CALLS": 2,
+            "LLM_INPUTS": 1808,
+            "LLM_OUTPUTS": 87,
+            "LLM_TIME": 3.6129238605499268
+        }
+    },
+    {
+        "question": "How many grand-children did Jacques Cousteau have?",
+        "results": "Jacques Cousteau had 7 grandchildren. The answer is {7}.",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 28.208062887191772,
+            "SPARQL_CALLS": 47,
+            "SPARQL_TIME": 6.375067710876465,
+            "LLM_CALLS": 10,
+            "LLM_INPUTS": 6270,
+            "LLM_OUTPUTS": 508,
+            "LLM_TIME": 21.82765531539917
+        }
+    },
+    {
+        "question": "Give me all professional skateboarders from Sweden.",
+        "results": "First, professional skateboarders from Sweden include Pontus Alv and Carl Fredrik Sandberg. The answer is {Pontus Alv, Carl Fredrik Sandberg}.",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 69.56906628608704,
+            "SPARQL_CALLS": 111,
+            "SPARQL_TIME": 19.35962986946106,
+            "LLM_CALLS": 18,
+            "LLM_INPUTS": 12598,
+            "LLM_OUTPUTS": 1157,
+            "LLM_TIME": 50.01777958869934
+        }
+    },
+    {
+        "question": "Which monarchs of the United Kingdom were married to a German?",
+        "results": "First, several monarchs of the United Kingdom were married to Germans. For example, Queen Victoria was married to Prince Albert of Saxe-Coburg and Gotha, who was German. Additionally, King George I was from the German House of Hanover and married Sophia Dorothea of Celle, also German. The answer is {Queen Victoria, King George I}.",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 3.661719560623169,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0.0,
+            "LLM_CALLS": 1,
+            "LLM_INPUTS": 393,
+            "LLM_OUTPUTS": 73,
+            "LLM_TIME": 3.6616625785827637
+        }
+    },
+    {
+        "question": "Give me all Argentine films.",
+        "results": "First, Argentine films are films produced in Argentina or by Argentine filmmakers.  \nSecond, some notable Argentine films include \"The Secret in Their Eyes,\" \"Wild Tales,\" \"Nine Queens,\" \"The Official Story,\" and \"Zama.\"  \nThe answer is {The Secret in Their Eyes, Wild Tales, Nine Queens, The Official Story, Zama, ...} (and many more Argentine films).",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 4.1421217918396,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0.0,
+            "LLM_CALLS": 1,
+            "LLM_INPUTS": 386,
+            "LLM_OUTPUTS": 80,
+            "LLM_TIME": 4.142102479934692
+        }
+    },
+    {
+        "question": "How did Michael Jackson die?",
+        "results": "{Yes}. Based on the given knowledge triplets and the detailed description, Michael Jackson died from acute propofol and benzodiazepine intoxication after suffering cardiac arrest. The Los Angeles County Coroner ruled his death a homicide. Therefore, the answer to the question is {acute propofol and benzodiazepine intoxication, ruled as homicide}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Michael Jackson",
+                        "dbp:deathCause",
+                        "Homicide"
+                    ],
+                    [
+                        "Michael Jackson",
+                        "dct:description",
+                        "American singer and dancer"
+                    ],
+                    [
+                        "Michael Jackson",
+                        "onto:abstract",
+                        "Michael Joseph Jackson (August 29, 1958 \u2013 June 25, 2009) was an American singer, songwriter, record producer, dancer, actor and philanthropist. Called the \"King of Pop\", his contributions to music, dance, and fashion along with his publicized personal life made him a global figure in popular culture for over four decades. The eighth child of the Jackson family (one of whom died in infancy), Michael made his professional debut in 1964 with his elder brothers Jackie, Tito, Jermaine, and Marlon as a member of the Jackson 5. He began his solo career in 1971. In the early 1980s, Jackson became a dominant figure in popular music. His music videos, including those of \"Beat It\", \"Billie Jean\", and \"Thriller\" from his 1982 album Thriller, are credited with breaking racial barriers and transforming the medium into an art form and promotional tool. The popularity of these videos helped bring the television channel MTV to fame. Jackson's 1987 album Bad spawned the U.S. Billboard Hot 100 number-one singles \"I Just Can't Stop Loving You\", \"Bad\", \"The Way You Make Me Feel\", \"Man in the Mirror\", and \"Dirty Diana\", becoming the first album to have five number-one singles on the Billboard Hot 100. He continued to innovate with videos such as \"Black or White\" and \"Scream\" throughout the 1990s, and forged a reputation as a touring solo artist. Through stage and video performances, Jackson popularized a number of complicated dance techniques, such as the robot and the moonwalk, to which he gave the name. His distinctive sound and style has influenced numerous artists of various music genres. Thriller is the best-selling album of all time, with estimated sales of 65 million copies worldwide. Jackson's other albums, including Off the Wall (1979), Bad (1987), Dangerous (1991), and HIStory (1995), also rank among the world's best-selling albums. He is recognized as the Most Successful Entertainer of All Time by Guinness World Records. Jackson is one of the few artists to have been inducted into the Rock and Roll Hall of Fame twice, and was also inducted into the Songwriters Hall of Fame and the Dance Hall of Fame as the only dancer from pop and rock music. His other achievements include multiple Guinness World Records, 13 Grammy Awards, the Grammy Legend Award, the Grammy Lifetime Achievement Award, 26 American Music Awards\u2014more than any other artist\u2014including the \"Artist of the Century\" and \"Artist of the 1980s\", 13 number-one singles in the United States during his solo career,\u2014more than any other male artist in the Hot 100 era\u2014and estimated sales of over 350 million records worldwide. Jackson has won hundreds of awards, making him the most awarded recording artist in the history of popular music. He became the first artist in history to have a top ten single in the Billboard Hot 100 in five different decades when \"Love Never Felt So Good\" reached number nine on May 21, 2014. Jackson traveled the world attending events honoring his humanitarianism, and, in 2000, the Guinness World Records recognized him for supporting 39 charities, more than any other entertainer. Aspects of Jackson's personal life, including his changing appearance, personal relationships, and behavior, generated controversy. In 1993, he was accused of child sexual abuse, but the civil case was settled out of court for an undisclosed amount and no formal charges were brought. In 2005, he was tried and acquitted of further child sexual abuse allegations and several other charges after the jury found him not guilty on all counts. While preparing for his comeback concert series, This Is It, Jackson died of acute propofol and benzodiazepine intoxication on June 25, 2009, after suffering from cardiac arrest. The Los Angeles County Coroner ruled his death a homicide, and his personal physician, Conrad Murray, was convicted of involuntary manslaughter. Jackson's death triggered a global outpouring of grief, and a live broadcast of his public memorial service was viewed around the world. Forbes ranks Jackson as the top-earning dead celebrity, with yearly earnings of $825 million in 2016, the highest ever recorded by the publication."
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 6.9979143142700195,
+            "SPARQL_CALLS": 8,
+            "SPARQL_TIME": 1.9079608917236328,
+            "LLM_CALLS": 2,
+            "LLM_INPUTS": 2837,
+            "LLM_OUTPUTS": 113,
+            "LLM_TIME": 5.078828811645508
+        }
+    },
+    {
+        "question": "Which U.S. state has been admitted latest?",
+        "results": "First, the latest U.S. state admitted to the Union is Hawaii. The answer is {Hawaii}.",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 1.507521390914917,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0.0,
+            "LLM_CALLS": 1,
+            "LLM_INPUTS": 390,
+            "LLM_OUTPUTS": 22,
+            "LLM_TIME": 1.5075020790100098
+        }
+    },
+    {
+        "question": "Which classes does the Millepede belong to?",
+        "results": "First, the millepede is a type of arthropod. Second, arthropods are classified into classes such as Diplopoda, Chilopoda, Insecta, Arachnida, and others. Third, millepedes specifically belong to the class Diplopoda. The answer is {Diplopoda}.",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 3.644930601119995,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0.0,
+            "LLM_CALLS": 1,
+            "LLM_INPUTS": 390,
+            "LLM_OUTPUTS": 66,
+            "LLM_TIME": 3.644911289215088
+        }
+    },
+    {
+        "question": "Give me the homepage of Forbes.",
+        "results": "{Yes}. Based on the given knowledge triplets, the homepage of Forbes is {http://forbes.com}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Forbes",
+                        "dbp:website",
+                        "http://forbes.com"
+                    ],
+                    [
+                        "Forbes",
+                        "onto:wikiPageExternalLink",
+                        "http://forbes.com"
+                    ],
+                    [
+                        "Forbes",
+                        "onto:wikiPageExternalLink",
+                        "http://forbes.com/"
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 5.046491622924805,
+            "SPARQL_CALLS": 8,
+            "SPARQL_TIME": 1.4645562171936035,
+            "LLM_CALLS": 3,
+            "LLM_INPUTS": 1889,
+            "LLM_OUTPUTS": 73,
+            "LLM_TIME": 3.567115068435669
+        }
+    },
+    {
+        "question": "Who is the husband of Amanda Palmer?",
+        "results": "{Yes}. Based on the given knowledge triplets, Amanda Palmer's spouse is Neil Gaiman. Therefore, the answer to the question is {Neil Gaiman}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Amanda Palmer",
+                        "dbp:spouse",
+                        "Neil Gaiman"
+                    ],
+                    [
+                        "Amanda Palmer",
+                        "onto:spouse",
+                        "Neil Gaiman"
+                    ],
+                    [
+                        "Amanda Palmer",
+                        "owl:sameAs",
+                        "http://fa.dbpedia.org/resource/\u0622\u0645\u0627\u0646\u062f\u0627_\u067e\u0627\u0644\u0645\u0631"
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 6.342609167098999,
+            "SPARQL_CALLS": 10,
+            "SPARQL_TIME": 1.5124177932739258,
+            "LLM_CALLS": 3,
+            "LLM_INPUTS": 1965,
+            "LLM_OUTPUTS": 101,
+            "LLM_TIME": 4.828686714172363
+        }
+    },
+    {
+        "question": "Who painted The Storm on the Sea of Galilee?",
+        "results": "{Yes}. Based on the given knowledge triplets, \"The Storm on the Sea of Galilee\" was painted by Rembrandt van Rijn. Therefore, the answer to the question is {Rembrandt van Rijn}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "The Storm on the Sea of Galilee",
+                        "dbp:artist",
+                        "Rembrandt van Rijn"
+                    ],
+                    [
+                        "The Storm on the Sea of Galilee",
+                        "onto:author",
+                        "Rembrandt van Rijn"
+                    ],
+                    [
+                        "The Storm on the Sea of Galilee",
+                        "rdfs:comment",
+                        "The Storm on the Sea of Galilee is a painting from 1633 by the Dutch Golden Age painter Rembrandt van Rijn that was in the Isabella Stewart Gardner Museum of Boston, Massachusetts, United States, prior to being stolen in 1990. The painting depicts the miracle of Jesus calming the storm on the Sea of Galilee, as depicted in the fourth chapter of the Gospel of Mark in the New Testament of the Christian Bible. It is Rembrandt's only seascape."
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 4.877673625946045,
+            "SPARQL_CALLS": 10,
+            "SPARQL_TIME": 1.3018896579742432,
+            "LLM_CALLS": 2,
+            "LLM_INPUTS": 1584,
+            "LLM_OUTPUTS": 83,
+            "LLM_TIME": 3.5749402046203613
+        }
+    },
+    {
+        "question": "What is the highest place of Karakoram?",
+        "results": "{Yes}. Based on the given knowledge triplets, the highest place of Karakoram is K2, with an elevation of 8611.0 meters. Therefore, the answer to the question is {K2}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Karakoram",
+                        "dbp:highest",
+                        "K2"
+                    ],
+                    [
+                        "Karakoram",
+                        "onto:elevation",
+                        "8611.0"
+                    ],
+                    [
+                        "Karakoram",
+                        "dbp:range",
+                        "Kanjut Sar"
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 7.963967561721802,
+            "SPARQL_CALLS": 13,
+            "SPARQL_TIME": 1.8620944023132324,
+            "LLM_CALLS": 3,
+            "LLM_INPUTS": 1806,
+            "LLM_OUTPUTS": 175,
+            "LLM_TIME": 6.099160432815552
+        }
+    },
+    {
+        "question": "When did Finland join the EU?",
+        "results": "{Yes}. Based on the given knowledge triplet ('Finland', 'dbp:accessioneudate', '1995-01-01'), Finland joined the European Union on January 1, 1995. Therefore, the answer to the question is {1995}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Finland",
+                        "dbp:accessioneudate",
+                        "1995-01-01"
+                    ],
+                    [
+                        "European Union",
+                        "dbp:establishedEvent",
+                        "Maastricht Treaty"
+                    ],
+                    [
+                        "European Union",
+                        "dbp:membershipType",
+                        "Member states"
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 18.511491298675537,
+            "SPARQL_CALLS": 20,
+            "SPARQL_TIME": 4.550562858581543,
+            "LLM_CALLS": 7,
+            "LLM_INPUTS": 5714,
+            "LLM_OUTPUTS": 287,
+            "LLM_TIME": 13.856614589691162
+        }
+    },
+    {
+        "question": "Which actors play in Big Bang Theory?",
+        "results": "{Yes}. Based on the given knowledge triplets, the actors who play in The Big Bang Theory are Jim Parsons, Johnny Galecki, and Kaley Cuoco. Therefore, the answer to the question is {Jim Parsons, Johnny Galecki, Kaley Cuoco}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "The Big Bang Theory",
+                        "dbp:starring",
+                        "Jim Parsons"
+                    ],
+                    [
+                        "The Big Bang Theory",
+                        "dbp:starring",
+                        "Johnny Galecki"
+                    ],
+                    [
+                        "The Big Bang Theory",
+                        "dbp:starring",
+                        "Kaley Cuoco"
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 20.57853674888611,
+            "SPARQL_CALLS": 30,
+            "SPARQL_TIME": 4.131452560424805,
+            "LLM_CALLS": 5,
+            "LLM_INPUTS": 2461,
+            "LLM_OUTPUTS": 408,
+            "LLM_TIME": 16.444212675094604
+        }
+    },
+    {
+        "question": "Which computer scientist won an oscar?",
+        "results": "Based on the given knowledge triplets:\n\n- Gregg Turkington is associated with the Academy Awards but is not identified as a computer scientist.\n- Dustin Lance Black is an American screenwriter, director, and producer who has won an Academy Award.\n- Nick Palmer is identified as a computer scientist but there is no information linking him to winning an Oscar.\n\nTherefore, none of the computer scientists mentioned in the triplets are indicated to have won an Oscar. The answer is that no computer scientist in the provided knowledge triplets is recorded as having won an Oscar.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Academy Awards",
+                        "dbp:occupation",
+                        "Gregg Turkington"
+                    ],
+                    [
+                        "Academy Awards",
+                        "onto:award",
+                        "Dustin Lance Black"
+                    ],
+                    [
+                        "Computer scientist",
+                        "onto:profession",
+                        "Nick Palmer"
+                    ]
+                ]
+            ],
+            [
+                [
+                    [
+                        "Nick Palmer",
+                        "dbp:profession",
+                        "Computer scientist"
+                    ],
+                    [
+                        "Gregg Turkington",
+                        "dbp:name",
+                        "Gregg Turkington"
+                    ],
+                    [
+                        "Dustin Lance Black",
+                        "dct:description",
+                        "American screenwriter, director and producer"
+                    ]
+                ]
+            ],
+            []
+        ],
+        "metrics": {
+            "TIME": 60.29560399055481,
+            "SPARQL_CALLS": 89,
+            "SPARQL_TIME": 12.7007577419281,
+            "LLM_CALLS": 19,
+            "LLM_INPUTS": 8964,
+            "LLM_OUTPUTS": 1047,
+            "LLM_TIME": 47.57584047317505
+        }
+    },
+    {
+        "question": "Who wrote Harry Potter?",
+        "results": "First, the author of the Harry Potter series is J.K. Rowling. The answer is {J.K. Rowling}.",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 1.5732574462890625,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0.0,
+            "LLM_CALLS": 1,
+            "LLM_INPUTS": 385,
+            "LLM_OUTPUTS": 24,
+            "LLM_TIME": 1.5732359886169434
+        }
+    },
+    {
+        "question": "Give me all writers that won the Nobel Prize in literature.",
+        "results": "First, the Nobel Prize in Literature has been awarded to many writers over the years. Some notable laureates include:\n\n- Ernest Hemingway  \n- Gabriel Garc\u00eda M\u00e1rquez  \n- Toni Morrison  \n- Albert Camus  \n- William Faulkner  \n- Rabindranath Tagore  \n- Bob Dylan  \n- Kazuo Ishiguro  \n- Alice Munro  \n- Orhan Pamuk  \n\nThe full list is extensive and can be found on the official Nobel Prize website. The answer is {Ernest Hemingway, Gabriel Garc\u00eda M\u00e1rquez, Toni Morrison, Albert Camus, William Faulkner, Rabindranath Tagore, Bob Dylan, Kazuo Ishiguro, Alice Munro, Orhan Pamuk, ...}.",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 61.87636852264404,
+            "SPARQL_CALLS": 73,
+            "SPARQL_TIME": 11.403017520904541,
+            "LLM_CALLS": 17,
+            "LLM_INPUTS": 8878,
+            "LLM_OUTPUTS": 1008,
+            "LLM_TIME": 50.43160152435303
+        }
+    },
+    {
+        "question": "Give me English actors starring in Lovesick.",
+        "results": "{Yes}. Based on the given knowledge triplets, Alec Guinness and Dudley Moore starred in Lovesick (1983 film). Alec Guinness was born in Paddington, London, England, indicating he is an English actor. Dudley Moore is also an actor and comedian, and although his birthplace is not given here, he is widely known as an English actor. Therefore, the English actors starring in Lovesick are {Alec Guinness, Dudley Moore}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Lovesick (1983 film)",
+                        "dbp:starring",
+                        "Alec Guinness"
+                    ],
+                    [
+                        "Lovesick (1983 film)",
+                        "dbp:starring",
+                        "Dudley Moore"
+                    ],
+                    [
+                        "Lovesick (1983 film)",
+                        "dbp:country",
+                        "United States"
+                    ]
+                ]
+            ],
+            [
+                [
+                    [
+                        "Alec Guinness",
+                        "dbp:occupation",
+                        "Actor"
+                    ],
+                    [
+                        "Dudley Moore",
+                        "dbp:occupation",
+                        "Actor, comedian, musician"
+                    ],
+                    [
+                        "Alec Guinness",
+                        "dbp:birthPlace",
+                        "Paddington, London, England"
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 50.7099084854126,
+            "SPARQL_CALLS": 37,
+            "SPARQL_TIME": 5.424127101898193,
+            "LLM_CALLS": 8,
+            "LLM_INPUTS": 4729,
+            "LLM_OUTPUTS": 450,
+            "LLM_TIME": 45.28036594390869
+        }
+    },
+    {
+        "question": "What is the nick name of Baghdad?",
+        "results": "{Yes}. Based on the given knowledge triplets, the nickname of Baghdad is \"The City of Peace\". Therefore, the answer to the question is {\"The City of Peace\"}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Baghdad",
+                        "dbp:nickname",
+                        "'The City of Peace'"
+                    ],
+                    [
+                        "Baghdad",
+                        "rdfs:label",
+                        "Baghdad"
+                    ],
+                    [
+                        "Baghdad",
+                        "dbp:alt",
+                        "Panoramic view over the ancient city of Babylon, located  south of Baghdad"
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 5.90678596496582,
+            "SPARQL_CALLS": 8,
+            "SPARQL_TIME": 1.7526578903198242,
+            "LLM_CALLS": 2,
+            "LLM_INPUTS": 2960,
+            "LLM_OUTPUTS": 78,
+            "LLM_TIME": 4.136889219284058
+        }
+    },
+    {
+        "question": "In which city was the president of Montenegro born?",
+        "results": "First, the president of Montenegro is Milo \u0110ukanovi\u0107.  \nSecond, Milo \u0110ukanovi\u0107 was born in Nik\u0161i\u0107.  \nThe answer is {Nik\u0161i\u0107}.",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 86.37967419624329,
+            "SPARQL_CALLS": 95,
+            "SPARQL_TIME": 14.464876174926758,
+            "LLM_CALLS": 21,
+            "LLM_INPUTS": 11231,
+            "LLM_OUTPUTS": 1581,
+            "LLM_TIME": 71.87603735923767
+        }
+    },
+    {
+        "question": "Which U.S. state has the highest population density?",
+        "results": "First, the U.S. state with the highest population density is New Jersey. The answer is {New Jersey}.",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 32.67857885360718,
+            "SPARQL_CALLS": 45,
+            "SPARQL_TIME": 8.96109676361084,
+            "LLM_CALLS": 11,
+            "LLM_INPUTS": 6399,
+            "LLM_OUTPUTS": 531,
+            "LLM_TIME": 23.53610610961914
+        }
+    },
+    {
+        "question": "What is the longest river in China?",
+        "results": "First, the longest river in China is the Yangtze River. The answer is {Yangtze River}.",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 39.52427530288696,
+            "SPARQL_CALLS": 61,
+            "SPARQL_TIME": 11.731624364852905,
+            "LLM_CALLS": 12,
+            "LLM_INPUTS": 11666,
+            "LLM_OUTPUTS": 566,
+            "LLM_TIME": 27.61460256576538
+        }
+    },
+    {
+        "question": "What is the area code of Berlin?",
+        "results": "{Yes}. Based on the given knowledge triplets, the area code of Berlin is 030 (also represented as 30). Therefore, the answer to the question is {030}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Berlin",
+                        "onto:areaCode",
+                        "030"
+                    ],
+                    [
+                        "Berlin",
+                        "dbp:vorwahl",
+                        "30"
+                    ],
+                    [
+                        "Berlin",
+                        "dbp:areaServed",
+                        "Young Rewired State"
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 6.4204421043396,
+            "SPARQL_CALLS": 9,
+            "SPARQL_TIME": 2.3060595989227295,
+            "LLM_CALLS": 2,
+            "LLM_INPUTS": 3546,
+            "LLM_OUTPUTS": 81,
+            "LLM_TIME": 4.0450944900512695
+        }
+    },
+    {
+        "question": "How many scientists graduated from an Ivy League university?",
+        "results": "The question \"How many scientists graduated from an Ivy League university?\" is quite broad and lacks specific context such as a time frame, field of science, or a particular list of scientists. \n\nIn general, many scientists have graduated from Ivy League universities, as these institutions are known for their strong academic programs and have produced numerous notable scientists. However, without a defined scope or dataset, it is not possible to provide an exact number.\n\nIf you have a specific list of scientists or a particular context in mind, please provide more details so I can assist you better.",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 84.51514410972595,
+            "SPARQL_CALLS": 86,
+            "SPARQL_TIME": 13.075670003890991,
+            "LLM_CALLS": 17,
+            "LLM_INPUTS": 9129,
+            "LLM_OUTPUTS": 1709,
+            "LLM_TIME": 71.39389228820801
+        }
+    },
+    {
+        "question": "Which professional surfers were born in Australia?",
+        "results": "First, professional surfers born in Australia include Mick Fanning, Stephanie Gilmore, and Owen Wright. The answer is {Mick Fanning, Stephanie Gilmore, Owen Wright}.",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 69.06120991706848,
+            "SPARQL_CALLS": 84,
+            "SPARQL_TIME": 18.28529405593872,
+            "LLM_CALLS": 18,
+            "LLM_INPUTS": 13266,
+            "LLM_OUTPUTS": 1005,
+            "LLM_TIME": 50.430495262145996
+        }
+    },
+    {
+        "question": "Give me all Dutch parties.",
+        "results": "First, Dutch political parties include a variety of groups across the political spectrum. Some of the main Dutch parties are:\n\n- Volkspartij voor Vrijheid en Democratie (VVD) \u2013 People's Party for Freedom and Democracy  \n- Partij van de Arbeid (PvdA) \u2013 Labour Party  \n- Democraten 66 (D66) \u2013 Democrats 66  \n- Christen-Democratisch App\u00e8l (CDA) \u2013 Christian Democratic Appeal  \n- GroenLinks \u2013 GreenLeft  \n- Partij voor de Vrijheid (PVV) \u2013 Party for Freedom  \n- Socialistische Partij (SP) \u2013 Socialist Party  \n- Partij voor de Dieren (PvdD) \u2013 Party for the Animals  \n- 50PLUS \u2013 Party for the elderly  \n- Staatkundig Gereformeerde Partij (SGP) \u2013 Reformed Political Party  \n\nThe answer is {VVD, PvdA, D66, CDA, GroenLinks, PVV, SP, PvdD, 50PLUS, SGP}.",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 8.0153169631958,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0.0,
+            "LLM_CALLS": 1,
+            "LLM_INPUTS": 386,
+            "LLM_OUTPUTS": 209,
+            "LLM_TIME": 8.015270709991455
+        }
+    },
+    {
+        "question": "How many moons does Mars have?",
+        "results": "{Yes}. Based on the given knowledge triplets, Mars has 2 moons. Therefore, the answer to the question is {2}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Mars",
+                        "dbp:satellites",
+                        "2"
+                    ],
+                    [
+                        "Mars",
+                        "dbp:allsatellites",
+                        "yes"
+                    ],
+                    [
+                        "Mars",
+                        "dbp:satelliteOf",
+                        "Deimos (moon)"
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 7.507623672485352,
+            "SPARQL_CALLS": 10,
+            "SPARQL_TIME": 1.96427583694458,
+            "LLM_CALLS": 3,
+            "LLM_INPUTS": 2053,
+            "LLM_OUTPUTS": 121,
+            "LLM_TIME": 5.5374040603637695
+        }
+    },
+    {
+        "question": "What is Batman's real name?",
+        "results": "{Yes}. Based on the given knowledge triplets, Batman's real name is Bruce Wayne. Therefore, the answer to the question is {Bruce Wayne}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Batman",
+                        "dbp:alterEgo",
+                        "Bruce Wayne"
+                    ],
+                    [
+                        "Batman",
+                        "dbp:aliases",
+                        "* Matches Malone\n* Lefty Knox\n* Minuteman"
+                    ],
+                    [
+                        "Batman",
+                        "dbp:characterName",
+                        "Batman (Dark Knight Universe)"
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 4.678187370300293,
+            "SPARQL_CALLS": 9,
+            "SPARQL_TIME": 1.6365182399749756,
+            "LLM_CALLS": 2,
+            "LLM_INPUTS": 1683,
+            "LLM_OUTPUTS": 75,
+            "LLM_TIME": 3.031524419784546
+        }
+    },
+    {
+        "question": "What is Elon Musk famous for?",
+        "results": "{Yes}. Based on the given knowledge triplets, Elon Musk is famous for being an entrepreneur and inventor from South Africa, and for his involvement with Hyperloop and OpenAI. Therefore, the answer to the question is {Elon Musk is famous for being an entrepreneur and inventor, known for Hyperloop and OpenAI}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Elon Musk",
+                        "dct:description",
+                        "entrepreneur and inventor from South Africa"
+                    ],
+                    [
+                        "Elon Musk",
+                        "dbp:knownFor",
+                        "Hyperloop"
+                    ],
+                    [
+                        "Elon Musk",
+                        "dbp:knownFor",
+                        "OpenAI"
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 15.08989930152893,
+            "SPARQL_CALLS": 20,
+            "SPARQL_TIME": 2.730534315109253,
+            "LLM_CALLS": 4,
+            "LLM_INPUTS": 2155,
+            "LLM_OUTPUTS": 355,
+            "LLM_TIME": 12.357500791549683
+        }
+    },
+    {
+        "question": "Who is the author of WikiLeaks?",
+        "results": "{Yes}. Based on the given knowledge triplets, the author of WikiLeaks is Julian Assange. Therefore, the answer to the question is {Julian Assange}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "WikiLeaks",
+                        "dbp:author",
+                        "Julian Assange"
+                    ],
+                    [
+                        "WikiLeaks",
+                        "onto:author",
+                        "Julian Assange"
+                    ],
+                    [
+                        "WikiLeaks",
+                        "dbp:owner",
+                        "Sunshine Press"
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 5.231183052062988,
+            "SPARQL_CALLS": 10,
+            "SPARQL_TIME": 1.5982592105865479,
+            "LLM_CALLS": 2,
+            "LLM_INPUTS": 1642,
+            "LLM_OUTPUTS": 75,
+            "LLM_TIME": 3.630666494369507
+        }
+    },
+    {
+        "question": "Sean Parnell was the governor of which U.S. state?",
+        "results": "First, Sean Parnell served as the governor of Alaska. The answer is {Alaska}.",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 1.2720470428466797,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0.0,
+            "LLM_CALLS": 1,
+            "LLM_INPUTS": 394,
+            "LLM_OUTPUTS": 20,
+            "LLM_TIME": 1.2720320224761963
+        }
+    },
+    {
+        "question": "How many years was the Ford Model T manufactured?",
+        "results": "{Yes}. Based on the given knowledge triplets, the Ford Model T started production in 1908 and ended production in 1927. Therefore, the Ford Model T was manufactured for 1927 - 1908 = 19 years. The answer is {19 years}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Ford Model T",
+                        "dbp:production",
+                        "1908"
+                    ],
+                    [
+                        "Ford Model T",
+                        "onto:productionStartYear",
+                        "1908"
+                    ],
+                    [
+                        "Ford Model T",
+                        "onto:productionEndYear",
+                        "1927"
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 6.524216175079346,
+            "SPARQL_CALLS": 8,
+            "SPARQL_TIME": 1.2877986431121826,
+            "LLM_CALLS": 2,
+            "LLM_INPUTS": 1608,
+            "LLM_OUTPUTS": 100,
+            "LLM_TIME": 5.233663320541382
+        }
+    },
+    {
+        "question": "When was Carlo Giuliani shot?",
+        "results": "{Yes}. Based on the given knowledge triplets, Carlo Giuliani was shot on July 20, 2001. Therefore, the answer to the question is {July 20, 2001}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Death of Carlo Giuliani",
+                        "onto:deathDate",
+                        "2001-7-20"
+                    ],
+                    [
+                        "Death of Carlo Giuliani",
+                        "rdfs:comment",
+                        "Carlo Giuliani (Italian pronunciation: [\u02c8karlo d\u0292u\u02c8ljani]; 14 March 1978 \u2013 20 July 2001) was an Italian anti-globalization protester who was shot dead by a police officer while attacking him and his vehicle during the demonstrations against the Group of Eight summit that was held in Genoa from July 19 to July 21, 2001."
+                    ],
+                    [
+                        "Death of Carlo Giuliani",
+                        "onto:deathPlace",
+                        "Genoa"
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 5.320530891418457,
+            "SPARQL_CALLS": 9,
+            "SPARQL_TIME": 1.2160234451293945,
+            "LLM_CALLS": 2,
+            "LLM_INPUTS": 1499,
+            "LLM_OUTPUTS": 83,
+            "LLM_TIME": 4.103682994842529
+        }
+    },
+    {
+        "question": "Give me all animals that are extinct.",
+        "results": "First, extinct animals are those that no longer exist anywhere on Earth. Examples include the dodo, the woolly mammoth, the passenger pigeon, the Tasmanian tiger (thylacine), and the great auk. The answer is {dodo, woolly mammoth, passenger pigeon, Tasmanian tiger, great auk}.",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 3.1792654991149902,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0.0,
+            "LLM_CALLS": 1,
+            "LLM_INPUTS": 388,
+            "LLM_OUTPUTS": 69,
+            "LLM_TIME": 3.1792378425598145
+        }
+    },
+    {
+        "question": "Who was the wife of President Lincoln?",
+        "results": "{Yes}. Based on the given knowledge triplets, Abraham Lincoln's wife was Mary Todd Lincoln. Therefore, the answer to the question is {Mary Todd Lincoln}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Abraham Lincoln",
+                        "dbp:spouse",
+                        "Mary Todd Lincoln"
+                    ],
+                    [
+                        "Abraham Lincoln",
+                        "onto:spouse",
+                        "Mary Todd Lincoln"
+                    ],
+                    [
+                        "Abraham Lincoln",
+                        "dbp:name",
+                        "Abraham Lincoln"
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 11.076146602630615,
+            "SPARQL_CALLS": 10,
+            "SPARQL_TIME": 2.0085723400115967,
+            "LLM_CALLS": 4,
+            "LLM_INPUTS": 2703,
+            "LLM_OUTPUTS": 141,
+            "LLM_TIME": 9.050650119781494
+        }
+    },
+    {
+        "question": "How many awards has Bertrand Russell?",
+        "results": "{Yes}. Based on the given knowledge triplets, Bertrand Russell has received at least two awards: the De Morgan Medal and the Sylvester Medal. Therefore, the answer to the question is {2 awards: De Morgan Medal and Sylvester Medal}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Bertrand Russell",
+                        "dbp:awards",
+                        "De Morgan Medal"
+                    ],
+                    [
+                        "Bertrand Russell",
+                        "dbp:awards",
+                        "Sylvester Medal"
+                    ],
+                    [
+                        "Bertrand Russell",
+                        "dct:description",
+                        "logician and one of the first analytic philosophers"
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 14.09044337272644,
+            "SPARQL_CALLS": 8,
+            "SPARQL_TIME": 1.6454243659973145,
+            "LLM_CALLS": 3,
+            "LLM_INPUTS": 1970,
+            "LLM_OUTPUTS": 276,
+            "LLM_TIME": 12.439516305923462
+        }
+    },
+    {
+        "question": "Is Pamela Anderson a vegan?",
+        "results": "Based on the given knowledge triplets, there is no information indicating whether Pamela Anderson is a vegan. The triplets describe Pamela Anderson's profession and some biographical details, and provide some information about veganism and the Humane Party, but do not link Pamela Anderson to veganism or state her dietary choices. Therefore, with the provided data, it is not possible to confirm if Pamela Anderson is a vegan.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Veganism",
+                        "dbp:ideology",
+                        "Humane Party"
+                    ],
+                    [
+                        "Pamela Anderson",
+                        "dct:description",
+                        "Canadian-American model, producer, author, former showgirl"
+                    ],
+                    [
+                        "Pamela Anderson",
+                        "rdfs:comment",
+                        "Pamela Denise Anderson (born July 1, 1967) is a Canadian-American actress and model known for her roles on the television series Home Improvement, Baywatch and V.I.P.. She was Playmate of the Month for Playboy magazine in February 1990. Anderson was inducted into Canada's Walk of Fame in 2006."
+                    ]
+                ]
+            ],
+            [
+                [
+                    [
+                        "Humane Party",
+                        "dbp:position",
+                        "Left-wing"
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 22.778853178024292,
+            "SPARQL_CALLS": 34,
+            "SPARQL_TIME": 4.891938209533691,
+            "LLM_CALLS": 8,
+            "LLM_INPUTS": 5409,
+            "LLM_OUTPUTS": 368,
+            "LLM_TIME": 17.880229949951172
+        }
+    },
+    {
+        "question": "Which space probes were sent into orbit around the sun?",
+        "results": "First, space probes sent into orbit around the sun include Parker Solar Probe and Helios probes.  \nSecond, these probes were specifically designed to study the sun by orbiting it.  \nThe answer is {Parker Solar Probe, Helios 1, Helios 2}.",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 52.46367597579956,
+            "SPARQL_CALLS": 76,
+            "SPARQL_TIME": 11.954085111618042,
+            "LLM_CALLS": 15,
+            "LLM_INPUTS": 8182,
+            "LLM_OUTPUTS": 761,
+            "LLM_TIME": 40.47812223434448
+        }
+    },
+    {
+        "question": "Which German cities have more than 250000 inhabitants?",
+        "results": "First, German cities with more than 250,000 inhabitants include Berlin, Hamburg, Munich, Cologne, Frankfurt, Stuttgart, D\u00fcsseldorf, Dortmund, Essen, and Leipzig. The answer is {Berlin, Hamburg, Munich, Cologne, Frankfurt, Stuttgart, D\u00fcsseldorf, Dortmund, Essen, Leipzig}.",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 62.995620250701904,
+            "SPARQL_CALLS": 79,
+            "SPARQL_TIME": 17.19500160217285,
+            "LLM_CALLS": 18,
+            "LLM_INPUTS": 13685,
+            "LLM_OUTPUTS": 966,
+            "LLM_TIME": 45.38581466674805
+        }
+    },
+    {
+        "question": "Who is the daughter of Robert Kennedy married to?",
+        "results": "First, Robert Kennedy's daughter is Courtney Kennedy.  \nSecond, Courtney Kennedy is married to Edwin Schlossberg.  \nThe answer is {Edwin Schlossberg}.",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 53.228487730026245,
+            "SPARQL_CALLS": 74,
+            "SPARQL_TIME": 10.129658699035645,
+            "LLM_CALLS": 17,
+            "LLM_INPUTS": 9227,
+            "LLM_OUTPUTS": 734,
+            "LLM_TIME": 43.08753848075867
+        }
+    },
+    {
+        "question": "How many students does the Free University of Amsterdam have?",
+        "results": "{Yes}. Based on the given knowledge triplets, the Free University of Amsterdam (Vrije Universiteit Amsterdam) has 23,656 students. Therefore, the answer to the question is {23,656}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Vrije Universiteit Amsterdam",
+                        "dbp:students",
+                        "23656"
+                    ],
+                    [
+                        "Vrije Universiteit Amsterdam",
+                        "onto:numberOfStudents",
+                        "23656"
+                    ],
+                    [
+                        "Vrije Universiteit Amsterdam",
+                        "dbp:faculty",
+                        "2976"
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 5.878682613372803,
+            "SPARQL_CALLS": 8,
+            "SPARQL_TIME": 1.2315797805786133,
+            "LLM_CALLS": 2,
+            "LLM_INPUTS": 1609,
+            "LLM_OUTPUTS": 83,
+            "LLM_TIME": 4.645888090133667
+        }
+    },
+    {
+        "question": "What is the revenue of IBM?",
+        "results": "{Yes}. Based on the given knowledge triplets, the revenue of IBM is 8.1741E10 (which is 81.741 billion). Therefore, the answer to the question is {81.741 billion}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "IBM",
+                        "dbp:revenue",
+                        "8.1741E10"
+                    ],
+                    [
+                        "IBM",
+                        "onto:revenue",
+                        "8.1741E10"
+                    ],
+                    [
+                        "IBM",
+                        "dbp:netIncome",
+                        "1.319E10"
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 6.745896577835083,
+            "SPARQL_CALLS": 8,
+            "SPARQL_TIME": 1.5843541622161865,
+            "LLM_CALLS": 2,
+            "LLM_INPUTS": 2017,
+            "LLM_OUTPUTS": 89,
+            "LLM_TIME": 5.148027181625366
+        }
+    },
+    {
+        "question": "How many James Bond movies do exist?",
+        "results": "The given knowledge triplets related to James Bond movies do not provide a clear or specific number of how many James Bond movies exist. Therefore, based on my knowledge:\n\nAs of 2024, there are 25 official James Bond films produced by EON Productions, starting with \"Dr. No\" in 1962 and including the most recent \"No Time to Die\" released in 2021.\n\nSo, the answer is: There are 25 official James Bond movies.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "James Bond",
+                        "dbp:films",
+                        "''"
+                    ],
+                    [
+                        "James Bond",
+                        "dbp:films",
+                        "*"
+                    ],
+                    [
+                        "James Bond",
+                        "dbp:films",
+                        "* ''"
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 20.01511573791504,
+            "SPARQL_CALLS": 16,
+            "SPARQL_TIME": 2.477034568786621,
+            "LLM_CALLS": 5,
+            "LLM_INPUTS": 2760,
+            "LLM_OUTPUTS": 354,
+            "LLM_TIME": 17.530075788497925
+        }
+    },
+    {
+        "question": "Who does the voice of Bart Simpson?",
+        "results": "{Yes}. Based on the given knowledge triplets, the voice of Bart Simpson is Nancy Cartwright. Therefore, the answer to the question is {Nancy Cartwright}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Bart Simpson",
+                        "dbp:voiceactor",
+                        "Nancy Cartwright"
+                    ],
+                    [
+                        "Bart Simpson",
+                        "dct:description",
+                        "fictional character from The Simpsons franchise"
+                    ],
+                    [
+                        "Bart Simpson",
+                        "onto:knownFor",
+                        "Nancy Cartwright"
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 4.4385340213775635,
+            "SPARQL_CALLS": 10,
+            "SPARQL_TIME": 1.5765070915222168,
+            "LLM_CALLS": 2,
+            "LLM_INPUTS": 1477,
+            "LLM_OUTPUTS": 76,
+            "LLM_TIME": 2.8584072589874268
+        }
+    },
+    {
+        "question": "Who was Tom Hanks married to?",
+        "results": "{Yes}. Based on the given knowledge triplets, Tom Hanks was married to Rita Wilson. Therefore, the answer to the question is {Rita Wilson}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Tom Hanks",
+                        "dbp:spouse",
+                        "Rita Wilson"
+                    ],
+                    [
+                        "Tom Hanks",
+                        "onto:spouse",
+                        "Rita Wilson"
+                    ],
+                    [
+                        "Tom Hanks",
+                        "dbp:relations",
+                        "Jim Hanks"
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 7.684928894042969,
+            "SPARQL_CALLS": 11,
+            "SPARQL_TIME": 1.7578303813934326,
+            "LLM_CALLS": 3,
+            "LLM_INPUTS": 1997,
+            "LLM_OUTPUTS": 106,
+            "LLM_TIME": 5.921836614608765
+        }
+    },
+    {
+        "question": "Through which countries does the Yenisei river flow?",
+        "results": "{Yes}. Based on the given knowledge triplets, the Yenisei River flows through Russia. Therefore, the answer to the question is {Russia}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Yenisei",
+                        "onto:wikiPageWikiLink",
+                        "Yenisei River"
+                    ],
+                    [
+                        "Yenisei",
+                        "dbp:mouth",
+                        "Angara River"
+                    ],
+                    [
+                        "Yenisei",
+                        "rdf:type",
+                        "UnName_Entity"
+                    ]
+                ]
+            ],
+            [
+                [
+                    [
+                        "Angara River",
+                        "dbp:basinCountries",
+                        "Russia"
+                    ],
+                    [
+                        "Yenisei River",
+                        "dbp:country",
+                        "Russia"
+                    ],
+                    [
+                        "Yenisei River",
+                        "onto:country",
+                        "Russia"
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 60.65666127204895,
+            "SPARQL_CALLS": 47,
+            "SPARQL_TIME": 7.536374092102051,
+            "LLM_CALLS": 11,
+            "LLM_INPUTS": 5476,
+            "LLM_OUTPUTS": 651,
+            "LLM_TIME": 53.06125283241272
+        }
+    },
+    {
+        "question": "Give me all cars that are produced in Germany.",
+        "results": "First, cars produced in Germany include brands such as Volkswagen, BMW, Mercedes-Benz, Audi, Porsche, Opel, and Smart. The answer is {Volkswagen, BMW, Mercedes-Benz, Audi, Porsche, Opel, Smart}.",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 34.64266777038574,
+            "SPARQL_CALLS": 49,
+            "SPARQL_TIME": 12.640848875045776,
+            "LLM_CALLS": 9,
+            "LLM_INPUTS": 11441,
+            "LLM_OUTPUTS": 412,
+            "LLM_TIME": 21.584447860717773
+        }
+    },
+    {
+        "question": "When did Michael Jackson die?",
+        "results": "{Yes}. Based on the given knowledge triplets, Michael Jackson died on June 25, 2009. Therefore, the answer to the question is {June 25, 2009}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Michael Jackson",
+                        "dbp:deathDate",
+                        "2009-06-25"
+                    ],
+                    [
+                        "Michael Jackson",
+                        "onto:deathDate",
+                        "2009-6-25"
+                    ],
+                    [
+                        "Michael Jackson",
+                        "dct:description",
+                        "American singer and dancer"
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 6.388944864273071,
+            "SPARQL_CALLS": 8,
+            "SPARQL_TIME": 1.724109172821045,
+            "LLM_CALLS": 2,
+            "LLM_INPUTS": 1953,
+            "LLM_OUTPUTS": 82,
+            "LLM_TIME": 4.645918846130371
+        }
+    },
+    {
+        "question": "What is the highest volcano in Africa?",
+        "results": "First, the highest volcano in Africa is Mount Kilimanjaro. The answer is {Mount Kilimanjaro}.",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 76.66070437431335,
+            "SPARQL_CALLS": 98,
+            "SPARQL_TIME": 41.25927972793579,
+            "LLM_CALLS": 18,
+            "LLM_INPUTS": 9513,
+            "LLM_OUTPUTS": 764,
+            "LLM_TIME": 33.61888790130615
+        }
+    },
+    {
+        "question": "Which poet wrote the most books?",
+        "results": "The question \"Which poet wrote the most books?\" is quite broad and depends on the criteria used (such as the number of published poetry collections, total volumes, or lifetime output). However, one of the poets known for an exceptionally large body of work is:\n\n- **Rabindranath Tagore**, who wrote thousands of poems and numerous books.\n- **Pablo Neruda**, who published over 40 books of poetry.\n- **Derek Walcott**, with a prolific output as well.\n\nIf you are looking for the poet with the most published books, it might be someone like **Rabindranath Tagore** or another highly prolific poet.\n\nCould you please specify if you want the poet with the most published poetry books, or the most total books including other genres?",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 4.46115779876709,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0.0,
+            "LLM_CALLS": 1,
+            "LLM_INPUTS": 387,
+            "LLM_OUTPUTS": 157,
+            "LLM_TIME": 4.461137533187866
+        }
+    },
+    {
+        "question": "Give me all gangsters from the prohibition era.",
+        "results": "First, the Prohibition era in the United States lasted from 1920 to 1933. Second, notable gangsters from this era include Al Capone, Bugs Moran, Lucky Luciano, Dutch Schultz, and Meyer Lansky. The answer is {Al Capone, Bugs Moran, Lucky Luciano, Dutch Schultz, Meyer Lansky}.",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 2.142132520675659,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0.0,
+            "LLM_CALLS": 1,
+            "LLM_INPUTS": 390,
+            "LLM_OUTPUTS": 68,
+            "LLM_TIME": 2.1421146392822266
+        }
+    },
+    {
+        "question": "Give me all spacecrafts that flew to Mars.",
+        "results": "First, spacecrafts that have flown to Mars include orbiters, landers, and rovers sent by various space agencies. Some notable spacecraft that flew to Mars are:\n\n- Mariner 4 (NASA)\n- Mariner 6 and 7 (NASA)\n- Mariner 9 (NASA)\n- Viking 1 and Viking 2 (NASA)\n- Mars Global Surveyor (NASA)\n- Mars Odyssey (NASA)\n- Mars Express (ESA)\n- Mars Reconnaissance Orbiter (NASA)\n- Phoenix (NASA)\n- Spirit (Mars Exploration Rover A, NASA)\n- Opportunity (Mars Exploration Rover B, NASA)\n- Curiosity (Mars Science Laboratory, NASA)\n- MAVEN (NASA)\n- InSight (NASA)\n- Tianwen-1 (CNSA)\n- Perseverance (NASA)\n- Hope Mars Mission (Emirates Mars Mission)\n\nThe answer is {Mariner 4, Mariner 6, Mariner 7, Mariner 9, Viking 1, Viking 2, Mars Global Surveyor, Mars Odyssey, Mars Express, Mars Reconnaissance Orbiter, Phoenix, Spirit, Opportunity, Curiosity, MAVEN, InSight, Tianwen-1, Perseverance, Hope Mars Mission}.",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 67.35963416099548,
+            "SPARQL_CALLS": 76,
+            "SPARQL_TIME": 28.23997735977173,
+            "LLM_CALLS": 15,
+            "LLM_INPUTS": 8298,
+            "LLM_OUTPUTS": 942,
+            "LLM_TIME": 37.50823426246643
+        }
+    },
+    {
+        "question": "Show me all Czech movies.",
+        "results": "{Yes}. Based on the given knowledge triplets, \"A Story about a Bad Dream\" is a movie associated with the Cinema of the Czech Republic and is in the Czech language. Therefore, it can be considered a Czech movie. The answer to the question is {\"A Story about a Bad Dream\"}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Cinema of the Czech Republic",
+                        "dbp:country",
+                        "A Story about a Bad Dream"
+                    ],
+                    [
+                        "Cinema of the Czech Republic",
+                        "dbp:producedFictional",
+                        "23"
+                    ],
+                    [
+                        "Cinema of the Czech Republic",
+                        "dct:subject",
+                        "Cinema of Czechoslovakia"
+                    ]
+                ]
+            ],
+            [
+                [
+                    [
+                        "Cinema of Czechoslovakia",
+                        "onto:wikiPageWikiLink",
+                        "Cinema of the Czech Republic"
+                    ],
+                    [
+                        "A Story about a Bad Dream",
+                        "onto:country",
+                        "Cinema of the Czech Republic"
+                    ],
+                    [
+                        "A Story about a Bad Dream",
+                        "dbp:language",
+                        "Czech with English subtitles"
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 15.023471593856812,
+            "SPARQL_CALLS": 29,
+            "SPARQL_TIME": 3.703744888305664,
+            "LLM_CALLS": 7,
+            "LLM_INPUTS": 4000,
+            "LLM_OUTPUTS": 291,
+            "LLM_TIME": 11.317230701446533
+        }
+    },
+    {
+        "question": "Give me all taikonauts.",
+        "results": "Based on the given knowledge triplets, there is no information related to taikonauts (Chinese astronauts). Therefore, I cannot provide a list of taikonauts from the provided data. If you would like, I can provide general knowledge about taikonauts.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Vaikuntha",
+                        "rdf:type",
+                        "UnName_Entity"
+                    ],
+                    [
+                        "Vaikuntha",
+                        "rdfs:label",
+                        "Vaikuntha"
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 13.761528253555298,
+            "SPARQL_CALLS": 18,
+            "SPARQL_TIME": 4.294870853424072,
+            "LLM_CALLS": 5,
+            "LLM_INPUTS": 2812,
+            "LLM_OUTPUTS": 201,
+            "LLM_TIME": 9.334595680236816
+        }
+    },
+    {
+        "question": "Which countries have more than ten volcanoes?",
+        "results": "Based on the given knowledge triplets, we know that Canada has a complex volcanological history and various types of volcanoes are present there. However, the triplets do not explicitly state the number of volcanoes in Canada or any other country.\n\nFrom general knowledge, countries with more than ten volcanoes include:\n\n- Canada (due to its extensive volcanic history and numerous volcanic formations)\n- United States (especially in Alaska and the Pacific Northwest)\n- Indonesia\n- Japan\n- Italy\n- Russia\n- Chile\n- Mexico\n- Philippines\n- Papua New Guinea\n\nTherefore, countries that have more than ten volcanoes include Canada and several others known for volcanic activity.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Volcano",
+                        "dbp:geology",
+                        "Volcanology of Canada"
+                    ],
+                    [
+                        "Volcano",
+                        "rdf:type",
+                        "http://www.w3.org/2004/02/skos/core#Concept"
+                    ],
+                    [
+                        "Volcano",
+                        "dct:subject",
+                        "Articles containing video clips"
+                    ]
+                ]
+            ],
+            [
+                [
+                    [
+                        "Volcanology of Canada",
+                        "onto:country",
+                        "Canada"
+                    ],
+                    [
+                        "Articles containing video clips",
+                        "rdfs:label",
+                        "Articles containing video clips"
+                    ],
+                    [
+                        "Volcanology of Canada",
+                        "rdfs:comment",
+                        "Volcanology of Canada includes lava flows, lava plateaus, lava domes, cinder cones, stratovolcanoes, shield volcanoes, submarine volcanoes, calderas, diatremes, and maars, along with examples of more less common volcanic forms such as tuyas and subglacial mounds. It has a very complex volcanological history spanning from the Precambrian eon at least 3.11 billion years ago when this part of the North American continent began to form."
+                    ]
+                ]
+            ],
+            []
+        ],
+        "metrics": {
+            "TIME": 72.34205889701843,
+            "SPARQL_CALLS": 77,
+            "SPARQL_TIME": 33.835585594177246,
+            "LLM_CALLS": 16,
+            "LLM_INPUTS": 10184,
+            "LLM_OUTPUTS": 1111,
+            "LLM_TIME": 36.63475751876831
+        }
+    },
+    {
+        "question": "Give me all movies with Tom Cruise.",
+        "results": "{Yes}. Based on the given knowledge triplets, the movies with Tom Cruise are {Born on the Fourth of July, Knight and Day, Mission: Impossible}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Tom Cruise",
+                        "dbp:starring",
+                        "Born on the Fourth of July (film)"
+                    ],
+                    [
+                        "Tom Cruise",
+                        "dbp:starring",
+                        "Knight and Day"
+                    ],
+                    [
+                        "Tom Cruise",
+                        "dbp:starring",
+                        "Mission: Impossible (film)"
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 11.617001295089722,
+            "SPARQL_CALLS": 18,
+            "SPARQL_TIME": 2.6157121658325195,
+            "LLM_CALLS": 4,
+            "LLM_INPUTS": 2155,
+            "LLM_OUTPUTS": 230,
+            "LLM_TIME": 8.995832443237305
+        }
+    },
+    {
+        "question": "When did Dracula's creator die?",
+        "results": "{Yes}. Based on the given knowledge triplets, Bram Stoker, the creator of Dracula, died on April 20, 1912. Therefore, the answer to the question is {April 20, 1912}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Count Dracula",
+                        "dbp:creator",
+                        "Bram Stoker"
+                    ],
+                    [
+                        "Count Dracula",
+                        "onto:creator",
+                        "Bram Stoker"
+                    ],
+                    [
+                        "Count Dracula",
+                        "rdfs:comment",
+                        "Count Dracula is the title character and main antagonist of Bram Stoker's 1897 Gothic horror novel Dracula. He is considered to be both the prototypical and the archetypal vampire in subsequent works of fiction. He is also depicted in the novel to be the origin of werewolf legends. Some aspects of the character are believed to have been inspired by the 15th-century Wallachian Prince Vlad III the Impaler, who was also known as Dracula. Other character aspects have been added or altered in subsequent popular fictional works. The character has subsequently appeared frequently in popular culture, from films to animated media to breakfast cereals."
+                    ]
+                ]
+            ],
+            [
+                [
+                    [
+                        "Bram Stoker",
+                        "dbp:deathDate",
+                        "1912-04-20"
+                    ],
+                    [
+                        "Bram Stoker",
+                        "onto:deathDate",
+                        "1912-04-20"
+                    ],
+                    [
+                        "Bram Stoker",
+                        "onto:deathDate",
+                        "1912-4-20"
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 12.038337230682373,
+            "SPARQL_CALLS": 20,
+            "SPARQL_TIME": 3.0901613235473633,
+            "LLM_CALLS": 5,
+            "LLM_INPUTS": 3722,
+            "LLM_OUTPUTS": 197,
+            "LLM_TIME": 8.942507982254028
+        }
+    },
+    {
+        "question": "Who created English Wikipedia?",
+        "results": "First, English Wikipedia was created as part of the Wikipedia project. Second, Wikipedia was co-founded by Jimmy Wales and Larry Sanger. The answer is {Jimmy Wales and Larry Sanger}.",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 1.7810661792755127,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0.0,
+            "LLM_CALLS": 1,
+            "LLM_INPUTS": 385,
+            "LLM_OUTPUTS": 38,
+            "LLM_TIME": 1.7810516357421875
+        }
+    },
+    {
+        "question": "Give me all female German chancellors.",
+        "results": "First, Angela Merkel is the only female German chancellor to date. The answer is {Angela Merkel}.",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 1.1303126811981201,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0.0,
+            "LLM_CALLS": 1,
+            "LLM_INPUTS": 389,
+            "LLM_OUTPUTS": 21,
+            "LLM_TIME": 1.1302990913391113
+        }
+    },
+    {
+        "question": "Who owns Aldi?",
+        "results": "First, Aldi is owned by the Albrecht family. The answer is {Albrecht family}.",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 47.65326142311096,
+            "SPARQL_CALLS": 71,
+            "SPARQL_TIME": 13.581606149673462,
+            "LLM_CALLS": 17,
+            "LLM_INPUTS": 10777,
+            "LLM_OUTPUTS": 718,
+            "LLM_TIME": 33.85087561607361
+        }
+    },
+    {
+        "question": "Which books were written by Danielle Steel?",
+        "results": "{Yes}. Based on the given knowledge triplets, the books written by Danielle Steel include \"Fine Things,\" \"Five Days in Paris,\" and \"Friends Forever (novel).\" Therefore, the answer to the question is {\"Fine Things,\" \"Five Days in Paris,\" and \"Friends Forever (novel)\"}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Danielle Steel",
+                        "dbp:author",
+                        "Fine Things"
+                    ],
+                    [
+                        "Danielle Steel",
+                        "dbp:author",
+                        "Five Days in Paris"
+                    ],
+                    [
+                        "Danielle Steel",
+                        "dbp:author",
+                        "Friends Forever (novel)"
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 19.03888440132141,
+            "SPARQL_CALLS": 41,
+            "SPARQL_TIME": 5.439473390579224,
+            "LLM_CALLS": 5,
+            "LLM_INPUTS": 2402,
+            "LLM_OUTPUTS": 351,
+            "LLM_TIME": 13.596758842468262
+        }
+    },
+    {
+        "question": "Who was influenced by Socrates?",
+        "results": "{Yes}. Based on the given knowledge triplets, Socrates influenced most subsequent Western philosophy, and more specifically, Plato, Aristotle, Aristippus, and Antisthenes. Therefore, the answer to the question is {Plato, Aristotle, Aristippus, and Antisthenes}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Socrates",
+                        "dbp:influenced",
+                        "Most subsequent Western philosophy; more specifically, Plato, Aristotle, Aristippus, Antisthenes"
+                    ],
+                    [
+                        "Socrates",
+                        "onto:influenced",
+                        "Antisthenes"
+                    ],
+                    [
+                        "Socrates",
+                        "onto:influenced",
+                        "Aristippus"
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 11.768556833267212,
+            "SPARQL_CALLS": 16,
+            "SPARQL_TIME": 2.5959575176239014,
+            "LLM_CALLS": 4,
+            "LLM_INPUTS": 2132,
+            "LLM_OUTPUTS": 257,
+            "LLM_TIME": 9.168089389801025
+        }
+    },
+    {
+        "question": "How deep is Lake Chiemsee?",
+        "results": "{Yes}. Based on the given knowledge triplets, Lake Chiemsee has a maximum depth of 72.7 (units are not specified but typically meters). Therefore, the answer to the question is {72.7}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Chiemsee",
+                        "onto:maximumDepth",
+                        "72.7"
+                    ],
+                    [
+                        "Chiemsee",
+                        "dbp:location",
+                        "Bavaria"
+                    ],
+                    [
+                        "Chiemsee",
+                        "onto:areaTotal",
+                        "7.99E7"
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 5.179036617279053,
+            "SPARQL_CALLS": 9,
+            "SPARQL_TIME": 1.344273567199707,
+            "LLM_CALLS": 2,
+            "LLM_INPUTS": 1463,
+            "LLM_OUTPUTS": 87,
+            "LLM_TIME": 3.8337442874908447
+        }
+    },
+    {
+        "question": "Which companies work in the aerospace industry as well as in medicine?",
+        "results": "Based on the given knowledge triplets, the companies Aermacchi, Airborne Windsports, and Paraavis are associated with the aerospace industry. However, there is no information provided about any of these companies working in the medicine industry. Therefore, from the given data, no companies are identified as working in both aerospace and medicine.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Aerospace",
+                        "dbp:industry",
+                        "Aermacchi"
+                    ],
+                    [
+                        "Aerospace",
+                        "dbp:industry",
+                        "Airborne Windsports"
+                    ],
+                    [
+                        "Aerospace",
+                        "dbp:industry",
+                        "Paraavis"
+                    ]
+                ]
+            ],
+            [
+                [
+                    [
+                        "Aermacchi",
+                        "onto:industry",
+                        "Aerospace"
+                    ],
+                    [
+                        "Airborne Windsports",
+                        "onto:industry",
+                        "Aerospace"
+                    ],
+                    [
+                        "Paraavis",
+                        "onto:industry",
+                        "Aerospace"
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 46.94457483291626,
+            "SPARQL_CALLS": 86,
+            "SPARQL_TIME": 12.483717441558838,
+            "LLM_CALLS": 15,
+            "LLM_INPUTS": 8201,
+            "LLM_OUTPUTS": 891,
+            "LLM_TIME": 34.42522931098938
+        }
+    },
+    {
+        "question": "Which professional surfers were born on the Philippines?",
+        "results": "First, identify professional surfers born in the Philippines.  \nNotable professional surfers born in the Philippines include Luke Landrigan.  \nThe answer is {Luke Landrigan}.",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 98.36861562728882,
+            "SPARQL_CALLS": 111,
+            "SPARQL_TIME": 29.16862416267395,
+            "LLM_CALLS": 23,
+            "LLM_INPUTS": 17250,
+            "LLM_OUTPUTS": 1747,
+            "LLM_TIME": 68.20570373535156
+        }
+    },
+    {
+        "question": "Who were the parents of Queen Victoria?",
+        "results": "{Yes}. Based on the given knowledge triplets, the parents of Queen Victoria are Prince Edward, Duke of Kent and Strathearn, and Princess Victoria of Saxe-Coburg-Saalfeld. Therefore, the answer to the question is {Prince Edward, Duke of Kent and Strathearn and Princess Victoria of Saxe-Coburg-Saalfeld}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Queen Victoria",
+                        "dbp:father",
+                        "Prince Edward, Duke of Kent and Strathearn"
+                    ],
+                    [
+                        "Queen Victoria",
+                        "dbp:mother",
+                        "Princess Victoria of Saxe-Coburg-Saalfeld"
+                    ],
+                    [
+                        "Queen Victoria",
+                        "onto:parent",
+                        "Prince Edward, Duke of Kent and Strathearn"
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 7.882983207702637,
+            "SPARQL_CALLS": 12,
+            "SPARQL_TIME": 2.2290289402008057,
+            "LLM_CALLS": 3,
+            "LLM_INPUTS": 2228,
+            "LLM_OUTPUTS": 145,
+            "LLM_TIME": 5.643618106842041
+        }
+    },
+    {
+        "question": "Are there any castles in the United States?",
+        "results": "Yes, there are castles in the United States. While the U.S. does not have medieval castles like those found in Europe, there are many castle-like structures built for various purposes, including historic mansions, follies, and modern constructions inspired by European castles. Examples include Boldt Castle in New York, Hearst Castle in California, and the Biltmore Estate in North Carolina.",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 88.19460320472717,
+            "SPARQL_CALLS": 83,
+            "SPARQL_TIME": 38.66489100456238,
+            "LLM_CALLS": 15,
+            "LLM_INPUTS": 14659,
+            "LLM_OUTPUTS": 1307,
+            "LLM_TIME": 47.79329800605774
+        }
+    },
+    {
+        "question": "Which languages are spoken in Estonia?",
+        "results": "{Yes}. Based on the given knowledge triplets, the languages spoken in Estonia include Estonian (official language), Seto language, and V\u00f5ro language (regional languages). Therefore, the answer to the question is {Estonian, Seto language, V\u00f5ro language}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Estonia",
+                        "dbp:officialLanguages",
+                        "Estonianb"
+                    ],
+                    [
+                        "Estonia",
+                        "dbp:regionalLanguages",
+                        "Seto language"
+                    ],
+                    [
+                        "Estonia",
+                        "dbp:regionalLanguages",
+                        "V\u00f5ro language"
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 7.754515886306763,
+            "SPARQL_CALLS": 13,
+            "SPARQL_TIME": 2.5156161785125732,
+            "LLM_CALLS": 4,
+            "LLM_INPUTS": 3295,
+            "LLM_OUTPUTS": 131,
+            "LLM_TIME": 5.1885154247283936
+        }
+    },
+    {
+        "question": "Give me a list of all critically endangered birds.",
+        "results": "Based on the given knowledge triplets, there is a reference to a \"List of critically endangered birds\" which is associated with the \"IUCN Red List critically endangered species\" concept. However, the triplets do not provide the actual list or names of the critically endangered birds.\n\nTo provide a list of critically endangered birds, additional information from the IUCN Red List or other authoritative sources on bird conservation status would be needed.\n\nIf you want, I can provide some examples of critically endangered bird species based on general knowledge:\n\n- Kakapo (Strigops habroptilus)\n- California Condor (Gymnogyps californianus)\n- Spix's Macaw (Cyanopsitta spixii)\n- Forest Owlet (Heteroglaux blewitti)\n- Northern Bald Ibis (Geronticus eremita)\n\nPlease let me know if you would like a more detailed list or information on specific species.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "List of critically endangered birds",
+                        "dct:subject",
+                        "IUCN Red List critically endangered species"
+                    ],
+                    [
+                        "Critically endangered",
+                        "dct:subject",
+                        "Critically endangered species"
+                    ],
+                    [
+                        "List of critically endangered birds",
+                        "rdfs:label",
+                        "List of critically endangered birds"
+                    ]
+                ]
+            ],
+            [
+                [
+                    [
+                        "IUCN Red List critically endangered species",
+                        "rdf:type",
+                        "http://www.w3.org/2004/02/skos/core#Concept"
+                    ],
+                    [
+                        "Critically endangered species",
+                        "rdf:type",
+                        "http://www.w3.org/2004/02/skos/core#Concept"
+                    ],
+                    [
+                        "IUCN Red List critically endangered species",
+                        "rdfs:label",
+                        "IUCN Red List critically endangered species"
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 23.470181226730347,
+            "SPARQL_CALLS": 42,
+            "SPARQL_TIME": 5.7609851360321045,
+            "LLM_CALLS": 10,
+            "LLM_INPUTS": 5540,
+            "LLM_OUTPUTS": 629,
+            "LLM_TIME": 17.70321488380432
+        }
+    },
+    {
+        "question": "Which countries are connected by the Rhine?",
+        "results": "Based on the given knowledge triplets, the Rhine is connected to the Marne\u2013Rhine Canal, which links the river Marne in Vitry-le-Fran\u00e7ois (France) with the Rhine in Strasbourg (France). The canal was originally intended to connect Paris and northern France with Alsace, the Rhine, and Germany.\n\nFrom this, we can infer that the Rhine connects or is associated with at least the following countries:\n\n- France (since the Marne\u2013Rhine Canal and Strasbourg are in France)\n- Germany (mentioned as a connection target of the canal)\n- Netherlands (the Rhine's mouth country is the Netherlands)\n\nTherefore, the countries connected by the Rhine are France, Germany, and the Netherlands.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Rhine",
+                        "dbp:connectsTo",
+                        "Marne\u2013Rhine Canal"
+                    ],
+                    [
+                        "Rhine",
+                        "dbp:mouthCountry",
+                        "Netherlands"
+                    ]
+                ]
+            ],
+            [
+                [
+                    [
+                        "Marne\u2013Rhine Canal",
+                        "dbp:startPoint",
+                        "Marne in Vitry-le-Fran\u00e7ois"
+                    ],
+                    [
+                        "Marne\u2013Rhine Canal",
+                        "dbp:endPoint",
+                        "Rhine in Strasbourg"
+                    ],
+                    [
+                        "Marne\u2013Rhine Canal",
+                        "rdfs:comment",
+                        "The Marne\u2013Rhine Canal (French: Canal de la Marne au Rhin) is a canal in north eastern France. It connects the river Marne in Vitry-le-Fran\u00e7ois with the Rhine in Strasbourg. Combined with the canalised part of the Marne, it allows transport between Paris and eastern France. The original objective of the canal was to connect Paris and the north of France with the Alsace, the Rhine, and Germany."
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 20.99746584892273,
+            "SPARQL_CALLS": 29,
+            "SPARQL_TIME": 4.341742992401123,
+            "LLM_CALLS": 6,
+            "LLM_INPUTS": 4944,
+            "LLM_OUTPUTS": 442,
+            "LLM_TIME": 16.643771409988403
+        }
+    },
+    {
+        "question": "Who was the father of Queen Elizabeth II?",
+        "results": "{Yes}. Based on the given knowledge triplets, the father of Queen Elizabeth II is George VI. Therefore, the answer to the question is {George VI}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Elizabeth II",
+                        "dbp:father",
+                        "George VI"
+                    ],
+                    [
+                        "Elizabeth II",
+                        "onto:relative",
+                        "Michael Bowes-Lyon, 18th Earl of Strathmore and Kinghorne"
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 6.9520885944366455,
+            "SPARQL_CALLS": 14,
+            "SPARQL_TIME": 2.4426803588867188,
+            "LLM_CALLS": 3,
+            "LLM_INPUTS": 2326,
+            "LLM_OUTPUTS": 104,
+            "LLM_TIME": 4.487533092498779
+        }
+    },
+    {
+        "question": "Give me all chemical elements.",
+        "results": "The given knowledge triplets define \"Chemical element\" as a concept and label it accordingly, but they do not list individual chemical elements.\n\nBased on general knowledge, chemical elements are substances consisting of atoms with the same number of protons. Examples include:\n\n- Hydrogen (H)\n- Helium (He)\n- Lithium (Li)\n- Beryllium (Be)\n- Boron (B)\n- Carbon (C)\n- Nitrogen (N)\n- Oxygen (O)\n- Fluorine (F)\n- Neon (Ne)\n- ... and so on, up to Oganesson (Og), element number 118.\n\nThere are currently 118 recognized chemical elements in the periodic table.\n\nIf you want a complete list of all chemical elements, please specify, and I can provide it.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Chemical element",
+                        "rdf:type",
+                        "http://www.w3.org/2004/02/skos/core#Concept"
+                    ],
+                    [
+                        "Chemical element",
+                        "rdfs:label",
+                        "Chemical element"
+                    ],
+                    [
+                        "Chemical element",
+                        "dct:subject",
+                        "Chemical elements"
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 27.89331841468811,
+            "SPARQL_CALLS": 17,
+            "SPARQL_TIME": 19.53104567527771,
+            "LLM_CALLS": 5,
+            "LLM_INPUTS": 2872,
+            "LLM_OUTPUTS": 323,
+            "LLM_TIME": 7.135296106338501
+        }
+    },
+    {
+        "question": "Give me all American presidents of the last 20 years.",
+        "results": "First, considering the last 20 years from 2024, that would be from 2004 to 2024.  \nSecond, the American presidents during this period are:  \n- George W. Bush (2001\u20132009)  \n- Barack Obama (2009\u20132017)  \n- Donald Trump (2017\u20132021)  \n- Joe Biden (2021\u2013present)  \n\nThe answer is {George W. Bush, Barack Obama, Donald Trump, Joe Biden}.",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 3.643369197845459,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0.0,
+            "LLM_CALLS": 1,
+            "LLM_INPUTS": 392,
+            "LLM_OUTPUTS": 100,
+            "LLM_TIME": 3.6433463096618652
+        }
+    },
+    {
+        "question": "When is the movie Worst Case Scenario going to be in cinemas in the Netherlands?",
+        "results": "Based on the given knowledge triplet ('Netherlands', 'dbp:date', 'December 2011'), it can be inferred that the movie Worst Case Scenario was scheduled to be in cinemas in the Netherlands in December 2011. Therefore, the answer to the question is {December 2011}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Netherlands",
+                        "dbp:date",
+                        "December 2011"
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 11.464599609375,
+            "SPARQL_CALLS": 21,
+            "SPARQL_TIME": 4.3925793170928955,
+            "LLM_CALLS": 6,
+            "LLM_INPUTS": 6381,
+            "LLM_OUTPUTS": 257,
+            "LLM_TIME": 6.983587026596069
+        }
+    },
+    {
+        "question": "Whom did Lance Bass marry?",
+        "results": "{Yes}. Based on the given knowledge triplets, Lance Bass married Michael Turchin. Therefore, the answer to the question is {Michael Turchin}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Lance Bass",
+                        "dbp:spouse",
+                        "Michael Turchin"
+                    ],
+                    [
+                        "Lance Bass",
+                        "onto:spouse",
+                        "UnName_Entity"
+                    ],
+                    [
+                        "Lance Bass",
+                        "dbp:partner",
+                        "Reichen Lehmkuhl"
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 6.264099359512329,
+            "SPARQL_CALLS": 10,
+            "SPARQL_TIME": 1.5094704627990723,
+            "LLM_CALLS": 3,
+            "LLM_INPUTS": 1815,
+            "LLM_OUTPUTS": 86,
+            "LLM_TIME": 4.7526304721832275
+        }
+    },
+    {
+        "question": "Which subsidiary of TUI Travel serves both Glasgow and Dublin?",
+        "results": "{Yes}. Based on the given knowledge triplets, Thomson Airways is a subsidiary of TUI Travel. Since Thomson Airways is associated with TUI Travel and the question asks for a subsidiary serving both Glasgow and Dublin, and given that Dublin is mentioned in the context of Comhar (which is based in Dublin) but no other subsidiary is mentioned, it is reasonable to conclude that Thomson Airways serves both Glasgow and Dublin. Therefore, the answer is {Thomson Airways}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "TUI Travel",
+                        "onto:subsidiary",
+                        "Thomson Airways"
+                    ],
+                    [
+                        "TUI Travel",
+                        "dbp:products",
+                        "Passenger transport, travel agency, accommodation"
+                    ],
+                    [
+                        "Dublin",
+                        "dbp:based",
+                        "Comhar"
+                    ]
+                ]
+            ],
+            [
+                [
+                    [
+                        "Thomson Airways",
+                        "dbp:subsid",
+                        "TUI Travel"
+                    ],
+                    [
+                        "Comhar",
+                        "dbp:based",
+                        "Dublin"
+                    ],
+                    [
+                        "Thomson Airways",
+                        "dbp:parent",
+                        "TUI Group"
+                    ]
+                ]
+            ],
+            [
+                [
+                    [
+                        "TUI Group",
+                        "dbp:areaServed",
+                        "Global"
+                    ],
+                    [
+                        "TUI Travel",
+                        "onto:subsidiary",
+                        "Thomson Airways"
+                    ],
+                    [
+                        "TUI Travel",
+                        "dbp:location",
+                        "Crawley, England, UK"
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 65.35579562187195,
+            "SPARQL_CALLS": 99,
+            "SPARQL_TIME": 15.554142713546753,
+            "LLM_CALLS": 21,
+            "LLM_INPUTS": 16742,
+            "LLM_OUTPUTS": 904,
+            "LLM_TIME": 49.656245946884155
+        }
+    },
+    {
+        "question": "What languages are spoken in Pakistan?",
+        "results": "{Yes}. Based on the given knowledge triplets, the languages spoken in Pakistan include Urdu (official language), Pashto, and Punjabi. Therefore, the answer to the question is {Urdu, Pashto, Punjabi}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Pakistan",
+                        "dbp:officialLanguages",
+                        "Urdu"
+                    ],
+                    [
+                        "Pakistan",
+                        "dbp:languages",
+                        "Pashto language"
+                    ],
+                    [
+                        "Pakistan",
+                        "dbp:languages",
+                        "Punjabi language"
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 24.016891717910767,
+            "SPARQL_CALLS": 41,
+            "SPARQL_TIME": 6.470032691955566,
+            "LLM_CALLS": 5,
+            "LLM_INPUTS": 4154,
+            "LLM_OUTPUTS": 463,
+            "LLM_TIME": 17.48147702217102
+        }
+    },
+    {
+        "question": "Who is the daughter of Bill Clinton married to?",
+        "results": "{Yes}. Based on the given knowledge triplets, Chelsea Clinton is the daughter of Bill Clinton, and Chelsea Clinton is married to Marc Mezvinsky. Therefore, the answer to the question is {Marc Mezvinsky}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Bill Clinton",
+                        "onto:child",
+                        "Chelsea Clinton"
+                    ],
+                    [
+                        "Bill Clinton",
+                        "onto:spouse",
+                        "Hillary Clinton"
+                    ],
+                    [
+                        "Bill Clinton",
+                        "dbp:spouse",
+                        "Hillary Clinton"
+                    ]
+                ]
+            ],
+            [
+                [
+                    [
+                        "Chelsea Clinton",
+                        "dbp:spouse",
+                        "Marc Mezvinsky"
+                    ],
+                    [
+                        "Hillary Clinton",
+                        "onto:child",
+                        "Chelsea Clinton"
+                    ],
+                    [
+                        "Hillary Clinton",
+                        "onto:spouse",
+                        "Bill Clinton"
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 15.63515329360962,
+            "SPARQL_CALLS": 33,
+            "SPARQL_TIME": 5.940683841705322,
+            "LLM_CALLS": 8,
+            "LLM_INPUTS": 5326,
+            "LLM_OUTPUTS": 254,
+            "LLM_TIME": 9.656104326248169
+        }
+    },
+    {
+        "question": "Who was on the Apollo 11 mission?",
+        "results": "{Yes}. Based on the given knowledge triplets, the Apollo 11 mission crew members were Neil Armstrong, Michael Collins, and Buzz Aldrin. Therefore, the answer to the question is {Neil Armstrong, Michael Collins, and Buzz Aldrin}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Apollo 11",
+                        "dbp:crewMembers",
+                        "Michael Collins (astronaut)"
+                    ],
+                    [
+                        "Apollo 11",
+                        "dbp:crew1Up",
+                        "Neil Armstrong"
+                    ],
+                    [
+                        "Apollo 11",
+                        "dbp:crew2Up",
+                        "Michael Collins (astronaut)"
+                    ]
+                ]
+            ],
+            [
+                [
+                    [
+                        "Neil Armstrong",
+                        "dbp:mission",
+                        "Apollo 11"
+                    ],
+                    [
+                        "Michael Collins (astronaut)",
+                        "dbp:mission",
+                        "Apollo 11"
+                    ],
+                    [
+                        "Michael Collins (astronaut)",
+                        "onto:mission",
+                        "Apollo 11"
+                    ]
+                ]
+            ],
+            [
+                [
+                    [
+                        "Apollo 11",
+                        "dbp:crewMembers",
+                        "Neil Armstrong"
+                    ],
+                    [
+                        "Apollo 11",
+                        "dbp:crew2Up",
+                        "Michael Collins (astronaut)"
+                    ],
+                    [
+                        "Apollo 11",
+                        "dbp:crewMembers",
+                        "Buzz Aldrin"
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 35.41224193572998,
+            "SPARQL_CALLS": 57,
+            "SPARQL_TIME": 8.495176076889038,
+            "LLM_CALLS": 17,
+            "LLM_INPUTS": 8474,
+            "LLM_OUTPUTS": 624,
+            "LLM_TIME": 26.901731729507446
+        }
+    },
+    {
+        "question": "What is the wavelength of Indigo?",
+        "results": "The provided knowledge triplets describe IndiGo, a low-cost airline based in India, and do not contain any information about the wavelength of Indigo (the color). \n\nBased on general knowledge, the color indigo corresponds to a wavelength range of approximately 445 to 464 nanometers in the visible light spectrum.\n\nTherefore, the wavelength of indigo is about 445\u2013464 nm.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "IndiGo",
+                        "rdfs:comment",
+                        "IndiGo is a low-cost airline headquartered at Gurgaon, India. It is the largest airline in India in terms of passengers carried with a 39.8% market share as of July 2016. The airline operates 818 daily flights to 41 destinations and is the second largest low-cost carrier in Asia. It has its primary hub at Indira Gandhi International Airport, Delhi."
+                    ],
+                    [
+                        "IndiGo",
+                        "onto:abstract",
+                        "IndiGo is a low-cost airline headquartered at Gurgaon, India. It is the largest airline in India in terms of passengers carried with a 39.8% market share as of July 2016. The airline operates 818 daily flights to 41 destinations and is the second largest low-cost carrier in Asia. It has its primary hub at Indira Gandhi International Airport, Delhi. The airline was founded as a private company by Rahul Bhatia of InterGlobe Enterprises and Rakesh Gangwal, a United States-based NRI in 2006. It took delivery of its first aircraft in July 2006 and commenced operations a month later in August 2006. The airline became the largest Indian carrier in terms of passenger market share in 2012. The company went public in November 2015. The airline operates a single aircraft type of Airbus A320 with an all economy configuration."
+                    ],
+                    [
+                        "IndiGo",
+                        "rdf:type",
+                        "http://www.wikidata.org/entity/Q43229"
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 30.998206853866577,
+            "SPARQL_CALLS": 24,
+            "SPARQL_TIME": 17.898646593093872,
+            "LLM_CALLS": 6,
+            "LLM_INPUTS": 3988,
+            "LLM_OUTPUTS": 320,
+            "LLM_TIME": 11.406665802001953
+        }
+    },
+    {
+        "question": "Give me all B-sides of the Ramones.",
+        "results": "The Ramones have released numerous B-sides throughout their career. Some notable B-sides include:\n\n- \"I Don't Wanna Walk Around With You\" (B-side to \"Blitzkrieg Bop\")\n- \"Havana Affair\" (B-side to \"I Wanna Be Your Boyfriend\")\n- \"I Can't Be\" (B-side to \"Sheena Is a Punk Rocker\")\n- \"Slug\" (B-side to \"Rockaway Beach\")\n- \"I Don't Want to Live This Life (Anymore)\" (B-side to \"Do You Remember Rock 'n' Roll Radio?\")\n- \"Surfin' Bird\" (B-side to \"Rock 'n' Roll High School\")\n- \"Danny Says\" (B-side to \"Rock 'n' Roll High School\")\n\nIf you are looking for a comprehensive list, please specify a particular album or single, and I can provide more detailed information.",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 32.578710079193115,
+            "SPARQL_CALLS": 58,
+            "SPARQL_TIME": 8.008684396743774,
+            "LLM_CALLS": 13,
+            "LLM_INPUTS": 7087,
+            "LLM_OUTPUTS": 719,
+            "LLM_TIME": 24.56041693687439
+        }
+    },
+    {
+        "question": "Who was called Scarface?",
+        "results": "First, the person famously called Scarface is Al Capone. The answer is {Al Capone}.",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 1.2129130363464355,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0.0,
+            "LLM_CALLS": 1,
+            "LLM_INPUTS": 386,
+            "LLM_OUTPUTS": 21,
+            "LLM_TIME": 1.2128913402557373
+        }
+    },
+    {
+        "question": "Which rivers flow into the North Sea?",
+        "results": "First, some of the major rivers that flow into the North Sea include the Thames, Rhine, Elbe, and Meuse. Second, these rivers are known to discharge their waters into the North Sea. The answer is {Thames, Rhine, Elbe, Meuse}.",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 71.82316970825195,
+            "SPARQL_CALLS": 112,
+            "SPARQL_TIME": 15.88576340675354,
+            "LLM_CALLS": 17,
+            "LLM_INPUTS": 9787,
+            "LLM_OUTPUTS": 1831,
+            "LLM_TIME": 55.90428566932678
+        }
+    },
+    {
+        "question": "Where is Fort Knox located?",
+        "results": "{Yes}. Based on the given knowledge triplets, Fort Knox is located in Kentucky. Therefore, the answer to the question is {Kentucky}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Fort Knox",
+                        "dbp:location",
+                        "Kentucky"
+                    ],
+                    [
+                        "Fort Knox",
+                        "onto:location",
+                        "Kentucky"
+                    ],
+                    [
+                        "Fort Knox",
+                        "dbp:city",
+                        "Fort Knox High School"
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 4.682576656341553,
+            "SPARQL_CALLS": 12,
+            "SPARQL_TIME": 1.8239758014678955,
+            "LLM_CALLS": 2,
+            "LLM_INPUTS": 1541,
+            "LLM_OUTPUTS": 70,
+            "LLM_TIME": 2.856445074081421
+        }
+    },
+    {
+        "question": "Which daughters of British earls died at the same place they were born at?",
+        "results": "To answer this question, we need to identify daughters of British earls who died in the same place they were born.\n\nOne well-known example is Lady Diana Spencer, daughter of the Earl Spencer, who was born and died in England, but not the exact same place.\n\nWithout specific names or more context, it is difficult to provide a definitive answer.\n\nIf you have particular daughters or earls in mind, please provide more details.",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 2.5971715450286865,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0.0,
+            "LLM_CALLS": 1,
+            "LLM_INPUTS": 396,
+            "LLM_OUTPUTS": 86,
+            "LLM_TIME": 2.597155809402466
+        }
+    },
+    {
+        "question": "How many emperors did China have?",
+        "results": "China had a long history of emperors spanning several dynasties. The exact number of emperors depends on how one counts them, but traditionally, there were around 200 emperors throughout Chinese history from the Qin dynasty (starting with Qin Shi Huang in 221 BCE) to the Qing dynasty (ending with the abdication of Puyi in 1912).\n\nThe answer is approximately {200} emperors.",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 53.27746105194092,
+            "SPARQL_CALLS": 105,
+            "SPARQL_TIME": 16.018396854400635,
+            "LLM_CALLS": 23,
+            "LLM_INPUTS": 14128,
+            "LLM_OUTPUTS": 1110,
+            "LLM_TIME": 37.1513237953186
+        }
+    },
+    {
+        "question": "What are the names of the Teenage Mutant Ninja Turtles?",
+        "results": "Based on the given knowledge triplets, the Teenage Mutant Ninja Turtles include Donatello and Leonardo. However, the triplets do not list all the turtles' names. From general knowledge, the Teenage Mutant Ninja Turtles are named Donatello, Leonardo, Michelangelo, and Raphael. Therefore, the names of the Teenage Mutant Ninja Turtles are {Donatello, Leonardo, Michelangelo, Raphael}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Teenage Mutant Ninja Turtles",
+                        "dbp:mainCharTeam",
+                        "Teenage Mutant Ninja Turtles (IDW Publishing)"
+                    ],
+                    [
+                        "Teenage Mutant Ninja Turtles",
+                        "dbp:members",
+                        "Donatello (Teenage Mutant Ninja Turtles)"
+                    ],
+                    [
+                        "Teenage Mutant Ninja Turtles",
+                        "dbp:members",
+                        "Leonardo (Teenage Mutant Ninja Turtles)"
+                    ]
+                ]
+            ],
+            [
+                [
+                    [
+                        "Donatello (Teenage Mutant Ninja Turtles)",
+                        "dbp:characterName",
+                        "Donatello"
+                    ],
+                    [
+                        "Teenage Mutant Ninja Turtles (IDW Publishing)",
+                        "dbp:superhero",
+                        "y"
+                    ],
+                    [
+                        "Leonardo (Teenage Mutant Ninja Turtles)",
+                        "dbp:characterName",
+                        "Leonardo"
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 27.113431453704834,
+            "SPARQL_CALLS": 39,
+            "SPARQL_TIME": 5.404808282852173,
+            "LLM_CALLS": 12,
+            "LLM_INPUTS": 6489,
+            "LLM_OUTPUTS": 615,
+            "LLM_TIME": 21.70445418357849
+        }
+    },
+    {
+        "question": "Where does Piccadilly start?",
+        "results": "{Yes}. Based on the given knowledge triplets, Piccadilly starts at Dover Street. Therefore, the answer to the question is {Dover Street}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Piccadilly",
+                        "onto:routeStart",
+                        "Dover Street"
+                    ],
+                    [
+                        "Piccadilly",
+                        "dbp:terminusA",
+                        "Dover Street"
+                    ],
+                    [
+                        "Piccadilly",
+                        "dbp:location",
+                        "Albany (London)"
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 5.811455011367798,
+            "SPARQL_CALLS": 17,
+            "SPARQL_TIME": 2.3053088188171387,
+            "LLM_CALLS": 3,
+            "LLM_INPUTS": 1760,
+            "LLM_OUTPUTS": 106,
+            "LLM_TIME": 3.5042877197265625
+        }
+    },
+    {
+        "question": "What is the name of the university where Obama's wife studied?",
+        "results": "First, Obama's wife, Michelle Obama, studied at Princeton University and Harvard University. The answer is {Princeton University, Harvard University}.",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 1.3286211490631104,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0.0,
+            "LLM_CALLS": 1,
+            "LLM_INPUTS": 392,
+            "LLM_OUTPUTS": 27,
+            "LLM_TIME": 1.328601360321045
+        }
+    },
+    {
+        "question": "When did Paraguay proclaim its independence?",
+        "results": "{Yes}. Based on the given knowledge triplets, Paraguay proclaimed its independence on May 14, 1811. Therefore, the answer to the question is {May 14, 1811}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Paraguay",
+                        "dbp:establishedDate",
+                        "1811-05-14"
+                    ],
+                    [
+                        "Paraguay",
+                        "dbp:date",
+                        "April 2014"
+                    ],
+                    [
+                        "Paraguay",
+                        "onto:foundingDate",
+                        "1811-05-14"
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 6.925599098205566,
+            "SPARQL_CALLS": 8,
+            "SPARQL_TIME": 1.6944239139556885,
+            "LLM_CALLS": 4,
+            "LLM_INPUTS": 2971,
+            "LLM_OUTPUTS": 131,
+            "LLM_TIME": 5.209419250488281
+        }
+    },
+    {
+        "question": "How short is the shortest active NBA player?",
+        "results": "Based on the given knowledge triplets, Anthony Bowie is an NBA player with a height of approximately 6 feet 6 inches (1.9812 meters). However, this does not provide information about the shortest active NBA player. Therefore, the knowledge triplets are insufficient to answer how short the shortest active NBA player is. Additional information about other NBA players and their heights would be needed to determine the shortest active player.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "National Basketball Association",
+                        "dbp:statsLeague",
+                        "Anthony Bowie"
+                    ]
+                ]
+            ],
+            [
+                [
+                    [
+                        "Anthony Bowie",
+                        "onto:height",
+                        "1.9812"
+                    ],
+                    [
+                        "Anthony Bowie",
+                        "dbp:heightFt",
+                        "6"
+                    ],
+                    [
+                        "Anthony Bowie",
+                        "dbp:heightIn",
+                        "6"
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 19.833944082260132,
+            "SPARQL_CALLS": 21,
+            "SPARQL_TIME": 3.6946120262145996,
+            "LLM_CALLS": 7,
+            "LLM_INPUTS": 4500,
+            "LLM_OUTPUTS": 474,
+            "LLM_TIME": 16.111740827560425
+        }
+    },
+    {
+        "question": "Where did Abraham Lincoln die?",
+        "results": "{Yes}. Based on the given knowledge triplets, Abraham Lincoln died at the Petersen House in Washington, D.C. Therefore, the answer to the question is {Petersen House (Washington, D.C.)}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Abraham Lincoln",
+                        "dbp:deathPlace",
+                        "Petersen House (Washington, D.C.)"
+                    ],
+                    [
+                        "Abraham Lincoln",
+                        "onto:deathPlace",
+                        "Petersen House (Washington, D.C.)"
+                    ],
+                    [
+                        "Abraham Lincoln",
+                        "dbp:location",
+                        "right"
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 9.875662326812744,
+            "SPARQL_CALLS": 11,
+            "SPARQL_TIME": 2.1568663120269775,
+            "LLM_CALLS": 4,
+            "LLM_INPUTS": 2723,
+            "LLM_OUTPUTS": 206,
+            "LLM_TIME": 7.705349683761597
+        }
+    },
+    {
+        "question": "When was Jack Wolfskin founded?",
+        "results": "{Yes}. Based on the given knowledge triplets, Jack Wolfskin was founded in 1981. Therefore, the answer to the question is {1981}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Jack Wolfskin",
+                        "dbp:foundation",
+                        "1981"
+                    ],
+                    [
+                        "Jack Wolfskin",
+                        "onto:foundingYear",
+                        "1981"
+                    ],
+                    [
+                        "Jack Wolfskin",
+                        "rdfs:comment",
+                        "Jack Wolfskin is a major German producer of outdoor wear and equipment headquartered in Idstein. It was founded in 1981 and is now owned by the American company The Blackstone Group. The company claims to be one of the biggest suppliers of outdoor products and at the same time most successful franchiser in the German specialist trade market of sports equipment. Their products include mountain and leisure clothing, footwear, rucksacks, sleeping bags, and tents. The brand is popular not only among hikers and mountaineers but predominantly worn in everyday situations; Jack Wolfskin clothes and accessories are fashionable amongst urban Germans Wilderness chic."
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 3.526211738586426,
+            "SPARQL_CALLS": 8,
+            "SPARQL_TIME": 1.076716661453247,
+            "LLM_CALLS": 2,
+            "LLM_INPUTS": 1611,
+            "LLM_OUTPUTS": 75,
+            "LLM_TIME": 2.4488041400909424
+        }
+    },
+    {
+        "question": "In which city is the headquarter of Air China?",
+        "results": "{Yes}. Based on the given knowledge triplets, the headquarters of Air China is located in Beijing. Therefore, the answer to the question is {Beijing}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Air China",
+                        "dbp:headquarters",
+                        "Beijing"
+                    ],
+                    [
+                        "Air China",
+                        "onto:headquarter",
+                        "Beijing"
+                    ],
+                    [
+                        "Air China",
+                        "dbp:keyPeople",
+                        "* Song Zhiyong, Chairman\n* Cai Jianjiang, President"
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 7.9988343715667725,
+            "SPARQL_CALLS": 14,
+            "SPARQL_TIME": 2.2227964401245117,
+            "LLM_CALLS": 4,
+            "LLM_INPUTS": 2098,
+            "LLM_OUTPUTS": 185,
+            "LLM_TIME": 5.773722887039185
+        }
+    },
+    {
+        "question": "What is the founding year of the brewery that produces Pilsner Urquell?",
+        "results": "The given knowledge triplets do not provide information about the founding year of the brewery that produces Pilsner Urquell. However, based on general knowledge, Pilsner Urquell is produced by the Pilsner Urquell Brewery, which was founded in 1842. Therefore, the founding year of the brewery that produces Pilsner Urquell is 1842.",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 3.291539430618286,
+            "SPARQL_CALLS": 2,
+            "SPARQL_TIME": 0.277097225189209,
+            "LLM_CALLS": 2,
+            "LLM_INPUTS": 1339,
+            "LLM_OUTPUTS": 121,
+            "LLM_TIME": 3.0140504837036133
+        }
+    },
+    {
+        "question": "When did the Boston Tea Party take place?",
+        "results": "{Yes}. Based on the given knowledge triplets, the Boston Tea Party took place on December 16, 1773. Therefore, the answer to the question is {December 16, 1773}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Boston Tea Party",
+                        "dbp:date",
+                        "1773-12-16"
+                    ],
+                    [
+                        "Boston Tea Party",
+                        "dbp:caption",
+                        "Source: W.D. Cooper. \"Boston Tea Party.\", The History of North America. London: E. Newberry, 1789. Engraving. Plate opposite p. 58. Rare Book and Special Collections Division, Library of Congress"
+                    ],
+                    [
+                        "Boston Tea Party",
+                        "rdfs:comment",
+                        "The Boston Tea Party (initially referred to by John Adams as \"the Destruction of the Tea in Boston\") was a political protest by the Sons of Liberty in Boston, on December 16, 1773. The demonstrators, some disguised as Native Americans, in defiance of the Tea Act of May 10, 1773, destroyed an entire shipment of tea sent by the East India Company. They boarded the ships and threw the chests of tea into Boston Harbor. The British government responded harshly and the episode escalated into the American Revolution. The Tea Party became an iconic event of American history, and other political protests such as the Tea Party movement after 2010 explicitly refer to it."
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 4.081951379776001,
+            "SPARQL_CALLS": 8,
+            "SPARQL_TIME": 1.2019121646881104,
+            "LLM_CALLS": 2,
+            "LLM_INPUTS": 1659,
+            "LLM_OUTPUTS": 84,
+            "LLM_TIME": 2.87869930267334
+        }
+    },
+    {
+        "question": "Which animals are critically endangered?",
+        "results": "The provided knowledge triplets do not contain information about which animals are critically endangered. To answer this question, additional data or knowledge about critically endangered species is required.",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 3.6479272842407227,
+            "SPARQL_CALLS": 2,
+            "SPARQL_TIME": 0.4834437370300293,
+            "LLM_CALLS": 2,
+            "LLM_INPUTS": 1291,
+            "LLM_OUTPUTS": 73,
+            "LLM_TIME": 3.161740303039551
+        }
+    },
+    {
+        "question": "Which politicians were married to a German?",
+        "results": "To answer the question \"Which politicians were married to a German?\", I need to identify politicians who had spouses of German nationality or ethnicity.\n\nHowever, the question is quite broad and does not specify a particular country, time period, or context. There are many politicians worldwide who have been married to Germans.\n\nIf you have a specific politician or context in mind, please provide more details.\n\nOtherwise, here are some notable examples:\n\n- John F. Kennedy (35th President of the United States) was married to Jacqueline Kennedy Onassis, who was of French, Irish, and English descent, not German.\n\n- Franklin D. Roosevelt (32nd President of the United States) was married to Eleanor Roosevelt, who was of Dutch and English descent.\n\n- Dwight D. Eisenhower (34th President of the United States) was married to Mamie Eisenhower, who was of German and English descent. So Eisenhower was married to a woman with German ancestry.\n\n- Boris Johnson (former UK Prime Minister) was married to Marina Wheeler, who is of Indian and German descent.\n\n- Vladimir Putin (President of Russia) was married to Lyudmila Putina, who is Russian, not German.\n\n- Barack Obama was married to Michelle Obama, who is African American.\n\n- Angela Merkel (former Chancellor of Germany) was married to Joachim Sauer, who is German.\n\n- John Kerry (former US Secretary of State) was married to Teresa Heinz Kerry, who was born in Mozambique to Portuguese parents, not German.\n\nGiven the lack of specific context, the best answer is:\n\nPoliticians such as Dwight D. Eisenhower and Boris Johnson were married to women with German ancestry.\n\nIf you want a more precise answer, please provide more details.",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 8.758600234985352,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0.0,
+            "LLM_CALLS": 1,
+            "LLM_INPUTS": 388,
+            "LLM_OUTPUTS": 346,
+            "LLM_TIME": 8.758581161499023
+        }
+    },
+    {
+        "question": "How big is the earth's diameter?",
+        "results": "The Earth's diameter is about 12,742 kilometers (7,918 miles) when measured at the equator.",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 1.0542583465576172,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0.0,
+            "LLM_CALLS": 1,
+            "LLM_INPUTS": 388,
+            "LLM_OUTPUTS": 23,
+            "LLM_TIME": 1.05424165725708
+        }
+    },
+    {
+        "question": "Is the wife of President Obama called Michelle?",
+        "results": "{Yes}. Based on the given knowledge triplets, Barack Obama's spouse is Michelle Obama. Therefore, the answer to the question is {Yes}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Barack Obama",
+                        "dbp:spouse",
+                        "Michelle Obama"
+                    ],
+                    [
+                        "Barack Obama",
+                        "onto:spouse",
+                        "Michelle Obama"
+                    ],
+                    [
+                        "Barack Obama",
+                        "dbp:name",
+                        "Barack Obama"
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 5.753457069396973,
+            "SPARQL_CALLS": 10,
+            "SPARQL_TIME": 2.099081039428711,
+            "LLM_CALLS": 3,
+            "LLM_INPUTS": 2366,
+            "LLM_OUTPUTS": 78,
+            "LLM_TIME": 3.629006862640381
+        }
+    },
+    {
+        "question": "Which U.S. state has the abbreviation MN?",
+        "results": "First, the U.S. state with the abbreviation MN is Minnesota. The answer is {Minnesota}.",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 18.729996919631958,
+            "SPARQL_CALLS": 32,
+            "SPARQL_TIME": 5.287732839584351,
+            "LLM_CALLS": 8,
+            "LLM_INPUTS": 5542,
+            "LLM_OUTPUTS": 383,
+            "LLM_TIME": 13.393716096878052
+        }
+    },
+    {
+        "question": "When did Muhammad die?",
+        "results": "{Yes}. Based on the given knowledge triplets, Muhammad died on June 8, 632. Therefore, the answer to the question is {June 8, 632}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Muhammad",
+                        "dbp:deathDate",
+                        "--06-08"
+                    ],
+                    [
+                        "Muhammad",
+                        "onto:deathDate",
+                        "0632-06-08"
+                    ],
+                    [
+                        "Muhammad",
+                        "onto:deathDate",
+                        "632-6-8"
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 5.730189800262451,
+            "SPARQL_CALLS": 8,
+            "SPARQL_TIME": 1.651160717010498,
+            "LLM_CALLS": 3,
+            "LLM_INPUTS": 1945,
+            "LLM_OUTPUTS": 90,
+            "LLM_TIME": 4.072284698486328
+        }
+    },
+    {
+        "question": "What is the atmosphere of the Moon composed of?",
+        "results": "{Yes}. Based on the given knowledge triplets, the Moon has an atmosphere composed of Argon and Helium. Therefore, the answer to the question is {Argon and Helium}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Moon",
+                        "dbp:atmosphere",
+                        "yes"
+                    ],
+                    [
+                        "Moon",
+                        "dbp:atmosphereComposition",
+                        "Argon"
+                    ],
+                    [
+                        "Moon",
+                        "dbp:atmosphereComposition",
+                        "Helium"
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 7.715416193008423,
+            "SPARQL_CALLS": 15,
+            "SPARQL_TIME": 2.9266364574432373,
+            "LLM_CALLS": 3,
+            "LLM_INPUTS": 2018,
+            "LLM_OUTPUTS": 121,
+            "LLM_TIME": 4.7791666984558105
+        }
+    },
+    {
+        "question": "Who is the governor of Texas?",
+        "results": "First, the governor of Texas is the chief executive of the state of Texas.  \nSecond, as of the latest information available up to 2024, the governor of Texas is Greg Abbott.  \nThe answer is {Greg Abbott}.",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 1.5741238594055176,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0.0,
+            "LLM_CALLS": 1,
+            "LLM_INPUTS": 387,
+            "LLM_OUTPUTS": 47,
+            "LLM_TIME": 1.5741095542907715
+        }
+    },
+    {
+        "question": "Which movies did Kurosawa direct?",
+        "results": "{Yes}. Based on the given knowledge triplets, Akira Kurosawa directed the movies \"Dreams (1990 film)\", \"Madadayo\", and \"One Wonderful Sunday\". Therefore, the answer to the question is {\"Dreams (1990 film)\", \"Madadayo\", \"One Wonderful Sunday\"}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Akira Kurosawa",
+                        "dbp:director",
+                        "Dreams (1990 film)"
+                    ],
+                    [
+                        "Akira Kurosawa",
+                        "dbp:director",
+                        "Madadayo"
+                    ],
+                    [
+                        "Akira Kurosawa",
+                        "dbp:director",
+                        "One Wonderful Sunday"
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 14.212157964706421,
+            "SPARQL_CALLS": 29,
+            "SPARQL_TIME": 4.08326268196106,
+            "LLM_CALLS": 5,
+            "LLM_INPUTS": 2431,
+            "LLM_OUTPUTS": 315,
+            "LLM_TIME": 10.125953674316406
+        }
+    },
+    {
+        "question": "What was the name of the famous battle in 1836 in San Antonio?",
+        "results": "Based on the given knowledge triplet, San Antonio refers to San Antonio, Texas. The famous battle in 1836 in San Antonio, Texas, is the Battle of the Alamo. Therefore, the answer to the question is {The Battle of the Alamo}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "San Antonio",
+                        "dbp:name",
+                        "San Antonio, Texas"
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 11.330486059188843,
+            "SPARQL_CALLS": 15,
+            "SPARQL_TIME": 2.4041426181793213,
+            "LLM_CALLS": 6,
+            "LLM_INPUTS": 3827,
+            "LLM_OUTPUTS": 209,
+            "LLM_TIME": 8.914344310760498
+        }
+    },
+    {
+        "question": "Give me the official websites of actors of the television show Charmed.",
+        "results": "Based on the given knowledge triplets, there is no information about the official websites of the actors of the television show Charmed. The triplets mention the show \"Charmed\" and some starring information, but do not provide any details about the actors' official websites. Therefore, additional information or sources would be needed to answer this question.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Charmed",
+                        "dbp:source",
+                        "\u2014Phoebe Halliwell in \"Something Wicca This Way Comes\""
+                    ],
+                    [
+                        "Charmed",
+                        "dbp:starring",
+                        "*"
+                    ],
+                    [
+                        "Charmed",
+                        "dbp:starring",
+                        "* Karis Paige Bryant \n*"
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 21.933143615722656,
+            "SPARQL_CALLS": 37,
+            "SPARQL_TIME": 5.020832061767578,
+            "LLM_CALLS": 5,
+            "LLM_INPUTS": 3211,
+            "LLM_OUTPUTS": 694,
+            "LLM_TIME": 16.907503604888916
+        }
+    },
+    {
+        "question": "How many calories does a baguette have?",
+        "results": "{Yes}. Based on the given knowledge triplets, a baguette has 263 calories. Therefore, the answer to the question is {263 calories}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Baguette",
+                        "dbp:calories",
+                        "263"
+                    ],
+                    [
+                        "Calorie",
+                        "dbp:content",
+                        "Glossary of diabetes"
+                    ],
+                    [
+                        "Calorie",
+                        "rdfs:comment",
+                        "Calories are units of energy. Various  exist but fall into two broad categories. \n*  The small calorie or gram calorie (symbol: cal) is the approximate amount of energy needed to raise the temperature of one gram of water by one degree Celsius at a pressure of one atmosphere. \n*  The large calorie or kilogram calorie (symbol: Cal), also known as the food calorie and similar names, is defined in terms of the kilogram rather than the gram. It is equal to 1000 small calories, 1 kilocalorie (symbol: kcal)."
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 12.762269020080566,
+            "SPARQL_CALLS": 17,
+            "SPARQL_TIME": 2.505624532699585,
+            "LLM_CALLS": 4,
+            "LLM_INPUTS": 2378,
+            "LLM_OUTPUTS": 235,
+            "LLM_TIME": 10.254552125930786
+        }
+    },
+    {
+        "question": "Give me all libraries established before 1400.",
+        "results": "First, libraries established before 1400 include some of the oldest known libraries in history. Examples are:\n\n- The Library of Alexandria (established around 3rd century BCE, though it no longer exists)\n- The Library of Nalanda (established around 5th century CE in India)\n- The Vatican Library (founded in 4th century CE, formally established in 1475 but with collections dating earlier)\n- The Library of Al-Qarawiyyin (founded in 859 CE in Morocco)\n- The Bodleian Library (established in 1602, so not before 1400)\n- The Library of Constantinople (established in the 4th century CE)\n\nTherefore, notable libraries established before 1400 include the Library of Alexandria, Library of Nalanda, Library of Al-Qarawiyyin, and the Library of Constantinople.\n\nThe answer is {Library of Alexandria, Library of Nalanda, Library of Al-Qarawiyyin, Library of Constantinople}.",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 5.747416973114014,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0.0,
+            "LLM_CALLS": 1,
+            "LLM_INPUTS": 390,
+            "LLM_OUTPUTS": 207,
+            "LLM_TIME": 5.74739670753479
+        }
+    },
+    {
+        "question": "Give me all Frisian islands that belong to the Netherlands.",
+        "results": "First, the Frisian Islands are a chain of islands in the North Sea along the coasts of the Netherlands, Germany, and Denmark.  \nSecond, the Frisian Islands that belong to the Netherlands are known as the West Frisian Islands.  \nThese include:  \n- Texel  \n- Vlieland  \n- Terschelling  \n- Ameland  \n- Schiermonnikoog  \n\nThe answer is {Texel, Vlieland, Terschelling, Ameland, Schiermonnikoog}.",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 40.712379455566406,
+            "SPARQL_CALLS": 66,
+            "SPARQL_TIME": 12.514701843261719,
+            "LLM_CALLS": 15,
+            "LLM_INPUTS": 15772,
+            "LLM_OUTPUTS": 753,
+            "LLM_TIME": 28.00618600845337
+        }
+    },
+    {
+        "question": "Which museum exhibits The Scream by Munch?",
+        "results": "{Yes}. Based on the given knowledge triplets, \"The Scream\" by Edvard Munch is exhibited at the National Gallery (Norway). Therefore, the answer to the question is {National Gallery (Norway)}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "The Scream",
+                        "dbp:museum",
+                        "National Gallery (Norway)"
+                    ],
+                    [
+                        "The Scream",
+                        "onto:museum",
+                        "National Gallery (Norway)"
+                    ],
+                    [
+                        "The Scream",
+                        "dbp:artist",
+                        "Edvard Munch"
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 4.6798765659332275,
+            "SPARQL_CALLS": 11,
+            "SPARQL_TIME": 1.475391149520874,
+            "LLM_CALLS": 2,
+            "LLM_INPUTS": 1492,
+            "LLM_OUTPUTS": 87,
+            "LLM_TIME": 3.203073740005493
+        }
+    },
+    {
+        "question": "When was the De Beers company founded?",
+        "results": "{Yes}. Based on the given knowledge triplets, the De Beers company was founded in 1888. Therefore, the answer to the question is {1888}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "De Beers",
+                        "dbp:foundation",
+                        "1888"
+                    ],
+                    [
+                        "De Beers",
+                        "onto:foundedBy",
+                        "Cecil Rhodes"
+                    ],
+                    [
+                        "De Beers",
+                        "onto:foundingYear",
+                        "1888"
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 4.32195258140564,
+            "SPARQL_CALLS": 9,
+            "SPARQL_TIME": 1.2829041481018066,
+            "LLM_CALLS": 2,
+            "LLM_INPUTS": 1631,
+            "LLM_OUTPUTS": 77,
+            "LLM_TIME": 3.0371901988983154
+        }
+    },
+    {
+        "question": "Who became president after JFK died?",
+        "results": "{Yes}. Based on the given knowledge triplets, John F. Kennedy's successor was Lyndon B. Johnson, and Lyndon B. Johnson was also his vice president. Therefore, after JFK died, Lyndon B. Johnson became president. The answer is {Lyndon B. Johnson}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "John F. Kennedy",
+                        "dbp:successor",
+                        "Lyndon B. Johnson"
+                    ],
+                    [
+                        "John F. Kennedy",
+                        "dbp:vicePresident",
+                        "Lyndon B. Johnson"
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 10.160454750061035,
+            "SPARQL_CALLS": 14,
+            "SPARQL_TIME": 2.4615814685821533,
+            "LLM_CALLS": 4,
+            "LLM_INPUTS": 2830,
+            "LLM_OUTPUTS": 217,
+            "LLM_TIME": 7.681440353393555
+        }
+    },
+    {
+        "question": "Who are the parents of the wife of Juan Carlos I?",
+        "results": "First, the wife of Juan Carlos I is Queen Sof\u00eda of Spain.  \nSecond, the parents of Queen Sof\u00eda are King Paul of Greece and Queen Frederica of Hanover.  \nThe answer is {King Paul of Greece and Queen Frederica of Hanover}.",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 26.198479890823364,
+            "SPARQL_CALLS": 46,
+            "SPARQL_TIME": 6.155341863632202,
+            "LLM_CALLS": 12,
+            "LLM_INPUTS": 6830,
+            "LLM_OUTPUTS": 568,
+            "LLM_TIME": 20.03723692893982
+        }
+    },
+    {
+        "question": "Who is the novelist of the work a song of ice and fire?",
+        "results": "First, the novelist of the work \"A Song of Ice and Fire\" is George R. R. Martin. The answer is {George R. R. Martin}.",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 1.1749467849731445,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0.0,
+            "LLM_CALLS": 1,
+            "LLM_INPUTS": 394,
+            "LLM_OUTPUTS": 34,
+            "LLM_TIME": 1.1749250888824463
+        }
+    },
+    {
+        "question": "In which studio did the Beatles record their first album?",
+        "results": "Based on the given knowledge triplets, there is no information about the studio where the Beatles recorded their first album. However, using general knowledge, the Beatles recorded their first album, \"Please Please Me,\" primarily at Abbey Road Studios in London. Therefore, the answer is: Abbey Road Studios.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "The Beatles",
+                        "dbp:origin",
+                        "Liverpool, England"
+                    ],
+                    [
+                        "The Beatles",
+                        "dbp:work",
+                        "http://www.beatles.com/newsletters/Issue_16/index.htm"
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 12.387263298034668,
+            "SPARQL_CALLS": 7,
+            "SPARQL_TIME": 1.683480978012085,
+            "LLM_CALLS": 3,
+            "LLM_INPUTS": 2623,
+            "LLM_OUTPUTS": 146,
+            "LLM_TIME": 10.677757024765015
+        }
+    },
+    {
+        "question": "Which beer brewing companies are located in North-Rhine Westphalia?",
+        "results": "First, North-Rhine Westphalia is a state in Germany known for several beer brewing companies.  \nSecond, notable beer brewing companies located in North-Rhine Westphalia include Krombacher Brewery, Warsteiner Brewery, and Veltins Brewery.  \nThe answer is {Krombacher Brewery, Warsteiner Brewery, Veltins Brewery}.",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 54.35553169250488,
+            "SPARQL_CALLS": 92,
+            "SPARQL_TIME": 15.893373489379883,
+            "LLM_CALLS": 20,
+            "LLM_INPUTS": 12288,
+            "LLM_OUTPUTS": 893,
+            "LLM_TIME": 38.23121643066406
+        }
+    },
+    {
+        "question": "When did princess Diana die?",
+        "results": "Princess Diana died on August 31, 1997.",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 0.7907748222351074,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0.0,
+            "LLM_CALLS": 1,
+            "LLM_INPUTS": 386,
+            "LLM_OUTPUTS": 12,
+            "LLM_TIME": 0.7907497882843018
+        }
+    },
+    {
+        "question": "Who founded Intel?",
+        "results": "{Yes}. Based on the given knowledge triplets, Intel was founded by Gordon Moore and Robert Noyce. Therefore, the answer to the question is {Gordon Moore and Robert Noyce}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Intel",
+                        "dbp:founders",
+                        "Gordon Moore"
+                    ],
+                    [
+                        "Intel",
+                        "dbp:founders",
+                        "Robert Noyce"
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 8.77814793586731,
+            "SPARQL_CALLS": 13,
+            "SPARQL_TIME": 2.0794780254364014,
+            "LLM_CALLS": 5,
+            "LLM_INPUTS": 2399,
+            "LLM_OUTPUTS": 136,
+            "LLM_TIME": 6.689149856567383
+        }
+    },
+    {
+        "question": "Who is the youngest player in the Premier League?",
+        "results": "I don't have the current information on the youngest player in the Premier League as of now. The youngest player can change frequently with new debuts. For the most up-to-date information, you may want to check the latest Premier League records or official announcements.",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 38.450138568878174,
+            "SPARQL_CALLS": 50,
+            "SPARQL_TIME": 7.239849805831909,
+            "LLM_CALLS": 13,
+            "LLM_INPUTS": 6931,
+            "LLM_OUTPUTS": 863,
+            "LLM_TIME": 31.167548418045044
+        }
+    },
+    {
+        "question": "Which instruments does Cat Stevens play?",
+        "results": "{Yes}. Based on the given knowledge triplets, Cat Stevens plays vocals, guitar, bass guitar, double bass, organ, and piano. Therefore, the answer to the question is {vocals, guitar, bass guitar, double bass, organ, piano}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Cat Stevens",
+                        "dbp:instrument",
+                        "*Vocals\n*guitar\n*bass guitar\n*"
+                    ],
+                    [
+                        "Cat Stevens",
+                        "dbp:instrument",
+                        "*double bass"
+                    ],
+                    [
+                        "Cat Stevens",
+                        "dbp:instrument",
+                        "*organ\n*piano\n*"
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 18.155942678451538,
+            "SPARQL_CALLS": 28,
+            "SPARQL_TIME": 3.775705337524414,
+            "LLM_CALLS": 5,
+            "LLM_INPUTS": 2464,
+            "LLM_OUTPUTS": 611,
+            "LLM_TIME": 14.375356912612915
+        }
+    },
+    {
+        "question": "How many rivers and lakes are in South Carolina?",
+        "results": "Based on the given knowledge triplets, South Carolina has a water area of 4.949E9 (units not specified) and a value of 4949 associated with water area, which likely refers to the number of rivers and lakes. Therefore, the number of rivers and lakes in South Carolina is approximately 4949.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "South Carolina",
+                        "dbp:waterarea",
+                        "4949"
+                    ],
+                    [
+                        "South Carolina",
+                        "onto:areaWater",
+                        "4.949E9"
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 8.662755489349365,
+            "SPARQL_CALLS": 12,
+            "SPARQL_TIME": 2.2818496227264404,
+            "LLM_CALLS": 4,
+            "LLM_INPUTS": 3607,
+            "LLM_OUTPUTS": 246,
+            "LLM_TIME": 6.346438407897949
+        }
+    },
+    {
+        "question": "Who was called Rodzilla?",
+        "results": "First, the nickname \"Rodzilla\" is commonly associated with Rod Stewart, the British rock singer. The answer is {Rod Stewart}.",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 1.1539397239685059,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0.0,
+            "LLM_CALLS": 1,
+            "LLM_INPUTS": 386,
+            "LLM_OUTPUTS": 27,
+            "LLM_TIME": 1.153921127319336
+        }
+    },
+    {
+        "question": "Give me the capitals of all countries in Africa.",
+        "results": "The given knowledge triplets provide information about Africa having 54 countries and mention the Okavango Delta as a region in Africa, but they do not include the capitals of the African countries.\n\nBased on general knowledge, here are the capitals of all 54 African countries:\n\n1. Algeria - Algiers  \n2. Angola - Luanda  \n3. Benin - Porto-Novo  \n4. Botswana - Gaborone  \n5. Burkina Faso - Ouagadougou  \n6. Burundi - Gitega  \n7. Cabo Verde - Praia  \n8. Cameroon - Yaound\u00e9  \n9. Central African Republic - Bangui  \n10. Chad - N'Djamena  \n11. Comoros - Moroni  \n12. Democratic Republic of the Congo - Kinshasa  \n13. Republic of the Congo - Brazzaville  \n14. Djibouti - Djibouti  \n15. Egypt - Cairo  \n16. Equatorial Guinea - Malabo  \n17. Eritrea - Asmara  \n18. Eswatini - Mbabane (administrative), Lobamba (legislative)  \n19. Ethiopia - Addis Ababa  \n20. Gabon - Libreville  \n21. Gambia - Banjul  \n22. Ghana - Accra  \n23. Guinea - Conakry  \n24. Guinea-Bissau - Bissau  \n25. Ivory Coast (C\u00f4te d'Ivoire) - Yamoussoukro (official), Abidjan (economic)  \n26. Kenya - Nairobi  \n27. Lesotho - Maseru  \n28. Liberia - Monrovia  \n29. Libya - Tripoli  \n30. Madagascar - Antananarivo  \n31. Malawi - Lilongwe  \n32. Mali - Bamako  \n33. Mauritania - Nouakchott  \n34. Mauritius - Port Louis  \n35. Morocco - Rabat  \n36. Mozambique - Maputo  \n37. Namibia - Windhoek  \n38. Niger - Niamey  \n39. Nigeria - Abuja  \n40. Rwanda - Kigali  \n41. S\u00e3o Tom\u00e9 and Pr\u00edncipe - S\u00e3o Tom\u00e9  \n42. Senegal - Dakar  \n43. Seychelles - Victoria  \n44. Sierra Leone - Freetown  \n45. Somalia - Mogadishu  \n46. South Africa - Pretoria (administrative), Bloemfontein (judicial), Cape Town (legislative)  \n47. South Sudan - Juba  \n48. Sudan - Khartoum  \n49. Tanzania - Dodoma  \n50. Togo - Lom\u00e9  \n51.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Africa",
+                        "dbp:countries",
+                        "54"
+                    ],
+                    [
+                        "Africa",
+                        "onto:region",
+                        "Okavango Delta"
+                    ]
+                ]
+            ],
+            [
+                [
+                    [
+                        "Okavango Delta",
+                        "dbp:region",
+                        "Africa"
+                    ],
+                    [
+                        "Okavango Delta",
+                        "rdf:type",
+                        "http://www.wikidata.org/entity/Q9259"
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 24.59852361679077,
+            "SPARQL_CALLS": 32,
+            "SPARQL_TIME": 5.0093677043914795,
+            "LLM_CALLS": 8,
+            "LLM_INPUTS": 5127,
+            "LLM_OUTPUTS": 846,
+            "LLM_TIME": 19.55245852470398
+        }
+    },
+    {
+        "question": "Which bridges are of the same type as the Manhattan Bridge?",
+        "results": "Based on the given knowledge triplets, the Manhattan Bridge is a Suspension bridge. Therefore, the question asks for bridges that are of the same type, i.e., Suspension bridges.\n\nHowever, the provided triplets only specify the type of the Manhattan Bridge and do not list any other bridges or their types.\n\nTo answer the question fully, additional knowledge about other Suspension bridges is needed. Examples of Suspension bridges include the Golden Gate Bridge, Brooklyn Bridge, and Verrazzano-Narrows Bridge.\n\nThus, bridges of the same type as the Manhattan Bridge (Suspension bridges) include:\n\n- Golden Gate Bridge  \n- Brooklyn Bridge  \n- Verrazzano-Narrows Bridge  \n\nIf you need a list limited to the knowledge graph triplets only, no other bridges are mentioned.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Manhattan Bridge",
+                        "dbp:design",
+                        "Suspension bridge"
+                    ],
+                    [
+                        "Manhattan Bridge",
+                        "onto:type",
+                        "Suspension bridge"
+                    ],
+                    [
+                        "Manhattan Bridge",
+                        "dbp:bridgeName",
+                        "Manhattan Bridge"
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 9.642059564590454,
+            "SPARQL_CALLS": 14,
+            "SPARQL_TIME": 2.175306558609009,
+            "LLM_CALLS": 4,
+            "LLM_INPUTS": 3074,
+            "LLM_OUTPUTS": 285,
+            "LLM_TIME": 7.461910009384155
+        }
+    },
+    {
+        "question": "How many companies were founded by the founder of Facebook?",
+        "results": "First, the founder of Facebook is Mark Zuckerberg.  \nSecond, Mark Zuckerberg has founded or co-founded a few companies and initiatives, but primarily Facebook (now Meta Platforms, Inc.) is his main company.  \nThere are no widely recognized additional companies founded by him beyond Facebook/Meta.  \n\nThe answer is {1}.",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 42.46618962287903,
+            "SPARQL_CALLS": 74,
+            "SPARQL_TIME": 10.991401672363281,
+            "LLM_CALLS": 18,
+            "LLM_INPUTS": 8759,
+            "LLM_OUTPUTS": 745,
+            "LLM_TIME": 31.402312755584717
+        }
+    },
+    {
+        "question": "Show me hiking trails in the Grand Canyon where there's no danger of flash floods.",
+        "results": "I'm sorry, but most hiking trails in the Grand Canyon carry some risk of flash floods, especially during the monsoon season (typically July to September). There are no trails completely free from this danger. For safer hiking, consider trails on the South Rim or North Rim during the dry season (spring and fall), and always check current weather and trail conditions before you go. If you want, I can help you find specific trails with lower flash flood risk or provide safety tips.",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 53.46632361412048,
+            "SPARQL_CALLS": 101,
+            "SPARQL_TIME": 13.978607416152954,
+            "LLM_CALLS": 17,
+            "LLM_INPUTS": 9272,
+            "LLM_OUTPUTS": 1385,
+            "LLM_TIME": 39.467458724975586
+        }
+    },
+    {
+        "question": "Which book has the most pages?",
+        "results": "I need more information about the books you are comparing to determine which one has the most pages. Could you please provide the titles or details of the books?",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 1.3073444366455078,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0.0,
+            "LLM_CALLS": 1,
+            "LLM_INPUTS": 387,
+            "LLM_OUTPUTS": 31,
+            "LLM_TIME": 1.3073210716247559
+        }
+    },
+    {
+        "question": "What is the largest state in the United States?",
+        "results": "The largest state in the United States by area is Alaska. The answer is {Alaska}.",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 52.426274061203,
+            "SPARQL_CALLS": 65,
+            "SPARQL_TIME": 29.866352558135986,
+            "LLM_CALLS": 15,
+            "LLM_INPUTS": 16564,
+            "LLM_OUTPUTS": 584,
+            "LLM_TIME": 20.809943437576294
+        }
+    },
+    {
+        "question": "Give me the websites of companies with more than 500000 employees.",
+        "results": "I don't have access to real-time data, but some companies historically known to have more than 500,000 employees include:\n\n- Walmart: https://www.walmart.com\n- Amazon: https://www.amazon.com\n- China National Petroleum Corporation (CNPC): http://www.cnpc.com.cn\n- State Grid Corporation of China: http://www.sgcc.com.cn\n\nFor the most accurate and up-to-date information, please refer to the companies' official websites or recent reports.",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 2.147291421890259,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0.0,
+            "LLM_CALLS": 1,
+            "LLM_INPUTS": 394,
+            "LLM_OUTPUTS": 98,
+            "LLM_TIME": 2.1472692489624023
+        }
+    },
+    {
+        "question": "What were the names of the three ships by Columbus?",
+        "results": "Based on the given knowledge triplets, the ships named after Christopher Columbus include:\n\n1. CMA CGM Christophe Colomb  \n2. Spanish cruiser Cristobal Colon (1887), also referred to as Crist\u00f3bal Col\u00f3n\n\nHowever, these are ships named after Columbus, not the names of the three ships used by Columbus himself on his first voyage.\n\nFrom historical knowledge, the three ships used by Christopher Columbus on his first voyage in 1492 were:\n\n1. Santa Mar\u00eda  \n2. Pinta  \n3. Ni\u00f1a\n\nTherefore, the names of the three ships by Columbus are Santa Mar\u00eda, Pinta, and Ni\u00f1a.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Christopher Columbus",
+                        "dbp:shipNamesake",
+                        "CMA CGM Christophe Colomb"
+                    ],
+                    [
+                        "Christopher Columbus",
+                        "dbp:shipNamesake",
+                        "Spanish cruiser Cristobal Colon (1887)"
+                    ],
+                    [
+                        "Christopher Columbus",
+                        "dct:description",
+                        "Explorer, navigator, and colonizer"
+                    ]
+                ]
+            ],
+            [
+                [
+                    [
+                        "CMA CGM Christophe Colomb",
+                        "dbp:shipName",
+                        "CMA CGM Christophe Colomb"
+                    ],
+                    [
+                        "Spanish cruiser Cristobal Colon (1887)",
+                        "dbp:shipName",
+                        "Crist\u00f3bal Col\u00f3n"
+                    ],
+                    [
+                        "CMA CGM Christophe Colomb",
+                        "rdfs:label",
+                        "CMA CGM Christophe Colomb"
+                    ]
+                ]
+            ]
+        ],
+        "metrics": {
+            "TIME": 18.874568462371826,
+            "SPARQL_CALLS": 30,
+            "SPARQL_TIME": 4.417936563491821,
+            "LLM_CALLS": 8,
+            "LLM_INPUTS": 5405,
+            "LLM_OUTPUTS": 512,
+            "LLM_TIME": 14.448099374771118
+        }
+    }
+]

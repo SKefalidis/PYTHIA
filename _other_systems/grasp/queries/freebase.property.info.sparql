@@ -1,0 +1,21 @@
+PREFIX fb: <http://rdf.freebase.com/ns/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT
+  ?id
+  (GROUP_CONCAT(DISTINCT ?info; SEPARATOR=";;;") AS ?infos)
+WHERE {
+  # Get additional information
+  {
+    VALUES ?id { {IDS} }
+    ?id fb:type.property.schema/rdfs:label ?schema.
+    FILTER(LANGMATCHES(LANG(?schema), "en"))
+    BIND(CONCAT("is part of schema ", ?schema) AS ?info)
+  } UNION {
+    VALUES ?id { {IDS} }
+    ?id fb:type.property.expected_type/rdfs:label ?type .
+    FILTER(LANGMATCHES(LANG(?type), "en"))
+    BIND(CONCAT("links to type ", ?type) AS ?info)
+  }
+}
+GROUP BY ?id

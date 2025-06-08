@@ -1,0 +1,37 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+
+SELECT
+  ?id
+  (SAMPLE(?label) AS ?main_label)
+  (GROUP_CONCAT(DISTINCT ?alias; SEPARATOR=";;;") AS ?aliases)
+WHERE {
+  # Get props and their frequencies for score
+  { 
+    SELECT ?p (COUNT(?p) AS ?freq) WHERE { 
+      ?id wikibase:claim ?p .
+      ?id rdf:type wikibase:Property .
+      ?s ?p ?o 
+    } GROUP BY ?p 
+  } 
+
+  # Filter ids
+  ?id wikibase:claim ?p .
+  ?id rdf:type wikibase:Property .
+
+  # Get label
+  OPTIONAL {
+    ?id rdfs:label ?label .
+    FILTER(LANG(?label) = "{LANG}")
+  }
+
+  # Get aliases
+  OPTIONAL {
+    ?id skos:altLabel ?alias
+    FILTER(LANG(?alias) = "{LANG}")
+  }
+}
+GROUP BY ?id
+ORDER BY DESC(MAX(?freq))

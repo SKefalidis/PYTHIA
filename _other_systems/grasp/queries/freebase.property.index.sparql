@@ -1,0 +1,30 @@
+PREFIX fb: <http://rdf.freebase.com/ns/>
+
+SELECT
+  ?id
+  (SAMPLE(?label) AS ?main_label)
+  (GROUP_CONCAT(DISTINCT ?alias; SEPARATOR=";;;") AS ?aliases)
+WHERE {
+  # Get ids and their frequencies for score
+  { 
+    SELECT ?id (COUNT(?id) AS ?freq) WHERE { 
+      ?id fb:type.object.type fb:type.property .
+      ?s ?id ?o 
+    } GROUP BY ?id 
+  } 
+
+  # Filter for properties
+  ?id fb:type.object.type fb:type.property .
+
+  # Get label
+  ?id fb:type.object.name ?label .
+  FILTER(LANG(?label) = "en") .
+
+  # Get aliases
+  OPTIONAL {
+    ?id fb:common.topic.alias ?alias
+    FILTER(LANG(?alias) = "en")
+  }
+}
+GROUP BY ?id
+ORDER BY DESC(MAX(?freq))

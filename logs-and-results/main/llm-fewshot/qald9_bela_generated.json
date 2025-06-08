@@ -1,0 +1,1952 @@
+[
+    {
+        "question": "What is the time zone of Salt Lake City?",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nSELECT DISTINCT  ?state\nWHERE\n  {   { <http://dbpedia.org/resource/Utah>\n                  <http://dbpedia.org/property/timezone>  ?tz .\n        ?state    rdf:type              <http://dbpedia.org/class/yago/WikicatStatesOfTheUnitedStates> ;\n                  <http://dbpedia.org/property/timezone>  ?tz\n        FILTER ( ?state != <http://dbpedia.org/resource/Utah> )\n      }\n    UNION\n      { <http://dbpedia.org/resource/San_Pedro_de_Atacama>\n                  <http://dbpedia.org/ontology/timeZone>  ?tzName\n        BIND(?tzName AS ?state)\n      }\n  }\n",
+        "elapsed": 2.3128464221954346,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 2.272338628768921,
+            "LLM_INPUTS": 3768,
+            "LLM_OUTPUTS": 171
+        }
+    },
+    {
+        "question": "Who killed Caesar?",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nSELECT DISTINCT  ?uri\nWHERE\n  { ?uri  rdf:type              <http://dbpedia.org/ontology/Person> ;\n          <http://dbpedia.org/property/conviction>  <http://dbpedia.org/resource/Assassination_of_Julius_Caesar>\n  }\n",
+        "elapsed": 3.2160861492156982,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 3.140892267227173,
+            "LLM_INPUTS": 2793,
+            "LLM_OUTPUTS": 54
+        }
+    },
+    {
+        "question": "What is the highest mountain in Germany?",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nSELECT DISTINCT  ?mountain\nWHERE\n  { ?mountain  rdf:type             <http://dbpedia.org/ontology/Mountain> ;\n              <http://dbpedia.org/ontology/elevation>  ?elevation\n    { ?mountain  <http://dbpedia.org/ontology/location>  ?location .\n      ?location (<http://dbpedia.org/ontology/isPartOf>)* <http://dbpedia.org/resource/Saxony>\n    }\n  }\nORDER BY DESC(?elevation)\nLIMIT   1\n",
+        "elapsed": 1.7821030616760254,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.7041633129119873,
+            "LLM_INPUTS": 2541,
+            "LLM_OUTPUTS": 116
+        }
+    },
+    {
+        "question": "Which American presidents were in office during the Vietnam War?",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nASK\nWHERE\n  { <http://dbpedia.org/resource/Andrew_Jackson>\n              <http://dbpedia.org/ontology/battle>  ?battle\n  }\n",
+        "elapsed": 1.088350772857666,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.0119712352752686,
+            "LLM_INPUTS": 2119,
+            "LLM_OUTPUTS": 39
+        }
+    },
+    {
+        "question": "Butch Otter is the governor of which U.S. state?",
+        "sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX dbr: <http://dbpedia.org/resource/> \nSELECT DISTINCT ?governor WHERE { dbr:Wyoming dbo:governor ?governor } \nUNION \n{ SELECT ?film WHERE { ?film dbo:director dbr:Tim_Burton ; dbo:budget ?budget } ORDER BY DESC(?budget) LIMIT 1 } \nUNION \n{ SELECT ?borough WHERE { ?borough dbo:governmentType dbr:Borough_(New_York_City) } }",
+        "elapsed": 6.703600645065308,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 6.624960660934448,
+            "LLM_INPUTS": 2083,
+            "LLM_OUTPUTS": 118
+        }
+    },
+    {
+        "question": "How many gold medals did Michael Phelps win at the 2008 Olympics?",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nASK\nWHERE\n  { <http://dbpedia.org/resource/Michael_Phelps>\n              <http://dbpedia.org/ontology/award>  <http://dbpedia.org/resource/2008_Summer_Olympics>\n  }\n",
+        "elapsed": 0.9201328754425049,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.8501462936401367,
+            "LLM_INPUTS": 4163,
+            "LLM_OUTPUTS": 46
+        }
+    },
+    {
+        "question": "Which artists were born on the same date as Rachel Stevens?",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nSELECT  ?birthYear ?instrument ?song\nWHERE\n  {   { <http://dbpedia.org/resource/Rachel_Stevens>\n                  <http://dbpedia.org/ontology/birthYear>  ?birthYear\n      }\n    UNION\n      { <http://dbpedia.org/resource/Cat_Stevens>\n                  <http://dbpedia.org/ontology/instrument>  ?instrument\n      }\n    UNION\n      { ?song  rdf:type              <http://dbpedia.org/ontology/Song> ;\n               <http://dbpedia.org/ontology/artist>  <http://dbpedia.org/resource/Bruce_Springsteen> ;\n               <http://dbpedia.org/ontology/releaseDate>  ?date\n        FILTER ( ( ?date >= \"1980-01-01\"^^xsd:date ) && ( ?date <= \"1990-12-31\"^^xsd:date ) )\n      }\n  }\n",
+        "elapsed": 2.2634928226470947,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 2.1861519813537598,
+            "LLM_INPUTS": 2575,
+            "LLM_OUTPUTS": 162
+        }
+    },
+    {
+        "question": "What is the profession of Frank Herbert?",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nASK\nWHERE\n  { OPTIONAL\n      { <http://dbpedia.org/resource/Frank_Herbert>\n                  <http://dbpedia.org/ontology/deathDate>  ?date\n      }\n    FILTER ( ! bound(?date) )\n  }\n",
+        "elapsed": 2.478496551513672,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 2.402181386947632,
+            "LLM_INPUTS": 2066,
+            "LLM_OUTPUTS": 52
+        }
+    },
+    {
+        "question": "Are Taiko some kind of Japanese musical instrument?",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nSELECT DISTINCT  ?uri\nWHERE\n  {   { <http://dbpedia.org/resource/Cat_Stevens>\n                  <http://dbpedia.org/ontology/instrument>  ?uri\n      }\n    UNION\n      { <http://dbpedia.org/resource/Lou_Reed>\n                  <http://dbpedia.org/ontology/genre>  ?uri\n      }\n    UNION\n      { ?uri  <http://dbpedia.org/ontology/occupation>  <http://dbpedia.org/resource/Bandleader> ;\n              <http://dbpedia.org/ontology/instrument>  <http://dbpedia.org/resource/Trumpet>\n      }\n  }\n",
+        "elapsed": 3.166067123413086,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 3.0861570835113525,
+            "LLM_INPUTS": 2208,
+            "LLM_OUTPUTS": 124
+        }
+    },
+    {
+        "question": "How many seats does the home stadium of FC Porto have?",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nSELECT DISTINCT  ?biggestStadium ?brazilLowestRank ?neymarPlaysForRealMadrid\nWHERE\n  { { PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\n      PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n      PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n      PREFIX  owl:  <http://www.w3.org/2002/07/owl#>\n      PREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n      \n      SELECT DISTINCT  ?biggestStadium\n      WHERE\n        { ?biggestStadium\n                    rdf:type              <http://dbpedia.org/ontology/Stadium> ;\n                    <http://dbpedia.org/ontology/location>  <http://dbpedia.org/resource/Spain> ;\n                    <http://dbpedia.org/ontology/seatingCapacity>  ?capacity\n        }\n      ORDER BY DESC(?capacity)\n      OFFSET  0\n      LIMIT   1\n    }\n    { PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\n      PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n      PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n      PREFIX  owl:  <http://www.w3.org/2002/07/owl#>\n      PREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n      \n      SELECT DISTINCT  ?brazilLowestRank\n      WHERE\n        { <http://dbpedia.org/resource/Brazil_national_football_team>\n                    <http://dbpedia.org/property/fifaMin>  ?brazilLowestRank\n        }\n    }\n    { PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\n      PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n      PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n      PREFIX  owl:  <http://www.w3.org/2002/07/owl#>\n      PREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n      \n      SELECT  (if(EXISTS { <http://dbpedia.org/resource/Neymar>\n                                     <http://dbpedia.org/ontology/team>  <http://dbpedia.org/resource/Real_Madrid_C.F.>\n                         }, \"Yes\", \"No\") AS ?neymarPlaysForRealMadrid)\n      WHERE\n        {  }\n    }\n  }\n",
+        "elapsed": 8.572772026062012,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 8.49514102935791,
+            "LLM_INPUTS": 2749,
+            "LLM_OUTPUTS": 233
+        }
+    },
+    {
+        "question": "Which frequent flyer program has the most airlines?",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nSELECT DISTINCT  ?uri\nWHERE\n  { ?uri  rdf:type  <http://dbpedia.org/ontology/Airline>\n      { ?uri  <http://dbpedia.org/ontology/alliance>  <http://dbpedia.org/resource/SkyTeam> }\n    UNION\n      { ?uri  <http://dbpedia.org/ontology/Alliance>  <http://dbpedia.org/resource/SkyTeam> }\n  }\n",
+        "elapsed": 5.306365728378296,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 5.226800441741943,
+            "LLM_INPUTS": 3111,
+            "LLM_OUTPUTS": 81
+        }
+    },
+    {
+        "question": "Which European countries have a constitutional monarchy?",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nSELECT DISTINCT  ?answer\nWHERE\n  {   { <http://dbpedia.org/resource/Netherlands>\n                  <http://dbpedia.org/ontology/leader>  ?answer .\n        ?answer   rdf:type              <http://dbpedia.org/ontology/Royalty>\n      }\n    UNION\n      { ?answer  rdf:type              <http://dbpedia.org/ontology/Monarch> ;\n                 <http://dbpedia.org/ontology/spouse>  ?spouse\n          { ?spouse  <http://dbpedia.org/ontology/birthPlace>  <http://dbpedia.org/resource/Germany> }\n        UNION\n          { ?spouse  <http://dbpedia.org/ontology/birthPlace>  ?place .\n            ?place   <http://dbpedia.org/ontology/country>  <http://dbpedia.org/resource/Germany>\n          }\n      }\n    UNION\n      { ?answer  rdf:type              <http://dbpedia.org/ontology/PoliticalParty> ;\n                 <http://dbpedia.org/ontology/country>  <http://dbpedia.org/resource/Greece> ;\n                 <http://dbpedia.org/ontology/ideology>  <http://dbpedia.org/resource/Pro-Europeanism>\n      }\n  }\n",
+        "elapsed": 2.9696695804595947,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 2.890047788619995,
+            "LLM_INPUTS": 4337,
+            "LLM_OUTPUTS": 217
+        }
+    },
+    {
+        "question": "Which countries have places with more than two caves?",
+        "sparql": "PREFIX dbo: <http://dbpedia.org/ontology/>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nSELECT DISTINCT ?result WHERE {\n  {\n    # Countries that have places with more than two caves\n    ?cave dbo:location ?place .\n    ?place dbo:country ?result .\n    ?result a dbo:Country .\n  }\n  UNION\n  {\n    # Countries with more than ten caves directly\n    ?cave dbo:location ?result .\n    ?result a dbo:Country .\n  }\n  UNION\n  {\n    # Countries with places referencing country directly\n    ?cave dbo:location ?loc .\n    ?loc dbo:country ?result .\n    ?result a dbo:Country .\n  }\n  UNION\n  {\n    # Caves with more than 3 entrances\n    ?result a dbo:Cave ;\n      <http://dbpedia.org/property/entranceCount> ?entrance .\n    FILTER(?entrance > 3)\n  }\n}\nGROUP BY ?result\nHAVING (\n  (EXISTS {\n    SELECT ?country WHERE {\n      ?cave dbo:location ?place .\n      ?place dbo:country ?country .\n      ?country a dbo:Country .\n    }\n    GROUP BY ?country\n    HAVING(COUNT(?cave) > 2 && ?country = ?result)\n  }) ||\n  (EXISTS {\n    SELECT ?country WHERE {\n      { ?cave dbo:location ?country . }\n      UNION\n      { ?cave dbo:location ?loc . ?loc dbo:country ?country . }\n      ?country a dbo:Country .\n    }\n    GROUP BY ?country\n    HAVING(COUNT(?cave) > 10 && ?country = ?result)\n  }) ||\n  (EXISTS {\n    ?result a dbo:Cave ;\n      <http://dbpedia.org/property/entranceCount> ?entrance .\n    FILTER(?entrance > 3 && ?result = ?result)\n  })\n)",
+        "elapsed": 4.986172437667847,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 4.891577482223511,
+            "LLM_INPUTS": 3801,
+            "LLM_OUTPUTS": 427
+        }
+    },
+    {
+        "question": "Which airports are located in California, USA?",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nSELECT DISTINCT  ?uri\nWHERE\n  {   { <http://dbpedia.org/resource/Air_China>\n                  <http://dbpedia.org/ontology/targetAirport>  ?uri\n      }\n    UNION\n      { <http://dbpedia.org/resource/Yeti_Airlines>\n                  <http://dbpedia.org/ontology/targetAirport>  ?uri\n      }\n    UNION\n      { ?uri      rdf:type              <http://dbpedia.org/ontology/Software> .\n        ?company  rdf:type              <http://dbpedia.org/ontology/Company> .\n        ?uri      <http://dbpedia.org/ontology/developer>  ?company .\n        ?company  <http://dbpedia.org/ontology/foundationPlace>  <http://dbpedia.org/resource/California>\n      }\n  }\n",
+        "elapsed": 6.672192573547363,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 6.604183912277222,
+            "LLM_INPUTS": 3006,
+            "LLM_OUTPUTS": 113
+        }
+    },
+    {
+        "question": "What are the nicknames of San Francisco?",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nSELECT DISTINCT  ?ship ?tallestPlayer ?deathCity\nWHERE\n  { ?ship  <http://dbpedia.org/property/shipNamesake>  <http://dbpedia.org/resource/Benjamin_Franklin>\n    { PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\n      PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n      PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n      PREFIX  owl:  <http://www.w3.org/2002/07/owl#>\n      PREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n      \n      SELECT  ?tallestPlayer\n      WHERE\n        { ?tallestPlayer\n                    <http://dbpedia.org/ontology/team>  <http://dbpedia.org/resource/Atlanta_Falcons> ;\n                    <http://dbpedia.org/ontology/height>  ?height\n        }\n      ORDER BY DESC(?height)\n      LIMIT   1\n    }\n    <http://dbpedia.org/resource/John_F._Kennedy>\n              <http://dbpedia.org/ontology/deathPlace>  ?deathCity .\n    ?deathCity  rdf:type            <http://dbpedia.org/ontology/City>\n  }\n",
+        "elapsed": 2.568357229232788,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 2.4927937984466553,
+            "LLM_INPUTS": 2533,
+            "LLM_OUTPUTS": 195
+        }
+    },
+    {
+        "question": "What is Angela Merkel\u2019s birth name?",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nSELECT DISTINCT  ?birthName ?almaMater\nWHERE\n  { <http://dbpedia.org/resource/Angela_Merkel>\n              <http://dbpedia.org/property/birthName>  ?birthName\n    OPTIONAL\n      { <http://dbpedia.org/resource/Angela_Merkel>\n                  <http://dbpedia.org/ontology/almaMater>  ?almaMater\n      }\n  }\n",
+        "elapsed": 1.4522325992584229,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.3784775733947754,
+            "LLM_INPUTS": 1872,
+            "LLM_OUTPUTS": 84
+        }
+    },
+    {
+        "question": "Who is the mayor of Berlin?",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nSELECT DISTINCT  ?city ?mayor\nWHERE\n  { VALUES ?city { <http://dbpedia.org/resource/New_York_City> <http://dbpedia.org/resource/Paris> <http://dbpedia.org/resource/Rotterdam> }\n      { ?city  <http://dbpedia.org/ontology/leaderName>  ?mayor }\n    UNION\n      { ?city  <http://dbpedia.org/ontology/mayor>  ?mayor }\n  }\n",
+        "elapsed": 1.9935245513916016,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.9185843467712402,
+            "LLM_INPUTS": 1774,
+            "LLM_OUTPUTS": 85
+        }
+    },
+    {
+        "question": "Which countries in the European Union adopted the Euro?",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nSELECT DISTINCT  ?countryEuro ?europop ?countryCFA\nWHERE\n  {   { ?countryEuro  rdf:type  <http://dbpedia.org/ontology/Country>\n          { ?countryEuro  <http://dbpedia.org/ontology/currency>  <http://dbpedia.org/resource/Euro> }\n        UNION\n          { ?countryEuro  <http://dbpedia.org/ontology/currencyCode>  \"EUR\"@en }\n      }\n    UNION\n      { <http://dbpedia.org/resource/European_Union>\n                  <http://dbpedia.org/ontology/populationTotal>  ?europop\n      }\n    UNION\n      { ?countryCFA  <http://dbpedia.org/ontology/currency>  <http://dbpedia.org/resource/West_African_CFA_franc> }\n  }\n",
+        "elapsed": 3.9098150730133057,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 3.8329780101776123,
+            "LLM_INPUTS": 2566,
+            "LLM_OUTPUTS": 139
+        }
+    },
+    {
+        "question": "Which software has been published by Mean Hamster Software?",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nSELECT DISTINCT  ?uri\nWHERE\n  {   { ?uri  rdf:type              <http://dbpedia.org/ontology/VideoGame> ;\n              <http://dbpedia.org/ontology/publisher>  <http://dbpedia.org/resource/Mean_Hamster_Software>\n      }\n    UNION\n      { ?uri      rdf:type              <http://dbpedia.org/ontology/Software> .\n        ?company  rdf:type              <http://dbpedia.org/ontology/Company> .\n        ?uri      <http://dbpedia.org/ontology/developer>  ?company .\n        ?company  <http://dbpedia.org/ontology/foundationPlace>  <http://dbpedia.org/resource/California>\n      }\n    UNION\n      { ?uri  rdf:type              <http://dbpedia.org/ontology/Company> ;\n              <http://dbpedia.org/ontology/product>  <http://dbpedia.org/resource/Hovercraft>\n      }\n  }\n",
+        "elapsed": 2.5585787296295166,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 2.4787886142730713,
+            "LLM_INPUTS": 3922,
+            "LLM_OUTPUTS": 155
+        }
+    },
+    {
+        "question": "Which country was Bill Gates born in?",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nSELECT  ?GoetheBirthPlace\nWHERE\n  { <http://dbpedia.org/resource/Johann_Wolfgang_von_Goethe>\n              <http://dbpedia.org/ontology/birthPlace>  ?GoetheBirthPlace\n  }\n",
+        "elapsed": 3.0401225090026855,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 2.9629476070404053,
+            "LLM_INPUTS": 2771,
+            "LLM_OUTPUTS": 60
+        }
+    },
+    {
+        "question": "How many grand-children did Jacques Cousteau have?",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nSELECT  (COUNT(DISTINCT ?child) AS ?numChildren)\nWHERE\n  { <http://dbpedia.org/resource/Benjamin_Franklin>\n              <http://dbpedia.org/ontology/child>  ?child\n  }\n",
+        "elapsed": 0.9896273612976074,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.9447641372680664,
+            "LLM_INPUTS": 1821,
+            "LLM_OUTPUTS": 55
+        }
+    },
+    {
+        "question": "Give me all professional skateboarders from Sweden.",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nSELECT DISTINCT  ?uri\nWHERE\n  {   { ?uri  <http://dbpedia.org/ontology/field>  <http://dbpedia.org/resource/Oceanography> ;\n              <http://dbpedia.org/ontology/birthPlace>  <http://dbpedia.org/resource/Sweden>\n      }\n    UNION\n      { ?uri  rdf:type              <http://dbpedia.org/ontology/SoccerPlayer> ;\n              <http://dbpedia.org/ontology/birthPlace>  <http://dbpedia.org/resource/Malta>\n      }\n    UNION\n      { ?uri  rdf:type              <http://dbpedia.org/ontology/Holiday> ;\n              <http://dbpedia.org/ontology/country>  <http://dbpedia.org/resource/Sweden>\n      }\n  }\n",
+        "elapsed": 1.4540975093841553,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.4071040153503418,
+            "LLM_INPUTS": 3018,
+            "LLM_OUTPUTS": 89
+        }
+    },
+    {
+        "question": "Which monarchs of the United Kingdom were married to a German?",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nSELECT DISTINCT  ?uri\nWHERE\n  {   { ?uri  rdf:type              <http://dbpedia.org/ontology/Monarch> ;\n              <http://dbpedia.org/ontology/spouse>  ?spouse\n          { ?spouse  <http://dbpedia.org/ontology/birthPlace>  <http://dbpedia.org/resource/Germany> }\n        UNION\n          { ?spouse  <http://dbpedia.org/ontology/birthPlace>  ?p .\n            ?p       <http://dbpedia.org/ontology/country>  <http://dbpedia.org/resource/Germany>\n          }\n      }\n    UNION\n      { ?uri  <http://dbpedia.org/ontology/spouse>  <http://dbpedia.org/resource/Tom_Cruise> }\n    UNION\n      { <http://dbpedia.org/resource/Abraham_Lincoln>\n                  <http://dbpedia.org/ontology/spouse>  ?uri\n      }\n  }\n",
+        "elapsed": 2.22737717628479,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 2.1803805828094482,
+            "LLM_INPUTS": 3006,
+            "LLM_OUTPUTS": 158
+        }
+    },
+    {
+        "question": "Give me all Argentine films.",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nSELECT DISTINCT  ?answer\nWHERE\n  {   { ?film    rdf:type              <http://dbpedia.org/ontology/Film> ;\n                 <http://dbpedia.org/ontology/country>  <http://dbpedia.org/resource/Spain> ;\n                 <http://dbpedia.org/ontology/producer>  <http://dbpedia.org/resource/Benicio_del_Toro> ;\n                 <http://dbpedia.org/ontology/starring>  ?answer .\n        ?answer  rdf:type              <http://dbpedia.org/ontology/Person>\n      }\n    UNION\n      { PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\n        PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n        PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n        PREFIX  owl:  <http://www.w3.org/2002/07/owl#>\n        PREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n        \n        SELECT  (COUNT(DISTINCT ?film) AS ?answer)\n        WHERE\n          { ?film  rdf:type              <http://dbpedia.org/ontology/Film> ;\n                   <http://dbpedia.org/ontology/starring>  <http://dbpedia.org/resource/Leonardo_DiCaprio>\n          }\n      }\n    UNION\n      { ?film  rdf:type              <http://dbpedia.org/ontology/Film> ;\n               <http://dbpedia.org/ontology/producer>  <http://dbpedia.org/resource/Hal_Roach>\n        BIND(?film AS ?answer)\n      }\n  }\n",
+        "elapsed": 7.1156346797943115,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 7.037278652191162,
+            "LLM_INPUTS": 4144,
+            "LLM_OUTPUTS": 189
+        }
+    },
+    {
+        "question": "How did Michael Jackson die?",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nASK\nWHERE\n  { <http://dbpedia.org/resource/Andrew_Jackson>\n              <http://dbpedia.org/ontology/battle>  ?battle\n  }\n",
+        "elapsed": 0.9560770988464355,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.895409345626831,
+            "LLM_INPUTS": 2311,
+            "LLM_OUTPUTS": 44
+        }
+    },
+    {
+        "question": "Which U.S. state has been admitted latest?",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nSELECT DISTINCT  ?state ?admittanceDate ?mountState\nWHERE\n  { { ?state  rdf:type              <http://dbpedia.org/class/yago/WikicatStatesOfTheUnitedStates> ;\n              <http://dbpedia.org/property/densityrank>  ?rank\n    }\n    OPTIONAL\n      { <http://dbpedia.org/resource/Alberta>\n                  <http://dbpedia.org/property/admittancedate>  ?admittanceDate\n      }\n    OPTIONAL\n      { <http://dbpedia.org/resource/Mount_McKinley>\n                  <http://dbpedia.org/ontology/wikiPageRedirects>  ?mountRedirect .\n        ?mountRedirect\n                  <http://dbpedia.org/ontology/locatedInArea>  ?mountState .\n        ?mountState  rdf:type           <http://dbpedia.org/class/yago/WikicatStatesOfTheUnitedStates>\n      }\n  }\nORDER BY ASC(?rank)\nLIMIT   1\n",
+        "elapsed": 2.9556407928466797,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 2.878854751586914,
+            "LLM_INPUTS": 3104,
+            "LLM_OUTPUTS": 209
+        }
+    },
+    {
+        "question": "Which classes does the Millepede belong to?",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nSELECT  ?oldestChild ?isTreeFrogAmphibian ?almaMater\nWHERE\n  { { PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\n      PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n      PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n      PREFIX  owl:  <http://www.w3.org/2002/07/owl#>\n      PREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n      \n      SELECT  ?oldestChild\n      WHERE\n        { <http://dbpedia.org/resource/Meryl_Streep>\n                    <http://dbpedia.org/ontology/child>  ?oldestChild .\n          ?oldestChild  <http://dbpedia.org/ontology/birthDate>  ?birthDate\n        }\n      ORDER BY ASC(?birthDate)\n      LIMIT   1\n    }\n    BIND(EXISTS { <http://dbpedia.org/resource/Hylidae>\n                            <http://dbpedia.org/ontology/class>  <http://dbpedia.org/resource/Amphibian>\n                } AS ?isTreeFrogAmphibian)\n    OPTIONAL\n      { <http://dbpedia.org/resource/Angela_Merkel>\n                  <http://dbpedia.org/ontology/almaMater>  ?almaMater\n      }\n  }\nLIMIT   1\n",
+        "elapsed": 5.919093370437622,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 5.844715118408203,
+            "LLM_INPUTS": 2199,
+            "LLM_OUTPUTS": 156
+        }
+    },
+    {
+        "question": "Give me the homepage of Forbes.",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nASK\nWHERE\n  { <http://dbpedia.org/resource/Abraham_Lincoln>\n              <http://dbpedia.org/ontology/deathPlace>  ?p .\n    ?p        <http://dbpedia.org/ontology/website>  ?w\n  }\n",
+        "elapsed": 1.5083389282226562,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.463038444519043,
+            "LLM_INPUTS": 1964,
+            "LLM_OUTPUTS": 53
+        }
+    },
+    {
+        "question": "Who is the husband of Amanda Palmer?",
+        "sparql": "PREFIX dbo: <http://dbpedia.org/ontology/>\nPREFIX res: <http://dbpedia.org/resource/>\nSELECT DISTINCT ?spouseTomCruise WHERE {\n  ?spouseTomCruise dbo:spouse res:Tom_Cruise .\n}\nASK WHERE {\n  res:Tom_Hanks dbo:spouse res:Rita_Wilson .\n}\nSELECT DISTINCT ?wifeLincoln WHERE {\n  res:Abraham_Lincoln dbo:spouse ?wifeLincoln .\n}",
+        "elapsed": 4.662450790405273,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 4.585011720657349,
+            "LLM_INPUTS": 1993,
+            "LLM_OUTPUTS": 99
+        }
+    },
+    {
+        "question": "Who painted The Storm on the Sea of Galilee?",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nSELECT DISTINCT  ?gameOfThronesComposer ?threeDancersMovement ?otherBooks\nWHERE\n  { <http://dbpedia.org/resource/Game_of_Thrones>\n              <http://dbpedia.org/ontology/composer>  ?gameOfThronesComposer .\n    <http://dbpedia.org/resource/The_Three_Dancers>\n              <http://dbpedia.org/ontology/author>  ?painter .\n    ?painter  <http://dbpedia.org/ontology/movement>  ?threeDancersMovement .\n    <http://dbpedia.org/resource/The_Fault_in_Our_Stars>\n              <http://dbpedia.org/ontology/author>  ?author .\n    ?otherBooks  <http://dbpedia.org/ontology/author>  ?author\n    FILTER ( ?otherBooks != <http://dbpedia.org/resource/The_Fault_in_Our_Stars> )\n  }\n",
+        "elapsed": 2.577169895172119,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 2.502297878265381,
+            "LLM_INPUTS": 2120,
+            "LLM_OUTPUTS": 175
+        }
+    },
+    {
+        "question": "What is the highest place of Karakoram?",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nSELECT DISTINCT  ?uri\nWHERE\n  { ?uri  rdf:type              <http://dbpedia.org/ontology/Mountain> ;\n          <http://dbpedia.org/ontology/elevation>  ?elevation\n  }\nORDER BY DESC(?elevation)\nLIMIT   1\n",
+        "elapsed": 1.1720449924468994,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.0963356494903564,
+            "LLM_INPUTS": 2948,
+            "LLM_OUTPUTS": 55
+        }
+    },
+    {
+        "question": "When did Finland join the EU?",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nSELECT  ?latviaJoinDate ?countryEuro ?euPopulation\nWHERE\n  { <http://dbpedia.org/resource/Latvia>\n              <http://dbpedia.org/ontology/accessionEUDate>  ?latviaJoinDate\n    { ?country  rdf:type  <http://dbpedia.org/ontology/Country>\n        { ?country  <http://dbpedia.org/ontology/currency>  <http://dbpedia.org/resource/Euro> }\n      UNION\n        { ?country  <http://dbpedia.org/ontology/currencyCode>  \"EUR\"@en }\n      BIND(?country AS ?countryEuro)\n    }\n    <http://dbpedia.org/resource/European_Union>\n              <http://dbpedia.org/ontology/populationTotal>  ?euPopulation\n  }\n",
+        "elapsed": 1.903456449508667,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.8575077056884766,
+            "LLM_INPUTS": 2500,
+            "LLM_OUTPUTS": 126
+        }
+    },
+    {
+        "question": "Which actors play in Big Bang Theory?",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nSELECT DISTINCT  ?uri\nWHERE\n  {   { <http://dbpedia.org/resource/Gus_Fring>\n                  <http://dbpedia.org/ontology/portrayer>  ?uri\n      }\n    UNION\n      { <http://dbpedia.org/resource/Chewbacca>\n                  <http://dbpedia.org/ontology/portrayer>  ?uri\n      }\n    UNION\n      { <http://dbpedia.org/resource/Agent_Smith>\n                  <http://dbpedia.org/ontology/portrayer>  ?uri\n      }\n  }\n",
+        "elapsed": 1.564662218093872,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.4903903007507324,
+            "LLM_INPUTS": 1805,
+            "LLM_OUTPUTS": 96
+        }
+    },
+    {
+        "question": "Which computer scientist won an oscar?",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nSELECT DISTINCT  ?person\nWHERE\n  {   { FILTER ( false ) }\n    UNION\n      { ?person  rdf:type              <http://dbpedia.org/ontology/Actor> .\n        ?movie   rdf:type              <http://dbpedia.org/ontology/Film> ;\n                 <http://dbpedia.org/ontology/starring>  ?person\n      }\n    UNION\n      { ?person  <http://dbpedia.org/ontology/knownFor>  <http://dbpedia.org/resource/Manhattan_Project> ;\n                 rdf:type              <http://dbpedia.org/ontology/Scientist> ;\n                 <http://dbpedia.org/ontology/knownFor>  <http://dbpedia.org/resource/Nobel_Peace_Prize>\n      }\n  }\nGROUP BY ?person\nORDER BY DESC(COUNT(DISTINCT ?movie))\nLIMIT   1\n",
+        "elapsed": 2.8527743816375732,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 2.775637626647949,
+            "LLM_INPUTS": 2718,
+            "LLM_OUTPUTS": 224
+        }
+    },
+    {
+        "question": "Who wrote Harry Potter?",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nSELECT DISTINCT  ?answer\nWHERE\n  {   { BIND(<http://dbpedia.org/resource/The_Hunger_Games> AS ?book)\n        ?book  <http://dbpedia.org/ontology/author>  ?answer\n      }\n    UNION\n      { BIND(<http://dbpedia.org/resource/The_Fault_in_Our_Stars> AS ?knownBook)\n        ?knownBook  <http://dbpedia.org/ontology/author>  ?author .\n        ?answer   <http://dbpedia.org/ontology/author>  ?author\n        FILTER ( ?answer != ?knownBook )\n      }\n    UNION\n      { BIND(<http://dbpedia.org/resource/Game_of_Thrones> AS ?show)\n        ?show  <http://dbpedia.org/ontology/composer>  ?answer\n      }\n  }\n",
+        "elapsed": 2.3183486461639404,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 2.2312464714050293,
+            "LLM_INPUTS": 1864,
+            "LLM_OUTPUTS": 149
+        }
+    },
+    {
+        "question": "Give me all writers that won the Nobel Prize in literature.",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nSELECT DISTINCT  ?writer\nWHERE\n  {   { ?writer  rdf:type              <http://dbpedia.org/ontology/Writer> ;\n                 <http://dbpedia.org/ontology/award>  <http://dbpedia.org/resource/Nobel_Prize_in_Literature>\n      }\n    UNION\n      { PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\n        PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n        PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n        PREFIX  owl:  <http://www.w3.org/2002/07/owl#>\n        PREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n        \n        SELECT  ?poet\n        WHERE\n          { ?poet  <http://dbpedia.org/ontology/occupation>  <http://dbpedia.org/resource/Poet> .\n            ?book  <http://dbpedia.org/ontology/author>  ?poet ;\n                   rdf:type              <http://dbpedia.org/ontology/Book>\n          }\n        GROUP BY ?poet\n        ORDER BY DESC(COUNT(?book))\n        LIMIT   1\n      }\n    UNION\n      { ?writer  rdf:type  <http://dbpedia.org/ontology/Writer>\n          { ?writer  <http://dbpedia.org/ontology/almaMater>  ?edu }\n        UNION\n          { ?writer  <http://dbpedia.org/ontology/education>  ?edu }\n          { ?edu  <http://dbpedia.org/ontology/city>  <http://dbpedia.org/resource/Istanbul> }\n        UNION\n          { ?edu  <http://dbpedia.org/property/city>  <http://dbpedia.org/resource/Istanbul> }\n      }\n  }\n",
+        "elapsed": 5.179521560668945,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 5.101224422454834,
+            "LLM_INPUTS": 3176,
+            "LLM_OUTPUTS": 272
+        }
+    },
+    {
+        "question": "Give me English actors starring in Lovesick.",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nSELECT DISTINCT  ?uri\nWHERE\n  {   { <http://dbpedia.org/resource/Chewbacca>\n                  <http://dbpedia.org/ontology/portrayer>  ?uri\n      }\n    UNION\n      { ?x  <http://dbpedia.org/ontology/director>  <http://dbpedia.org/resource/William_Shatner> ;\n            <http://dbpedia.org/ontology/starring>  ?uri\n      }\n    UNION\n      { PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\n        PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n        PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n        PREFIX  owl:  <http://www.w3.org/2002/07/owl#>\n        PREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n        \n        SELECT  ?uri (COUNT(DISTINCT ?f) AS ?count)\n        WHERE\n          { ?uri  rdf:type              <http://dbpedia.org/ontology/Actor> .\n            ?f    rdf:type              <http://dbpedia.org/ontology/Film> ;\n                  <http://dbpedia.org/ontology/starring>  ?uri\n          }\n        GROUP BY ?uri\n        ORDER BY DESC(?count)\n        LIMIT   1\n      }\n  }\n",
+        "elapsed": 4.439163446426392,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 4.3679444789886475,
+            "LLM_INPUTS": 1724,
+            "LLM_OUTPUTS": 139
+        }
+    },
+    {
+        "question": "What is the nick name of Baghdad?",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nSELECT DISTINCT  ?president ?population\nWHERE\n  {   { ?president  <http://dbpedia.org/property/title>  <http://dbpedia.org/resource/President_of_Pakistan> ;\n                  <http://dbpedia.org/property/years>  1978\n      }\n    UNION\n      { <http://dbpedia.org/resource/Iraq>\n                  <http://dbpedia.org/ontology/populationTotal>  ?population\n      }\n  }\n",
+        "elapsed": 2.0240015983581543,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.9502947330474854,
+            "LLM_INPUTS": 2026,
+            "LLM_OUTPUTS": 97
+        }
+    },
+    {
+        "question": "In which city was the president of Montenegro born?",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nSELECT DISTINCT  ?president_1945 ?president_eritrea ?vp_jfk\nWHERE\n  { ?president_1945\n              rdf:type              <http://dbpedia.org/ontology/President> ;\n              <http://dbpedia.org/ontology/birthDate>  ?birthDate\n    FILTER regex(str(?birthDate), \"^1945\")\n    <http://dbpedia.org/resource/Eritrea>\n              <http://dbpedia.org/ontology/leader>  ?president_eritrea ;\n              <http://dbpedia.org/ontology/leaderTitle>  \"President\"@en .\n    <http://dbpedia.org/resource/John_F._Kennedy>\n              <http://dbpedia.org/ontology/vicePresident>  ?vp_jfk\n  }\n",
+        "elapsed": 2.2018985748291016,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 2.1090800762176514,
+            "LLM_INPUTS": 2466,
+            "LLM_OUTPUTS": 155
+        }
+    },
+    {
+        "question": "Which U.S. state has the highest population density?",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nSELECT  ?state\nWHERE\n  { ?state  rdf:type              <http://dbpedia.org/class/yago/WikicatStatesOfTheUnitedStates> ;\n            <http://dbpedia.org/property/densityrank>  ?densityRank\n  }\nORDER BY ASC(?densityRank)\nLIMIT   1\n",
+        "elapsed": 1.5044565200805664,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.428572177886963,
+            "LLM_INPUTS": 2186,
+            "LLM_OUTPUTS": 97
+        }
+    },
+    {
+        "question": "What is the longest river in China?",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nSELECT DISTINCT  ?river\nWHERE\n  { { ?river  rdf:type  <http://dbpedia.org/ontology/River>\n        { ?river  <http://dbpedia.org/ontology/length>  ?length }\n      UNION\n        { ?river  <http://dbpedia.org/property/length>  ?length }\n    }\n  }\nORDER BY DESC(?length)\nLIMIT   1\n",
+        "elapsed": 1.4322381019592285,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.3545417785644531,
+            "LLM_INPUTS": 3487,
+            "LLM_OUTPUTS": 75
+        }
+    },
+    {
+        "question": "What is the area code of Berlin?",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nSELECT  ?smallestCity ?actor ?subsidiary\nWHERE\n  {   { PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\n        PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n        PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n        PREFIX  owl:  <http://www.w3.org/2002/07/owl#>\n        PREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n        \n        SELECT  ?smallestCity\n        WHERE\n          { ?m        <http://www.w3.org/2004/02/skos/core#broader>  <http://dbpedia.org/resource/Category:Cities_in_Germany> .\n            ?smallestCity\n                      <http://purl.org/dc/terms/subject>  ?m ;\n                      <http://dbpedia.org/ontology/areaTotal>  ?area\n          }\n        ORDER BY ?area\n        LIMIT   1\n      }\n    UNION\n      { PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\n        PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n        PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n        PREFIX  owl:  <http://www.w3.org/2002/07/owl#>\n        PREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n        \n        SELECT DISTINCT  ?actor\n        WHERE\n          { ?actor  rdf:type              <http://dbpedia.org/ontology/Actor> ;\n                    <http://dbpedia.org/ontology/birthPlace>  <http://dbpedia.org/resource/Berlin>\n          }\n      }\n    UNION\n      { PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\n        PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n        PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n        PREFIX  owl:  <http://www.w3.org/2002/07/owl#>\n        PREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n        \n        SELECT DISTINCT  ?subsidiary\n        WHERE\n          { <http://dbpedia.org/resource/Lufthansa>\n                      <http://dbpedia.org/ontology/subsidiary>  ?subsidiary .\n            ?subsidiary  <http://dbpedia.org/ontology/targetAirport>  <http://dbpedia.org/resource/Dortmund_Airport> ;\n                      <http://dbpedia.org/ontology/targetAirport>  <http://dbpedia.org/resource/Berlin_Tegel_Airport>\n          }\n      }\n  }\n",
+        "elapsed": 5.889399766921997,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 5.810332298278809,
+            "LLM_INPUTS": 3686,
+            "LLM_OUTPUTS": 247
+        }
+    },
+    {
+        "question": "How many scientists graduated from an Ivy League university?",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nSELECT  (COUNT(DISTINCT ?uri) AS ?c)\nWHERE\n  { ?uri  <http://dbpedia.org/ontology/profession>  <http://dbpedia.org/resource/Politician> ;\n          <http://dbpedia.org/ontology/almaMater>  <http://dbpedia.org/resource/Columbia_University>\n  }\n",
+        "elapsed": 1.4607019424438477,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.3831331729888916,
+            "LLM_INPUTS": 2982,
+            "LLM_OUTPUTS": 74
+        }
+    },
+    {
+        "question": "Which professional surfers were born in Australia?",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nSELECT DISTINCT  ?uri\nWHERE\n  {   { ?uri  rdf:type              <http://dbpedia.org/ontology/SoccerPlayer> ;\n              <http://dbpedia.org/ontology/birthPlace>  <http://dbpedia.org/resource/Malta>\n      }\n    UNION\n      { ?uri  rdf:type              <http://dbpedia.org/ontology/Swimmer> ;\n              <http://dbpedia.org/ontology/birthPlace>  <http://dbpedia.org/resource/Moscow>\n      }\n    UNION\n      { ?uri  rdf:type  <http://dbpedia.org/ontology/Brewery>\n          { ?uri  <http://dbpedia.org/ontology/location>  <http://dbpedia.org/resource/Australia> }\n        UNION\n          { ?uri  <http://dbpedia.org/ontology/location>  ?x .\n            ?x    <http://dbpedia.org/ontology/country>  <http://dbpedia.org/resource/Australia>\n          }\n      }\n  }\n",
+        "elapsed": 2.902278423309326,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 2.8258965015411377,
+            "LLM_INPUTS": 3698,
+            "LLM_OUTPUTS": 205
+        }
+    },
+    {
+        "question": "Give me all Dutch parties.",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nSELECT DISTINCT  ?party ?king ?lake\nWHERE\n  { { ?party  rdf:type              <http://dbpedia.org/ontology/PoliticalParty> ;\n              <http://dbpedia.org/ontology/country>  <http://dbpedia.org/resource/Greece> ;\n              <http://dbpedia.org/ontology/ideology>  <http://dbpedia.org/resource/Pro-Europeanism>\n    }\n    { <http://dbpedia.org/resource/Netherlands>\n                <http://dbpedia.org/ontology/leader>  ?king .\n      ?king     rdf:type              <http://dbpedia.org/ontology/Royalty>\n    }\n    {   { ?lake  rdf:type              <http://dbpedia.org/ontology/Lake> ;\n                 <http://dbpedia.org/ontology/country>  <http://dbpedia.org/resource/Denmark>\n        }\n      UNION\n        { ?lake  rdf:type  <http://dbpedia.org/class/yago/LakesOfDenmark> }\n    }\n  }\n",
+        "elapsed": 2.4024689197540283,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 2.326364755630493,
+            "LLM_INPUTS": 4003,
+            "LLM_OUTPUTS": 163
+        }
+    },
+    {
+        "question": "How many moons does Mars have?",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nSELECT DISTINCT  ?n\nWHERE\n  { ?uri  <http://dbpedia.org/property/satelliteOf>  <http://dbpedia.org/resource/Jupiter> ;\n          <http://dbpedia.org/ontology/mass>  ?n\n  }\nORDER BY ASC(?n)\nOFFSET  0\nLIMIT   1\n",
+        "elapsed": 2.701465606689453,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 2.6264917850494385,
+            "LLM_INPUTS": 2445,
+            "LLM_OUTPUTS": 151
+        }
+    },
+    {
+        "question": "What is Batman's real name?",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nSELECT DISTINCT  ?creator ?isChristianBaleStarring ?agentSmithPortrayer\nWHERE\n  {   { <http://dbpedia.org/resource/Batman>\n                  <http://dbpedia.org/ontology/creator>  ?creator\n      }\n    UNION\n      { BIND(EXISTS { <http://dbpedia.org/resource/Batman_Begins>\n                                <http://dbpedia.org/ontology/starring>  <http://dbpedia.org/resource/Christian_Bale>\n                    } AS ?isChristianBaleStarring)\n      }\n    UNION\n      { <http://dbpedia.org/resource/Agent_Smith>\n                  <http://dbpedia.org/ontology/portrayer>  ?agentSmithPortrayer\n      }\n  }\n",
+        "elapsed": 1.9589931964874268,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.885267972946167,
+            "LLM_INPUTS": 1996,
+            "LLM_OUTPUTS": 125
+        }
+    },
+    {
+        "question": "What is Elon Musk famous for?",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nSELECT DISTINCT  ?musical ?scientist\nWHERE\n  {   { FILTER NOT EXISTS { FILTER ( false ) } }\n    UNION\n      { ?musical  rdf:type              <http://dbpedia.org/ontology/Musical> ;\n                  <http://dbpedia.org/ontology/musicBy>  <http://dbpedia.org/resource/Elton_John>\n      }\n    UNION\n      { ?scientist  rdf:type            <http://dbpedia.org/ontology/Scientist> ;\n                  <http://dbpedia.org/ontology/knownFor>  <http://dbpedia.org/resource/Manhattan_Project> ;\n                  <http://dbpedia.org/ontology/knownFor>  <http://dbpedia.org/resource/Nobel_Peace_Prize>\n      }\n  }\nLIMIT   100\n",
+        "elapsed": 12.505138158798218,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 12.42713475227356,
+            "LLM_INPUTS": 3467,
+            "LLM_OUTPUTS": 203
+        }
+    },
+    {
+        "question": "Who is the author of WikiLeaks?",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nSELECT DISTINCT  ?uri\nWHERE\n  {   { <http://dbpedia.org/resource/The_Hunger_Games>\n                  <http://dbpedia.org/ontology/author>  ?uri\n      }\n    UNION\n      { <http://dbpedia.org/resource/Wikipedia>\n                  <http://dbpedia.org/ontology/author>  ?uri\n      }\n    UNION\n      { <http://dbpedia.org/resource/The_Pillars_of_the_Earth>\n                  <http://dbpedia.org/ontology/author>  ?uri\n      }\n  }\n",
+        "elapsed": 1.531048059463501,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.4556491374969482,
+            "LLM_INPUTS": 1837,
+            "LLM_OUTPUTS": 83
+        }
+    },
+    {
+        "question": "Sean Parnell was the governor of which U.S. state?",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nSELECT DISTINCT  ?governor ?highestDensityState ?stateMountMcKinley\nWHERE\n  { <http://dbpedia.org/resource/Wyoming>\n              <http://dbpedia.org/property/governor>  ?governor\n    { PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\n      PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n      PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n      PREFIX  owl:  <http://www.w3.org/2002/07/owl#>\n      PREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n      \n      SELECT  ?highestDensityState\n      WHERE\n        { ?highestDensityState\n                    rdf:type              <http://dbpedia.org/class/yago/WikicatStatesOfTheUnitedStates> ;\n                    <http://dbpedia.org/property/densityrank>  ?rank\n        }\n      ORDER BY ASC(?rank)\n      LIMIT   1\n    }\n    <http://dbpedia.org/resource/Mount_McKinley>\n              <http://dbpedia.org/ontology/wikiPageRedirects>  ?redirect .\n    ?redirect  <http://dbpedia.org/ontology/locatedInArea>  ?stateMountMcKinley .\n    ?stateMountMcKinley\n              rdf:type              <http://dbpedia.org/class/yago/WikicatStatesOfTheUnitedStates>\n  }\n",
+        "elapsed": 3.8291983604431152,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 3.7495124340057373,
+            "LLM_INPUTS": 3073,
+            "LLM_OUTPUTS": 261
+        }
+    },
+    {
+        "question": "How many years was the Ford Model T manufactured?",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nSELECT DISTINCT  ?date1 ?owner ?date2\nWHERE\n  { <http://dbpedia.org/resource/Statue_of_Liberty>\n              <http://dbpedia.org/property/beginningDate>  ?date1 .\n    <http://dbpedia.org/resource/Rolls-Royce_Motors>\n              <http://dbpedia.org/ontology/owner>  ?owner .\n    <http://dbpedia.org/resource/Olof_Palme>\n              <http://dbpedia.org/ontology/deathDate>  ?date2\n  }\n",
+        "elapsed": 2.0771753787994385,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.9984028339385986,
+            "LLM_INPUTS": 1867,
+            "LLM_OUTPUTS": 108
+        }
+    },
+    {
+        "question": "When was Carlo Giuliani shot?",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nSELECT DISTINCT  ?date ?burialPlace ?assassinationPlace\nWHERE\n  { OPTIONAL\n      { <http://dbpedia.org/resource/Olof_Palme>\n                  <http://dbpedia.org/ontology/deathDate>  ?date\n      }\n    OPTIONAL\n      { <http://dbpedia.org/resource/Juliana_of_the_Netherlands>\n                  <http://dbpedia.org/property/burialPlace>  ?burialPlace .\n        ?burialPlace  rdf:type          <http://dbpedia.org/ontology/Settlement>\n      }\n    OPTIONAL\n      { <http://dbpedia.org/resource/John_F._Kennedy>\n                  <http://dbpedia.org/ontology/deathPlace>  ?assassinationPlace\n      }\n  }\n",
+        "elapsed": 1.9228973388671875,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.846102237701416,
+            "LLM_INPUTS": 2379,
+            "LLM_OUTPUTS": 140
+        }
+    },
+    {
+        "question": "Give me all animals that are extinct.",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nSELECT  ?breeds ?elephantSpecies\nWHERE\n  { <http://dbpedia.org/resource/Hylidae>\n              <http://dbpedia.org/ontology/class>  <http://dbpedia.org/resource/Amphibian> .\n    <http://dbpedia.org/resource/Elephant>\n              <http://dbpedia.org/property/species>  ?elephantSpecies .\n    ?breeds   <http://dbpedia.org/property/breed>  <http://dbpedia.org/resource/German_Shepherd>\n  }\n",
+        "elapsed": 1.5261473655700684,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.4484939575195312,
+            "LLM_INPUTS": 1929,
+            "LLM_OUTPUTS": 99
+        }
+    },
+    {
+        "question": "Who was the wife of President Lincoln?",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nSELECT DISTINCT  ?wife\nWHERE\n  { VALUES ?question { \"wife\" \"Mary\" \"MichelleObama\" }\n      { ?wife  <http://dbpedia.org/resource/spouse>  <http://dbpedia.org/resource/Abraham_Lincoln> }\n    UNION\n      { <http://dbpedia.org/resource/Abraham_Lincoln>\n                  <http://dbpedia.org/ontology/spouse>  ?wife .\n        ?wife     rdfs:label            ?label\n        FILTER regex(?label, \"Mary\", \"i\")\n      }\n    UNION\n      { FILTER NOT EXISTS { ?s  ?p  ?o } }\n  }\n",
+        "elapsed": 2.659451961517334,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 2.579172134399414,
+            "LLM_INPUTS": 2318,
+            "LLM_OUTPUTS": 206
+        }
+    },
+    {
+        "question": "How many awards has Bertrand Russell?",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nSELECT DISTINCT  ?writer\nWHERE\n  { ?writer  rdf:type              <http://dbpedia.org/ontology/Writer> ;\n             <http://dbpedia.org/ontology/award>  <http://dbpedia.org/resource/Nobel_Prize_in_Literature>\n  }\n",
+        "elapsed": 4.830886363983154,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 4.752730846405029,
+            "LLM_INPUTS": 2642,
+            "LLM_OUTPUTS": 54
+        }
+    },
+    {
+        "question": "Is Pamela Anderson a vegan?",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nSELECT DISTINCT  ?uri\nWHERE\n  { ?film  rdf:type              <http://dbpedia.org/ontology/Film> ;\n           <http://dbpedia.org/ontology/starring>  <http://dbpedia.org/resource/Natalie_Portman> ;\n           <http://dbpedia.org/ontology/producer>  ?uri\n  }\n",
+        "elapsed": 1.171818494796753,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.119234323501587,
+            "LLM_INPUTS": 2703,
+            "LLM_OUTPUTS": 62
+        }
+    },
+    {
+        "question": "Which space probes were sent into orbit around the sun?",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nSELECT DISTINCT  ?spaceflight ?astronaut ?rocket\nWHERE\n  {   { ?spaceflight  <http://dbpedia.org/property/launchPad>  <http://dbpedia.org/resource/Baikonur_Cosmodrome> }\n    UNION\n      { ?astronaut  <http://dbpedia.org/ontology/mission>  <http://dbpedia.org/resource/Apollo_14> }\n    UNION\n      { ?rocket  rdf:type              <http://dbpedia.org/ontology/Rocket> ;\n                 <http://dbpedia.org/ontology/launchSite>  <http://dbpedia.org/resource/Baikonur_Cosmodrome>\n      }\n  }\n",
+        "elapsed": 1.9992375373840332,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.9547014236450195,
+            "LLM_INPUTS": 2345,
+            "LLM_OUTPUTS": 117
+        }
+    },
+    {
+        "question": "Which German cities have more than 250000 inhabitants?",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nSELECT  ?mariborPopulation ?germanyPopDensityRank ?smallestCity\nWHERE\n  { <http://dbpedia.org/resource/Maribor>\n              <http://dbpedia.org/ontology/populationTotal>  ?mariborPopulation\n    OPTIONAL\n      { <http://dbpedia.org/resource/Germany>\n                  <http://dbpedia.org/property/populationDensityRank>  ?germanyPopDensityRank\n      }\n    ?m        <http://www.w3.org/2004/02/skos/core#broader>  <http://dbpedia.org/resource/Category:Cities_in_Germany> .\n    ?smallestCity\n              <http://purl.org/dc/terms/subject>  ?m ;\n              <http://dbpedia.org/ontology/areaTotal>  ?area\n  }\nORDER BY ?area\nLIMIT   1\n",
+        "elapsed": 3.0410115718841553,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 2.95877742767334,
+            "LLM_INPUTS": 2404,
+            "LLM_OUTPUTS": 209
+        }
+    },
+    {
+        "question": "Who is the daughter of Robert Kennedy married to?",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nSELECT DISTINCT  ?uri\nWHERE\n  { <http://dbpedia.org/resource/Robert_F._Kennedy>\n              <http://dbpedia.org/ontology/spouse>  ?uri\n  }\n",
+        "elapsed": 1.1717467308044434,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.0980472564697266,
+            "LLM_INPUTS": 2005,
+            "LLM_OUTPUTS": 47
+        }
+    },
+    {
+        "question": "How many students does the Free University of Amsterdam have?",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nSELECT  (COUNT(DISTINCT ?politician) AS ?numPoliticians)\nWHERE\n  { ?politician  <http://dbpedia.org/ontology/profession>  <http://dbpedia.org/resource/Politician> ;\n              <http://dbpedia.org/ontology/almaMater>  <http://dbpedia.org/resource/Columbia_University>\n  }\n",
+        "elapsed": 1.1608412265777588,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.1018731594085693,
+            "LLM_INPUTS": 2398,
+            "LLM_OUTPUTS": 68
+        }
+    },
+    {
+        "question": "What is the revenue of IBM?",
+        "sparql": "PREFIX dbo: <http://dbpedia.org/ontology/>\nPREFIX res: <http://dbpedia.org/resource/>\n\nSELECT ?appleNetIncome ?ibmEmployees ?topTimBurtonFilm WHERE {\n  OPTIONAL { res:Apple_Inc. dbo:netIncome ?appleNetIncome }\n  OPTIONAL { res:IBM dbo:numberOfEmployees ?ibmEmployees }\n  OPTIONAL {\n    ?topTimBurtonFilm dbo:director res:Tim_Burton ;\n                      dbo:budget ?budget .\n  }\n}\nORDER BY DESC(?budget)\nLIMIT 1",
+        "elapsed": 5.451612234115601,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 5.373790502548218,
+            "LLM_INPUTS": 1983,
+            "LLM_OUTPUTS": 115
+        }
+    },
+    {
+        "question": "How many James Bond movies do exist?",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nASK\nWHERE\n  { <http://dbpedia.org/resource/James_Bond>\n              <http://dbpedia.org/ontology/spouse>  ?uri\n  }\n",
+        "elapsed": 0.9104185104370117,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.8389465808868408,
+            "LLM_INPUTS": 2954,
+            "LLM_OUTPUTS": 40
+        }
+    },
+    {
+        "question": "Who does the voice of Bart Simpson?",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nSELECT DISTINCT  ?answer\nWHERE\n  {   { <http://dbpedia.org/resource/Agent_Smith>\n                  <http://dbpedia.org/ontology/portrayer>  ?answer\n      }\n    UNION\n      { <http://dbpedia.org/resource/Gus_Fring>\n                  <http://dbpedia.org/ontology/portrayer>  ?answer\n      }\n    UNION\n      { ?answer  rdf:type              <http://dbpedia.org/ontology/TelevisionShow> ;\n                 <http://dbpedia.org/ontology/starring>  <http://dbpedia.org/resource/Neil_Patrick_Harris>\n      }\n  }\n",
+        "elapsed": 1.4616279602050781,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.3902876377105713,
+            "LLM_INPUTS": 2339,
+            "LLM_OUTPUTS": 92
+        }
+    },
+    {
+        "question": "Who was Tom Hanks married to?",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nASK\nWHERE\n  { <http://dbpedia.org/resource/Tom_Hanks>\n              <http://dbpedia.org/ontology/spouse>  <http://dbpedia.org/resource/Rita_Wilson>\n  }\n",
+        "elapsed": 2.550191640853882,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 2.4730162620544434,
+            "LLM_INPUTS": 1943,
+            "LLM_OUTPUTS": 46
+        }
+    },
+    {
+        "question": "Through which countries does the Yenisei river flow?",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nSELECT DISTINCT  ?river ?capital ?city\nWHERE\n  {   { ?river  rdf:type              <http://dbpedia.org/ontology/River> .\n        ?lake   <http://dbpedia.org/ontology/inflow>  ?river ;\n                rdf:type              <http://dbpedia.org/ontology/Lake> ;\n                <http://dbpedia.org/ontology/country>  <http://dbpedia.org/resource/Germany>\n      }\n    UNION\n      { <http://dbpedia.org/resource/Himalayas>\n                  <http://dbpedia.org/ontology/country>  ?country .\n        ?country  <http://dbpedia.org/ontology/capital>  ?capital\n      }\n    UNION\n      { <http://dbpedia.org/resource/Weser>\n                  <http://dbpedia.org/ontology/city>  ?city\n      }\n  }\n",
+        "elapsed": 2.4422879219055176,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 2.3886048793792725,
+            "LLM_INPUTS": 2960,
+            "LLM_OUTPUTS": 146
+        }
+    },
+    {
+        "question": "Give me all cars that are produced in Germany.",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nSELECT  ?smallestCity ?actor ?chancellor\nWHERE\n  { { PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\n      PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n      PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n      PREFIX  owl:  <http://www.w3.org/2002/07/owl#>\n      PREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n      \n      SELECT  ?smallestCity\n      WHERE\n        { ?m        <http://www.w3.org/2004/02/skos/core#broader>  <http://dbpedia.org/resource/Category:Cities_in_Germany> .\n          ?smallestCity\n                    <http://purl.org/dc/terms/subject>  ?m ;\n                    <http://dbpedia.org/ontology/areaTotal>  ?area\n        }\n      ORDER BY ?area\n      LIMIT   1\n    }\n    OPTIONAL\n      { PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\n        PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n        PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n        PREFIX  owl:  <http://www.w3.org/2002/07/owl#>\n        PREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n        \n        SELECT DISTINCT  ?actor\n        WHERE\n          { ?actor  rdf:type  <http://dbpedia.org/ontology/Actor>\n              { ?actor  <http://dbpedia.org/ontology/birthPlace>  <http://dbpedia.org/resource/Germany> }\n            UNION\n              { ?actor  <http://dbpedia.org/ontology/birthPlace>  ?place .\n                ?place  <http://dbpedia.org/ontology/country>  <http://dbpedia.org/resource/Germany>\n              }\n          }\n      }\n    OPTIONAL\n      { PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\n        PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n        PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n        PREFIX  owl:  <http://www.w3.org/2002/07/owl#>\n        PREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n        \n        SELECT DISTINCT  ?chancellor\n        WHERE\n          { ?chancellor  rdf:type  <http://dbpedia.org/ontology/Person>\n              { ?chancellor  <http://dbpedia.org/ontology/office>  \"Chancellor of Germany\"@en }\n            UNION\n              { ?chancellor  <http://dbpedia.org/property/office>  <http://dbpedia.org/resource/Chancellor_of_Germany> }\n          }\n      }\n  }\nLIMIT   100\n",
+        "elapsed": 8.893566131591797,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 8.846143245697021,
+            "LLM_INPUTS": 4028,
+            "LLM_OUTPUTS": 319
+        }
+    },
+    {
+        "question": "When did Michael Jackson die?",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nASK\nWHERE\n  { <http://dbpedia.org/resource/Andrew_Jackson>\n              <http://dbpedia.org/ontology/battle>  ?battle\n  }\n",
+        "elapsed": 2.058927536010742,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.982422113418579,
+            "LLM_INPUTS": 2345,
+            "LLM_OUTPUTS": 136
+        }
+    },
+    {
+        "question": "What is the highest volcano in Africa?",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nSELECT DISTINCT  ?volcano\nWHERE\n  { ?volcano  rdf:type              <http://dbpedia.org/ontology/Volcano> ;\n              <http://dbpedia.org/ontology/locatedInArea>  <http://dbpedia.org/resource/Japan> ;\n              <http://dbpedia.org/ontology/eruptionYear>  ?eruptionYear\n    FILTER ( year(?eruptionYear) >= 2000 )\n  }\n",
+        "elapsed": 3.9076731204986572,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 3.8308067321777344,
+            "LLM_INPUTS": 3406,
+            "LLM_OUTPUTS": 86
+        }
+    },
+    {
+        "question": "Which poet wrote the most books?",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nSELECT DISTINCT  ?uri\nWHERE\n  {   { PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\n        PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n        PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n        PREFIX  owl:  <http://www.w3.org/2002/07/owl#>\n        PREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n        \n        SELECT  ?uri (COUNT(?book) AS ?bookCount)\n        WHERE\n          { ?uri   <http://dbpedia.org/ontology/occupation>  <http://dbpedia.org/resource/Poet> .\n            ?book  <http://dbpedia.org/ontology/author>  ?uri ;\n                   rdf:type              <http://dbpedia.org/ontology/Book>\n          }\n        GROUP BY ?uri\n        ORDER BY DESC(?bookCount)\n        LIMIT   1\n      }\n    UNION\n      { PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\n        PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n        PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n        PREFIX  owl:  <http://www.w3.org/2002/07/owl#>\n        PREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n        \n        SELECT  ?uri (COUNT(?book) AS ?bookCount)\n        WHERE\n          { ?uri   <http://dbpedia.org/ontology/occupation>  <http://dbpedia.org/resource/Musician> .\n            ?book  <http://dbpedia.org/ontology/author>  ?uri ;\n                   rdf:type              <http://dbpedia.org/ontology/Book>\n          }\n        GROUP BY ?uri\n        ORDER BY DESC(?bookCount)\n        LIMIT   1\n      }\n    UNION\n      { ?uri  rdf:type              <http://dbpedia.org/ontology/Writer> ;\n              <http://dbpedia.org/ontology/award>  <http://dbpedia.org/resource/Nobel_Prize_in_Literature>\n      }\n  }\n",
+        "elapsed": 3.617260456085205,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 3.539915084838867,
+            "LLM_INPUTS": 1632,
+            "LLM_OUTPUTS": 255
+        }
+    },
+    {
+        "question": "Give me all gangsters from the prohibition era.",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nSELECT DISTINCT  ?uri\nWHERE\n  {   { ?uri  rdf:type              <http://dbpedia.org/ontology/Song> ;\n              <http://dbpedia.org/ontology/artist>  <http://dbpedia.org/resource/Bruce_Springsteen> ;\n              <http://dbpedia.org/ontology/releaseDate>  ?date\n        FILTER ( ( ?date >= \"1980-01-01\"^^xsd:date ) && ( ?date <= \"1990-12-31\"^^xsd:date ) )\n      }\n    UNION\n      { ?uri  rdf:type              <http://dbpedia.org/ontology/Actor> ;\n              <http://dbpedia.org/ontology/birthPlace>  <http://dbpedia.org/resource/Paris> ;\n              <http://dbpedia.org/ontology/birthDate>  ?birthDate\n        FILTER ( ?birthDate > \"1950-12-31T00:00:00Z\"^^xsd:dateTime )\n      }\n    UNION\n      { ?uri  <http://dbpedia.org/ontology/occupation>  <http://dbpedia.org/resource/Bandleader> ;\n              <http://dbpedia.org/ontology/instrument>  <http://dbpedia.org/resource/Trumpet>\n      }\n  }\n",
+        "elapsed": 4.0958476066589355,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 4.016985893249512,
+            "LLM_INPUTS": 3618,
+            "LLM_OUTPUTS": 187
+        }
+    },
+    {
+        "question": "Give me all spacecrafts that flew to Mars.",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nSELECT DISTINCT  ?uri\nWHERE\n  {   { ?uri  rdf:type              <http://dbpedia.org/ontology/Rocket> ;\n              <http://dbpedia.org/ontology/launchSite>  <http://dbpedia.org/resource/Baikonur_Cosmodrome>\n      }\n    UNION\n      { ?uri  <http://dbpedia.org/property/launchPad>  <http://dbpedia.org/resource/Baikonur_Cosmodrome> }\n    UNION\n      { ?uri  <http://dbpedia.org/ontology/mission>  <http://dbpedia.org/resource/Apollo_14> }\n  }\n",
+        "elapsed": 1.7588069438934326,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.6841421127319336,
+            "LLM_INPUTS": 2344,
+            "LLM_OUTPUTS": 115
+        }
+    },
+    {
+        "question": "Show me all Czech movies.",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nSELECT DISTINCT  ?uri\nWHERE\n  {   { ?uri  rdf:type              <http://dbpedia.org/ontology/Film> ;\n              <http://dbpedia.org/ontology/country>  <http://dbpedia.org/resource/Denmark>\n      }\n    UNION\n      { ?uri  rdf:type              <http://dbpedia.org/ontology/Film> ;\n              <http://dbpedia.org/ontology/starring>  <http://dbpedia.org/resource/Tom_Cruise>\n      }\n    UNION\n      { ?uri  rdf:type              <http://dbpedia.org/ontology/Film> ;\n              <http://dbpedia.org/ontology/director>  <http://dbpedia.org/resource/Steven_Spielberg> ;\n              <http://dbpedia.org/ontology/budget>  ?b\n        FILTER ( xsd:double(?b) >= 8.0E7 )\n      }\n  }\n",
+        "elapsed": 2.582218885421753,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 2.499563455581665,
+            "LLM_INPUTS": 3320,
+            "LLM_OUTPUTS": 174
+        }
+    },
+    {
+        "question": "Give me all taikonauts.",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nSELECT DISTINCT  ?uri\nWHERE\n  {   { ?uri  rdf:type  <http://dbpedia.org/ontology/Astronaut>\n          { ?uri  <http://dbpedia.org/ontology/nationality>  <http://dbpedia.org/resource/Russia> }\n        UNION\n          { ?uri  <http://dbpedia.org/ontology/nationality>  <http://dbpedia.org/resource/Soviet_Union> }\n      }\n    UNION\n      { ?uri  rdf:type  <http://dbpedia.org/class/yago/WikicatEatingDisorders> }\n    UNION\n      { ?uri  <http://dbpedia.org/ontology/director>  <http://dbpedia.org/resource/Park_Chan-wook> }\n  }\n",
+        "elapsed": 8.318438291549683,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 8.243204832077026,
+            "LLM_INPUTS": 2410,
+            "LLM_OUTPUTS": 136
+        }
+    },
+    {
+        "question": "Which countries have more than ten volcanoes?",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nSELECT DISTINCT  ?uri\nWHERE\n  { ?cave   rdf:type              <http://dbpedia.org/ontology/Cave> ;\n            <http://dbpedia.org/ontology/location>  ?place .\n    ?place  <http://dbpedia.org/ontology/country>  ?uri .\n    ?uri    rdf:type              <http://dbpedia.org/ontology/Country>\n  }\nGROUP BY ?uri\nHAVING ( COUNT(?cave) > 10 )\n",
+        "elapsed": 5.871093034744263,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 5.794437646865845,
+            "LLM_INPUTS": 4234,
+            "LLM_OUTPUTS": 98
+        }
+    },
+    {
+        "question": "Give me all movies with Tom Cruise.",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nSELECT DISTINCT  ?uri\nWHERE\n  { ?uri  rdf:type              <http://dbpedia.org/ontology/Film> ;\n          <http://dbpedia.org/ontology/starring>  <http://dbpedia.org/resource/Tom_Cruise>\n  }\n",
+        "elapsed": 1.2446396350860596,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.167492389678955,
+            "LLM_INPUTS": 2666,
+            "LLM_OUTPUTS": 48
+        }
+    },
+    {
+        "question": "When did Dracula's creator die?",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nSELECT DISTINCT  ?uri\nWHERE\n  {   { <http://dbpedia.org/resource/Batman>\n                  <http://dbpedia.org/ontology/creator>  ?uri\n      }\n    UNION\n      { <http://dbpedia.org/resource/Minecraft>\n                  <http://dbpedia.org/ontology/developer>  ?uri\n      }\n    UNION\n      { <http://dbpedia.org/resource/Captain_America>\n                  <http://dbpedia.org/ontology/creator>  ?uri\n      }\n  }\n",
+        "elapsed": 1.6557319164276123,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.5804288387298584,
+            "LLM_INPUTS": 1746,
+            "LLM_OUTPUTS": 86
+        }
+    },
+    {
+        "question": "Who created English Wikipedia?",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nSELECT DISTINCT  ?answer\nWHERE\n  {   { <http://dbpedia.org/resource/Wikipedia>\n                  <http://dbpedia.org/ontology/author>  ?answer\n      }\n    UNION\n      { ?answer  rdf:type              <http://dbpedia.org/ontology/Royalty> ;\n                 rdf:type              <http://dbpedia.org/class/yago/WikicatEnglishMonarchs> ;\n                 <http://dbpedia.org/ontology/activeYearsStartYear>  ?startYear\n      }\n    UNION\n      { ?answer   rdf:type              <http://dbpedia.org/ontology/Pope> .\n        <http://dbpedia.org/resource/Vatican_Television_Center>\n                  <http://dbpedia.org/ontology/foundedBy>  ?answer\n      }\n  }\nORDER BY ASC(?startYear)\nLIMIT   3\n",
+        "elapsed": 3.2404351234436035,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 3.1619150638580322,
+            "LLM_INPUTS": 3152,
+            "LLM_OUTPUTS": 194
+        }
+    },
+    {
+        "question": "Give me all female German chancellors.",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nSELECT DISTINCT  ?federalChancellor ?almaMater ?birthName\nWHERE\n  { { ?federalChancellor\n                <http://dbpedia.org/ontology/office>  <http://dbpedia.org/resource/Chancellor_of_Germany>\n    }\n    OPTIONAL\n      { <http://dbpedia.org/resource/Angela_Merkel>\n                  <http://dbpedia.org/ontology/almaMater>  ?almaMater\n      }\n    OPTIONAL\n      { <http://dbpedia.org/resource/Angela_Merkel>\n                  <http://dbpedia.org/property/birthName>  ?birthName\n      }\n  }\n",
+        "elapsed": 4.79965353012085,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 4.730168581008911,
+            "LLM_INPUTS": 2517,
+            "LLM_OUTPUTS": 113
+        }
+    },
+    {
+        "question": "Who owns Aldi?",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nSELECT DISTINCT  ?result\nWHERE\n  {   { <http://dbpedia.org/resource/Rolls-Royce_Motors>\n                  <http://dbpedia.org/ontology/owner>  ?result\n      }\n    UNION\n      { <http://dbpedia.org/resource/Aldi>\n                  <http://dbpedia.org/ontology/numberOfLocations>  ?result\n      }\n    UNION\n      { <http://dbpedia.org/resource/Universal_Studios>\n                  <http://dbpedia.org/ontology/owner>  ?result\n      }\n  }\n",
+        "elapsed": 1.7244977951049805,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.6574962139129639,
+            "LLM_INPUTS": 1844,
+            "LLM_OUTPUTS": 82
+        }
+    },
+    {
+        "question": "Which books were written by Danielle Steel?",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nSELECT DISTINCT  ?book\nWHERE\n  {   { ?book  rdf:type              <http://dbpedia.org/ontology/Book> ;\n               <http://dbpedia.org/ontology/author>  <http://dbpedia.org/resource/Danielle_Steel>\n      }\n    UNION\n      { <http://dbpedia.org/resource/The_Fault_in_Our_Stars>\n                  <http://dbpedia.org/ontology/author>  ?author .\n        ?book     <http://dbpedia.org/ontology/author>  ?author\n        FILTER ( ?book != <http://dbpedia.org/resource/The_Fault_in_Our_Stars> )\n      }\n    UNION\n      { <http://dbpedia.org/resource/Les_Piliers_de_la_terre>\n                  <http://dbpedia.org/ontology/author>  ?author\n        BIND(?author AS ?book)\n      }\n  }\n",
+        "elapsed": 2.321816921234131,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 2.2464053630828857,
+            "LLM_INPUTS": 2353,
+            "LLM_OUTPUTS": 132
+        }
+    },
+    {
+        "question": "Who was influenced by Socrates?",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nASK\nWHERE\n  { <http://dbpedia.org/resource/Aristotle>\n              <http://dbpedia.org/ontology/influencedBy>  <http://dbpedia.org/resource/Socrates>\n  }\n",
+        "elapsed": 1.0925641059875488,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.0149140357971191,
+            "LLM_INPUTS": 2904,
+            "LLM_OUTPUTS": 46
+        }
+    },
+    {
+        "question": "How deep is Lake Chiemsee?",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nSELECT  ?lakeDepth ?denmarkLake ?river\nWHERE\n  {   { <http://dbpedia.org/resource/Lake_Placid>\n                  <http://dbpedia.org/ontology/maximumDepth>  ?lakeDepth\n      }\n    UNION\n      {   { ?denmarkLake  rdf:type          <http://dbpedia.org/ontology/Lake> ;\n                      <http://dbpedia.org/ontology/country>  <http://dbpedia.org/resource/Denmark>\n          }\n        UNION\n          { ?denmarkLake  rdf:type  <http://dbpedia.org/class/yago/LakesOfDenmark> }\n      }\n    UNION\n      { ?river  rdf:type              <http://dbpedia.org/ontology/River> .\n        ?lake   rdf:type              <http://dbpedia.org/ontology/Lake> ;\n                <http://dbpedia.org/ontology/inflow>  ?river ;\n                <http://dbpedia.org/ontology/country>  <http://dbpedia.org/resource/Germany>\n      }\n  }\n",
+        "elapsed": 7.242436408996582,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 7.163021087646484,
+            "LLM_INPUTS": 3770,
+            "LLM_OUTPUTS": 159
+        }
+    },
+    {
+        "question": "Which companies work in the aerospace industry as well as in medicine?",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nSELECT DISTINCT  ?uri\nWHERE\n  {   { ?uri  rdf:type              <http://dbpedia.org/ontology/Airline> ;\n              <http://dbpedia.org/ontology/alliance>  <http://dbpedia.org/resource/SkyTeam>\n      }\n    UNION\n      { ?uri  rdf:type              <http://dbpedia.org/ontology/Airline> ;\n              <http://dbpedia.org/ontology/alliance>  <http://dbpedia.org/resource/Star_Alliance>\n      }\n    UNION\n      { ?uri  rdf:type              <http://dbpedia.org/ontology/Company> ;\n              <http://dbpedia.org/ontology/industry>  ?industry\n        FILTER regex(str(?industry), \"advertising\", \"i\")\n      }\n  }\n",
+        "elapsed": 2.089489698410034,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 2.0123331546783447,
+            "LLM_INPUTS": 3749,
+            "LLM_OUTPUTS": 138
+        }
+    },
+    {
+        "question": "Which professional surfers were born on the Philippines?",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nSELECT DISTINCT  ?uri\nWHERE\n  {   { ?uri  rdf:type              <http://dbpedia.org/ontology/SoccerPlayer> ;\n              <http://dbpedia.org/ontology/birthPlace>  <http://dbpedia.org/resource/Malta>\n      }\n    UNION\n      { ?uri  rdf:type              <http://dbpedia.org/ontology/Swimmer> ;\n              <http://dbpedia.org/ontology/birthPlace>  <http://dbpedia.org/resource/Moscow>\n      }\n    UNION\n      { <http://dbpedia.org/resource/Philippines>\n                  <http://dbpedia.org/ontology/officialLanguage>  ?uri\n      }\n  }\n",
+        "elapsed": 1.5364055633544922,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.4597275257110596,
+            "LLM_INPUTS": 2718,
+            "LLM_OUTPUTS": 94
+        }
+    },
+    {
+        "question": "Who were the parents of Queen Victoria?",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nSELECT DISTINCT  ?child\nWHERE\n  { <http://dbpedia.org/resource/Margaret_Thatcher>\n              <http://dbpedia.org/ontology/child>  ?child\n  }\n",
+        "elapsed": 3.6897730827331543,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 3.6136319637298584,
+            "LLM_INPUTS": 2526,
+            "LLM_OUTPUTS": 47
+        }
+    },
+    {
+        "question": "Are there any castles in the United States?",
+        "sparql": "SELECT DISTINCT ?uri WHERE { <http://dbpedia.org/resource/Mount_McKinley> dbo:wikiPageRedirects ?x . ?x dbo:locatedInArea ?uri. ?uri rdf:type yago:WikicatStatesOfTheUnitedStates }",
+        "elapsed": 5.93829870223999,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 5.8563103675842285,
+            "LLM_INPUTS": 3825,
+            "LLM_OUTPUTS": 161
+        }
+    },
+    {
+        "question": "Which languages are spoken in Estonia?",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nSELECT  ?estoniaLanguages ?turkmenistanLanguageCount ?countryWithMostOfficialLanguages\nWHERE\n  { { PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\n      PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n      PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n      PREFIX  owl:  <http://www.w3.org/2002/07/owl#>\n      PREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n      \n      SELECT  (GROUP_CONCAT(DISTINCT ?languageEstonia ; separator=', ') AS ?estoniaLanguages)\n      WHERE\n        { ?languageEstonia\n                    <http://dbpedia.org/ontology/spokenIn>  <http://dbpedia.org/resource/Estonia>\n        }\n    }\n    { PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\n      PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n      PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n      PREFIX  owl:  <http://www.w3.org/2002/07/owl#>\n      PREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n      \n      SELECT  (COUNT(DISTINCT ?languageTurkmenistan) AS ?turkmenistanLanguageCount)\n      WHERE\n        { <http://dbpedia.org/resource/Turkmenistan>\n                    <http://dbpedia.org/ontology/language>  ?languageTurkmenistan\n        }\n    }\n    { PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\n      PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n      PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n      PREFIX  owl:  <http://www.w3.org/2002/07/owl#>\n      PREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n      \n      SELECT  ?countryWithMostOfficialLanguages\n      WHERE\n        { ?countryWithMostOfficialLanguages\n                    rdf:type              <http://dbpedia.org/ontology/Country> ;\n                    <http://dbpedia.org/ontology/officialLanguages>  ?officialLang\n        }\n      GROUP BY ?countryWithMostOfficialLanguages\n      ORDER BY DESC(COUNT(?officialLang))\n      LIMIT   1\n    }\n  }\n",
+        "elapsed": 5.223577976226807,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 5.149350643157959,
+            "LLM_INPUTS": 1439,
+            "LLM_OUTPUTS": 198
+        }
+    },
+    {
+        "question": "Give me a list of all critically endangered birds.",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nSELECT DISTINCT  ?uri\nWHERE\n  {   { ?uri  rdf:type  <http://dbpedia.org/ontology/Airline>\n          { ?uri  <http://dbpedia.org/ontology/alliance>  <http://dbpedia.org/resource/SkyTeam> }\n        UNION\n          { ?uri  <http://dbpedia.org/ontology/Alliance>  <http://dbpedia.org/resource/SkyTeam> }\n      }\n    UNION\n      { ?uri  <http://dbpedia.org/ontology/breed>  <http://dbpedia.org/resource/German_Shepherd> }\n    UNION\n      { <http://dbpedia.org/resource/Air_China>\n                  <http://dbpedia.org/ontology/targetAirport>  ?uri\n      }\n  }\n",
+        "elapsed": 1.7942836284637451,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.7187678813934326,
+            "LLM_INPUTS": 2657,
+            "LLM_OUTPUTS": 111
+        }
+    },
+    {
+        "question": "Which countries are connected by the Rhine?",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nSELECT DISTINCT  ?river\nWHERE\n  { ?river  rdf:type              <http://dbpedia.org/ontology/River> .\n    ?lake   <http://dbpedia.org/ontology/inflow>  ?river ;\n            rdf:type              <http://dbpedia.org/ontology/Lake> ;\n            <http://dbpedia.org/ontology/country>  <http://dbpedia.org/resource/Germany>\n  }\n",
+        "elapsed": 1.2867746353149414,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.2110214233398438,
+            "LLM_INPUTS": 2987,
+            "LLM_OUTPUTS": 74
+        }
+    },
+    {
+        "question": "Who was the father of Queen Elizabeth II?",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nASK\nWHERE\n  { <http://dbpedia.org/resource/Darth_Vader>\n              <http://dbpedia.org/ontology/child>  <http://dbpedia.org/resource/Luke_Skywalker>\n  }\n",
+        "elapsed": 2.800671339035034,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 2.7249953746795654,
+            "LLM_INPUTS": 2540,
+            "LLM_OUTPUTS": 46
+        }
+    },
+    {
+        "question": "Give me all chemical elements.",
+        "sparql": "PREFIX yago: <http://dbpedia.org/class/yago/>\nPREFIX dbp: <http://dbpedia.org/property/>\nPREFIX dbo: <http://dbpedia.org/ontology/>\nPREFIX res: <http://dbpedia.org/resource/>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nSELECT ?answer WHERE {\n  {\n    BIND(\"Was Margaret Thatcher a chemist?\" AS ?question)\n    BIND(\n      IF(EXISTS {\n        res:Margaret_Thatcher dbo:profession res:Chemist\n      }, \"Yes\", \"No\") AS ?answer\n    )\n  }\n  UNION\n  {\n    BIND(\"Which U.S. states possess gold minerals?\" AS ?question)\n    SELECT DISTINCT ?answer WHERE {\n      ?answer rdf:type yago:WikicatStatesOfTheUnitedStates ;\n              dbp:mineral ?mineral .\n      FILTER regex(?mineral, \"gold\", \"i\")\n    }\n  }\n  UNION\n  {\n    BIND(\"What is in a chocolate chip cookie?\" AS ?question)\n    SELECT DISTINCT ?answer WHERE {\n      res:Chocolate_chip_cookie dbo:ingredient ?answer\n    }\n  }\n}",
+        "elapsed": 8.208169937133789,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 8.130133390426636,
+            "LLM_INPUTS": 2485,
+            "LLM_OUTPUTS": 256
+        }
+    },
+    {
+        "question": "Give me all American presidents of the last 20 years.",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nSELECT DISTINCT  ?presidentBorn1945 ?presidentPakistan1978 ?kennedyVP\nWHERE\n  {   { ?presidentBorn1945\n                  rdf:type              <http://dbpedia.org/ontology/President> ;\n                  <http://dbpedia.org/ontology/birthDate>  ?birthDate\n        FILTER regex(str(?birthDate), \"^1945\")\n      }\n    UNION\n      { ?presidentPakistan1978\n                  <http://dbpedia.org/property/title>  <http://dbpedia.org/resource/President_of_Pakistan> ;\n                  <http://dbpedia.org/property/years>  1978\n      }\n    UNION\n      { <http://dbpedia.org/resource/John_F._Kennedy>\n                  <http://dbpedia.org/ontology/vicePresident>  ?kennedyVP\n      }\n  }\n",
+        "elapsed": 2.2404139041900635,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 2.1657919883728027,
+            "LLM_INPUTS": 2313,
+            "LLM_OUTPUTS": 153
+        }
+    },
+    {
+        "question": "When is the movie Worst Case Scenario going to be in cinemas in the Netherlands?",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nSELECT DISTINCT  ?uri\nWHERE\n  { ?uri  rdf:type              <http://dbpedia.org/ontology/Film> ;\n          <http://dbpedia.org/ontology/country>  <http://dbpedia.org/resource/Denmark>\n  }\n",
+        "elapsed": 0.9070959091186523,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.8439726829528809,
+            "LLM_INPUTS": 2354,
+            "LLM_OUTPUTS": 46
+        }
+    },
+    {
+        "question": "Whom did Lance Bass marry?",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nSELECT DISTINCT  ?uri\nWHERE\n  { <http://dbpedia.org/resource/Lance_Bass>\n              <http://dbpedia.org/ontology/spouse>  ?uri\n  }\n",
+        "elapsed": 0.9890999794006348,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.9248411655426025,
+            "LLM_INPUTS": 1810,
+            "LLM_OUTPUTS": 45
+        }
+    },
+    {
+        "question": "Which subsidiary of TUI Travel serves both Glasgow and Dublin?",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nSELECT DISTINCT  ?lufthansaSubsidiary ?skyteamAllianceAirline ?yetiAirport\nWHERE\n  {   { <http://dbpedia.org/resource/Lufthansa>\n                  <http://dbpedia.org/ontology/subsidiary>  ?lufthansaSubsidiary .\n        ?lufthansaSubsidiary\n                  <http://dbpedia.org/ontology/targetAirport>  <http://dbpedia.org/resource/Dortmund_Airport> ;\n                  <http://dbpedia.org/ontology/targetAirport>  <http://dbpedia.org/resource/Berlin_Tegel_Airport>\n      }\n    UNION\n      { ?skyteamAllianceAirline\n                  rdf:type              <http://dbpedia.org/ontology/Airline> ;\n                  <http://dbpedia.org/ontology/alliance>  <http://dbpedia.org/resource/SkyTeam>\n      }\n    UNION\n      { <http://dbpedia.org/resource/Yeti_Airlines>\n                  <http://dbpedia.org/ontology/targetAirport>  ?yetiAirport\n      }\n  }\n",
+        "elapsed": 2.2124269008636475,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 2.134213447570801,
+            "LLM_INPUTS": 3611,
+            "LLM_OUTPUTS": 153
+        }
+    },
+    {
+        "question": "What languages are spoken in Pakistan?",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nSELECT DISTINCT  ?president ?languagePhilippines (COUNT(DISTINCT ?languageTurkmenistan) AS ?languageCountTurkmenistan)\nWHERE\n  { ?president  <http://dbpedia.org/property/title>  <http://dbpedia.org/resource/President_of_Pakistan> ;\n              <http://dbpedia.org/property/years>  ?year\n    FILTER ( str(?year) = \"1978\" )\n    <http://dbpedia.org/resource/Philippines>\n              <http://dbpedia.org/ontology/officialLanguage>  ?languagePhilippines .\n    <http://dbpedia.org/resource/Turkmenistan>\n              <http://dbpedia.org/ontology/language>  ?languageTurkmenistan\n  }\nGROUP BY ?president ?languagePhilippines\n",
+        "elapsed": 2.285282611846924,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 2.2097389698028564,
+            "LLM_INPUTS": 2080,
+            "LLM_OUTPUTS": 172
+        }
+    },
+    {
+        "question": "Who is the daughter of Bill Clinton married to?",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nSELECT DISTINCT  ?uri\nWHERE\n  { <http://dbpedia.org/resource/Ingrid_Bergman>\n              <http://dbpedia.org/ontology/child>  ?child .\n    ?child    <http://dbpedia.org/ontology/spouse>  ?uri\n  }\n",
+        "elapsed": 1.0544421672821045,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.9802091121673584,
+            "LLM_INPUTS": 2242,
+            "LLM_OUTPUTS": 60
+        }
+    },
+    {
+        "question": "Who was on the Apollo 11 mission?",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nSELECT DISTINCT  ?uri\nWHERE\n  { ?uri  <http://dbpedia.org/ontology/mission>  <http://dbpedia.org/resource/Apollo_14> }\n",
+        "elapsed": 0.9705095291137695,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.895519495010376,
+            "LLM_INPUTS": 2257,
+            "LLM_OUTPUTS": 44
+        }
+    },
+    {
+        "question": "What is the wavelength of Indigo?",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nSELECT DISTINCT  ?height ?spouse ?fullForm\nWHERE\n  {   { <http://dbpedia.org/resource/Colombo_Lighthouse>\n                  <http://dbpedia.org/ontology/height>  ?height\n      }\n    UNION\n      { <http://dbpedia.org/resource/Ingrid_Bergman>\n                  <http://dbpedia.org/ontology/child>  ?child .\n        ?child    <http://dbpedia.org/property/spouse>  ?spouse\n      }\n    UNION\n      { ?fullForm  <http://dbpedia.org/ontology/abbreviation>  \"ICRO\" }\n  }\n",
+        "elapsed": 4.889179944992065,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 4.81542706489563,
+            "LLM_INPUTS": 1845,
+            "LLM_OUTPUTS": 113
+        }
+    },
+    {
+        "question": "Give me all B-sides of the Ramones.",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nSELECT DISTINCT  ?bside\nWHERE\n  { ?x  <http://dbpedia.org/ontology/musicalArtist>  <http://dbpedia.org/resource/Ramones> ;\n        <http://dbpedia.org/ontology/bSide>  ?bside\n  }\n",
+        "elapsed": 3.302217721939087,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 3.2258801460266113,
+            "LLM_INPUTS": 2197,
+            "LLM_OUTPUTS": 148
+        }
+    },
+    {
+        "question": "Who was called Scarface?",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nSELECT DISTINCT  ?query ?result\nWHERE\n  {   { BIND(\"Give me all actors called Baldwin.\" AS ?query)\n        ?result  <http://xmlns.com/foaf/0.1/surname>  \"Baldwin\"@en\n          { ?result  <http://dbpedia.org/ontology/occupation>  <http://dbpedia.org/resource/Actor> }\n        UNION\n          { ?result  rdf:type  <http://dbpedia.org/ontology/Actor> }\n      }\n    UNION\n      { BIND(\"Which actor played Chewbacca?\" AS ?query)\n        ?actor  <http://dbpedia.org/ontology/portrayer>  <http://dbpedia.org/resource/Chewbacca>\n        BIND(?actor AS ?result)\n      }\n    UNION\n      { BIND(\"Did Arnold Schwarzenegger attend a university?\" AS ?query)\n        <http://dbpedia.org/resource/Arnold_Schwarzenegger>\n                  <http://dbpedia.org/ontology/almaMater>  ?uni .\n        ?uni      rdf:type              <http://dbpedia.org/ontology/University>\n        BIND(\"YES\" AS ?result)\n      }\n  }\nLIMIT   100\n",
+        "elapsed": 7.435746669769287,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 7.362430572509766,
+            "LLM_INPUTS": 2941,
+            "LLM_OUTPUTS": 281
+        }
+    },
+    {
+        "question": "Which rivers flow into the North Sea?",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nSELECT DISTINCT  ?river\nWHERE\n  {   { ?river  rdf:type              <http://dbpedia.org/ontology/River> .\n        ?lake   <http://dbpedia.org/ontology/inflow>  ?river ;\n                rdf:type              <http://dbpedia.org/ontology/Lake> ;\n                <http://dbpedia.org/ontology/country>  <http://dbpedia.org/resource/Germany>\n      }\n    UNION\n      { FILTER EXISTS { <http://dbpedia.org/resource/Isar>\n                                  <http://dbpedia.org/ontology/inflow>  ?lake .\n                        ?lake     rdf:type              <http://dbpedia.org/ontology/Lake>\n                      }\n      }\n    UNION\n      { <http://dbpedia.org/resource/Weser>\n                  <http://dbpedia.org/ontology/city>  ?river .\n        ?river    rdf:type              <http://dbpedia.org/ontology/City>\n      }\n  }\n",
+        "elapsed": 6.332200288772583,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 6.255959749221802,
+            "LLM_INPUTS": 3168,
+            "LLM_OUTPUTS": 122
+        }
+    },
+    {
+        "question": "Where is Fort Knox located?",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nSELECT DISTINCT  ?stateOrVenue\nWHERE\n  {   { <http://dbpedia.org/resource/Fort_Knox>\n                  <http://dbpedia.org/ontology/location>  ?stateOrVenue .\n        ?stateOrVenue\n                  <http://dbpedia.org/ontology/country>  <http://dbpedia.org/resource/United_States>\n      }\n    UNION\n      { <http://dbpedia.org/resource/Mount_McKinley>\n                  <http://dbpedia.org/ontology/wikiPageRedirects>  ?redirect .\n        ?redirect  <http://dbpedia.org/ontology/locatedInArea>  ?stateOrVenue .\n        ?stateOrVenue\n                  rdf:type              <http://dbpedia.org/class/yago/WikicatStatesOfTheUnitedStates>\n      }\n    UNION\n      { <http://dbpedia.org/resource/Boston_Red_Sox>\n                  <http://dbpedia.org/property/ballpark>  ?stateOrVenue\n      }\n  }\n",
+        "elapsed": 2.7188284397125244,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 2.679259777069092,
+            "LLM_INPUTS": 3110,
+            "LLM_OUTPUTS": 199
+        }
+    },
+    {
+        "question": "Which daughters of British earls died at the same place they were born at?",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nSELECT DISTINCT  ?uri\nWHERE\n  {   { ?uri  rdf:type              <http://dbpedia.org/ontology/ChessPlayer> ;\n              <http://dbpedia.org/ontology/birthPlace>  ?place ;\n              <http://dbpedia.org/ontology/deathPlace>  ?place\n      }\n    UNION\n      { <http://dbpedia.org/resource/Juliana_of_the_Netherlands>\n                  <http://dbpedia.org/property/burialPlace>  ?city .\n        ?city     rdf:type              <http://dbpedia.org/ontology/Settlement>\n        BIND(?city AS ?uri)\n      }\n    UNION\n      { ?uri  <http://dbpedia.org/ontology/birthPlace>  <http://dbpedia.org/resource/Vienna> ;\n              <http://dbpedia.org/ontology/deathPlace>  <http://dbpedia.org/resource/Berlin>\n      }\n  }\n",
+        "elapsed": 2.625675678253174,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 2.5513110160827637,
+            "LLM_INPUTS": 3225,
+            "LLM_OUTPUTS": 184
+        }
+    },
+    {
+        "question": "How many emperors did China have?",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nSELECT DISTINCT  ?king ?currency ?company\nWHERE\n  {   { ?king  <http://dbpedia.org/ontology/title>  <http://dbpedia.org/resource/King_of_Rome> }\n    UNION\n      { <http://dbpedia.org/resource/China>\n                  <http://dbpedia.org/ontology/currency>  ?currency\n      }\n    UNION\n      { ?company  rdf:type              <http://dbpedia.org/ontology/Company> ;\n                  <http://dbpedia.org/ontology/industry>  <http://dbpedia.org/resource/Electronics> ;\n                  <http://dbpedia.org/ontology/foundationPlace>  <http://dbpedia.org/resource/Beijing>\n      }\n  }\n",
+        "elapsed": 10.828126192092896,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 10.75222134590149,
+            "LLM_INPUTS": 2623,
+            "LLM_OUTPUTS": 156
+        }
+    },
+    {
+        "question": "What are the names of the Teenage Mutant Ninja Turtles?",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nSELECT DISTINCT  ?uri\nWHERE\n  { ?uri  rdf:type              <http://dbpedia.org/ontology/Person> ;\n          <http://dbpedia.org/ontology/birthPlace>  <http://dbpedia.org/resource/Heraklion>\n  }\n",
+        "elapsed": 5.267623662948608,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 5.218084335327148,
+            "LLM_INPUTS": 3265,
+            "LLM_OUTPUTS": 221
+        }
+    },
+    {
+        "question": "Where does Piccadilly start?",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nSELECT DISTINCT  ?answer\nWHERE\n  {   { <http://dbpedia.org/resource/Mount_McKinley>\n                  <http://dbpedia.org/ontology/wikiPageRedirects>  ?redirect .\n        ?redirect  <http://dbpedia.org/ontology/locatedInArea>  ?answer .\n        ?answer   rdf:type              <http://dbpedia.org/class/yago/WikicatStatesOfTheUnitedStates>\n      }\n    UNION\n      { <http://dbpedia.org/resource/Eiffel_Tower>\n                  <http://dbpedia.org/ontology/architect>  ?architect .\n        ?architect  <http://dbpedia.org/ontology/almaMater>  ?answer\n      }\n    UNION\n      { ?answer  <http://dbpedia.org/ontology/wineProduced>  <http://dbpedia.org/resource/Sparkling_wine> ;\n                 <http://dbpedia.org/ontology/location>  <http://dbpedia.org/resource/France>\n      }\n  }\n",
+        "elapsed": 3.053712844848633,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 2.98313307762146,
+            "LLM_INPUTS": 3308,
+            "LLM_OUTPUTS": 215
+        }
+    },
+    {
+        "question": "What is the name of the university where Obama's wife studied?",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nASK\nWHERE\n  { <http://dbpedia.org/resource/Barack_Obama>\n              <http://dbpedia.org/ontology/spouse>  <http://dbpedia.org/resource/Michelle_Obama>\n  }\n",
+        "elapsed": 0.9705047607421875,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.8939385414123535,
+            "LLM_INPUTS": 2043,
+            "LLM_OUTPUTS": 46
+        }
+    },
+    {
+        "question": "When did Paraguay proclaim its independence?",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nSELECT DISTINCT  ?uri\nWHERE\n  {   { ?uri  <http://dbpedia.org/property/title>  <http://dbpedia.org/resource/President_of_Pakistan> ;\n              <http://dbpedia.org/property/years>  1978\n      }\n    UNION\n      { ?uri  rdf:type              <http://dbpedia.org/ontology/Rocket> ;\n              <http://dbpedia.org/ontology/launchSite>  <http://dbpedia.org/resource/Baikonur_Cosmodrome>\n      }\n    UNION\n      { <http://dbpedia.org/resource/Pope_John_Paul_II>\n                  <http://dbpedia.org/property/successor>  ?uri\n      }\n  }\n",
+        "elapsed": 2.0116946697235107,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.9360172748565674,
+            "LLM_INPUTS": 2534,
+            "LLM_OUTPUTS": 135
+        }
+    },
+    {
+        "question": "How short is the shortest active NBA player?",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nSELECT DISTINCT  ?uri\nWHERE\n  {   { ?uri  rdf:type              <http://dbpedia.org/ontology/BasketballPlayer> ;\n              <http://dbpedia.org/ontology/height>  ?height\n        FILTER ( ?height > 2.0 )\n      }\n    UNION\n      { PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\n        PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n        PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n        PREFIX  owl:  <http://www.w3.org/2002/07/owl#>\n        PREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n        \n        SELECT  ?uri (MAX(?height) AS ?maxHeight)\n        WHERE\n          { ?uri  rdf:type              <http://dbpedia.org/ontology/BasketballPlayer> ;\n                  <http://dbpedia.org/ontology/height>  ?height\n          }\n        GROUP BY ?uri\n      }\n    UNION\n      { ?uri  rdf:type              <http://dbpedia.org/ontology/BasketballPlayer> ;\n              <http://dbpedia.org/ontology/birthDate>  ?birthDate ;\n              <http://dbpedia.org/ontology/highlight>  ?highlight\n        FILTER regex(?highlight, \"MVP\", \"i\")\n      }\n  }\nORDER BY ?birthDate DESC(?birthDate) DESC(?height)\nLIMIT   4\n",
+        "elapsed": 3.1350488662719727,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 3.0863935947418213,
+            "LLM_INPUTS": 2893,
+            "LLM_OUTPUTS": 216
+        }
+    },
+    {
+        "question": "Where did Abraham Lincoln die?",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nSELECT DISTINCT  ?deathPlace ?website ?wife\nWHERE\n  { <http://dbpedia.org/resource/Abraham_Lincoln>\n              <http://dbpedia.org/ontology/deathPlace>  ?deathPlace\n    OPTIONAL\n      { ?deathPlace  <http://dbpedia.org/ontology/website>  ?website }\n    OPTIONAL\n      { <http://dbpedia.org/resource/Abraham_Lincoln>\n                  <http://dbpedia.org/ontology/spouse>  ?wife\n      }\n  }\n",
+        "elapsed": 1.6555895805358887,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.5828547477722168,
+            "LLM_INPUTS": 2101,
+            "LLM_OUTPUTS": 87
+        }
+    },
+    {
+        "question": "When was Jack Wolfskin founded?",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nSELECT DISTINCT  ?date\nWHERE\n  { <http://dbpedia.org/resource/Hells_Angels>\n              <http://dbpedia.org/property/founded>  ?date\n  }\n",
+        "elapsed": 0.9476380348205566,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.8991951942443848,
+            "LLM_INPUTS": 1397,
+            "LLM_OUTPUTS": 34
+        }
+    },
+    {
+        "question": "In which city is the headquarter of Air China?",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nSELECT  (COUNT(DISTINCT ?airline) AS ?airlineCount) (GROUP_CONCAT(DISTINCT ?airport ; separator=', ') AS ?airports) (GROUP_CONCAT(DISTINCT ?allianceAirline ; separator=', ') AS ?allianceAirlines)\nWHERE\n  {   { <http://dbpedia.org/resource/Air_China>\n                  <http://dbpedia.org/ontology/targetAirport>  ?airport\n      }\n    UNION\n      { ?allianceAirline\n                  rdf:type              <http://dbpedia.org/ontology/Airline> ;\n                  <http://dbpedia.org/ontology/alliance>  <http://dbpedia.org/resource/SkyTeam>\n      }\n    UNION\n      { ?airline  rdf:type  <http://dbpedia.org/ontology/Airline> }\n  }\n",
+        "elapsed": 2.2410569190979004,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 2.1822590827941895,
+            "LLM_INPUTS": 2659,
+            "LLM_OUTPUTS": 155
+        }
+    },
+    {
+        "question": "What is the founding year of the brewery that produces Pilsner Urquell?",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nSELECT DISTINCT  ?beer\nWHERE\n  { ?beer  <http://dbpedia.org/property/type>  <http://dbpedia.org/resource/Beer> ;\n           <http://dbpedia.org/ontology/origin>  <http://dbpedia.org/resource/Beer_in_Ireland>\n  }\n",
+        "elapsed": 1.2452166080474854,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.1501412391662598,
+            "LLM_INPUTS": 3185,
+            "LLM_OUTPUTS": 55
+        }
+    },
+    {
+        "question": "When did the Boston Tea Party take place?",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nSELECT DISTINCT  ?uri\nWHERE\n  { <http://dbpedia.org/resource/Boston_Red_Sox>\n              <http://dbpedia.org/property/ballpark>  ?uri\n  }\n",
+        "elapsed": 0.8462812900543213,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.7712011337280273,
+            "LLM_INPUTS": 2105,
+            "LLM_OUTPUTS": 36
+        }
+    },
+    {
+        "question": "Which animals are critically endangered?",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nSELECT DISTINCT  ?host ?isAmphibian ?breed\nWHERE\n  {   { <http://dbpedia.org/resource/BBC_Wildlife_Specials>\n                  <http://dbpedia.org/ontology/presenter>  ?host\n      }\n    UNION\n      { FILTER NOT EXISTS { <http://dbpedia.org/resource/Hylidae>\n                                      <http://dbpedia.org/ontology/class>  <http://dbpedia.org/resource/Amphibian>\n                          }\n        BIND(EXISTS { <http://dbpedia.org/resource/Hylidae>\n                                <http://dbpedia.org/ontology/class>  <http://dbpedia.org/resource/Amphibian>\n                    } AS ?isAmphibian)\n      }\n    UNION\n      { ?breed  <http://dbpedia.org/property/breed>  <http://dbpedia.org/resource/German_Shepherd> }\n  }\n",
+        "elapsed": 6.361810922622681,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 6.287729263305664,
+            "LLM_INPUTS": 2030,
+            "LLM_OUTPUTS": 145
+        }
+    },
+    {
+        "question": "Which politicians were married to a German?",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nSELECT DISTINCT  ?answer\nWHERE\n  {   { ?answer  rdf:type              <http://dbpedia.org/ontology/Monarch> ;\n                 <http://dbpedia.org/ontology/spouse>  ?spouse\n          { ?spouse  <http://dbpedia.org/ontology/birthPlace>  <http://dbpedia.org/resource/Germany> }\n        UNION\n          { ?spouse  <http://dbpedia.org/ontology/birthPlace>  ?place .\n            ?place   <http://dbpedia.org/ontology/country>  <http://dbpedia.org/resource/Germany>\n          }\n      }\n    UNION\n      { <http://dbpedia.org/resource/Jacques_Chirac>\n                  <http://dbpedia.org/ontology/spouse>  ?answer\n      }\n    UNION\n      { <http://dbpedia.org/resource/Abraham_Lincoln>\n                  <http://dbpedia.org/ontology/spouse>  ?answer\n      }\n  }\n",
+        "elapsed": 2.5730016231536865,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 2.4958019256591797,
+            "LLM_INPUTS": 3036,
+            "LLM_OUTPUTS": 165
+        }
+    },
+    {
+        "question": "How big is the earth's diameter?",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nSELECT  ?largestCountry ?longestRiver ?michaelJordanHeight\nWHERE\n  { { PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\n      PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n      PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n      PREFIX  owl:  <http://www.w3.org/2002/07/owl#>\n      PREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n      \n      SELECT DISTINCT  ?largestCountry\n      WHERE\n        { ?largestCountry\n                    rdf:type              <http://dbpedia.org/ontology/Country> ;\n                    <http://dbpedia.org/ontology/areaTotal>  ?areaTotal\n        }\n      ORDER BY DESC(?areaTotal)\n      LIMIT   1\n    }\n    { PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\n      PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n      PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n      PREFIX  owl:  <http://www.w3.org/2002/07/owl#>\n      PREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n      \n      SELECT DISTINCT  ?longestRiver\n      WHERE\n        { ?longestRiver\n                    rdf:type              <http://dbpedia.org/ontology/BodyOfWater> ;\n                    <http://dbpedia.org/ontology/length>  ?length\n        }\n      ORDER BY DESC(?length)\n      LIMIT   1\n    }\n    { PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\n      PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n      PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n      PREFIX  owl:  <http://www.w3.org/2002/07/owl#>\n      PREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n      \n      SELECT DISTINCT  ?michaelJordanHeight\n      WHERE\n        { <http://dbpedia.org/resource/Michael_Jordan>\n                    <http://dbpedia.org/ontology/height>  ?michaelJordanHeight\n        }\n      LIMIT   1\n    }\n  }\n",
+        "elapsed": 2.8593342304229736,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 2.7833471298217773,
+            "LLM_INPUTS": 2324,
+            "LLM_OUTPUTS": 186
+        }
+    },
+    {
+        "question": "Is the wife of President Obama called Michelle?",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nSELECT DISTINCT  ?wife\nWHERE\n  {   { <http://dbpedia.org/resource/Barack_Obama>\n                  <http://dbpedia.org/ontology/spouse>  ?wife\n      }\n    UNION\n      { <http://dbpedia.org/resource/Abraham_Lincoln>\n                  <http://dbpedia.org/ontology/spouse>  ?wife\n      }\n  }\n",
+        "elapsed": 1.646815538406372,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.5746819972991943,
+            "LLM_INPUTS": 2300,
+            "LLM_OUTPUTS": 93
+        }
+    },
+    {
+        "question": "Which U.S. state has the abbreviation MN?",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nSELECT DISTINCT  ?uri\nWHERE\n  {   { <http://dbpedia.org/resource/Mount_McKinley>\n                  <http://dbpedia.org/ontology/wikiPageRedirects>  ?x .\n        ?x        <http://dbpedia.org/ontology/locatedInArea>  ?uri .\n        ?uri      rdf:type              <http://dbpedia.org/class/yago/WikicatStatesOfTheUnitedStates>\n      }\n    UNION\n      { ?uri  rdf:type              <http://dbpedia.org/class/yago/WikicatStatesOfTheUnitedStates> ;\n              <http://dbpedia.org/property/mineral>  ?mineral\n        FILTER regex(?mineral, \"gold\", \"i\")\n      }\n  }\n",
+        "elapsed": 3.2639944553375244,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 3.217195510864258,
+            "LLM_INPUTS": 3107,
+            "LLM_OUTPUTS": 267
+        }
+    },
+    {
+        "question": "When did Muhammad die?",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nSELECT DISTINCT  ?deathPlace ?book ?deathDate\nWHERE\n  { OPTIONAL\n      { <http://dbpedia.org/resource/Abraham_Lincoln>\n                  <http://dbpedia.org/ontology/deathPlace>  ?deathPlace\n      }\n    OPTIONAL\n      { ?book  rdf:type              <http://dbpedia.org/ontology/Book> ;\n               <http://dbpedia.org/ontology/author>  <http://dbpedia.org/resource/Muhammad_Ali>\n      }\n    OPTIONAL\n      { <http://dbpedia.org/resource/Olof_Palme>\n                  <http://dbpedia.org/ontology/deathDate>  ?deathDate\n      }\n  }\n",
+        "elapsed": 1.8197286128997803,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.742612361907959,
+            "LLM_INPUTS": 2285,
+            "LLM_OUTPUTS": 98
+        }
+    },
+    {
+        "question": "What is the atmosphere of the Moon composed of?",
+        "sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> \nPREFIX res: <http://dbpedia.org/resource/> \nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> \n\nSELECT DISTINCT ?answer WHERE {\n  { \n    ?moon dbo:satelliteOf res:Jupiter ; dbo:mass ?mass .\n    FILTER NOT EXISTS {\n      ?other dbo:satelliteOf res:Jupiter ; dbo:mass ?otherMass .\n      FILTER(?otherMass < ?mass)\n    }\n    BIND(?mass AS ?answer)\n  }\n  UNION\n  {\n    res:Titanic_(1997_film) dbo:musicComposer ?composer .\n    BIND(?composer AS ?answer)\n  }\n  UNION\n  {\n    ?launchPad rdf:type dbo:LaunchPad ; dbo:operator res:NASA .\n    BIND(?launchPad AS ?answer)\n  }\n}",
+        "elapsed": 8.393007040023804,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 8.343796491622925,
+            "LLM_INPUTS": 2488,
+            "LLM_OUTPUTS": 194
+        }
+    },
+    {
+        "question": "Who is the governor of Texas?",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nSELECT DISTINCT  ?person ?city\nWHERE\n  {   { <http://dbpedia.org/resource/Wyoming>\n                  <http://dbpedia.org/property/governor>  ?person\n        BIND(\"Wyoming\" AS ?city)\n      }\n    UNION\n      { <http://dbpedia.org/resource/Tel_Aviv>\n                  <http://dbpedia.org/ontology/leaderName>  ?person\n        BIND(\"Tel Aviv\" AS ?city)\n      }\n    UNION\n      { <http://dbpedia.org/resource/New_York_City>\n                  <http://dbpedia.org/ontology/leaderName>  ?person\n        BIND(\"New York City\" AS ?city)\n      }\n  }\n",
+        "elapsed": 2.2789244651794434,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 2.234750270843506,
+            "LLM_INPUTS": 1780,
+            "LLM_OUTPUTS": 131
+        }
+    },
+    {
+        "question": "Which movies did Kurosawa direct?",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nSELECT DISTINCT  ?uri\nWHERE\n  { ?uri  <http://dbpedia.org/ontology/director>  <http://dbpedia.org/resource/Clint_Eastwood> ;\n          <http://dbpedia.org/ontology/starring>  <http://dbpedia.org/resource/Clint_Eastwood>\n  }\n",
+        "elapsed": 1.4253103733062744,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.3487660884857178,
+            "LLM_INPUTS": 2215,
+            "LLM_OUTPUTS": 62
+        }
+    },
+    {
+        "question": "What was the name of the famous battle in 1836 in San Antonio?",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nSELECT DISTINCT  ?conflict_Lawrence ?conflict_Jackson ?earlier_Crisis\nWHERE\n  { OPTIONAL\n      { <http://dbpedia.org/resource/T._E._Lawrence>\n                  <http://dbpedia.org/ontology/battle>  ?conflict_Lawrence\n      }\n    OPTIONAL\n      { <http://dbpedia.org/resource/Andrew_Jackson>\n                  <http://dbpedia.org/ontology/battle>  ?conflict_Jackson\n      }\n    OPTIONAL\n      { <http://dbpedia.org/resource/Cuban_Missile_Crisis>\n                  <http://dbpedia.org/ontology/date>  ?dateCrisis .\n        <http://dbpedia.org/resource/Bay_of_Pigs_Invasion>\n                  <http://dbpedia.org/ontology/date>  ?dateBay\n        BIND(if(( ?dateCrisis < ?dateBay ), \"true\", \"false\") AS ?earlier_Crisis)\n      }\n  }\n",
+        "elapsed": 4.4629130363464355,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 4.387516260147095,
+            "LLM_INPUTS": 2306,
+            "LLM_OUTPUTS": 189
+        }
+    },
+    {
+        "question": "Give me the official websites of actors of the television show Charmed.",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nSELECT DISTINCT  ?date\nWHERE\n  { <http://dbpedia.org/resource/Charmed>\n              <http://dbpedia.org/ontology/starring>  ?actor .\n    ?actor    <http://dbpedia.org/ontology/birthDate>  ?date\n  }\n",
+        "elapsed": 1.3231194019317627,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.2449522018432617,
+            "LLM_INPUTS": 3531,
+            "LLM_OUTPUTS": 58
+        }
+    },
+    {
+        "question": "How many calories does a baguette have?",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nSELECT DISTINCT  ?uri\nWHERE\n  { ?uri  rdf:type  <http://dbpedia.org/class/yago/WikicatEatingDisorders> }\n",
+        "elapsed": 0.9993844032287598,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.9267227649688721,
+            "LLM_INPUTS": 1932,
+            "LLM_OUTPUTS": 28
+        }
+    },
+    {
+        "question": "Give me all libraries established before 1400.",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nSELECT DISTINCT  ?uri\nWHERE\n  { ?uri  rdf:type              <http://dbpedia.org/ontology/Library> ;\n          <http://dbpedia.org/ontology/established>  ?year\n    FILTER ( ?year < 1400 )\n  }\n",
+        "elapsed": 1.3566973209381104,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.2824444770812988,
+            "LLM_INPUTS": 2942,
+            "LLM_OUTPUTS": 61
+        }
+    },
+    {
+        "question": "Give me all Frisian islands that belong to the Netherlands.",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nSELECT DISTINCT  ?uri\nWHERE\n  {   { ?uri  rdf:type              <http://dbpedia.org/ontology/Island> ;\n              <http://dbpedia.org/ontology/country>  <http://dbpedia.org/resource/Japan>\n      }\n    UNION\n      {   { ?uri  rdf:type              <http://dbpedia.org/ontology/Lake> ;\n                  <http://dbpedia.org/ontology/country>  <http://dbpedia.org/resource/Denmark>\n          }\n        UNION\n          { ?uri  rdf:type  <http://dbpedia.org/class/yago/LakesOfDenmark> }\n      }\n    UNION\n      { <http://dbpedia.org/resource/Netherlands>\n                  <http://dbpedia.org/ontology/leader>  ?uri .\n        ?uri      rdf:type              <http://dbpedia.org/ontology/Royalty>\n      }\n  }\n",
+        "elapsed": 2.5371556282043457,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 2.4598402976989746,
+            "LLM_INPUTS": 3559,
+            "LLM_OUTPUTS": 147
+        }
+    },
+    {
+        "question": "Which museum exhibits The Scream by Munch?",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nSELECT  (COUNT(DISTINCT ?uri) AS ?count)\nWHERE\n  { ?uri  rdf:type              <http://dbpedia.org/ontology/Museum> ;\n          <http://dbpedia.org/ontology/location>  <http://dbpedia.org/resource/Paris>\n  }\n",
+        "elapsed": 1.2384278774261475,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.160797357559204,
+            "LLM_INPUTS": 3808,
+            "LLM_OUTPUTS": 53
+        }
+    },
+    {
+        "question": "When was the De Beers company founded?",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nSELECT DISTINCT  ?beer ?foundedDate ?city\nWHERE\n  {   { ?beer  <http://dbpedia.org/property/type>  <http://dbpedia.org/resource/Beer> ;\n               <http://dbpedia.org/ontology/origin>  <http://dbpedia.org/resource/Beer_in_Ireland>\n      }\n    UNION\n      { <http://dbpedia.org/resource/Hells_Angels>\n                  <http://dbpedia.org/property/founded>  ?foundedDate\n      }\n    UNION\n      { <http://dbpedia.org/resource/Heineken>\n                  <http://dbpedia.org/ontology/manufacturer>  ?manufacturer .\n        ?manufacturer\n                  <http://dbpedia.org/ontology/locationCity>  ?city\n      }\n  }\n",
+        "elapsed": 2.11820912361145,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 2.042726516723633,
+            "LLM_INPUTS": 2367,
+            "LLM_OUTPUTS": 127
+        }
+    },
+    {
+        "question": "Who became president after JFK died?",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nSELECT DISTINCT  ?successor ?deathPlace ?vicePresident\nWHERE\n  { OPTIONAL\n      { <http://dbpedia.org/resource/John_F._Kennedy>\n                  <http://dbpedia.org/ontology/successor>  ?successor\n      }\n    OPTIONAL\n      { <http://dbpedia.org/resource/John_F._Kennedy>\n                  <http://dbpedia.org/ontology/deathPlace>  ?deathPlace\n      }\n    OPTIONAL\n      { <http://dbpedia.org/resource/John_F._Kennedy>\n                  <http://dbpedia.org/ontology/vicePresident>  ?vicePresident\n      }\n  }\n",
+        "elapsed": 1.9833190441131592,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.9356086254119873,
+            "LLM_INPUTS": 1914,
+            "LLM_OUTPUTS": 93
+        }
+    },
+    {
+        "question": "Who are the parents of the wife of Juan Carlos I?",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nSELECT DISTINCT  ?uri\nWHERE\n  { <http://dbpedia.org/resource/Juan_Carlos_I>\n              <http://dbpedia.org/ontology/spouse>  ?uri\n  }\n",
+        "elapsed": 1.0339295864105225,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.9865844249725342,
+            "LLM_INPUTS": 2022,
+            "LLM_OUTPUTS": 44
+        }
+    },
+    {
+        "question": "Who is the novelist of the work a song of ice and fire?",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nSELECT DISTINCT  ?author_or_writer\nWHERE\n  {   { <http://dbpedia.org/resource/Game_of_Thrones>\n                  <http://dbpedia.org/ontology/composer>  ?author_or_writer\n      }\n    UNION\n      { ?author   <http://dbpedia.org/ontology/author>  <http://dbpedia.org/resource/The_Fault_in_Our_Stars> .\n        ?author_or_writer\n                  <http://dbpedia.org/ontology/author>  ?author\n        FILTER ( ?author_or_writer != <http://dbpedia.org/resource/The_Fault_in_Our_Stars> )\n      }\n    UNION\n      { <http://dbpedia.org/resource/Hotel_California>\n                  <http://dbpedia.org/ontology/writer>  ?author_or_writer\n      }\n  }\n",
+        "elapsed": 8.180457592010498,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 8.10677695274353,
+            "LLM_INPUTS": 1876,
+            "LLM_OUTPUTS": 129
+        }
+    },
+    {
+        "question": "In which studio did the Beatles record their first album?",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nSELECT  ?label\nWHERE\n  { ?album  rdf:type              <http://dbpedia.org/ontology/Album> ;\n            <http://dbpedia.org/ontology/artist>  <http://dbpedia.org/resource/The_Beatles> ;\n            <http://dbpedia.org/ontology/releaseDate>  ?date ;\n            <http://dbpedia.org/ontology/recordLabel>  ?label\n  }\nORDER BY ASC(?date)\nLIMIT   1\n",
+        "elapsed": 8.294693231582642,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 8.212268114089966,
+            "LLM_INPUTS": 3332,
+            "LLM_OUTPUTS": 115
+        }
+    },
+    {
+        "question": "Which beer brewing companies are located in North-Rhine Westphalia?",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nSELECT  ?totalArea ?heinekenCity ?brewery\nWHERE\n  { <http://dbpedia.org/resource/North_Rhine-Westphalia>\n              <http://dbpedia.org/ontology/areaTotal>  ?totalArea\n    OPTIONAL\n      { <http://dbpedia.org/resource/Heineken>\n                  <http://dbpedia.org/ontology/manufacturer>  ?manufacturer .\n        ?manufacturer\n                  <http://dbpedia.org/ontology/locationCity>  ?heinekenCity\n      }\n    { ?brewery  rdf:type  <http://dbpedia.org/ontology/Brewery>\n        { ?brewery  <http://dbpedia.org/ontology/location>  <http://dbpedia.org/resource/Australia> }\n      UNION\n        { ?brewery  <http://dbpedia.org/ontology/location>  ?loc .\n          ?loc      <http://dbpedia.org/ontology/country>  <http://dbpedia.org/resource/Australia>\n        }\n    }\n  }\n",
+        "elapsed": 5.4656383991241455,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 5.4166579246521,
+            "LLM_INPUTS": 3155,
+            "LLM_OUTPUTS": 145
+        }
+    },
+    {
+        "question": "When did princess Diana die?",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nSELECT  ?julianaBurialCity ?shakespeareDeathDate ?lincolnDeathPlace\nWHERE\n  { <http://dbpedia.org/resource/Juliana_of_the_Netherlands>\n              <http://dbpedia.org/ontology/burialPlace>  ?julianaBurialPlace .\n    ?julianaBurialPlace\n              rdf:type              <http://dbpedia.org/ontology/Settlement>\n    BIND(?julianaBurialPlace AS ?julianaBurialCity)\n    <http://dbpedia.org/resource/William_Shakespeare>\n              <http://dbpedia.org/ontology/deathDate>  ?shakespeareDeathDate .\n    <http://dbpedia.org/resource/Abraham_Lincoln>\n              <http://dbpedia.org/ontology/deathPlace>  ?lincolnDeathPlace\n  }\n",
+        "elapsed": 2.5855534076690674,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 2.5187196731567383,
+            "LLM_INPUTS": 2450,
+            "LLM_OUTPUTS": 136
+        }
+    },
+    {
+        "question": "Who founded Intel?",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nSELECT DISTINCT  ?query ?answer\nWHERE\n  {   { ?query  rdf:type              <http://dbpedia.org/ontology/Company> ;\n                <http://dbpedia.org/ontology/industry>  <http://dbpedia.org/resource/Electronics> ;\n                <http://dbpedia.org/ontology/foundationPlace>  <http://dbpedia.org/resource/Beijing>\n        BIND(\"Which electronics companies were founded in Beijing?\" AS ?question)\n        BIND(?query AS ?answer)\n      }\n    UNION\n      { BIND(\"When were the Hells Angels founded?\" AS ?question)\n        <http://dbpedia.org/resource/Hells_Angels>\n                  <http://dbpedia.org/ontology/founded>  ?answer\n        BIND(<http://dbpedia.org/resource/Hells_Angels> AS ?query)\n      }\n    UNION\n      { <http://dbpedia.org/resource/Vatican_Television_Center>\n                  <http://dbpedia.org/ontology/foundedBy>  ?answer .\n        ?answer   rdf:type              <http://dbpedia.org/ontology/Pope>\n        BIND(\"Who was the pope that founded the Vatican Television?\" AS ?question)\n        BIND(?answer AS ?query)\n      }\n  }\n",
+        "elapsed": 3.9081411361694336,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 3.8310294151306152,
+            "LLM_INPUTS": 3192,
+            "LLM_OUTPUTS": 258
+        }
+    },
+    {
+        "question": "Who is the youngest player in the Premier League?",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nSELECT DISTINCT  ?uri\nWHERE\n  {   { ?uri  rdf:type              <http://dbpedia.org/ontology/DartsPlayer> ;\n              <http://dbpedia.org/ontology/birthDate>  ?date\n      }\n    UNION\n      { ?uri  rdf:type              <http://dbpedia.org/ontology/BasketballPlayer> ;\n              <http://dbpedia.org/ontology/birthDate>  ?date ;\n              <http://dbpedia.org/ontology/highlights>  ?h\n        FILTER regex(str(?h), \"MVP\", \"i\")\n      }\n    UNION\n      { ?uri  rdf:type              <http://dbpedia.org/ontology/SoccerClub> ;\n              <http://dbpedia.org/ontology/league>  <http://dbpedia.org/resource/Premier_League>\n      }\n  }\nORDER BY DESC(?date)\nLIMIT   4\n",
+        "elapsed": 3.1276044845581055,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 3.050609827041626,
+            "LLM_INPUTS": 3060,
+            "LLM_OUTPUTS": 163
+        }
+    },
+    {
+        "question": "Which instruments does Cat Stevens play?",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nSELECT DISTINCT  ?question ?answer\nWHERE\n  {   { BIND(\"Which instruments does Cat Stevens play?\" AS ?question)\n        <http://dbpedia.org/resource/Cat_Stevens>\n                  <http://dbpedia.org/ontology/instrument>  ?answer\n      }\n    UNION\n      { BIND(\"Give me a list of all bandleaders that play trumpet.\" AS ?question)\n        ?answer  <http://dbpedia.org/ontology/occupation>  <http://dbpedia.org/resource/Bandleader> ;\n                 <http://dbpedia.org/ontology/instrument>  <http://dbpedia.org/resource/Trumpet>\n      }\n    UNION\n      { BIND(\"In which year was Rachel Stevens born?\" AS ?question)\n        <http://dbpedia.org/resource/Rachel_Stevens>\n                  <http://dbpedia.org/ontology/birthYear>  ?answer\n      }\n  }\nORDER BY ?question\n",
+        "elapsed": 2.953538656234741,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 2.8797483444213867,
+            "LLM_INPUTS": 2232,
+            "LLM_OUTPUTS": 155
+        }
+    },
+    {
+        "question": "How many rivers and lakes are in South Carolina?",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nSELECT DISTINCT  ?river\nWHERE\n  {   { ?river  rdf:type              <http://dbpedia.org/ontology/River> .\n        ?lake   rdf:type              <http://dbpedia.org/ontology/Lake> ;\n                <http://dbpedia.org/ontology/inflow>  ?river ;\n                <http://dbpedia.org/ontology/country>  <http://dbpedia.org/resource/Germany>\n      }\n    UNION\n      { ?river  rdf:type  <http://dbpedia.org/ontology/River> }\n    UNION\n      { ?lake  rdf:type              <http://dbpedia.org/ontology/Lake> ;\n               <http://dbpedia.org/ontology/country>  <http://dbpedia.org/resource/Denmark>\n        BIND(?lake AS ?river)\n      }\n  }\nORDER BY DESC(( ?river = ?river ))\nLIMIT   100\n",
+        "elapsed": 2.965012311935425,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 2.9160923957824707,
+            "LLM_INPUTS": 4120,
+            "LLM_OUTPUTS": 179
+        }
+    },
+    {
+        "question": "Who was called Rodzilla?",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nSELECT DISTINCT  ?personCalledMary ?starInSpanishMovies ?arnoldAttendedUniversity\nWHERE\n  {   { <http://dbpedia.org/resource/Abraham_Lincoln>\n                  <http://dbpedia.org/ontology/spouse>  ?spouse .\n        ?spouse   rdfs:label            ?labelSpouse\n        FILTER langMatches(lang(?labelSpouse), \"EN\")\n        BIND(if(regex(?labelSpouse, \"^Mary\", \"i\"), true, false) AS ?personCalledMary)\n      }\n    UNION\n      { ?film  rdf:type              <http://dbpedia.org/ontology/Film> ;\n               <http://dbpedia.org/ontology/country>  <http://dbpedia.org/resource/Spain> ;\n               <http://dbpedia.org/ontology/producer>  <http://dbpedia.org/resource/Benicio_del_Toro> ;\n               <http://dbpedia.org/ontology/starring>  ?star .\n        ?star  rdf:type              <http://dbpedia.org/ontology/Person>\n        BIND(?star AS ?starInSpanishMovies)\n      }\n    UNION\n      { <http://dbpedia.org/resource/Arnold_Schwarzenegger>\n                  <http://dbpedia.org/ontology/almaMater>  ?uni .\n        ?uni      rdf:type              <http://dbpedia.org/ontology/University>\n        BIND(true AS ?arnoldAttendedUniversity)\n      }\n  }\nLIMIT   10\n",
+        "elapsed": 6.382109642028809,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 6.297806739807129,
+            "LLM_INPUTS": 4067,
+            "LLM_OUTPUTS": 279
+        }
+    },
+    {
+        "question": "Give me the capitals of all countries in Africa.",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nSELECT DISTINCT  ?capital\nWHERE\n  { <http://dbpedia.org/resource/Himalayas>\n              <http://dbpedia.org/ontology/country>  ?country .\n    ?country  <http://dbpedia.org/ontology/capital>  ?capital\n  }\n",
+        "elapsed": 1.4041543006896973,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.328223705291748,
+            "LLM_INPUTS": 2313,
+            "LLM_OUTPUTS": 52
+        }
+    },
+    {
+        "question": "Which bridges are of the same type as the Manhattan Bridge?",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nSELECT DISTINCT  ?bridge ?river ?designer\nWHERE\n  {   { ?bridge  rdf:type              <http://dbpedia.org/ontology/Bridge> ;\n                 <http://dbpedia.org/ontology/crosses>  <http://dbpedia.org/resource/Seine>\n      }\n    UNION\n      { <http://dbpedia.org/resource/Brooklyn_Bridge>\n                  <http://dbpedia.org/ontology/crosses>  ?river\n      }\n    UNION\n      { <http://dbpedia.org/resource/Brooklyn_Bridge>\n                  <http://dbpedia.org/ontology/architect>  ?designer\n      }\n  }\n",
+        "elapsed": 2.1250596046447754,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 2.0502469539642334,
+            "LLM_INPUTS": 2229,
+            "LLM_OUTPUTS": 99
+        }
+    },
+    {
+        "question": "How many companies were founded by the founder of Facebook?",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nSELECT DISTINCT  ?uri\nWHERE\n  {   { <http://dbpedia.org/resource/Facebook>\n                  <http://dbpedia.org/ontology/foundedBy>  ?uri\n      }\n    UNION\n      { ?uri      rdf:type              <http://dbpedia.org/ontology/Software> .\n        ?company  rdf:type              <http://dbpedia.org/ontology/Company> .\n        ?uri      <http://dbpedia.org/ontology/developer>  ?company .\n        ?company  <http://dbpedia.org/ontology/foundationPlace>  <http://dbpedia.org/resource/California>\n      }\n    UNION\n      { ?uri  rdf:type  <http://dbpedia.org/ontology/Company>\n          { ?uri  <http://dbpedia.org/ontology/numberOfEmployees>  ?n }\n        UNION\n          { ?uri  <http://dbpedia.org/property/numEmployees>  ?n }\n        FILTER ( ?n > 1000000 )\n      }\n  }\n",
+        "elapsed": 7.043558597564697,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 6.964062452316284,
+            "LLM_INPUTS": 3419,
+            "LLM_OUTPUTS": 205
+        }
+    },
+    {
+        "question": "Show me hiking trails in the Grand Canyon where there's no danger of flash floods.",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nSELECT DISTINCT  ?uri\nWHERE\n  { ?uri  rdf:type              <http://dbpedia.org/ontology/Volcano> ;\n          <http://dbpedia.org/ontology/locatedInArea>  <http://dbpedia.org/resource/Japan> ;\n          <http://dbpedia.org/ontology/eruptionYear>  ?date\n    FILTER ( year(?date) >= 2000 )\n  }\n",
+        "elapsed": 2.83270001411438,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 2.7848713397979736,
+            "LLM_INPUTS": 3473,
+            "LLM_OUTPUTS": 75
+        }
+    },
+    {
+        "question": "Which book has the most pages?",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nSELECT DISTINCT  ?uri\nWHERE\n  {   { <http://dbpedia.org/resource/War_and_Peace>\n                  <http://dbpedia.org/ontology/numberOfPages>  ?pages\n        BIND(<http://dbpedia.org/resource/War_and_Peace> AS ?uri)\n      }\n    UNION\n      { ?uri  rdf:type              <http://dbpedia.org/ontology/Book> ;\n              <http://dbpedia.org/ontology/author>  <http://dbpedia.org/resource/William_Goldman> ;\n              <http://dbpedia.org/ontology/numberOfPages>  ?pages\n        FILTER ( ?pages > 300 )\n      }\n    UNION\n      { ?uri  rdf:type              <http://dbpedia.org/ontology/Book> ;\n              <http://dbpedia.org/ontology/author>  <http://dbpedia.org/resource/Danielle_Steel>\n      }\n  }\n",
+        "elapsed": 3.821467161178589,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 3.7433743476867676,
+            "LLM_INPUTS": 2959,
+            "LLM_OUTPUTS": 164
+        }
+    },
+    {
+        "question": "What is the largest state in the United States?",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nSELECT DISTINCT  ?largestCity ?largestMetro ?densestState\nWHERE\n  { <http://dbpedia.org/resource/United_States>\n              <http://dbpedia.org/ontology/largestCity>  ?largestCity .\n    <http://dbpedia.org/resource/Washington_(state)>\n              <http://dbpedia.org/property/largestmetro>  ?largestMetro .\n    ?densestState\n              rdf:type              <http://dbpedia.org/class/yago/WikicatStatesOfTheUnitedStates> ;\n              <http://dbpedia.org/property/densityrank>  ?rank\n  }\nORDER BY ASC(?rank)\nLIMIT   1\n",
+        "elapsed": 6.625680923461914,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 6.549409627914429,
+            "LLM_INPUTS": 2313,
+            "LLM_OUTPUTS": 168
+        }
+    },
+    {
+        "question": "Give me the websites of companies with more than 500000 employees.",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nSELECT  ?company ?employees\nWHERE\n  {   { ?company  rdf:type  <http://dbpedia.org/ontology/Company>\n          { ?company  <http://dbpedia.org/ontology/numberOfEmployees>  ?employees }\n        UNION\n          { ?company  <http://dbpedia.org/property/numEmployees>  ?employees }\n        FILTER ( ?employees > 1000000 )\n      }\n    UNION\n      { VALUES ?company { <http://dbpedia.org/resource/Google> <http://dbpedia.org/resource/IBM> }\n          { ?company  <http://dbpedia.org/ontology/numberOfEmployees>  ?employees }\n        UNION\n          { ?company  <http://dbpedia.org/property/numEmployees>  ?employees }\n      }\n  }\n",
+        "elapsed": 3.3083016872406006,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 3.2325029373168945,
+            "LLM_INPUTS": 2306,
+            "LLM_OUTPUTS": 164
+        }
+    },
+    {
+        "question": "What were the names of the three ships by Columbus?",
+        "sparql": "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX  owl:  <http://www.w3.org/2002/07/owl#>\nPREFIX  dc:   <http://purl.org/dc/elements/1.1/>\n\nSELECT DISTINCT  ?uri\nWHERE\n  {   { ?uri  <http://dbpedia.org/property/shipNamesake>  <http://dbpedia.org/resource/Benjamin_Franklin> }\n    UNION\n      { ?uri  rdf:type              <http://dbpedia.org/ontology/Rocket> ;\n              <http://dbpedia.org/ontology/launchSite>  <http://dbpedia.org/resource/Baikonur_Cosmodrome>\n      }\n    UNION\n      { ?uri  <http://dbpedia.org/property/launchPad>  <http://dbpedia.org/resource/Baikonur_Cosmodrome> }\n  }\n",
+        "elapsed": 2.443056106567383,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 2.3828887939453125,
+            "LLM_INPUTS": 2402,
+            "LLM_OUTPUTS": 123
+        }
+    }
+]

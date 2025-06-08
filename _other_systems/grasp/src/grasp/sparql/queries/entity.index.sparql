@@ -1,0 +1,32 @@
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT
+  ?id
+  (SAMPLE(?label) AS ?main_label)
+  (GROUP_CONCAT(DISTINCT ?alias; SEPARATOR=";;;") AS ?aliases)
+WHERE {
+  # Get ids and their frequencies for score
+  {
+    SELECT ?id (SUM(?freq) AS ?total_freq) WHERE {
+      { SELECT ?id ("SUB" AS ?pos) (COUNT(?id) AS ?freq) WHERE { ?id ?p ?o } GROUP BY ?id } 
+      UNION
+      { SELECT ?id ("OBJ" AS ?pos) (COUNT(?id) AS ?freq) WHERE { ?s ?p ?id . FILTER(ISIRI(?id)) } GROUP BY ?id }
+    } GROUP BY ?id
+  }
+
+  # Get label
+  OPTIONAL {
+    ?id rdfs:label ?label
+    FILTER(LANG(?label) = "en" || LANG(?label) = "" || DATATYPE(?label) = xsd:string)
+  }
+
+  # Get aliases
+  OPTIONAL {
+    ?id skos:altLabel ?alias
+    FILTER(LANG(?alias) = "en" || LANG(?alias) = "" || DATATYPE(?alias) = xsd:string)
+  }
+}
+GROUP BY ?id
+ORDER BY DESC(MAX(?total_freq))

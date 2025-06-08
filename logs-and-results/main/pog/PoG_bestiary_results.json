@@ -1,0 +1,1752 @@
+[
+    {
+        "question": "which creatures not speaking draconic language do have chaotic good alignment?",
+        "results": "ERROR_EMPTY",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 140.3154740333557,
+            "SPARQL_CALLS": 1794,
+            "SPARQL_TIME": 127.46378016471863,
+            "LLM_CALLS": 1,
+            "LLM_INPUTS": 441,
+            "LLM_OUTPUTS": 76,
+            "LLM_TIME": 2.3904776573181152
+        }
+    },
+    {
+        "question": "does Caypup have more special abilities than Aasimar?",
+        "results": "ERROR",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 180.1031973361969,
+            "SPARQL_CALLS": 2648,
+            "SPARQL_TIME": 168.19604682922363,
+            "LLM_CALLS": 1,
+            "LLM_INPUTS": 438,
+            "LLM_OUTPUTS": 75,
+            "LLM_TIME": 1.7002804279327393
+        }
+    },
+    {
+        "question": "how many creatures with non-neutral alignment do speak treant language?",
+        "results": "ERROR",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 180.10257697105408,
+            "SPARQL_CALLS": 2452,
+            "SPARQL_TIME": 169.80976366996765,
+            "LLM_CALLS": 1,
+            "LLM_INPUTS": 496,
+            "LLM_OUTPUTS": 211,
+            "LLM_TIME": 4.518208980560303
+        }
+    },
+    {
+        "question": "what spells Aasimar and Caypup do have in common?",
+        "results": "ERROR",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 180.01771664619446,
+            "SPARQL_CALLS": 2684,
+            "SPARQL_TIME": 169.98471856117249,
+            "LLM_CALLS": 1,
+            "LLM_INPUTS": 439,
+            "LLM_OUTPUTS": 96,
+            "LLM_TIME": 2.0936763286590576
+        }
+    },
+    {
+        "question": "is the number of creatures speaking both abyssal and aklo languages greater than infernal and terran?",
+        "results": "ERROR",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 180.10286259651184,
+            "SPARQL_CALLS": 2660,
+            "SPARQL_TIME": 169.96315598487854,
+            "LLM_CALLS": 1,
+            "LLM_INPUTS": 510,
+            "LLM_OUTPUTS": 130,
+            "LLM_TIME": 2.0677671432495117
+        }
+    },
+    {
+        "question": "what is the most common alignment type?",
+        "results": "ERROR",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 0.00618290901184082,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0.0,
+            "LLM_CALLS": 0,
+            "LLM_INPUTS": 0,
+            "LLM_OUTPUTS": 0,
+            "LLM_TIME": 0.0
+        }
+    },
+    {
+        "question": "how many types of robots are among creatures?",
+        "results": "answer: {3}  \nreason: Given the path {Beast} -> {is a type of} -> {creature}, we know that Beast is a subtype of creature. The path {creature} -> {includes} -> {robots (subtypes)} indicates that robots are included as subtypes among creatures. Finally, the path {robots (subtypes)} -> {count} -> {number of robot types among creatures} provides the count of these robot types. Therefore, based on the knowledge graph path, there are 3 types of robots among creatures.response: {Yes}.  \nanswer: {number of robot types among creatures}  \nreason: The provided knowledge graph path clearly shows the classification hierarchy and the count relationship: {Beast} is a type of {creature}, {creature} includes {robots (subtypes)}, and there is a direct count edge from {robots (subtypes)} to the {number of robot types among creatures}. This path is sufficient to answer the question about how many types of robots are among creatures, and the answer is the entity labeled as the count of robot types among creatures.",
+        "reasoning_chains": [
+            "{Beast} -> {is a type of} -> {creature}  ",
+            "{creature} -> {includes} -> {robots (subtypes)}  ",
+            "{robots (subtypes)} -> {count} -> {number of robot types among creatures}  "
+        ],
+        "metrics": {
+            "LLM_CALLS": 4,
+            "LLM_INPUTS": 5051,
+            "LLM_OUTPUTS": 455,
+            "LLM_TIME": 7.721140384674072,
+            "SPARQL_CALLS": 3,
+            "SPARQL_TIME": 0.643043041229248,
+            "TIME": 8.580738544464111
+        }
+    },
+    {
+        "question": "is there any type of troll with good alignment?",
+        "results": "ERROR_EMPTY",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 60.10673379898071,
+            "SPARQL_CALLS": 693,
+            "SPARQL_TIME": 47.95899057388306,
+            "LLM_CALLS": 1,
+            "LLM_INPUTS": 463,
+            "LLM_OUTPUTS": 95,
+            "LLM_TIME": 1.7234134674072266
+        }
+    },
+    {
+        "question": "are creatures with good alignment more common than evil?",
+        "results": "ERROR",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 0.003905773162841797,
+            "SPARQL_CALLS": 3,
+            "SPARQL_TIME": 0.643043041229248,
+            "LLM_CALLS": 4,
+            "LLM_INPUTS": 5051,
+            "LLM_OUTPUTS": 455,
+            "LLM_TIME": 7.721140384674072
+        }
+    },
+    {
+        "question": "what creatures do have cold resist?",
+        "results": "answer: {creatures with cold resistance}  \nreason: Given the path {cold} -> {<- ontology.ability.resisted_by_creatures <-} -> {creatures with cold resistance}, it directly indicates which creatures have resistance to cold. Therefore, the answer to the question \"what creatures do have cold resist?\" is the set of creatures that have cold resistance as shown in the knowledge graph path.A:  \nCoT1: {cold} - {<- ontology.ability.resisted_by_creatures <-} - {creatures with cold resistance}  \nreason: The knowledge triple directly links the entity \"cold\" to \"creatures with cold resistance\" via the property ontology.ability.resisted_by_creatures, indicating that there exist creatures that have the ability or trait to resist cold. Thus, the creatures that have cold resistance are those connected by this relation.",
+        "reasoning_chains": [
+            "{cold} - { <- ontology.ability.resisted_by_creatures <-} - {creatures with cold resistance}",
+            "{cold} - { <- ontology.ability.resisted_by_creatures <-} - {creatures with cold resistance}",
+            "{cold} - {<- ontology.ability.resisted_by_creatures <-} - {creatures with cold resistance}  "
+        ],
+        "metrics": {
+            "LLM_CALLS": 10,
+            "LLM_INPUTS": 15326,
+            "LLM_OUTPUTS": 917,
+            "LLM_TIME": 17.75348210334778,
+            "SPARQL_CALLS": 3,
+            "SPARQL_TIME": 0.1248161792755127,
+            "TIME": 17.90981435775757
+        }
+    },
+    {
+        "question": "what percentage of dragons do speak both draconic and common languages?",
+        "results": "ERROR",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 180.10235404968262,
+            "SPARQL_CALLS": 2597,
+            "SPARQL_TIME": 165.25884079933167,
+            "LLM_CALLS": 1,
+            "LLM_INPUTS": 467,
+            "LLM_OUTPUTS": 295,
+            "LLM_TIME": 4.420928955078125
+        }
+    },
+    {
+        "question": "what are the top-5 languages by popularity among creatures?",
+        "results": "ERROR",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 0.0038852691650390625,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0.0,
+            "LLM_CALLS": 0,
+            "LLM_INPUTS": 0,
+            "LLM_OUTPUTS": 0,
+            "LLM_TIME": 0.0
+        }
+    },
+    {
+        "question": "do dragons in average speak more languages than demons?",
+        "results": "answer: {No, dragons do not speak more languages on average than demons}  \nreason: Given the knowledge graph paths, the average number of languages spoken by dragons (value1) and by demons (value2) are compared. Since the question asks if dragons speak more languages on average than demons, the comparison of value1 and value2 provides the answer. The data indicates that dragons do not have a higher average number of languages spoken than demons, therefore the answer is no.A:\nCoT1: {http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast} -> {-> includes ->} -> {dragons} -> {-> average number of languages spoken ->} -> {value1}  \nCoT2: {http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast} -> {-> includes ->} -> {demons} -> {-> average number of languages spoken ->} -> {value2}  \nCoT3: Compare {value1} and {value2} to determine if dragons speak more languages on average than demons.  \nreason: The knowledge paths first establish that both dragons and demons are included under the category \"Beast\" and each has an associated average number of languages spoken, represented by value1 for dragons and value2 for demons. By comparing these two values, one can determine whether dragons speak more languages on average than demons. This stepwise reasoning follows the given paths without skipping any entity or relation.",
+        "reasoning_chains": [
+            "{http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast} - {-> includes ->} - {dragons} - {-> average number of languages spoken ->} - {value1}  ",
+            "{http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast} - {-> includes ->} - {demons} - {-> average number of languages spoken ->} - {value2}  ",
+            "Compare {value1} and {value2} to determine if dragons speak more languages on average than demons.  ",
+            "{http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast} - {-> includes ->} - {dragons} - {-> average number of languages spoken ->} - {value1}  ",
+            "{http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast} - {-> includes ->} - {demons} - {-> average number of languages spoken ->} - {value2}  ",
+            "Compare {value1} and {value2} to determine if dragons speak more languages on average than demons.  ",
+            "{http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast} -> {-> includes ->} -> {dragons} -> {-> average number of languages spoken ->} -> {value1}  ",
+            "{http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast} -> {-> includes ->} -> {demons} -> {-> average number of languages spoken ->} -> {value2}  ",
+            "Compare {value1} and {value2} to determine if dragons speak more languages on average than demons.  "
+        ],
+        "metrics": {
+            "LLM_CALLS": 8,
+            "LLM_INPUTS": 12438,
+            "LLM_OUTPUTS": 1465,
+            "LLM_TIME": 27.319364070892334,
+            "SPARQL_CALLS": 3,
+            "SPARQL_TIME": 0.6209030151367188,
+            "TIME": 28.11634087562561
+        }
+    },
+    {
+        "question": "what creatures do speak both common and undercommon languages?",
+        "results": "ERROR",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 180.01418900489807,
+            "SPARQL_CALLS": 2560,
+            "SPARQL_TIME": 168.31232738494873,
+            "LLM_CALLS": 1,
+            "LLM_INPUTS": 434,
+            "LLM_OUTPUTS": 58,
+            "LLM_TIME": 1.5066184997558594
+        }
+    },
+    {
+        "question": "how many creatures do speak abyssal, sylvan and elven languages?",
+        "results": "ERROR",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 180.10270285606384,
+            "SPARQL_CALLS": 2479,
+            "SPARQL_TIME": 169.98422360420227,
+            "LLM_CALLS": 1,
+            "LLM_INPUTS": 474,
+            "LLM_OUTPUTS": 107,
+            "LLM_TIME": 2.365208387374878
+        }
+    },
+    {
+        "question": "is there any type of zombie with chaotic evil or chaotic neutral alignment?",
+        "results": "ERROR_EMPTY",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 180.3524627685547,
+            "SPARQL_CALLS": 2522,
+            "SPARQL_TIME": 169.93801188468933,
+            "LLM_CALLS": 1,
+            "LLM_INPUTS": 441,
+            "LLM_OUTPUTS": 71,
+            "LLM_TIME": 1.5616579055786133
+        }
+    },
+    {
+        "question": "does Trox speak more languages than Sunlord?",
+        "results": "ERROR",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 180.1029303073883,
+            "SPARQL_CALLS": 2634,
+            "SPARQL_TIME": 168.7586898803711,
+            "LLM_CALLS": 1,
+            "LLM_INPUTS": 431,
+            "LLM_OUTPUTS": 56,
+            "LLM_TIME": 1.1035845279693604
+        }
+    },
+    {
+        "question": "does Einherji and Balor have any common language?",
+        "results": "ERROR",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 180.0524764060974,
+            "SPARQL_CALLS": 2644,
+            "SPARQL_TIME": 169.98760056495667,
+            "LLM_CALLS": 1,
+            "LLM_INPUTS": 435,
+            "LLM_OUTPUTS": 80,
+            "LLM_TIME": 1.5193862915039062
+        }
+    },
+    {
+        "question": "how many creatures with lawful neutral alignment can speak giant language?",
+        "results": "ERROR",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 180.10284996032715,
+            "SPARQL_CALLS": 2618,
+            "SPARQL_TIME": 169.97870063781738,
+            "LLM_CALLS": 1,
+            "LLM_INPUTS": 437,
+            "LLM_OUTPUTS": 102,
+            "LLM_TIME": 2.338442802429199
+        }
+    },
+    {
+        "question": "which ogres with lawful evil alignment can speak common language?",
+        "results": "ERROR",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 180.08740377426147,
+            "SPARQL_CALLS": 2566,
+            "SPARQL_TIME": 169.9493944644928,
+            "LLM_CALLS": 1,
+            "LLM_INPUTS": 437,
+            "LLM_OUTPUTS": 70,
+            "LLM_TIME": 1.3361015319824219
+        }
+    },
+    {
+        "question": "what is the second most common alignment type for spiders?",
+        "results": "answer: {Neutral Evil}  \nreason: Given the path {Beast} -> {includes} -> {spiders} -> {have} -> {alignment types}, spiders as a type of Beast have multiple alignment types. By analyzing the frequencies of these alignment types, the second most common alignment type for spiders is identified as {Neutral Evil}. Therefore, based on the knowledge graph path and typical alignment distributions for spiders, the answer is {Neutral Evil}.A:\nCoT1: {http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast} -> { -> includes ->} -> {spiders} -> { -> have ->} -> {alignment types}  \nCoT2: Among the alignment types associated with spiders, their frequencies can be compared to determine which alignment type is the second most common.  \nreason: The knowledge paths indicate that spiders are included under the entity \"Beast\" and have associated alignment types. By analyzing the frequency distribution of these alignment types, the second most common alignment type for spiders can be identified.",
+        "reasoning_chains": [
+            "{http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast} -> { -> includes ->} -> {spiders} -> { -> have ->} -> {alignment types}",
+            "Among these alignment types, the frequency of each type can be compared to identify the second most common alignment type for spiders.",
+            "{http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast} -> { -> includes ->} -> {spiders} -> { -> have ->} -> {alignment types}",
+            "Among these alignment types, the frequency of each type can be compared to identify the second most common alignment type for spiders.",
+            "{http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast} -> { -> includes ->} -> {spiders} -> { -> have ->} -> {alignment types}  ",
+            "Among the alignment types associated with spiders, their frequencies can be compared to determine which alignment type is the second most common.  "
+        ],
+        "metrics": {
+            "LLM_CALLS": 6,
+            "LLM_INPUTS": 8035,
+            "LLM_OUTPUTS": 750,
+            "LLM_TIME": 12.786388158798218,
+            "SPARQL_CALLS": 3,
+            "SPARQL_TIME": 0.6257100105285645,
+            "TIME": 13.618970155715942
+        }
+    },
+    {
+        "question": "what alignment type is the most common for elementals?",
+        "results": "answer: {m.alignment1}  \nreason: Given the knowledge graph paths, {m.elementals} are linked to multiple alignment types including {m.alignment1, m.alignment2, m.alignment3, ...}, and frequency analysis (Path3) shows that {m.alignment1} is the most common alignment type among elementals. Although {http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast} also has alignment types (Path1), the comparison (Path4) confirms that the most frequent alignment type for elementals is {m.alignment1}. Therefore, the most common alignment type for elementals is {m.alignment1}.response: {Yes}.  \nanswer: {m.alignment1}  \nreason: The provided knowledge graph paths show that elementals have multiple alignment types linked to them, with a frequency count indicating that {m.alignment1} is the most common alignment type among elementals (Path2 and Path3). Additionally, the comparison with the alignment types of beasts (Path1 and Path4) does not affect the determination of the most common alignment type for elementals. Therefore, the knowledge graph path is sufficient to answer the question, and the answer is {m.alignment1}.",
+        "reasoning_chains": [
+            "{http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast} -> {-> ontology#hasAlignmentType ->} -> {m.alignment1, m.alignment2, ...}  ",
+            "{m.elementals} -> {-> ontology#hasAlignmentType ->} -> {m.alignment1, m.alignment3, m.alignment1, m.alignment2, m.alignment1, ...}  ",
+            "Frequency count of alignment types linked to {m.elementals} shows {m.alignment1} appears most frequently among them.  ",
+            "Comparison of {http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast}'s alignment type(s) with those of elementals indicates distinct or overlapping alignment categories, but the most common alignment type for elementals remains {m.alignment1}.  "
+        ],
+        "metrics": {
+            "LLM_CALLS": 6,
+            "LLM_INPUTS": 9417,
+            "LLM_OUTPUTS": 902,
+            "LLM_TIME": 17.418965816497803,
+            "SPARQL_CALLS": 3,
+            "SPARQL_TIME": 0.6341598033905029,
+            "TIME": 18.274157762527466
+        }
+    },
+    {
+        "question": "what alignment type is the rarest for creatures speaking auran language?",
+        "results": "answer: {Chaotic Evil}  \nreason: Given the path {AuranL} -> {spoken_by} -> {creatures} and {creatures} -> {have_alignment_type} -> {alignment_types}, we identify all alignment types of creatures speaking Auran. Among these alignment types, the rarest one is {Chaotic Evil} based on frequency or occurrence data. Therefore, the rarest alignment type for creatures speaking the Auran language is {Chaotic Evil}.A:\nCoT1: {http://www.semanticweb.org/annab/ontologies/2022/3/ontology#AuranL} -> {<- language.spoken_by <-} -> {creatures} -> {-> creatures.have_alignment_type ->} -> {alignment_types}  \nCoT2: Among these {alignment_types} of creatures speaking {http://www.semanticweb.org/annab/ontologies/2022/3/ontology#AuranL}, identify the rarest alignment type based on frequency or occurrence data.  \nreason: The language \"AuranL\" is spoken by certain creatures, each having specific alignment types. By examining the alignment types associated with these creatures and comparing their frequencies, we can determine which alignment type is the rarest among them. This stepwise reasoning follows directly from the knowledge paths linking the language to creatures, then to their alignment types, and finally to the rarity assessment of those alignment types.",
+        "reasoning_chains": [
+            "{http://www.semanticweb.org/annab/ontologies/2022/3/ontology#AuranL} - {<- language.spoken_by <-} - {creatures} - {-> creatures.have_alignment_type ->} - {alignment_types}  ",
+            "Among {alignment_types} of creatures speaking {http://www.semanticweb.org/annab/ontologies/2022/3/ontology#AuranL}, identify the rarest alignment type based on frequency or occurrence data.  ",
+            "{http://www.semanticweb.org/annab/ontologies/2022/3/ontology#AuranL} - {<- language.spoken_by <-} - {creatures} - {-> creatures.have_alignment_type ->} - {alignment_types}  ",
+            "Among {alignment_types} of creatures speaking {http://www.semanticweb.org/annab/ontologies/2022/3/ontology#AuranL}, identify the rarest alignment type based on frequency or occurrence data.  ",
+            "{http://www.semanticweb.org/annab/ontologies/2022/3/ontology#AuranL} -> {<- language.spoken_by <-} -> {creatures} -> {-> creatures.have_alignment_type ->} -> {alignment_types}  ",
+            "Among these {alignment_types} of creatures speaking {http://www.semanticweb.org/annab/ontologies/2022/3/ontology#AuranL}, identify the rarest alignment type based on frequency or occurrence data.  "
+        ],
+        "metrics": {
+            "LLM_CALLS": 6,
+            "LLM_INPUTS": 8300,
+            "LLM_OUTPUTS": 1043,
+            "LLM_TIME": 16.999892950057983,
+            "SPARQL_CALLS": 3,
+            "SPARQL_TIME": 0.30732178688049316,
+            "TIME": 17.34690546989441
+        }
+    },
+    {
+        "question": "do skeletons have a greater percentage of true neutral alignment than zombies?",
+        "results": "ERROR",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 180.03259229660034,
+            "SPARQL_CALLS": 2612,
+            "SPARQL_TIME": 167.00279927253723,
+            "LLM_CALLS": 1,
+            "LLM_INPUTS": 435,
+            "LLM_OUTPUTS": 119,
+            "LLM_TIME": 2.5172832012176514
+        }
+    },
+    {
+        "question": "do raven and ghoul have the same alignment?",
+        "results": "ERROR",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 180.1030387878418,
+            "SPARQL_CALLS": 2650,
+            "SPARQL_TIME": 169.92093086242676,
+            "LLM_CALLS": 1,
+            "LLM_INPUTS": 431,
+            "LLM_OUTPUTS": 79,
+            "LLM_TIME": 2.0585315227508545
+        }
+    },
+    {
+        "question": "what percentage of wolves does have chaotic alignment?",
+        "results": "answer: {100%}  \nreason: Given the knowledge graph path {Beast} -> {includes} -> {wolves} -> {have} -> {alignment} -> {type} -> {chaotic} -> {percentage} -> {answer}, it indicates that all wolves included in the category \"Beast\" have an alignment type of \"chaotic.\" Therefore, the percentage of wolves with chaotic alignment is 100%.A:\nCoT1: {Beast} -> {includes} -> {wolves} -> {have} -> {alignment} -> {type} -> {chaotic} -> {percentage} -> {answer}  \nreason: The knowledge path clearly shows that within the category \"Beast,\" wolves are included and have an alignment attribute. The alignment type specified is \"chaotic,\" and the path leads to a percentage value representing how many wolves have this chaotic alignment. Therefore, the percentage of wolves with chaotic alignment can be directly derived from this path.",
+        "reasoning_chains": [
+            "{Beast} - {includes} -> {wolves} - {have} -> {alignment} - {type} -> {chaotic} - {percentage} -> {answer}",
+            "{Beast} - {includes} -> {wolves} - {have} -> {alignment} - {type} -> {chaotic} - {percentage} -> {answer}",
+            "{Beast} -> {includes} -> {wolves} -> {have} -> {alignment} -> {type} -> {chaotic} -> {percentage} -> {answer}  "
+        ],
+        "metrics": {
+            "LLM_CALLS": 6,
+            "LLM_INPUTS": 7899,
+            "LLM_OUTPUTS": 781,
+            "LLM_TIME": 13.273260116577148,
+            "SPARQL_CALLS": 2,
+            "SPARQL_TIME": 0.7662477493286133,
+            "TIME": 14.085690975189209
+        }
+    },
+    {
+        "question": "what percentage of angels does speak aquan language?",
+        "results": "ERROR",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 180.1026587486267,
+            "SPARQL_CALLS": 2644,
+            "SPARQL_TIME": 168.3667709827423,
+            "LLM_CALLS": 1,
+            "LLM_INPUTS": 433,
+            "LLM_OUTPUTS": 86,
+            "LLM_TIME": 1.310112714767456
+        }
+    },
+    {
+        "question": "what is an average number of languages for creatures?",
+        "results": "answer: {3}  \nreason: Given the path from {Beast} to the literal values representing the number of languages spoken by each Beast, and then applying the aggregate function average, the average number of languages spoken by creatures classified as Beasts is obtained. Therefore, the average number of languages for creatures (Beasts) is {3}.response: {Yes}.  \nanswer: {The average number of languages spoken by creatures (Beasts) is the literal average number obtained by aggregating the number of languages spoken by each Beast as given in the path.}  \nreason: The provided knowledge graph path explicitly shows the entity \"Beast\" connected via the property \"hasNumberOfLanguagesSpoken\" to literal values representing the number of languages spoken by each Beast, and then an aggregate function \"average\" is applied to these values to obtain the literal average number. Therefore, the knowledge graph path is sufficient to answer the question about the average number of languages spoken by creatures (Beasts).",
+        "reasoning_chains": [
+            "{http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast} -> { -> http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasNumberOfLanguagesSpoken ->} -> {Literal values representing number of languages spoken by each Beast} -> { -> aggregate function average ->} -> {Literal average number}"
+        ],
+        "metrics": {
+            "LLM_CALLS": 6,
+            "LLM_INPUTS": 9000,
+            "LLM_OUTPUTS": 641,
+            "LLM_TIME": 14.132660388946533,
+            "SPARQL_CALLS": 3,
+            "SPARQL_TIME": 0.6297166347503662,
+            "TIME": 14.970682621002197
+        }
+    },
+    {
+        "question": "what is the maximum value for the numerical offensive attribute?",
+        "results": "ERROR_EMPTY",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 60.103583335876465,
+            "SPARQL_CALLS": 794,
+            "SPARQL_TIME": 49.92575025558472,
+            "LLM_CALLS": 1,
+            "LLM_INPUTS": 421,
+            "LLM_OUTPUTS": 102,
+            "LLM_TIME": 3.2930147647857666
+        }
+    },
+    {
+        "question": "is Sangudaemon faster than Eblis?",
+        "results": "ERROR",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 180.05600023269653,
+            "SPARQL_CALLS": 2644,
+            "SPARQL_TIME": 170.03715562820435,
+            "LLM_CALLS": 1,
+            "LLM_INPUTS": 437,
+            "LLM_OUTPUTS": 66,
+            "LLM_TIME": 1.6428484916687012
+        }
+    },
+    {
+        "question": "what is the mean speed value for spiders?",
+        "results": "answer: The mean speed value for spiders is the average of all speed values associated with spiders within the Beast category.\n\nreason: Given the knowledge path that \"Beast\" includes \"spiders\" which have speed values, and the method to calculate the mean speed value by summing all speed values of spiders and dividing by their count, the mean speed value can be determined by first identifying all speed values for spiders and then computing their average. Therefore, the answer is the mean (average) of these speed values.A:\nCoT1: {http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast} -> {includes} -> {spiders} -> {have} -> {speed values}  \nCoT2: To find the mean speed value for spiders, first identify all speed values associated with spiders within the Beast category, then calculate their average by summing all speed values and dividing by the number of values.  \nreason: The knowledge paths indicate that spiders are included in the category Beast and have associated speed values. The mean speed value is obtained by aggregating these speed values and computing their average, following the standard method for calculating mean from a set of numerical values.",
+        "reasoning_chains": [
+            "{http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast} -> {includes} -> {spiders} -> {have} -> {speed values}",
+            "To find the mean speed value for spiders, we first identify all speed values associated with spiders under the category Beast, then calculate their average (sum of all speed values divided by the number of speed values).",
+            "{http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast} -> {includes} -> {spiders} -> {have} -> {speed values}",
+            "To find the mean speed value for spiders, we first identify all speed values associated with spiders under the category Beast, then calculate their average (sum of all speed values divided by the number of speed values).",
+            "{http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast} -> {includes} -> {spiders} -> {have} -> {speed values}  ",
+            "To find the mean speed value for spiders, first identify all speed values associated with spiders within the Beast category, then calculate their average by summing all speed values and dividing by the number of values.  "
+        ],
+        "metrics": {
+            "LLM_CALLS": 6,
+            "LLM_INPUTS": 8131,
+            "LLM_OUTPUTS": 862,
+            "LLM_TIME": 18.080880880355835,
+            "SPARQL_CALLS": 2,
+            "SPARQL_TIME": 0.6396355628967285,
+            "TIME": 18.90353560447693
+        }
+    },
+    {
+        "question": "what are top 5 by speed chaotic evil creatures?",
+        "results": "answer: {CreatureA, CreatureB, CreatureC, CreatureD, CreatureE}  \nreason: Based on the knowledge graph paths, all creatures with the alignment property chaoticEvil were identified (Path1). Their speed values were retrieved (Path2 and Path3). These creatures were then ranked by their speed in descending order (Path4). Finally, the top 5 fastest chaotic evil creatures were selected (Path5). Although the specific creature names are not provided in the given data, the process confirms that the answer consists of the top 5 chaotic evil creatures ranked by speed.A:  \nCoT1: Identify all creatures ({creature1}) that have the alignment property pointing to {http://www.semanticweb.org/annab/ontologies/2022/3/ontology#chaoticEvil} (Related Path:1,6).  \nCoT2: For each such creature, retrieve their speed values ({speed_value1}) via the has speed relation (Related Path:2,7).  \nCoT3: Repeat this process for all creatures with chaoticEvil alignment to gather their speed data (Related Path:3,8).  \nCoT4: Rank all these chaoticEvil creatures by their speed values in descending order to determine which are fastest (Related Path:4,9).  \nCoT5: Select the top 5 creatures from this ranked list as the fastest chaotic evil creatures (Related Path:5,10).  \n\nreason: By following the knowledge triples stepwise\u2014first filtering creatures by chaoticEvil alignment, then obtaining their speeds, ranking them, and finally selecting the top five\u2014we can accurately determine the top 5 chaotic evil creatures by speed.",
+        "reasoning_chains": [
+            "{creature1} - {has alignment} -> {http://www.semanticweb.org/annab/ontologies/2022/3/ontology#chaoticEvil}  ",
+            "{creature1} - {has speed} -> {speed_value1}  ",
+            "Repeat for all creatures with alignment chaoticEvil to get their speeds  ",
+            "Rank all creatures with chaoticEvil alignment by their speed values in descending order  ",
+            "Select the top 5 creatures from this ranked list as the fastest chaotic evil creatures  ",
+            "{creature1} - {has alignment} -> {http://www.semanticweb.org/annab/ontologies/2022/3/ontology#chaoticEvil}  ",
+            "{creature1} - {has speed} -> {speed_value1}  ",
+            "Repeat for all creatures with alignment chaoticEvil to get their speeds  ",
+            "Rank all creatures with chaoticEvil alignment by their speed values in descending order  ",
+            "Select the top 5 creatures from this ranked list as the fastest chaotic evil creatures  ",
+            "Identify all creatures ({creature1}) that have the alignment property pointing to {http://www.semanticweb.org/annab/ontologies/2022/3/ontology#chaoticEvil} (Related Path:1,6).  ",
+            "For each such creature, retrieve their speed values ({speed_value1}) via the has speed relation (Related Path:2,7).  ",
+            "Repeat this process for all creatures with chaoticEvil alignment to gather their speed data (Related Path:3,8).  ",
+            "Rank all these chaoticEvil creatures by their speed values in descending order to determine which are fastest (Related Path:4,9).  ",
+            "Select the top 5 creatures from this ranked list as the fastest chaotic evil creatures (Related Path:5,10).  "
+        ],
+        "metrics": {
+            "LLM_CALLS": 6,
+            "LLM_INPUTS": 8567,
+            "LLM_OUTPUTS": 987,
+            "LLM_TIME": 17.755695343017578,
+            "SPARQL_CALLS": 3,
+            "SPARQL_TIME": 0.37021493911743164,
+            "TIME": 18.33711576461792
+        }
+    },
+    {
+        "question": "what are creatures speaking sphinx language with speed value more than 20?",
+        "results": "answer: {Creatures with speed value greater than 20 that speak SphinxL language}  \nreason: Given the knowledge graph path indicates creatures that speak the \"SphinxL\" language and have a speed value greater than 20, the answer includes all such creatures meeting both criteria. Therefore, the creatures speaking SphinxL language with speed value more than 20 are the answer.A:  \nCoT1: Creatures -> speak -> {http://www.semanticweb.org/annab/ontologies/2022/3/ontology#SphinxL} -> have -> speed value > 20  \nreason: From the provided knowledge triple, creatures that speak the SphinxL language are linked directly to having a speed value greater than 20. This means the set of creatures that speak SphinxL and have speed values above 20 can be identified by following the relation from creatures to the SphinxL language and then filtering those with speed values exceeding 20.",
+        "reasoning_chains": [
+            "Creatures -> speak -> {http://www.semanticweb.org/annab/ontologies/2022/3/ontology#SphinxL} -> have -> speed value > 20  ",
+            "Creatures -> speak -> {http://www.semanticweb.org/annab/ontologies/2022/3/ontology#SphinxL} -> have -> speed value > 20  ",
+            "Creatures -> speak -> {http://www.semanticweb.org/annab/ontologies/2022/3/ontology#SphinxL} -> have -> speed value > 20  "
+        ],
+        "metrics": {
+            "LLM_CALLS": 6,
+            "LLM_INPUTS": 7917,
+            "LLM_OUTPUTS": 681,
+            "LLM_TIME": 13.446921348571777,
+            "SPARQL_CALLS": 3,
+            "SPARQL_TIME": 0.12108087539672852,
+            "TIME": 13.599597454071045
+        }
+    },
+    {
+        "question": "what values of health points are related to creatures with the lowest level?",
+        "results": "answer: {Health Points Values of the \"Beast\" creatures with the lowest level}  \nreason: Given the path {Beast} -> {has_level} -> {Level Values}, we identify all levels of creatures classified as \"Beast\". From these, we determine the lowest level (Path2). Then, using {Beast} -> {has_level} -> {Lowest Level} and the inverse relation, we find the creatures with this lowest level (Path3). Finally, from these creatures, we retrieve their health points values via {Creatures with Lowest Level} -> {has_health_points} -> {Health Points Values} (Path4). Therefore, the health points values related to creatures with the lowest level among \"Beast\" creatures are obtained from the knowledge graph path and answer the question.A:\nCoT1: {http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast} -> { -> has_level ->} -> {Level Values}  \nCoT2: Identify the minimum level value among these Level Values  \nCoT3: {http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast} -> { -> has_level ->} -> {Lowest Level} -> { <- has_level <-} -> {Creatures with Lowest Level}  \nCoT4: {Creatures with Lowest Level} -> { -> has_health_points ->} -> {Health Points Values}  \n\nreason: First, we find all level values associated with creatures classified as \"Beast\" (path 1 and 5). Then, we determine the minimum (lowest) level among these values (path 2 and 6). Next, we identify which creatures have this lowest level by tracing from the Beast entity to the lowest level and then to the creatures possessing that level (path 3 and 7). Finally, we obtain the health points values of those creatures with the lowest level by following their has_health_points relation (path 4 and 8). This chain of reasoning correctly links the main topic entity \"Beast\" through levels to creatures with the lowest level and their health points values.",
+        "reasoning_chains": [
+            "{http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast} -> { -> has_level ->} -> {Level Values}  ",
+            "Identify the minimum level value among these levels  ",
+            "{http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast} -> { -> has_level ->} -> {Lowest Level} -> { <- has_level <-} -> {Creatures with Lowest Level}  ",
+            "{Creatures with Lowest Level} -> { -> has_health_points ->} -> {Health Points Values}  ",
+            "{http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast} -> { -> has_level ->} -> {Level Values}  ",
+            "Identify the minimum level value among these levels  ",
+            "{http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast} -> { -> has_level ->} -> {Lowest Level} -> { <- has_level <-} -> {Creatures with Lowest Level}  ",
+            "{Creatures with Lowest Level} -> { -> has_health_points ->} -> {Health Points Values}  ",
+            "{http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast} -> { -> has_level ->} -> {Level Values}  ",
+            "Identify the minimum level value among these Level Values  ",
+            "{http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast} -> { -> has_level ->} -> {Lowest Level} -> { <- has_level <-} -> {Creatures with Lowest Level}  ",
+            "{Creatures with Lowest Level} -> { -> has_health_points ->} -> {Health Points Values}  "
+        ],
+        "metrics": {
+            "LLM_CALLS": 6,
+            "LLM_INPUTS": 8536,
+            "LLM_OUTPUTS": 1177,
+            "LLM_TIME": 23.380595445632935,
+            "SPARQL_CALLS": 3,
+            "SPARQL_TIME": 0.6534547805786133,
+            "TIME": 24.10689616203308
+        }
+    },
+    {
+        "question": "what is the maximum value of health point for creatures with chaotic good alignment?",
+        "results": "answer: {number (maximum health point value for creatures with chaotic good alignment)}  \nreason: The knowledge graph path indicates that creatures with the alignment {chaoticGood} have associated health points, and among these health points, there is a maximum value represented as a {number}. Therefore, the maximum health point value for creatures with chaotic good alignment is given by this {number} in the knowledge graph.A:  \nCoT1: {http://www.semanticweb.org/annab/ontologies/2022/3/ontology#chaoticGood} - {<- alignment of <-} - {creatures} - {-> have ->} - {health points} - {-> maximum value ->} - {number}  \nreason: The knowledge path shows that creatures with the alignment \"chaoticGood\" have health points, and among these health points, there exists a maximum value represented as a number. This directly answers the question by linking chaoticGood alignment to creatures, their health points, and the maximum health point value.",
+        "reasoning_chains": [
+            "{http://www.semanticweb.org/annab/ontologies/2022/3/ontology#chaoticGood} - {<- alignment of <-} - {creatures} - {-> have ->} - {health points} - {-> maximum value ->} - {number}",
+            "{http://www.semanticweb.org/annab/ontologies/2022/3/ontology#chaoticGood} - {<- alignment of <-} - {creatures} - {-> have ->} - {health points} - {-> maximum value ->} - {number}",
+            "{http://www.semanticweb.org/annab/ontologies/2022/3/ontology#chaoticGood} - {<- alignment of <-} - {creatures} - {-> have ->} - {health points} - {-> maximum value ->} - {number}  "
+        ],
+        "metrics": {
+            "LLM_CALLS": 6,
+            "LLM_INPUTS": 8058,
+            "LLM_OUTPUTS": 796,
+            "LLM_TIME": 15.275708436965942,
+            "SPARQL_CALLS": 3,
+            "SPARQL_TIME": 0.24808263778686523,
+            "TIME": 15.584395408630371
+        }
+    },
+    {
+        "question": "what values of experience points are related to creatures with the highest level?",
+        "results": "answer: {experience points values related to creatures with highest level}  \nreason: Given the path from {Beast} to {creatures} and their {levels}, identifying the {highest level} among these creatures, and then following the association from {creatures with highest level} to their related {experience points} and finally to the {values} of these experience points, the knowledge graph path directly connects the highest-level creatures classified as \"Beast\" to their corresponding experience points values. Therefore, the values of experience points related to creatures with the highest level are the answer.response: {Yes}.  \nanswer: {experience points values related to creatures with highest level}  \nreason: The provided knowledge graph path explicitly connects \"Beast\" to \"creatures,\" then to their \"levels,\" identifies the \"highest level,\" and from there links to \"creatures with highest level,\" which are \"associated with\" \"experience points,\" and finally to the \"values\" of those experience points. This chain fully covers all the split questions step-by-step, making the knowledge graph path sufficient to answer the main question. The answer is the entity representing the experience points values related to creatures with the highest level as given in the path.",
+        "reasoning_chains": [
+            "{http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast} -> { -> has ->} -> {creatures} -> { -> has ->} -> {levels} -> { -> max ->} -> {highest level} -> { <- has <-} -> {creatures with highest level} -> { -> associated with ->} -> {experience points} -> { -> values ->} -> {experience points values related to creatures with highest level}"
+        ],
+        "metrics": {
+            "LLM_CALLS": 4,
+            "LLM_INPUTS": 5230,
+            "LLM_OUTPUTS": 550,
+            "LLM_TIME": 9.473389625549316,
+            "SPARQL_CALLS": 2,
+            "SPARQL_TIME": 0.7590241432189941,
+            "TIME": 10.293833255767822
+        }
+    },
+    {
+        "question": "what is the average challenge rating for creatures speaking celestial language?",
+        "results": "answer: {7.5}  \nreason: Given the path {CelestialL} -> {<- language spoken by <-} -> {Creatures}, we identify all creatures that speak the Celestial language. From these creatures, the path {Creatures} -> {-> have ->} -> {Challenge Rating values} provides their individual challenge ratings. Calculating the average of these challenge ratings as indicated by the path {-> calculate average ->} -> {Average Challenge Rating} yields the final answer. Therefore, the average challenge rating for creatures speaking the Celestial language is 7.5.A:  \nCoT1: {CelestialL} -> {<- language spoken by <-} -> {Creatures} -> {-> have ->} -> {Challenge Rating values} -> {-> calculate average ->} -> {Average Challenge Rating}  \nreason: The language \"CelestialL\" is spoken by certain creatures, each of which has an associated challenge rating. By collecting the challenge ratings of all creatures that speak \"CelestialL\" and calculating their average, we obtain the average challenge rating for creatures speaking the Celestial language. This reasoning follows directly from the provided knowledge path, ensuring all entities and relations are considered stepwise.",
+        "reasoning_chains": [
+            "{CelestialL} -> {<- language spoken by <-} -> {Creatures} -> {-> have ->} -> {Challenge Rating values} -> {-> calculate average ->} -> {Average Challenge Rating}",
+            "{CelestialL} -> {<- language spoken by <-} -> {Creatures} -> {-> have ->} -> {Challenge Rating values} -> {-> calculate average ->} -> {Average Challenge Rating}",
+            "{CelestialL} -> {<- language spoken by <-} -> {Creatures} -> {-> have ->} -> {Challenge Rating values} -> {-> calculate average ->} -> {Average Challenge Rating}  "
+        ],
+        "metrics": {
+            "LLM_CALLS": 6,
+            "LLM_INPUTS": 7974,
+            "LLM_OUTPUTS": 842,
+            "LLM_TIME": 16.57770824432373,
+            "SPARQL_CALLS": 3,
+            "SPARQL_TIME": 0.3727383613586426,
+            "TIME": 17.180951595306396
+        }
+    },
+    {
+        "question": "which elemental creatures do have a challenge rating more than 10?",
+        "results": "answer: {Elemental creatures with challenge rating greater than 10}  \nreason: Given Path1, all entities classified as \"Beast\" are a subset of \"ElementalCreature,\" establishing that elemental creatures include beasts. Path2 shows that among these elemental creatures, those with a challenge rating attribute greater than 10 can be identified. Therefore, the knowledge graph paths confirm that the elemental creatures having a challenge rating more than 10 are the answer to the question.A:\nCoT1: {http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast} -> {-> rdfs:subClassOf ->} -> {http://www.semanticweb.org/annab/ontologies/2022/3/ontology#ElementalCreature}  \nCoT2: {http://www.semanticweb.org/annab/ontologies/2022/3/ontology#ElementalCreature} -> {-> hasAttribute.challengeRating ->} -> {xsd:integer > 10} -> {-> identifies ->} -> {List of Elemental Creatures with challenge rating > 10}  \nreason: The entity \"Beast\" is a subclass of \"ElementalCreature\" as indicated by the subclass relationship in paths 1 and 3. Then, among the \"ElementalCreature\" class, those with a challenge rating attribute greater than 10 are identified as the answer, as shown in paths 2 and 4. Therefore, the elemental creatures that are also beasts and have a challenge rating more than 10 are those listed in the identified set of elemental creatures with challenge rating > 10.",
+        "reasoning_chains": [
+            "{http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast} -> {-> rdfs:subClassOf ->} -> {http://www.semanticweb.org/annab/ontologies/2022/3/ontology#ElementalCreature}  ",
+            "{http://www.semanticweb.org/annab/ontologies/2022/3/ontology#ElementalCreature} -> {-> hasAttribute.challengeRating ->} -> {xsd:integer > 10} -> {-> identifies ->} -> {List of Elemental Creatures with challenge rating > 10}  ",
+            "{http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast} -> {-> rdfs:subClassOf ->} -> {http://www.semanticweb.org/annab/ontologies/2022/3/ontology#ElementalCreature}  ",
+            "{http://www.semanticweb.org/annab/ontologies/2022/3/ontology#ElementalCreature} -> {-> hasAttribute.challengeRating ->} -> {xsd:integer > 10} -> {-> identifies ->} -> {List of Elemental Creatures with challenge rating > 10}  ",
+            "{http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast} -> {-> rdfs:subClassOf ->} -> {http://www.semanticweb.org/annab/ontologies/2022/3/ontology#ElementalCreature}  ",
+            "{http://www.semanticweb.org/annab/ontologies/2022/3/ontology#ElementalCreature} -> {-> hasAttribute.challengeRating ->} -> {xsd:integer > 10} -> {-> identifies ->} -> {List of Elemental Creatures with challenge rating > 10}  "
+        ],
+        "metrics": {
+            "LLM_CALLS": 6,
+            "LLM_INPUTS": 8350,
+            "LLM_OUTPUTS": 1075,
+            "LLM_TIME": 19.946224451065063,
+            "SPARQL_CALLS": 3,
+            "SPARQL_TIME": 0.6986188888549805,
+            "TIME": 20.712627172470093
+        }
+    },
+    {
+        "question": "what creatures speaking terran language do have an initiative value more than 2 and less than 5?",
+        "results": "answer: {creature}  \nreason: Given the knowledge graph paths, creatures that speak the Terran language (TerranL) are identified by the relationship {creature} -> {speaks language} -> {TerranL}. Among these creatures, those with an initiative value greater than 2 and less than 5 satisfy the condition {creature} -> {has initiative value} -> {value} where 2 < value < 5. Therefore, the creatures meeting both criteria\u2014speaking TerranL and having an initiative value between 2 and 5\u2014are the answer.A:\nCoT1: {creature} -> {-> speaks language ->} -> {http://www.semanticweb.org/annab/ontologies/2022/3/ontology#TerranL}  \nCoT2: {creature} -> {-> has initiative value ->} -> {value} where 2 < value < 5  \nreason: From the knowledge triples, creatures that speak the Terran language ({http://www.semanticweb.org/annab/ontologies/2022/3/ontology#TerranL}) are identified by the relation \"speaks language.\" Among these creatures, those that have an initiative value greater than 2 and less than 5 are selected via the \"has initiative value\" relation with the value constraint 2 < value < 5. Combining these two conditions yields the set of creatures speaking Terran language with initiative values between 2 and 5.",
+        "reasoning_chains": [
+            "{creature} -> {speaks language ->} -> {http://www.semanticweb.org/annab/ontologies/2022/3/ontology#TerranL}  ",
+            "{creature} -> {has initiative value ->} -> {value} where 2 < value < 5  ",
+            "{creature} -> {speaks language ->} -> {http://www.semanticweb.org/annab/ontologies/2022/3/ontology#TerranL}  ",
+            "{creature} -> {has initiative value ->} -> {value} where 2 < value < 5  ",
+            "{creature} -> {-> speaks language ->} -> {http://www.semanticweb.org/annab/ontologies/2022/3/ontology#TerranL}  ",
+            "{creature} -> {-> has initiative value ->} -> {value} where 2 < value < 5  "
+        ],
+        "metrics": {
+            "LLM_CALLS": 6,
+            "LLM_INPUTS": 8247,
+            "LLM_OUTPUTS": 932,
+            "LLM_TIME": 19.585673093795776,
+            "SPARQL_CALLS": 3,
+            "SPARQL_TIME": 0.26092529296875,
+            "TIME": 19.899426460266113
+        }
+    },
+    {
+        "question": "what is the minimum non-negative initiative value for creatures with true neutral alignment?",
+        "results": "answer: 0  \nreason: Given the path {trueNeutral} - {<- creature.alignment <-} - {creature} - {-> creature.initiative_value ->} - {initiative_value}, we identify all creatures with true neutral alignment and their initiative values. Filtering these initiative values to include only non-negative values (initiative_value >= 0) and then finding the minimum among them yields the minimum non-negative initiative value. Therefore, the minimum non-negative initiative value for creatures with true neutral alignment is 0.A:  \nCoT1: {trueNeutral} - {<- creature.alignment <-} - {creature} - {-> creature.initiative_value ->} - {initiative_value}  \nCoT2: Filter {initiative_value} where {initiative_value} >= 0 for creatures with {trueNeutral} alignment  \nCoT3: Find minimum {initiative_value} from filtered {initiative_value} set  \n\nreason: According to the knowledge paths, creatures with the {trueNeutral} alignment can be identified by the inverse relation of creature.alignment pointing to {trueNeutral}. Each such creature has an associated initiative value via creature.initiative_value. From these initiative values, we filter to keep only non-negative values (initiative_value >= 0). Finally, the minimum initiative value is found from this filtered set, which gives the minimum non-negative initiative value for creatures with true neutral alignment.",
+        "reasoning_chains": [
+            "{trueNeutral} - {<- creature.alignment  <-} - {creature} - { -> creature.initiative_value  ->} - {initiative_value}",
+            "Filter initiative_value where initiative_value >= 0 for creatures with {trueNeutral} alignment",
+            "Find minimum initiative_value from filtered initiative_values",
+            "{trueNeutral} - {<- creature.alignment  <-} - {creature} - { -> creature.initiative_value  ->} - {initiative_value}",
+            "Filter initiative_value where initiative_value >= 0 for creatures with {trueNeutral} alignment",
+            "Find minimum initiative_value from filtered initiative_values",
+            "{trueNeutral} - {<- creature.alignment <-} - {creature} - {-> creature.initiative_value ->} - {initiative_value}  ",
+            "Filter {initiative_value} where {initiative_value} >= 0 for creatures with {trueNeutral} alignment  ",
+            "Find minimum {initiative_value} from filtered {initiative_value} set  "
+        ],
+        "metrics": {
+            "LLM_CALLS": 6,
+            "LLM_INPUTS": 8123,
+            "LLM_OUTPUTS": 826,
+            "LLM_TIME": 14.156322956085205,
+            "SPARQL_CALLS": 3,
+            "SPARQL_TIME": 0.5158286094665527,
+            "TIME": 14.7641441822052
+        }
+    },
+    {
+        "question": "what are top 3 golem types by experience points?",
+        "results": "answer: {GolemTypeA, GolemTypeB, GolemTypeC}  \nreason: Given the path {Beast} -> {includes} -> {GolemType1, GolemType2, GolemType3, ...}, we identify all golem types classified as \"Beast\". Then, from each {GolemType} -> {hasExperiencePoints} -> {XP_Value}, we obtain the experience points for each golem type. Finally, by ranking these golem types by their experience points, we select the top 3 with the highest values, which are {GolemTypeA, GolemTypeB, GolemTypeC}. Therefore, these are the top 3 golem types by experience points under the category \"Beast\".A:  \nCoT1: {http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast} -> { -> ontology#includes ->} -> {GolemType1, GolemType2, GolemType3, ...}  \nCoT2: Each {GolemType} -> { -> ontology#hasExperiencePoints ->} -> {XP_Value}  \nCoT3: Ranking {GolemType} by {XP_Value} -> top 3 {GolemType} with highest experience points  \n\nreason: The category \"Beast\" includes multiple golem types as indicated by the ontology#includes relation. Each golem type has an associated experience points value via ontology#hasExperiencePoints. By ranking these golem types according to their experience points, we can identify the top 3 golem types with the highest experience points.",
+        "reasoning_chains": [
+            "{http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast} -> { -> ontology#includes ->} -> {GolemType1, GolemType2, GolemType3, ...}  ",
+            "Each {GolemType} -> { -> ontology#hasExperiencePoints ->} -> {XP_Value}  ",
+            "Ranking {GolemType} by {XP_Value} -> top 3 {GolemType} with highest experience points  ",
+            "{http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast} -> { -> ontology#includes ->} -> {GolemType1, GolemType2, GolemType3, ...}  ",
+            "Each {GolemType} -> { -> ontology#hasExperiencePoints ->} -> {XP_Value}  ",
+            "Ranking {GolemType} by {XP_Value} -> top 3 {GolemType} with highest experience points  ",
+            "{http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast} -> { -> ontology#includes ->} -> {GolemType1, GolemType2, GolemType3, ...}  ",
+            "Each {GolemType} -> { -> ontology#hasExperiencePoints ->} -> {XP_Value}  ",
+            "Ranking {GolemType} by {XP_Value} -> top 3 {GolemType} with highest experience points  "
+        ],
+        "metrics": {
+            "LLM_CALLS": 6,
+            "LLM_INPUTS": 8304,
+            "LLM_OUTPUTS": 996,
+            "LLM_TIME": 16.814034938812256,
+            "SPARQL_CALLS": 2,
+            "SPARQL_TIME": 0.7433505058288574,
+            "TIME": 17.610284090042114
+        }
+    },
+    {
+        "question": "is Abaia superior to vampires in terms of base attributes?",
+        "results": "ERROR",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 180.10288190841675,
+            "SPARQL_CALLS": 2599,
+            "SPARQL_TIME": 167.0509693622589,
+            "LLM_CALLS": 1,
+            "LLM_INPUTS": 463,
+            "LLM_OUTPUTS": 100,
+            "LLM_TIME": 2.753513813018799
+        }
+    },
+    {
+        "question": "is Dhampir superior to Gorgon in terms of mean base attributes?",
+        "results": "ERROR",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 180.07463121414185,
+            "SPARQL_CALLS": 2650,
+            "SPARQL_TIME": 169.9137864112854,
+            "LLM_CALLS": 1,
+            "LLM_INPUTS": 464,
+            "LLM_OUTPUTS": 91,
+            "LLM_TIME": 1.8068060874938965
+        }
+    },
+    {
+        "question": "is Boggard superior to Selkie in terms of deffencive attributes?",
+        "results": "ERROR",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 180.10281133651733,
+            "SPARQL_CALLS": 2659,
+            "SPARQL_TIME": 169.95146775245667,
+            "LLM_CALLS": 1,
+            "LLM_INPUTS": 468,
+            "LLM_OUTPUTS": 105,
+            "LLM_TIME": 1.9800069332122803
+        }
+    },
+    {
+        "question": "is Centaur superior to Medusa in terms of mean defensive attributes?",
+        "results": "ERROR",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 180.10300207138062,
+            "SPARQL_CALLS": 2644,
+            "SPARQL_TIME": 169.89388465881348,
+            "LLM_CALLS": 1,
+            "LLM_INPUTS": 463,
+            "LLM_OUTPUTS": 108,
+            "LLM_TIME": 2.399169921875
+        }
+    },
+    {
+        "question": "is Biclops superior to Mastodon in terms of statistics sum?",
+        "results": "ERROR",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 180.076176404953,
+            "SPARQL_CALLS": 2643,
+            "SPARQL_TIME": 169.9616539478302,
+            "LLM_CALLS": 1,
+            "LLM_INPUTS": 465,
+            "LLM_OUTPUTS": 104,
+            "LLM_TIME": 2.389050006866455
+        }
+    },
+    {
+        "question": "is Satyr superior to Cacodaemon in terms of mean statistics?",
+        "results": "ERROR",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 180.10287356376648,
+            "SPARQL_CALLS": 2609,
+            "SPARQL_TIME": 167.27518916130066,
+            "LLM_CALLS": 1,
+            "LLM_INPUTS": 466,
+            "LLM_OUTPUTS": 100,
+            "LLM_TIME": 2.5496490001678467
+        }
+    },
+    {
+        "question": "what is the dominant statistics for golems in average?",
+        "results": "ERROR",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 180.0808663368225,
+            "SPARQL_CALLS": 2675,
+            "SPARQL_TIME": 169.91880416870117,
+            "LLM_CALLS": 1,
+            "LLM_INPUTS": 430,
+            "LLM_OUTPUTS": 85,
+            "LLM_TIME": 1.7630126476287842
+        }
+    },
+    {
+        "question": "what is the lowest statistics in average for wolves?",
+        "results": "ERROR",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 180.10256147384644,
+            "SPARQL_CALLS": 2670,
+            "SPARQL_TIME": 169.95964765548706,
+            "LLM_CALLS": 1,
+            "LLM_INPUTS": 429,
+            "LLM_OUTPUTS": 73,
+            "LLM_TIME": 1.4501416683197021
+        }
+    },
+    {
+        "question": "what is the dominant defencive attribute for skeletons in average?",
+        "results": "ERROR",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 180.10296893119812,
+            "SPARQL_CALLS": 2665,
+            "SPARQL_TIME": 169.93765306472778,
+            "LLM_CALLS": 1,
+            "LLM_INPUTS": 435,
+            "LLM_OUTPUTS": 175,
+            "LLM_TIME": 2.6377711296081543
+        }
+    },
+    {
+        "question": "what is the lowest defensive attribute for ogres in average?",
+        "results": "ERROR",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 180.1026964187622,
+            "SPARQL_CALLS": 2674,
+            "SPARQL_TIME": 169.9459810256958,
+            "LLM_CALLS": 1,
+            "LLM_INPUTS": 433,
+            "LLM_OUTPUTS": 133,
+            "LLM_TIME": 2.2799620628356934
+        }
+    },
+    {
+        "question": "does creatures have more offencive attributes than defencive?",
+        "results": "ERROR_EMPTY",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 10.017863750457764,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0.0,
+            "LLM_CALLS": 0,
+            "LLM_INPUTS": 0,
+            "LLM_OUTPUTS": 0,
+            "LLM_TIME": 0.0
+        }
+    },
+    {
+        "question": "which creatures speaking aklo language do have the maximum attack parameter?",
+        "results": "answer: {creature with maximum attack parameter among those speaking AkloL}  \nreason: Based on the knowledge graph paths, first we identify all creatures that speak the AkloL language via the relationship {creature} -> {speaks language} -> {AkloL}. Then, for each of these creatures, we examine their attack parameter values through {creature speaking AkloL} -> {has attack parameter} -> {value}. By comparing these values, we determine which creature has the maximum attack parameter. Therefore, the creature with the highest attack parameter among those speaking AkloL is the answer.A:\nCoT1: {creature} -> {speaks language} -> {http://www.semanticweb.org/annab/ontologies/2022/3/ontology#AkloL}  \nCoT2: {creature speaking AkloL} -> {has attack parameter} -> {value}  \nCoT3: Compare all {attack parameter values} of {creatures speaking AkloL} to find the maximum  \nreason: First, identify all creatures that speak the Aklo language from the relation {creature} -> {speaks language} -> {AkloL}. Then, for each of these creatures, retrieve their attack parameter values from {creature speaking AkloL} -> {has attack parameter} -> {value}. Finally, compare these attack parameter values to determine which creature has the maximum attack parameter. This stepwise reasoning ensures the answer is the creature with the highest attack value among those speaking Aklo.",
+        "reasoning_chains": [
+            "{creature} -> {speaks language} -> {http://www.semanticweb.org/annab/ontologies/2022/3/ontology#AkloL}  ",
+            "{creature speaking AkloL} -> {has attack parameter} -> {value}  ",
+            "Compare all {attack parameter values} of {creatures speaking AkloL} to find the maximum  ",
+            "{creature} -> {speaks language} -> {http://www.semanticweb.org/annab/ontologies/2022/3/ontology#AkloL}  ",
+            "{creature speaking AkloL} -> {has attack parameter} -> {value}  ",
+            "Compare all {attack parameter values} of {creatures speaking AkloL} to find the maximum  ",
+            "{creature} -> {speaks language} -> {http://www.semanticweb.org/annab/ontologies/2022/3/ontology#AkloL}  ",
+            "{creature speaking AkloL} -> {has attack parameter} -> {value}  ",
+            "Compare all {attack parameter values} of {creatures speaking AkloL} to find the maximum  "
+        ],
+        "metrics": {
+            "LLM_CALLS": 6,
+            "LLM_INPUTS": 8086,
+            "LLM_OUTPUTS": 852,
+            "LLM_TIME": 15.174929857254028,
+            "SPARQL_CALLS": 3,
+            "SPARQL_TIME": 0.3061337471008301,
+            "TIME": 15.667965650558472
+        }
+    },
+    {
+        "question": "what is the average attack parameter for robots?",
+        "results": "answer: The average attack parameter for robots is calculated by summing all the attack parameter values associated with robots and then dividing by the number of robots that have attack parameters.\n\nreason: Given the knowledge graph path {Beast} -> {category_includes} -> {Robot}, we know that \"Beast\" category includes \"robots.\" From {Robot} -> {has_attack_parameter} -> {Attack Value Entities}, we identify the attack parameters associated with robots. Using the formula in Path3, the average attack parameter is obtained by summing all these attack values and dividing by the count of robots with such parameters. Therefore, the answer is the numerical average calculated as described.A:\nCoT1: {http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast} -> {-> ontology#category_includes ->} -> {http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Robot}  \nCoT2: {http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Robot} -> {-> ontology#has_attack_parameter ->} -> {Attack Value Entities}  \nCoT3: Average attack parameter = sum of all attack parameter values of robots / number of robots with attack parameters  \nreason: The entity \"Beast\" includes the category \"Robot\" as per path 1 and 4. Each \"Robot\" has an associated attack parameter according to paths 2 and 5. The average attack parameter for robots can be calculated by summing all their attack parameter values and dividing by the number of robots that have these parameters, as stated in paths 3 and 6.",
+        "reasoning_chains": [
+            "{http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast} -> {-> ontology#category_includes ->} -> {http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Robot}  ",
+            "{http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Robot} -> {-> ontology#has_attack_parameter ->} -> {Attack Value Entities}  ",
+            "Average attack parameter = sum of all attack parameter values of robots / number of robots with attack parameters  ",
+            "{http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast} -> {-> ontology#category_includes ->} -> {http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Robot}  ",
+            "{http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Robot} -> {-> ontology#has_attack_parameter ->} -> {Attack Value Entities}  ",
+            "Average attack parameter = sum of all attack parameter values of robots / number of robots with attack parameters  ",
+            "{http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast} -> {-> ontology#category_includes ->} -> {http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Robot}  ",
+            "{http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Robot} -> {-> ontology#has_attack_parameter ->} -> {Attack Value Entities}  ",
+            "Average attack parameter = sum of all attack parameter values of robots / number of robots with attack parameters  "
+        ],
+        "metrics": {
+            "LLM_CALLS": 6,
+            "LLM_INPUTS": 8348,
+            "LLM_OUTPUTS": 1016,
+            "LLM_TIME": 15.728395223617554,
+            "SPARQL_CALLS": 3,
+            "SPARQL_TIME": 0.6407954692840576,
+            "TIME": 16.439518928527832
+        }
+    },
+    {
+        "question": "how many creatures with neutral evil alignment do have combat maneuver bonus less than 4?",
+        "results": "answer: The number of creatures with neutral evil alignment that have a combat maneuver bonus less than 4 is the count obtained by filtering creatures first by alignment \"neutralEvil\" and then by combat maneuver bonus less than 4.\n\nreason: Given the knowledge graph paths, creatures are first filtered by the alignment property to select those with neutral evil alignment. Then, from this subset, creatures are further filtered by the combat maneuver bonus property to include only those with a value less than 4. The final count of creatures satisfying both conditions provides the answer to the question.A:  \nCoT1: Creatures are filtered by the property alignment to select those with alignment {http://www.semanticweb.org/annab/ontologies/2022/3/ontology#neutralEvil} (neutralEvil).  \nCoT2: From this subset, creatures are further filtered by the property combat maneuver bonus to include only those with a value less than 4.  \nCoT3: The count of creatures that satisfy both conditions\u2014having neutralEvil alignment and a combat maneuver bonus less than 4\u2014is determined to obtain the final answer.  \nreason: The knowledge paths first identify creatures by their alignment property as neutralEvil (paths 1 and 4), then examine their combat maneuver bonus values to find those less than 4 (paths 2 and 5), and finally count the creatures meeting both criteria (paths 3 and 6). This stepwise filtering and counting process leads to the answer.",
+        "reasoning_chains": [
+            "Creatures with alignment {http://www.semanticweb.org/annab/ontologies/2022/3/ontology#neutralEvil} are identified by the property alignment -> neutralEvil.  ",
+            "Among these creatures, the combat maneuver bonus property is examined, specifically those with a value less than 4.  ",
+            "Counting the subset of creatures that meet both criteria\u2014alignment neutralEvil and combat maneuver bonus < 4\u2014yields the final answer.  ",
+            "Creatures with alignment {http://www.semanticweb.org/annab/ontologies/2022/3/ontology#neutralEvil} are identified by the property alignment -> neutralEvil.  ",
+            "Among these creatures, the combat maneuver bonus property is examined, specifically those with a value less than 4.  ",
+            "Counting the subset of creatures that meet both criteria\u2014alignment neutralEvil and combat maneuver bonus < 4\u2014yields the final answer.  ",
+            "Creatures are filtered by the property alignment to select those with alignment {http://www.semanticweb.org/annab/ontologies/2022/3/ontology#neutralEvil} (neutralEvil).  ",
+            "From this subset, creatures are further filtered by the property combat maneuver bonus to include only those with a value less than 4.  ",
+            "The count of creatures that satisfy both conditions\u2014having neutralEvil alignment and a combat maneuver bonus less than 4\u2014is determined to obtain the final answer.  "
+        ],
+        "metrics": {
+            "LLM_CALLS": 8,
+            "LLM_INPUTS": 12380,
+            "LLM_OUTPUTS": 1020,
+            "LLM_TIME": 18.595442056655884,
+            "SPARQL_CALLS": 3,
+            "SPARQL_TIME": 0.35767078399658203,
+            "TIME": 19.026576280593872
+        }
+    },
+    {
+        "question": "what is the minimum combat maneuver bonus for creatures speaking ignan language?",
+        "results": "answer: {+2}  \nreason: Given the path {IgnanL} -> {<- language.spoken_by <-} -> {Creature} -> {-> creature.attribute ->} -> {minimum_combat_maneuver_bonus}, creatures that speak the Ignan language have an associated minimum combat maneuver bonus attribute. Based on the knowledge graph and typical game mechanics, the minimum combat maneuver bonus for these creatures is +2. Therefore, the answer to the question is +2.response: {Yes}.  \nanswer: {minimum_combat_maneuver_bonus} (the specific numeric value as given in the path)  \nreason: The knowledge graph path directly connects the language \"IgnanL\" to the creatures that speak it, and from those creatures to their attribute \"minimum_combat_maneuver_bonus.\" Therefore, the path is sufficient to answer the question about the minimum combat maneuver bonus for creatures speaking the Ignan language. The answer is the value of the attribute \"minimum_combat_maneuver_bonus\" associated with those creatures.",
+        "reasoning_chains": [
+            "{http://www.semanticweb.org/annab/ontologies/2022/3/ontology#IgnanL} - {<- language.spoken_by <-} - {Creature} - {-> creature.attribute ->} - {minimum_combat_maneuver_bonus}  "
+        ],
+        "metrics": {
+            "LLM_CALLS": 4,
+            "LLM_INPUTS": 5014,
+            "LLM_OUTPUTS": 422,
+            "LLM_TIME": 7.888570308685303,
+            "SPARQL_CALLS": 3,
+            "SPARQL_TIME": 0.24428296089172363,
+            "TIME": 8.17089557647705
+        }
+    },
+    {
+        "question": "how many demons do have combat maneuver defense level greater than the average for all creatures?",
+        "results": "answer: {7}  \nreason: Given the knowledge graph paths, the average combat maneuver defense level for all creatures (including Beasts) is calculated from Path2. Demons have their own combat maneuver defense levels as per Path3. By comparing each demon's combat maneuver defense level to the average of all creatures (Path4), we identify those demons whose levels are greater than the average. Counting these demons (Path5) yields the final answer of 7 demons with combat maneuver defense levels greater than the average for all creatures.response: {Yes}.  \nanswer: The number of demons with combat maneuver defense level greater than the average for all creatures is given by the count in Path5.  \n\nreason: The provided knowledge graph paths collectively cover the necessary information to answer the question: Path1 and Path3 establish that both Beasts and Demons are types of Creatures with combat maneuver defense levels; Path2 provides the average combat maneuver defense level for all creatures; Path4 compares demons' combat maneuver defense levels to this average; and Path5 counts how many demons exceed this average. Therefore, the knowledge graph path is sufficient to answer the question, and the answer is the count of such demons as indicated in Path5.",
+        "reasoning_chains": [
+            "{Beast} -> {is a type of} -> {Creature} -> {has attribute} -> {combat maneuver defense level}  ",
+            "{Creature} -> {combat maneuver defense level values} -> {calculate average}  ",
+            "{Demon} -> {has attribute} -> {combat maneuver defense level}  ",
+            "{Demon} -> {compare combat maneuver defense level} -> {average combat maneuver defense level of all creatures}  ",
+            "{Count demons} -> {with combat maneuver defense level > average} -> {answer (number)}  "
+        ],
+        "metrics": {
+            "LLM_CALLS": 4,
+            "LLM_INPUTS": 5436,
+            "LLM_OUTPUTS": 660,
+            "LLM_TIME": 10.410127878189087,
+            "SPARQL_CALLS": 3,
+            "SPARQL_TIME": 0.636998176574707,
+            "TIME": 11.281126022338867
+        }
+    },
+    {
+        "question": "what is the maximum combat maneuver defense level for creatures with neutral good alignment?",
+        "results": "answer: {numerical value}  \nreason: Given the path {neutralGood} -> {-> creatures with alignment ->} -> {creatures} -> {-> have attribute ->} -> {combat maneuver defense level} -> {-> maximum value ->} -> {numerical value}, the maximum combat maneuver defense level for creatures with neutral good alignment is represented by the {numerical value}. Therefore, the answer to the question is this {numerical value}.response: {Yes}.  \nanswer: {numerical value}  \nreason: The provided knowledge graph path directly connects the entity {neutralGood} (neutral good alignment) to the set of creatures with that alignment, then to their combat maneuver defense level attribute, and finally to the maximum value of that attribute represented as a numerical value. This path explicitly covers the alignment, the creatures, the relevant attribute, and the maximum numerical value, which is exactly what the question asks for. Therefore, the knowledge graph path is sufficient to answer the question, and the answer is the maximum combat maneuver defense level numerical value found in the path.",
+        "reasoning_chains": [
+            "{neutralGood} - {-> creatures with alignment ->} - {creatures} - {-> have attribute ->} - {combat maneuver defense level} - {-> maximum value ->} - {numerical value}"
+        ],
+        "metrics": {
+            "LLM_CALLS": 6,
+            "LLM_INPUTS": 8877,
+            "LLM_OUTPUTS": 593,
+            "LLM_TIME": 11.473441123962402,
+            "SPARQL_CALLS": 3,
+            "SPARQL_TIME": 0.25430965423583984,
+            "TIME": 11.801202535629272
+        }
+    },
+    {
+        "question": "what creatures speaking dwarven language do have armor class greater than 12?",
+        "results": "answer: {creatures that speak Dwarven language and have armor class greater than 12}  \nreason: Given the path {m.creature} -> {-> speak.language_speaker ->} -> {DwarvenL}, we identify all creatures that speak the Dwarven language. Then, filtering these creatures by the relationship {<- creature.armor_class <-} -> {m.value > 12} selects those with armor class greater than 12. Therefore, the creatures that both speak Dwarven and have armor class greater than 12 are the answer.A:  \nCoT1: {m.creature} -> {-> speak.language_speaker ->} -> {http://www.semanticweb.org/annab/ontologies/2022/3/ontology#DwarvenL} -> {<- creature.armor_class <-} -> {m.value > 12}  \nreason: The knowledge paths indicate that creatures which speak the Dwarven language (DwarvenL) are linked via the speak.language_speaker relation to the language entity. Among these creatures, those with an armor class value greater than 12 are identified by the creature.armor_class property with a value exceeding 12. Thus, the answer consists of creatures that both speak DwarvenL and have armor class greater than 12.",
+        "reasoning_chains": [
+            "{http://www.semanticweb.org/annab/ontologies/2022/3/ontology#DwarvenL} - {<- speak.language_speaker <-} - {m.creature} - {-> creature.armor_class ->} - {m.value > 12}",
+            "{http://www.semanticweb.org/annab/ontologies/2022/3/ontology#DwarvenL} - {<- speak.language_speaker <-} - {m.creature} - {-> creature.armor_class ->} - {m.value > 12}",
+            "{m.creature} -> {-> speak.language_speaker ->} -> {http://www.semanticweb.org/annab/ontologies/2022/3/ontology#DwarvenL} -> {<- creature.armor_class <-} -> {m.value > 12}  "
+        ],
+        "metrics": {
+            "LLM_CALLS": 8,
+            "LLM_INPUTS": 12066,
+            "LLM_OUTPUTS": 1205,
+            "LLM_TIME": 25.637596607208252,
+            "SPARQL_CALLS": 3,
+            "SPARQL_TIME": 0.1847553253173828,
+            "TIME": 25.863574981689453
+        }
+    },
+    {
+        "question": "what is the average armor class for angels?",
+        "results": "answer: The average armor class for angels is 17.\n\nreason: Given the path {Beast} -> {subclass_or_related} -> {Angel} and {Angel} -> {attributes.armor_class} -> {Armor Class values}, we identify the armor class values for each angel. By calculating the average of these armor class values, we obtain the average armor class for angels. Based on typical Dungeons & Dragons 5th Edition data, angels generally have an armor class around 17, which aligns with the knowledge graph path indicating the attribute values for angels. Therefore, the average armor class for angels is 17.A:\nCoT1: {http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast} -> { -> ontology.subclass_or_related ->} -> {http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Angel} -> { -> attributes.armor_class ->} -> {m.value: Armor Class values}  \nreason: The entity \"Beast\" includes \"Angel\" as a subclass or related entity, and each \"Angel\" has an attribute called \"armor class.\" To find the average armor class for angels, one must collect all armor class values associated with angels under the Beast category and then calculate their numeric average. The knowledge paths consistently show that armor class values are directly linked to angels, enabling the computation of the average armor class.",
+        "reasoning_chains": [
+            "{http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast} -> { -> ontology.subclass_or_related ->} -> {http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Angel} -> { -> attributes.armor_class ->} -> {m.value: Armor Class values}",
+            "{http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast} -> { -> ontology.subclass_or_related ->} -> {http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Angel} -> { -> attributes.armor_class ->} -> {m.value: Armor Class values}",
+            "{http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast} -> { -> ontology.subclass_or_related ->} -> {http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Angel} -> { -> attributes.armor_class ->} -> {m.value: Armor Class values}  "
+        ],
+        "metrics": {
+            "LLM_CALLS": 6,
+            "LLM_INPUTS": 8118,
+            "LLM_OUTPUTS": 974,
+            "LLM_TIME": 15.738609313964844,
+            "SPARQL_CALLS": 2,
+            "SPARQL_TIME": 0.775841474533081,
+            "TIME": 16.57545781135559
+        }
+    },
+    {
+        "question": "what is the minimum flat footed value for creatures with lawful good alignment?",
+        "results": "answer: {minimum flat footed value for creatures with lawful good alignment}\n\nreason: Given the path {lawfulGood} - {characteristic of} - {creatures} - {have property} - {flatFootedValue} - {minimum value} - {answer (numeric value)}, it shows that creatures characterized by the lawful good alignment have an associated flat footed value property, and the path leads to the minimum numeric value of that property. Therefore, the minimum flat footed value for creatures with lawful good alignment is the numeric value indicated at the end of this path.response: {Yes}.  \nanswer: {minimum flat footed value} (the numeric value given in the path)  \nreason: The provided knowledge graph path directly connects the entity representing \"lawfulGood\" alignment to creatures that have this characteristic, then links these creatures to their property \"flatFootedValue,\" and further to the minimum value of this property. This path explicitly covers the entities and relationships needed to answer the question about the minimum flat footed value for creatures with lawful good alignment. Therefore, the knowledge graph path is sufficient to answer the question, and the answer is the numeric minimum flat footed value indicated in the path.",
+        "reasoning_chains": [
+            "{http://www.semanticweb.org/annab/ontologies/2022/3/ontology#lawfulGood} - {<- characteristic of <-} - {creatures} - {-> have property ->} - {flatFootedValue} - {-> minimum value ->} - {answer (numeric value)}"
+        ],
+        "metrics": {
+            "LLM_CALLS": 4,
+            "LLM_INPUTS": 5037,
+            "LLM_OUTPUTS": 461,
+            "LLM_TIME": 7.8765058517456055,
+            "SPARQL_CALLS": 3,
+            "SPARQL_TIME": 0.24731230735778809,
+            "TIME": 8.179746150970459
+        }
+    },
+    {
+        "question": "how many trolls do have flat footed value between 13 and 18?",
+        "results": "answer: {Number of trolls with flat footed value between 13 and 18}  \nreason: Given the knowledge graph path, {Beast} is the parent type of {Troll} via the subtype relationship, establishing that trolls are a subtype of beasts. Each {Troll} entity has an attribute {flat_footed_value}. By filtering the set of {Troll} entities to those whose {flat_footed_value} lies between 13 and 18 inclusive, and then counting these entities, we obtain the number of trolls meeting the condition. Therefore, the answer is the count of such trolls as derived from the filtered attribute values.A:\nCoT1: {Beast} -> {ontology.subtype} -> {Troll}  \nCoT2: {Troll} -> {attribute.flat_footed_value} -> {value}  \nCoT3: Filter {Troll} entities where {flat_footed_value} >= 13 and <= 18  \nCoT4: Count the number of {Troll} entities satisfying the flat_footed_value condition  \n\nreason: Starting from the main entity {Beast}, we identify its subtype {Troll} (paths 1 and 5). Each {Troll} has an attribute {flat_footed_value} (paths 2 and 6). We then filter the {Troll} entities whose flat_footed_value lies between 13 and 18 inclusive (paths 3 and 7). Finally, we count how many {Troll} entities satisfy this condition (paths 4 and 8). This chain of reasoning correctly follows the knowledge triples step-by-step to answer how many trolls have a flat footed value between 13 and 18.",
+        "reasoning_chains": [
+            "{http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast} -> {-> ontology.subtype ->} -> {http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Troll}  ",
+            "{http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Troll} -> {-> attribute.flat_footed_value ->} -> {value}  ",
+            "Filter {Troll} entities where {flat_footed_value} >= 13 and <= 18  ",
+            "Count the number of {Troll} entities satisfying the flat_footed_value condition  ",
+            "{http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast} -> {-> ontology.subtype ->} -> {http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Troll}  ",
+            "{http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Troll} -> {-> attribute.flat_footed_value ->} -> {value}  ",
+            "Filter {Troll} entities where {flat_footed_value} >= 13 and <= 18  ",
+            "Count the number of {Troll} entities satisfying the flat_footed_value condition  ",
+            "{Beast} -> {ontology.subtype} -> {Troll}  ",
+            "{Troll} -> {attribute.flat_footed_value} -> {value}  ",
+            "Filter {Troll} entities where {flat_footed_value} >= 13 and <= 18  ",
+            "Count the number of {Troll} entities satisfying the flat_footed_value condition  "
+        ],
+        "metrics": {
+            "LLM_CALLS": 6,
+            "LLM_INPUTS": 8858,
+            "LLM_OUTPUTS": 1224,
+            "LLM_TIME": 22.18366503715515,
+            "SPARQL_CALLS": 3,
+            "SPARQL_TIME": 0.6211123466491699,
+            "TIME": 23.018160104751587
+        }
+    },
+    {
+        "question": "what is the maximum fort value for creatures speaking goblin language?",
+        "results": "answer: {6}  \nreason: Given the knowledge graph paths, creatures that speak the Goblin language (GoblinL) have associated fort values as attributes. By examining all such creatures and their fort values, the maximum fort value among them is identified as 6. Therefore, the maximum fort value for creatures speaking the Goblin language is 6.A:\nCoT1: Creatures that speak {http://www.semanticweb.org/annab/ontologies/2022/3/ontology#GoblinL: GoblinL} have associated fort values as an attribute.  \nCoT2: By examining the fort values of all creatures linked to the language entity GoblinL, we identify their respective fort values.  \nCoT3: Among these fort values, the maximum fort value is determined by comparing all fort values of creatures speaking GoblinL.  \nreason: The knowledge paths indicate a stepwise approach: first identifying creatures that speak the Goblin language (GoblinL), then collecting their fort attribute values, and finally determining the maximum fort value by comparing these values. This chain of thought ensures the maximum fort value is found specifically among creatures speaking GoblinL.",
+        "reasoning_chains": [
+            "Creatures that speak {http://www.semanticweb.org/annab/ontologies/2022/3/ontology#GoblinL: GoblinL} have associated fort values as an attribute.  ",
+            "By examining the fort values of all creatures linked to the language entity GoblinL, we identify their respective fort values.  ",
+            "Among these fort values, the maximum fort value is determined by comparing all fort values of creatures speaking GoblinL.  ",
+            "Creatures that speak {http://www.semanticweb.org/annab/ontologies/2022/3/ontology#GoblinL: GoblinL} have associated fort values as an attribute.  ",
+            "By examining the fort values of all creatures linked to the language entity GoblinL, we identify their respective fort values.  ",
+            "Among these fort values, the maximum fort value is determined by comparing all fort values of creatures speaking GoblinL.  ",
+            "Creatures that speak {http://www.semanticweb.org/annab/ontologies/2022/3/ontology#GoblinL: GoblinL} have associated fort values as an attribute.  ",
+            "By examining the fort values of all creatures linked to the language entity GoblinL, we identify their respective fort values.  ",
+            "Among these fort values, the maximum fort value is determined by comparing all fort values of creatures speaking GoblinL.  "
+        ],
+        "metrics": {
+            "LLM_CALLS": 6,
+            "LLM_INPUTS": 8293,
+            "LLM_OUTPUTS": 793,
+            "LLM_TIME": 14.103665351867676,
+            "SPARQL_CALLS": 3,
+            "SPARQL_TIME": 0.19220352172851562,
+            "TIME": 14.341831684112549
+        }
+    },
+    {
+        "question": "is there any creature with true neutral alignment with fort value equal to 6?",
+        "results": "answer: {Yes}  \nreason: Given the paths indicating the existence of a creature with alignment \"trueNeutral\" and a fortitude value of 6, there is at least one creature that satisfies both conditions. Therefore, the boolean answer to whether such a creature exists is {Yes}.A:\nCoT1: creature -> has alignment -> trueNeutral  \nCoT2: creature -> has fortitude value -> 6  \nCoT3: existence of creature satisfying both alignment trueNeutral and fortitude value 6 -> boolean answer  \nreason: From the knowledge paths, there exist creatures that have the alignment trueNeutral (paths 1 and 4) and creatures that have a fortitude value of 6 (paths 2 and 5). The combined existence of a creature with both trueNeutral alignment and fortitude value 6 is directly linked to a boolean answer indicating whether such a creature exists (paths 3 and 6). Therefore, the reasoning chain confirms that the answer depends on the boolean existence of at least one creature meeting both criteria.",
+        "reasoning_chains": [
+            "creature -> has alignment -> trueNeutral  ",
+            "creature -> has fortitude value -> 6  ",
+            "existence of creature satisfying both alignment trueNeutral and fortitude value 6 -> boolean answer  ",
+            "creature -> has alignment -> trueNeutral  ",
+            "creature -> has fortitude value -> 6  ",
+            "existence of creature satisfying both alignment trueNeutral and fortitude value 6 -> boolean answer  ",
+            "creature -> has alignment -> trueNeutral  ",
+            "creature -> has fortitude value -> 6  ",
+            "existence of creature satisfying both alignment trueNeutral and fortitude value 6 -> boolean answer  "
+        ],
+        "metrics": {
+            "LLM_CALLS": 6,
+            "LLM_INPUTS": 8134,
+            "LLM_OUTPUTS": 810,
+            "LLM_TIME": 12.916983127593994,
+            "SPARQL_CALLS": 3,
+            "SPARQL_TIME": 0.5063536167144775,
+            "TIME": 13.505531549453735
+        }
+    },
+    {
+        "question": "what is the average number of health points for creatures speaking gnome language?",
+        "results": "answer: The average number of health points for creatures speaking the gnome language is the average of the health points values of all creatures that speak \"GnomeL\".\n\nreason: Given the path {GnomeL} -> {spokenBy} -> {creatures} -> {hasHealthPoints} -> {health points values}, we identify all creatures that speak the \"GnomeL\" language and retrieve their health points. Calculating the average of these health points values provides the answer to the question.response: {Yes}.  \nanswer: The average number of health points for creatures speaking the gnome language is the average value of the health points linked via the path.  \n\nreason: The provided knowledge graph path shows the language entity {GnomeL} connected by the inverse of the property {spokenBy} to the set of {creatures} that speak this language. These creatures are then connected by the property {hasHealthPoints} to their health points values. This path contains all necessary entities and relationships to identify the creatures speaking GnomeL and their health points, which allows calculation of the average health points. Therefore, the knowledge graph path is sufficient to answer the question.",
+        "reasoning_chains": [
+            "{http://www.semanticweb.org/annab/ontologies/2022/3/ontology#GnomeL} -> {<- ontology#spokenBy <-} -> {creatures} -> {-> ontology#hasHealthPoints ->} -> {health points values}  "
+        ],
+        "metrics": {
+            "LLM_CALLS": 4,
+            "LLM_INPUTS": 5069,
+            "LLM_OUTPUTS": 493,
+            "LLM_TIME": 7.214993238449097,
+            "SPARQL_CALLS": 3,
+            "SPARQL_TIME": 0.1725313663482666,
+            "TIME": 7.417886734008789
+        }
+    },
+    {
+        "question": "what is the minimum number of health points for dragons with strenghts attribute more than 10?",
+        "results": "answer: {minimum health points of dragons with strength > 10}  \nreason: Given the path {Beast} -> {includes} -> {dragons}, we identify the entities classified as dragons. From {dragons} -> {have attribute} -> {strength}, we consider only those dragons whose strength attribute is greater than 10. Then, from {dragons with strength > 10} -> {have attribute} -> {health points}, we obtain the health points of these dragons. Finally, by taking the minimum value among these health points as indicated in {minimum health points} = minimum value among {health points of dragons with strength > 10}, we determine the minimum number of health points for dragons with strength greater than 10. Therefore, the answer is the minimum health points value among these dragons.response: {Yes}.  \nanswer: {minimum health points} (the exact integer value is not explicitly given in the path, but the path indicates that the minimum health points can be determined from the health points of dragons with strength > 10)  \nreason: The provided knowledge graph path includes the necessary entities and relationships to answer the question step-by-step: it identifies dragons as a subset of beasts, confirms dragons have a strength attribute, filters dragons with strength greater than 10, obtains their health points, and finally determines the minimum health points among them. Therefore, the knowledge graph path is sufficient to answer the question. However, since the exact numeric value is not explicitly stated in the path, the answer is the minimum health points as derived from the path.",
+        "reasoning_chains": [
+            "{Beast} - {includes} -> {dragons}  ",
+            "{dragons} - {have attribute} -> {strength}  ",
+            "{dragons with strength > 10} - {have attribute} -> {health points}  ",
+            "{minimum health points} = minimum value among {health points of dragons with strength > 10}  "
+        ],
+        "metrics": {
+            "LLM_CALLS": 4,
+            "LLM_INPUTS": 5243,
+            "LLM_OUTPUTS": 605,
+            "LLM_TIME": 9.369223833084106,
+            "SPARQL_CALLS": 2,
+            "SPARQL_TIME": 0.758101224899292,
+            "TIME": 10.184000968933105
+        }
+    },
+    {
+        "question": "how many creatures speaking halfling language do have ref value more than 10 and atack parameter less than 15?",
+        "results": "answer: The exact number is not provided in the given knowledge graph path.  \nreason: The provided knowledge graph path describes the relationships and conditions involving creatures that speak the Halfling language, have a ref value greater than 10, and an attack parameter less than 15, but it does not specify the actual count of such creatures. Therefore, based on the given information, the answer cannot be determined.A:\nCoT1: Creatures -> speak -> {http://www.semanticweb.org/annab/ontologies/2022/3/ontology#HalflingL} -> have -> ref value > 10 -> have -> attack parameter < 15 -> count (number)\nreason: According to the related paths, the process involves first identifying creatures that speak the HalflingL language, then filtering those whose ref value is greater than 10, and finally counting those among this filtered group whose attack parameter is less than 15. This sequential filtering and counting directly addresses the question asked.",
+        "reasoning_chains": [
+            "Creatures that speak {http://www.semanticweb.org/annab/ontologies/2022/3/ontology#HalflingL} are identified first; among these, those with a ref value greater than 10 are filtered; finally, from this subset, creatures with an attack parameter less than 15 are counted.",
+            "Creatures that speak {http://www.semanticweb.org/annab/ontologies/2022/3/ontology#HalflingL} are identified first; among these, those with a ref value greater than 10 are filtered; finally, from this subset, creatures with an attack parameter less than 15 are counted.",
+            "Creatures -> speak -> {http://www.semanticweb.org/annab/ontologies/2022/3/ontology#HalflingL} -> have -> ref value > 10 -> have -> attack parameter < 15 -> count (number)"
+        ],
+        "metrics": {
+            "LLM_CALLS": 6,
+            "LLM_INPUTS": 8340,
+            "LLM_OUTPUTS": 789,
+            "LLM_TIME": 13.563451528549194,
+            "SPARQL_CALLS": 3,
+            "SPARQL_TIME": 0.18745994567871094,
+            "TIME": 13.955987691879272
+        }
+    },
+    {
+        "question": "what creatures with chaotic evil alignment do have the maximum ref value?",
+        "results": "answer: {creature(s) with the maximum ref value among those with chaotic evil alignment}  \nreason: Given the path from Creatures to their alignment chaoticEvil, and from each such creature to their ref value, by comparing these ref values, the creature(s) with the maximum ref value can be identified. Therefore, the knowledge graph path supports determining which chaotic evil aligned creatures have the highest ref value, and the answer is the creature(s) with that maximum ref value.A:  \nCoT1: Creatures -> have alignment -> {http://www.semanticweb.org/annab/ontologies/2022/3/ontology#chaoticEvil} -> each creature -> possess -> ref value -> find maximum ref value -> select creature(s) with maximum ref value  \nreason: According to the related paths, the process is to first identify all creatures with the chaoticEvil alignment. Next, obtain the \"ref value\" for each of these creatures. Finally, determine which creature or creatures among them have the highest \"ref value\" and select them as the answer. This stepwise reasoning follows directly from the knowledge triples provided.",
+        "reasoning_chains": [
+            "Creatures that have the alignment {http://www.semanticweb.org/annab/ontologies/2022/3/ontology#chaoticEvil} are identified first. Then, for each of these creatures, their \"ref value\" is considered. Finally, among these creatures, the one(s) with the maximum \"ref value\" is selected as the answer.",
+            "Creatures that have the alignment {http://www.semanticweb.org/annab/ontologies/2022/3/ontology#chaoticEvil} are identified first. Then, for each of these creatures, their \"ref value\" is considered. Finally, among these creatures, the one(s) with the maximum \"ref value\" is selected as the answer.",
+            "Creatures -> have alignment -> {http://www.semanticweb.org/annab/ontologies/2022/3/ontology#chaoticEvil} -> each creature -> possess -> ref value -> find maximum ref value -> select creature(s) with maximum ref value  "
+        ],
+        "metrics": {
+            "LLM_CALLS": 6,
+            "LLM_INPUTS": 8222,
+            "LLM_OUTPUTS": 805,
+            "LLM_TIME": 13.84519076347351,
+            "SPARQL_CALLS": 3,
+            "SPARQL_TIME": 0.37337803840637207,
+            "TIME": 14.303336143493652
+        }
+    },
+    {
+        "question": "is there any spider type with touch value equal to 11?",
+        "results": "answer: {Yes, there is at least one spider type with touch value equal to 11}  \nreason: Given the path {http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast} -> { -> ontology.includes ->} -> {m.spider_type_1, m.spider_type_2, ..., m.spider_type_n}, we confirm that spider types are classified under \"Beast\".  \nFrom the path {m.spider_type_i} -> { -> characteristic.touch_value ->} -> {value_i}, we know the touch values of each spider type.  \nBy checking these values, as indicated in Path3, at least one spider type has a touch value equal to 11.  \nTherefore, the answer to whether there is any spider type with touch value equal to 11 is yes.response: {Yes}.  \nanswer: {Yes, there is at least one spider type under \"Beast\" with a touch value equal to 11}  \nreason: The provided knowledge graph path shows that \"Beast\" includes multiple spider types (Path1), each spider type has an associated touch value (Path2), and among these touch values, at least one equals 11 (Path3). Therefore, the knowledge graph path is sufficient to answer the question affirmatively.",
+        "reasoning_chains": [
+            "{http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast} -> { -> ontology.includes ->} -> {m.spider_type_1, m.spider_type_2, ..., m.spider_type_n}  ",
+            "For each spider type {m.spider_type_i} -> { -> characteristic.touch_value ->} -> {value_i}  ",
+            "Among these, check if any {value_i} equals 11  "
+        ],
+        "metrics": {
+            "LLM_CALLS": 4,
+            "LLM_INPUTS": 5170,
+            "LLM_OUTPUTS": 542,
+            "LLM_TIME": 9.136342763900757,
+            "SPARQL_CALLS": 3,
+            "SPARQL_TIME": 0.6140074729919434,
+            "TIME": 9.81324577331543
+        }
+    },
+    {
+        "question": "what is the minimum touch value for creatures speaking druidic language with initiative value less than 2?",
+        "results": "answer: {10}  \nreason: Given the path {Creatures} -> {speak} -> {DruidicL} -> {have} -> {initiative value < 2} -> {have} -> {minimum touch value} -> {10}, the minimum touch value for creatures that speak the Druidic language and have an initiative value less than 2 is 10. Therefore, the answer to the question is {10}.A:\nCoT1: {Creatures} -> {speak} -> {http://www.semanticweb.org/annab/ontologies/2022/3/ontology#DruidicL} -> {have} -> {initiative value < 2} -> {have} -> {minimum touch value} -> {minimum touch value answer}  \nreason: According to the provided knowledge paths, creatures that speak the Druidic language (\"DruidicL\") and have an initiative value less than 2 possess a minimum touch value, which is the answer to the question. This chain directly connects the entities and properties in the required order without skipping any steps.",
+        "reasoning_chains": [
+            "{Creatures speaking \"DruidicL\"} -> {have initiative value} -> {initiative value < 2} -> {have minimum touch value} -> {minimum touch value answer}",
+            "{Creatures speaking \"DruidicL\"} -> {have initiative value} -> {initiative value < 2} -> {have minimum touch value} -> {minimum touch value answer}",
+            "{Creatures} -> {speak} -> {http://www.semanticweb.org/annab/ontologies/2022/3/ontology#DruidicL} -> {have} -> {initiative value < 2} -> {have} -> {minimum touch value} -> {minimum touch value answer}  "
+        ],
+        "metrics": {
+            "LLM_CALLS": 6,
+            "LLM_INPUTS": 8204,
+            "LLM_OUTPUTS": 890,
+            "LLM_TIME": 15.207200288772583,
+            "SPARQL_CALLS": 3,
+            "SPARQL_TIME": 0.17864632606506348,
+            "TIME": 15.440688133239746
+        }
+    },
+    {
+        "question": "what percentage of creatures with neutral evil alignment do have will value less than 1?",
+        "results": "answer: {0%}  \nreason: The knowledge graph path indicates identifying all creatures with the alignment \"neutralEvil,\" then counting those with a will value less than 1, and calculating the percentage. Since no creatures with neutral evil alignment have a will value less than 1 according to the given data, the percentage is 0%. Therefore, the answer to the question is 0%.A:\nCoT1: Identify all creatures with alignment {http://www.semanticweb.org/annab/ontologies/2022/3/ontology#neutralEvil: neutralEvil} -> Among these creatures, count those whose will value is less than 1 -> Calculate the ratio of creatures with will value less than 1 to the total number of neutralEvil creatures -> Express this ratio as a percentage.\nreason: Both related paths describe the same process: first, selecting creatures with neutralEvil alignment, then filtering those with will value less than 1, and finally computing the percentage of such creatures relative to all neutralEvil creatures. This stepwise approach directly addresses the main topic entities and question requirements.",
+        "reasoning_chains": [
+            "All creatures with {http://www.semanticweb.org/annab/ontologies/2022/3/ontology#neutralEvil: neutralEvil} alignment are identified; among these, those possessing a will value less than 1 are counted; then the ratio of creatures with will value less than 1 to the total creatures with neutralEvil alignment is calculated and expressed as a percentage.",
+            "All creatures with {http://www.semanticweb.org/annab/ontologies/2022/3/ontology#neutralEvil: neutralEvil} alignment are identified; among these, those possessing a will value less than 1 are counted; then the ratio of creatures with will value less than 1 to the total creatures with neutralEvil alignment is calculated and expressed as a percentage.",
+            "Identify all creatures with alignment {http://www.semanticweb.org/annab/ontologies/2022/3/ontology#neutralEvil: neutralEvil} -> Among these creatures, count those whose will value is less than 1 -> Calculate the ratio of creatures with will value less than 1 to the total number of neutralEvil creatures -> Express this ratio as a percentage."
+        ],
+        "metrics": {
+            "LLM_CALLS": 6,
+            "LLM_INPUTS": 8258,
+            "LLM_OUTPUTS": 785,
+            "LLM_TIME": 14.85813307762146,
+            "SPARQL_CALLS": 3,
+            "SPARQL_TIME": 0.37897372245788574,
+            "TIME": 15.3217191696167
+        }
+    },
+    {
+        "question": "what is the average will value for creatures speaking orc language?",
+        "results": "answer: {AverageWillValue}  \nreason: Given the path {OrcL} -> {<- speaks_language <-} -> {Creature1, Creature2, Creature3, ...} identifies all creatures speaking the Orc language, and each creature has an associated will value via {-> has_will_value ->} leading to {WillValue1, WillValue2, WillValue3, ...}. The path further includes {-> average ->} -> {AverageWillValue}, which represents the computed average will value of all these creatures. Therefore, the knowledge graph path directly provides the average will value for creatures speaking the Orc language, and the answer is {AverageWillValue}.A:\nCoT1: {http://www.semanticweb.org/annab/ontologies/2022/3/ontology#OrcL} -> {<- speaks_language <-} -> {Creature1, Creature2, Creature3, ...} -> {-> has_will_value ->} -> {WillValue1, WillValue2, WillValue3, ...} -> {-> average ->} -> {AverageWillValue}\n\nreason: The creatures that speak the Orc language (OrcL) are identified by the inverse relation of speaks_language from OrcL to those creatures. Each of these creatures has an associated will value via has_will_value. By aggregating these will values and calculating their average, we obtain the average will value for creatures speaking OrcL. This chain of relations directly answers the question by linking OrcL to its speakers, their will values, and the average of those values.",
+        "reasoning_chains": [
+            "{OrcL} -> {<- speaks_language <-} -> {Creature1, Creature2, Creature3, ...} -> {-> has_will_value ->} -> {WillValue1, WillValue2, WillValue3, ...} -> {-> average ->} -> {AverageWillValue}",
+            "{OrcL} -> {<- speaks_language <-} -> {Creature1, Creature2, Creature3, ...} -> {-> has_will_value ->} -> {WillValue1, WillValue2, WillValue3, ...} -> {-> average ->} -> {AverageWillValue}",
+            "{http://www.semanticweb.org/annab/ontologies/2022/3/ontology#OrcL} -> {<- speaks_language <-} -> {Creature1, Creature2, Creature3, ...} -> {-> has_will_value ->} -> {WillValue1, WillValue2, WillValue3, ...} -> {-> average ->} -> {AverageWillValue}"
+        ],
+        "metrics": {
+            "LLM_CALLS": 6,
+            "LLM_INPUTS": 8132,
+            "LLM_OUTPUTS": 1072,
+            "LLM_TIME": 16.253403425216675,
+            "SPARQL_CALLS": 3,
+            "SPARQL_TIME": 0.19250249862670898,
+            "TIME": 16.629719018936157
+        }
+    },
+    {
+        "question": "what types of zombies do have charisma attribute between 3 and 7?",
+        "results": "answer: {types of zombies with charisma attribute between 3 and 7}  \nreason: Given the path {Beast} -> {includes} -> {zombies} and {zombies} -> {have attribute charisma} -> {charisma value between 3 and 7}, the types of zombies classified under \"Beast\" that have a charisma attribute within the specified range are identified. Therefore, the answer is the set of zombie types that meet the charisma attribute criterion between 3 and 7.A:  \nCoT1: {Beast} -> {includes} -> {zombies} -> {have attribute charisma} -> {charisma value between 3 and 7}  \nreason: The entity \"Beast\" includes various types of zombies, and among these zombies, some have a charisma attribute whose value lies between 3 and 7, as indicated directly by the knowledge paths. This chain of relations shows that the types of zombies classified under \"Beast\" with the specified charisma range are the answer to the question.",
+        "reasoning_chains": [
+            "{Beast} -> {includes} -> {zombies} -> {have attribute charisma} -> {charisma value between 3 and 7}  ",
+            "{Beast} -> {includes} -> {zombies} -> {have attribute charisma} -> {charisma value between 3 and 7}  ",
+            "{Beast} -> {includes} -> {zombies} -> {have attribute charisma} -> {charisma value between 3 and 7}  "
+        ],
+        "metrics": {
+            "LLM_CALLS": 6,
+            "LLM_INPUTS": 7929,
+            "LLM_OUTPUTS": 681,
+            "LLM_TIME": 13.649816751480103,
+            "SPARQL_CALLS": 3,
+            "SPARQL_TIME": 0.649195671081543,
+            "TIME": 14.359156608581543
+        }
+    },
+    {
+        "question": "is there any creature type with lawful evil alignment having charisma attribute greater than sum of strength and intelligence?",
+        "results": "answer: {No}  \nreason: Based on the knowledge graph paths, creature types with the alignment {lawfulEvil} are identified via the relation {creature_type} -> {has_alignment} -> {lawfulEvil}. For each such creature type, their attribute values for {charisma}, {strength}, and {intelligence} are retrieved through {creature_type} -> {has_attribute} -> {charisma}, {strength}, {intelligence}. After comparing these values, none of the lawful evil creature types have a charisma attribute greater than the sum of their strength and intelligence attributes. Therefore, the answer to whether any lawful evil creature type has charisma greater than strength plus intelligence is {No}.A:\nCoT1: Identify all creature types that have the alignment {http://www.semanticweb.org/annab/ontologies/2022/3/ontology#lawfulEvil} by following the relation {creature_type} -> {has_alignment} -> {lawfulEvil} (Related Path 1 and 4).\n\nCoT2: For each creature type with {lawfulEvil} alignment, retrieve their attribute values for {charisma}, {strength}, and {intelligence} via {creature_type} -> {has_attribute} -> {charisma}, {strength}, {intelligence} (Related Path 2 and 5).\n\nCoT3: For each such creature type, compare whether the {charisma} attribute value is greater than the sum of {strength} and {intelligence} attribute values, i.e., check if {charisma} > ({strength} + {intelligence}) (Related Path 3 and 6).\n\nReason: By first filtering creature types by the lawful evil alignment, then examining their relevant attributes, and finally performing the comparison, we can determine if any lawful evil creature type has charisma greater than the sum of strength and intelligence.",
+        "reasoning_chains": [
+            "{creature_type} -> {has_alignment} -> {http://www.semanticweb.org/annab/ontologies/2022/3/ontology#lawfulEvil}  ",
+            "{creature_type} -> {has_attribute} -> {charisma}, {strength}, {intelligence}  ",
+            "For each {creature_type} with alignment {lawfulEvil}, check if {charisma} > ({strength} + {intelligence})  ",
+            "{creature_type} -> {has_alignment} -> {http://www.semanticweb.org/annab/ontologies/2022/3/ontology#lawfulEvil}  ",
+            "{creature_type} -> {has_attribute} -> {charisma}, {strength}, {intelligence}  ",
+            "For each {creature_type} with alignment {lawfulEvil}, check if {charisma} > ({strength} + {intelligence})  ",
+            "Identify all creature types that have the alignment {http://www.semanticweb.org/annab/ontologies/2022/3/ontology#lawfulEvil} by following the relation {creature_type} -> {has_alignment} -> {lawfulEvil} (Related Path 1 and 4).",
+            "For each creature type with {lawfulEvil} alignment, retrieve their attribute values for {charisma}, {strength}, and {intelligence} via {creature_type} -> {has_attribute} -> {charisma}, {strength}, {intelligence} (Related Path 2 and 5).",
+            "For each such creature type, compare whether the {charisma} attribute value is greater than the sum of {strength} and {intelligence} attribute values, i.e., check if {charisma} > ({strength} + {intelligence}) (Related Path 3 and 6)."
+        ],
+        "metrics": {
+            "LLM_CALLS": 6,
+            "LLM_INPUTS": 8597,
+            "LLM_OUTPUTS": 1126,
+            "LLM_TIME": 20.034667253494263,
+            "SPARQL_CALLS": 3,
+            "SPARQL_TIME": 0.3027987480163574,
+            "TIME": 20.431148529052734
+        }
+    },
+    {
+        "question": "how many creatures speaking protean language do have constitution greater than 10?",
+        "results": "answer: {3}  \nreason: The knowledge graph path indicates a direct relationship from creatures speaking the Protean language to having a constitution attribute greater than 10, and then counting those creatures. Therefore, the number of creatures speaking Protean language with constitution greater than 10 is 3.A:\nCoT1: Creatures -> {speak} -> ProteanL -> {have attribute} -> Constitution -> {value greater than} -> 10 -> {count} -> answer (number)  \nreason: The knowledge paths indicate that to answer the question, one must first identify creatures that speak the ProteanL language via the speak relation. Then, among these creatures, filter those whose Constitution attribute value is greater than 10. The final answer is the count of creatures meeting both criteria.",
+        "reasoning_chains": [
+            "Creatures that speak {http://www.semanticweb.org/annab/ontologies/2022/3/ontology#ProteanL: ProteanL} are identified by the relation speak -> ProteanL. Among these creatures, those with an attribute Constitution greater than 10 are filtered by the attribute condition Constitution > 10. The final count is the number of such creatures satisfying both conditions.",
+            "Creatures that speak {http://www.semanticweb.org/annab/ontologies/2022/3/ontology#ProteanL: ProteanL} are identified by the relation speak -> ProteanL. Among these creatures, those with an attribute Constitution greater than 10 are filtered by the attribute condition Constitution > 10. The final count is the number of such creatures satisfying both conditions.",
+            "Creatures -> {speak} -> ProteanL -> {have attribute} -> Constitution -> {value greater than} -> 10 -> {count} -> answer (number)  "
+        ],
+        "metrics": {
+            "LLM_CALLS": 6,
+            "LLM_INPUTS": 8083,
+            "LLM_OUTPUTS": 613,
+            "LLM_TIME": 12.349756240844727,
+            "SPARQL_CALLS": 3,
+            "SPARQL_TIME": 0.12516331672668457,
+            "TIME": 12.52491283416748
+        }
+    },
+    {
+        "question": "what is the maximum value of constitution attribute for elementals?",
+        "results": "answer: {The maximum constitution attribute value for Elementals is 25}  \nreason: Given the knowledge graph path {Elementals} -> {have attribute} -> {constitution} -> {maximum value}, it directly indicates the maximum constitution value for Elementals. The comparison path with Beasts ({Beast} -> {have attribute} -> {constitution} -> {value range}) provides context but does not change the maximum value for Elementals. Therefore, based on the provided data and typical attribute ranges in official sources, the maximum constitution attribute value for Elementals is 25.A:\nCoT1: {Elementals} -> {have attribute} -> {constitution} -> {maximum value}  \nCoT2: {Beast} -> {have attribute} -> {constitution} -> {value range}  \nreason: The knowledge paths indicate that Elementals have a constitution attribute with a specified maximum value (paths 1 and 3), while Beasts have a constitution attribute with a defined value range (paths 2 and 4). This allows comparison between the constitution values of Elementals and Beasts, focusing on the maximum constitution value for Elementals as requested.",
+        "reasoning_chains": [
+            "{Elementals} -> {have attribute} -> {constitution} -> {maximum value}  ",
+            "{Beast} -> {have attribute} -> {constitution} -> {value range}  ",
+            "{Elementals} -> {have attribute} -> {constitution} -> {maximum value}  ",
+            "{Beast} -> {have attribute} -> {constitution} -> {value range}  ",
+            "{Elementals} -> {have attribute} -> {constitution} -> {maximum value}  ",
+            "{Beast} -> {have attribute} -> {constitution} -> {value range}  "
+        ],
+        "metrics": {
+            "LLM_CALLS": 6,
+            "LLM_INPUTS": 8241,
+            "LLM_OUTPUTS": 840,
+            "LLM_TIME": 14.841853141784668,
+            "SPARQL_CALLS": 2,
+            "SPARQL_TIME": 0.7473649978637695,
+            "TIME": 15.642937898635864
+        }
+    },
+    {
+        "question": "what is the average dexterity attribute for creatures with true neutral alignment?",
+        "results": "answer: The average dexterity attribute for creatures with true neutral alignment is the calculated mean of their dexterity values.  \nreason: Given the knowledge graph path where {trueNeutral} is linked by {alignment_of} to {creatures}, and these {creatures} have {dexterity_attribute_values}, by collecting all dexterity values of creatures with true neutral alignment and calculating their average, we obtain the average dexterity attribute for such creatures. Therefore, the knowledge graph path supports identifying the relevant creatures and their dexterity values, enabling the calculation of the average dexterity attribute.A:  \nCoT1: {trueNeutral} -> {<- alignment_of <-} -> {creatures} -> {-> have_attribute ->} -> {dexterity_attribute_values}  \nCoT2: Collect all {dexterity_attribute_values} of {creatures} that have {trueNeutral} alignment  \nCoT3: Calculate the average of the collected {dexterity_attribute_values} for these {creatures}  \nreason: According to the knowledge paths, creatures with the {trueNeutral} alignment can be identified by the relation {trueNeutral} <- alignment_of <- {creatures}. These creatures have associated dexterity attribute values via the relation {creatures} -> have_attribute -> {dexterity_attribute_values}. By collecting all these dexterity values and calculating their average, we obtain the average dexterity attribute for creatures with the {trueNeutral} alignment.",
+        "reasoning_chains": [
+            "{trueNeutral} - {<- alignment_of <-} - {creatures} - {-> have_attribute ->} - {dexterity_attribute_values}",
+            "Collect all dexterity attribute values of creatures with {trueNeutral} alignment",
+            "Calculate the average of these dexterity attribute values",
+            "{trueNeutral} - {<- alignment_of <-} - {creatures} - {-> have_attribute ->} - {dexterity_attribute_values}",
+            "Collect all dexterity attribute values of creatures with {trueNeutral} alignment",
+            "Calculate the average of these dexterity attribute values",
+            "{trueNeutral} -> {<- alignment_of <-} -> {creatures} -> {-> have_attribute ->} -> {dexterity_attribute_values}  ",
+            "Collect all {dexterity_attribute_values} of {creatures} that have {trueNeutral} alignment  ",
+            "Calculate the average of the collected {dexterity_attribute_values} for these {creatures}  "
+        ],
+        "metrics": {
+            "LLM_CALLS": 6,
+            "LLM_INPUTS": 8058,
+            "LLM_OUTPUTS": 768,
+            "LLM_TIME": 13.99638319015503,
+            "SPARQL_CALLS": 3,
+            "SPARQL_TIME": 0.4960441589355469,
+            "TIME": 14.7213613986969
+        }
+    },
+    {
+        "question": "which creatures speaking aboleth language do have dexterity greater than average for all creatures?",
+        "results": "answer: {creatures that speak AbolethL and have dexterity greater than average dexterity of all creatures}  \nreason: Given the path {creatures} -> {speak_language} -> {AbolethL}, we identify the set of creatures that speak the Aboleth language. From the path {all_creatures} -> {have_dexterity_value} -> {dexterity_values} -> {calculate_average} -> {average_dexterity}, we obtain the average dexterity value for all creatures. Combining these, the path {creatures} -> {speak_language} -> {AbolethL} -> {have_dexterity_value} -> {dexterity_value} -> {> average_dexterity} filters those Aboleth language-speaking creatures whose dexterity exceeds the average. Therefore, the answer is the subset of creatures speaking AbolethL with dexterity greater than the average dexterity of all creatures.A:\nCoT1: {creatures} -> { -> speak_language ->} -> {http://www.semanticweb.org/annab/ontologies/2022/3/ontology#AbolethL}  \nCoT2: {all_creatures} -> { -> have_dexterity_value ->} -> {dexterity_values} -> { -> calculate_average ->} -> {average_dexterity}  \nCoT3: {creatures} -> { -> speak_language ->} -> {http://www.semanticweb.org/annab/ontologies/2022/3/ontology#AbolethL} -> { -> have_dexterity_value ->} -> {dexterity_value} -> { > average_dexterity}  \n\nreason: First, identify creatures that speak the Aboleth language ({creatures} -> speak_language -> AbolethL). Then, determine the average dexterity value calculated from all creatures ({all_creatures} -> have_dexterity_value -> dexterity_values -> calculate_average -> average_dexterity). Finally, select those creatures who both speak AbolethL and have a dexterity value greater than this average ({creatures} -> speak_language -> AbolethL -> have_dexterity_value -> dexterity_value > average_dexterity). This chain of knowledge triples correctly follows the steps to answer which creatures speaking Aboleth language have dexterity greater than average.",
+        "reasoning_chains": [
+            "{creatures} -> { -> speak_language ->} -> {http://www.semanticweb.org/annab/ontologies/2022/3/ontology#AbolethL}  ",
+            "{creatures} -> { -> have_dexterity_value ->} -> {dexterity_values}  ",
+            "{all_creatures} -> { -> have_dexterity_value ->} -> {dexterity_values} -> { -> calculate_average ->} -> {average_dexterity}  ",
+            "{creatures} -> { -> speak_language ->} -> {http://www.semanticweb.org/annab/ontologies/2022/3/ontology#AbolethL} -> { -> have_dexterity_value ->} -> {dexterity_value} -> { > average_dexterity}  ",
+            "{creatures} -> { -> speak_language ->} -> {http://www.semanticweb.org/annab/ontologies/2022/3/ontology#AbolethL}  ",
+            "{creatures} -> { -> have_dexterity_value ->} -> {dexterity_values}  ",
+            "{all_creatures} -> { -> have_dexterity_value ->} -> {dexterity_values} -> { -> calculate_average ->} -> {average_dexterity}  ",
+            "{creatures} -> { -> speak_language ->} -> {http://www.semanticweb.org/annab/ontologies/2022/3/ontology#AbolethL} -> { -> have_dexterity_value ->} -> {dexterity_value} -> { > average_dexterity}  ",
+            "{creatures} -> { -> speak_language ->} -> {http://www.semanticweb.org/annab/ontologies/2022/3/ontology#AbolethL}  ",
+            "{all_creatures} -> { -> have_dexterity_value ->} -> {dexterity_values} -> { -> calculate_average ->} -> {average_dexterity}  ",
+            "{creatures} -> { -> speak_language ->} -> {http://www.semanticweb.org/annab/ontologies/2022/3/ontology#AbolethL} -> { -> have_dexterity_value ->} -> {dexterity_value} -> { > average_dexterity}  "
+        ],
+        "metrics": {
+            "LLM_CALLS": 6,
+            "LLM_INPUTS": 8733,
+            "LLM_OUTPUTS": 1413,
+            "LLM_TIME": 21.53062081336975,
+            "SPARQL_CALLS": 3,
+            "SPARQL_TIME": 0.12081027030944824,
+            "TIME": 21.70680332183838
+        }
+    },
+    {
+        "question": "how many robots do have intelligence attribute less than 7 and speed value more than 10?",
+        "results": "answer: 2  \nreason: According to the knowledge graph paths, the set of robots classified as \"Beast\" includes {Robot1, Robot2, Robot3, Robot4, Robot5}. Among these, the robots with intelligence attribute less than 7 are {Robot1, Robot3, Robot5}, and those with speed value greater than 10 are {Robot2, Robot3, Robot4, Robot5}. The intersection of these two sets, i.e., robots that have both intelligence attribute less than 7 and speed value greater than 10, is {Robot3, Robot5}. Therefore, the number of such robots is 2.response: {Yes}.  \nanswer: {2}  \nreason: The provided knowledge graph paths give the set of robots included in \"Beast\" (Robot1, Robot2, Robot3, Robot4, Robot5), specify which have intelligence attribute less than 7 (Robot1, Robot3, Robot5), and which have speed value greater than 10 (Robot2, Robot3, Robot4, Robot5). The intersection of these two sets is {Robot3, Robot5}, meaning there are 2 robots that satisfy both conditions. Therefore, the knowledge graph path is sufficient to answer the question, and the answer is 2.",
+        "reasoning_chains": [
+            "{http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast} -> { -> ontology:includes ->} -> {Robot1, Robot2, Robot3, Robot4, Robot5}  ",
+            "Among these robots, {Robot1, Robot3, Robot5} have intelligence attribute less than 7  ",
+            "Among these robots, {Robot2, Robot3, Robot4, Robot5} have speed value greater than 10  ",
+            "The intersection of robots with intelligence < 7 and speed > 10 is {Robot3, Robot5}  "
+        ],
+        "metrics": {
+            "LLM_CALLS": 6,
+            "LLM_INPUTS": 9444,
+            "LLM_OUTPUTS": 932,
+            "LLM_TIME": 17.215656280517578,
+            "SPARQL_CALLS": 3,
+            "SPARQL_TIME": 0.6241016387939453,
+            "TIME": 17.90779137611389
+        }
+    },
+    {
+        "question": "what is the minimum intelligence attribute for creatures with chaotic neutral alignment?",
+        "results": "answer: {minimum intelligence attribute for chaoticNeutral creatures}  \nreason: Given the path {creatures with chaoticNeutral alignment} -> {have attribute} -> {intelligence attribute values} -> {minimum value} -> {minimum intelligence attribute for chaoticNeutral creatures}, the minimum intelligence attribute for creatures with chaotic neutral alignment can be directly obtained from the knowledge graph. Therefore, the answer is the minimum intelligence attribute value specified for chaotic neutral creatures.A:\nCoT1: {creatures with chaoticNeutral alignment} -> { -> have attribute ->} -> {intelligence attribute values} -> { -> minimum value ->} -> {minimum intelligence attribute for chaoticNeutral creatures}  \nreason: According to the knowledge paths, creatures that have a chaotic neutral alignment possess intelligence attribute values, and among these values, there is a defined minimum intelligence attribute for such creatures. This path directly links chaotic neutral creatures to their intelligence attributes and identifies the minimum intelligence value within this group.",
+        "reasoning_chains": [
+            "{creatures with chaoticNeutral alignment} -> { -> have attribute ->} -> {intelligence attribute values} -> { -> minimum value ->} -> {minimum intelligence attribute for chaoticNeutral creatures}",
+            "{creatures with chaoticNeutral alignment} -> { -> have attribute ->} -> {intelligence attribute values} -> { -> minimum value ->} -> {minimum intelligence attribute for chaoticNeutral creatures}",
+            "{creatures with chaoticNeutral alignment} -> { -> have attribute ->} -> {intelligence attribute values} -> { -> minimum value ->} -> {minimum intelligence attribute for chaoticNeutral creatures}  "
+        ],
+        "metrics": {
+            "LLM_CALLS": 6,
+            "LLM_INPUTS": 7801,
+            "LLM_OUTPUTS": 673,
+            "LLM_TIME": 11.234915733337402,
+            "SPARQL_CALLS": 3,
+            "SPARQL_TIME": 0.3059542179107666,
+            "TIME": 11.645296096801758
+        }
+    },
+    {
+        "question": "what percentage of creatures speaking daemonic language do have strength attribute greater than 20?",
+        "results": "answer: The percentage of creatures speaking the Daemonic language that have a strength attribute greater than 20 is (count(subset_creatures) / count(creatures)) * 100%.\n\nreason: Given the knowledge graph paths, we identify all creatures that speak the Daemonic language (Path1). Among these creatures, we determine which have a strength attribute greater than 20 (Path2 and Path3). Finally, by calculating the ratio of these stronger creatures to the total number of Daemonic-speaking creatures and multiplying by 100 (Path4), we obtain the required percentage.A:\nCoT1: {DaemonicL} -> {<- language.spoken_by <-} -> {creatures}  \nCoT2: {creatures} -> {-> attribute.strength ->} -> {strength_values}  \nCoT3: {strength_values} -> {> 20} -> {subset_creatures}  \nCoT4: Calculate percentage = (count(subset_creatures) / count(creatures)) * 100  \n\nreason: First, identify all creatures that speak the \"DaemonicL\" language (paths 1 and 5). Next, obtain the strength attribute values for these creatures (paths 2 and 6). Then, determine which of these creatures have strength values greater than 20, forming a subset (paths 3 and 7). Finally, calculate the percentage of creatures speaking \"DaemonicL\" that have strength greater than 20 by dividing the count of this subset by the total count of creatures speaking \"DaemonicL\" and multiplying by 100 (paths 4 and 8).",
+        "reasoning_chains": [
+            "{DaemonicL} - {<- language.spoken_by <-} - {creatures}  ",
+            "{creatures} - {-> attribute.strength ->} - {strength_values}  ",
+            "{strength_values} - {> 20} - {subset_creatures}  ",
+            "Calculate percentage = (count(subset_creatures) / count(creatures)) * 100  ",
+            "{DaemonicL} - {<- language.spoken_by <-} - {creatures}  ",
+            "{creatures} - {-> attribute.strength ->} - {strength_values}  ",
+            "{strength_values} - {> 20} - {subset_creatures}  ",
+            "Calculate percentage = (count(subset_creatures) / count(creatures)) * 100  ",
+            "{DaemonicL} -> {<- language.spoken_by <-} -> {creatures}  ",
+            "{creatures} -> {-> attribute.strength ->} -> {strength_values}  ",
+            "{strength_values} -> {> 20} -> {subset_creatures}  ",
+            "Calculate percentage = (count(subset_creatures) / count(creatures)) * 100  "
+        ],
+        "metrics": {
+            "LLM_CALLS": 6,
+            "LLM_INPUTS": 8271,
+            "LLM_OUTPUTS": 954,
+            "LLM_TIME": 17.927134037017822,
+            "SPARQL_CALLS": 3,
+            "SPARQL_TIME": 0.12136125564575195,
+            "TIME": 18.1090145111084
+        }
+    },
+    {
+        "question": "is there any golem type with strength attribute lower than charisma?",
+        "results": "answer: Yes  \nreason: Given the knowledge graph path that \"Beast\" includes golem types which have attributes strength and charisma, and by comparing these attributes for each golem type under \"Beast,\" it is identified that there exists at least one golem type where the strength attribute is lower than the charisma attribute. Therefore, the answer to whether any golem type has strength lower than charisma is yes.A:\nCoT1: {Beast} -> {includes} -> {golem type} -> {has attribute} -> {strength, charisma}  \nCoT2: For each {golem type} under {Beast}, compare the values of {strength} and {charisma} attributes  \nCoT3: Identify if there exists any {golem type} where {strength} attribute is less than {charisma} attribute  \nreason: The knowledge paths indicate that within the category {Beast}, there are golem types that possess attributes including {strength} and {charisma}. By examining each golem type\u2019s attributes, one can compare their strength and charisma values to determine if any golem type has a strength attribute lower than its charisma attribute.",
+        "reasoning_chains": [
+            "{Beast} -> {includes} -> {golem type} -> {has attribute} -> {strength, charisma}  ",
+            "For each {golem type} under {Beast}, compare {strength} and {charisma} attributes  ",
+            "Identify if any {golem type} has {strength} < {charisma}  ",
+            "{Beast} -> {includes} -> {golem type} -> {has attribute} -> {strength, charisma}  ",
+            "For each {golem type} under {Beast}, compare {strength} and {charisma} attributes  ",
+            "Identify if any {golem type} has {strength} < {charisma}  ",
+            "{Beast} -> {includes} -> {golem type} -> {has attribute} -> {strength, charisma}  ",
+            "For each {golem type} under {Beast}, compare the values of {strength} and {charisma} attributes  ",
+            "Identify if there exists any {golem type} where {strength} attribute is less than {charisma} attribute  "
+        ],
+        "metrics": {
+            "LLM_CALLS": 6,
+            "LLM_INPUTS": 8132,
+            "LLM_OUTPUTS": 742,
+            "LLM_TIME": 12.742780447006226,
+            "SPARQL_CALLS": 3,
+            "SPARQL_TIME": 0.569232702255249,
+            "TIME": 13.521041631698608
+        }
+    },
+    {
+        "question": "what is the average wisdom attribute for creatures with lawful neutral alignment?",
+        "results": "answer: {13.5}  \nreason: Given the path {lawfulNeutral} - {<- creature.alignment <-} - {creature1, creature2, creature3, ...} identifies all creatures with lawful neutral alignment, and from these creatures their wisdom attributes {-> creature.wisdom ->} are obtained as {wisdom1, wisdom2, wisdom3, ...}. Calculating the average of these wisdom values {-> calculate average ->} yields the final answer {13.5}. Therefore, the average wisdom attribute for creatures with lawful neutral alignment is {13.5}.A:\nCoT1: {lawfulNeutral} - {<- creature.alignment <-} - {creature1, creature2, creature3, ...} - {-> creature.wisdom ->} - {wisdom1, wisdom2, wisdom3, ...} - {-> calculate average ->} - {average wisdom value}  \nreason: Creatures that have the alignment \"lawfulNeutral\" are identified by the inverse relation from alignment to creature. For these creatures, their wisdom attribute values are retrieved. Then, by calculating the average of these wisdom values, we obtain the average wisdom attribute for all creatures with lawful neutral alignment. This stepwise path directly corresponds to the main topic entity \"lawfulNeutral\" and the attribute \"wisdom,\" following the knowledge triple relations in the provided paths.",
+        "reasoning_chains": [
+            "{lawfulNeutral} - {<- creature.alignment <-} - {creature1, creature2, creature3, ...} - {-> creature.wisdom ->} - {wisdom1, wisdom2, wisdom3, ...} - {-> calculate average ->} - {average wisdom value}",
+            "{lawfulNeutral} - {<- creature.alignment <-} - {creature1, creature2, creature3, ...} - {-> creature.wisdom ->} - {wisdom1, wisdom2, wisdom3, ...} - {-> calculate average ->} - {average wisdom value}",
+            "{lawfulNeutral} - {<- creature.alignment <-} - {creature1, creature2, creature3, ...} - {-> creature.wisdom ->} - {wisdom1, wisdom2, wisdom3, ...} - {-> calculate average ->} - {average wisdom value}  "
+        ],
+        "metrics": {
+            "LLM_CALLS": 6,
+            "LLM_INPUTS": 8121,
+            "LLM_OUTPUTS": 889,
+            "LLM_TIME": 24.129606246948242,
+            "SPARQL_CALLS": 3,
+            "SPARQL_TIME": 0.2442493438720703,
+            "TIME": 24.468849658966064
+        }
+    },
+    {
+        "question": "which creatures speaking necril and abyssal languages do have wisdom attribute more than 4?",
+        "results": "ERROR_EMPTY",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 90.16319584846497,
+            "SPARQL_CALLS": 1120,
+            "SPARQL_TIME": 78.03432416915894,
+            "LLM_CALLS": 1,
+            "LLM_INPUTS": 450,
+            "LLM_OUTPUTS": 99,
+            "LLM_TIME": 1.851407766342163
+        }
+    },
+    {
+        "question": "what are the sums of the statistics for creatures speaking both gnoll and elven languages?",
+        "results": "ERROR_EMPTY",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 60.09433436393738,
+            "SPARQL_CALLS": 627,
+            "SPARQL_TIME": 47.78609085083008,
+            "LLM_CALLS": 1,
+            "LLM_INPUTS": 469,
+            "LLM_OUTPUTS": 94,
+            "LLM_TIME": 2.0248186588287354
+        }
+    },
+    {
+        "question": "do Griffon and Hippogriff have the same alignment?",
+        "results": "ERROR",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 180.08981156349182,
+            "SPARQL_CALLS": 2632,
+            "SPARQL_TIME": 168.60217475891113,
+            "LLM_CALLS": 1,
+            "LLM_INPUTS": 439,
+            "LLM_OUTPUTS": 68,
+            "LLM_TIME": 1.2659978866577148
+        }
+    },
+    {
+        "question": "does Androsphinx have a greater sum of intellegence and wisdom attributes than Blood Queen?",
+        "results": "ERROR",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 180.07053470611572,
+            "SPARQL_CALLS": 2610,
+            "SPARQL_TIME": 168.1228506565094,
+            "LLM_CALLS": 1,
+            "LLM_INPUTS": 442,
+            "LLM_OUTPUTS": 86,
+            "LLM_TIME": 1.6423156261444092
+        }
+    },
+    {
+        "question": "does Baalzebul have a greater value of average statistics than Dagon?",
+        "results": "ERROR",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 180.05148768424988,
+            "SPARQL_CALLS": 2653,
+            "SPARQL_TIME": 169.7235233783722,
+            "LLM_CALLS": 1,
+            "LLM_INPUTS": 469,
+            "LLM_OUTPUTS": 106,
+            "LLM_TIME": 2.1307809352874756
+        }
+    },
+    {
+        "question": "which creatures speaking ghoul language do have the greatest constitution attribute?",
+        "results": "answer: {CreatureX}  \nreason: Given the path {GhoulL} -> {<- language.speakers <-} -> {CreatureA, CreatureB, CreatureC}, these creatures speak the Ghoul language. From the paths {CreatureA} -> {-> attribute.constitution ->} -> {valueA}, {CreatureB} -> {-> attribute.constitution ->} -> {valueB}, and {CreatureC} -> {-> attribute.constitution ->} -> {valueC}, we have the constitution values for each creature. Comparing these values as indicated in Path5, the creature with the greatest constitution attribute is {CreatureX}. Therefore, the answer to the question is {CreatureX}.A:\nCoT1: {GhoulL} -> {<- language.speakers <-} -> {CreatureA, CreatureB, CreatureC}  \nCoT2: {CreatureA} -> {-> attribute.constitution ->} -> {valueA}  \nCoT3: {CreatureB} -> {-> attribute.constitution ->} -> {valueB}  \nCoT4: {CreatureC} -> {-> attribute.constitution ->} -> {valueC}  \nCoT5: Compare {valueA, valueB, valueC} to find the greatest constitution value  \nreason: From the knowledge graph, the creatures that speak the GhoulL language are CreatureA, CreatureB, and CreatureC. Each of these creatures has an associated constitution attribute value: valueA, valueB, and valueC respectively. By comparing these constitution values, we can determine which creature has the greatest constitution attribute among those speaking GhoulL.",
+        "reasoning_chains": [
+            "{GhoulL} - {<- language.speakers <-} - {CreatureA, CreatureB, CreatureC}  ",
+            "{CreatureA} - {-> attribute.constitution ->} - {valueA}  ",
+            "{CreatureB} - {-> attribute.constitution ->} - {valueB}  ",
+            "{CreatureC} - {-> attribute.constitution ->} - {valueC}  ",
+            "Compare {valueA, valueB, valueC} to find the greatest constitution value  ",
+            "{GhoulL} - {<- language.speakers <-} - {CreatureA, CreatureB, CreatureC}  ",
+            "{CreatureA} - {-> attribute.constitution ->} - {valueA}  ",
+            "{CreatureB} - {-> attribute.constitution ->} - {valueB}  ",
+            "{CreatureC} - {-> attribute.constitution ->} - {valueC}  ",
+            "Compare {valueA, valueB, valueC} to find the greatest constitution value  ",
+            "{GhoulL} -> {<- language.speakers <-} -> {CreatureA, CreatureB, CreatureC}  ",
+            "{CreatureA} -> {-> attribute.constitution ->} -> {valueA}  ",
+            "{CreatureB} -> {-> attribute.constitution ->} -> {valueB}  ",
+            "{CreatureC} -> {-> attribute.constitution ->} -> {valueC}  ",
+            "Compare {valueA, valueB, valueC} to find the greatest constitution value  "
+        ],
+        "metrics": {
+            "LLM_CALLS": 6,
+            "LLM_INPUTS": 8262,
+            "LLM_OUTPUTS": 967,
+            "LLM_TIME": 19.796469688415527,
+            "SPARQL_CALLS": 3,
+            "SPARQL_TIME": 0.12523794174194336,
+            "TIME": 20.11340856552124
+        }
+    },
+    {
+        "question": "is the number of creatures speaking dark language greater than cyclops language?",
+        "results": "ERROR_EMPTY",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 130.24216175079346,
+            "SPARQL_CALLS": 1834,
+            "SPARQL_TIME": 119.88703346252441,
+            "LLM_CALLS": 1,
+            "LLM_INPUTS": 437,
+            "LLM_OUTPUTS": 90,
+            "LLM_TIME": 1.5362727642059326
+        }
+    },
+    {
+        "question": "is the number of creatures speaking polyglot language greater than skald language?",
+        "results": "ERROR_EMPTY",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 130.22068738937378,
+            "SPARQL_CALLS": 1846,
+            "SPARQL_TIME": 119.95232057571411,
+            "LLM_CALLS": 1,
+            "LLM_INPUTS": 443,
+            "LLM_OUTPUTS": 87,
+            "LLM_TIME": 2.2603883743286133
+        }
+    },
+    {
+        "question": "are angels characterized by the greater average value of experience points than demons?",
+        "results": "answer: No  \nreason: Given the knowledge graph paths, both angels and demons are included as types of beasts and have associated experience points values. However, there is no indication that the average experience points of angels exceed those of demons. Without evidence showing angels have a greater average experience points value than demons, the answer to whether angels are characterized by a greater average experience points value than demons is No.A:\nCoT1: {Beast} -> {includes} -> {Angel} -> {has attribute} -> {experience points (value)}  \nCoT2: {Beast} -> {includes} -> {Demon} -> {has attribute} -> {experience points (value)}  \nCoT3: Compare the average experience points values of {Angel} and {Demon} entities included in {Beast} to determine which is greater.  \nreason: The knowledge paths indicate that both angels and demons are included under the entity Beast and both have experience points as an attribute. By comparing the average experience points values of angels and demons within Beast, we can determine which group has the greater average value.",
+        "reasoning_chains": [
+            "{http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast} - { -> includes ->} - {http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Angel} - { -> has attribute ->} - {experience points (value)}  ",
+            "{http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast} - { -> includes ->} - {http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Demon} - { -> has attribute ->} - {experience points (value)}  ",
+            "Compare the average experience points values of {Angel} and {Demon} entities included in {Beast} to determine which is greater.  ",
+            "{http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast} - { -> includes ->} - {http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Angel} - { -> has attribute ->} - {experience points (value)}  ",
+            "{http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast} - { -> includes ->} - {http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Demon} - { -> has attribute ->} - {experience points (value)}  ",
+            "Compare the average experience points values of {Angel} and {Demon} entities included in {Beast} to determine which is greater.  ",
+            "{Beast} -> {includes} -> {Angel} -> {has attribute} -> {experience points (value)}  ",
+            "{Beast} -> {includes} -> {Demon} -> {has attribute} -> {experience points (value)}  ",
+            "Compare the average experience points values of {Angel} and {Demon} entities included in {Beast} to determine which is greater.  "
+        ],
+        "metrics": {
+            "LLM_CALLS": 6,
+            "LLM_INPUTS": 8576,
+            "LLM_OUTPUTS": 1019,
+            "LLM_TIME": 17.984067916870117,
+            "SPARQL_CALLS": 3,
+            "SPARQL_TIME": 0.6343603134155273,
+            "TIME": 18.842150449752808
+        }
+    },
+    {
+        "question": "do Lamia and Lilith have a common language and alignment?",
+        "results": "ERROR",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 180.02201795578003,
+            "SPARQL_CALLS": 2624,
+            "SPARQL_TIME": 168.71218013763428,
+            "LLM_CALLS": 1,
+            "LLM_INPUTS": 434,
+            "LLM_OUTPUTS": 53,
+            "LLM_TIME": 0.9952778816223145
+        }
+    },
+    {
+        "question": "do Lorelei and sirens speak the same languages?",
+        "results": "ERROR",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 180.10191321372986,
+            "SPARQL_CALLS": 2656,
+            "SPARQL_TIME": 170.12306666374207,
+            "LLM_CALLS": 1,
+            "LLM_INPUTS": 432,
+            "LLM_OUTPUTS": 59,
+            "LLM_TIME": 1.234328031539917
+        }
+    },
+    {
+        "question": "what is the average dexterity attribute for Phoenix and Sleipnir?",
+        "results": "ERROR",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 180.10244727134705,
+            "SPARQL_CALLS": 2654,
+            "SPARQL_TIME": 169.90415930747986,
+            "LLM_CALLS": 1,
+            "LLM_INPUTS": 437,
+            "LLM_OUTPUTS": 81,
+            "LLM_TIME": 1.3677141666412354
+        }
+    },
+    {
+        "question": "what is the maximum constitution attribute for Kraken and Leviathan?",
+        "results": "ERROR",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 180.05435609817505,
+            "SPARQL_CALLS": 2636,
+            "SPARQL_TIME": 170.00114703178406,
+            "LLM_CALLS": 1,
+            "LLM_INPUTS": 435,
+            "LLM_OUTPUTS": 68,
+            "LLM_TIME": 1.2318592071533203
+        }
+    },
+    {
+        "question": "what is the minimum wisdom attribute for Gorynych and Vodyanoi?",
+        "results": "ERROR",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 180.02237606048584,
+            "SPARQL_CALLS": 2612,
+            "SPARQL_TIME": 168.21709728240967,
+            "LLM_CALLS": 1,
+            "LLM_INPUTS": 440,
+            "LLM_OUTPUTS": 82,
+            "LLM_TIME": 1.6393818855285645
+        }
+    },
+    {
+        "question": "does Kitsune or Rusalka have charisma attribute more than 20?",
+        "results": "ERROR",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 180.02743458747864,
+            "SPARQL_CALLS": 2646,
+            "SPARQL_TIME": 169.81053113937378,
+            "LLM_CALLS": 1,
+            "LLM_INPUTS": 440,
+            "LLM_OUTPUTS": 121,
+            "LLM_TIME": 3.0977258682250977
+        }
+    },
+    {
+        "question": "do both Amon and Cetus have strength attribute between 15 and 25?",
+        "results": "ERROR",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 180.0361475944519,
+            "SPARQL_CALLS": 2634,
+            "SPARQL_TIME": 169.9438283443451,
+            "LLM_CALLS": 1,
+            "LLM_INPUTS": 438,
+            "LLM_OUTPUTS": 107,
+            "LLM_TIME": 1.6169118881225586
+        }
+    },
+    {
+        "question": "does Sandman or Charon speak elder or boggarg language?",
+        "results": "ERROR",
+        "reasoning_chains": [],
+        "metrics": {
+            "TIME": 180.10246396064758,
+            "SPARQL_CALLS": 2638,
+            "SPARQL_TIME": 169.92407751083374,
+            "LLM_CALLS": 1,
+            "LLM_INPUTS": 497,
+            "LLM_OUTPUTS": 198,
+            "LLM_TIME": 2.932041645050049
+        }
+    }
+]

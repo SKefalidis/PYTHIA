@@ -1,0 +1,2615 @@
+[
+    {
+        "question": "what does jamaican people speak?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://rdf.freebase.com/ns/m.03_r3",
+                "http://rdf.freebase.com/ns/location.country.languages_spoken",
+                "?x"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "?x0",
+                    "http://rdf.freebase.com/ns/language.human_language.countries_spoken_in",
+                    "http://rdf.freebase.com/ns/m.03_r3"
+                ]
+            ],
+            [
+                [
+                    "?x0",
+                    "http://rdf.freebase.com/ns/language.human_language.main_country",
+                    "http://rdf.freebase.com/ns/m.03_r3"
+                ]
+            ],
+            [
+                [
+                    "http://rdf.freebase.com/ns/m.03_r3",
+                    "http://rdf.freebase.com/ns/location.country.languages_spoken",
+                    "?x0"
+                ]
+            ],
+            [
+                [
+                    "http://rdf.freebase.com/ns/m.03_r3",
+                    "http://rdf.freebase.com/ns/location.country.official_language",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://rdf.freebase.com/ns/m.03_r3> <http://rdf.freebase.com/ns/location.country.languages_spoken> ?x .\n",
+        "selected_triples_strings": [
+            "?x0 <http://rdf.freebase.com/ns/language.human_language.countries_spoken_in> <http://rdf.freebase.com/ns/m.03_r3> .",
+            "?x0 <http://rdf.freebase.com/ns/language.human_language.main_country> <http://rdf.freebase.com/ns/m.03_r3> .",
+            "<http://rdf.freebase.com/ns/m.03_r3> <http://rdf.freebase.com/ns/location.country.languages_spoken> ?x0 .",
+            "<http://rdf.freebase.com/ns/m.03_r3> <http://rdf.freebase.com/ns/location.country.official_language> ?x0 ."
+        ]
+    },
+    {
+        "question": "where is jamarcus russell from?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://rdf.freebase.com/ns/m.0cjcdj",
+                "http://rdf.freebase.com/ns/people.person.place_of_birth",
+                "?x"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://rdf.freebase.com/ns/m.0cjcdj",
+                    "http://rdf.freebase.com/ns/people.person.place_of_birth",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://rdf.freebase.com/ns/m.0cjcdj> <http://rdf.freebase.com/ns/people.person.place_of_birth> ?x .\n",
+        "selected_triples_strings": [
+            "<http://rdf.freebase.com/ns/m.0cjcdj> <http://rdf.freebase.com/ns/people.person.place_of_birth> ?x0 ."
+        ]
+    },
+    {
+        "question": "where was george washington carver from?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://rdf.freebase.com/ns/m.03djm",
+                "http://rdf.freebase.com/ns/people.person.place_of_birth",
+                "?x"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://rdf.freebase.com/ns/m.03djm",
+                    "http://rdf.freebase.com/ns/people.person.place_of_birth",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://rdf.freebase.com/ns/m.03djm> <http://rdf.freebase.com/ns/people.person.place_of_birth> ?x .\n",
+        "selected_triples_strings": [
+            "<http://rdf.freebase.com/ns/m.03djm> <http://rdf.freebase.com/ns/people.person.place_of_birth> ?x0 ."
+        ]
+    },
+    {
+        "question": "what else did ben franklin invent?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://rdf.freebase.com/ns/m.019fz",
+                "http://rdf.freebase.com/ns/law.inventor.inventions",
+                "?x"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://rdf.freebase.com/ns/m.019fz",
+                    "http://rdf.freebase.com/ns/law.inventor.inventions",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://rdf.freebase.com/ns/m.019fz> <http://rdf.freebase.com/ns/law.inventor.inventions> ?x .\n",
+        "selected_triples_strings": [
+            "<http://rdf.freebase.com/ns/m.019fz> <http://rdf.freebase.com/ns/law.inventor.inventions> ?x0 ."
+        ]
+    },
+    {
+        "question": "who was vice president after kennedy died?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://rdf.freebase.com/ns/m.0d3k14",
+                "http://rdf.freebase.com/ns/government.us_president.vice_president",
+                "?x"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://rdf.freebase.com/ns/m.0d3k14",
+                    "http://rdf.freebase.com/ns/government.us_president.vice_president",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://rdf.freebase.com/ns/m.0d3k14> <http://rdf.freebase.com/ns/government.us_president.vice_president> ?x .\n",
+        "selected_triples_strings": [
+            "<http://rdf.freebase.com/ns/m.0d3k14> <http://rdf.freebase.com/ns/government.us_president.vice_president> ?x0 ."
+        ]
+    },
+    {
+        "question": "where is the fukushima daiichi nuclear plant located?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://rdf.freebase.com/ns/m.02vkzy2",
+                "http://rdf.freebase.com/ns/location.location.containedby",
+                "?x"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://rdf.freebase.com/ns/m.02vkzy2",
+                    "http://rdf.freebase.com/ns/location.location.containedby",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://rdf.freebase.com/ns/m.02vkzy2> <http://rdf.freebase.com/ns/location.location.containedby> ?x .\n",
+        "selected_triples_strings": [
+            "<http://rdf.freebase.com/ns/m.02vkzy2> <http://rdf.freebase.com/ns/location.location.containedby> ?x0 ."
+        ]
+    },
+    {
+        "question": "what is my timezone in louisiana?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://rdf.freebase.com/ns/m.04ly1",
+                "http://rdf.freebase.com/ns/location.location.time_zones",
+                "?x"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://rdf.freebase.com/ns/m.04ly1",
+                    "http://rdf.freebase.com/ns/location.location.time_zones",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://rdf.freebase.com/ns/m.04ly1> <http://rdf.freebase.com/ns/location.location.time_zones> ?x .\n",
+        "selected_triples_strings": [
+            "<http://rdf.freebase.com/ns/m.04ly1> <http://rdf.freebase.com/ns/location.location.time_zones> ?x0 ."
+        ]
+    },
+    {
+        "question": "what did st augustine do?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://rdf.freebase.com/ns/m.0w6w",
+                "http://rdf.freebase.com/ns/people.person.profession",
+                "?x"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://rdf.freebase.com/ns/m.0w6w",
+                    "http://rdf.freebase.com/ns/people.person.profession",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://rdf.freebase.com/ns/m.0w6w> <http://rdf.freebase.com/ns/people.person.profession> ?x .\n",
+        "selected_triples_strings": [
+            "<http://rdf.freebase.com/ns/m.0w6w> <http://rdf.freebase.com/ns/people.person.profession> ?x0 ."
+        ]
+    },
+    {
+        "question": "what kind government does egypt have?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://rdf.freebase.com/ns/m.02k54",
+                "http://rdf.freebase.com/ns/location.country.form_of_government",
+                "?x"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://rdf.freebase.com/ns/m.02k54",
+                    "http://rdf.freebase.com/ns/location.country.form_of_government",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://rdf.freebase.com/ns/m.02k54> <http://rdf.freebase.com/ns/location.country.form_of_government> ?x .\n",
+        "selected_triples_strings": [
+            "<http://rdf.freebase.com/ns/m.02k54> <http://rdf.freebase.com/ns/location.country.form_of_government> ?x0 ."
+        ]
+    },
+    {
+        "question": "what town was martin luther king assassinated in?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://rdf.freebase.com/ns/m.051cc",
+                "http://rdf.freebase.com/ns/people.deceased_person.place_of_death",
+                "?x"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://rdf.freebase.com/ns/m.051cc",
+                    "http://rdf.freebase.com/ns/people.deceased_person.place_of_death",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://rdf.freebase.com/ns/m.051cc> <http://rdf.freebase.com/ns/people.deceased_person.place_of_death> ?x .\n",
+        "selected_triples_strings": [
+            "<http://rdf.freebase.com/ns/m.051cc> <http://rdf.freebase.com/ns/people.deceased_person.place_of_death> ?x0 ."
+        ]
+    },
+    {
+        "question": "where did edgar allan poe died?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://rdf.freebase.com/ns/m.02lt8",
+                "http://rdf.freebase.com/ns/people.deceased_person.place_of_death",
+                "?x"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://rdf.freebase.com/ns/m.02lt8",
+                    "http://rdf.freebase.com/ns/people.deceased_person.place_of_death",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://rdf.freebase.com/ns/m.02lt8> <http://rdf.freebase.com/ns/people.deceased_person.place_of_death> ?x .\n",
+        "selected_triples_strings": [
+            "<http://rdf.freebase.com/ns/m.02lt8> <http://rdf.freebase.com/ns/people.deceased_person.place_of_death> ?x0 ."
+        ]
+    },
+    {
+        "question": "what to do today in atlanta with kids?",
+        "found": false,
+        "macro_f1": 0.0,
+        "correct_path": [
+            [
+                "http://rdf.freebase.com/ns/m.013yq",
+                "http://rdf.freebase.com/ns/travel.travel_destination.tourist_attractions",
+                "?x"
+            ]
+        ],
+        "selected_paths": [],
+        "correct_triples_string": "<http://rdf.freebase.com/ns/m.013yq> <http://rdf.freebase.com/ns/travel.travel_destination.tourist_attractions> ?x .\n",
+        "selected_triples_strings": []
+    },
+    {
+        "question": "what electorate does anna bligh represent?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://rdf.freebase.com/ns/m.072_m3",
+                "http://rdf.freebase.com/ns/government.politician.government_positions_held",
+                "?y"
+            ],
+            [
+                "?y",
+                "http://rdf.freebase.com/ns/government.government_position_held.district_represented",
+                "?x"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://rdf.freebase.com/ns/m.072_m3",
+                    "http://rdf.freebase.com/ns/government.politician.government_positions_held",
+                    "?x0"
+                ],
+                [
+                    "?x1",
+                    "http://rdf.freebase.com/ns/government.political_district.representatives",
+                    "?x0"
+                ]
+            ],
+            [
+                [
+                    "http://rdf.freebase.com/ns/m.072_m3",
+                    "http://rdf.freebase.com/ns/government.politician.government_positions_held",
+                    "?x0"
+                ],
+                [
+                    "?x0",
+                    "http://rdf.freebase.com/ns/government.government_position_held.district_represented",
+                    "?x1"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://rdf.freebase.com/ns/m.072_m3> <http://rdf.freebase.com/ns/government.politician.government_positions_held> ?y .\n?y <http://rdf.freebase.com/ns/government.government_position_held.district_represented> ?x .\n",
+        "selected_triples_strings": [
+            "<http://rdf.freebase.com/ns/m.072_m3> <http://rdf.freebase.com/ns/government.politician.government_positions_held> ?x0 .\n?x1 <http://rdf.freebase.com/ns/government.political_district.representatives> ?x0 .",
+            "<http://rdf.freebase.com/ns/m.072_m3> <http://rdf.freebase.com/ns/government.politician.government_positions_held> ?x0 .\n?x0 <http://rdf.freebase.com/ns/government.government_position_held.district_represented> ?x1 ."
+        ]
+    },
+    {
+        "question": "where did andy murray started playing tennis?",
+        "found": false,
+        "macro_f1": 0.0,
+        "correct_path": [
+            [
+                "http://rdf.freebase.com/ns/m.03wc52",
+                "http://rdf.freebase.com/ns/tennis.tennis_player.year_turned_pro",
+                "?x"
+            ]
+        ],
+        "selected_paths": [],
+        "correct_triples_string": "<http://rdf.freebase.com/ns/m.03wc52> <http://rdf.freebase.com/ns/tennis.tennis_player.year_turned_pro> ?x .\n",
+        "selected_triples_strings": []
+    },
+    {
+        "question": "what is the australian dollar called?",
+        "found": false,
+        "macro_f1": 0.0,
+        "correct_path": [
+            [
+                "http://rdf.freebase.com/ns/m.0kz1h",
+                "http://rdf.freebase.com/ns/finance.currency.currency_code",
+                "?x"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://rdf.freebase.com/ns/m.0kz1h",
+                    "http://rdf.freebase.com/ns/type.object.name",
+                    "?x0"
+                ]
+            ],
+            [
+                [
+                    "http://rdf.freebase.com/ns/m.0kz1h",
+                    "http://www.w3.org/2000/01/rdf-schema#label",
+                    "?x0"
+                ]
+            ],
+            [
+                [
+                    "http://rdf.freebase.com/ns/m.0kz1h",
+                    "http://rdf.freebase.com/key/en",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://rdf.freebase.com/ns/m.0kz1h> <http://rdf.freebase.com/ns/finance.currency.currency_code> ?x .\n",
+        "selected_triples_strings": [
+            "<http://rdf.freebase.com/ns/m.0kz1h> <http://rdf.freebase.com/ns/type.object.name> ?x0 .",
+            "<http://rdf.freebase.com/ns/m.0kz1h> <http://www.w3.org/2000/01/rdf-schema#label> ?x0 .",
+            "<http://rdf.freebase.com/ns/m.0kz1h> <http://rdf.freebase.com/key/en> ?x0 ."
+        ]
+    },
+    {
+        "question": "what timezone is sweden?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://rdf.freebase.com/ns/m.0d0vqn",
+                "http://rdf.freebase.com/ns/location.location.time_zones",
+                "?x"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://rdf.freebase.com/ns/m.0d0vqn",
+                    "http://rdf.freebase.com/ns/location.location.time_zones",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://rdf.freebase.com/ns/m.0d0vqn> <http://rdf.freebase.com/ns/location.location.time_zones> ?x .\n",
+        "selected_triples_strings": [
+            "<http://rdf.freebase.com/ns/m.0d0vqn> <http://rdf.freebase.com/ns/location.location.time_zones> ?x0 ."
+        ]
+    },
+    {
+        "question": "who did cam newton sign with?",
+        "found": false,
+        "macro_f1": 0.0,
+        "correct_path": [
+            [
+                "http://rdf.freebase.com/ns/m.02phnp7",
+                "http://rdf.freebase.com/ns/base.schemastaging.athlete_extra.salary",
+                "?y"
+            ],
+            [
+                "?y",
+                "http://rdf.freebase.com/ns/base.schemastaging.athlete_salary.team",
+                "?x"
+            ]
+        ],
+        "selected_paths": [],
+        "correct_triples_string": "<http://rdf.freebase.com/ns/m.02phnp7> <http://rdf.freebase.com/ns/base.schemastaging.athlete_extra.salary> ?y .\n?y <http://rdf.freebase.com/ns/base.schemastaging.athlete_salary.team> ?x .\n",
+        "selected_triples_strings": []
+    },
+    {
+        "question": "what county is frederick md in?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://rdf.freebase.com/ns/m.0dhml",
+                "http://rdf.freebase.com/ns/location.hud_county_place.county",
+                "?x"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://rdf.freebase.com/ns/m.0dhml",
+                    "http://rdf.freebase.com/ns/location.hud_county_place.county",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://rdf.freebase.com/ns/m.0dhml> <http://rdf.freebase.com/ns/location.hud_county_place.county> ?x .\n",
+        "selected_triples_strings": [
+            "<http://rdf.freebase.com/ns/m.0dhml> <http://rdf.freebase.com/ns/location.hud_county_place.county> ?x0 ."
+        ]
+    },
+    {
+        "question": "what timezone is utah in?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://rdf.freebase.com/ns/m.07srw",
+                "http://rdf.freebase.com/ns/location.location.time_zones",
+                "?x"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://rdf.freebase.com/ns/m.07srw",
+                    "http://rdf.freebase.com/ns/location.location.time_zones",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://rdf.freebase.com/ns/m.07srw> <http://rdf.freebase.com/ns/location.location.time_zones> ?x .\n",
+        "selected_triples_strings": [
+            "<http://rdf.freebase.com/ns/m.07srw> <http://rdf.freebase.com/ns/location.location.time_zones> ?x0 ."
+        ]
+    },
+    {
+        "question": "where is the galapagos islands located on a world map?",
+        "found": false,
+        "macro_f1": 0.0,
+        "correct_path": [
+            [
+                "http://rdf.freebase.com/ns/m.016zjj",
+                "http://rdf.freebase.com/ns/location.location.containedby",
+                "?x"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://rdf.freebase.com/ns/m.016zjj",
+                    "http://rdf.freebase.com/ns/location.location.geolocation",
+                    "http://rdf.freebase.com/ns/m.05nf0pq"
+                ],
+                [
+                    "http://rdf.freebase.com/ns/m.05nf0pq",
+                    "http://rdf.freebase.com/ns/location.geocode.latitude",
+                    "?x0"
+                ]
+            ],
+            [
+                [
+                    "http://rdf.freebase.com/ns/m.016zjj",
+                    "http://rdf.freebase.com/ns/location.location.geolocation",
+                    "http://rdf.freebase.com/ns/m.05nf0pq"
+                ],
+                [
+                    "http://rdf.freebase.com/ns/m.05nf0pq",
+                    "http://rdf.freebase.com/ns/location.geocode.longitude",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://rdf.freebase.com/ns/m.016zjj> <http://rdf.freebase.com/ns/location.location.containedby> ?x .\n",
+        "selected_triples_strings": [
+            "<http://rdf.freebase.com/ns/m.016zjj> <http://rdf.freebase.com/ns/location.location.geolocation> <http://rdf.freebase.com/ns/m.05nf0pq> .\n<http://rdf.freebase.com/ns/m.05nf0pq> <http://rdf.freebase.com/ns/location.geocode.latitude> ?x0 .",
+            "<http://rdf.freebase.com/ns/m.016zjj> <http://rdf.freebase.com/ns/location.location.geolocation> <http://rdf.freebase.com/ns/m.05nf0pq> .\n<http://rdf.freebase.com/ns/m.05nf0pq> <http://rdf.freebase.com/ns/location.geocode.longitude> ?x0 ."
+        ]
+    },
+    {
+        "question": "what are the songs that justin bieber wrote?",
+        "found": false,
+        "macro_f1": 0.2222222222222222,
+        "correct_path": [
+            [
+                "http://rdf.freebase.com/ns/m.06w2sn5",
+                "http://rdf.freebase.com/ns/music.composer.compositions",
+                "?x"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://rdf.freebase.com/ns/m.06w2sn5",
+                    "http://rdf.freebase.com/ns/music.lyricist.lyrics_written",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://rdf.freebase.com/ns/m.06w2sn5> <http://rdf.freebase.com/ns/music.composer.compositions> ?x .\n",
+        "selected_triples_strings": [
+            "<http://rdf.freebase.com/ns/m.06w2sn5> <http://rdf.freebase.com/ns/music.lyricist.lyrics_written> ?x0 ."
+        ]
+    },
+    {
+        "question": "what did george clemenceau do?",
+        "found": false,
+        "macro_f1": 0.7499999999999999,
+        "correct_path": [
+            [
+                "http://rdf.freebase.com/ns/m.0hff8",
+                "http://rdf.freebase.com/ns/people.person.profession",
+                "?x"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://rdf.freebase.com/ns/m.0hff8",
+                    "http://rdf.freebase.com/ns/people.person.profession",
+                    "?x0"
+                ],
+                [
+                    "?x0",
+                    "http://rdf.freebase.com/key/wikipedia.en_title",
+                    "?x1"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://rdf.freebase.com/ns/m.0hff8> <http://rdf.freebase.com/ns/people.person.profession> ?x .\n",
+        "selected_triples_strings": [
+            "<http://rdf.freebase.com/ns/m.0hff8> <http://rdf.freebase.com/ns/people.person.profession> ?x0 .\n?x0 <http://rdf.freebase.com/key/wikipedia.en_title> ?x1 ."
+        ]
+    },
+    {
+        "question": "where was rihanna born and raised?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://rdf.freebase.com/ns/m.06mt91",
+                "http://rdf.freebase.com/ns/people.person.place_of_birth",
+                "?x"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "?x0",
+                    "http://rdf.freebase.com/ns/location.location.people_born_here",
+                    "http://rdf.freebase.com/ns/m.06mt91"
+                ]
+            ],
+            [
+                [
+                    "http://rdf.freebase.com/ns/m.06mt91",
+                    "http://rdf.freebase.com/ns/music.artist.origin",
+                    "?x0"
+                ]
+            ],
+            [
+                [
+                    "http://rdf.freebase.com/ns/m.06mt91",
+                    "http://rdf.freebase.com/ns/people.person.place_of_birth",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://rdf.freebase.com/ns/m.06mt91> <http://rdf.freebase.com/ns/people.person.place_of_birth> ?x .\n",
+        "selected_triples_strings": [
+            "?x0 <http://rdf.freebase.com/ns/location.location.people_born_here> <http://rdf.freebase.com/ns/m.06mt91> .",
+            "<http://rdf.freebase.com/ns/m.06mt91> <http://rdf.freebase.com/ns/music.artist.origin> ?x0 .",
+            "<http://rdf.freebase.com/ns/m.06mt91> <http://rdf.freebase.com/ns/people.person.place_of_birth> ?x0 ."
+        ]
+    },
+    {
+        "question": "where george lopez was born?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://rdf.freebase.com/ns/m.02xfj0",
+                "http://rdf.freebase.com/ns/people.person.place_of_birth",
+                "?x"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "?x0",
+                    "http://rdf.freebase.com/ns/location.location.people_born_here",
+                    "http://rdf.freebase.com/ns/m.02xfj0"
+                ]
+            ],
+            [
+                [
+                    "http://rdf.freebase.com/ns/m.02xfj0",
+                    "http://rdf.freebase.com/ns/people.person.place_of_birth",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://rdf.freebase.com/ns/m.02xfj0> <http://rdf.freebase.com/ns/people.person.place_of_birth> ?x .\n",
+        "selected_triples_strings": [
+            "?x0 <http://rdf.freebase.com/ns/location.location.people_born_here> <http://rdf.freebase.com/ns/m.02xfj0> .",
+            "<http://rdf.freebase.com/ns/m.02xfj0> <http://rdf.freebase.com/ns/people.person.place_of_birth> ?x0 ."
+        ]
+    },
+    {
+        "question": "where are samsung based?",
+        "found": false,
+        "macro_f1": 0.0,
+        "correct_path": [
+            [
+                "http://rdf.freebase.com/ns/m.07gv72",
+                "http://rdf.freebase.com/ns/organization.organization.headquarters",
+                "?y"
+            ],
+            [
+                "?y",
+                "http://rdf.freebase.com/ns/location.mailing_address.citytown",
+                "?x"
+            ]
+        ],
+        "selected_paths": [],
+        "correct_triples_string": "<http://rdf.freebase.com/ns/m.07gv72> <http://rdf.freebase.com/ns/organization.organization.headquarters> ?y .\n?y <http://rdf.freebase.com/ns/location.mailing_address.citytown> ?x .\n",
+        "selected_triples_strings": []
+    },
+    {
+        "question": "what did the islamic people believe in?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://rdf.freebase.com/ns/m.0flw86",
+                "http://rdf.freebase.com/ns/religion.religion.beliefs",
+                "?x"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://rdf.freebase.com/ns/m.0flw86",
+                    "http://rdf.freebase.com/ns/religion.religion.beliefs",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://rdf.freebase.com/ns/m.0flw86> <http://rdf.freebase.com/ns/religion.religion.beliefs> ?x .\n",
+        "selected_triples_strings": [
+            "<http://rdf.freebase.com/ns/m.0flw86> <http://rdf.freebase.com/ns/religion.religion.beliefs> ?x0 ."
+        ]
+    },
+    {
+        "question": "who will play mr gray in the film?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://rdf.freebase.com/ns/m.0nfjvrm",
+                "http://rdf.freebase.com/ns/film.film_character.portrayed_in_films",
+                "?y"
+            ],
+            [
+                "?y",
+                "http://rdf.freebase.com/ns/film.performance.actor",
+                "?x"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://rdf.freebase.com/ns/m.0nfjvrm",
+                    "http://rdf.freebase.com/ns/film.film_character.portrayed_in_films",
+                    "http://rdf.freebase.com/ns/m.0ydn3r2"
+                ],
+                [
+                    "http://rdf.freebase.com/ns/m.0ydn3r2",
+                    "http://rdf.freebase.com/ns/film.performance.actor",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://rdf.freebase.com/ns/m.0nfjvrm> <http://rdf.freebase.com/ns/film.film_character.portrayed_in_films> ?y .\n?y <http://rdf.freebase.com/ns/film.performance.actor> ?x .\n",
+        "selected_triples_strings": [
+            "<http://rdf.freebase.com/ns/m.0nfjvrm> <http://rdf.freebase.com/ns/film.film_character.portrayed_in_films> <http://rdf.freebase.com/ns/m.0ydn3r2> .\n<http://rdf.freebase.com/ns/m.0ydn3r2> <http://rdf.freebase.com/ns/film.performance.actor> ?x0 ."
+        ]
+    },
+    {
+        "question": "what did george orwell died of?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://rdf.freebase.com/ns/m.034bs",
+                "http://rdf.freebase.com/ns/people.deceased_person.cause_of_death",
+                "?x"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://rdf.freebase.com/ns/m.034bs",
+                    "http://rdf.freebase.com/ns/people.deceased_person.cause_of_death",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://rdf.freebase.com/ns/m.034bs> <http://rdf.freebase.com/ns/people.deceased_person.cause_of_death> ?x .\n",
+        "selected_triples_strings": [
+            "<http://rdf.freebase.com/ns/m.034bs> <http://rdf.freebase.com/ns/people.deceased_person.cause_of_death> ?x0 ."
+        ]
+    },
+    {
+        "question": "what country did adolf hitler control?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://rdf.freebase.com/ns/m.07_m9_",
+                "http://rdf.freebase.com/ns/government.politician.government_positions_held",
+                "?y"
+            ],
+            [
+                "?y",
+                "http://rdf.freebase.com/ns/government.government_position_held.jurisdiction_of_office",
+                "?x"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://rdf.freebase.com/ns/m.07_m9_",
+                    "http://rdf.freebase.com/ns/government.politician.government_positions_held",
+                    "?x0"
+                ],
+                [
+                    "?x0",
+                    "http://rdf.freebase.com/ns/government.government_position_held.jurisdiction_of_office",
+                    "?x1"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://rdf.freebase.com/ns/m.07_m9_> <http://rdf.freebase.com/ns/government.politician.government_positions_held> ?y .\n?y <http://rdf.freebase.com/ns/government.government_position_held.jurisdiction_of_office> ?x .\n",
+        "selected_triples_strings": [
+            "<http://rdf.freebase.com/ns/m.07_m9_> <http://rdf.freebase.com/ns/government.politician.government_positions_held> ?x0 .\n?x0 <http://rdf.freebase.com/ns/government.government_position_held.jurisdiction_of_office> ?x1 ."
+        ]
+    },
+    {
+        "question": "who is michael buble?",
+        "found": false,
+        "macro_f1": 0.0,
+        "correct_path": [
+            [
+                "http://rdf.freebase.com/ns/m.02xkkq",
+                "http://rdf.freebase.com/ns/people.person.profession",
+                "?x"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://rdf.freebase.com/ns/m.02xkkq",
+                    "http://rdf.freebase.com/key/wikipedia.he_title",
+                    "?x0"
+                ]
+            ],
+            [
+                [
+                    "http://rdf.freebase.com/ns/m.02xkkq",
+                    "http://rdf.freebase.com/key/wikipedia.he",
+                    "?x0"
+                ]
+            ],
+            [
+                [
+                    "http://rdf.freebase.com/ns/m.02xkkq",
+                    "http://rdf.freebase.com/key/wikipedia.vi",
+                    "?x0"
+                ]
+            ],
+            [
+                [
+                    "http://rdf.freebase.com/ns/m.02xkkq",
+                    "http://rdf.freebase.com/key/wikipedia.ko",
+                    "?x0"
+                ]
+            ],
+            [
+                [
+                    "http://rdf.freebase.com/ns/m.02xkkq",
+                    "http://rdf.freebase.com/key/wikipedia.hr",
+                    "?x0"
+                ]
+            ],
+            [
+                [
+                    "http://rdf.freebase.com/ns/m.02xkkq",
+                    "http://rdf.freebase.com/key/wikipedia.cs",
+                    "?x0"
+                ]
+            ],
+            [
+                [
+                    "http://rdf.freebase.com/ns/m.02xkkq",
+                    "http://rdf.freebase.com/key/wikipedia.hr_title",
+                    "?x0"
+                ]
+            ],
+            [
+                [
+                    "http://rdf.freebase.com/ns/m.02xkkq",
+                    "http://rdf.freebase.com/key/wikipedia.no_title",
+                    "?x0"
+                ]
+            ],
+            [
+                [
+                    "http://rdf.freebase.com/ns/m.02xkkq",
+                    "http://rdf.freebase.com/key/wikipedia.ja_title",
+                    "?x0"
+                ]
+            ],
+            [
+                [
+                    "http://rdf.freebase.com/ns/m.02xkkq",
+                    "http://rdf.freebase.com/key/wikipedia.hu",
+                    "?x0"
+                ]
+            ],
+            [
+                [
+                    "http://rdf.freebase.com/ns/m.02xkkq",
+                    "http://rdf.freebase.com/key/wikipedia.fi",
+                    "?x0"
+                ]
+            ],
+            [
+                [
+                    "http://rdf.freebase.com/ns/m.02xkkq",
+                    "http://rdf.freebase.com/key/wikipedia.sv",
+                    "?x0"
+                ]
+            ],
+            [
+                [
+                    "http://rdf.freebase.com/ns/m.02xkkq",
+                    "http://rdf.freebase.com/key/wikipedia.lv",
+                    "?x0"
+                ]
+            ],
+            [
+                [
+                    "http://rdf.freebase.com/ns/m.02xkkq",
+                    "http://rdf.freebase.com/key/wikipedia.uk",
+                    "?x0"
+                ]
+            ],
+            [
+                [
+                    "http://rdf.freebase.com/ns/m.02xkkq",
+                    "http://rdf.freebase.com/key/wikipedia.ro",
+                    "?x0"
+                ]
+            ],
+            [
+                [
+                    "http://rdf.freebase.com/ns/m.02xkkq",
+                    "http://rdf.freebase.com/key/wikipedia.cs_title",
+                    "?x0"
+                ]
+            ],
+            [
+                [
+                    "http://rdf.freebase.com/ns/m.02xkkq",
+                    "http://rdf.freebase.com/key/wikipedia.vi_title",
+                    "?x0"
+                ]
+            ],
+            [
+                [
+                    "http://rdf.freebase.com/ns/m.02xkkq",
+                    "http://rdf.freebase.com/key/wikipedia.no",
+                    "?x0"
+                ]
+            ],
+            [
+                [
+                    "http://rdf.freebase.com/ns/m.02xkkq",
+                    "http://rdf.freebase.com/key/wikipedia.sv_title",
+                    "?x0"
+                ]
+            ],
+            [
+                [
+                    "http://rdf.freebase.com/ns/m.02xkkq",
+                    "http://rdf.freebase.com/key/wikipedia.pl",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://rdf.freebase.com/ns/m.02xkkq> <http://rdf.freebase.com/ns/people.person.profession> ?x .\n",
+        "selected_triples_strings": [
+            "<http://rdf.freebase.com/ns/m.02xkkq> <http://rdf.freebase.com/key/wikipedia.he_title> ?x0 .",
+            "<http://rdf.freebase.com/ns/m.02xkkq> <http://rdf.freebase.com/key/wikipedia.he> ?x0 .",
+            "<http://rdf.freebase.com/ns/m.02xkkq> <http://rdf.freebase.com/key/wikipedia.vi> ?x0 .",
+            "<http://rdf.freebase.com/ns/m.02xkkq> <http://rdf.freebase.com/key/wikipedia.ko> ?x0 .",
+            "<http://rdf.freebase.com/ns/m.02xkkq> <http://rdf.freebase.com/key/wikipedia.hr> ?x0 .",
+            "<http://rdf.freebase.com/ns/m.02xkkq> <http://rdf.freebase.com/key/wikipedia.cs> ?x0 .",
+            "<http://rdf.freebase.com/ns/m.02xkkq> <http://rdf.freebase.com/key/wikipedia.hr_title> ?x0 .",
+            "<http://rdf.freebase.com/ns/m.02xkkq> <http://rdf.freebase.com/key/wikipedia.no_title> ?x0 .",
+            "<http://rdf.freebase.com/ns/m.02xkkq> <http://rdf.freebase.com/key/wikipedia.ja_title> ?x0 .",
+            "<http://rdf.freebase.com/ns/m.02xkkq> <http://rdf.freebase.com/key/wikipedia.hu> ?x0 .",
+            "<http://rdf.freebase.com/ns/m.02xkkq> <http://rdf.freebase.com/key/wikipedia.fi> ?x0 .",
+            "<http://rdf.freebase.com/ns/m.02xkkq> <http://rdf.freebase.com/key/wikipedia.sv> ?x0 .",
+            "<http://rdf.freebase.com/ns/m.02xkkq> <http://rdf.freebase.com/key/wikipedia.lv> ?x0 .",
+            "<http://rdf.freebase.com/ns/m.02xkkq> <http://rdf.freebase.com/key/wikipedia.uk> ?x0 .",
+            "<http://rdf.freebase.com/ns/m.02xkkq> <http://rdf.freebase.com/key/wikipedia.ro> ?x0 .",
+            "<http://rdf.freebase.com/ns/m.02xkkq> <http://rdf.freebase.com/key/wikipedia.cs_title> ?x0 .",
+            "<http://rdf.freebase.com/ns/m.02xkkq> <http://rdf.freebase.com/key/wikipedia.vi_title> ?x0 .",
+            "<http://rdf.freebase.com/ns/m.02xkkq> <http://rdf.freebase.com/key/wikipedia.no> ?x0 .",
+            "<http://rdf.freebase.com/ns/m.02xkkq> <http://rdf.freebase.com/key/wikipedia.sv_title> ?x0 .",
+            "<http://rdf.freebase.com/ns/m.02xkkq> <http://rdf.freebase.com/key/wikipedia.pl> ?x0 ."
+        ]
+    },
+    {
+        "question": "what county is kansas city kansas?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://rdf.freebase.com/ns/m.0tcj6",
+                "http://rdf.freebase.com/ns/location.hud_county_place.county",
+                "?x"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "?x0",
+                    "http://rdf.freebase.com/ns/location.us_county.county_seat",
+                    "http://rdf.freebase.com/ns/m.0tcj6"
+                ]
+            ],
+            [
+                [
+                    "?x0",
+                    "http://rdf.freebase.com/ns/location.us_county.hud_county_place",
+                    "http://rdf.freebase.com/ns/m.0tcj6"
+                ]
+            ],
+            [
+                [
+                    "http://rdf.freebase.com/ns/m.0tcj6",
+                    "http://rdf.freebase.com/ns/location.hud_county_place.county",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://rdf.freebase.com/ns/m.0tcj6> <http://rdf.freebase.com/ns/location.hud_county_place.county> ?x .\n",
+        "selected_triples_strings": [
+            "?x0 <http://rdf.freebase.com/ns/location.us_county.county_seat> <http://rdf.freebase.com/ns/m.0tcj6> .",
+            "?x0 <http://rdf.freebase.com/ns/location.us_county.hud_county_place> <http://rdf.freebase.com/ns/m.0tcj6> .",
+            "<http://rdf.freebase.com/ns/m.0tcj6> <http://rdf.freebase.com/ns/location.hud_county_place.county> ?x0 ."
+        ]
+    },
+    {
+        "question": "who did jackie robinson first play for?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://rdf.freebase.com/ns/m.0443c",
+                "http://rdf.freebase.com/ns/sports.pro_athlete.teams",
+                "?y"
+            ],
+            [
+                "?y",
+                "http://rdf.freebase.com/ns/sports.sports_team_roster.team",
+                "?x"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://rdf.freebase.com/ns/m.0443c",
+                    "http://rdf.freebase.com/ns/sports.pro_athlete.teams",
+                    "?x0"
+                ],
+                [
+                    "?x0",
+                    "http://rdf.freebase.com/ns/sports.sports_team_roster.team",
+                    "?x1"
+                ]
+            ],
+            [
+                [
+                    "http://rdf.freebase.com/ns/m.0443c",
+                    "http://rdf.freebase.com/ns/sports.pro_athlete.teams",
+                    "?x0"
+                ],
+                [
+                    "?x0",
+                    "http://rdf.freebase.com/ns/sports.sports_team_roster.from",
+                    "?x1"
+                ]
+            ],
+            [
+                [
+                    "http://rdf.freebase.com/ns/m.0443c",
+                    "http://rdf.freebase.com/ns/sports.pro_athlete.teams",
+                    "?x0"
+                ],
+                [
+                    "?x0",
+                    "http://rdf.freebase.com/ns/sports.sports_team_roster.to",
+                    "?x1"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://rdf.freebase.com/ns/m.0443c> <http://rdf.freebase.com/ns/sports.pro_athlete.teams> ?y .\n?y <http://rdf.freebase.com/ns/sports.sports_team_roster.team> ?x .\n",
+        "selected_triples_strings": [
+            "<http://rdf.freebase.com/ns/m.0443c> <http://rdf.freebase.com/ns/sports.pro_athlete.teams> ?x0 .\n?x0 <http://rdf.freebase.com/ns/sports.sports_team_roster.team> ?x1 .",
+            "<http://rdf.freebase.com/ns/m.0443c> <http://rdf.freebase.com/ns/sports.pro_athlete.teams> ?x0 .\n?x0 <http://rdf.freebase.com/ns/sports.sports_team_roster.from> ?x1 .",
+            "<http://rdf.freebase.com/ns/m.0443c> <http://rdf.freebase.com/ns/sports.pro_athlete.teams> ?x0 .\n?x0 <http://rdf.freebase.com/ns/sports.sports_team_roster.to> ?x1 ."
+        ]
+    },
+    {
+        "question": "who did jackie robinson first play for?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://rdf.freebase.com/ns/m.0443c",
+                "http://rdf.freebase.com/ns/sports.pro_athlete.teams",
+                "?y"
+            ],
+            [
+                "?y",
+                "http://rdf.freebase.com/ns/sports.sports_team_roster.from",
+                "?sk0"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://rdf.freebase.com/ns/m.0443c",
+                    "http://rdf.freebase.com/ns/sports.pro_athlete.teams",
+                    "?x0"
+                ],
+                [
+                    "?x0",
+                    "http://rdf.freebase.com/ns/sports.sports_team_roster.team",
+                    "?x1"
+                ]
+            ],
+            [
+                [
+                    "http://rdf.freebase.com/ns/m.0443c",
+                    "http://rdf.freebase.com/ns/sports.pro_athlete.teams",
+                    "?x0"
+                ],
+                [
+                    "?x0",
+                    "http://rdf.freebase.com/ns/sports.sports_team_roster.from",
+                    "?x1"
+                ]
+            ],
+            [
+                [
+                    "http://rdf.freebase.com/ns/m.0443c",
+                    "http://rdf.freebase.com/ns/sports.pro_athlete.teams",
+                    "?x0"
+                ],
+                [
+                    "?x0",
+                    "http://rdf.freebase.com/ns/sports.sports_team_roster.to",
+                    "?x1"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://rdf.freebase.com/ns/m.0443c> <http://rdf.freebase.com/ns/sports.pro_athlete.teams> ?y .\n?y <http://rdf.freebase.com/ns/sports.sports_team_roster.from> ?sk0 .\n",
+        "selected_triples_strings": [
+            "<http://rdf.freebase.com/ns/m.0443c> <http://rdf.freebase.com/ns/sports.pro_athlete.teams> ?x0 .\n?x0 <http://rdf.freebase.com/ns/sports.sports_team_roster.team> ?x1 .",
+            "<http://rdf.freebase.com/ns/m.0443c> <http://rdf.freebase.com/ns/sports.pro_athlete.teams> ?x0 .\n?x0 <http://rdf.freebase.com/ns/sports.sports_team_roster.from> ?x1 .",
+            "<http://rdf.freebase.com/ns/m.0443c> <http://rdf.freebase.com/ns/sports.pro_athlete.teams> ?x0 .\n?x0 <http://rdf.freebase.com/ns/sports.sports_team_roster.to> ?x1 ."
+        ]
+    },
+    {
+        "question": "when did annie open?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://rdf.freebase.com/ns/m.01_1m4",
+                "http://rdf.freebase.com/ns/theater.play.date_of_first_performance",
+                "?x"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://rdf.freebase.com/ns/m.01_1m4",
+                    "http://rdf.freebase.com/ns/theater.play.date_of_first_performance",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://rdf.freebase.com/ns/m.01_1m4> <http://rdf.freebase.com/ns/theater.play.date_of_first_performance> ?x .\n",
+        "selected_triples_strings": [
+            "<http://rdf.freebase.com/ns/m.01_1m4> <http://rdf.freebase.com/ns/theater.play.date_of_first_performance> ?x0 ."
+        ]
+    },
+    {
+        "question": "where did eleanor roosevelt die?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://rdf.freebase.com/ns/m.02n9k",
+                "http://rdf.freebase.com/ns/people.deceased_person.place_of_death",
+                "?x"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://rdf.freebase.com/ns/m.02n9k",
+                    "http://rdf.freebase.com/ns/people.deceased_person.place_of_death",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://rdf.freebase.com/ns/m.02n9k> <http://rdf.freebase.com/ns/people.deceased_person.place_of_death> ?x .\n",
+        "selected_triples_strings": [
+            "<http://rdf.freebase.com/ns/m.02n9k> <http://rdf.freebase.com/ns/people.deceased_person.place_of_death> ?x0 ."
+        ]
+    },
+    {
+        "question": "what are the religions practiced in indonesia?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://rdf.freebase.com/ns/m.03ryn",
+                "http://rdf.freebase.com/ns/location.statistical_region.religions",
+                "?y"
+            ],
+            [
+                "?y",
+                "http://rdf.freebase.com/ns/location.religion_percentage.religion",
+                "?x"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://rdf.freebase.com/ns/m.03ryn",
+                    "http://rdf.freebase.com/ns/location.statistical_region.religions",
+                    "?x0"
+                ],
+                [
+                    "?x0",
+                    "http://rdf.freebase.com/ns/location.religion_percentage.religion",
+                    "?x1"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://rdf.freebase.com/ns/m.03ryn> <http://rdf.freebase.com/ns/location.statistical_region.religions> ?y .\n?y <http://rdf.freebase.com/ns/location.religion_percentage.religion> ?x .\n",
+        "selected_triples_strings": [
+            "<http://rdf.freebase.com/ns/m.03ryn> <http://rdf.freebase.com/ns/location.statistical_region.religions> ?x0 .\n?x0 <http://rdf.freebase.com/ns/location.religion_percentage.religion> ?x1 ."
+        ]
+    },
+    {
+        "question": "what was jesse james killed with?",
+        "found": false,
+        "macro_f1": 0.0,
+        "correct_path": [
+            [
+                "http://rdf.freebase.com/ns/m.02khkd",
+                "http://rdf.freebase.com/ns/people.deceased_person.cause_of_death",
+                "?x"
+            ],
+            [
+                "?x",
+                "http://rdf.freebase.com/ns/freebase.linguistic_hint.subject_form",
+                "?sk0"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://rdf.freebase.com/ns/m.02khkd",
+                    "http://rdf.freebase.com/ns/people.deceased_person.cause_of_death",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://rdf.freebase.com/ns/m.02khkd> <http://rdf.freebase.com/ns/people.deceased_person.cause_of_death> ?x .\n?x <http://rdf.freebase.com/ns/freebase.linguistic_hint.subject_form> ?sk0 .\n",
+        "selected_triples_strings": [
+            "<http://rdf.freebase.com/ns/m.02khkd> <http://rdf.freebase.com/ns/people.deceased_person.cause_of_death> ?x0 ."
+        ]
+    },
+    {
+        "question": "who was vp for lincoln?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://rdf.freebase.com/ns/m.0gzh",
+                "http://rdf.freebase.com/ns/government.us_president.vice_president",
+                "?x"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://rdf.freebase.com/ns/m.0gzh",
+                    "http://rdf.freebase.com/ns/government.us_president.vice_president",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://rdf.freebase.com/ns/m.0gzh> <http://rdf.freebase.com/ns/government.us_president.vice_president> ?x .\n",
+        "selected_triples_strings": [
+            "<http://rdf.freebase.com/ns/m.0gzh> <http://rdf.freebase.com/ns/government.us_president.vice_president> ?x0 ."
+        ]
+    },
+    {
+        "question": "what other books did charles dickens write?",
+        "found": false,
+        "macro_f1": 0.0,
+        "correct_path": [
+            [
+                "http://rdf.freebase.com/ns/m.01v9724",
+                "http://rdf.freebase.com/ns/book.author.book_editions_published",
+                "?x"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://rdf.freebase.com/ns/m.01v9724",
+                    "http://rdf.freebase.com/ns/book.author.works_written",
+                    "?x0"
+                ]
+            ],
+            [
+                [
+                    "http://rdf.freebase.com/ns/m.01v9724",
+                    "http://rdf.freebase.com/ns/book.book_subject.works",
+                    "?x0"
+                ]
+            ],
+            [
+                [
+                    "http://rdf.freebase.com/ns/m.01v9724",
+                    "http://rdf.freebase.com/ns/book.author.works_edited",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://rdf.freebase.com/ns/m.01v9724> <http://rdf.freebase.com/ns/book.author.book_editions_published> ?x .\n",
+        "selected_triples_strings": [
+            "<http://rdf.freebase.com/ns/m.01v9724> <http://rdf.freebase.com/ns/book.author.works_written> ?x0 .",
+            "<http://rdf.freebase.com/ns/m.01v9724> <http://rdf.freebase.com/ns/book.book_subject.works> ?x0 .",
+            "<http://rdf.freebase.com/ns/m.01v9724> <http://rdf.freebase.com/ns/book.author.works_edited> ?x0 ."
+        ]
+    },
+    {
+        "question": "who was the first dictator of the soviet union?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://rdf.freebase.com/ns/m.05vz3zq",
+                "http://rdf.freebase.com/ns/government.governmental_jurisdiction.governing_officials",
+                "?y"
+            ],
+            [
+                "?y",
+                "http://rdf.freebase.com/ns/government.government_position_held.office_holder",
+                "?x"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://rdf.freebase.com/ns/m.05vz3zq",
+                    "http://rdf.freebase.com/ns/government.governmental_jurisdiction.governing_officials",
+                    "?x0"
+                ],
+                [
+                    "?x0",
+                    "http://rdf.freebase.com/ns/government.government_position_held.office_holder",
+                    "?x1"
+                ]
+            ],
+            [
+                [
+                    "http://rdf.freebase.com/ns/m.05vz3zq",
+                    "http://rdf.freebase.com/ns/government.governmental_jurisdiction.governing_officials",
+                    "?x0"
+                ],
+                [
+                    "?x0",
+                    "http://rdf.freebase.com/ns/government.government_position_held.from",
+                    "?x1"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://rdf.freebase.com/ns/m.05vz3zq> <http://rdf.freebase.com/ns/government.governmental_jurisdiction.governing_officials> ?y .\n?y <http://rdf.freebase.com/ns/government.government_position_held.office_holder> ?x .\n",
+        "selected_triples_strings": [
+            "<http://rdf.freebase.com/ns/m.05vz3zq> <http://rdf.freebase.com/ns/government.governmental_jurisdiction.governing_officials> ?x0 .\n?x0 <http://rdf.freebase.com/ns/government.government_position_held.office_holder> ?x1 .",
+            "<http://rdf.freebase.com/ns/m.05vz3zq> <http://rdf.freebase.com/ns/government.governmental_jurisdiction.governing_officials> ?x0 .\n?x0 <http://rdf.freebase.com/ns/government.government_position_held.from> ?x1 ."
+        ]
+    },
+    {
+        "question": "who was the first dictator of the soviet union?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://rdf.freebase.com/ns/m.05vz3zq",
+                "http://rdf.freebase.com/ns/government.governmental_jurisdiction.governing_officials",
+                "?y"
+            ],
+            [
+                "?y",
+                "http://rdf.freebase.com/ns/government.government_position_held.from",
+                "?sk0"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://rdf.freebase.com/ns/m.05vz3zq",
+                    "http://rdf.freebase.com/ns/government.governmental_jurisdiction.governing_officials",
+                    "?x0"
+                ],
+                [
+                    "?x0",
+                    "http://rdf.freebase.com/ns/government.government_position_held.office_holder",
+                    "?x1"
+                ]
+            ],
+            [
+                [
+                    "http://rdf.freebase.com/ns/m.05vz3zq",
+                    "http://rdf.freebase.com/ns/government.governmental_jurisdiction.governing_officials",
+                    "?x0"
+                ],
+                [
+                    "?x0",
+                    "http://rdf.freebase.com/ns/government.government_position_held.to",
+                    "?x1"
+                ]
+            ],
+            [
+                [
+                    "http://rdf.freebase.com/ns/m.05vz3zq",
+                    "http://rdf.freebase.com/ns/government.governmental_jurisdiction.governing_officials",
+                    "?x0"
+                ],
+                [
+                    "?x0",
+                    "http://rdf.freebase.com/ns/government.government_position_held.from",
+                    "?x1"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://rdf.freebase.com/ns/m.05vz3zq> <http://rdf.freebase.com/ns/government.governmental_jurisdiction.governing_officials> ?y .\n?y <http://rdf.freebase.com/ns/government.government_position_held.from> ?sk0 .\n",
+        "selected_triples_strings": [
+            "<http://rdf.freebase.com/ns/m.05vz3zq> <http://rdf.freebase.com/ns/government.governmental_jurisdiction.governing_officials> ?x0 .\n?x0 <http://rdf.freebase.com/ns/government.government_position_held.office_holder> ?x1 .",
+            "<http://rdf.freebase.com/ns/m.05vz3zq> <http://rdf.freebase.com/ns/government.governmental_jurisdiction.governing_officials> ?x0 .\n?x0 <http://rdf.freebase.com/ns/government.government_position_held.to> ?x1 .",
+            "<http://rdf.freebase.com/ns/m.05vz3zq> <http://rdf.freebase.com/ns/government.governmental_jurisdiction.governing_officials> ?x0 .\n?x0 <http://rdf.freebase.com/ns/government.government_position_held.from> ?x1 ."
+        ]
+    },
+    {
+        "question": "what is the currency of puerto rico called?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://rdf.freebase.com/ns/m.05r7t",
+                "http://rdf.freebase.com/ns/location.country.currency_used",
+                "?x"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://rdf.freebase.com/ns/m.05r7t",
+                    "http://rdf.freebase.com/ns/location.country.currency_used",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://rdf.freebase.com/ns/m.05r7t> <http://rdf.freebase.com/ns/location.country.currency_used> ?x .\n",
+        "selected_triples_strings": [
+            "<http://rdf.freebase.com/ns/m.05r7t> <http://rdf.freebase.com/ns/location.country.currency_used> ?x0 ."
+        ]
+    },
+    {
+        "question": "what kind of cancer did carl wilson have?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://rdf.freebase.com/ns/m.01n9vwg",
+                "http://rdf.freebase.com/ns/people.deceased_person.cause_of_death",
+                "?x"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://rdf.freebase.com/ns/m.01n9vwg",
+                    "http://rdf.freebase.com/ns/people.deceased_person.cause_of_death",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://rdf.freebase.com/ns/m.01n9vwg> <http://rdf.freebase.com/ns/people.deceased_person.cause_of_death> ?x .\n",
+        "selected_triples_strings": [
+            "<http://rdf.freebase.com/ns/m.01n9vwg> <http://rdf.freebase.com/ns/people.deceased_person.cause_of_death> ?x0 ."
+        ]
+    },
+    {
+        "question": "what county is brentwood tennessee in?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://rdf.freebase.com/ns/m.0_xcq",
+                "http://rdf.freebase.com/ns/location.hud_county_place.county",
+                "?x"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://rdf.freebase.com/ns/m.0_xcq",
+                    "http://rdf.freebase.com/ns/location.hud_county_place.county",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://rdf.freebase.com/ns/m.0_xcq> <http://rdf.freebase.com/ns/location.hud_county_place.county> ?x .\n",
+        "selected_triples_strings": [
+            "<http://rdf.freebase.com/ns/m.0_xcq> <http://rdf.freebase.com/ns/location.hud_county_place.county> ?x0 ."
+        ]
+    },
+    {
+        "question": "what battles did stonewall jackson fight in?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://rdf.freebase.com/ns/m.07r8h",
+                "http://rdf.freebase.com/ns/military.military_commander.military_commands",
+                "?y"
+            ],
+            [
+                "?y",
+                "http://rdf.freebase.com/ns/military.military_command.military_conflict",
+                "?x"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://rdf.freebase.com/ns/m.07r8h",
+                    "http://rdf.freebase.com/ns/military.military_commander.military_commands",
+                    "?x0"
+                ],
+                [
+                    "?x0",
+                    "http://rdf.freebase.com/ns/military.military_command.military_conflict",
+                    "?x1"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://rdf.freebase.com/ns/m.07r8h> <http://rdf.freebase.com/ns/military.military_commander.military_commands> ?y .\n?y <http://rdf.freebase.com/ns/military.military_command.military_conflict> ?x .\n",
+        "selected_triples_strings": [
+            "<http://rdf.freebase.com/ns/m.07r8h> <http://rdf.freebase.com/ns/military.military_commander.military_commands> ?x0 .\n?x0 <http://rdf.freebase.com/ns/military.military_command.military_conflict> ?x1 ."
+        ]
+    },
+    {
+        "question": "what language do the maasai tribe speak?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://rdf.freebase.com/ns/m.054vv",
+                "http://rdf.freebase.com/ns/people.ethnicity.languages_spoken",
+                "?x"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://rdf.freebase.com/ns/m.054vv",
+                    "http://rdf.freebase.com/ns/people.ethnicity.languages_spoken",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://rdf.freebase.com/ns/m.054vv> <http://rdf.freebase.com/ns/people.ethnicity.languages_spoken> ?x .\n",
+        "selected_triples_strings": [
+            "<http://rdf.freebase.com/ns/m.054vv> <http://rdf.freebase.com/ns/people.ethnicity.languages_spoken> ?x0 ."
+        ]
+    },
+    {
+        "question": "what disease did patrick swayze died from?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://rdf.freebase.com/ns/m.02h3tp",
+                "http://rdf.freebase.com/ns/people.deceased_person.cause_of_death",
+                "?x"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://rdf.freebase.com/ns/m.02h3tp",
+                    "http://rdf.freebase.com/ns/people.deceased_person.cause_of_death",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://rdf.freebase.com/ns/m.02h3tp> <http://rdf.freebase.com/ns/people.deceased_person.cause_of_death> ?x .\n",
+        "selected_triples_strings": [
+            "<http://rdf.freebase.com/ns/m.02h3tp> <http://rdf.freebase.com/ns/people.deceased_person.cause_of_death> ?x0 ."
+        ]
+    },
+    {
+        "question": "what works of art did leonardo da vinci produce?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://rdf.freebase.com/ns/m.04lg6",
+                "http://rdf.freebase.com/ns/visual_art.visual_artist.artworks",
+                "?x"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://rdf.freebase.com/ns/m.04lg6",
+                    "http://rdf.freebase.com/ns/visual_art.visual_artist.artworks",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://rdf.freebase.com/ns/m.04lg6> <http://rdf.freebase.com/ns/visual_art.visual_artist.artworks> ?x .\n",
+        "selected_triples_strings": [
+            "<http://rdf.freebase.com/ns/m.04lg6> <http://rdf.freebase.com/ns/visual_art.visual_artist.artworks> ?x0 ."
+        ]
+    },
+    {
+        "question": "what capital of austria?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://rdf.freebase.com/ns/m.0h7x",
+                "http://rdf.freebase.com/ns/location.country.capital",
+                "?x"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://rdf.freebase.com/ns/m.0h7x",
+                    "http://rdf.freebase.com/ns/location.country.capital",
+                    "?x0"
+                ]
+            ],
+            [
+                [
+                    "http://rdf.freebase.com/ns/m.0h7x",
+                    "http://rdf.freebase.com/ns/base.aareas.schema.administrative_area.capital",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://rdf.freebase.com/ns/m.0h7x> <http://rdf.freebase.com/ns/location.country.capital> ?x .\n",
+        "selected_triples_strings": [
+            "<http://rdf.freebase.com/ns/m.0h7x> <http://rdf.freebase.com/ns/location.country.capital> ?x0 .",
+            "<http://rdf.freebase.com/ns/m.0h7x> <http://rdf.freebase.com/ns/base.aareas.schema.administrative_area.capital> ?x0 ."
+        ]
+    },
+    {
+        "question": "what country did buddha come from?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://rdf.freebase.com/ns/m.015k7",
+                "http://rdf.freebase.com/ns/people.person.nationality",
+                "?x"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://rdf.freebase.com/ns/m.015k7",
+                    "http://rdf.freebase.com/ns/people.person.place_of_birth",
+                    "http://rdf.freebase.com/ns/m.06_86x"
+                ],
+                [
+                    "?x0",
+                    "http://rdf.freebase.com/ns/location.location.contains",
+                    "http://rdf.freebase.com/ns/m.06_86x"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://rdf.freebase.com/ns/m.015k7> <http://rdf.freebase.com/ns/people.person.nationality> ?x .\n",
+        "selected_triples_strings": [
+            "<http://rdf.freebase.com/ns/m.015k7> <http://rdf.freebase.com/ns/people.person.place_of_birth> <http://rdf.freebase.com/ns/m.06_86x> .\n?x0 <http://rdf.freebase.com/ns/location.location.contains> <http://rdf.freebase.com/ns/m.06_86x> ."
+        ]
+    },
+    {
+        "question": "what county is greeley colorado in?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://rdf.freebase.com/ns/m.0rczx",
+                "http://rdf.freebase.com/ns/location.hud_county_place.county",
+                "?x"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://rdf.freebase.com/ns/m.0rczx",
+                    "http://rdf.freebase.com/ns/location.hud_county_place.county",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://rdf.freebase.com/ns/m.0rczx> <http://rdf.freebase.com/ns/location.hud_county_place.county> ?x .\n",
+        "selected_triples_strings": [
+            "<http://rdf.freebase.com/ns/m.0rczx> <http://rdf.freebase.com/ns/location.hud_county_place.county> ?x0 ."
+        ]
+    },
+    {
+        "question": "what did peter tchaikovsky do?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://rdf.freebase.com/ns/m.063tn",
+                "http://rdf.freebase.com/ns/people.person.profession",
+                "?x"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://rdf.freebase.com/ns/m.063tn",
+                    "http://rdf.freebase.com/ns/people.person.profession",
+                    "?x0"
+                ]
+            ],
+            [
+                [
+                    "http://rdf.freebase.com/ns/m.063tn",
+                    "http://rdf.freebase.com/ns/opera.librettist.libretti",
+                    "?x0"
+                ]
+            ],
+            [
+                [
+                    "http://rdf.freebase.com/ns/m.063tn",
+                    "http://rdf.freebase.com/ns/music.composer.compositions",
+                    "?x0"
+                ]
+            ],
+            [
+                [
+                    "http://rdf.freebase.com/ns/m.063tn",
+                    "http://rdf.freebase.com/ns/music.artist.genre",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://rdf.freebase.com/ns/m.063tn> <http://rdf.freebase.com/ns/people.person.profession> ?x .\n",
+        "selected_triples_strings": [
+            "<http://rdf.freebase.com/ns/m.063tn> <http://rdf.freebase.com/ns/people.person.profession> ?x0 .",
+            "<http://rdf.freebase.com/ns/m.063tn> <http://rdf.freebase.com/ns/opera.librettist.libretti> ?x0 .",
+            "<http://rdf.freebase.com/ns/m.063tn> <http://rdf.freebase.com/ns/music.composer.compositions> ?x0 .",
+            "<http://rdf.freebase.com/ns/m.063tn> <http://rdf.freebase.com/ns/music.artist.genre> ?x0 ."
+        ]
+    },
+    {
+        "question": "which countries speak german officially?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "?x",
+                "http://rdf.freebase.com/ns/location.country.official_language",
+                "http://rdf.freebase.com/ns/m.04306rv"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "?x0",
+                    "http://rdf.freebase.com/ns/location.country.official_language",
+                    "http://rdf.freebase.com/ns/m.04306rv"
+                ]
+            ],
+            [
+                [
+                    "http://rdf.freebase.com/ns/m.04306rv",
+                    "http://rdf.freebase.com/ns/language.human_language.countries_spoken_in",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "?x <http://rdf.freebase.com/ns/location.country.official_language> <http://rdf.freebase.com/ns/m.04306rv> .\n",
+        "selected_triples_strings": [
+            "?x0 <http://rdf.freebase.com/ns/location.country.official_language> <http://rdf.freebase.com/ns/m.04306rv> .",
+            "<http://rdf.freebase.com/ns/m.04306rv> <http://rdf.freebase.com/ns/language.human_language.countries_spoken_in> ?x0 ."
+        ]
+    },
+    {
+        "question": "what type of music did john lennon sing?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://rdf.freebase.com/ns/m.01vsl3_",
+                "http://rdf.freebase.com/ns/music.artist.genre",
+                "?x"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://rdf.freebase.com/ns/m.01vsl3_",
+                    "http://rdf.freebase.com/ns/music.artist.genre",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://rdf.freebase.com/ns/m.01vsl3_> <http://rdf.freebase.com/ns/music.artist.genre> ?x .\n",
+        "selected_triples_strings": [
+            "<http://rdf.freebase.com/ns/m.01vsl3_> <http://rdf.freebase.com/ns/music.artist.genre> ?x0 ."
+        ]
+    },
+    {
+        "question": "who are the colorado representatives?",
+        "found": false,
+        "macro_f1": 0.048780487804878044,
+        "correct_path": [
+            [
+                "http://rdf.freebase.com/ns/m.01n4w",
+                "http://rdf.freebase.com/ns/government.political_district.representatives",
+                "?y"
+            ],
+            [
+                "?y",
+                "http://rdf.freebase.com/ns/government.government_position_held.office_holder",
+                "?x"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "?x0",
+                    "http://rdf.freebase.com/ns/user.robert.us_congress.us_representative.state",
+                    "http://rdf.freebase.com/ns/m.01n4w"
+                ],
+                [
+                    "?x0",
+                    "http://rdf.freebase.com/key/wikipedia.pl",
+                    "?x1"
+                ]
+            ],
+            [
+                [
+                    "?x0",
+                    "http://rdf.freebase.com/ns/user.robert.us_congress.us_representative.state",
+                    "http://rdf.freebase.com/ns/m.01n4w"
+                ],
+                [
+                    "?x0",
+                    "http://www.w3.org/2000/01/rdf-schema#label",
+                    "?x1"
+                ]
+            ],
+            [
+                [
+                    "?x0",
+                    "http://rdf.freebase.com/ns/user.robert.us_congress.us_representative.state",
+                    "http://rdf.freebase.com/ns/m.01n4w"
+                ],
+                [
+                    "?x0",
+                    "http://rdf.freebase.com/key/wikipedia.en_title",
+                    "?x1"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://rdf.freebase.com/ns/m.01n4w> <http://rdf.freebase.com/ns/government.political_district.representatives> ?y .\n?y <http://rdf.freebase.com/ns/government.government_position_held.office_holder> ?x .\n",
+        "selected_triples_strings": [
+            "?x0 <http://rdf.freebase.com/ns/user.robert.us_congress.us_representative.state> <http://rdf.freebase.com/ns/m.01n4w> .\n?x0 <http://rdf.freebase.com/key/wikipedia.pl> ?x1 .",
+            "?x0 <http://rdf.freebase.com/ns/user.robert.us_congress.us_representative.state> <http://rdf.freebase.com/ns/m.01n4w> .\n?x0 <http://www.w3.org/2000/01/rdf-schema#label> ?x1 .",
+            "?x0 <http://rdf.freebase.com/ns/user.robert.us_congress.us_representative.state> <http://rdf.freebase.com/ns/m.01n4w> .\n?x0 <http://rdf.freebase.com/key/wikipedia.en_title> ?x1 ."
+        ]
+    },
+    {
+        "question": "who are the colorado representatives?",
+        "found": false,
+        "macro_f1": 0.0,
+        "correct_path": [
+            [
+                "http://rdf.freebase.com/ns/m.01n4w",
+                "http://rdf.freebase.com/ns/government.political_district.representatives",
+                "?y"
+            ],
+            [
+                "?y",
+                "http://rdf.freebase.com/ns/government.government_position_held.from",
+                "?sk0"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "?x0",
+                    "http://rdf.freebase.com/ns/user.robert.us_congress.us_representative.state",
+                    "http://rdf.freebase.com/ns/m.01n4w"
+                ],
+                [
+                    "?x0",
+                    "http://rdf.freebase.com/key/wikipedia.pl",
+                    "?x1"
+                ]
+            ],
+            [
+                [
+                    "?x0",
+                    "http://rdf.freebase.com/ns/user.robert.us_congress.us_representative.state",
+                    "http://rdf.freebase.com/ns/m.01n4w"
+                ],
+                [
+                    "?x0",
+                    "http://www.w3.org/2000/01/rdf-schema#label",
+                    "?x1"
+                ]
+            ],
+            [
+                [
+                    "?x0",
+                    "http://rdf.freebase.com/ns/user.robert.us_congress.us_representative.state",
+                    "http://rdf.freebase.com/ns/m.01n4w"
+                ],
+                [
+                    "?x0",
+                    "http://rdf.freebase.com/key/wikipedia.en_title",
+                    "?x1"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://rdf.freebase.com/ns/m.01n4w> <http://rdf.freebase.com/ns/government.political_district.representatives> ?y .\n?y <http://rdf.freebase.com/ns/government.government_position_held.from> ?sk0 .\n",
+        "selected_triples_strings": [
+            "?x0 <http://rdf.freebase.com/ns/user.robert.us_congress.us_representative.state> <http://rdf.freebase.com/ns/m.01n4w> .\n?x0 <http://rdf.freebase.com/key/wikipedia.pl> ?x1 .",
+            "?x0 <http://rdf.freebase.com/ns/user.robert.us_congress.us_representative.state> <http://rdf.freebase.com/ns/m.01n4w> .\n?x0 <http://www.w3.org/2000/01/rdf-schema#label> ?x1 .",
+            "?x0 <http://rdf.freebase.com/ns/user.robert.us_congress.us_representative.state> <http://rdf.freebase.com/ns/m.01n4w> .\n?x0 <http://rdf.freebase.com/key/wikipedia.en_title> ?x1 ."
+        ]
+    },
+    {
+        "question": "who are the colorado representatives?",
+        "found": false,
+        "macro_f1": 0.0,
+        "correct_path": [
+            [
+                "http://rdf.freebase.com/ns/m.01n4w",
+                "http://rdf.freebase.com/ns/government.political_district.representatives",
+                "?y"
+            ],
+            [
+                "?y",
+                "http://rdf.freebase.com/ns/government.government_position_held.from",
+                "?sk1"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "?x0",
+                    "http://rdf.freebase.com/ns/user.robert.us_congress.us_representative.state",
+                    "http://rdf.freebase.com/ns/m.01n4w"
+                ],
+                [
+                    "?x0",
+                    "http://rdf.freebase.com/key/wikipedia.pl",
+                    "?x1"
+                ]
+            ],
+            [
+                [
+                    "?x0",
+                    "http://rdf.freebase.com/ns/user.robert.us_congress.us_representative.state",
+                    "http://rdf.freebase.com/ns/m.01n4w"
+                ],
+                [
+                    "?x0",
+                    "http://www.w3.org/2000/01/rdf-schema#label",
+                    "?x1"
+                ]
+            ],
+            [
+                [
+                    "?x0",
+                    "http://rdf.freebase.com/ns/user.robert.us_congress.us_representative.state",
+                    "http://rdf.freebase.com/ns/m.01n4w"
+                ],
+                [
+                    "?x0",
+                    "http://rdf.freebase.com/key/wikipedia.en_title",
+                    "?x1"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://rdf.freebase.com/ns/m.01n4w> <http://rdf.freebase.com/ns/government.political_district.representatives> ?y .\n?y <http://rdf.freebase.com/ns/government.government_position_held.from> ?sk1 .\n",
+        "selected_triples_strings": [
+            "?x0 <http://rdf.freebase.com/ns/user.robert.us_congress.us_representative.state> <http://rdf.freebase.com/ns/m.01n4w> .\n?x0 <http://rdf.freebase.com/key/wikipedia.pl> ?x1 .",
+            "?x0 <http://rdf.freebase.com/ns/user.robert.us_congress.us_representative.state> <http://rdf.freebase.com/ns/m.01n4w> .\n?x0 <http://www.w3.org/2000/01/rdf-schema#label> ?x1 .",
+            "?x0 <http://rdf.freebase.com/ns/user.robert.us_congress.us_representative.state> <http://rdf.freebase.com/ns/m.01n4w> .\n?x0 <http://rdf.freebase.com/key/wikipedia.en_title> ?x1 ."
+        ]
+    },
+    {
+        "question": "who are the colorado representatives?",
+        "found": false,
+        "macro_f1": 0.0,
+        "correct_path": [
+            [
+                "http://rdf.freebase.com/ns/m.01n4w",
+                "http://rdf.freebase.com/ns/government.political_district.representatives",
+                "?y"
+            ],
+            [
+                "?y",
+                "http://rdf.freebase.com/ns/government.government_position_held.to",
+                "?sk2"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "?x0",
+                    "http://rdf.freebase.com/ns/user.robert.us_congress.us_representative.state",
+                    "http://rdf.freebase.com/ns/m.01n4w"
+                ],
+                [
+                    "?x0",
+                    "http://rdf.freebase.com/key/wikipedia.pl",
+                    "?x1"
+                ]
+            ],
+            [
+                [
+                    "?x0",
+                    "http://rdf.freebase.com/ns/user.robert.us_congress.us_representative.state",
+                    "http://rdf.freebase.com/ns/m.01n4w"
+                ],
+                [
+                    "?x0",
+                    "http://www.w3.org/2000/01/rdf-schema#label",
+                    "?x1"
+                ]
+            ],
+            [
+                [
+                    "?x0",
+                    "http://rdf.freebase.com/ns/user.robert.us_congress.us_representative.state",
+                    "http://rdf.freebase.com/ns/m.01n4w"
+                ],
+                [
+                    "?x0",
+                    "http://rdf.freebase.com/key/wikipedia.en_title",
+                    "?x1"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://rdf.freebase.com/ns/m.01n4w> <http://rdf.freebase.com/ns/government.political_district.representatives> ?y .\n?y <http://rdf.freebase.com/ns/government.government_position_held.to> ?sk2 .\n",
+        "selected_triples_strings": [
+            "?x0 <http://rdf.freebase.com/ns/user.robert.us_congress.us_representative.state> <http://rdf.freebase.com/ns/m.01n4w> .\n?x0 <http://rdf.freebase.com/key/wikipedia.pl> ?x1 .",
+            "?x0 <http://rdf.freebase.com/ns/user.robert.us_congress.us_representative.state> <http://rdf.freebase.com/ns/m.01n4w> .\n?x0 <http://www.w3.org/2000/01/rdf-schema#label> ?x1 .",
+            "?x0 <http://rdf.freebase.com/ns/user.robert.us_congress.us_representative.state> <http://rdf.freebase.com/ns/m.01n4w> .\n?x0 <http://rdf.freebase.com/key/wikipedia.en_title> ?x1 ."
+        ]
+    },
+    {
+        "question": "who are the colorado representatives?",
+        "found": false,
+        "macro_f1": 0.0,
+        "correct_path": [
+            [
+                "http://rdf.freebase.com/ns/m.01n4w",
+                "http://rdf.freebase.com/ns/government.political_district.representatives",
+                "?y"
+            ],
+            [
+                "?y",
+                "http://rdf.freebase.com/ns/government.government_position_held.to",
+                "?sk3"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "?x0",
+                    "http://rdf.freebase.com/ns/user.robert.us_congress.us_representative.state",
+                    "http://rdf.freebase.com/ns/m.01n4w"
+                ],
+                [
+                    "?x0",
+                    "http://www.w3.org/2000/01/rdf-schema#label",
+                    "?x1"
+                ]
+            ],
+            [
+                [
+                    "?x0",
+                    "http://rdf.freebase.com/ns/user.robert.us_congress.us_representative.state",
+                    "http://rdf.freebase.com/ns/m.01n4w"
+                ],
+                [
+                    "?x0",
+                    "http://rdf.freebase.com/ns/common.topic.description",
+                    "?x1"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://rdf.freebase.com/ns/m.01n4w> <http://rdf.freebase.com/ns/government.political_district.representatives> ?y .\n?y <http://rdf.freebase.com/ns/government.government_position_held.to> ?sk3 .\n",
+        "selected_triples_strings": [
+            "?x0 <http://rdf.freebase.com/ns/user.robert.us_congress.us_representative.state> <http://rdf.freebase.com/ns/m.01n4w> .\n?x0 <http://www.w3.org/2000/01/rdf-schema#label> ?x1 .",
+            "?x0 <http://rdf.freebase.com/ns/user.robert.us_congress.us_representative.state> <http://rdf.freebase.com/ns/m.01n4w> .\n?x0 <http://rdf.freebase.com/ns/common.topic.description> ?x1 ."
+        ]
+    },
+    {
+        "question": "which country does greenland belong to?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://rdf.freebase.com/ns/m.035v3",
+                "http://rdf.freebase.com/ns/location.administrative_division.country",
+                "?x"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://rdf.freebase.com/ns/m.035v3",
+                    "http://rdf.freebase.com/ns/location.administrative_division.country",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://rdf.freebase.com/ns/m.035v3> <http://rdf.freebase.com/ns/location.administrative_division.country> ?x .\n",
+        "selected_triples_strings": [
+            "<http://rdf.freebase.com/ns/m.035v3> <http://rdf.freebase.com/ns/location.administrative_division.country> ?x0 ."
+        ]
+    },
+    {
+        "question": "what the zip code for seattle washington?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://rdf.freebase.com/ns/m.0d9jr",
+                "http://rdf.freebase.com/ns/location.citytown.postal_codes",
+                "?x"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://rdf.freebase.com/ns/m.0d9jr",
+                    "http://rdf.freebase.com/ns/location.citytown.postal_codes",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://rdf.freebase.com/ns/m.0d9jr> <http://rdf.freebase.com/ns/location.citytown.postal_codes> ?x .\n",
+        "selected_triples_strings": [
+            "<http://rdf.freebase.com/ns/m.0d9jr> <http://rdf.freebase.com/ns/location.citytown.postal_codes> ?x0 ."
+        ]
+    },
+    {
+        "question": "what do you call the chinese writing system?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://rdf.freebase.com/ns/m.01r2l",
+                "http://rdf.freebase.com/ns/language.human_language.writing_system",
+                "?x"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "?x0",
+                    "http://rdf.freebase.com/ns/language.language_writing_system.languages",
+                    "http://rdf.freebase.com/ns/m.01r2l"
+                ]
+            ],
+            [
+                [
+                    "http://rdf.freebase.com/ns/m.01r2l",
+                    "http://rdf.freebase.com/ns/language.human_language.writing_system",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://rdf.freebase.com/ns/m.01r2l> <http://rdf.freebase.com/ns/language.human_language.writing_system> ?x .\n",
+        "selected_triples_strings": [
+            "?x0 <http://rdf.freebase.com/ns/language.language_writing_system.languages> <http://rdf.freebase.com/ns/m.01r2l> .",
+            "<http://rdf.freebase.com/ns/m.01r2l> <http://rdf.freebase.com/ns/language.human_language.writing_system> ?x0 ."
+        ]
+    },
+    {
+        "question": "who played on the jeffersons?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://rdf.freebase.com/ns/m.02f8jf",
+                "http://rdf.freebase.com/ns/tv.tv_program.regular_cast",
+                "?y"
+            ],
+            [
+                "?y",
+                "http://rdf.freebase.com/ns/tv.regular_tv_appearance.actor",
+                "?x"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://rdf.freebase.com/ns/m.02f8jf",
+                    "http://rdf.freebase.com/ns/tv.tv_program.regular_cast",
+                    "?x0"
+                ],
+                [
+                    "?x1",
+                    "http://rdf.freebase.com/ns/tv.tv_actor.starring_roles",
+                    "?x0"
+                ]
+            ],
+            [
+                [
+                    "http://rdf.freebase.com/ns/m.02f8jf",
+                    "http://rdf.freebase.com/ns/tv.tv_program.regular_cast",
+                    "?x0"
+                ],
+                [
+                    "?x0",
+                    "http://rdf.freebase.com/ns/tv.regular_tv_appearance.actor",
+                    "?x1"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://rdf.freebase.com/ns/m.02f8jf> <http://rdf.freebase.com/ns/tv.tv_program.regular_cast> ?y .\n?y <http://rdf.freebase.com/ns/tv.regular_tv_appearance.actor> ?x .\n",
+        "selected_triples_strings": [
+            "<http://rdf.freebase.com/ns/m.02f8jf> <http://rdf.freebase.com/ns/tv.tv_program.regular_cast> ?x0 .\n?x1 <http://rdf.freebase.com/ns/tv.tv_actor.starring_roles> ?x0 .",
+            "<http://rdf.freebase.com/ns/m.02f8jf> <http://rdf.freebase.com/ns/tv.tv_program.regular_cast> ?x0 .\n?x0 <http://rdf.freebase.com/ns/tv.regular_tv_appearance.actor> ?x1 ."
+        ]
+    },
+    {
+        "question": "what is the name of the san francisco newspaper?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://rdf.freebase.com/ns/m.0d6lp",
+                "http://rdf.freebase.com/ns/periodicals.newspaper_circulation_area.newspapers",
+                "?x"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://rdf.freebase.com/ns/m.0d6lp",
+                    "http://rdf.freebase.com/ns/periodicals.newspaper_circulation_area.newspapers",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://rdf.freebase.com/ns/m.0d6lp> <http://rdf.freebase.com/ns/periodicals.newspaper_circulation_area.newspapers> ?x .\n",
+        "selected_triples_strings": [
+            "<http://rdf.freebase.com/ns/m.0d6lp> <http://rdf.freebase.com/ns/periodicals.newspaper_circulation_area.newspapers> ?x0 ."
+        ]
+    },
+    {
+        "question": "what continent does armenia belong to?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://rdf.freebase.com/ns/m.0jgx",
+                "http://rdf.freebase.com/ns/base.locations.countries.continent",
+                "?x"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://rdf.freebase.com/ns/m.0jgx",
+                    "http://rdf.freebase.com/ns/base.locations.countries.continent",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://rdf.freebase.com/ns/m.0jgx> <http://rdf.freebase.com/ns/base.locations.countries.continent> ?x .\n",
+        "selected_triples_strings": [
+            "<http://rdf.freebase.com/ns/m.0jgx> <http://rdf.freebase.com/ns/base.locations.countries.continent> ?x0 ."
+        ]
+    },
+    {
+        "question": "what did randy savage died of?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://rdf.freebase.com/ns/m.02p7_z",
+                "http://rdf.freebase.com/ns/people.deceased_person.cause_of_death",
+                "?x"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://rdf.freebase.com/ns/m.02p7_z",
+                    "http://rdf.freebase.com/ns/people.deceased_person.cause_of_death",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://rdf.freebase.com/ns/m.02p7_z> <http://rdf.freebase.com/ns/people.deceased_person.cause_of_death> ?x .\n",
+        "selected_triples_strings": [
+            "<http://rdf.freebase.com/ns/m.02p7_z> <http://rdf.freebase.com/ns/people.deceased_person.cause_of_death> ?x0 ."
+        ]
+    },
+    {
+        "question": "what was the title of the book charles darwin wrote?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://rdf.freebase.com/ns/m.01lwx",
+                "http://rdf.freebase.com/ns/book.author.works_written",
+                "?x"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://rdf.freebase.com/ns/m.01lwx",
+                    "http://rdf.freebase.com/ns/book.author.works_written",
+                    "?x0"
+                ]
+            ],
+            [
+                [
+                    "http://rdf.freebase.com/ns/m.01lwx",
+                    "http://rdf.freebase.com/ns/book.author.book_editions_published",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://rdf.freebase.com/ns/m.01lwx> <http://rdf.freebase.com/ns/book.author.works_written> ?x .\n",
+        "selected_triples_strings": [
+            "<http://rdf.freebase.com/ns/m.01lwx> <http://rdf.freebase.com/ns/book.author.works_written> ?x0 .",
+            "<http://rdf.freebase.com/ns/m.01lwx> <http://rdf.freebase.com/ns/book.author.book_editions_published> ?x0 ."
+        ]
+    },
+    {
+        "question": "where did richard nixon die?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://rdf.freebase.com/ns/m.06c97",
+                "http://rdf.freebase.com/ns/people.deceased_person.place_of_death",
+                "?x"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://rdf.freebase.com/ns/m.06c97",
+                    "http://rdf.freebase.com/ns/people.deceased_person.place_of_death",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://rdf.freebase.com/ns/m.06c97> <http://rdf.freebase.com/ns/people.deceased_person.place_of_death> ?x .\n",
+        "selected_triples_strings": [
+            "<http://rdf.freebase.com/ns/m.06c97> <http://rdf.freebase.com/ns/people.deceased_person.place_of_death> ?x0 ."
+        ]
+    },
+    {
+        "question": "what songs does smokey robinson sing?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://rdf.freebase.com/ns/m.012_6c",
+                "http://rdf.freebase.com/ns/music.artist.track",
+                "?x"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://rdf.freebase.com/ns/m.012_6c",
+                    "http://rdf.freebase.com/ns/music.featured_artist.recordings",
+                    "?x0"
+                ]
+            ],
+            [
+                [
+                    "http://rdf.freebase.com/ns/m.012_6c",
+                    "http://rdf.freebase.com/ns/music.artist.track",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://rdf.freebase.com/ns/m.012_6c> <http://rdf.freebase.com/ns/music.artist.track> ?x .\n",
+        "selected_triples_strings": [
+            "<http://rdf.freebase.com/ns/m.012_6c> <http://rdf.freebase.com/ns/music.featured_artist.recordings> ?x0 .",
+            "<http://rdf.freebase.com/ns/m.012_6c> <http://rdf.freebase.com/ns/music.artist.track> ?x0 ."
+        ]
+    },
+    {
+        "question": "who was vice president when jfk was president?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://rdf.freebase.com/ns/m.0d3k14",
+                "http://rdf.freebase.com/ns/government.us_president.vice_president",
+                "?x"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://rdf.freebase.com/ns/m.0d3k14",
+                    "http://rdf.freebase.com/ns/government.us_president.vice_president",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://rdf.freebase.com/ns/m.0d3k14> <http://rdf.freebase.com/ns/government.us_president.vice_president> ?x .\n",
+        "selected_triples_strings": [
+            "<http://rdf.freebase.com/ns/m.0d3k14> <http://rdf.freebase.com/ns/government.us_president.vice_president> ?x0 ."
+        ]
+    },
+    {
+        "question": "what is serbian language called?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://rdf.freebase.com/ns/m.077qn",
+                "http://rdf.freebase.com/ns/location.country.official_language",
+                "?x"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://rdf.freebase.com/ns/m.077qn",
+                    "http://rdf.freebase.com/ns/location.country.official_language",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://rdf.freebase.com/ns/m.077qn> <http://rdf.freebase.com/ns/location.country.official_language> ?x .\n",
+        "selected_triples_strings": [
+            "<http://rdf.freebase.com/ns/m.077qn> <http://rdf.freebase.com/ns/location.country.official_language> ?x0 ."
+        ]
+    },
+    {
+        "question": "what language is spoken in haiti today?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://rdf.freebase.com/ns/m.03gyl",
+                "http://rdf.freebase.com/ns/location.country.languages_spoken",
+                "?x"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "?x0",
+                    "http://rdf.freebase.com/ns/language.human_language.countries_spoken_in",
+                    "http://rdf.freebase.com/ns/m.03gyl"
+                ]
+            ],
+            [
+                [
+                    "http://rdf.freebase.com/ns/m.03gyl",
+                    "http://rdf.freebase.com/ns/location.country.languages_spoken",
+                    "?x0"
+                ]
+            ],
+            [
+                [
+                    "http://rdf.freebase.com/ns/m.03gyl",
+                    "http://rdf.freebase.com/ns/location.country.official_language",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://rdf.freebase.com/ns/m.03gyl> <http://rdf.freebase.com/ns/location.country.languages_spoken> ?x .\n",
+        "selected_triples_strings": [
+            "?x0 <http://rdf.freebase.com/ns/language.human_language.countries_spoken_in> <http://rdf.freebase.com/ns/m.03gyl> .",
+            "<http://rdf.freebase.com/ns/m.03gyl> <http://rdf.freebase.com/ns/location.country.languages_spoken> ?x0 .",
+            "<http://rdf.freebase.com/ns/m.03gyl> <http://rdf.freebase.com/ns/location.country.official_language> ?x0 ."
+        ]
+    },
+    {
+        "question": "who played barbara gordon batgirl?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://rdf.freebase.com/ns/m.03hvfx",
+                "http://rdf.freebase.com/ns/film.film_character.portrayed_in_films",
+                "?y"
+            ],
+            [
+                "?y",
+                "http://rdf.freebase.com/ns/film.performance.actor",
+                "?x"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://rdf.freebase.com/ns/m.03hvfx",
+                    "http://rdf.freebase.com/ns/film.film_character.portrayed_in_films",
+                    "?x0"
+                ],
+                [
+                    "?x0",
+                    "http://rdf.freebase.com/ns/film.performance.actor",
+                    "?x1"
+                ]
+            ],
+            [
+                [
+                    "http://rdf.freebase.com/ns/m.03hvfx",
+                    "http://rdf.freebase.com/ns/tv.tv_character.appeared_in_tv_program",
+                    "?x0"
+                ],
+                [
+                    "?x1",
+                    "http://rdf.freebase.com/ns/tv.tv_actor.starring_roles",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://rdf.freebase.com/ns/m.03hvfx> <http://rdf.freebase.com/ns/film.film_character.portrayed_in_films> ?y .\n?y <http://rdf.freebase.com/ns/film.performance.actor> ?x .\n",
+        "selected_triples_strings": [
+            "<http://rdf.freebase.com/ns/m.03hvfx> <http://rdf.freebase.com/ns/film.film_character.portrayed_in_films> ?x0 .\n?x0 <http://rdf.freebase.com/ns/film.performance.actor> ?x1 .",
+            "<http://rdf.freebase.com/ns/m.03hvfx> <http://rdf.freebase.com/ns/tv.tv_character.appeared_in_tv_program> ?x0 .\n?x1 <http://rdf.freebase.com/ns/tv.tv_actor.starring_roles> ?x0 ."
+        ]
+    },
+    {
+        "question": "where is jay leno from?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://rdf.freebase.com/ns/m.046lt",
+                "http://rdf.freebase.com/ns/people.person.place_of_birth",
+                "?x"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://rdf.freebase.com/ns/m.046lt",
+                    "http://rdf.freebase.com/ns/people.person.place_of_birth",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://rdf.freebase.com/ns/m.046lt> <http://rdf.freebase.com/ns/people.person.place_of_birth> ?x .\n",
+        "selected_triples_strings": [
+            "<http://rdf.freebase.com/ns/m.046lt> <http://rdf.freebase.com/ns/people.person.place_of_birth> ?x0 ."
+        ]
+    },
+    {
+        "question": "what language do people from thailand speak?",
+        "found": false,
+        "macro_f1": 0.14285714285714288,
+        "correct_path": [
+            [
+                "http://rdf.freebase.com/ns/m.07f1x",
+                "http://rdf.freebase.com/ns/location.country.languages_spoken",
+                "?x"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://rdf.freebase.com/ns/m.07f1x",
+                    "http://rdf.freebase.com/ns/location.country.official_language",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://rdf.freebase.com/ns/m.07f1x> <http://rdf.freebase.com/ns/location.country.languages_spoken> ?x .\n",
+        "selected_triples_strings": [
+            "<http://rdf.freebase.com/ns/m.07f1x> <http://rdf.freebase.com/ns/location.country.official_language> ?x0 ."
+        ]
+    }
+]

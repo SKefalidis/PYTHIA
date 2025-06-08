@@ -1,0 +1,10 @@
+model: env(MODEL:openai/gpt-5-mini)
+model_endpoint: env(MODEL_ENDPOINT:null)
+
+seed: env(SEED:22)
+
+temperature: env(TEMPERATURE:1.0)
+top_p: env(TOP_P:1.0)
+reasoning_effort: env(REASONING_EFFORT:null)
+reasoning_summary: env(REASONING_SUMMARY:null)
+api: env(API:null)

@@ -1,0 +1,3626 @@
+[
+    {
+        "question": "After whom is the Riemannian geometry named?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q761383": "riemannian geometry"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q761383": "riemannian geometry"
+        }
+    },
+    {
+        "question": "Which animal participated in a military operation with the Australian Defence Force?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q625657": "australian defence force"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q625657": "australian defence force"
+        }
+    },
+    {
+        "question": "among the characters in the witcher, who has two unmarried partners, Yennefer of Vengerberg and Triss Merigold?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q11835640": "the witcher"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q11835640": "the witcher"
+        }
+    },
+    {
+        "question": "among the founders of tencent company, who has been member of national people\u2019s congress?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q860580": "tencent",
+            "http://www.wikidata.org/entity/Q19211": "national people's congress of the people's republic of china"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q860580": "tencent",
+            "http://www.wikidata.org/entity/Q19211": "national people's congress of the people's republic of china"
+        }
+    },
+    {
+        "question": "among the other representative work of the author of hunter x hunter, which one is talking about middle school student?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q696071": "hunter \u00d7 hunter"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q696071": "hunter \u00d7 hunter"
+        }
+    },
+    {
+        "question": "On which stock exchanges are Siemens AG shares traded?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q11691": "stock exchange",
+            "http://www.wikidata.org/entity/Q81230": "siemens"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q11691": "stock exchange",
+            "http://www.wikidata.org/entity/Q81230": "siemens"
+        }
+    },
+    {
+        "question": "Apart from the book series the witcher, name all of the author\u2019s notable work.",
+        "topic_entity": {},
+        "topic_entities": {}
+    },
+    {
+        "question": "are brooke raboutou and colin duffy from same state of the usa?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q87192979": "colin duffy"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q87192979": "colin duffy"
+        }
+    },
+    {
+        "question": "What is the boiling point of water?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q1003183": "boiling point"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q1003183": "boiling point"
+        }
+    },
+    {
+        "question": "At which school was Yayoi Kusama educated at?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q231121": "yayoi kusama"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q231121": "yayoi kusama"
+        }
+    },
+    {
+        "question": "Which High School did Allen Ginsberg attend?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q6711": "allen ginsberg"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q6711": "allen ginsberg"
+        }
+    },
+    {
+        "question": "On which island is the Indonesian capital located?",
+        "topic_entity": {},
+        "topic_entities": {}
+    },
+    {
+        "question": "can i play don't starve on play station 4?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q5014725": "playstation 4"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q5014725": "playstation 4"
+        }
+    },
+    {
+        "question": "How many General Secretaries of the CPSU were there before Leonid Brezhnev?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q765165": "leonid brezhnev",
+            "http://www.wikidata.org/entity/Q79854": "communist party of the soviet union"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q765165": "leonid brezhnev",
+            "http://www.wikidata.org/entity/Q79854": "communist party of the soviet union"
+        }
+    },
+    {
+        "question": "How many different presidents of Russia have there been that took the position after 1990?",
+        "topic_entity": {},
+        "topic_entities": {}
+    },
+    {
+        "question": "Did adam ondra win a medal in the 2020 summer olympics?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q181278": "2020 summer olympics"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q181278": "2020 summer olympics"
+        }
+    },
+    {
+        "question": "Did the Chicago Bulls win at least two seasons of the NBA championship?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q155223": "national basketball association",
+            "http://www.wikidata.org/entity/Q128109": "chicago bulls"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q155223": "national basketball association",
+            "http://www.wikidata.org/entity/Q128109": "chicago bulls"
+        }
+    },
+    {
+        "question": "Did Haruki Murakami receive the Nobel Prize in Literature?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q37922": "nobel prize in literature",
+            "http://www.wikidata.org/entity/Q134798": "haruki murakami"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q37922": "nobel prize in literature",
+            "http://www.wikidata.org/entity/Q134798": "haruki murakami"
+        }
+    },
+    {
+        "question": "Did Kobe Bryant leave the Lakers when LeBron James joined that team?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q25369": "kobe bryant",
+            "http://www.wikidata.org/entity/Q36159": "lebron james",
+            "http://www.wikidata.org/entity/Q121783": "los angeles lakers"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q25369": "kobe bryant",
+            "http://www.wikidata.org/entity/Q36159": "lebron james",
+            "http://www.wikidata.org/entity/Q121783": "los angeles lakers"
+        }
+    },
+    {
+        "question": "Did Rawson Marshall Thurber, the director of Red Notice also direct Titanic?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q58815001": "red notice",
+            "http://www.wikidata.org/entity/Q2745616": "rawson marshall thurber",
+            "http://www.wikidata.org/entity/Q44578": "titanic"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q58815001": "red notice",
+            "http://www.wikidata.org/entity/Q2745616": "rawson marshall thurber",
+            "http://www.wikidata.org/entity/Q44578": "titanic"
+        }
+    },
+    {
+        "question": "Did Venice at any point belong to the Austrian Empire?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q641": "venice",
+            "http://www.wikidata.org/entity/Q131964": "austrian empire"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q641": "venice",
+            "http://www.wikidata.org/entity/Q131964": "austrian empire"
+        }
+    },
+    {
+        "question": "Were at least two of the founders of tencent educated at the same university?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q184664": "tithe"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q184664": "tithe"
+        }
+    },
+    {
+        "question": "Do all of batman\u2019s partner speak english as native language?",
+        "topic_entity": {},
+        "topic_entities": {}
+    },
+    {
+        "question": "How many spouses do head of states have on average?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q48352": "head of state"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q48352": "head of state"
+        }
+    },
+    {
+        "question": "Was there at least one Formula 1 event on the AVUS?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q1023163": "clube desportivo das aves",
+            "http://www.wikidata.org/entity/Q1968": "formula one"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q1023163": "clube desportivo das aves",
+            "http://www.wikidata.org/entity/Q1968": "formula one"
+        }
+    },
+    {
+        "question": "Find all Turkish verbs ending with \u201cu\u015f\u201d with their lemma.",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q18514": "lemma",
+            "http://www.wikidata.org/entity/Q256": "turkish"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q18514": "lemma",
+            "http://www.wikidata.org/entity/Q256": "turkish"
+        }
+    },
+    {
+        "question": "From which country are the beagles originally from?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q21102": "beagle"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q21102": "beagle"
+        }
+    },
+    {
+        "question": "From which country came the 2nd most winners of the Emmy Award ?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q123737": "emmy award"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q123737": "emmy award"
+        }
+    },
+    {
+        "question": "Does the music style of Helloween belong to rock music?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q158895": "helloween",
+            "http://www.wikidata.org/entity/Q11399": "rock music"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q158895": "helloween",
+            "http://www.wikidata.org/entity/Q11399": "rock music"
+        }
+    },
+    {
+        "question": "Does the postal code 32423 belong to Minden?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q3846": "minden"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q3846": "minden"
+        }
+    },
+    {
+        "question": "has adam ondra been a winner of IFSC climbing world cup?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q1774251": "ifsc climbing world cup"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q1774251": "ifsc climbing world cup"
+        }
+    },
+    {
+        "question": "has life expectancy in iran grown in any year after 1999?",
+        "topic_entity": {},
+        "topic_entities": {}
+    },
+    {
+        "question": "has population of Isfahan increased at any point after 2006?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q42053": "isfahan"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q42053": "isfahan"
+        }
+    },
+    {
+        "question": "Did Joe Cocker play at the Woodstock festival?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q190076": "joe cocker",
+            "http://www.wikidata.org/entity/Q164815": "woodstock festival"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q190076": "joe cocker",
+            "http://www.wikidata.org/entity/Q164815": "woodstock festival"
+        }
+    },
+    {
+        "question": "Did Udo B\u00f6lts participate in the Tour de France?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q33881": "tour de france",
+            "http://www.wikidata.org/entity/Q66432": "udo b\u00f6lts"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q33881": "tour de france",
+            "http://www.wikidata.org/entity/Q66432": "udo b\u00f6lts"
+        }
+    },
+    {
+        "question": "How many of Reinhold Messner's brothers still live?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q189307": "reinhold messner"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q189307": "reinhold messner"
+        }
+    },
+    {
+        "question": "In which manner did Hemingway die?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q23434": "ernest hemingway"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q23434": "ernest hemingway"
+        }
+    },
+    {
+        "question": "In which industry does the House of Medici own a business?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q170022": "house of medici"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q170022": "house of medici"
+        }
+    },
+    {
+        "question": "How do people from Turkey call the official name of the united states of america?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q43": "turkey",
+            "http://www.wikidata.org/entity/Q30": "united states of america"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q43": "turkey",
+            "http://www.wikidata.org/entity/Q30": "united states of america"
+        }
+    },
+    {
+        "question": "How high is the Cologne Cathedral ?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q4176": "cologne cathedral"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q4176": "cologne cathedral"
+        }
+    },
+    {
+        "question": "How is the Harz called in Mandarin Chinese?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q9192": "mandarin chinese",
+            "http://www.wikidata.org/entity/Q4186": "harz"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q9192": "mandarin chinese",
+            "http://www.wikidata.org/entity/Q4186": "harz"
+        }
+    },
+    {
+        "question": "How many international airports are located within the city of Hamburg ?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q1055": "hamburg"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q1055": "hamburg"
+        }
+    },
+    {
+        "question": "On how many albums does Madonna perform?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q1744": "madonna"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q1744": "madonna"
+        }
+    },
+    {
+        "question": "On how many albums does Mariah Carey perform?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q41076": "mariah carey"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q41076": "mariah carey"
+        }
+    },
+    {
+        "question": "How many studio albums has Lana Del Rey have?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q37150": "lana del rey"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q37150": "lana del rey"
+        }
+    },
+    {
+        "question": "How many ancient civilizations are there?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q28746198": "Q28746198"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q28746198": "Q28746198"
+        }
+    },
+    {
+        "question": "In how many years did Kobe Bryant receive an NBA All-Defensive Team award?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q1465181": "nba all-defensive team",
+            "http://www.wikidata.org/entity/Q25369": "kobe bryant"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q1465181": "nba all-defensive team",
+            "http://www.wikidata.org/entity/Q25369": "kobe bryant"
+        }
+    },
+    {
+        "question": "How many All-NBA Team awards have Shaquille O'Neal and Kobe Bryant received in the same year?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q674359": "all-nba team",
+            "http://www.wikidata.org/entity/Q169452": "shaquille o'neal",
+            "http://www.wikidata.org/entity/Q25369": "kobe bryant"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q674359": "all-nba team",
+            "http://www.wikidata.org/entity/Q169452": "shaquille o'neal",
+            "http://www.wikidata.org/entity/Q25369": "kobe bryant"
+        }
+    },
+    {
+        "question": "How many literary works did Richard Bachman write?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q3495759": "richard bachman"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q3495759": "richard bachman"
+        }
+    },
+    {
+        "question": "How many notable works does Sarah J. Maas have?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q20640708": "sarah j. maas"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q20640708": "sarah j. maas"
+        }
+    },
+    {
+        "question": "Did Bryan Evenson work for at least one university where he was educated at?",
+        "topic_entity": {},
+        "topic_entities": {}
+    },
+    {
+        "question": "How many children (including apopted ones) does Jeff Bezos have with his ex-wife?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q312556": "jeff bezos"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q312556": "jeff bezos"
+        }
+    },
+    {
+        "question": "How many children had Paul McCartney together with his ex-wife Linda McCartney?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q228899": "linda mccartney",
+            "http://www.wikidata.org/entity/Q2599": "paul mccartney"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q228899": "linda mccartney",
+            "http://www.wikidata.org/entity/Q2599": "paul mccartney"
+        }
+    },
+    {
+        "question": "How many Chinese zodiac animals are there in total?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q1976204": "chinese zodiac"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q1976204": "chinese zodiac"
+        }
+    },
+    {
+        "question": "How many cities are part of the Pearl River Delta?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q20716686": "pearl river mouth basin"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q20716686": "pearl river mouth basin"
+        }
+    },
+    {
+        "question": "How many city-states are currently in the world?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q133442": "city-state"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q133442": "city-state"
+        }
+    },
+    {
+        "question": "How many businesses did Steve Jobs found?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q19837": "steve jobs"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q19837": "steve jobs"
+        }
+    },
+    {
+        "question": "How many countries have a democracy index higher than 7 and drive on the left side ?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q326174": "democracy index"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q326174": "democracy index"
+        }
+    },
+    {
+        "question": "How many countries have never been members of the UN?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q1065": "united nations"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q1065": "united nations"
+        }
+    },
+    {
+        "question": "How many countries are on the continent of South America ?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q18": "south america"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q18": "south america"
+        }
+    },
+    {
+        "question": "How many countries have mountains whose peaks are higher than 2000m above sea level?",
+        "topic_entity": {},
+        "topic_entities": {}
+    },
+    {
+        "question": "How many fictional dragons are present in Game of Thrones?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q7559": "dragon",
+            "http://www.wikidata.org/entity/Q23572": "game of thrones"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q7559": "dragon",
+            "http://www.wikidata.org/entity/Q23572": "game of thrones"
+        }
+    },
+    {
+        "question": "how many emmy awards has the tv series game of thrones won?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q123737": "emmy award"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q123737": "emmy award"
+        }
+    },
+    {
+        "question": "How many films are derived from the original Ghost in the Shell Manga?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q8274": "manga",
+            "http://www.wikidata.org/entity/Q92580": "ghost in the shell"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q8274": "manga",
+            "http://www.wikidata.org/entity/Q92580": "ghost in the shell"
+        }
+    },
+    {
+        "question": "How many French kings didn't die of natural causes?",
+        "topic_entity": {},
+        "topic_entities": {}
+    },
+    {
+        "question": "How many given names has Queen Elizabeth II ?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q9682": "elizabeth ii of the united kingdom"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q9682": "elizabeth ii of the united kingdom"
+        }
+    },
+    {
+        "question": "How many different female mayors did Hamburg have?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q1055": "hamburg"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q1055": "hamburg"
+        }
+    },
+    {
+        "question": "how many head of the state does iran have?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q794": "iran"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q794": "iran"
+        }
+    },
+    {
+        "question": "How many scholary articles have ImageNet as a subject?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q24901201": "imagenet"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q24901201": "imagenet"
+        }
+    },
+    {
+        "question": "How many inhabitants does the birthplace of Cristiano Ronaldo have?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q11571": "cristiano ronaldo"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q11571": "cristiano ronaldo"
+        }
+    },
+    {
+        "question": "How many Japanese writers received the Nobel Prize?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q37922": "nobel prize in literature"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q37922": "nobel prize in literature"
+        }
+    },
+    {
+        "question": "How many languages are widely used in India?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q668": "india"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q668": "india"
+        }
+    },
+    {
+        "question": "How many different colors can water take?",
+        "topic_entity": {},
+        "topic_entities": {}
+    },
+    {
+        "question": "How many locations has Georges Braque worked at (work location)?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q153793": "georges braque"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q153793": "georges braque"
+        }
+    },
+    {
+        "question": "How many months does winter consist of in Germany?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q183": "germany",
+            "http://www.wikidata.org/entity/Q1311": "winter"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q183": "germany",
+            "http://www.wikidata.org/entity/Q1311": "winter"
+        }
+    },
+    {
+        "question": "How many movies does the Scream franchise have?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q388659": "scream"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q388659": "scream"
+        }
+    },
+    {
+        "question": "How many movies has James Cameron directed prior to the year 2010?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q42574": "james cameron"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q42574": "james cameron"
+        }
+    },
+    {
+        "question": "How many movies were directed by Akira Kurosawa ?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q8006": "akira kurosawa"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q8006": "akira kurosawa"
+        }
+    },
+    {
+        "question": "How many musical scales are there?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q179651": "scale"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q179651": "scale"
+        }
+    },
+    {
+        "question": "How many public holidays does the state Bavaria have in a year?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q980": "bavaria"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q980": "bavaria"
+        }
+    },
+    {
+        "question": "How many literary works besides The Picture of Dorian Gray did its author write?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q82464": "the picture of dorian gray"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q82464": "the picture of dorian gray"
+        }
+    },
+    {
+        "question": "How many literary works did Mark Twain write in his lifetime?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q7245": "mark twain"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q7245": "mark twain"
+        }
+    },
+    {
+        "question": "How many occupations did Mark Twain have?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q7245": "mark twain"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q7245": "mark twain"
+        }
+    },
+    {
+        "question": "how many of spiderman perfomers are citizens of the united kingdom?",
+        "topic_entity": {},
+        "topic_entities": {}
+    },
+    {
+        "question": "how many official languages does the united states of america have?",
+        "topic_entity": {},
+        "topic_entities": {}
+    },
+    {
+        "question": "How many official languages has Pakistan ?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q843": "pakistan"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q843": "pakistan"
+        }
+    },
+    {
+        "question": "How many Oscars did all the movies directed by Hayao Miyazaki combined win?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q19020": "academy awards",
+            "http://www.wikidata.org/entity/Q55400": "hayao miyazaki"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q19020": "academy awards",
+            "http://www.wikidata.org/entity/Q55400": "hayao miyazaki"
+        }
+    },
+    {
+        "question": "How many paintings of Pablo Picasso were ever in a museum?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q5593": "pablo picasso",
+            "http://www.wikidata.org/entity/Q33506": "museum"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q5593": "pablo picasso",
+            "http://www.wikidata.org/entity/Q33506": "museum"
+        }
+    },
+    {
+        "question": "How many people can play \"Mensch \u00e4rgere dich nicht\" at most?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q545129": "mensch \u00e4rgere dich nicht"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q545129": "mensch \u00e4rgere dich nicht"
+        }
+    },
+    {
+        "question": "How many people did Oscar Pistorius kill?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q201377": "oscar pistorius"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q201377": "oscar pistorius"
+        }
+    },
+    {
+        "question": "How many people died due to the Great Leap Forward according to the highest estimate?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q58715": "great leap forward"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q58715": "great leap forward"
+        }
+    },
+    {
+        "question": "How many people have won the Nobel Prize in Literature since its inception?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q37922": "nobel prize in literature"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q37922": "nobel prize in literature"
+        }
+    },
+    {
+        "question": "How many people live in cities in the vicinity of the Nile ?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q3392": "nile"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q3392": "nile"
+        }
+    },
+    {
+        "question": "How many pitch classes are part of the chromatic scale?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q202021": "chromatic scale",
+            "http://www.wikidata.org/entity/Q1760309": "pitch class"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q202021": "chromatic scale",
+            "http://www.wikidata.org/entity/Q1760309": "pitch class"
+        }
+    },
+    {
+        "question": "how many plays has William Shakespeare written in the 16th century.",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q692": "william shakespeare"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q692": "william shakespeare"
+        }
+    },
+    {
+        "question": "How many poems did Allen Ginsberg published?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q6711": "allen ginsberg"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q6711": "allen ginsberg"
+        }
+    },
+    {
+        "question": "How many political parties have ever had seats in the German Bundestag ?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q154797": "bundestag of germany"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q154797": "bundestag of germany"
+        }
+    },
+    {
+        "question": "How many positions did Kobe Bryant play in his team?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q25369": "kobe bryant"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q25369": "kobe bryant"
+        }
+    },
+    {
+        "question": "How many prizes are there established by Alfred Nobel ?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q23810": "alfred nobel"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q23810": "alfred nobel"
+        }
+    },
+    {
+        "question": "Did SpaceX ever operate a space mission that was a failed launch?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q193701": "spacex"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q193701": "spacex"
+        }
+    },
+    {
+        "question": "How many people nominated for the nobel prize in chemistry didn't ever win it?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q2329": "chemistry",
+            "http://www.wikidata.org/entity/Q44585": "nobel prize in chemistry"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q2329": "chemistry",
+            "http://www.wikidata.org/entity/Q44585": "nobel prize in chemistry"
+        }
+    },
+    {
+        "question": "How many seasons does Pose have?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q2105776": "posse mit gesang"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q2105776": "posse mit gesang"
+        }
+    },
+    {
+        "question": "How many seats are there in the current German Bundestag ?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q154797": "bundestag of germany"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q154797": "bundestag of germany"
+        }
+    },
+    {
+        "question": "How many siblings had the author of \u201cLittle Women\u201d ?",
+        "topic_entity": {},
+        "topic_entities": {}
+    },
+    {
+        "question": "How many ski resorts were there ever in France?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q142": "france",
+            "http://www.wikidata.org/entity/Q130003": "ski resort"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q142": "france",
+            "http://www.wikidata.org/entity/Q130003": "ski resort"
+        }
+    },
+    {
+        "question": "How many songs were composed by Jay Chou but not released in his own albums?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q238819": "jay chou"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q238819": "jay chou"
+        }
+    },
+    {
+        "question": "How many works that are based on Spider-Man has Venom been a part of?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q1621261": "venom",
+            "http://www.wikidata.org/entity/Q79037": "spider-man"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q1621261": "venom",
+            "http://www.wikidata.org/entity/Q79037": "spider-man"
+        }
+    },
+    {
+        "question": "How many spouses had Rama V (one of the former Kings of Siam)?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q2129890": "rama"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q2129890": "rama"
+        }
+    },
+    {
+        "question": "Does Switzerland have a place north of the Point (8.57 47.8)?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q39": "switzerland"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q39": "switzerland"
+        }
+    },
+    {
+        "question": "how many times has Giorgio Moroder won golden globe award?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q1011547": "golden globe award",
+            "http://www.wikidata.org/entity/Q312674": "giorgio moroder"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q1011547": "golden globe award",
+            "http://www.wikidata.org/entity/Q312674": "giorgio moroder"
+        }
+    },
+    {
+        "question": "How many Olympic Games has Kobe Bryant taken part in?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q5389": "olympic games",
+            "http://www.wikidata.org/entity/Q25369": "kobe bryant"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q5389": "olympic games",
+            "http://www.wikidata.org/entity/Q25369": "kobe bryant"
+        }
+    },
+    {
+        "question": "How many times was Oskar Lafontaine elected Member of the Landtag of Saarland?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q260372": "landtag of saarland",
+            "http://www.wikidata.org/entity/Q110719": "oskar lafontaine"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q260372": "landtag of saarland",
+            "http://www.wikidata.org/entity/Q110719": "oskar lafontaine"
+        }
+    },
+    {
+        "question": "How many wars did the Empire of Japan participate in?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q188712": "empire of japan"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q188712": "empire of japan"
+        }
+    },
+    {
+        "question": "How many women were amongst the founding members of \u201cThe Bridge\u201d (\u201cDie Br\u00fccke\u201d)?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q895658": "die br\u00fccke"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q895658": "die br\u00fccke"
+        }
+    },
+    {
+        "question": "Who has a higher observed lifespan out of the common bottlenose dolphin and the brown bear?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q149069": "bottlenose dolphin",
+            "http://www.wikidata.org/entity/Q36341": "brown bear",
+            "http://www.wikidata.org/entity/Q174199": "common bottlenose dolphin"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q149069": "bottlenose dolphin",
+            "http://www.wikidata.org/entity/Q36341": "brown bear",
+            "http://www.wikidata.org/entity/Q174199": "common bottlenose dolphin"
+        }
+    },
+    {
+        "question": "What is TNFAIP1 ?",
+        "topic_entity": {},
+        "topic_entities": {}
+    },
+    {
+        "question": "How often did Naomi Novik win the nebula award?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q242643": "naomi novik",
+            "http://www.wikidata.org/entity/Q194285": "nebula award"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q242643": "naomi novik",
+            "http://www.wikidata.org/entity/Q194285": "nebula award"
+        }
+    },
+    {
+        "question": "How often did the Mongols try to invade Japan?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q41975": "mongols",
+            "http://www.wikidata.org/entity/Q17": "japan"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q41975": "mongols",
+            "http://www.wikidata.org/entity/Q17": "japan"
+        }
+    },
+    {
+        "question": "How often was Naomi Novik nominated for a Hugo Award?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q242643": "naomi novik",
+            "http://www.wikidata.org/entity/Q188914": "hugo award"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q242643": "naomi novik",
+            "http://www.wikidata.org/entity/Q188914": "hugo award"
+        }
+    },
+    {
+        "question": "How many years did the second oldest dog in the world live?",
+        "topic_entity": {},
+        "topic_entities": {}
+    },
+    {
+        "question": "if someone died in 1969, is there any chance they heard of queen\u2019s music?",
+        "topic_entity": {},
+        "topic_entities": {}
+    },
+    {
+        "question": "Is Dr. Pepper named after its inventor?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q623561": "dr pepper"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q623561": "dr pepper"
+        }
+    },
+    {
+        "question": "In how many movies did Carey Mulligan and Ryan Gosling star together?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q193815": "ryan gosling",
+            "http://www.wikidata.org/entity/Q219655": "carey mulligan"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q193815": "ryan gosling",
+            "http://www.wikidata.org/entity/Q219655": "carey mulligan"
+        }
+    },
+    {
+        "question": "in the country where ghost in the shell is born, who is the current head of the state?",
+        "topic_entity": {},
+        "topic_entities": {}
+    },
+    {
+        "question": "How many rivers are in or next to the U.S. state where cage the elephant is from?",
+        "topic_entity": {},
+        "topic_entities": {}
+    },
+    {
+        "question": "In which federal state is the Veltins brewery headquarter?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q608350": "veltins brewery",
+            "http://www.wikidata.org/entity/Q35657": "state of the united states"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q608350": "veltins brewery",
+            "http://www.wikidata.org/entity/Q35657": "state of the united states"
+        }
+    },
+    {
+        "question": "In which stadium do the New York Yankees play?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q213417": "new york yankees"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q213417": "new york yankees"
+        }
+    },
+    {
+        "question": "In which countries is the Himalayas located?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q5451": "himalayas"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q5451": "himalayas"
+        }
+    },
+    {
+        "question": "Was Isfahan a capital in the year 934?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q42053": "isfahan"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q42053": "isfahan"
+        }
+    },
+    {
+        "question": "In how many countries has IKEA been established?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q54078": "ikea"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q54078": "ikea"
+        }
+    },
+    {
+        "question": "In which country did the United Fruit Company have their headquarters?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q1771942": "united fruit company"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q1771942": "united fruit company"
+        }
+    },
+    {
+        "question": "In how many countries is pysanka practiced?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q3233785": "pysanka"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q3233785": "pysanka"
+        }
+    },
+    {
+        "question": "In which country is Oberirrach ?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q83032": "bad urach"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q83032": "bad urach"
+        }
+    },
+    {
+        "question": "In which country was Spotify created?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q689141": "spotify"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q689141": "spotify"
+        }
+    },
+    {
+        "question": "What is the song Vogue by Madonna named after?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q1128775": "vogue",
+            "http://www.wikidata.org/entity/Q1744": "madonna"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q1128775": "vogue",
+            "http://www.wikidata.org/entity/Q1744": "madonna"
+        }
+    },
+    {
+        "question": "in which language does the united stated have the shortest short name?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q214102": "union"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q214102": "union"
+        }
+    },
+    {
+        "question": "Does Bremerhaven's local dialing code start with 4?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q106516948": "Q106516948",
+            "http://www.wikidata.org/entity/Q2706": "bremerhaven"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q106516948": "Q106516948",
+            "http://www.wikidata.org/entity/Q2706": "bremerhaven"
+        }
+    },
+    {
+        "question": "In how many movies was Johnny Depp casted in?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q37175": "johnny depp"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q37175": "johnny depp"
+        }
+    },
+    {
+        "question": "In which year did ABBA publish their album The Visitors ?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q18233": "abba",
+            "http://www.wikidata.org/entity/Q338553": "the visitors"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q18233": "abba",
+            "http://www.wikidata.org/entity/Q338553": "the visitors"
+        }
+    },
+    {
+        "question": "In which year was the author of \u201cThe Vanishing Half\u201d born?",
+        "topic_entity": {},
+        "topic_entities": {}
+    },
+    {
+        "question": "Is After Eight manufactured by Unilever?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q157062": "unilever",
+            "http://www.wikidata.org/entity/Q388973": "after eight"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q157062": "unilever",
+            "http://www.wikidata.org/entity/Q388973": "after eight"
+        }
+    },
+    {
+        "question": "Is ALDI also in Italy?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q125054": "aldi"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q125054": "aldi"
+        }
+    },
+    {
+        "question": "is Isfahan a big city?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q42053": "isfahan"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q42053": "isfahan"
+        }
+    },
+    {
+        "question": "Is math related to science ?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q395": "mathematics",
+            "http://www.wikidata.org/entity/Q336": "science"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q395": "mathematics",
+            "http://www.wikidata.org/entity/Q336": "science"
+        }
+    },
+    {
+        "question": "Is Python a kind of Programming languages?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q9143": "programming language",
+            "http://www.wikidata.org/entity/Q28865": "python"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q9143": "programming language",
+            "http://www.wikidata.org/entity/Q28865": "python"
+        }
+    },
+    {
+        "question": "Is samurai champloo a piece of original work or an adaptation?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q169672": "samurai cinema"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q169672": "samurai cinema"
+        }
+    },
+    {
+        "question": "Was the first female chancellor in Germany ever married?",
+        "topic_entity": {},
+        "topic_entities": {}
+    },
+    {
+        "question": "Is the Mariana Trench deeper than Mount Everest is high (above sea level)?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q510": "mariana trench",
+            "http://www.wikidata.org/entity/Q513": "mount everest"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q510": "mariana trench",
+            "http://www.wikidata.org/entity/Q513": "mount everest"
+        }
+    },
+    {
+        "question": "Is the number of countries in Europe larger than that in Asia?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q48": "asia",
+            "http://www.wikidata.org/entity/Q46": "europe"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q48": "asia",
+            "http://www.wikidata.org/entity/Q46": "europe"
+        }
+    },
+    {
+        "question": "Is the production company of samurai champloo still existing?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q143276": "samurai champloo"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q143276": "samurai champloo"
+        }
+    },
+    {
+        "question": "is there female main character in hunter x hunter?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q696071": "hunter \u00d7 hunter"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q696071": "hunter \u00d7 hunter"
+        }
+    },
+    {
+        "question": "Is water colorless?",
+        "topic_entity": {},
+        "topic_entities": {}
+    },
+    {
+        "question": "Is Axel Rose a member of Guns N' Roses?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q11885": "axl rose",
+            "http://www.wikidata.org/entity/Q11895": "guns n\u2019 roses"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q11885": "axl rose",
+            "http://www.wikidata.org/entity/Q11895": "guns n\u2019 roses"
+        }
+    },
+    {
+        "question": "Is the capital of Iran bigger than that of Germany?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q5035711": "capital of germany",
+            "http://www.wikidata.org/entity/Q794": "iran"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q5035711": "capital of germany",
+            "http://www.wikidata.org/entity/Q794": "iran"
+        }
+    },
+    {
+        "question": "Is the Weser longer than the Rhine?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q1650": "weser",
+            "http://www.wikidata.org/entity/Q584": "rhine"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q1650": "weser",
+            "http://www.wikidata.org/entity/Q584": "rhine"
+        }
+    },
+    {
+        "question": "Is Tony Blair taller than Tiger Woods?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q9545": "tony blair",
+            "http://www.wikidata.org/entity/Q10993": "tiger woods"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q9545": "tony blair",
+            "http://www.wikidata.org/entity/Q10993": "tiger woods"
+        }
+    },
+    {
+        "question": "Is Chicago located at Lake Michigan?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q1169": "lake michigan",
+            "http://www.wikidata.org/entity/Q1297": "chicago"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q1169": "lake michigan",
+            "http://www.wikidata.org/entity/Q1297": "chicago"
+        }
+    },
+    {
+        "question": "Is the district of H\u00f6xter next to the district of Paderborn?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q6228": "h\u00f6xter",
+            "http://www.wikidata.org/entity/Q6224": "paderborn"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q6228": "h\u00f6xter",
+            "http://www.wikidata.org/entity/Q6224": "paderborn"
+        }
+    },
+    {
+        "question": "Are part of the Harz mountains in the district of Nordhausen?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q4186": "harz",
+            "http://www.wikidata.org/entity/Q7033": "nordhausen"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q4186": "harz",
+            "http://www.wikidata.org/entity/Q7033": "nordhausen"
+        }
+    },
+    {
+        "question": "How many people won the Nobel Prize in Literature or Physics since 2000?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q37922": "nobel prize in literature",
+            "http://www.wikidata.org/entity/Q38104": "nobel prize in physics"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q37922": "nobel prize in literature",
+            "http://www.wikidata.org/entity/Q38104": "nobel prize in physics"
+        }
+    },
+    {
+        "question": "How many african-american people got a star on the Hollywood Walk of Fame?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q71719": "hollywood walk of fame"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q71719": "hollywood walk of fame"
+        }
+    },
+    {
+        "question": "With how many countries does Australia share a border?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q408": "australia"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q408": "australia"
+        }
+    },
+    {
+        "question": "How many female Chinese Empresses have there been?",
+        "topic_entity": {},
+        "topic_entities": {}
+    },
+    {
+        "question": "Of which political party was Joseph Beuys a member?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q153965": "joseph beuys"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q153965": "joseph beuys"
+        }
+    },
+    {
+        "question": "In what year did the Hollywood Walk of Fame open?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q71719": "hollywood walk of fame"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q71719": "hollywood walk of fame"
+        }
+    },
+    {
+        "question": "on which video streaming services can i watch hunter x hunter anime series?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q696071": "hunter \u00d7 hunter"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q696071": "hunter \u00d7 hunter"
+        }
+    },
+    {
+        "question": "People of what age belong to the Silent Generation ?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q3044693": "silent generation"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q3044693": "silent generation"
+        }
+    },
+    {
+        "question": "In what year did the district of H\u00f6xter come into existence?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q6228": "h\u00f6xter"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q6228": "h\u00f6xter"
+        }
+    },
+    {
+        "question": "Is the Linux Foundation verified on Twitter?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q918": "twitter",
+            "http://www.wikidata.org/entity/Q858851": "linux foundation"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q918": "twitter",
+            "http://www.wikidata.org/entity/Q858851": "linux foundation"
+        }
+    },
+    {
+        "question": "Were Angela Merkel and Tony Blair born in the same year?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q9545": "tony blair",
+            "http://www.wikidata.org/entity/Q567": "angela merkel"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q9545": "tony blair",
+            "http://www.wikidata.org/entity/Q567": "angela merkel"
+        }
+    },
+    {
+        "question": "Do more than 100000000 people speak Japanese?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q5287": "japanese"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q5287": "japanese"
+        }
+    },
+    {
+        "question": "Tell me all the cast members of the film Red Notice directed by Rawson Marshall Thurber ?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q58815001": "red notice",
+            "http://www.wikidata.org/entity/Q2745616": "rawson marshall thurber"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q58815001": "red notice",
+            "http://www.wikidata.org/entity/Q2745616": "rawson marshall thurber"
+        }
+    },
+    {
+        "question": "The first album of Jay Chou",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q238819": "jay chou"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q238819": "jay chou"
+        }
+    },
+    {
+        "question": "Through which countries does the Danube go?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q1653": "danube"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q1653": "danube"
+        }
+    },
+    {
+        "question": "What do sperm whales mainly eat?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q81214": "physeter macrocephalus"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q81214": "physeter macrocephalus"
+        }
+    },
+    {
+        "question": "Was Frida Kahlo a surrealist?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q39427": "surrealism",
+            "http://www.wikidata.org/entity/Q5588": "frida kahlo"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q39427": "surrealism",
+            "http://www.wikidata.org/entity/Q5588": "frida kahlo"
+        }
+    },
+    {
+        "question": "Was Funny Games and its remake directed by different persons?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q951002": "funny games u.s."
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q951002": "funny games u.s."
+        }
+    },
+    {
+        "question": "Was Google founded by Bill Gates?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q5284": "bill gates",
+            "http://www.wikidata.org/entity/Q95": "google"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q5284": "bill gates",
+            "http://www.wikidata.org/entity/Q95": "google"
+        }
+    },
+    {
+        "question": "What is the second letter in the Greek alphabet?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q8216": "greek"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q8216": "greek"
+        }
+    },
+    {
+        "question": "Was it the cancer that caused the death of Steve Jobs who was the CEO of Apple?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q12078": "cancer",
+            "http://www.wikidata.org/entity/Q19837": "steve jobs",
+            "http://www.wikidata.org/entity/Q312": "apple inc."
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q12078": "cancer",
+            "http://www.wikidata.org/entity/Q19837": "steve jobs",
+            "http://www.wikidata.org/entity/Q312": "apple inc."
+        }
+    },
+    {
+        "question": "Was Shaquille O'Neal the teammate of Kobe Bryant in the year of 2000?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q169452": "shaquille o'neal",
+            "http://www.wikidata.org/entity/Q25369": "kobe bryant"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q169452": "shaquille o'neal",
+            "http://www.wikidata.org/entity/Q25369": "kobe bryant"
+        }
+    },
+    {
+        "question": "Was Shaquille O'Neal, as the basketball player, also an film actor?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q169452": "shaquille o'neal",
+            "http://www.wikidata.org/entity/Q5372": "basketball"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q169452": "shaquille o'neal",
+            "http://www.wikidata.org/entity/Q5372": "basketball"
+        }
+    },
+    {
+        "question": "Was the first album of the band Darkside released in 2012?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q16954319": "darkside"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q16954319": "darkside"
+        }
+    },
+    {
+        "question": "What are the spin-offs of Breaking Bad?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q1079": "breaking bad"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q1079": "breaking bad"
+        }
+    },
+    {
+        "question": "Which river flows through the Grand Canyon?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q118841": "grand canyon"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q118841": "grand canyon"
+        }
+    },
+    {
+        "question": "What was the key event related to Salvador Dal\u00ed?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q5577": "salvador dal\u00ed"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q5577": "salvador dal\u00ed"
+        }
+    },
+    {
+        "question": "Who passed the German Occupational Safety and Health Act?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q15029658": "Q15029658"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q15029658": "Q15029658"
+        }
+    },
+    {
+        "question": "What are the German names of academic disciplines containing \u201clinguistik\u201d?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q8162": "linguistics"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q8162": "linguistics"
+        }
+    },
+    {
+        "question": "What are the names of the head of states of Germany and France ?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q183": "germany",
+            "http://www.wikidata.org/entity/Q142": "france"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q183": "germany",
+            "http://www.wikidata.org/entity/Q142": "france"
+        }
+    },
+    {
+        "question": "What are the professions of John Lennon\u2019s sons?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q1203": "john lennon"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q1203": "john lennon"
+        }
+    },
+    {
+        "question": "What are the titles of the Star Wars series movies?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q462": "star wars"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q462": "star wars"
+        }
+    },
+    {
+        "question": "What came first: the TV show The Flintstones or the end of racial discrimination in voting in the US ?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q201358": "the flintstones",
+            "http://www.wikidata.org/entity/Q3112723": "honey, i shrunk the kids: the tv show"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q201358": "the flintstones",
+            "http://www.wikidata.org/entity/Q3112723": "honey, i shrunk the kids: the tv show"
+        }
+    },
+    {
+        "question": "What colors does the German national flag have?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q48160": "flag of germany"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q48160": "flag of germany"
+        }
+    },
+    {
+        "question": "What did the suffragettes stand for?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q322170": "suffragette"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q322170": "suffragette"
+        }
+    },
+    {
+        "question": "What do you call a female form of an emperor in English?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q1860": "english",
+            "http://www.wikidata.org/entity/Q39018": "emperor"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q1860": "english",
+            "http://www.wikidata.org/entity/Q39018": "emperor"
+        }
+    },
+    {
+        "question": "What event killed the most people in the years 1910 to 1920?",
+        "topic_entity": {},
+        "topic_entities": {}
+    },
+    {
+        "question": "Does the ATI Company still exist?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q213849": "ati technologies"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q213849": "ati technologies"
+        }
+    },
+    {
+        "question": "What happened to the dinosaurs ?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q430": "dinosaur"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q430": "dinosaur"
+        }
+    },
+    {
+        "question": "What instruments did Louis Armstrong play?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q1779": "louis armstrong"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q1779": "louis armstrong"
+        }
+    },
+    {
+        "question": "what did the author of the phrase: \"Alea iacta est\" die of?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q271723": "alea iacta est"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q271723": "alea iacta est"
+        }
+    },
+    {
+        "question": "What is the binary gender of the partner of Allen Ginsberg ?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q6711": "allen ginsberg",
+            "http://www.wikidata.org/entity/Q5530970": "gender binary"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q6711": "allen ginsberg",
+            "http://www.wikidata.org/entity/Q5530970": "gender binary"
+        }
+    },
+    {
+        "question": "What is the capital of the prefecture Tokyo ?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q1490": "tokyo",
+            "http://www.wikidata.org/entity/Q50337": "prefecture of japan"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q1490": "tokyo",
+            "http://www.wikidata.org/entity/Q50337": "prefecture of japan"
+        }
+    },
+    {
+        "question": "What is the Chinese zodiac animal that follows the ox?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q599644": "ox",
+            "http://www.wikidata.org/entity/Q1976204": "chinese zodiac"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q599644": "ox",
+            "http://www.wikidata.org/entity/Q1976204": "chinese zodiac"
+        }
+    },
+    {
+        "question": "What is the combined total revenue of three largest Big Tech companies ordered by number of employees?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q3122864": "big tech"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q3122864": "big tech"
+        }
+    },
+    {
+        "question": "What is the coordinate location of Shenzhen ?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q15174": "shenzhen"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q15174": "shenzhen"
+        }
+    },
+    {
+        "question": "What is the Erlangen program ?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q315296": "erlangen program"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q315296": "erlangen program"
+        }
+    },
+    {
+        "question": "Did the Roland Corporation produce synthesizers?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q848490": "roland corporation",
+            "http://www.wikidata.org/entity/Q163829": "synthesizer"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q848490": "roland corporation",
+            "http://www.wikidata.org/entity/Q163829": "synthesizer"
+        }
+    },
+    {
+        "question": "How many perople do the Port of Rotterdam employ?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q322749": "petty officer",
+            "http://www.wikidata.org/entity/Q1027807": "port of rotterdam"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q322749": "petty officer",
+            "http://www.wikidata.org/entity/Q1027807": "port of rotterdam"
+        }
+    },
+    {
+        "question": "what is the main subject of the manga \"your lie in april\": primary school, middle school or high school student?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q149566": "middle school",
+            "http://www.wikidata.org/entity/Q9842": "primary school",
+            "http://www.wikidata.org/entity/Q8274": "manga"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q149566": "middle school",
+            "http://www.wikidata.org/entity/Q9842": "primary school",
+            "http://www.wikidata.org/entity/Q8274": "manga"
+        }
+    },
+    {
+        "question": "What is the mother tongue of the author Chimamanda Ngozi Adichie ?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q230141": "chimamanda ngozi adichie"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q230141": "chimamanda ngozi adichie"
+        }
+    },
+    {
+        "question": "Who was the partner of Allen Ginsberg?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q6711": "allen ginsberg"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q6711": "allen ginsberg"
+        }
+    },
+    {
+        "question": "What is the second game developed by Piranha Bytes?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q677273": "piranha bytes"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q677273": "piranha bytes"
+        }
+    },
+    {
+        "question": "What is the TV-show that starred Rowan Atkinson , had 4 seasons and started in 1983?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q23760": "rowan atkinson"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q23760": "rowan atkinson"
+        }
+    },
+    {
+        "question": "What is the english nickname of Ella Fitzgerald?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q1768": "ella fitzgerald"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q1768": "ella fitzgerald"
+        }
+    },
+    {
+        "question": "What are the occupations of Kazuo Ishiguro\u2019s daughter?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q272855": "kazuo ishiguro"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q272855": "kazuo ishiguro"
+        }
+    },
+    {
+        "question": "What are the occupations of Nat King Cole?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q137042": "nat king cole"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q137042": "nat king cole"
+        }
+    },
+    {
+        "question": "what is the official language of iran?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q794": "iran"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q794": "iran"
+        }
+    },
+    {
+        "question": "What is the population in Freiburg ?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q2833": "freiburg im breisgau"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q2833": "freiburg im breisgau"
+        }
+    },
+    {
+        "question": "What is the title of the 2020 released movie in which Carey Mulligan was the main actress?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q219655": "carey mulligan"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q219655": "carey mulligan"
+        }
+    },
+    {
+        "question": "What does Ray-Ban produce primarily?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q653941": "ray-ban"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q653941": "ray-ban"
+        }
+    },
+    {
+        "question": "What language did the famous king, who was also a student of Aristotle's , speak?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q868": "aristotle"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q868": "aristotle"
+        }
+    },
+    {
+        "question": "What language do they speak in Poland ?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q36": "poland"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q36": "poland"
+        }
+    },
+    {
+        "question": "How many different languages are spoken in West Europe?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q27496": "western europe"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q27496": "western europe"
+        }
+    },
+    {
+        "question": "Is Germany bigger than Poland?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q36": "poland"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q36": "poland"
+        }
+    },
+    {
+        "question": "What notes does a C major chord consist of?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q170439": "chord",
+            "http://www.wikidata.org/entity/Q1022293": "c major",
+            "http://www.wikidata.org/entity/Q7784746": "third"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q170439": "chord",
+            "http://www.wikidata.org/entity/Q1022293": "c major",
+            "http://www.wikidata.org/entity/Q7784746": "third"
+        }
+    },
+    {
+        "question": "How many different occupations did/do spouses of winners of the Nobel Prize in Literature hold?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q37922": "nobel prize in literature"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q37922": "nobel prize in literature"
+        }
+    },
+    {
+        "question": "How many other video games began the same year as Dead by Daylight?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q24514682": "dead by daylight",
+            "http://www.wikidata.org/entity/Q7889": "video game"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q24514682": "dead by daylight",
+            "http://www.wikidata.org/entity/Q7889": "video game"
+        }
+    },
+    {
+        "question": "What other civilizations existed during the Aztecs ?",
+        "topic_entity": {},
+        "topic_entities": {}
+    },
+    {
+        "question": "What brand uses petroleum jelly?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q457239": "petroleum jelly"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q457239": "petroleum jelly"
+        }
+    },
+    {
+        "question": "How many other musical films were launched the same year as Grease?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q842256": "musical film",
+            "http://www.wikidata.org/entity/Q267721": "grease"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q842256": "musical film",
+            "http://www.wikidata.org/entity/Q267721": "grease"
+        }
+    },
+    {
+        "question": "Which creator of The OA also acted in it?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q19798744": "the oa"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q19798744": "the oa"
+        }
+    },
+    {
+        "question": "What albums has Atif Aslam been on?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q755830": "atif aslam"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q755830": "atif aslam"
+        }
+    },
+    {
+        "question": "What was Ada Lovelace\u2019s noble title?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q7259": "ada lovelace"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q7259": "ada lovelace"
+        }
+    },
+    {
+        "question": "What was Janus the god of?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q167685": "janus"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q167685": "janus"
+        }
+    },
+    {
+        "question": "Who was the fellow Hobbit who was an enemy of Frodo?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q177329": "frodo baggins",
+            "http://www.wikidata.org/entity/Q74359": "hobbit"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q177329": "frodo baggins",
+            "http://www.wikidata.org/entity/Q74359": "hobbit"
+        }
+    },
+    {
+        "question": "What was the last painting that Van Gogh painted?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q5582": "vincent van gogh"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q5582": "vincent van gogh"
+        }
+    },
+    {
+        "question": "What was the main subject addressed in the Deep Purple song \u201cSmoke on the water\u201d?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q636399": "smoke on the water",
+            "http://www.wikidata.org/entity/Q101505": "deep purple"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q636399": "smoke on the water",
+            "http://www.wikidata.org/entity/Q101505": "deep purple"
+        }
+    },
+    {
+        "question": "When did the first sperm whales exist?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q81214": "physeter macrocephalus"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q81214": "physeter macrocephalus"
+        }
+    },
+    {
+        "question": "What year did the Berlin Wall fall?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q5086": "berlin wall"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q5086": "berlin wall"
+        }
+    },
+    {
+        "question": "What year was Riverdale first aired?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q7338128": "riverdale"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q7338128": "riverdale"
+        }
+    },
+    {
+        "question": "When did Allen Ginsberg die?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q6711": "allen ginsberg"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q6711": "allen ginsberg"
+        }
+    },
+    {
+        "question": "When did Ella Fitzgerald die?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q1768": "ella fitzgerald"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q1768": "ella fitzgerald"
+        }
+    },
+    {
+        "question": "when did human first start to bouldering?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q852989": "bouldering"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q852989": "bouldering"
+        }
+    },
+    {
+        "question": "When did Pakistan become independent?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q843": "pakistan"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q843": "pakistan"
+        }
+    },
+    {
+        "question": "When did Rumi die?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q43347": "rumi"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q43347": "rumi"
+        }
+    },
+    {
+        "question": "When did the brother of the author of Slaughterhouse Five die?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q265954": "slaughterhouse-five"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q265954": "slaughterhouse-five"
+        }
+    },
+    {
+        "question": "when was the creator of saturday night live born?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q13979": "saturday night live"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q13979": "saturday night live"
+        }
+    },
+    {
+        "question": "Who was part of the Hambach Festival?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q551416": "hambach festival"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q551416": "hambach festival"
+        }
+    },
+    {
+        "question": "When did The OA was first released?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q19798744": "the oa"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q19798744": "the oa"
+        }
+    },
+    {
+        "question": "How many casualties were a result of the Troubles?",
+        "topic_entity": {},
+        "topic_entities": {}
+    },
+    {
+        "question": "When did the Weimar Republic start?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q41304": "weimar republic"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q41304": "weimar republic"
+        }
+    },
+    {
+        "question": "When did World War II officially end?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q362": "world war ii"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q362": "world war ii"
+        }
+    },
+    {
+        "question": "when is the first ironman world championship?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q1338800": "ironman triathlon"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q1338800": "ironman triathlon"
+        }
+    },
+    {
+        "question": "when was the magazine in which hunter x hunter is published established?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q696071": "hunter \u00d7 hunter"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q696071": "hunter \u00d7 hunter"
+        }
+    },
+    {
+        "question": "When the film Red Notice was released?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q58815001": "red notice"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q58815001": "red notice"
+        }
+    },
+    {
+        "question": "When was Cologne Cathedral built?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q4176": "cologne cathedral"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q4176": "cologne cathedral"
+        }
+    },
+    {
+        "question": "What can be done against gout?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q133087": "gout"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q133087": "gout"
+        }
+    },
+    {
+        "question": "When was HIV first identified?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q15787": "hiv"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q15787": "hiv"
+        }
+    },
+    {
+        "question": "When was the first article about Liquid State Machines published?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q6557482": "liquid state machine"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q6557482": "liquid state machine"
+        }
+    },
+    {
+        "question": "When was Marlene Dietrich born?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q4612": "marlene dietrich"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q4612": "marlene dietrich"
+        }
+    },
+    {
+        "question": "When was Penicillin discovered?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q12190": "penicillin"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q12190": "penicillin"
+        }
+    },
+    {
+        "question": "When was Rumi born?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q43347": "rumi"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q43347": "rumi"
+        }
+    },
+    {
+        "question": "When was the beginning of Romanticism ?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q37068": "romanticism"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q37068": "romanticism"
+        }
+    },
+    {
+        "question": "When was the Echo Music Prize abolished?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q703237": "echo music prize"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q703237": "echo music prize"
+        }
+    },
+    {
+        "question": "When was the first album of the American band Typhoon released?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q7861093": "typhoon"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q7861093": "typhoon"
+        }
+    },
+    {
+        "question": "When was the Hamburg Airport inaugurated?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q27706": "hamburg airport"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q27706": "hamburg airport"
+        }
+    },
+    {
+        "question": "When was the Hamburg S-Bahn officially opened?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q693956": "hamburg s-bahn"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q693956": "hamburg s-bahn"
+        }
+    },
+    {
+        "question": "When was the jazz club Birdland in Hamburg founded?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q8341": "jazz",
+            "http://www.wikidata.org/entity/Q1055": "hamburg",
+            "http://www.wikidata.org/entity/Q800176": "birdland"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q8341": "jazz",
+            "http://www.wikidata.org/entity/Q1055": "hamburg",
+            "http://www.wikidata.org/entity/Q800176": "birdland"
+        }
+    },
+    {
+        "question": "When was the poem Howl written?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q1545259": "howl"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q1545259": "howl"
+        }
+    },
+    {
+        "question": "When was the university of Cambridge founded?",
+        "topic_entity": {},
+        "topic_entities": {}
+    },
+    {
+        "question": "When was the University of Hamburg founded?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q156725": "university of hamburg"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q156725": "university of hamburg"
+        }
+    },
+    {
+        "question": "When was the University of Saskatchewan founded?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q1514848": "university of saskatchewan"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q1514848": "university of saskatchewan"
+        }
+    },
+    {
+        "question": "When was the Vatican City created?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q237": "vatican city"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q237": "vatican city"
+        }
+    },
+    {
+        "question": "When was United Fruit Company founded?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q1771942": "united fruit company"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q1771942": "united fruit company"
+        }
+    },
+    {
+        "question": "Where did Trotzky die?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q33391": "leon trotsky"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q33391": "leon trotsky"
+        }
+    },
+    {
+        "question": "Where are both The Call of the Wild and White Fang set, the most two famous works of Jack London?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q45765": "jack london",
+            "http://www.wikidata.org/entity/Q476871": "the call of the wild",
+            "http://www.wikidata.org/entity/Q152267": "white fang"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q45765": "jack london",
+            "http://www.wikidata.org/entity/Q476871": "the call of the wild",
+            "http://www.wikidata.org/entity/Q152267": "white fang"
+        }
+    },
+    {
+        "question": "Where did the Hambach Festival happen?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q551416": "hambach festival"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q551416": "hambach festival"
+        }
+    },
+    {
+        "question": "Where do the novels of the franchise The Lord of the Rings take place?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q15228": "the lord of the rings"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q15228": "the lord of the rings"
+        }
+    },
+    {
+        "question": "Where does the Nutri-Score originate from?",
+        "topic_entity": {},
+        "topic_entities": {}
+    },
+    {
+        "question": "Are there at least two winners of the Academy Award for Best Actress who have been educated at the same institution?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q103618": "academy award for best actress"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q103618": "academy award for best actress"
+        }
+    },
+    {
+        "question": "Where was K-pop star Lisa Manoban born?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q26707663": "lisa",
+            "http://www.wikidata.org/entity/Q213665": "k-pop"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q26707663": "lisa",
+            "http://www.wikidata.org/entity/Q213665": "k-pop"
+        }
+    },
+    {
+        "question": "What is the highest point of Norway?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q20": "norway"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q20": "norway"
+        }
+    },
+    {
+        "question": "Where did the psychedelic band \u201cKhruangbin\u201d form?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q54555985": "khruangbin",
+            "http://www.wikidata.org/entity/Q846119": "psychedelic music"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q54555985": "khruangbin",
+            "http://www.wikidata.org/entity/Q846119": "psychedelic music"
+        }
+    },
+    {
+        "question": "Where was Caesar murdered?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q1048": "julius caesar"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q1048": "julius caesar"
+        }
+    },
+    {
+        "question": "Where was Goethe\u2019s unmarried partner born ?",
+        "topic_entity": {},
+        "topic_entities": {}
+    },
+    {
+        "question": "Where was Roland Corporation founded?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q848490": "roland corporation"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q848490": "roland corporation"
+        }
+    },
+    {
+        "question": "Where was the author of The Catcher in the Rye born ?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q183883": "the catcher in the rye"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q183883": "the catcher in the rye"
+        }
+    },
+    {
+        "question": "Who developed the Erlangen program?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q315296": "erlangen program"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q315296": "erlangen program"
+        }
+    },
+    {
+        "question": "Which actor starring in Free Guy also starred in Deadpool?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q19347291": "deadpool",
+            "http://www.wikidata.org/entity/Q38685497": "free guy"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q19347291": "deadpool",
+            "http://www.wikidata.org/entity/Q38685497": "free guy"
+        }
+    },
+    {
+        "question": "Which American presidents followed in their father\u2018s step and also became the president?",
+        "topic_entity": {},
+        "topic_entities": {}
+    },
+    {
+        "question": "which animal can possibly live longer, panda or koala?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q33602": "ailuropoda melanoleuca",
+            "http://www.wikidata.org/entity/Q36101": "koala"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q33602": "ailuropoda melanoleuca",
+            "http://www.wikidata.org/entity/Q36101": "koala"
+        }
+    },
+    {
+        "question": "Which archipelago has more islands: the Gal\u00e1pagos Islands or the Hawaiian Islands ?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q38095": "galapagos islands",
+            "http://www.wikidata.org/entity/Q192626": "hawaiian islands"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q38095": "galapagos islands",
+            "http://www.wikidata.org/entity/Q192626": "hawaiian islands"
+        }
+    },
+    {
+        "question": "Which art movement was Yoko Ono part of?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q117012": "yoko ono"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q117012": "yoko ono"
+        }
+    },
+    {
+        "question": "which band is created earlier, queen or pink floyd?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q15862": "queen",
+            "http://www.wikidata.org/entity/Q2306": "pink floyd"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q15862": "queen",
+            "http://www.wikidata.org/entity/Q2306": "pink floyd"
+        }
+    },
+    {
+        "question": "What caused Kobe Bryant's Death?",
+        "topic_entity": {},
+        "topic_entities": {}
+    },
+    {
+        "question": "What are the opposites of zero?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q204": "zero"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q204": "zero"
+        }
+    },
+    {
+        "question": "Which businesses are founded by the person in charge of Tesla?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q478214": "tesla, inc."
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q478214": "tesla, inc."
+        }
+    },
+    {
+        "question": "Did Germany have a population growth of at least 1% since 2010?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q183": "germany"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q183": "germany"
+        }
+    },
+    {
+        "question": "Which aircraft did Howard Hughes build?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q189081": "howard hughes"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q189081": "howard hughes"
+        }
+    },
+    {
+        "question": "Which country has more official languages: South Africa (\u200b\u200bQ258) or Ethiopia ?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q258": "south africa",
+            "http://www.wikidata.org/entity/Q115": "ethiopia"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q258": "south africa",
+            "http://www.wikidata.org/entity/Q115": "ethiopia"
+        }
+    },
+    {
+        "question": "Is throat singing a tradition?",
+        "topic_entity": {},
+        "topic_entities": {}
+    },
+    {
+        "question": "Which disease caused the death of Mark Twain?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q7245": "mark twain"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q7245": "mark twain"
+        }
+    },
+    {
+        "question": "Which diseases can be caused by smoking ?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q662860": "smoking"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q662860": "smoking"
+        }
+    },
+    {
+        "question": "Which genre that Cage the Elephant belongs to has the fewest english characters?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q68061": "cage the elephant"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q68061": "cage the elephant"
+        }
+    },
+    {
+        "question": "Which takes less space? 1kg of lead or 1kg of iron.",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q708": "lead",
+            "http://www.wikidata.org/entity/Q677": "iron"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q708": "lead",
+            "http://www.wikidata.org/entity/Q677": "iron"
+        }
+    },
+    {
+        "question": "Which kingdom preceded the Thonburi Kingdom ?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q1115291": "thonburi kingdom"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q1115291": "thonburi kingdom"
+        }
+    },
+    {
+        "question": "How many mountains are located in Germany?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q183": "germany"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q183": "germany"
+        }
+    },
+    {
+        "question": "Which movements is the painting \u201cLes Demoiselles d'Avignon\u201d assigned to?",
+        "topic_entity": {},
+        "topic_entities": {}
+    },
+    {
+        "question": "Which movies belong to the Cornetto trilogy ?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q169604": "three flavours cornetto trilogy",
+            "http://www.wikidata.org/entity/Q1899311": "cornetto"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q169604": "three flavours cornetto trilogy",
+            "http://www.wikidata.org/entity/Q1899311": "cornetto"
+        }
+    },
+    {
+        "question": "During what event was the Four Policemen Council proposed?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q2945433": "four policemen"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q2945433": "four policemen"
+        }
+    },
+    {
+        "question": "Which NBA teams have won the most seasons?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q155223": "national basketball association"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q155223": "national basketball association"
+        }
+    },
+    {
+        "question": "Which of the dragons in Game of Thrones died?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q23572": "game of thrones"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q23572": "game of thrones"
+        }
+    },
+    {
+        "question": "Which other movies by the director of Another Round also starred Mads Mikkelsen ?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q294647": "mads mikkelsen",
+            "http://www.wikidata.org/entity/Q69303989": "another round"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q294647": "mads mikkelsen",
+            "http://www.wikidata.org/entity/Q69303989": "another round"
+        }
+    },
+    {
+        "question": "Which egyptian pyramid is the tallest?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q175582": "egyptian pyramids"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q175582": "egyptian pyramids"
+        }
+    },
+    {
+        "question": "What is the offical language of Taipei?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q1867": "taipei"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q1867": "taipei"
+        }
+    },
+    {
+        "question": "Which shows aired for the first time the same year as Saturday Night Live ?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q13979": "saturday night live"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q13979": "saturday night live"
+        }
+    },
+    {
+        "question": "Which songs made up the album Fijaci\u00f3n Oral vol. 1 ?",
+        "topic_entity": {},
+        "topic_entities": {}
+    },
+    {
+        "question": "Which started first: impressionism or expressionism (art movements)?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q40415": "impressionism",
+            "http://www.wikidata.org/entity/Q80113": "expressionism"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q40415": "impressionism",
+            "http://www.wikidata.org/entity/Q80113": "expressionism"
+        }
+    },
+    {
+        "question": "which state inside USA is batman living in?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q2695156": "batman",
+            "http://www.wikidata.org/entity/Q30": "united states of america"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q2695156": "batman",
+            "http://www.wikidata.org/entity/Q30": "united states of america"
+        }
+    },
+    {
+        "question": "which swordfighter in the lord of the rings marry a half-elven and belong to rangers of the north?",
+        "topic_entity": {},
+        "topic_entities": {}
+    },
+    {
+        "question": "Which teams participated in the 2020 UEFA Champions League Final ?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q46569648": "2020 uefa champions league final"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q46569648": "2020 uefa champions league final"
+        }
+    },
+    {
+        "question": "Which universities have more than 200000 students?",
+        "topic_entity": {},
+        "topic_entities": {}
+    },
+    {
+        "question": "which university is established earlier, university of oxford or university of cambridge?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q34433": "university of oxford",
+            "http://www.wikidata.org/entity/Q35794": "university of cambridge"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q34433": "university of oxford",
+            "http://www.wikidata.org/entity/Q35794": "university of cambridge"
+        }
+    },
+    {
+        "question": "Who developed WordNet?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q533822": "wordnet"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q533822": "wordnet"
+        }
+    },
+    {
+        "question": "Who are the actresses in Portrait of a Lady on Fire?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q63246568": "portrait of a lady on fire"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q63246568": "portrait of a lady on fire"
+        }
+    },
+    {
+        "question": "Did Michael Jordan and Kobe Bryant play for the same team?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q41421": "michael jordan",
+            "http://www.wikidata.org/entity/Q25369": "kobe bryant"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q41421": "michael jordan",
+            "http://www.wikidata.org/entity/Q25369": "kobe bryant"
+        }
+    },
+    {
+        "question": "Who created the Turing machine?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q163310": "turing machine"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q163310": "turing machine"
+        }
+    },
+    {
+        "question": "When was the Hambach Castle built?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q523286": "hambach castle"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q523286": "hambach castle"
+        }
+    },
+    {
+        "question": "Who died at the North Pole?",
+        "topic_entity": {},
+        "topic_entities": {}
+    },
+    {
+        "question": "Who directed Anne with an E ?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q28091065": "anne with an e"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q28091065": "anne with an e"
+        }
+    },
+    {
+        "question": "Who wrote \"Prototypical Networks for Few-shot Learning\"?",
+        "topic_entity": {},
+        "topic_entities": {}
+    },
+    {
+        "question": "Who founded \u201cThe Blue Rider\u201d?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q117035": "the blue rider"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q117035": "the blue rider"
+        }
+    },
+    {
+        "question": "Who founded the Worpswede artist colony ?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q269174": "worpswede"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q269174": "worpswede"
+        }
+    },
+    {
+        "question": "Who is the author of \u201cConvenience Store Woman\u201d ?",
+        "topic_entity": {},
+        "topic_entities": {}
+    },
+    {
+        "question": "Who is the soccer player with the most goals in their career?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q2736": "association football"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q2736": "association football"
+        }
+    },
+    {
+        "question": "Who is the creator of the Dinosaurs tv show ?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q1211977": "dinosaurs"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q1211977": "dinosaurs"
+        }
+    },
+    {
+        "question": "Who is the current president of the German Bundestag currently?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q154797": "bundestag of germany"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q154797": "bundestag of germany"
+        }
+    },
+    {
+        "question": "Who is the most wealthy entrepreneur?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q131524": "entrepreneur"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q131524": "entrepreneur"
+        }
+    },
+    {
+        "question": "Who is the oldest cast member of the Netflix show \u201cQueer Eye\u201d ?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q48817408": "queer eye",
+            "http://www.wikidata.org/entity/Q907311": "netflix"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q48817408": "queer eye",
+            "http://www.wikidata.org/entity/Q907311": "netflix"
+        }
+    },
+    {
+        "question": "Who is the publisher of Smite ?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q2357719": "smite"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q2357719": "smite"
+        }
+    },
+    {
+        "question": "Who wrote the Erlangen program?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q315296": "erlangen program"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q315296": "erlangen program"
+        }
+    },
+    {
+        "question": "In which country is the Nanga Parbat located?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q130736": "nanga parbat"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q130736": "nanga parbat"
+        }
+    },
+    {
+        "question": "who produced Star Wars: Episode VI \u2013 Return of the Jedi?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q181803": "star wars: episode vi \u2013 return of the jedi"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q181803": "star wars: episode vi \u2013 return of the jedi"
+        }
+    },
+    {
+        "question": "Who was an actor in more movies, Daniel Day Lewis or Paul Dano ?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q166389": "daniel day-lewis",
+            "http://www.wikidata.org/entity/Q343616": "paul dano"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q166389": "daniel day-lewis",
+            "http://www.wikidata.org/entity/Q343616": "paul dano"
+        }
+    },
+    {
+        "question": "For what literature prize was Simone de Beauvoir nominated?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q7197": "simone de beauvoir"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q7197": "simone de beauvoir"
+        }
+    },
+    {
+        "question": "What is the website of NPR's \u201cTiny Desk Concert\u201d?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q671510": "npr"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q671510": "npr"
+        }
+    },
+    {
+        "question": "Who was the creator of Boo-Boo Bear ?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q2394280": "boo-boo bear"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q2394280": "boo-boo bear"
+        }
+    },
+    {
+        "question": "Who was the creator of Unbreakable Kimmy Schmidt ?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q16889037": "unbreakable kimmy schmidt"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q16889037": "unbreakable kimmy schmidt"
+        }
+    },
+    {
+        "question": "Who was the director of Llamas with Hats ?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q55621114": "llamas with hats"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q55621114": "llamas with hats"
+        }
+    },
+    {
+        "question": "Who founded the Roland Corporation?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q848490": "roland corporation"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q848490": "roland corporation"
+        }
+    },
+    {
+        "question": "Who was the original actor who played Pinhead ?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q2518973": "pinhead"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q2518973": "pinhead"
+        }
+    },
+    {
+        "question": "Who were the parents of Socrates ?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q913": "socrates"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q913": "socrates"
+        }
+    },
+    {
+        "question": "Who wrote Anne of Green Gables ?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q565911": "anne of green gables"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q565911": "anne of green gables"
+        }
+    },
+    {
+        "question": "Who wrote the poem Howl ?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q1545259": "howl"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q1545259": "howl"
+        }
+    },
+    {
+        "question": "Who's the author of The Hellbound Heart ?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q3521239": "the hellbound heart"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q3521239": "the hellbound heart"
+        }
+    },
+    {
+        "question": "Whom did Clara Westhoff marry?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q462333": "clara westhoff"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q462333": "clara westhoff"
+        }
+    },
+    {
+        "question": "what is the oldest film festival?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q220505": "film festival"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q220505": "film festival"
+        }
+    },
+    {
+        "question": "When was Athens founded?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q1524": "athens"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q1524": "athens"
+        }
+    },
+    {
+        "question": "which river is longer, the Seine or Elbe\uff1f",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q1471": "seine",
+            "http://www.wikidata.org/entity/Q1644": "elbe"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q1471": "seine",
+            "http://www.wikidata.org/entity/Q1644": "elbe"
+        }
+    },
+    {
+        "question": "which game is created earlier, super mario bros or Pac-Man?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q11168": "super mario bros.",
+            "http://www.wikidata.org/entity/Q173626": "pac-man"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q11168": "super mario bros.",
+            "http://www.wikidata.org/entity/Q173626": "pac-man"
+        }
+    },
+    {
+        "question": "who is the youngested member in g-idle?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q51885404": "(g)i-dle"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q51885404": "(g)i-dle"
+        }
+    },
+    {
+        "question": "who is older, Lionel Messi or Cristiano Ronaldo\uff1f",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q11571": "cristiano ronaldo",
+            "http://www.wikidata.org/entity/Q615": "lionel messi"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q11571": "cristiano ronaldo",
+            "http://www.wikidata.org/entity/Q615": "lionel messi"
+        }
+    },
+    {
+        "question": "Is heidelberg university or university hamburg founded earlier?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q151510": "heidelberg university",
+            "http://www.wikidata.org/entity/Q156725": "university of hamburg"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q151510": "heidelberg university",
+            "http://www.wikidata.org/entity/Q156725": "university of hamburg"
+        }
+    },
+    {
+        "question": "which forest is bigger, Amazon Rainforest or Congo Basin?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q932289": "congo basin",
+            "http://www.wikidata.org/entity/Q177567": "amazon rainforest"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q932289": "congo basin",
+            "http://www.wikidata.org/entity/Q177567": "amazon rainforest"
+        }
+    },
+    {
+        "question": "Does Samsung Electronics or Apple have more employees?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q312": "apple inc.",
+            "http://www.wikidata.org/entity/Q20718": "samsung electronics"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q312": "apple inc.",
+            "http://www.wikidata.org/entity/Q20718": "samsung electronics"
+        }
+    },
+    {
+        "question": "which company is founded later, samsung or sony?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q20716": "samsung",
+            "http://www.wikidata.org/entity/Q41187": "sony"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q20716": "samsung",
+            "http://www.wikidata.org/entity/Q41187": "sony"
+        }
+    },
+    {
+        "question": "who is taller, Lionel Messi or Cristiano Ronaldo\uff1f",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q11571": "cristiano ronaldo",
+            "http://www.wikidata.org/entity/Q615": "lionel messi"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q11571": "cristiano ronaldo",
+            "http://www.wikidata.org/entity/Q615": "lionel messi"
+        }
+    },
+    {
+        "question": "who has won more NBA awards, Michael Jordan or Kobe Bean Bryant\uff1f",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q41421": "michael jordan",
+            "http://www.wikidata.org/entity/Q25369": "kobe bryant"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q41421": "michael jordan",
+            "http://www.wikidata.org/entity/Q25369": "kobe bryant"
+        }
+    },
+    {
+        "question": "Did Michael Jordan ever weigh more than Kobe Bean Bryant\uff1f",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q41421": "michael jordan",
+            "http://www.wikidata.org/entity/Q25369": "kobe bryant"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q41421": "michael jordan",
+            "http://www.wikidata.org/entity/Q25369": "kobe bryant"
+        }
+    },
+    {
+        "question": "Who is older, Sebastian Vettel or Lewis Hamilton?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q9673": "lewis hamilton",
+            "http://www.wikidata.org/entity/Q42311": "sebastian vettel"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q9673": "lewis hamilton",
+            "http://www.wikidata.org/entity/Q42311": "sebastian vettel"
+        }
+    },
+    {
+        "question": "which city is more populated, copenhagen or amsterdam?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q727": "amsterdam",
+            "http://www.wikidata.org/entity/Q1748": "copenhagen"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q727": "amsterdam",
+            "http://www.wikidata.org/entity/Q1748": "copenhagen"
+        }
+    },
+    {
+        "question": "How many things are part of the \"One Piece\" Franchise?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q673": "one piece"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q673": "one piece"
+        }
+    },
+    {
+        "question": "How many fictional female swordfighters are there?",
+        "topic_entity": {},
+        "topic_entities": {}
+    },
+    {
+        "question": "which company started earlier, Black Diamond Equipment or la sportiva?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q2905359": "black diamond equipment"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q2905359": "black diamond equipment"
+        }
+    },
+    {
+        "question": "which desert is bigger, sahara desert or arabian desert?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q208299": "arabian desert",
+            "http://www.wikidata.org/entity/Q6583": "sahara"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q208299": "arabian desert",
+            "http://www.wikidata.org/entity/Q6583": "sahara"
+        }
+    },
+    {
+        "question": "who lives longer, series black or bellatrix Lestrange?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q89355531": "radolphus lestrange",
+            "http://www.wikidata.org/entity/Q2379528": "s\u00e9rie noire"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q89355531": "radolphus lestrange",
+            "http://www.wikidata.org/entity/Q2379528": "s\u00e9rie noire"
+        }
+    },
+    {
+        "question": "What is the area of the great lakes?",
+        "topic_entity": {},
+        "topic_entities": {}
+    },
+    {
+        "question": "What is native name of the composer of the Japanese national anthem?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q24865159": "Q24865159"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q24865159": "Q24865159"
+        }
+    },
+    {
+        "question": "Who is the founder of the capital of Vietnam?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q881": "vietnam"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q881": "vietnam"
+        }
+    },
+    {
+        "question": "Who is the manager of the operator of Neumayer III?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q7933": "neumayer-station iii"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q7933": "neumayer-station iii"
+        }
+    },
+    {
+        "question": "How high is the mountain on which G\u00fcnther Messner died?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q195351": "g\u00fcnther messner"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q195351": "g\u00fcnther messner"
+        }
+    },
+    {
+        "question": "What is the twitter name of Running Wild?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q918": "twitter",
+            "http://www.wikidata.org/entity/Q7380004": "running wilde"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q918": "twitter",
+            "http://www.wikidata.org/entity/Q7380004": "running wilde"
+        }
+    },
+    {
+        "question": "How many times did the Italian national soccer team win the Fifa World Cup?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q676899": "italy national association football team",
+            "http://www.wikidata.org/entity/Q19317": "fifa world cup"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q676899": "italy national association football team",
+            "http://www.wikidata.org/entity/Q19317": "fifa world cup"
+        }
+    },
+    {
+        "question": "What is the area of the capital of Spitsbergen?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q21162": "spitsbergen"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q21162": "spitsbergen"
+        }
+    },
+    {
+        "question": "What percentage of Andorra is covered with water?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q228": "andorra"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q228": "andorra"
+        }
+    },
+    {
+        "question": "How many countries are located around the euorpean Lake Constance?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q4127": "lake constance"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q4127": "lake constance"
+        }
+    },
+    {
+        "question": "With how many persons was Richard Burton married?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q151973": "richard burton"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q151973": "richard burton"
+        }
+    },
+    {
+        "question": "At what coordinates was the \"Sender Teutoburger Wald\" erected?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q1717891": "sender bielstein"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q1717891": "sender bielstein"
+        }
+    },
+    {
+        "question": "Where is the poet Alexander Pope buried?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q164047": "alexander pope"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q164047": "alexander pope"
+        }
+    },
+    {
+        "question": "In what country is the Kandahar-downhill?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q45604": "kandahar"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q45604": "kandahar"
+        }
+    },
+    {
+        "question": "Who founded the architectural firm who planned the Elbphilharmonie?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q673223": "elbe philharmonic hall"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q673223": "elbe philharmonic hall"
+        }
+    },
+    {
+        "question": "Where are the founders of the band Metallica from?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q15920": "metallica"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q15920": "metallica"
+        }
+    },
+    {
+        "question": "Where does the Granny Smith apple variety come from?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q506040": "granny smith"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q506040": "granny smith"
+        }
+    },
+    {
+        "question": "What is the Fujiyama made of?",
+        "topic_entity": {
+            "http://www.wikidata.org/entity/Q1069573": "fusuma"
+        },
+        "topic_entities": {
+            "http://www.wikidata.org/entity/Q1069573": "fusuma"
+        }
+    }
+]

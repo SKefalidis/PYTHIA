@@ -1,0 +1,2993 @@
+[
+    {
+        "question": "What is the time zone of Salt Lake City?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://dbpedia.org/resource/Salt_Lake_City",
+                "http://dbpedia.org/ontology/timeZone",
+                "?uri"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://dbpedia.org/resource/Salt_Lake_City",
+                    "http://dbpedia.org/ontology/timeZone",
+                    "?x0"
+                ]
+            ],
+            [
+                [
+                    "http://dbpedia.org/resource/Salt_Lake_City",
+                    "http://dbpedia.org/property/timezone",
+                    "?x0"
+                ]
+            ],
+            [
+                [
+                    "http://dbpedia.org/resource/Salt_Lake_City",
+                    "http://dbpedia.org/property/timezoneDst",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://dbpedia.org/resource/Salt_Lake_City> <http://dbpedia.org/ontology/timeZone> ?uri .\n",
+        "selected_triples_strings": [
+            "<http://dbpedia.org/resource/Salt_Lake_City> <http://dbpedia.org/ontology/timeZone> ?x0 .",
+            "<http://dbpedia.org/resource/Salt_Lake_City> <http://dbpedia.org/property/timezone> ?x0 .",
+            "<http://dbpedia.org/resource/Salt_Lake_City> <http://dbpedia.org/property/timezoneDst> ?x0 ."
+        ]
+    },
+    {
+        "question": "Who killed Caesar?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "?uri",
+                "http://purl.org/dc/terms/subject",
+                "http://dbpedia.org/resource/Category:Assassins_of_Julius_Caesar"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "?x0",
+                    "http://purl.org/dc/terms/subject",
+                    "http://dbpedia.org/resource/Category:Assassins_of_Julius_Caesar"
+                ]
+            ],
+            [
+                [
+                    "?x0",
+                    "http://dbpedia.org/ontology/wikiPageWikiLink",
+                    "http://dbpedia.org/resource/Category:Assassins_of_Julius_Caesar"
+                ]
+            ]
+        ],
+        "correct_triples_string": "?uri <http://purl.org/dc/terms/subject> <http://dbpedia.org/resource/Category:Assassins_of_Julius_Caesar> .\n",
+        "selected_triples_strings": [
+            "?x0 <http://purl.org/dc/terms/subject> <http://dbpedia.org/resource/Category:Assassins_of_Julius_Caesar> .",
+            "?x0 <http://dbpedia.org/ontology/wikiPageWikiLink> <http://dbpedia.org/resource/Category:Assassins_of_Julius_Caesar> ."
+        ]
+    },
+    {
+        "question": "How many gold medals did Michael Phelps win at the 2008 Olympics?",
+        "found": false,
+        "macro_f1": 0.0,
+        "correct_path": [
+            [
+                "?sub",
+                "http://dbpedia.org/ontology/goldMedalist",
+                "http://dbpedia.org/resource/Michael_Phelps"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://dbpedia.org/resource/Michael_Phelps",
+                    "http://dbpedia.org/ontology/abstract",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "?sub <http://dbpedia.org/ontology/goldMedalist> <http://dbpedia.org/resource/Michael_Phelps> .\n",
+        "selected_triples_strings": [
+            "<http://dbpedia.org/resource/Michael_Phelps> <http://dbpedia.org/ontology/abstract> ?x0 ."
+        ]
+    },
+    {
+        "question": "What is the profession of Frank Herbert?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://dbpedia.org/resource/Frank_Herbert",
+                "http://dbpedia.org/property/occupation",
+                "?string"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://dbpedia.org/resource/Frank_Herbert",
+                    "http://dbpedia.org/property/occupation",
+                    "?x0"
+                ]
+            ],
+            [
+                [
+                    "http://dbpedia.org/resource/Frank_Herbert",
+                    "http://purl.org/dc/terms/description",
+                    "?x0"
+                ]
+            ],
+            [
+                [
+                    "http://dbpedia.org/resource/Frank_Herbert",
+                    "http://dbpedia.org/property/type",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://dbpedia.org/resource/Frank_Herbert> <http://dbpedia.org/property/occupation> ?string .\n",
+        "selected_triples_strings": [
+            "<http://dbpedia.org/resource/Frank_Herbert> <http://dbpedia.org/property/occupation> ?x0 .",
+            "<http://dbpedia.org/resource/Frank_Herbert> <http://purl.org/dc/terms/description> ?x0 .",
+            "<http://dbpedia.org/resource/Frank_Herbert> <http://dbpedia.org/property/type> ?x0 ."
+        ]
+    },
+    {
+        "question": "Which frequent flyer program has the most airlines?",
+        "found": false,
+        "macro_f1": 0.0,
+        "correct_path": [
+            [
+                "?airline",
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+                "http://dbpedia.org/ontology/Airline"
+            ],
+            [
+                "?airline",
+                "http://dbpedia.org/property/frequentFlyer",
+                "?uri"
+            ]
+        ],
+        "selected_paths": [],
+        "correct_triples_string": "?airline <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Airline> .\n?airline <http://dbpedia.org/property/frequentFlyer> ?uri .\n",
+        "selected_triples_strings": []
+    },
+    {
+        "question": "What are the nicknames of San Francisco?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://dbpedia.org/resource/San_Francisco",
+                "http://xmlns.com/foaf/0.1/nick",
+                "?string"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://dbpedia.org/resource/San_Francisco",
+                    "http://dbpedia.org/property/nickname",
+                    "?x0"
+                ]
+            ],
+            [
+                [
+                    "http://dbpedia.org/resource/San_Francisco",
+                    "http://xmlns.com/foaf/0.1/nick",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://dbpedia.org/resource/San_Francisco> <http://xmlns.com/foaf/0.1/nick> ?string .\n",
+        "selected_triples_strings": [
+            "<http://dbpedia.org/resource/San_Francisco> <http://dbpedia.org/property/nickname> ?x0 .",
+            "<http://dbpedia.org/resource/San_Francisco> <http://xmlns.com/foaf/0.1/nick> ?x0 ."
+        ]
+    },
+    {
+        "question": "What is Angela Merkel\u2019s birth name?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://dbpedia.org/resource/Angela_Merkel",
+                "http://dbpedia.org/property/birthName",
+                "?string"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://dbpedia.org/resource/Angela_Merkel",
+                    "http://dbpedia.org/property/birthName",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://dbpedia.org/resource/Angela_Merkel> <http://dbpedia.org/property/birthName> ?string .\n",
+        "selected_triples_strings": [
+            "<http://dbpedia.org/resource/Angela_Merkel> <http://dbpedia.org/property/birthName> ?x0 ."
+        ]
+    },
+    {
+        "question": "Who is the mayor of Berlin?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://dbpedia.org/resource/Berlin",
+                "http://dbpedia.org/property/leader",
+                "?uri"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://dbpedia.org/resource/Berlin",
+                    "http://dbpedia.org/property/leader",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://dbpedia.org/resource/Berlin> <http://dbpedia.org/property/leader> ?uri .\n",
+        "selected_triples_strings": [
+            "<http://dbpedia.org/resource/Berlin> <http://dbpedia.org/property/leader> ?x0 ."
+        ]
+    },
+    {
+        "question": "How many grand-children did Jacques Cousteau have?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://dbpedia.org/resource/Jacques_Cousteau",
+                "http://dbpedia.org/ontology/child",
+                "?x"
+            ],
+            [
+                "?x",
+                "http://dbpedia.org/ontology/child",
+                "?y"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://dbpedia.org/resource/Jacques_Cousteau",
+                    "http://dbpedia.org/ontology/child",
+                    "?x0"
+                ],
+                [
+                    "?x0",
+                    "http://dbpedia.org/property/children",
+                    "?x1"
+                ]
+            ],
+            [
+                [
+                    "http://dbpedia.org/resource/Jacques_Cousteau",
+                    "http://dbpedia.org/ontology/child",
+                    "?x0"
+                ],
+                [
+                    "?x0",
+                    "http://dbpedia.org/ontology/child",
+                    "?x1"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://dbpedia.org/resource/Jacques_Cousteau> <http://dbpedia.org/ontology/child> ?x .\n?x <http://dbpedia.org/ontology/child> ?y .\n",
+        "selected_triples_strings": [
+            "<http://dbpedia.org/resource/Jacques_Cousteau> <http://dbpedia.org/ontology/child> ?x0 .\n?x0 <http://dbpedia.org/property/children> ?x1 .",
+            "<http://dbpedia.org/resource/Jacques_Cousteau> <http://dbpedia.org/ontology/child> ?x0 .\n?x0 <http://dbpedia.org/ontology/child> ?x1 ."
+        ]
+    },
+    {
+        "question": "How did Michael Jackson die?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://dbpedia.org/resource/Michael_Jackson",
+                "http://dbpedia.org/property/deathCause",
+                "?s"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://dbpedia.org/resource/Michael_Jackson",
+                    "http://dbpedia.org/property/deathCause",
+                    "?x0"
+                ]
+            ],
+            [
+                [
+                    "http://dbpedia.org/resource/Michael_Jackson",
+                    "http://dbpedia.org/ontology/abstract",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://dbpedia.org/resource/Michael_Jackson> <http://dbpedia.org/property/deathCause> ?s .\n",
+        "selected_triples_strings": [
+            "<http://dbpedia.org/resource/Michael_Jackson> <http://dbpedia.org/property/deathCause> ?x0 .",
+            "<http://dbpedia.org/resource/Michael_Jackson> <http://dbpedia.org/ontology/abstract> ?x0 ."
+        ]
+    },
+    {
+        "question": "Which U.S. state has been admitted latest?",
+        "found": false,
+        "macro_f1": 0.0,
+        "correct_path": [
+            [
+                "?uri",
+                "http://purl.org/dc/terms/subject",
+                "http://dbpedia.org/resource/Category:States_of_the_United_States"
+            ],
+            [
+                "?uri",
+                "http://dbpedia.org/property/admittancedate",
+                "?x"
+            ]
+        ],
+        "selected_paths": [],
+        "correct_triples_string": "?uri <http://purl.org/dc/terms/subject> <http://dbpedia.org/resource/Category:States_of_the_United_States> .\n?uri <http://dbpedia.org/property/admittancedate> ?x .\n",
+        "selected_triples_strings": []
+    },
+    {
+        "question": "Which classes does the Millepede belong to?",
+        "found": false,
+        "macro_f1": 0.0,
+        "correct_path": [
+            [
+                "http://dbpedia.org/resource/Millipede",
+                "http://dbpedia.org/property/taxon",
+                "?String"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "?x0",
+                    "http://dbpedia.org/ontology/class",
+                    "http://dbpedia.org/resource/Millipede"
+                ]
+            ],
+            [
+                [
+                    "?x0",
+                    "http://dbpedia.org/property/classis",
+                    "http://dbpedia.org/resource/Millipede"
+                ]
+            ],
+            [
+                [
+                    "http://dbpedia.org/resource/Millipede",
+                    "http://dbpedia.org/property/subdivision",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://dbpedia.org/resource/Millipede> <http://dbpedia.org/property/taxon> ?String .\n",
+        "selected_triples_strings": [
+            "?x0 <http://dbpedia.org/ontology/class> <http://dbpedia.org/resource/Millipede> .",
+            "?x0 <http://dbpedia.org/property/classis> <http://dbpedia.org/resource/Millipede> .",
+            "<http://dbpedia.org/resource/Millipede> <http://dbpedia.org/property/subdivision> ?x0 ."
+        ]
+    },
+    {
+        "question": "Give me the homepage of Forbes.",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://dbpedia.org/resource/Forbes",
+                "http://xmlns.com/foaf/0.1/homepage",
+                "?string"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://dbpedia.org/resource/Forbes",
+                    "http://xmlns.com/foaf/0.1/homepage",
+                    "http://forbes.com"
+                ],
+                [
+                    "?x0",
+                    "http://xmlns.com/foaf/0.1/homepage",
+                    "http://forbes.com"
+                ]
+            ],
+            [
+                [
+                    "http://dbpedia.org/resource/Forbes",
+                    "http://dbpedia.org/ontology/wikiPageExternalLink",
+                    "?x0"
+                ],
+                [
+                    "?x1",
+                    "http://xmlns.com/foaf/0.1/homepage",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://dbpedia.org/resource/Forbes> <http://xmlns.com/foaf/0.1/homepage> ?string .\n",
+        "selected_triples_strings": [
+            "<http://dbpedia.org/resource/Forbes> <http://xmlns.com/foaf/0.1/homepage> <http://forbes.com> .\n?x0 <http://xmlns.com/foaf/0.1/homepage> <http://forbes.com> .",
+            "<http://dbpedia.org/resource/Forbes> <http://dbpedia.org/ontology/wikiPageExternalLink> ?x0 .\n?x1 <http://xmlns.com/foaf/0.1/homepage> ?x0 ."
+        ]
+    },
+    {
+        "question": "Who is the husband of Amanda Palmer?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "?uri",
+                "http://dbpedia.org/ontology/spouse",
+                "http://dbpedia.org/resource/Amanda_Palmer"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "?x0",
+                    "http://dbpedia.org/property/spouse",
+                    "http://dbpedia.org/resource/Amanda_Palmer"
+                ]
+            ],
+            [
+                [
+                    "?x0",
+                    "http://dbpedia.org/ontology/spouse",
+                    "http://dbpedia.org/resource/Amanda_Palmer"
+                ]
+            ]
+        ],
+        "correct_triples_string": "?uri <http://dbpedia.org/ontology/spouse> <http://dbpedia.org/resource/Amanda_Palmer> .\n",
+        "selected_triples_strings": [
+            "?x0 <http://dbpedia.org/property/spouse> <http://dbpedia.org/resource/Amanda_Palmer> .",
+            "?x0 <http://dbpedia.org/ontology/spouse> <http://dbpedia.org/resource/Amanda_Palmer> ."
+        ]
+    },
+    {
+        "question": "Who painted The Storm on the Sea of Galilee?",
+        "found": false,
+        "macro_f1": 0.0,
+        "correct_path": [
+            [
+                "http://dbpedia.org/resource/The_Storm_on_the_Sea_of_Galilee",
+                "http://dbpedia.org/ontology/author",
+                "?uri"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://dbpedia.org/resource/The_Storm_on_the_Sea_of_Galilee",
+                    "http://www.w3.org/2000/01/rdf-schema#comment",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://dbpedia.org/resource/The_Storm_on_the_Sea_of_Galilee> <http://dbpedia.org/ontology/author> ?uri .\n",
+        "selected_triples_strings": [
+            "<http://dbpedia.org/resource/The_Storm_on_the_Sea_of_Galilee> <http://www.w3.org/2000/01/rdf-schema#comment> ?x0 ."
+        ]
+    },
+    {
+        "question": "What is the highest place of Karakoram?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://dbpedia.org/resource/Karakoram",
+                "http://dbpedia.org/property/highest",
+                "?uri"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://dbpedia.org/resource/Karakoram",
+                    "http://dbpedia.org/property/highest",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://dbpedia.org/resource/Karakoram> <http://dbpedia.org/property/highest> ?uri .\n",
+        "selected_triples_strings": [
+            "<http://dbpedia.org/resource/Karakoram> <http://dbpedia.org/property/highest> ?x0 ."
+        ]
+    },
+    {
+        "question": "When did Finland join the EU?",
+        "found": false,
+        "macro_f1": 0.0,
+        "correct_path": [
+            [
+                "http://dbpedia.org/resource/Finland",
+                "http://dbpedia.org/property/accessioneudate",
+                "?date"
+            ]
+        ],
+        "selected_paths": [],
+        "correct_triples_string": "<http://dbpedia.org/resource/Finland> <http://dbpedia.org/property/accessioneudate> ?date .\n",
+        "selected_triples_strings": []
+    },
+    {
+        "question": "Which actors play in Big Bang Theory?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://dbpedia.org/resource/The_Big_Bang_Theory",
+                "http://dbpedia.org/ontology/starring",
+                "?uri"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://dbpedia.org/resource/The_Big_Bang_Theory",
+                    "http://dbpedia.org/property/starring",
+                    "?x0"
+                ]
+            ],
+            [
+                [
+                    "http://dbpedia.org/resource/The_Big_Bang_Theory",
+                    "http://dbpedia.org/ontology/starring",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://dbpedia.org/resource/The_Big_Bang_Theory> <http://dbpedia.org/ontology/starring> ?uri .\n",
+        "selected_triples_strings": [
+            "<http://dbpedia.org/resource/The_Big_Bang_Theory> <http://dbpedia.org/property/starring> ?x0 .",
+            "<http://dbpedia.org/resource/The_Big_Bang_Theory> <http://dbpedia.org/ontology/starring> ?x0 ."
+        ]
+    },
+    {
+        "question": "Who wrote Harry Potter?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://dbpedia.org/resource/Harry_Potter",
+                "http://dbpedia.org/property/author",
+                "?uri"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://dbpedia.org/resource/Harry_Potter",
+                    "http://dbpedia.org/property/author",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://dbpedia.org/resource/Harry_Potter> <http://dbpedia.org/property/author> ?uri .\n",
+        "selected_triples_strings": [
+            "<http://dbpedia.org/resource/Harry_Potter> <http://dbpedia.org/property/author> ?x0 ."
+        ]
+    },
+    {
+        "question": "What is the nick name of Baghdad?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://dbpedia.org/resource/Baghdad",
+                "http://xmlns.com/foaf/0.1/nick",
+                "?nm"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://dbpedia.org/resource/Baghdad",
+                    "http://dbpedia.org/property/nickname",
+                    "?x0"
+                ]
+            ],
+            [
+                [
+                    "http://dbpedia.org/resource/Baghdad",
+                    "http://xmlns.com/foaf/0.1/nick",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://dbpedia.org/resource/Baghdad> <http://xmlns.com/foaf/0.1/nick> ?nm .\n",
+        "selected_triples_strings": [
+            "<http://dbpedia.org/resource/Baghdad> <http://dbpedia.org/property/nickname> ?x0 .",
+            "<http://dbpedia.org/resource/Baghdad> <http://xmlns.com/foaf/0.1/nick> ?x0 ."
+        ]
+    },
+    {
+        "question": "Which U.S. state has the highest population density?",
+        "found": false,
+        "macro_f1": 0.0,
+        "correct_path": [
+            [
+                "?uri",
+                "http://dbpedia.org/ontology/country",
+                "http://dbpedia.org/resource/United_States"
+            ],
+            [
+                "?uri",
+                "http://dbpedia.org/ontology/capital",
+                "?capital"
+            ]
+        ],
+        "selected_paths": [],
+        "correct_triples_string": "?uri <http://dbpedia.org/ontology/country> <http://dbpedia.org/resource/United_States> .\n?uri <http://dbpedia.org/ontology/capital> ?capital .\n",
+        "selected_triples_strings": []
+    },
+    {
+        "question": "Which U.S. state has the highest population density?",
+        "found": false,
+        "macro_f1": 0.0,
+        "correct_path": [
+            [
+                "?uri",
+                "http://dbpedia.org/ontology/country",
+                "http://dbpedia.org/resource/United_States"
+            ],
+            [
+                "?uri",
+                "http://dbpedia.org/property/densityrank",
+                "?density"
+            ]
+        ],
+        "selected_paths": [],
+        "correct_triples_string": "?uri <http://dbpedia.org/ontology/country> <http://dbpedia.org/resource/United_States> .\n?uri <http://dbpedia.org/property/densityrank> ?density .\n",
+        "selected_triples_strings": []
+    },
+    {
+        "question": "Which U.S. state has the highest population density?",
+        "found": false,
+        "macro_f1": 0.0,
+        "correct_path": [
+            [
+                "?uri",
+                "http://dbpedia.org/ontology/country",
+                "http://dbpedia.org/resource/United_States"
+            ],
+            [
+                "?uri",
+                "http://www.w3.org/2000/01/rdf-schema#label",
+                "?string"
+            ]
+        ],
+        "selected_paths": [],
+        "correct_triples_string": "?uri <http://dbpedia.org/ontology/country> <http://dbpedia.org/resource/United_States> .\n?uri <http://www.w3.org/2000/01/rdf-schema#label> ?string .\n",
+        "selected_triples_strings": []
+    },
+    {
+        "question": "What is the area code of Berlin?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://dbpedia.org/resource/Berlin",
+                "http://dbpedia.org/ontology/areaCode",
+                "?string"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://dbpedia.org/resource/Berlin",
+                    "http://dbpedia.org/ontology/areaCode",
+                    "?x0"
+                ]
+            ],
+            [
+                [
+                    "http://dbpedia.org/resource/Berlin",
+                    "http://dbpedia.org/property/vorwahl",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://dbpedia.org/resource/Berlin> <http://dbpedia.org/ontology/areaCode> ?string .\n",
+        "selected_triples_strings": [
+            "<http://dbpedia.org/resource/Berlin> <http://dbpedia.org/ontology/areaCode> ?x0 .",
+            "<http://dbpedia.org/resource/Berlin> <http://dbpedia.org/property/vorwahl> ?x0 ."
+        ]
+    },
+    {
+        "question": "How many moons does Mars have?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://dbpedia.org/resource/Mars",
+                "http://dbpedia.org/property/satellites",
+                "?n"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://dbpedia.org/resource/Mars",
+                    "http://dbpedia.org/property/satellites",
+                    "?x0"
+                ]
+            ],
+            [
+                [
+                    "http://dbpedia.org/resource/Mars",
+                    "http://dbpedia.org/ontology/abstract",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://dbpedia.org/resource/Mars> <http://dbpedia.org/property/satellites> ?n .\n",
+        "selected_triples_strings": [
+            "<http://dbpedia.org/resource/Mars> <http://dbpedia.org/property/satellites> ?x0 .",
+            "<http://dbpedia.org/resource/Mars> <http://dbpedia.org/ontology/abstract> ?x0 ."
+        ]
+    },
+    {
+        "question": "What is Batman's real name?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://dbpedia.org/resource/Batman",
+                "http://xmlns.com/foaf/0.1/name",
+                "?label"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://dbpedia.org/resource/Batman",
+                    "http://xmlns.com/foaf/0.1/name",
+                    "?x0"
+                ]
+            ],
+            [
+                [
+                    "http://dbpedia.org/resource/Batman",
+                    "http://dbpedia.org/property/alterEgo",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://dbpedia.org/resource/Batman> <http://xmlns.com/foaf/0.1/name> ?label .\n",
+        "selected_triples_strings": [
+            "<http://dbpedia.org/resource/Batman> <http://xmlns.com/foaf/0.1/name> ?x0 .",
+            "<http://dbpedia.org/resource/Batman> <http://dbpedia.org/property/alterEgo> ?x0 ."
+        ]
+    },
+    {
+        "question": "What is Elon Musk famous for?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://dbpedia.org/resource/Elon_Musk",
+                "http://dbpedia.org/ontology/knownFor",
+                "?uri"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://dbpedia.org/resource/Elon_Musk",
+                    "http://dbpedia.org/property/knownFor",
+                    "?x0"
+                ]
+            ],
+            [
+                [
+                    "http://dbpedia.org/resource/Elon_Musk",
+                    "http://dbpedia.org/ontology/knownFor",
+                    "?x0"
+                ]
+            ],
+            [
+                [
+                    "http://dbpedia.org/resource/Elon_Musk",
+                    "http://www.w3.org/2000/01/rdf-schema#comment",
+                    "?x0"
+                ]
+            ],
+            [
+                [
+                    "http://dbpedia.org/resource/Elon_Musk",
+                    "http://dbpedia.org/ontology/abstract",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://dbpedia.org/resource/Elon_Musk> <http://dbpedia.org/ontology/knownFor> ?uri .\n",
+        "selected_triples_strings": [
+            "<http://dbpedia.org/resource/Elon_Musk> <http://dbpedia.org/property/knownFor> ?x0 .",
+            "<http://dbpedia.org/resource/Elon_Musk> <http://dbpedia.org/ontology/knownFor> ?x0 .",
+            "<http://dbpedia.org/resource/Elon_Musk> <http://www.w3.org/2000/01/rdf-schema#comment> ?x0 .",
+            "<http://dbpedia.org/resource/Elon_Musk> <http://dbpedia.org/ontology/abstract> ?x0 ."
+        ]
+    },
+    {
+        "question": "Who is the author of WikiLeaks?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://dbpedia.org/resource/WikiLeaks",
+                "http://dbpedia.org/ontology/author",
+                "?uri"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://dbpedia.org/resource/WikiLeaks",
+                    "http://dbpedia.org/property/author",
+                    "?x0"
+                ]
+            ],
+            [
+                [
+                    "http://dbpedia.org/resource/WikiLeaks",
+                    "http://dbpedia.org/ontology/author",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://dbpedia.org/resource/WikiLeaks> <http://dbpedia.org/ontology/author> ?uri .\n",
+        "selected_triples_strings": [
+            "<http://dbpedia.org/resource/WikiLeaks> <http://dbpedia.org/property/author> ?x0 .",
+            "<http://dbpedia.org/resource/WikiLeaks> <http://dbpedia.org/ontology/author> ?x0 ."
+        ]
+    },
+    {
+        "question": "Sean Parnell was the governor of which U.S. state?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://dbpedia.org/resource/Sean_Parnell",
+                "http://dbpedia.org/ontology/region",
+                "?uri"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://dbpedia.org/resource/Sean_Parnell",
+                    "http://dbpedia.org/property/stateSenate",
+                    "?x0"
+                ]
+            ],
+            [
+                [
+                    "http://dbpedia.org/resource/Sean_Parnell",
+                    "http://dbpedia.org/property/stateHouse",
+                    "?x0"
+                ]
+            ],
+            [
+                [
+                    "http://dbpedia.org/resource/Sean_Parnell",
+                    "http://dbpedia.org/ontology/abstract",
+                    "?x0"
+                ]
+            ],
+            [
+                [
+                    "http://dbpedia.org/resource/Sean_Parnell",
+                    "http://dbpedia.org/ontology/region",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://dbpedia.org/resource/Sean_Parnell> <http://dbpedia.org/ontology/region> ?uri .\n",
+        "selected_triples_strings": [
+            "<http://dbpedia.org/resource/Sean_Parnell> <http://dbpedia.org/property/stateSenate> ?x0 .",
+            "<http://dbpedia.org/resource/Sean_Parnell> <http://dbpedia.org/property/stateHouse> ?x0 .",
+            "<http://dbpedia.org/resource/Sean_Parnell> <http://dbpedia.org/ontology/abstract> ?x0 .",
+            "<http://dbpedia.org/resource/Sean_Parnell> <http://dbpedia.org/ontology/region> ?x0 ."
+        ]
+    },
+    {
+        "question": "How many years was the Ford Model T manufactured?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://dbpedia.org/resource/Ford_Model_T",
+                "http://dbpedia.org/ontology/productionEndYear",
+                "?end"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://dbpedia.org/resource/Ford_Model_T",
+                    "http://dbpedia.org/ontology/productionStartYear",
+                    "?x0"
+                ]
+            ],
+            [
+                [
+                    "http://dbpedia.org/resource/Ford_Model_T",
+                    "http://dbpedia.org/ontology/productionEndYear",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://dbpedia.org/resource/Ford_Model_T> <http://dbpedia.org/ontology/productionEndYear> ?end .\n",
+        "selected_triples_strings": [
+            "<http://dbpedia.org/resource/Ford_Model_T> <http://dbpedia.org/ontology/productionStartYear> ?x0 .",
+            "<http://dbpedia.org/resource/Ford_Model_T> <http://dbpedia.org/ontology/productionEndYear> ?x0 ."
+        ]
+    },
+    {
+        "question": "How many years was the Ford Model T manufactured?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://dbpedia.org/resource/Ford_Model_T",
+                "http://dbpedia.org/ontology/productionStartYear",
+                "?start"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://dbpedia.org/resource/Ford_Model_T",
+                    "http://dbpedia.org/ontology/productionStartYear",
+                    "?x0"
+                ]
+            ],
+            [
+                [
+                    "http://dbpedia.org/resource/Ford_Model_T",
+                    "http://dbpedia.org/ontology/productionEndYear",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://dbpedia.org/resource/Ford_Model_T> <http://dbpedia.org/ontology/productionStartYear> ?start .\n",
+        "selected_triples_strings": [
+            "<http://dbpedia.org/resource/Ford_Model_T> <http://dbpedia.org/ontology/productionStartYear> ?x0 .",
+            "<http://dbpedia.org/resource/Ford_Model_T> <http://dbpedia.org/ontology/productionEndYear> ?x0 ."
+        ]
+    },
+    {
+        "question": "When was Carlo Giuliani shot?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://dbpedia.org/resource/Death_of_Carlo_Giuliani",
+                "http://dbpedia.org/ontology/deathDate",
+                "?date"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://dbpedia.org/resource/Death_of_Carlo_Giuliani",
+                    "http://dbpedia.org/ontology/deathDate",
+                    "?x0"
+                ]
+            ],
+            [
+                [
+                    "http://dbpedia.org/resource/Death_of_Carlo_Giuliani",
+                    "http://dbpedia.org/ontology/abstract",
+                    "?x0"
+                ]
+            ],
+            [
+                [
+                    "http://dbpedia.org/resource/Death_of_Carlo_Giuliani",
+                    "http://www.w3.org/2000/01/rdf-schema#comment",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://dbpedia.org/resource/Death_of_Carlo_Giuliani> <http://dbpedia.org/ontology/deathDate> ?date .\n",
+        "selected_triples_strings": [
+            "<http://dbpedia.org/resource/Death_of_Carlo_Giuliani> <http://dbpedia.org/ontology/deathDate> ?x0 .",
+            "<http://dbpedia.org/resource/Death_of_Carlo_Giuliani> <http://dbpedia.org/ontology/abstract> ?x0 .",
+            "<http://dbpedia.org/resource/Death_of_Carlo_Giuliani> <http://www.w3.org/2000/01/rdf-schema#comment> ?x0 ."
+        ]
+    },
+    {
+        "question": "Who was the wife of President Lincoln?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://dbpedia.org/resource/Abraham_Lincoln",
+                "http://dbpedia.org/ontology/spouse",
+                "?uri"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://dbpedia.org/resource/Abraham_Lincoln",
+                    "http://dbpedia.org/property/spouse",
+                    "?x0"
+                ]
+            ],
+            [
+                [
+                    "http://dbpedia.org/resource/Abraham_Lincoln",
+                    "http://dbpedia.org/ontology/spouse",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://dbpedia.org/resource/Abraham_Lincoln> <http://dbpedia.org/ontology/spouse> ?uri .\n",
+        "selected_triples_strings": [
+            "<http://dbpedia.org/resource/Abraham_Lincoln> <http://dbpedia.org/property/spouse> ?x0 .",
+            "<http://dbpedia.org/resource/Abraham_Lincoln> <http://dbpedia.org/ontology/spouse> ?x0 ."
+        ]
+    },
+    {
+        "question": "How many awards has Bertrand Russell?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://dbpedia.org/resource/Bertrand_Russell",
+                "http://dbpedia.org/property/awards",
+                "?Awards"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://dbpedia.org/resource/Bertrand_Russell",
+                    "http://dbpedia.org/property/awards",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://dbpedia.org/resource/Bertrand_Russell> <http://dbpedia.org/property/awards> ?Awards .\n",
+        "selected_triples_strings": [
+            "<http://dbpedia.org/resource/Bertrand_Russell> <http://dbpedia.org/property/awards> ?x0 ."
+        ]
+    },
+    {
+        "question": "Who is the daughter of Robert Kennedy married to?",
+        "found": false,
+        "macro_f1": 0.6666666666666666,
+        "correct_path": [
+            [
+                "http://dbpedia.org/resource/Robert_F._Kennedy",
+                "http://dbpedia.org/ontology/child",
+                "?child"
+            ],
+            [
+                "?child",
+                "http://dbpedia.org/ontology/spouse",
+                "?uri"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://dbpedia.org/resource/Robert_F._Kennedy",
+                    "http://dbpedia.org/property/children",
+                    "?x0"
+                ],
+                [
+                    "?x1",
+                    "http://dbpedia.org/property/spouse",
+                    "?x0"
+                ]
+            ],
+            [
+                [
+                    "http://dbpedia.org/resource/Robert_F._Kennedy",
+                    "http://dbpedia.org/property/children",
+                    "?x0"
+                ],
+                [
+                    "?x1",
+                    "http://dbpedia.org/ontology/spouse",
+                    "?x0"
+                ]
+            ],
+            [
+                [
+                    "http://dbpedia.org/resource/Robert_F._Kennedy",
+                    "http://dbpedia.org/ontology/child",
+                    "?x0"
+                ],
+                [
+                    "?x1",
+                    "http://dbpedia.org/property/spouse",
+                    "?x0"
+                ]
+            ],
+            [
+                [
+                    "http://dbpedia.org/resource/Robert_F._Kennedy",
+                    "http://dbpedia.org/ontology/child",
+                    "?x0"
+                ],
+                [
+                    "?x1",
+                    "http://dbpedia.org/ontology/spouse",
+                    "?x0"
+                ]
+            ],
+            [
+                [
+                    "http://dbpedia.org/resource/Robert_F._Kennedy",
+                    "http://dbpedia.org/ontology/relation",
+                    "?x0"
+                ],
+                [
+                    "?x0",
+                    "http://dbpedia.org/property/spouse",
+                    "?x1"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://dbpedia.org/resource/Robert_F._Kennedy> <http://dbpedia.org/ontology/child> ?child .\n?child <http://dbpedia.org/ontology/spouse> ?uri .\n",
+        "selected_triples_strings": [
+            "<http://dbpedia.org/resource/Robert_F._Kennedy> <http://dbpedia.org/property/children> ?x0 .\n?x1 <http://dbpedia.org/property/spouse> ?x0 .",
+            "<http://dbpedia.org/resource/Robert_F._Kennedy> <http://dbpedia.org/property/children> ?x0 .\n?x1 <http://dbpedia.org/ontology/spouse> ?x0 .",
+            "<http://dbpedia.org/resource/Robert_F._Kennedy> <http://dbpedia.org/ontology/child> ?x0 .\n?x1 <http://dbpedia.org/property/spouse> ?x0 .",
+            "<http://dbpedia.org/resource/Robert_F._Kennedy> <http://dbpedia.org/ontology/child> ?x0 .\n?x1 <http://dbpedia.org/ontology/spouse> ?x0 .",
+            "<http://dbpedia.org/resource/Robert_F._Kennedy> <http://dbpedia.org/ontology/relation> ?x0 .\n?x0 <http://dbpedia.org/property/spouse> ?x1 ."
+        ]
+    },
+    {
+        "question": "How many students does the Free University of Amsterdam have?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://dbpedia.org/resource/Vrije_Universiteit_Amsterdam",
+                "http://dbpedia.org/ontology/numberOfStudents",
+                "?num"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://dbpedia.org/resource/Vrije_Universiteit_Amsterdam",
+                    "http://dbpedia.org/ontology/numberOfStudents",
+                    "?x0"
+                ]
+            ],
+            [
+                [
+                    "http://dbpedia.org/resource/Vrije_Universiteit_Amsterdam",
+                    "http://dbpedia.org/property/students",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://dbpedia.org/resource/Vrije_Universiteit_Amsterdam> <http://dbpedia.org/ontology/numberOfStudents> ?num .\n",
+        "selected_triples_strings": [
+            "<http://dbpedia.org/resource/Vrije_Universiteit_Amsterdam> <http://dbpedia.org/ontology/numberOfStudents> ?x0 .",
+            "<http://dbpedia.org/resource/Vrije_Universiteit_Amsterdam> <http://dbpedia.org/property/students> ?x0 ."
+        ]
+    },
+    {
+        "question": "What is the revenue of IBM?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://dbpedia.org/resource/IBM",
+                "http://dbpedia.org/ontology/revenue",
+                "?number"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://dbpedia.org/resource/IBM",
+                    "http://dbpedia.org/property/revenue",
+                    "?x0"
+                ]
+            ],
+            [
+                [
+                    "http://dbpedia.org/resource/IBM",
+                    "http://dbpedia.org/ontology/revenue",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://dbpedia.org/resource/IBM> <http://dbpedia.org/ontology/revenue> ?number .\n",
+        "selected_triples_strings": [
+            "<http://dbpedia.org/resource/IBM> <http://dbpedia.org/property/revenue> ?x0 .",
+            "<http://dbpedia.org/resource/IBM> <http://dbpedia.org/ontology/revenue> ?x0 ."
+        ]
+    },
+    {
+        "question": "How many James Bond movies do exist?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "?uri",
+                "http://purl.org/dc/terms/subject",
+                "http://dbpedia.org/resource/Category:James_Bond_films"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "?x0",
+                    "http://purl.org/dc/terms/subject",
+                    "http://dbpedia.org/resource/Category:James_Bond_films"
+                ]
+            ]
+        ],
+        "correct_triples_string": "?uri <http://purl.org/dc/terms/subject> <http://dbpedia.org/resource/Category:James_Bond_films> .\n",
+        "selected_triples_strings": [
+            "?x0 <http://purl.org/dc/terms/subject> <http://dbpedia.org/resource/Category:James_Bond_films> ."
+        ]
+    },
+    {
+        "question": "Who does the voice of Bart Simpson?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://dbpedia.org/resource/Bart_Simpson",
+                "http://dbpedia.org/property/voiceactor",
+                "?uri"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://dbpedia.org/resource/Bart_Simpson",
+                    "http://dbpedia.org/property/voiceactor",
+                    "?x0"
+                ]
+            ],
+            [
+                [
+                    "http://dbpedia.org/resource/Bart_Simpson",
+                    "http://dbpedia.org/ontology/abstract",
+                    "?x0"
+                ]
+            ],
+            [
+                [
+                    "http://dbpedia.org/resource/Bart_Simpson",
+                    "http://www.w3.org/2000/01/rdf-schema#comment",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://dbpedia.org/resource/Bart_Simpson> <http://dbpedia.org/property/voiceactor> ?uri .\n",
+        "selected_triples_strings": [
+            "<http://dbpedia.org/resource/Bart_Simpson> <http://dbpedia.org/property/voiceactor> ?x0 .",
+            "<http://dbpedia.org/resource/Bart_Simpson> <http://dbpedia.org/ontology/abstract> ?x0 .",
+            "<http://dbpedia.org/resource/Bart_Simpson> <http://www.w3.org/2000/01/rdf-schema#comment> ?x0 ."
+        ]
+    },
+    {
+        "question": "Who was Tom Hanks married to?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://dbpedia.org/resource/Tom_Hanks",
+                "http://dbpedia.org/ontology/spouse",
+                "?uri"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://dbpedia.org/resource/Tom_Hanks",
+                    "http://dbpedia.org/ontology/spouse",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://dbpedia.org/resource/Tom_Hanks> <http://dbpedia.org/ontology/spouse> ?uri .\n",
+        "selected_triples_strings": [
+            "<http://dbpedia.org/resource/Tom_Hanks> <http://dbpedia.org/ontology/spouse> ?x0 ."
+        ]
+    },
+    {
+        "question": "Through which countries does the Yenisei river flow?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://dbpedia.org/resource/Yenisei_River",
+                "http://dbpedia.org/ontology/country",
+                "?uri"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://dbpedia.org/resource/Yenisei_River",
+                    "http://dbpedia.org/property/country",
+                    "?x0"
+                ]
+            ],
+            [
+                [
+                    "http://dbpedia.org/resource/Yenisei_River",
+                    "http://dbpedia.org/ontology/country",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://dbpedia.org/resource/Yenisei_River> <http://dbpedia.org/ontology/country> ?uri .\n",
+        "selected_triples_strings": [
+            "<http://dbpedia.org/resource/Yenisei_River> <http://dbpedia.org/property/country> ?x0 .",
+            "<http://dbpedia.org/resource/Yenisei_River> <http://dbpedia.org/ontology/country> ?x0 ."
+        ]
+    },
+    {
+        "question": "When did Michael Jackson die?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://dbpedia.org/resource/Michael_Jackson",
+                "http://dbpedia.org/property/deathDate",
+                "?date"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://dbpedia.org/resource/Michael_Jackson",
+                    "http://dbpedia.org/property/deathDate",
+                    "?x0"
+                ]
+            ],
+            [
+                [
+                    "http://dbpedia.org/resource/Michael_Jackson",
+                    "http://dbpedia.org/ontology/deathDate",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://dbpedia.org/resource/Michael_Jackson> <http://dbpedia.org/property/deathDate> ?date .\n",
+        "selected_triples_strings": [
+            "<http://dbpedia.org/resource/Michael_Jackson> <http://dbpedia.org/property/deathDate> ?x0 .",
+            "<http://dbpedia.org/resource/Michael_Jackson> <http://dbpedia.org/ontology/deathDate> ?x0 ."
+        ]
+    },
+    {
+        "question": "When did Dracula's creator die?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://dbpedia.org/resource/Count_Dracula",
+                "http://dbpedia.org/ontology/creator",
+                "?x"
+            ],
+            [
+                "?x",
+                "http://dbpedia.org/ontology/deathDate",
+                "?date"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://dbpedia.org/resource/Count_Dracula",
+                    "http://dbpedia.org/ontology/creator",
+                    "http://dbpedia.org/resource/Bram_Stoker"
+                ],
+                [
+                    "http://dbpedia.org/resource/Bram_Stoker",
+                    "http://dbpedia.org/property/deathDate",
+                    "?x0"
+                ]
+            ],
+            [
+                [
+                    "http://dbpedia.org/resource/Count_Dracula",
+                    "http://dbpedia.org/ontology/creator",
+                    "http://dbpedia.org/resource/Bram_Stoker"
+                ],
+                [
+                    "http://dbpedia.org/resource/Bram_Stoker",
+                    "http://dbpedia.org/ontology/deathDate",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://dbpedia.org/resource/Count_Dracula> <http://dbpedia.org/ontology/creator> ?x .\n?x <http://dbpedia.org/ontology/deathDate> ?date .\n",
+        "selected_triples_strings": [
+            "<http://dbpedia.org/resource/Count_Dracula> <http://dbpedia.org/ontology/creator> <http://dbpedia.org/resource/Bram_Stoker> .\n<http://dbpedia.org/resource/Bram_Stoker> <http://dbpedia.org/property/deathDate> ?x0 .",
+            "<http://dbpedia.org/resource/Count_Dracula> <http://dbpedia.org/ontology/creator> <http://dbpedia.org/resource/Bram_Stoker> .\n<http://dbpedia.org/resource/Bram_Stoker> <http://dbpedia.org/ontology/deathDate> ?x0 ."
+        ]
+    },
+    {
+        "question": "Who created English Wikipedia?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://dbpedia.org/resource/Wikipedia",
+                "http://dbpedia.org/ontology/author",
+                "?uri"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://dbpedia.org/resource/Wikipedia",
+                    "http://dbpedia.org/property/author",
+                    "?x0"
+                ]
+            ],
+            [
+                [
+                    "http://dbpedia.org/resource/Wikipedia",
+                    "http://dbpedia.org/ontology/author",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://dbpedia.org/resource/Wikipedia> <http://dbpedia.org/ontology/author> ?uri .\n",
+        "selected_triples_strings": [
+            "<http://dbpedia.org/resource/Wikipedia> <http://dbpedia.org/property/author> ?x0 .",
+            "<http://dbpedia.org/resource/Wikipedia> <http://dbpedia.org/ontology/author> ?x0 ."
+        ]
+    },
+    {
+        "question": "Give me all female German chancellors.",
+        "found": false,
+        "macro_f1": 0.0,
+        "correct_path": [
+            [
+                "http://dbpedia.org/resource/Chancellor_of_Germany",
+                "http://dbpedia.org/property/incumbent",
+                "?uri"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://dbpedia.org/resource/Chancellor_of_Germany",
+                    "http://dbpedia.org/property/incumbent",
+                    "http://dbpedia.org/resource/Angela_Merkel"
+                ],
+                [
+                    "http://dbpedia.org/resource/Angela_Merkel",
+                    "http://xmlns.com/foaf/0.1/gender",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://dbpedia.org/resource/Chancellor_of_Germany> <http://dbpedia.org/property/incumbent> ?uri .\n",
+        "selected_triples_strings": [
+            "<http://dbpedia.org/resource/Chancellor_of_Germany> <http://dbpedia.org/property/incumbent> <http://dbpedia.org/resource/Angela_Merkel> .\n<http://dbpedia.org/resource/Angela_Merkel> <http://xmlns.com/foaf/0.1/gender> ?x0 ."
+        ]
+    },
+    {
+        "question": "Who owns Aldi?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://dbpedia.org/resource/Aldi",
+                "http://dbpedia.org/property/founders",
+                "?uri"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://dbpedia.org/resource/Aldi",
+                    "http://dbpedia.org/property/founders",
+                    "?x0"
+                ]
+            ],
+            [
+                [
+                    "http://dbpedia.org/resource/Aldi",
+                    "http://dbpedia.org/ontology/abstract",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://dbpedia.org/resource/Aldi> <http://dbpedia.org/property/founders> ?uri .\n",
+        "selected_triples_strings": [
+            "<http://dbpedia.org/resource/Aldi> <http://dbpedia.org/property/founders> ?x0 .",
+            "<http://dbpedia.org/resource/Aldi> <http://dbpedia.org/ontology/abstract> ?x0 ."
+        ]
+    },
+    {
+        "question": "Who was influenced by Socrates?",
+        "found": false,
+        "macro_f1": 0.0,
+        "correct_path": [
+            [
+                "?uri",
+                "http://dbpedia.org/ontology/influencedBy",
+                "http://dbpedia.org/resource/Socrates"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://dbpedia.org/resource/Socrates",
+                    "http://dbpedia.org/property/influences",
+                    "?x0"
+                ]
+            ],
+            [
+                [
+                    "http://dbpedia.org/resource/Socrates",
+                    "http://dbpedia.org/ontology/influencedBy",
+                    "?x0"
+                ]
+            ],
+            [
+                [
+                    "http://dbpedia.org/resource/Socrates",
+                    "http://dbpedia.org/property/influenced",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "?uri <http://dbpedia.org/ontology/influencedBy> <http://dbpedia.org/resource/Socrates> .\n",
+        "selected_triples_strings": [
+            "<http://dbpedia.org/resource/Socrates> <http://dbpedia.org/property/influences> ?x0 .",
+            "<http://dbpedia.org/resource/Socrates> <http://dbpedia.org/ontology/influencedBy> ?x0 .",
+            "<http://dbpedia.org/resource/Socrates> <http://dbpedia.org/property/influenced> ?x0 ."
+        ]
+    },
+    {
+        "question": "How deep is Lake Chiemsee?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://dbpedia.org/resource/Chiemsee",
+                "http://dbpedia.org/ontology/maximumDepth",
+                "?n"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://dbpedia.org/resource/Chiemsee",
+                    "http://dbpedia.org/ontology/maximumDepth",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://dbpedia.org/resource/Chiemsee> <http://dbpedia.org/ontology/maximumDepth> ?n .\n",
+        "selected_triples_strings": [
+            "<http://dbpedia.org/resource/Chiemsee> <http://dbpedia.org/ontology/maximumDepth> ?x0 ."
+        ]
+    },
+    {
+        "question": "Who were the parents of Queen Victoria?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://dbpedia.org/resource/Queen_Victoria",
+                "http://dbpedia.org/ontology/parent",
+                "?uri"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://dbpedia.org/resource/Queen_Victoria",
+                    "http://dbpedia.org/property/mother",
+                    "?x0"
+                ]
+            ],
+            [
+                [
+                    "http://dbpedia.org/resource/Queen_Victoria",
+                    "http://dbpedia.org/ontology/parent",
+                    "?x0"
+                ]
+            ],
+            [
+                [
+                    "http://dbpedia.org/resource/Queen_Victoria",
+                    "http://dbpedia.org/property/father",
+                    "?x0"
+                ]
+            ],
+            [
+                [
+                    "http://dbpedia.org/resource/Queen_Victoria",
+                    "http://dbpedia.org/property/issue",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://dbpedia.org/resource/Queen_Victoria> <http://dbpedia.org/ontology/parent> ?uri .\n",
+        "selected_triples_strings": [
+            "<http://dbpedia.org/resource/Queen_Victoria> <http://dbpedia.org/property/mother> ?x0 .",
+            "<http://dbpedia.org/resource/Queen_Victoria> <http://dbpedia.org/ontology/parent> ?x0 .",
+            "<http://dbpedia.org/resource/Queen_Victoria> <http://dbpedia.org/property/father> ?x0 .",
+            "<http://dbpedia.org/resource/Queen_Victoria> <http://dbpedia.org/property/issue> ?x0 ."
+        ]
+    },
+    {
+        "question": "Are there any castles in the United States?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "?uri",
+                "http://purl.org/dc/terms/subject",
+                "http://dbpedia.org/resource/Category:Castles_in_the_United_States"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "?x0",
+                    "http://dbpedia.org/ontology/wikiPageWikiLink",
+                    "http://dbpedia.org/resource/Category:Castles_in_the_United_States"
+                ]
+            ],
+            [
+                [
+                    "?x0",
+                    "http://purl.org/dc/terms/subject",
+                    "http://dbpedia.org/resource/Category:Castles_in_the_United_States"
+                ]
+            ]
+        ],
+        "correct_triples_string": "?uri <http://purl.org/dc/terms/subject> <http://dbpedia.org/resource/Category:Castles_in_the_United_States> .\n",
+        "selected_triples_strings": [
+            "?x0 <http://dbpedia.org/ontology/wikiPageWikiLink> <http://dbpedia.org/resource/Category:Castles_in_the_United_States> .",
+            "?x0 <http://purl.org/dc/terms/subject> <http://dbpedia.org/resource/Category:Castles_in_the_United_States> ."
+        ]
+    },
+    {
+        "question": "Which languages are spoken in Estonia?",
+        "found": false,
+        "macro_f1": 0.36363636363636365,
+        "correct_path": [
+            [
+                "?uri",
+                "http://dbpedia.org/ontology/spokenIn",
+                "http://dbpedia.org/resource/Estonia"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://dbpedia.org/resource/Estonia",
+                    "http://dbpedia.org/property/officialLanguages",
+                    "?x0"
+                ]
+            ],
+            [
+                [
+                    "http://dbpedia.org/resource/Estonia",
+                    "http://dbpedia.org/ontology/officialLanguage",
+                    "?x0"
+                ]
+            ],
+            [
+                [
+                    "http://dbpedia.org/resource/Estonia",
+                    "http://dbpedia.org/ontology/language",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "?uri <http://dbpedia.org/ontology/spokenIn> <http://dbpedia.org/resource/Estonia> .\n",
+        "selected_triples_strings": [
+            "<http://dbpedia.org/resource/Estonia> <http://dbpedia.org/property/officialLanguages> ?x0 .",
+            "<http://dbpedia.org/resource/Estonia> <http://dbpedia.org/ontology/officialLanguage> ?x0 .",
+            "<http://dbpedia.org/resource/Estonia> <http://dbpedia.org/ontology/language> ?x0 ."
+        ]
+    },
+    {
+        "question": "Who was the father of Queen Elizabeth II?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://dbpedia.org/resource/Elizabeth_II",
+                "http://dbpedia.org/property/father",
+                "?father"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://dbpedia.org/resource/Elizabeth_II",
+                    "http://dbpedia.org/property/father",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://dbpedia.org/resource/Elizabeth_II> <http://dbpedia.org/property/father> ?father .\n",
+        "selected_triples_strings": [
+            "<http://dbpedia.org/resource/Elizabeth_II> <http://dbpedia.org/property/father> ?x0 ."
+        ]
+    },
+    {
+        "question": "When is the movie Worst Case Scenario going to be in cinemas in the Netherlands?",
+        "found": false,
+        "macro_f1": 0.0,
+        "correct_path": [
+            [
+                "http://dbpedia.org/resource/Worst_Case_Scenario_(film)",
+                "?p",
+                "?o"
+            ]
+        ],
+        "selected_paths": [],
+        "correct_triples_string": "<http://dbpedia.org/resource/Worst_Case_Scenario_(film)> ?p ?o .\n",
+        "selected_triples_strings": []
+    },
+    {
+        "question": "When is the movie Worst Case Scenario going to be in cinemas in the Netherlands?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://dbpedia.org/resource/Worst_Case_Scenario_(film)",
+                "http://dbpedia.org/ontology/releaseDate",
+                "?rel"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://dbpedia.org/resource/Worst_Case_Scenario_(film)",
+                    "http://dbpedia.org/ontology/releaseDate",
+                    "?x0"
+                ]
+            ],
+            [
+                [
+                    "http://dbpedia.org/resource/Worst_Case_Scenario_(film)",
+                    "http://dbpedia.org/property/released",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://dbpedia.org/resource/Worst_Case_Scenario_(film)> <http://dbpedia.org/ontology/releaseDate> ?rel .\n",
+        "selected_triples_strings": [
+            "<http://dbpedia.org/resource/Worst_Case_Scenario_(film)> <http://dbpedia.org/ontology/releaseDate> ?x0 .",
+            "<http://dbpedia.org/resource/Worst_Case_Scenario_(film)> <http://dbpedia.org/property/released> ?x0 ."
+        ]
+    },
+    {
+        "question": "What languages are spoken in Pakistan?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://dbpedia.org/resource/Pakistan",
+                "http://dbpedia.org/ontology/language",
+                "?uri"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://dbpedia.org/resource/Pakistan",
+                    "http://dbpedia.org/property/officialLanguages",
+                    "?x0"
+                ]
+            ],
+            [
+                [
+                    "http://dbpedia.org/resource/Pakistan",
+                    "http://dbpedia.org/property/nationalLanguages",
+                    "?x0"
+                ]
+            ],
+            [
+                [
+                    "http://dbpedia.org/resource/Pakistan",
+                    "http://dbpedia.org/property/languages",
+                    "?x0"
+                ]
+            ],
+            [
+                [
+                    "http://dbpedia.org/resource/Pakistan",
+                    "http://dbpedia.org/ontology/officialLanguage",
+                    "?x0"
+                ]
+            ],
+            [
+                [
+                    "http://dbpedia.org/resource/Pakistan",
+                    "http://dbpedia.org/ontology/language",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://dbpedia.org/resource/Pakistan> <http://dbpedia.org/ontology/language> ?uri .\n",
+        "selected_triples_strings": [
+            "<http://dbpedia.org/resource/Pakistan> <http://dbpedia.org/property/officialLanguages> ?x0 .",
+            "<http://dbpedia.org/resource/Pakistan> <http://dbpedia.org/property/nationalLanguages> ?x0 .",
+            "<http://dbpedia.org/resource/Pakistan> <http://dbpedia.org/property/languages> ?x0 .",
+            "<http://dbpedia.org/resource/Pakistan> <http://dbpedia.org/ontology/officialLanguage> ?x0 .",
+            "<http://dbpedia.org/resource/Pakistan> <http://dbpedia.org/ontology/language> ?x0 ."
+        ]
+    },
+    {
+        "question": "Who is the daughter of Bill Clinton married to?",
+        "found": false,
+        "macro_f1": 0.0,
+        "correct_path": [
+            [
+                "http://dbpedia.org/resource/Bill_Clinton",
+                "http://dbpedia.org/ontology/child",
+                "?child"
+            ],
+            [
+                "?child",
+                "http://dbpedia.org/ontology/spouse",
+                "?uri"
+            ],
+            [
+                "?uri",
+                "http://www.w3.org/2000/01/rdf-schema#label",
+                "?string"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://dbpedia.org/resource/Bill_Clinton",
+                    "http://dbpedia.org/property/children",
+                    "?x0"
+                ],
+                [
+                    "?x0",
+                    "http://dbpedia.org/property/spouse",
+                    "?x1"
+                ]
+            ],
+            [
+                [
+                    "http://dbpedia.org/resource/Bill_Clinton",
+                    "http://dbpedia.org/property/children",
+                    "?x0"
+                ],
+                [
+                    "?x0",
+                    "http://dbpedia.org/ontology/spouse",
+                    "?x1"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://dbpedia.org/resource/Bill_Clinton> <http://dbpedia.org/ontology/child> ?child .\n?child <http://dbpedia.org/ontology/spouse> ?uri .\n?uri <http://www.w3.org/2000/01/rdf-schema#label> ?string .\n",
+        "selected_triples_strings": [
+            "<http://dbpedia.org/resource/Bill_Clinton> <http://dbpedia.org/property/children> ?x0 .\n?x0 <http://dbpedia.org/property/spouse> ?x1 .",
+            "<http://dbpedia.org/resource/Bill_Clinton> <http://dbpedia.org/property/children> ?x0 .\n?x0 <http://dbpedia.org/ontology/spouse> ?x1 ."
+        ]
+    },
+    {
+        "question": "Who was on the Apollo 11 mission?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://dbpedia.org/resource/Apollo_11",
+                "http://dbpedia.org/property/crewMembers",
+                "?uri"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "?x0",
+                    "http://dbpedia.org/ontology/mission",
+                    "http://dbpedia.org/resource/Apollo_11"
+                ]
+            ],
+            [
+                [
+                    "?x0",
+                    "http://dbpedia.org/property/mission",
+                    "http://dbpedia.org/resource/Apollo_11"
+                ]
+            ],
+            [
+                [
+                    "http://dbpedia.org/resource/Apollo_11",
+                    "http://dbpedia.org/property/crewMembers",
+                    "?x0"
+                ]
+            ],
+            [
+                [
+                    "http://dbpedia.org/resource/Apollo_11",
+                    "http://dbpedia.org/property/crewPhotoCaption",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://dbpedia.org/resource/Apollo_11> <http://dbpedia.org/property/crewMembers> ?uri .\n",
+        "selected_triples_strings": [
+            "?x0 <http://dbpedia.org/ontology/mission> <http://dbpedia.org/resource/Apollo_11> .",
+            "?x0 <http://dbpedia.org/property/mission> <http://dbpedia.org/resource/Apollo_11> .",
+            "<http://dbpedia.org/resource/Apollo_11> <http://dbpedia.org/property/crewMembers> ?x0 .",
+            "<http://dbpedia.org/resource/Apollo_11> <http://dbpedia.org/property/crewPhotoCaption> ?x0 ."
+        ]
+    },
+    {
+        "question": "What is the wavelength of Indigo?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://dbpedia.org/resource/Indigo",
+                "http://dbpedia.org/ontology/wavelength",
+                "?n"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://dbpedia.org/resource/Indigo",
+                    "http://dbpedia.org/property/wavelength",
+                    "?x0"
+                ]
+            ],
+            [
+                [
+                    "http://dbpedia.org/resource/Indigo",
+                    "http://dbpedia.org/ontology/wavelength",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://dbpedia.org/resource/Indigo> <http://dbpedia.org/ontology/wavelength> ?n .\n",
+        "selected_triples_strings": [
+            "<http://dbpedia.org/resource/Indigo> <http://dbpedia.org/property/wavelength> ?x0 .",
+            "<http://dbpedia.org/resource/Indigo> <http://dbpedia.org/ontology/wavelength> ?x0 ."
+        ]
+    },
+    {
+        "question": "Give me all B-sides of the Ramones.",
+        "found": false,
+        "macro_f1": 0.0,
+        "correct_path": [
+            [
+                "?x",
+                "http://dbpedia.org/ontology/musicalArtist",
+                "http://dbpedia.org/resource/Ramones"
+            ],
+            [
+                "?x",
+                "http://dbpedia.org/ontology/bSide",
+                "?string"
+            ]
+        ],
+        "selected_paths": [],
+        "correct_triples_string": "?x <http://dbpedia.org/ontology/musicalArtist> <http://dbpedia.org/resource/Ramones> .\n?x <http://dbpedia.org/ontology/bSide> ?string .\n",
+        "selected_triples_strings": []
+    },
+    {
+        "question": "How many emperors did China have?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "?uri",
+                "http://dbpedia.org/property/title",
+                "http://dbpedia.org/resource/Emperor_of_China"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "?x0",
+                    "http://dbpedia.org/property/title",
+                    "http://dbpedia.org/resource/Emperor_of_China"
+                ]
+            ]
+        ],
+        "correct_triples_string": "?uri <http://dbpedia.org/property/title> <http://dbpedia.org/resource/Emperor_of_China> .\n",
+        "selected_triples_strings": [
+            "?x0 <http://dbpedia.org/property/title> <http://dbpedia.org/resource/Emperor_of_China> ."
+        ]
+    },
+    {
+        "question": "What are the names of the Teenage Mutant Ninja Turtles?",
+        "found": false,
+        "macro_f1": 0.0,
+        "correct_path": [
+            [
+                "http://dbpedia.org/resource/Teenage_Mutant_Ninja_Turtles",
+                "http://dbpedia.org/property/members",
+                "?x"
+            ],
+            [
+                "?x",
+                "http://xmlns.com/foaf/0.1/givenName",
+                "?s"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://dbpedia.org/resource/Teenage_Mutant_Ninja_Turtles",
+                    "http://dbpedia.org/property/members",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://dbpedia.org/resource/Teenage_Mutant_Ninja_Turtles> <http://dbpedia.org/property/members> ?x .\n?x <http://xmlns.com/foaf/0.1/givenName> ?s .\n",
+        "selected_triples_strings": [
+            "<http://dbpedia.org/resource/Teenage_Mutant_Ninja_Turtles> <http://dbpedia.org/property/members> ?x0 ."
+        ]
+    },
+    {
+        "question": "Where does Piccadilly start?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "?uri",
+                "http://dbpedia.org/ontology/routeStart",
+                "http://dbpedia.org/resource/Piccadilly"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "?x0",
+                    "http://dbpedia.org/ontology/routeStart",
+                    "http://dbpedia.org/resource/Piccadilly"
+                ]
+            ],
+            [
+                [
+                    "?x0",
+                    "http://dbpedia.org/property/terminusA",
+                    "http://dbpedia.org/resource/Piccadilly"
+                ]
+            ]
+        ],
+        "correct_triples_string": "?uri <http://dbpedia.org/ontology/routeStart> <http://dbpedia.org/resource/Piccadilly> .\n",
+        "selected_triples_strings": [
+            "?x0 <http://dbpedia.org/ontology/routeStart> <http://dbpedia.org/resource/Piccadilly> .",
+            "?x0 <http://dbpedia.org/property/terminusA> <http://dbpedia.org/resource/Piccadilly> ."
+        ]
+    },
+    {
+        "question": "What is the name of the university where Obama's wife studied?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://dbpedia.org/resource/Barack_Obama",
+                "http://dbpedia.org/ontology/spouse",
+                "?x"
+            ],
+            [
+                "?x",
+                "http://dbpedia.org/ontology/almaMater",
+                "?s"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://dbpedia.org/resource/Barack_Obama",
+                    "http://dbpedia.org/ontology/spouse",
+                    "http://dbpedia.org/resource/Michelle_Obama"
+                ],
+                [
+                    "http://dbpedia.org/resource/Michelle_Obama",
+                    "http://dbpedia.org/property/almaMater",
+                    "?x0"
+                ]
+            ],
+            [
+                [
+                    "http://dbpedia.org/resource/Barack_Obama",
+                    "http://dbpedia.org/ontology/spouse",
+                    "http://dbpedia.org/resource/Michelle_Obama"
+                ],
+                [
+                    "http://dbpedia.org/resource/Michelle_Obama",
+                    "http://dbpedia.org/ontology/almaMater",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://dbpedia.org/resource/Barack_Obama> <http://dbpedia.org/ontology/spouse> ?x .\n?x <http://dbpedia.org/ontology/almaMater> ?s .\n",
+        "selected_triples_strings": [
+            "<http://dbpedia.org/resource/Barack_Obama> <http://dbpedia.org/ontology/spouse> <http://dbpedia.org/resource/Michelle_Obama> .\n<http://dbpedia.org/resource/Michelle_Obama> <http://dbpedia.org/property/almaMater> ?x0 .",
+            "<http://dbpedia.org/resource/Barack_Obama> <http://dbpedia.org/ontology/spouse> <http://dbpedia.org/resource/Michelle_Obama> .\n<http://dbpedia.org/resource/Michelle_Obama> <http://dbpedia.org/ontology/almaMater> ?x0 ."
+        ]
+    },
+    {
+        "question": "When did Paraguay proclaim its independence?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://dbpedia.org/resource/Paraguay",
+                "http://dbpedia.org/ontology/foundingDate",
+                "?date"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://dbpedia.org/resource/Paraguay",
+                    "http://dbpedia.org/property/establishedDate",
+                    "?x0"
+                ]
+            ],
+            [
+                [
+                    "http://dbpedia.org/resource/Paraguay",
+                    "http://dbpedia.org/ontology/foundingDate",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://dbpedia.org/resource/Paraguay> <http://dbpedia.org/ontology/foundingDate> ?date .\n",
+        "selected_triples_strings": [
+            "<http://dbpedia.org/resource/Paraguay> <http://dbpedia.org/property/establishedDate> ?x0 .",
+            "<http://dbpedia.org/resource/Paraguay> <http://dbpedia.org/ontology/foundingDate> ?x0 ."
+        ]
+    },
+    {
+        "question": "Where did Abraham Lincoln die?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://dbpedia.org/resource/Abraham_Lincoln",
+                "http://dbpedia.org/ontology/deathPlace",
+                "?uri"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://dbpedia.org/resource/Abraham_Lincoln",
+                    "http://dbpedia.org/ontology/deathPlace",
+                    "?x0"
+                ]
+            ],
+            [
+                [
+                    "http://dbpedia.org/resource/Abraham_Lincoln",
+                    "http://dbpedia.org/property/deathPlace",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://dbpedia.org/resource/Abraham_Lincoln> <http://dbpedia.org/ontology/deathPlace> ?uri .\n",
+        "selected_triples_strings": [
+            "<http://dbpedia.org/resource/Abraham_Lincoln> <http://dbpedia.org/ontology/deathPlace> ?x0 .",
+            "<http://dbpedia.org/resource/Abraham_Lincoln> <http://dbpedia.org/property/deathPlace> ?x0 ."
+        ]
+    },
+    {
+        "question": "When was Jack Wolfskin founded?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://dbpedia.org/resource/Jack_Wolfskin",
+                "http://dbpedia.org/ontology/foundingYear",
+                "?year"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://dbpedia.org/resource/Jack_Wolfskin",
+                    "http://dbpedia.org/ontology/foundingYear",
+                    "?x0"
+                ]
+            ],
+            [
+                [
+                    "http://dbpedia.org/resource/Jack_Wolfskin",
+                    "http://dbpedia.org/property/foundation",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://dbpedia.org/resource/Jack_Wolfskin> <http://dbpedia.org/ontology/foundingYear> ?year .\n",
+        "selected_triples_strings": [
+            "<http://dbpedia.org/resource/Jack_Wolfskin> <http://dbpedia.org/ontology/foundingYear> ?x0 .",
+            "<http://dbpedia.org/resource/Jack_Wolfskin> <http://dbpedia.org/property/foundation> ?x0 ."
+        ]
+    },
+    {
+        "question": "What is the founding year of the brewery that produces Pilsner Urquell?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://dbpedia.org/resource/Pilsner_Urquell",
+                "http://dbpedia.org/property/brewery",
+                "?uri"
+            ],
+            [
+                "?uri",
+                "http://dbpedia.org/ontology/foundingYear",
+                "?num"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://dbpedia.org/resource/Pilsner_Urquell",
+                    "http://dbpedia.org/property/year",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://dbpedia.org/resource/Pilsner_Urquell> <http://dbpedia.org/property/brewery> ?uri .\n?uri <http://dbpedia.org/ontology/foundingYear> ?num .\n",
+        "selected_triples_strings": [
+            "<http://dbpedia.org/resource/Pilsner_Urquell> <http://dbpedia.org/property/year> ?x0 ."
+        ]
+    },
+    {
+        "question": "When did the Boston Tea Party take place?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://dbpedia.org/resource/Boston_Tea_Party",
+                "http://dbpedia.org/property/date",
+                "?d"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://dbpedia.org/resource/Boston_Tea_Party",
+                    "http://dbpedia.org/property/date",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://dbpedia.org/resource/Boston_Tea_Party> <http://dbpedia.org/property/date> ?d .\n",
+        "selected_triples_strings": [
+            "<http://dbpedia.org/resource/Boston_Tea_Party> <http://dbpedia.org/property/date> ?x0 ."
+        ]
+    },
+    {
+        "question": "How big is the earth's diameter?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://dbpedia.org/resource/Earth",
+                "http://dbpedia.org/ontology/meanRadius",
+                "?radius"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://dbpedia.org/resource/Earth",
+                    "http://dbpedia.org/ontology/meanRadius",
+                    "?x0"
+                ]
+            ],
+            [
+                [
+                    "http://dbpedia.org/resource/Earth",
+                    "http://dbpedia.org/ontology/Planet/meanRadius",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://dbpedia.org/resource/Earth> <http://dbpedia.org/ontology/meanRadius> ?radius .\n",
+        "selected_triples_strings": [
+            "<http://dbpedia.org/resource/Earth> <http://dbpedia.org/ontology/meanRadius> ?x0 .",
+            "<http://dbpedia.org/resource/Earth> <http://dbpedia.org/ontology/Planet/meanRadius> ?x0 ."
+        ]
+    },
+    {
+        "question": "Is the wife of President Obama called Michelle?",
+        "found": false,
+        "macro_f1": 0.0,
+        "correct_path": [
+            [
+                "http://dbpedia.org/resource/Barack_Obama",
+                "http://dbpedia.org/ontology/spouse",
+                "?spouse"
+            ],
+            [
+                "?spouse",
+                "http://www.w3.org/2000/01/rdf-schema#label",
+                "?name"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://dbpedia.org/resource/Barack_Obama",
+                    "http://dbpedia.org/ontology/spouse",
+                    "?x0"
+                ]
+            ],
+            [
+                [
+                    "http://dbpedia.org/resource/Barack_Obama",
+                    "http://dbpedia.org/property/spouse",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://dbpedia.org/resource/Barack_Obama> <http://dbpedia.org/ontology/spouse> ?spouse .\n?spouse <http://www.w3.org/2000/01/rdf-schema#label> ?name .\n",
+        "selected_triples_strings": [
+            "<http://dbpedia.org/resource/Barack_Obama> <http://dbpedia.org/ontology/spouse> ?x0 .",
+            "<http://dbpedia.org/resource/Barack_Obama> <http://dbpedia.org/property/spouse> ?x0 ."
+        ]
+    },
+    {
+        "question": "When did Muhammad die?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://dbpedia.org/resource/Muhammad",
+                "http://dbpedia.org/ontology/deathDate",
+                "?date"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://dbpedia.org/resource/Muhammad",
+                    "http://dbpedia.org/property/deathDate",
+                    "?x0"
+                ]
+            ],
+            [
+                [
+                    "http://dbpedia.org/resource/Muhammad",
+                    "http://dbpedia.org/ontology/deathDate",
+                    "?x0"
+                ]
+            ],
+            [
+                [
+                    "http://dbpedia.org/resource/Muhammad",
+                    "http://dbpedia.org/ontology/deathYear",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://dbpedia.org/resource/Muhammad> <http://dbpedia.org/ontology/deathDate> ?date .\n",
+        "selected_triples_strings": [
+            "<http://dbpedia.org/resource/Muhammad> <http://dbpedia.org/property/deathDate> ?x0 .",
+            "<http://dbpedia.org/resource/Muhammad> <http://dbpedia.org/ontology/deathDate> ?x0 .",
+            "<http://dbpedia.org/resource/Muhammad> <http://dbpedia.org/ontology/deathYear> ?x0 ."
+        ]
+    },
+    {
+        "question": "What is the atmosphere of the Moon composed of?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://dbpedia.org/resource/Moon",
+                "http://dbpedia.org/property/atmosphereComposition",
+                "?uri"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://dbpedia.org/resource/Moon",
+                    "http://dbpedia.org/property/atmosphereComposition",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://dbpedia.org/resource/Moon> <http://dbpedia.org/property/atmosphereComposition> ?uri .\n",
+        "selected_triples_strings": [
+            "<http://dbpedia.org/resource/Moon> <http://dbpedia.org/property/atmosphereComposition> ?x0 ."
+        ]
+    },
+    {
+        "question": "Who is the governor of Texas?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://dbpedia.org/resource/Texas",
+                "http://dbpedia.org/property/governor",
+                "?string"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://dbpedia.org/resource/Texas",
+                    "http://dbpedia.org/property/governor",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://dbpedia.org/resource/Texas> <http://dbpedia.org/property/governor> ?string .\n",
+        "selected_triples_strings": [
+            "<http://dbpedia.org/resource/Texas> <http://dbpedia.org/property/governor> ?x0 ."
+        ]
+    },
+    {
+        "question": "Give me the official websites of actors of the television show Charmed.",
+        "found": false,
+        "macro_f1": 0.0,
+        "correct_path": [
+            [
+                "http://dbpedia.org/resource/Charmed",
+                "http://dbpedia.org/ontology/starring",
+                "?actors"
+            ],
+            [
+                "?actors",
+                "http://xmlns.com/foaf/0.1/homepage",
+                "?uri"
+            ]
+        ],
+        "selected_paths": [],
+        "correct_triples_string": "<http://dbpedia.org/resource/Charmed> <http://dbpedia.org/ontology/starring> ?actors .\n?actors <http://xmlns.com/foaf/0.1/homepage> ?uri .\n",
+        "selected_triples_strings": []
+    },
+    {
+        "question": "How many calories does a baguette have?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://dbpedia.org/resource/Baguette",
+                "http://dbpedia.org/property/calories",
+                "?n"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://dbpedia.org/resource/Baguette",
+                    "http://dbpedia.org/property/calories",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://dbpedia.org/resource/Baguette> <http://dbpedia.org/property/calories> ?n .\n",
+        "selected_triples_strings": [
+            "<http://dbpedia.org/resource/Baguette> <http://dbpedia.org/property/calories> ?x0 ."
+        ]
+    },
+    {
+        "question": "Give me all libraries established before 1400.",
+        "found": false,
+        "macro_f1": 0.0,
+        "correct_path": [
+            [
+                "?uri",
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+                "http://dbpedia.org/ontology/Library"
+            ],
+            [
+                "?uri",
+                "http://dbpedia.org/property/established",
+                "?year"
+            ]
+        ],
+        "selected_paths": [],
+        "correct_triples_string": "?uri <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Library> .\n?uri <http://dbpedia.org/property/established> ?year .\n",
+        "selected_triples_strings": []
+    },
+    {
+        "question": "Which museum exhibits The Scream by Munch?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://dbpedia.org/resource/The_Scream",
+                "http://dbpedia.org/ontology/museum",
+                "?uri"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://dbpedia.org/resource/The_Scream",
+                    "http://dbpedia.org/property/museum",
+                    "?x0"
+                ]
+            ],
+            [
+                [
+                    "http://dbpedia.org/resource/The_Scream",
+                    "http://dbpedia.org/ontology/museum",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://dbpedia.org/resource/The_Scream> <http://dbpedia.org/ontology/museum> ?uri .\n",
+        "selected_triples_strings": [
+            "<http://dbpedia.org/resource/The_Scream> <http://dbpedia.org/property/museum> ?x0 .",
+            "<http://dbpedia.org/resource/The_Scream> <http://dbpedia.org/ontology/museum> ?x0 ."
+        ]
+    },
+    {
+        "question": "When was the De Beers company founded?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://dbpedia.org/resource/De_Beers",
+                "http://dbpedia.org/ontology/foundingYear",
+                "?date"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://dbpedia.org/resource/De_Beers",
+                    "http://dbpedia.org/ontology/foundingYear",
+                    "?x0"
+                ]
+            ],
+            [
+                [
+                    "http://dbpedia.org/resource/De_Beers",
+                    "http://dbpedia.org/property/foundation",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://dbpedia.org/resource/De_Beers> <http://dbpedia.org/ontology/foundingYear> ?date .\n",
+        "selected_triples_strings": [
+            "<http://dbpedia.org/resource/De_Beers> <http://dbpedia.org/ontology/foundingYear> ?x0 .",
+            "<http://dbpedia.org/resource/De_Beers> <http://dbpedia.org/property/foundation> ?x0 ."
+        ]
+    },
+    {
+        "question": "Who are the parents of the wife of Juan Carlos I?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://dbpedia.org/resource/Juan_Carlos_I_of_Spain",
+                "http://dbpedia.org/ontology/spouse",
+                "?x"
+            ],
+            [
+                "?x",
+                "http://dbpedia.org/ontology/parent",
+                "?uri"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://dbpedia.org/resource/Juan_Carlos_I_of_Spain",
+                    "http://dbpedia.org/ontology/spouse",
+                    "http://dbpedia.org/resource/Queen_Sof\u00eda_of_Spain"
+                ],
+                [
+                    "http://dbpedia.org/resource/Queen_Sof\u00eda_of_Spain",
+                    "http://dbpedia.org/ontology/parent",
+                    "?x0"
+                ]
+            ],
+            [
+                [
+                    "http://dbpedia.org/resource/Juan_Carlos_I_of_Spain",
+                    "http://dbpedia.org/ontology/spouse",
+                    "http://dbpedia.org/resource/Queen_Sof\u00eda_of_Spain"
+                ],
+                [
+                    "http://dbpedia.org/resource/Queen_Sof\u00eda_of_Spain",
+                    "http://dbpedia.org/property/mother",
+                    "?x0"
+                ]
+            ],
+            [
+                [
+                    "http://dbpedia.org/resource/Juan_Carlos_I_of_Spain",
+                    "http://dbpedia.org/ontology/spouse",
+                    "http://dbpedia.org/resource/Queen_Sof\u00eda_of_Spain"
+                ],
+                [
+                    "http://dbpedia.org/resource/Queen_Sof\u00eda_of_Spain",
+                    "http://dbpedia.org/property/father",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://dbpedia.org/resource/Juan_Carlos_I_of_Spain> <http://dbpedia.org/ontology/spouse> ?x .\n?x <http://dbpedia.org/ontology/parent> ?uri .\n",
+        "selected_triples_strings": [
+            "<http://dbpedia.org/resource/Juan_Carlos_I_of_Spain> <http://dbpedia.org/ontology/spouse> <http://dbpedia.org/resource/Queen_Sof\u00eda_of_Spain> .\n<http://dbpedia.org/resource/Queen_Sof\u00eda_of_Spain> <http://dbpedia.org/ontology/parent> ?x0 .",
+            "<http://dbpedia.org/resource/Juan_Carlos_I_of_Spain> <http://dbpedia.org/ontology/spouse> <http://dbpedia.org/resource/Queen_Sof\u00eda_of_Spain> .\n<http://dbpedia.org/resource/Queen_Sof\u00eda_of_Spain> <http://dbpedia.org/property/mother> ?x0 .",
+            "<http://dbpedia.org/resource/Juan_Carlos_I_of_Spain> <http://dbpedia.org/ontology/spouse> <http://dbpedia.org/resource/Queen_Sof\u00eda_of_Spain> .\n<http://dbpedia.org/resource/Queen_Sof\u00eda_of_Spain> <http://dbpedia.org/property/father> ?x0 ."
+        ]
+    },
+    {
+        "question": "Who is the novelist of the work a song of ice and fire?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://dbpedia.org/resource/A_Song_of_Ice_and_Fire",
+                "http://dbpedia.org/property/author",
+                "?Novelist"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://dbpedia.org/resource/A_Song_of_Ice_and_Fire",
+                    "http://dbpedia.org/property/author",
+                    "?x0"
+                ]
+            ],
+            [
+                [
+                    "?x0",
+                    "http://dbpedia.org/ontology/notableWork",
+                    "http://dbpedia.org/resource/A_Song_of_Ice_and_Fire"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://dbpedia.org/resource/A_Song_of_Ice_and_Fire> <http://dbpedia.org/property/author> ?Novelist .\n",
+        "selected_triples_strings": [
+            "<http://dbpedia.org/resource/A_Song_of_Ice_and_Fire> <http://dbpedia.org/property/author> ?x0 .",
+            "?x0 <http://dbpedia.org/ontology/notableWork> <http://dbpedia.org/resource/A_Song_of_Ice_and_Fire> ."
+        ]
+    },
+    {
+        "question": "When did princess Diana die?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://dbpedia.org/resource/Diana,_Princess_of_Wales",
+                "http://dbpedia.org/ontology/deathDate",
+                "?d"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://dbpedia.org/resource/Diana,_Princess_of_Wales",
+                    "http://dbpedia.org/property/deathDate",
+                    "?x0"
+                ]
+            ],
+            [
+                [
+                    "http://dbpedia.org/resource/Diana,_Princess_of_Wales",
+                    "http://dbpedia.org/ontology/deathDate",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://dbpedia.org/resource/Diana,_Princess_of_Wales> <http://dbpedia.org/ontology/deathDate> ?d .\n",
+        "selected_triples_strings": [
+            "<http://dbpedia.org/resource/Diana,_Princess_of_Wales> <http://dbpedia.org/property/deathDate> ?x0 .",
+            "<http://dbpedia.org/resource/Diana,_Princess_of_Wales> <http://dbpedia.org/ontology/deathDate> ?x0 ."
+        ]
+    },
+    {
+        "question": "Who founded Intel?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://dbpedia.org/resource/Intel",
+                "http://dbpedia.org/property/founders",
+                "?uri"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://dbpedia.org/resource/Intel",
+                    "http://dbpedia.org/property/founders",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://dbpedia.org/resource/Intel> <http://dbpedia.org/property/founders> ?uri .\n",
+        "selected_triples_strings": [
+            "<http://dbpedia.org/resource/Intel> <http://dbpedia.org/property/founders> ?x0 ."
+        ]
+    },
+    {
+        "question": "Who is the youngest player in the Premier League?",
+        "found": false,
+        "macro_f1": 0.09633911368015413,
+        "correct_path": [
+            [
+                "?league",
+                "http://dbpedia.org/ontology/league",
+                "http://dbpedia.org/resource/Premier_League"
+            ],
+            [
+                "?league",
+                "http://dbpedia.org/ontology/team",
+                "?team"
+            ],
+            [
+                "?uri",
+                "http://dbpedia.org/ontology/team",
+                "?team"
+            ],
+            [
+                "?uri",
+                "http://dbpedia.org/ontology/birthDate",
+                "?date"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "?x0",
+                    "http://dbpedia.org/property/league",
+                    "http://dbpedia.org/resource/Premier_League"
+                ],
+                [
+                    "?x0",
+                    "http://dbpedia.org/ontology/team",
+                    "http://dbpedia.org/resource/Arsenal_F.C."
+                ],
+                [
+                    "?x1",
+                    "http://dbpedia.org/property/youthclubs",
+                    "http://dbpedia.org/resource/Arsenal_F.C."
+                ],
+                [
+                    "?x1",
+                    "http://dbpedia.org/property/birthDate",
+                    "?x2"
+                ]
+            ],
+            [
+                [
+                    "?x0",
+                    "http://dbpedia.org/property/league",
+                    "http://dbpedia.org/resource/Premier_League"
+                ],
+                [
+                    "?x0",
+                    "http://dbpedia.org/ontology/team",
+                    "http://dbpedia.org/resource/Arsenal_F.C."
+                ],
+                [
+                    "http://dbpedia.org/resource/Arsenal_F.C.",
+                    "http://dbpedia.org/property/name",
+                    "?x1"
+                ],
+                [
+                    "?x1",
+                    "http://dbpedia.org/property/birthDate",
+                    "?x2"
+                ]
+            ],
+            [
+                [
+                    "?x0",
+                    "http://dbpedia.org/property/league",
+                    "http://dbpedia.org/resource/Premier_League"
+                ],
+                [
+                    "?x0",
+                    "http://dbpedia.org/property/team",
+                    "?x1"
+                ],
+                [
+                    "?x2",
+                    "http://dbpedia.org/property/currentclub",
+                    "?x1"
+                ],
+                [
+                    "?x2",
+                    "http://dbpedia.org/property/birthDate",
+                    "?x3"
+                ]
+            ]
+        ],
+        "correct_triples_string": "?league <http://dbpedia.org/ontology/league> <http://dbpedia.org/resource/Premier_League> .\n?league <http://dbpedia.org/ontology/team> ?team .\n?uri <http://dbpedia.org/ontology/team> ?team .\n?uri <http://dbpedia.org/ontology/birthDate> ?date .\n",
+        "selected_triples_strings": [
+            "?x0 <http://dbpedia.org/property/league> <http://dbpedia.org/resource/Premier_League> .\n?x0 <http://dbpedia.org/ontology/team> <http://dbpedia.org/resource/Arsenal_F.C.> .\n?x1 <http://dbpedia.org/property/youthclubs> <http://dbpedia.org/resource/Arsenal_F.C.> .\n?x1 <http://dbpedia.org/property/birthDate> ?x2 .",
+            "?x0 <http://dbpedia.org/property/league> <http://dbpedia.org/resource/Premier_League> .\n?x0 <http://dbpedia.org/ontology/team> <http://dbpedia.org/resource/Arsenal_F.C.> .\n<http://dbpedia.org/resource/Arsenal_F.C.> <http://dbpedia.org/property/name> ?x1 .\n?x1 <http://dbpedia.org/property/birthDate> ?x2 .",
+            "?x0 <http://dbpedia.org/property/league> <http://dbpedia.org/resource/Premier_League> .\n?x0 <http://dbpedia.org/property/team> ?x1 .\n?x2 <http://dbpedia.org/property/currentclub> ?x1 .\n?x2 <http://dbpedia.org/property/birthDate> ?x3 ."
+        ]
+    },
+    {
+        "question": "Which instruments does Cat Stevens play?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://dbpedia.org/resource/Cat_Stevens",
+                "http://dbpedia.org/ontology/instrument",
+                "?uri"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://dbpedia.org/resource/Cat_Stevens",
+                    "http://dbpedia.org/property/instrument",
+                    "?x0"
+                ]
+            ],
+            [
+                [
+                    "http://dbpedia.org/resource/Cat_Stevens",
+                    "http://dbpedia.org/ontology/instrument",
+                    "?x0"
+                ]
+            ],
+            [
+                [
+                    "http://dbpedia.org/resource/Cat_Stevens",
+                    "http://dbpedia.org/property/notableInstruments",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://dbpedia.org/resource/Cat_Stevens> <http://dbpedia.org/ontology/instrument> ?uri .\n",
+        "selected_triples_strings": [
+            "<http://dbpedia.org/resource/Cat_Stevens> <http://dbpedia.org/property/instrument> ?x0 .",
+            "<http://dbpedia.org/resource/Cat_Stevens> <http://dbpedia.org/ontology/instrument> ?x0 .",
+            "<http://dbpedia.org/resource/Cat_Stevens> <http://dbpedia.org/property/notableInstruments> ?x0 ."
+        ]
+    },
+    {
+        "question": "Give me the capitals of all countries in Africa.",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "?country",
+                "http://purl.org/dc/terms/subject",
+                "http://dbpedia.org/resource/Category:Countries_in_Africa"
+            ],
+            [
+                "?country",
+                "http://dbpedia.org/ontology/capital",
+                "?uri"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "?x0",
+                    "http://dbpedia.org/ontology/wikiPageWikiLink",
+                    "http://dbpedia.org/resource/Category:Countries_in_Africa"
+                ],
+                [
+                    "?x0",
+                    "http://dbpedia.org/property/capital",
+                    "?x1"
+                ]
+            ],
+            [
+                [
+                    "?x0",
+                    "http://dbpedia.org/ontology/wikiPageWikiLink",
+                    "http://dbpedia.org/resource/Category:Countries_in_Africa"
+                ],
+                [
+                    "?x0",
+                    "http://dbpedia.org/ontology/capital",
+                    "?x1"
+                ]
+            ],
+            [
+                [
+                    "http://dbpedia.org/resource/Category:Countries_in_Africa",
+                    "http://purl.org/dc/terms/subject",
+                    "?x0"
+                ],
+                [
+                    "?x0",
+                    "http://dbpedia.org/property/capital",
+                    "?x1"
+                ]
+            ],
+            [
+                [
+                    "http://dbpedia.org/resource/Category:Countries_in_Africa",
+                    "http://purl.org/dc/terms/subject",
+                    "?x0"
+                ],
+                [
+                    "?x0",
+                    "http://dbpedia.org/ontology/capital",
+                    "?x1"
+                ]
+            ]
+        ],
+        "correct_triples_string": "?country <http://purl.org/dc/terms/subject> <http://dbpedia.org/resource/Category:Countries_in_Africa> .\n?country <http://dbpedia.org/ontology/capital> ?uri .\n",
+        "selected_triples_strings": [
+            "?x0 <http://dbpedia.org/ontology/wikiPageWikiLink> <http://dbpedia.org/resource/Category:Countries_in_Africa> .\n?x0 <http://dbpedia.org/property/capital> ?x1 .",
+            "?x0 <http://dbpedia.org/ontology/wikiPageWikiLink> <http://dbpedia.org/resource/Category:Countries_in_Africa> .\n?x0 <http://dbpedia.org/ontology/capital> ?x1 .",
+            "<http://dbpedia.org/resource/Category:Countries_in_Africa> <http://purl.org/dc/terms/subject> ?x0 .\n?x0 <http://dbpedia.org/property/capital> ?x1 .",
+            "<http://dbpedia.org/resource/Category:Countries_in_Africa> <http://purl.org/dc/terms/subject> ?x0 .\n?x0 <http://dbpedia.org/ontology/capital> ?x1 ."
+        ]
+    },
+    {
+        "question": "How many companies were founded by the founder of Facebook?",
+        "found": false,
+        "macro_f1": 0.0,
+        "correct_path": [
+            [
+                "http://dbpedia.org/resource/Facebook",
+                "http://dbpedia.org/ontology/foundedBy",
+                "?uri"
+            ],
+            [
+                "?x",
+                "http://dbpedia.org/ontology/foundedBy",
+                "?uri"
+            ]
+        ],
+        "selected_paths": [],
+        "correct_triples_string": "<http://dbpedia.org/resource/Facebook> <http://dbpedia.org/ontology/foundedBy> ?uri .\n?x <http://dbpedia.org/ontology/foundedBy> ?uri .\n",
+        "selected_triples_strings": []
+    },
+    {
+        "question": "Which book has the most pages?",
+        "found": false,
+        "macro_f1": 0.0,
+        "correct_path": [
+            [
+                "?uri",
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+                "http://dbpedia.org/ontology/Book"
+            ],
+            [
+                "?uri",
+                "http://dbpedia.org/ontology/numberOfPages",
+                "?n"
+            ]
+        ],
+        "selected_paths": [],
+        "correct_triples_string": "?uri <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Book> .\n?uri <http://dbpedia.org/ontology/numberOfPages> ?n .\n",
+        "selected_triples_strings": []
+    }
+]

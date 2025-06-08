@@ -1,0 +1,80 @@
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX up: <http://purl.uniprot.org/core/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT
+  ?id
+  (SAMPLE(?label) AS ?main_label)
+  (GROUP_CONCAT(DISTINCT ?alias; SEPARATOR=";;;") AS ?aliases)
+WHERE {
+  # Get ids and their frequencies for score
+  {
+    SELECT ?id (SUM(?freq) AS ?total_freq) WHERE {
+      {
+        SELECT ?id ("SUB" AS ?pos) (COUNT(?id) AS ?freq) WHERE {
+          ?id rdf:type ?type 
+          FILTER(?type IN (
+            owl:Class, 
+            owl:DatatypeProperty, 
+            up:Taxon, 
+            up:Database, 
+            up:Concept, 
+            up:Enzyme, 
+            up:Proteome, 
+            up:Chromosome
+          ))
+          ?id ?p ?o 
+        } GROUP BY ?id 
+      } UNION {
+        SELECT ?id ("OBJ" AS ?pos) (COUNT(?id) AS ?freq) WHERE {
+          ?id rdf:type ?type 
+          FILTER(?type IN (
+            owl:Class, 
+            owl:DatatypeProperty, 
+            up:Taxon, 
+            up:Database, 
+            up:Concept, 
+            up:Enzyme, 
+            up:Proteome, 
+            up:Chromosome
+          ))
+          ?s ?p ?id .
+          FILTER(ISIRI(?id)) 
+        } GROUP BY ?id
+      }
+    } GROUP BY ?id
+  }
+
+  # Filter ids
+  ?id rdf:type ?type 
+  FILTER(?type IN (
+    owl:Class, 
+    owl:DatatypeProperty, 
+    up:Taxon, 
+    up:Database, 
+    up:Concept, 
+    up:Enzyme, 
+    up:Proteome, 
+    up:Chromosome
+  ))
+
+  # Get label
+  OPTIONAL {
+    ?id rdfs:label ?label
+  }
+
+  # Get aliases
+  OPTIONAL {
+    { ?id up:scientificName ?alias }
+    UNION { ?id up:otherName ?alias }
+    UNION { ?id up:commonName ?alias }
+    UNION { ?id up:mnemonic ?alias }
+    UNION { ?id up:synonym ?alias }
+    UNION { ?id <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> ?alias }
+    UNION { ?id <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> ?alias }
+  }
+}
+GROUP BY ?id
+ORDER BY DESC(MAX(?total_freq))

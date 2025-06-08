@@ -1,0 +1,20 @@
+PREFIX osmkey: <https://www.openstreetmap.org/wiki/Key:>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT
+  ?id
+  (GROUP_CONCAT(DISTINCT ?info; SEPARATOR=";;;") AS ?infos)
+WHERE {
+  # Get additional information
+  {
+    VALUES ?id { {IDS} }
+    ?id osmkey:admin_title ?info
+  } UNION {
+    VALUES ?id { {IDS} }
+    ?id osmkey:description ?info
+  } UNION {
+    VALUES ?id { {IDS} }
+    ?id osmkey:amenity ?info
+  }
+}
+GROUP BY ?id

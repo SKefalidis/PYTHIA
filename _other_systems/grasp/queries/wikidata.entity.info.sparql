@@ -1,0 +1,31 @@
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <http://schema.org/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+
+SELECT
+  ?id
+  (GROUP_CONCAT(DISTINCT ?info; SEPARATOR=";;;") AS ?infos)
+WHERE {
+  # Get additional information
+  { 
+    VALUES ?id { {IDS} }
+    ?id schema:description ?info
+    FILTER(LANGMATCHES(LANG(?info), "en"))
+  } UNION {
+    VALUES ?id { {IDS} }
+    ?id wdt:P279/rdfs:label ?supclass
+    FILTER(LANGMATCHES(LANG(?supclass), "en"))
+    BIND(CONCAT("is subclass of ", ?supclass) AS ?info)
+  } UNION {
+    VALUES ?id { {IDS} }
+    ?id wdt:P31/rdfs:label ?inst
+    FILTER(LANGMATCHES(LANG(?inst), "en"))
+    BIND(CONCAT("is instance of ", ?inst) AS ?info)
+  } UNION { 
+    VALUES ?id { {IDS} }
+    ?id wdt:P106/rdfs:label ?job
+    FILTER(LANGMATCHES(LANG(?job), "en"))
+    BIND(CONCAT("has occupation ", ?job) AS ?info)
+  }
+}
+GROUP BY ?id

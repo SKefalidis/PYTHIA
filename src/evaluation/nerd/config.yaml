@@ -1,0 +1,31 @@
+webqsp:
+  path: ../../../datasets/webqsp/data/WebQSP.test_clean.json
+  index_name: freebase
+
+cwq:
+  path: ../../../datasets/cwq/cwq_test.json
+  index_name: freebase
+
+graphq:
+  path: ../../../datasets/graphq/test.json
+  index_name: freebase
+
+grailqa:
+  path: ../../../datasets/grailqa/dev.json
+  index_name: freebase
+
+qald9:
+  path: ../../../datasets/qald_9/qald_9_test.json
+  index_name: dbpedia10
+
+qald10:
+  path: ../../../datasets/qald_10/qald_10.json
+  index_name: wikidata
+
+lc_quad_1:
+  path: ../../../datasets/lc_quad_1/lc_quad_1_test-data.json
+  index_name: dbpedia2016
+
+beastiary:
+  path: ../../../datasets/beastiary/beastiary_with_qald_format.json
+  index_name: beastiary

@@ -1,0 +1,1230 @@
+[
+    {
+        "question": "which creatures not speaking draconic language do have chaotic good alignment?",
+        "query": "SELECT ?creatures WHERE {  ?creatures <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasAlignment> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#chaoticGood> MINUS{?creatures <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#DraconicL>} }",
+        "answers": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Anhana",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Ataxian",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Azruverda",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#BattleImp",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Biofreezer",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#BlackButterfly",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Cayhound",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Caypup",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Celedeen",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Cynosoma",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Djinni",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Domovoi",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Dryad",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#ElysianTitan",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Faun",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#FungalNymph",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Gancanagh",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Garuda",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Hamadryad",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#HeraldofDreams",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Munavri",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Muse",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Nisid",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#NobleDjinniVizier",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Nymph",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#RiftFlumph",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#RimefireEidolon",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#SapphireOoze",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#SkirmishersTroop",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#StarMonarch",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#SwanMaiden",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Taniwha",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Unicorn",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#WoodGiant",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#caypup"
+        ],
+        "topic_entities": {
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#DraconicL": "DraconicL",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#chaoticGood": "chaoticGood"
+        }
+    },
+    {
+        "question": "does Caypup have more special abilities than Aasimar?",
+        "query": "SELECT (if(COUNT(?cay_SpecAbils)>COUNT(?aas_SpecAbils), 'True', 'False') as ?res) WHERE {  <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#caypup> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasSpecAbils> ?cay_SpecAbils. <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#aasimar> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasSpecAbils> ?aas_SpecAbils }",
+        "answers": false,
+        "topic_entities": {
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#caypup": "caypup",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#aasimar": "aasimar"
+        }
+    },
+    {
+        "question": "how many creatures with non-neutral alignment do speak treant language?",
+        "query": "SELECT (COUNT(?creatures) as ?n_creatures) WHERE {  ?creatures <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#TreantL> MINUS{?creatures <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasAlignment> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#trueNeutral>} MINUS{?creatures <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasAlignment> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#chaoticNeutral>} MINUS{?creatures <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasAlignment> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#lawfulNeutral>} }",
+        "answers": [
+            "4"
+        ],
+        "topic_entities": {
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#lawfulNeutral": "lawfulNeutral",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#chaoticNeutral": "chaoticNeutral",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#TreantL": "TreantL",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#trueNeutral": "trueNeutral"
+        }
+    },
+    {
+        "question": "what spells Aasimar and Caypup do have in common?",
+        "query": "SELECT ?common_spells WHERE { <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#aasimar> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#canSpell> ?common_spells. <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#caypup> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#canSpell> ?common_spells }",
+        "answers": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#stabilize"
+        ],
+        "topic_entities": {
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#caypup": "caypup",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#aasimar": "aasimar"
+        }
+    },
+    {
+        "question": "is the number of creatures speaking both abyssal and aklo languages greater than infernal and terran?",
+        "query": "SELECT (if(?n_creatures_1>?n_creatures_2, 'True', 'False') as ?res) WHERE {  {SELECT (COUNT(?creatures_1) as ?n_creatures_1) WHERE { ?creatures_1 <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#AbyssalL>; <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#AkloL>}} {SELECT (COUNT(?creatures_2) as ?n_creatures_2) WHERE { ?creatures_2 <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#InfernalL>; <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#TerranL>}} }",
+        "answers": true,
+        "topic_entities": {
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#TerranL": "TerranL",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#AkloL": "AkloL",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#InfernalL": "InfernalL",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#AbyssalL": "AbyssalL"
+        }
+    },
+    {
+        "question": "what is the most common alignment type?",
+        "query": "SELECT ?Alignment WHERE { ?subjects <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasAlignment> ?Alignment } GROUP BY ?Alignment ORDER BY DESC (COUNT(?Alignment)) LIMIT 1",
+        "answers": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#trueNeutral"
+        ],
+        "topic_entities": {}
+    },
+    {
+        "question": "how many types of robots are among creatures?",
+        "query": "SELECT (COUNT(?creatures) as ?n_robots)  WHERE {  ?creatures <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast>  FILTER regex(str(?creatures), 'robot', 'i' )  }",
+        "answers": [
+            "8"
+        ],
+        "topic_entities": {
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast": "Beast"
+        }
+    },
+    {
+        "question": "is there any type of troll with good alignment?",
+        "query": "ASK   WHERE {   ?creatures <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasAlignment> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#chaoticGood>; <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasAlignment> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#neutralGood>; <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasAlignment> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#lawfulGood> FILTER regex(str(?creatures), 'troll', 'i') }",
+        "answers": false,
+        "topic_entities": {
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#neutralGood": "neutralGood",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#lawfulGood": "lawfulGood",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#chaoticGood": "chaoticGood"
+        }
+    },
+    {
+        "question": "are creatures with good alignment more common than evil?",
+        "query": "SELECT ?res  WHERE {  {SELECT (COUNT(?good) as ?n_good)  WHERE{  ?creatures <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasAlignment> ?Alignment  BIND(str(?Alignment) as ?good)  FILTER regex(?good, 'good', 'i')} }  {SELECT (COUNT(?evil) as ?n_evil)  WHERE{ ?creatures <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasAlignment> ?Alignment  BIND(str(?Alignment) as ?evil)  FILTER regex(?evil, 'evil', 'i')} }  BIND(if((?n_good>?n_evil), 'True', 'False') as ?res)  }",
+        "answers": false,
+        "topic_entities": {}
+    },
+    {
+        "question": "what creatures do have cold resist?",
+        "query": "SELECT  DISTINCT ?creatures WHERE { ?creatures <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasResists> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#cold> }",
+        "answers": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#aasimar"
+        ],
+        "topic_entities": {
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#cold": "cold"
+        }
+    },
+    {
+        "question": "what percentage of dragons do speak both draconic and common languages?",
+        "query": "SELECT ((?n_dragon_with_languages/?n_dragons)*100 as ?percentage) WHERE { {SELECT (COUNT(DISTINCT(?dragon)) as ?n_dragons) WHERE {  ?creatures <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast>; <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages> ?language BIND(str(?creatures) as ?dragon) FILTER regex(?dragon,'dragon', 'i')}} {SELECT (COUNT(DISTINCT(?dragon_with_languages)) as ?n_dragon_with_languages) WHERE {  ?creatures <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#DraconicL>; <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#CommonL> BIND(str(?creatures) as ?dragon_with_languages) FILTER regex(?dragon_with_languages,'dragon', 'i')}} }",
+        "answers": [
+            "89.25373134328358208955223881"
+        ],
+        "topic_entities": {
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast": "Beast",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#DraconicL": "DraconicL",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#CommonL": "CommonL"
+        }
+    },
+    {
+        "question": "what are the top-5 languages by popularity among creatures?",
+        "query": "SELECT ?top5_languages WHERE { ?creatures <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages> ?top5_languages } GROUP BY ?top5_languages ORDER BY DESC (COUNT(?top5_languages)) LIMIT 5",
+        "answers": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#CommonL",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#DraconicL",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#AbyssalL",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#InfernalL",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#CelestialL"
+        ],
+        "topic_entities": {}
+    },
+    {
+        "question": "do dragons in average speak more languages than demons?",
+        "query": "SELECT (if(AVG(?drag_n_lang)>AVG(?dem_n_lang), 'True', 'False') as ?res) WHERE { {SELECT (COUNT(?language_1) as ?drag_n_lang)  WHERE {   ?creatures_1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast>;  <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages> ?language_1  FILTER regex(str(?creatures_1),'dragon', 'i')} GROUP BY ?creatures_1} {SELECT (COUNT(?language_2) as ?dem_n_lang)  WHERE {   ?creatures_2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast>;  <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages> ?language_2  FILTER regex(str(?creatures_2),'demon', 'i')} GROUP BY ?creatures_2} }",
+        "answers": true,
+        "topic_entities": {
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast": "Beast"
+        }
+    },
+    {
+        "question": "what creatures do speak both common and undercommon languages?",
+        "query": "SELECT ?creatures WHERE { ?creatures <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#CommonL>; <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#UndercommonL> }",
+        "answers": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Aatheriexa",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#AcidNaga",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#AddictionDevilAtropocustra",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#AdultCrystalDragon",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#AdultUmbralDragon",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#AdvancedNightwing",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Amanusya",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#AncientCrystalDragon",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#AncientUmbralDragon",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Arach",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Arcadex",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Avatarana",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#AxiomiteGraveknight",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Azruverda",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#BaphometDemonLordofBeasts",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#BloodQueen",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#BonepowderGhoul",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#CaizelDeposedQueenofSuccubi",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#CandlestoneCourtier",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#CaulbornThoughtkeeper",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Chelarac",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#ChrestomathCaulborn",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#ClawedKadian",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Colliatur",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#ConquerorWorm",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#ContractDevilPhistophilus",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#CorpseOrgy",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#CrystalDragonGreatWyrm",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#CrystalDragonJuvenile",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#CrystalDragonMatureAdult",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#CrystalDragonOld",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#CrystalDragonVeryOld",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#CrystalDragonWyrm",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#CrystalDragonYoungAdult",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Dandasuka",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Deathhand",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#DegenerateSerpentfolk",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#DemiLich",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Duergar",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#DuergarTyrant",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#D\u00f8delig",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#ElderWyrm",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#ErinatGremlin",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Euryale",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#EyeEater",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#FetidSporeMound",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#FleshdollRogue",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#FormianQueen",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#FungalNymph",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#FungusQueen",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Gearghost",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Gitwerc",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#HeraldofHell",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Hyakume",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Lampad",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#LichPsychic",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Maharaja",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Mannstirge",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Marai",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Mongrelman",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Mothman",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#MuSpore",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Nocticula",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Nulmind",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Omnipath",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#OphiduanHominisCaste",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Orsatka",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Plizeazoth",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Polevik",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Psoglav",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Rakshasa",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Raktavarna",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Serpentfolk",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#SerpentfolkReclaimer",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#SkeletalMage",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Skulk",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#SlaadLordOfEntropy",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#SlaadLordOfTheInsane",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Sthenno",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#StirgeDemon",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Taniniver",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Tataka",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#TheInfernalDuke",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Tonberry",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Trapper",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#UmbralDragonGreatWyrm",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#UmbralDragonJuvenile",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#UmbralDragonMatureAdult",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#UmbralDragonOld",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#UmbralDragonVeryOld",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#UmbralDragonVeryYoung",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#UmbralDragonWyrm",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#UmbralDragonYoungAdult",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Uniila",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#VaultGiant",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#VeiledMaster",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#VeparDukeofDagon",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#VerminLord",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Yig",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#YoungUmbralDragon",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Zalyakavat"
+        ],
+        "topic_entities": {
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#UndercommonL": "UndercommonL",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#CommonL": "CommonL"
+        }
+    },
+    {
+        "question": "how many creatures do speak abyssal, sylvan and elven languages?",
+        "query": "SELECT (COUNT(?creatures) as ?n_creatures) WHERE { ?creatures <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#AbyssalL>; <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#SylvanL>; <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#ElvenL> }",
+        "answers": [
+            "5"
+        ],
+        "topic_entities": {
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#SylvanL": "SylvanL",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#ElvenL": "ElvenL",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#AbyssalL": "AbyssalL"
+        }
+    },
+    {
+        "question": "is there any type of zombie with chaotic evil or chaotic neutral alignment?",
+        "query": "SELECT (if(?n_zombies_1+?n_zombies_2 > 0, 'True', 'False') as ?res) WHERE {    {SELECT (COUNT(?creatures_1) as ?n_zombies_1) WHERE {  ?creatures_1 <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasAlignment> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#chaoticEvil>.   FILTER (regex(str(?creatures_1), 'zombie', 'i' ))}} {SELECT (COUNT(?creatures_2) as ?n_zombies_2) WHERE {  ?creatures_2 <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasAlignment> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#chaoticNeutral>.   FILTER (regex(str(?creatures_2), 'zombie', 'i' ))}} }",
+        "answers": true,
+        "topic_entities": {
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#chaoticEvil": "chaoticEvil",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#chaoticNeutral": "chaoticNeutral"
+        }
+    },
+    {
+        "question": "does Trox speak more languages than Sunlord?",
+        "query": "SELECT (if((COUNT(?trox_lang) > COUNT(?sunlord_lang)), 'True', 'False') as ?res)   WHERE {   <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Trox> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages> ?trox_lang.  <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Sunlord> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages> ?sunlord_lang}",
+        "answers": false,
+        "topic_entities": {
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Sunlord": "Sunlord",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Trox": "Trox"
+        }
+    },
+    {
+        "question": "does Einherji and Balor have any common language?",
+        "query": "ASK WHERE {  <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Einherji> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages> ?common_language.  <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Balor> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages> ?common_language }",
+        "answers": true,
+        "topic_entities": {
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Balor": "Balor",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Einherji": "Einherji"
+        }
+    },
+    {
+        "question": "how many creatures with lawful neutral alignment can speak giant language?",
+        "query": "SELECT (COUNT(?creatures) as ?n_creatures) WHERE {  ?creatures <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasAlignment> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#lawfulNeutral>.  ?creatures <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#GiantL>}",
+        "answers": [
+            "7"
+        ],
+        "topic_entities": {
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#lawfulNeutral": "lawfulNeutral",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#GiantL": "GiantL"
+        }
+    },
+    {
+        "question": "which ogres with lawful evil alignment can speak common language?",
+        "query": "SELECT ?ogres  WHERE {   ?ogres <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#CommonL>;  <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasAlignment> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#lawfulEvil>  FILTER regex(str(?ogres), 'ogre', 'i') }",
+        "answers": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#OgreMage"
+        ],
+        "topic_entities": {
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#lawfulEvil": "lawfulEvil",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#CommonL": "CommonL"
+        }
+    },
+    {
+        "question": "what is the second most common alignment type for spiders?",
+        "query": "SELECT ?Alignment  WHERE {  ?spiders <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast>; <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasAlignment> ?Alignment FILTER regex(str(?spiders), 'spider', 'i') } GROUP BY ?Alignment ORDER BY DESC(COUNT(?Alignment)) OFFSET 1 LIMIT 1",
+        "answers": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#chaoticEvil"
+        ],
+        "topic_entities": {
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast": "Beast"
+        }
+    },
+    {
+        "question": "what alignment type is the most common for elementals?",
+        "query": "SELECT ?Alignment WHERE {  ?elementals <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast>; <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasAlignment> ?Alignment FILTER regex(str(?elementals), 'elemental', 'i') } GROUP BY ?Alignment ORDER BY DESC(COUNT(?Alignment)) LIMIT 1",
+        "answers": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#trueNeutral"
+        ],
+        "topic_entities": {
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast": "Beast"
+        }
+    },
+    {
+        "question": "what alignment type is the rarest for creatures speaking auran language?",
+        "query": "SELECT ?Alignment  WHERE {   ?creatures <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#AuranL>;  <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasAlignment> ?Alignment}  GROUP BY ?Alignment  ORDER BY ASC(COUNT(?Alignment))  LIMIT 1 ",
+        "answers": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#neutralGood"
+        ],
+        "topic_entities": {
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#AuranL": "AuranL"
+        }
+    },
+    {
+        "question": "do skeletons have a greater percentage of true neutral alignment than zombies?",
+        "query": "SELECT (if((?skeleton_percentage > ?zombie_precentage), 'True', 'False') as ?res) WHERE {  {SELECT (COUNT(?skeletons) as ?n_skeletons) WHERE{ ?skeletons <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast>. FILTER regex(str(?skeletons), 'skelet', 'i')} } {SELECT (COUNT(?skeletons) as ?n_neutral_skeletons) WHERE{ ?skeletons <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasAlignment> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#trueNeutral> FILTER regex(str(?skeletons), 'skelet', 'i')} } BIND((?n_neutral_skeletons/?n_skeletons) as ?skeleton_percentage) {SELECT (COUNT(?zombies) as ?n_zombies) WHERE{ ?zombies <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast>. FILTER regex(str(?zombies), 'zombie', 'i')} } {SELECT (COUNT(?zombies) as ?n_neutral_zombies) WHERE{ ?zombies <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasAlignment> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#trueNeutral> FILTER regex(str(?zombies), 'zombie', 'i')} } BIND((?n_neutral_zombies/?n_zombies) as ?zombie_precentage) }",
+        "answers": false,
+        "topic_entities": {
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast": "Beast",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#trueNeutral": "trueNeutral"
+        }
+    },
+    {
+        "question": "do raven and ghoul have the same alignment?",
+        "query": "SELECT (if((?raven_alignment = ?ghoul_alignment), 'True', 'False') as ?res) WHERE {   <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Raven> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasAlignment> ?raven_alignment.  <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Ghoul> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasAlignment> ?ghoul_alignment  }",
+        "answers": false,
+        "topic_entities": {
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Ghoul": "Ghoul",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Raven": "Raven"
+        }
+    },
+    {
+        "question": "what percentage of wolves does have chaotic alignment?",
+        "query": "SELECT ((?n_chaotic_wolves/?n_wolves)*100 as ?res) WHERE {   {SELECT (COUNT(?wolves) as ?n_wolves) WHERE { ?wolves <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast> FILTER regex(str(?wolves), 'wolf', 'i') }} {SELECT (COUNT(?chaotic_wolves) as ?n_chaotic_wolves) WHERE { ?chaotic_wolves <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasAlignment> ?Alignment FILTER regex(str(?chaotic_wolves), 'wolf', 'i') FILTER regex(str(?Alignment), 'chaotic', 'i') }} }",
+        "answers": [
+            "31.57894736842105263157894737"
+        ],
+        "topic_entities": {
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast": "Beast"
+        }
+    },
+    {
+        "question": "what percentage of angels does speak aquan language?",
+        "query": "SELECT ((?n_aquan_angels/?n_angels)*100 as ?res) WHERE {   {SELECT (COUNT(?angels) as ?n_angels) WHERE { ?angels <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast> FILTER regex(str(?angels), 'angel', 'i') }} {SELECT (COUNT(?aquan_angels) as ?n_aquan_angels) WHERE { ?aquan_angels <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#AquanL> FILTER regex(str(?aquan_angels), 'angel', 'i') }} }",
+        "answers": [
+            "0"
+        ],
+        "topic_entities": {
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast": "Beast",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#AquanL": "AquanL"
+        }
+    },
+    {
+        "question": "what is an average number of languages for creatures?",
+        "query": "SELECT (AVG(?n_languages) as ?res) WHERE { SELECT (COUNT(?language) as ?n_languages) WHERE { ?creatures <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast>; <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages> ?language } GROUP BY ?creatures }",
+        "answers": [
+            "2.501188589540412044374009509"
+        ],
+        "topic_entities": {
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast": "Beast"
+        }
+    },
+    {
+        "question": "what is the maximum value for the numerical offensive attribute?",
+        "query": "SELECT (MAX(?values) as ?max_value) WHERE { ?off_attr <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#offValues>; <http://www.w3.org/2000/01/rdf-schema#range> ?data_type. FILTER(?data_type != xsd:boolean) ?creatures ?off_attr ?values }",
+        "answers": [
+            "180"
+        ],
+        "topic_entities": {
+            "http://www.w3.org/2001/XMLSchema#boolean": "boolean",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#offValues": "offValues"
+        }
+    },
+    {
+        "question": "is Sangudaemon faster than Eblis?",
+        "query": "SELECT (if(?speed_1 > ?speed_2, 'True', 'False') as ?res) WHERE {<http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Sangudaemon> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasSpeedValue> ?speed_1. <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Eblis> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasSpeedValue> ?speed_2 }",
+        "answers": false,
+        "topic_entities": {
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Eblis": "Eblis",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Sangudaemon": "Sangudaemon"
+        }
+    },
+    {
+        "question": "what is the mean speed value for spiders?",
+        "query": "SELECT (AVG(?speed) as ?res) WHERE { ?spiders <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast>; <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasSpeedValue> ?speed FILTER regex(str(?spiders), 'spider', 'i') }",
+        "answers": [
+            "32.42424242424242424242424242"
+        ],
+        "topic_entities": {
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast": "Beast"
+        }
+    },
+    {
+        "question": "what are top 5 by speed chaotic evil creatures?",
+        "query": "SELECT ?creatures WHERE { ?creatures <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasAlignment> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#chaoticEvil>; <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasSpeedValue> ?speed } ORDER BY DESC(?speed) LIMIT 5",
+        "answers": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Quickling",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#ThePrinceofHell",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Hastur",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#MythicNelbarzothMR",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Varklops"
+        ],
+        "topic_entities": {
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#chaoticEvil": "chaoticEvil"
+        }
+    },
+    {
+        "question": "what are creatures speaking sphinx language with speed value more than 20?",
+        "query": "SELECT ?creatures WHERE { ?creatures <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#SphinxL>; <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasSpeedValue> ?speed . FILTER (?speed > 20) }",
+        "answers": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Androsphinx",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Criosphinx",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#GrogrisantMR"
+        ],
+        "topic_entities": {
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#SphinxL": "SphinxL"
+        }
+    },
+    {
+        "question": "what values of health points are related to creatures with the lowest level?",
+        "query": "SELECT DISTINCT ?HP WHERE { ?creatures <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast>; <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLevel> ?level; <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasHPValue> ?HP } GROUP BY ?level ?HP HAVING (?level = MIN(?level))",
+        "answers": [
+            "11"
+        ],
+        "topic_entities": {
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast": "Beast"
+        }
+    },
+    {
+        "question": "what is the maximum value of health point for creatures with chaotic good alignment?",
+        "query": "SELECT (MAX(?HP) as ?max_HP)  WHERE {  ?creatures <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasAlignment> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#chaoticGood>;  <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasHPValue> ?HP }",
+        "answers": [
+            "22"
+        ],
+        "topic_entities": {
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#chaoticGood": "chaoticGood"
+        }
+    },
+    {
+        "question": "what values of experience points are related to creatures with the highest level?",
+        "query": "SELECT DISTINCT ?XP WHERE {  ?creatures <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast>;  <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLevel> ?level;  <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasXPValue> ?XP  }  GROUP BY ?level ?XP  HAVING (?level = MAX(?level))",
+        "answers": [
+            "200"
+        ],
+        "topic_entities": {
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast": "Beast"
+        }
+    },
+    {
+        "question": "what is the average challenge rating for creatures speaking celestial language?",
+        "query": "SELECT (AVG(?CR) as ?avg_CR)  WHERE {   ?creatures <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#CelestialL>;   <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasCRValue> ?CR}",
+        "answers": [
+            "12.858513189448441"
+        ],
+        "topic_entities": {
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#CelestialL": "CelestialL"
+        }
+    },
+    {
+        "question": "which elemental creatures do have a challenge rating more than 10?",
+        "query": "SELECT ?elementals  WHERE {  ?elementals <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast>; <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasCRValue> ?CR  FILTER regex(str(?elementals), 'elemental', 'i') FILTER (?CR > 10) }",
+        "answers": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#AirElementalConstruct",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#ElderAetherElemental",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#ElderNegativeEnergyElemental",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#ElementalAirDragon",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#ElementalEarthDragon",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#ElementalFireDragon",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#MagmaElementalRamCR",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#RoyalTimeElemental"
+        ],
+        "topic_entities": {
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast": "Beast"
+        }
+    },
+    {
+        "question": "what creatures speaking terran language do have an initiative value more than 2 and less than 5?",
+        "query": "SELECT ?creatures   WHERE {   ?creatures <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#TerranL>;  <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasInitValue> ?Init FILTER (?Init > 2 && ?Init < 5) } ",
+        "answers": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#AdultSilverDragon",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#AncientBlueDragonRavener"
+        ],
+        "topic_entities": {
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#TerranL": "TerranL"
+        }
+    },
+    {
+        "question": "what is the minimum non-negative initiative value for creatures with true neutral alignment?",
+        "query": "SELECT (MIN(?Init) as ?min_Init)  WHERE {   ?creatures <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasAlignment> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#trueNeutral>;  <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasInitValue> ?Init   FILTER (?Init >= 0) }",
+        "answers": [
+            "0"
+        ],
+        "topic_entities": {
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#trueNeutral": "trueNeutral"
+        }
+    },
+    {
+        "question": "what are top 3 golem types by experience points?",
+        "query": "SELECT ?golems WHERE {  ?golems <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast>; <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasXPValue> ?XP  FILTER regex(str(?golems), 'golem', 'i') }  ORDER BY DESC(?XP) LIMIT 3",
+        "answers": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#MagebaneGolem",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#HellEngineAdamantineGolem",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#QuantiumGolem"
+        ],
+        "topic_entities": {
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast": "Beast"
+        }
+    },
+    {
+        "question": "is Abaia superior to vampires in terms of base attributes?",
+        "query": "SELECT (if ((?n_greater/?n_base_attr) > 0.5, 'True', 'False') as ?res) WHERE {  {SELECT (COUNT(?comp) as ?n_greater)   WHERE { ?base_attr rdfs:subPropertyOf <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#base>. <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Abaia> ?base_attr ?ab_attr. <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Vampire> ?base_attr ?vamp_attr. BIND(if ((?ab_attr > ?vamp_attr), 1, 0) as ?comp) FILTER (?comp = 1)}} {SELECT (COUNT(?base_attr) as ?n_base_attr)  WHERE{?base_attr <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#base>.}} }",
+        "answers": true,
+        "topic_entities": {
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#base": "base",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Vampire": "Vampire",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Abaia": "Abaia"
+        }
+    },
+    {
+        "question": "is Dhampir superior to Gorgon in terms of mean base attributes?",
+        "query": "SELECT (if ((AVG(?dham_attr) > AVG(?gorg_attr)), 'True', 'False') as ?res) WHERE { ?base_attr <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#base>. <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Dhampir> ?base_attr ?dham_attr. <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Gorgon> ?base_attr ?gorg_attr. }",
+        "answers": false,
+        "topic_entities": {
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Dhampir": "Dhampir",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Gorgon": "Gorgon",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#base": "base"
+        }
+    },
+    {
+        "question": "is Boggard superior to Selkie in terms of deffencive attributes?",
+        "query": "SELECT (if ((?n_greater/?n_def_attr) > 0.5, 'True', 'False') as ?res) WHERE {  {SELECT (COUNT(?comp) as ?n_greater)   WHERE { ?def_attr <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#defValues>. <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Boggard> ?def_attr ?bog_attr. <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Selkie> ?def_attr ?selk_attr. BIND(if (?bog_attr > ?selk_attr, 1, 0) as ?comp) FILTER (?comp = 1)}} {SELECT (COUNT(?def_attr) as ?n_def_attr)  WHERE{?def_attr <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#defValues>.}} }",
+        "answers": false,
+        "topic_entities": {
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Boggard": "Boggard",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#defValues": "defValues",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Selkie": "Selkie"
+        }
+    },
+    {
+        "question": "is Centaur superior to Medusa in terms of mean defensive attributes?",
+        "query": "SELECT (if ((AVG(?cent_attr) > AVG(?med_attr)), 'True', 'False') as ?res) WHERE { ?def_attr <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#defValues>. <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Centaur> ?def_attr ?cent_attr. <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Medusa> ?def_attr ?med_attr.}",
+        "answers": false,
+        "topic_entities": {
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Centaur": "Centaur",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#defValues": "defValues",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Medusa": "Medusa"
+        }
+    },
+    {
+        "question": "is Biclops superior to Mastodon in terms of statistics sum?",
+        "query": "SELECT (if ((SUM(?bicl_stats) > SUM(?mast_stats)), 'True', 'False') as ?res) WHERE { ?stats <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#statistics>. <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Biclops> ?stats ?bicl_stats. <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Mastodon> ?stats ?mast_stats. }",
+        "answers": true,
+        "topic_entities": {
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Mastodon": "Mastodon",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Biclops": "Biclops",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#statistics": "statistics"
+        }
+    },
+    {
+        "question": "is Satyr superior to Cacodaemon in terms of mean statistics?",
+        "query": "SELECT (if ((AVG(?satyr_stats) > AVG(?cacd_stats)), 'True', 'False') as ?res) WHERE { ?stats <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#statistics>. <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Satyr> ?stats ?satyr_stats. <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Cacodaemon> ?stats ?cacd_stats. }",
+        "answers": true,
+        "topic_entities": {
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Satyr": "Satyr",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Cacodaemon": "Cacodaemon",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#statistics": "statistics"
+        }
+    },
+    {
+        "question": "what is the dominant statistics for golems in average?",
+        "query": "SELECT ?stats  WHERE {  ?golems <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast>.  ?stats <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#statistics>.  FILTER regex(str(?golems), 'golem', 'i')  ?golems ?stats ?golem_stats.  } GROUP BY ?stats ORDER BY DESC(AVG(?golem_stats)) LIMIT 1",
+        "answers": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#str"
+        ],
+        "topic_entities": {
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast": "Beast",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#statistics": "statistics"
+        }
+    },
+    {
+        "question": "what is the lowest statistics in average for wolves?",
+        "query": "SELECT ?stats WHERE { ?wolfes <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast>. ?stats <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#statistics>. FILTER regex(str(?wolfes), 'wolf', 'i') ?wolfes ?stats ?wolf_stats } GROUP BY ?stats ORDER by ASC(AVG(?wolf_stats)) LIMIT 1",
+        "answers": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#int"
+        ],
+        "topic_entities": {
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast": "Beast",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#statistics": "statistics"
+        }
+    },
+    {
+        "question": "what is the dominant defencive attribute for skeletons in average?",
+        "query": "SELECT ?def_attr  WHERE {  ?skeletons <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast>.  ?def_attr <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#defValues>.  FILTER regex(str(?skeletons), 'skeleton', 'i')  ?skeletons ?def_attr ?skeletons_def_attr.  } GROUP BY ?def_attr ORDER BY DESC(AVG(?skeletons_def_attr)) LIMIT 1",
+        "answers": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasFlatFootedValue"
+        ],
+        "topic_entities": {
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast": "Beast",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#defValues": "defValues"
+        }
+    },
+    {
+        "question": "what is the lowest defensive attribute for ogres in average?",
+        "query": "SELECT ?def_attr  WHERE {  ?ogres <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast>.  ?def_attr <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#defValues>.  FILTER regex(str(?ogres), 'ogre', 'i')  ?ogres ?def_attr ?ogres_def_attr.  } GROUP BY ?def_attr ORDER BY DESC(AVG(?ogres_def_attr)) LIMIT 1",
+        "answers": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasFlatFootedValue"
+        ],
+        "topic_entities": {
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast": "Beast",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#defValues": "defValues"
+        }
+    },
+    {
+        "question": "does creatures have more offencive attributes than defencive?",
+        "query": "SELECT (if(COUNT(DISTINCT ?off_attr) > COUNT(DISTINCT ?def_attr), 'True', 'False') as ?res) WHERE {  ?off_attr <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#offValues>.  ?def_attr <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#defValues>.}",
+        "answers": false,
+        "topic_entities": {
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#defValues": "defValues",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#offValues": "offValues"
+        }
+    },
+    {
+        "question": "which creatures speaking aklo language do have the maximum attack parameter?",
+        "query": "SELECT ?creatures WHERE {  {SELECT (MAX(?atk) as ?max_atk) WHERE{?creatures <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#AkloL>;  <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#atk> ?atk}} ?creatures <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#AkloL>;  <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#atk> ?atk  FILTER (?atk = ?max_atk)}",
+        "answers": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Ymir"
+        ],
+        "topic_entities": {
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#AkloL": "AkloL"
+        }
+    },
+    {
+        "question": "what is the average attack parameter for robots?",
+        "query": "SELECT (AVG(?atk) as ?avg_atk) WHERE {  ?robots <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast>;  <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#atk> ?atk  FILTER regex(str(?robots), 'robot', 'i') }",
+        "answers": [
+            "9.5"
+        ],
+        "topic_entities": {
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast": "Beast"
+        }
+    },
+    {
+        "question": "how many creatures with neutral evil alignment do have combat maneuver bonus less than 4?",
+        "query": "SELECT (COUNT(?creatures) as ?n_creatures) WHERE {  ?creatures <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasAlignment> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#neutralEvil>;  <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#cmb> ?cmb  FILTER (?cmb < 4) }",
+        "answers": [
+            "88"
+        ],
+        "topic_entities": {
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#neutralEvil": "neutralEvil"
+        }
+    },
+    {
+        "question": "what is the minimum combat maneuver bonus for creatures speaking ignan language?",
+        "query": "SELECT (MIN(?cmb) as ?min_cmb) WHERE {  ?creatures <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#IgnanL>;  <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#cmb> ?cmb}",
+        "answers": [
+            "0"
+        ],
+        "topic_entities": {
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#IgnanL": "IgnanL"
+        }
+    },
+    {
+        "question": "how many demons do have combat maneuver defense level greater than the average for all creatures?",
+        "query": "SELECT (COUNT(?demons) as ?n_demons) WHERE {  {SELECT (AVG(?cmd) as ?avg_cmd) WHERE { ?creatures <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#cmd> ?cmd  }} ?demons <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast>;  <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#cmd> ?cmd  FILTER regex(str(?demons), 'demon', 'i') FILTER (?cmd > ?avg_cmd) }",
+        "answers": [
+            "36"
+        ],
+        "topic_entities": {
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast": "Beast"
+        }
+    },
+    {
+        "question": "what is the maximum combat maneuver defense level for creatures with neutral good alignment?",
+        "query": "SELECT (MAX(?cmd) as ?max_cmd) WHERE {  ?creatures <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasAlignment> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#neutralGood>;  <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#cmd> ?cmd}",
+        "answers": [
+            "97"
+        ],
+        "topic_entities": {
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#neutralGood": "neutralGood"
+        }
+    },
+    {
+        "question": "what creatures speaking dwarven language do have armor class greater than 12?",
+        "query": "SELECT ?creatures WHERE {  ?creatures <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#DwarvenL>;  <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasACValue> ?AC_value FILTER (?AC_value > 12) }",
+        "answers": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#AdultMagmaDragon",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#AdultRedDragon",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#AdultSilverDragon",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#AdultTimeDragon",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#AncientBlueDragonRavener",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#AncientCopperDragon",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#AncientCrystalDragon",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#AncientMagmaDragon",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#AncientRedDragon",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#AncientTimeDragon",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#AncientUnderworldDragon",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#AncientVortexDragon",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Ataxian",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#BonepowderGhoul",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#BrineDragonAncient",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#BrineDragonGreatWyrm",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#BrineDragonOld",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#BrineDragonVeryOld",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#BrineDragonWyrm",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Chalkost",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#ClawedKadian",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#ConquerorWorm",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#ContractDevilPhistophilus",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#CopperDragonGreatWyrm",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#CopperDragonOld",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#CopperDragonVeryOld",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#CopperDragonWyrm",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#CrystalDragonGreatWyrm",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#CrystalDragonOld",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#CrystalDragonVeryOld",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#CrystalDragonWyrm",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Danthienne",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#DarkScionDwarf",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#DemiLich",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Duergar",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#DuergarTyrant",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Exscinder",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#EyeEater",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Fellsig",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#ForgeSpurned",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#ForgefiendScanderig",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#FormianQueen",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#GreatWyrmRedDragon",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#GreatWyrmWhiteDragon",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#GreatwyrmUnderworldDragon",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#HarbingerofBrokenDealsFinePrintandUnfairBargains",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#LichPsychic",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#MagmaDragonGreatWyrm",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#MagmaDragonJuvenile",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#MagmaDragonMatureAdult",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#MagmaDragonOld",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#MagmaDragonVeryOld",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#MagmaDragonWyrm",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#MagmaDragonYoungAdult",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#MatureAdultRedDragon",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Muse",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#OldRedDragon",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#OldSilverDragon",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#SilverDragonGreatWyrm",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#SilverDragonMatureAdult",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#SilverDragonVeryOld",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#SilverDragonWyrm",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#StarDrake",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#TheGrandDefender",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#TheInfernalDuke",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Urskan",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#VeryOldRedDragon",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#WightAdultRedDragon",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#WyrmRedDragon",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Zwerc",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#oldUnderworldDragon",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#veryoldUnderworldDragon",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#wyrmUnderworldDragon"
+        ],
+        "topic_entities": {
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#DwarvenL": "DwarvenL"
+        }
+    },
+    {
+        "question": "what is the average armor class for angels?",
+        "query": "SELECT (AVG(?AC_value) as ?avg_AC_value) WHERE { ?angels <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast>;  <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasACValue> ?AC_value FILTER regex(str(?angels), 'angel', 'i') }",
+        "answers": [
+            "24.42857142857142857142857143"
+        ],
+        "topic_entities": {
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast": "Beast"
+        }
+    },
+    {
+        "question": "what is the minimum flat footed value for creatures with lawful good alignment?",
+        "query": "SELECT (MIN(?FFValue ) as ?min_FFValue) WHERE {  ?creatures <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasAlignment> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#lawfulGood>;  <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasFlatFootedValue> ?FFValue}",
+        "answers": [
+            "12"
+        ],
+        "topic_entities": {
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#lawfulGood": "lawfulGood"
+        }
+    },
+    {
+        "question": "how many trolls do have flat footed value between 13 and 18?",
+        "query": "SELECT (COUNT(?trolls) as ?n_trolls) WHERE { ?trolls <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast>;  <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasFlatFootedValue> ?FFValue FILTER regex(str(?trolls), 'troll', 'i') FILTER (?FFValue > 13 && ?FFValue < 18) }",
+        "answers": [
+            "12"
+        ],
+        "topic_entities": {
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast": "Beast"
+        }
+    },
+    {
+        "question": "what is the maximum fort value for creatures speaking goblin language?",
+        "query": "SELECT (MAX(?fort_value) as ?max_fort_value) WHERE {  ?creatures <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#GoblinL>;  <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasFortValue> ?fort_value}",
+        "answers": [
+            "41"
+        ],
+        "topic_entities": {
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#GoblinL": "GoblinL"
+        }
+    },
+    {
+        "question": "is there any creature with true neutral alignment with fort value equal to 6?",
+        "query": "ASK WHERE {  ?creatures <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasAlignment> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#trueNeutral>; <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasFortValue> ?FortValue FILTER (?FortValue = '6'^^xsd:integer)}",
+        "answers": true,
+        "topic_entities": {
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#trueNeutral": "trueNeutral"
+        }
+    },
+    {
+        "question": "what is the average number of health points for creatures speaking gnome language?",
+        "query": "SELECT (AVG(?HP) as ?avg_HP) WHERE {  ?creatures <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#GnomeL>;  <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasHPvalue> ?HP }",
+        "answers": [
+            "203.2258064516129032258064516"
+        ],
+        "topic_entities": {
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#GnomeL": "GnomeL"
+        }
+    },
+    {
+        "question": "what is the minimum number of health points for dragons with strenghts attribute more than 10?",
+        "query": "SELECT (MIN(?HP) as ?min_HP) WHERE { ?dragons <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast>;  <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasHPvalue> ?HP; <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#str> ?str_attr FILTER regex(str(?dragons), 'dragon', 'i') FILTER (?str_attr > 10) }",
+        "answers": [
+            "1"
+        ],
+        "topic_entities": {
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast": "Beast"
+        }
+    },
+    {
+        "question": "how many creatures speaking halfling language do have ref value more than 10 and atack parameter less than 15?",
+        "query": "SELECT (COUNT(?creatures) as ?n_creatures) WHERE {  ?creatures <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#HalflingL>;  <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasRefValue> ?Ref_value; <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#atk> ?atk FILTER (?Ref_value > 10 && ?atk < 15) }",
+        "answers": [
+            "4"
+        ],
+        "topic_entities": {
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#HalflingL": "HalflingL"
+        }
+    },
+    {
+        "question": "what creatures with chaotic evil alignment do have the maximum ref value?",
+        "query": "SELECT ?creatures WHERE { {SELECT (MAX(?RefValue) as ?max_RefValue) WHERE{?creatures <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasAlignment> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#chaoticEvil>; <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasRefValue> ?RefValue}}?creatures <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasAlignment> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#chaoticEvil>; <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasRefValue> ?RefValue FILTER(?RefValue = ?max_RefValue)}",
+        "answers": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#ThePrinceofHell"
+        ],
+        "topic_entities": {
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#chaoticEvil": "chaoticEvil"
+        }
+    },
+    {
+        "question": "is there any spider type with touch value equal to 11?",
+        "query": "ASK WHERE { ?spiders <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast>;  <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasTouchValue> ?touch_value FILTER regex(str(?spiders), 'spider', 'i') FILTER (?touch_value = 11) }",
+        "answers": true,
+        "topic_entities": {
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast": "Beast"
+        }
+    },
+    {
+        "question": "what is the minimum touch value for creatures speaking druidic language with initiative value less than 2?",
+        "query": "SELECT (MIN(?touch_value) as ?min_touch_value) WHERE {  ?creatures <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#DruidicL>;  <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasTouchValue> ?touch_value; <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasInitValue> ?init FILTER (?init < 2) }",
+        "answers": [
+            "4"
+        ],
+        "topic_entities": {
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#DruidicL": "DruidicL"
+        }
+    },
+    {
+        "question": "what percentage of creatures with neutral evil alignment do have will value less than 1?",
+        "query": "SELECT ((?n_creatures2/?n_creatures)*100 as ?creatures_perc) WHERE {      {        SELECT (COUNT(?creatures) as ?n_creatures) WHERE {             ?creatures <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasAlignment> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#neutralEvil>        }    }     {        SELECT (COUNT(?creatures) as ?n_creatures2) WHERE {             ?creatures <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasAlignment> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#neutralEvil>;              <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasWillValue> ?will_value              FILTER (?will_value  < 1)         }    } }",
+        "answers": [
+            "2.123893805309734513274336283"
+        ],
+        "topic_entities": {
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#neutralEvil": "neutralEvil"
+        }
+    },
+    {
+        "question": "what is the average will value for creatures speaking orc language?",
+        "query": "SELECT (AVG(?will_value) as ?avg_will_value) WHERE {  ?creatures <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#OrcL>;  <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasWillValue> ?will_value  }",
+        "answers": [
+            "12.29545454545454545454545455"
+        ],
+        "topic_entities": {
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#OrcL": "OrcL"
+        }
+    },
+    {
+        "question": "what types of zombies do have charisma attribute between 3 and 7?",
+        "query": "SELECT ?zombies WHERE { ?zombies <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast>;  <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#cha> ?cha FILTER regex(str(?zombies), 'zombie', 'i') FILTER (?cha > 3 && ?cha < 7) }",
+        "answers": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#DreadZombieAasimarWarrior"
+        ],
+        "topic_entities": {
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast": "Beast"
+        }
+    },
+    {
+        "question": "is there any creature type with lawful evil alignment having charisma attribute greater than sum of strength and intelligence?",
+        "query": "ASK WHERE { ?creatures <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasAlignment> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#lawfulEvil>;  <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#cha> ?cha; <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#str> ?str; <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#int> ?int FILTER (?cha  > (?str+?int))  }",
+        "answers": true,
+        "topic_entities": {
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#lawfulEvil": "lawfulEvil"
+        }
+    },
+    {
+        "question": "how many creatures speaking protean language do have constitution greater than 10?",
+        "query": "SELECT (COUNT(?creatures) as ?n_creatures) WHERE {  ?creatures <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#ProteanL>;  <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#con> ?con FILTER (?con > 10) }",
+        "answers": [
+            "20"
+        ],
+        "topic_entities": {
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#ProteanL": "ProteanL"
+        }
+    },
+    {
+        "question": "what is the maximum value of constitution attribute for elementals?",
+        "query": "SELECT (MAX(?con) as ?max_con) WHERE { ?elementals <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast>;  <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#con> ?con FILTER regex(str(?elementals), 'elemental', 'i') }",
+        "answers": [
+            "24"
+        ],
+        "topic_entities": {
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast": "Beast"
+        }
+    },
+    {
+        "question": "what is the average dexterity attribute for creatures with true neutral alignment?",
+        "query": "SELECT (AVG(?dex) as ?avg_dex) WHERE { ?creatures <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasAlignment> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#trueNeutral>;  <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#dex> ?dex }",
+        "answers": [
+            "24"
+        ],
+        "topic_entities": {
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#trueNeutral": "trueNeutral"
+        }
+    },
+    {
+        "question": "which creatures speaking aboleth language do have dexterity greater than average for all creatures?",
+        "query": "SELECT ?creatures WHERE {  {SELECT (AVG(?dex) as ?avg_dex)  WHERE {?creatures <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#dex> ?dex}}  ?creatures <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#AbolethL>;   <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#dex> ?dex FILTER (?dex > ?avg_dex) }",
+        "answers": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Abhominal",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#DeepWalker",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#EncephalonGorgerPsychic",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Enisysian",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Omnipath",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Plizeazoth",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Uldraaghu",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#VeiledMaster"
+        ],
+        "topic_entities": {
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#AbolethL": "AbolethL"
+        }
+    },
+    {
+        "question": "how many robots do have intelligence attribute less than 7 and speed value more than 10?",
+        "query": "SELECT (COUNT(?robots) as ?n_robots) WHERE { ?robots <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast>;  <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#int> ?int; <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasSpeedValue> ?speed FILTER regex(str(?robots), 'robot', 'i') FILTER (?int < 7 && ?speed > 10) }",
+        "answers": [
+            "1"
+        ],
+        "topic_entities": {
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast": "Beast"
+        }
+    },
+    {
+        "question": "what is the minimum intelligence attribute for creatures with chaotic neutral alignment?",
+        "query": "SELECT (MIN(?int) as ?min_int) WHERE { ?creatures <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasAlignment> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#chaoticNeutral>;  <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#int> ?int }",
+        "answers": [
+            "1"
+        ],
+        "topic_entities": {
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#chaoticNeutral": "chaoticNeutral"
+        }
+    },
+    {
+        "question": "what percentage of creatures speaking daemonic language do have strength attribute greater than 20?",
+        "query": "SELECT ((?s/?n_creatures)*100 as ?creatures_perc) WHERE {     {SELECT (COUNT(?creatures) as ?n_creatures) WHERE         {?creatures <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#DaemonicL>}    }     {SELECT (SUM(?comp) AS ?s) WHERE         {?creatures <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#DaemonicL>;  <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#str> ?str BIND (if (?str > 20, 1, 0) as ?comp)}    }          }",
+        "answers": [
+            "78.57142857142857142857142857"
+        ],
+        "topic_entities": {
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#DaemonicL": "DaemonicL"
+        }
+    },
+    {
+        "question": "is there any golem type with strength attribute lower than charisma?",
+        "query": "ASK WHERE { ?golems <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast>;  <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#str> ?str; <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#cha> ?cha FILTER regex(str(?golems), 'golem', 'i') FILTER (?str < ?cha) }",
+        "answers": false,
+        "topic_entities": {
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast": "Beast"
+        }
+    },
+    {
+        "question": "what is the average wisdom attribute for creatures with lawful neutral alignment?",
+        "query": "SELECT (AVG(?wis) as ?avg_wis) WHERE { ?creatures <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasAlignment> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#lawfulNeutral>;  <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#wis> ?wis }",
+        "answers": [
+            "16.76666666666666666666666667"
+        ],
+        "topic_entities": {
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#lawfulNeutral": "lawfulNeutral"
+        }
+    },
+    {
+        "question": "which creatures speaking necril and abyssal languages do have wisdom attribute more than 4?",
+        "query": "SELECT ?creatures WHERE { ?creatures <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#NecrilL>;  <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#AbyssalL>;  <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#wis> ?wis FILTER (?wis > 4) }",
+        "answers": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#AdvancedUnhallowedTotenmaske",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#DaughteroftheDead",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#MothersMaw",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Psychlown",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#RedWraith"
+        ],
+        "topic_entities": {
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#AbyssalL": "AbyssalL",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#NecrilL": "NecrilL"
+        }
+    },
+    {
+        "question": "what are the sums of the statistics for creatures speaking both gnoll and elven languages?",
+        "query": "SELECT (SUM(?stats_values) as ?sum_stats_values) WHERE { ?stats <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#statistics>. ?creatures <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#GnollL>;  <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#ElvenL>.  ?creatures ?stats ?stats_values } GROUP BY ?creatures",
+        "answers": [
+            "131",
+            "90"
+        ],
+        "topic_entities": {
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#ElvenL": "ElvenL",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#GnollL": "GnollL",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#statistics": "statistics"
+        }
+    },
+    {
+        "question": "do Griffon and Hippogriff have the same alignment?",
+        "query": "ASK WHERE { <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Griffon> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasAlignment> ?grif_alignment. <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Hippogriff> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasAlignment> ?hippogr_alignment FILTER (?grif_alignment = ?hippogr_alignment) }",
+        "answers": true,
+        "topic_entities": {
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Griffon": "Griffon",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Hippogriff": "Hippogriff"
+        }
+    },
+    {
+        "question": "does Androsphinx have a greater sum of intellegence and wisdom attributes than Blood Queen?",
+        "query": "ASK WHERE { <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Androsphinx> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#int> ?androsphinx_int; <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#wis> ?androsphinx_wis. <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#BloodQueen> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#int> ?bqueen_int; <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#wis> ?bqueen_wis. FILTER (?androsphinx_int+?androsphinx_wis > ?bqueen_int+?bqueen_wis) }",
+        "answers": false,
+        "topic_entities": {
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#BloodQueen": "BloodQueen",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Androsphinx": "Androsphinx"
+        }
+    },
+    {
+        "question": "does Baalzebul have a greater value of average statistics than Dagon?",
+        "query": "SELECT (if((AVG(?baalz_stats) > AVG(?dagon_stats)), 'True', 'False') as ?res) WHERE { ?stats <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#statistics>. <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Baalzebul> ?stats ?baalz_stats. <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Dagon> ?stats ?dagon_stats }",
+        "answers": true,
+        "topic_entities": {
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Dagon": "Dagon",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Baalzebul": "Baalzebul",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#statistics": "statistics"
+        }
+    },
+    {
+        "question": "which creatures speaking ghoul language do have the greatest constitution attribute?",
+        "query": "SELECT ?creatures WHERE{{SELECT (MAX(?con) as ?max_con) WHERE { ?creatures <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#GhoulL>;  <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#con> ?con }} ?creatures <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#GhoulL>;  <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#con> ?con FILTER (?con = ?max_con)}",
+        "answers": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#DimensionWalker"
+        ],
+        "topic_entities": {
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#GhoulL": "GhoulL"
+        }
+    },
+    {
+        "question": "is the number of creatures speaking dark language greater than cyclops language?",
+        "query": "SELECT (if((COUNT(DISTINCT ?creatures_1) > COUNT(DISTINCT ?creatures_2)), 'True', 'False') as ?res) WHERE { ?creatures_1 <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#DarkL>.  ?creatures_2 <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#CyclopsL>. }",
+        "answers": true,
+        "topic_entities": {
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#DarkL": "DarkL",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#CyclopsL": "CyclopsL"
+        }
+    },
+    {
+        "question": "is the number of creatures speaking polyglot language greater than skald language?",
+        "query": "SELECT (if((COUNT(DISTINCT ?creatures_1) > COUNT(DISTINCT ?creatures_2)), 'True', 'False') as ?res) WHERE { ?creatures_1 <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#PolyglotL>.  ?creatures_2 <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#SkaldL>. }",
+        "answers": false,
+        "topic_entities": {
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#SkaldL": "SkaldL",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#PolyglotL": "PolyglotL"
+        }
+    },
+    {
+        "question": "are angels characterized by the greater average value of experience points than demons?",
+        "query": "SELECT (if(?avg_ang_XP>?avg_dem_XP, 'True', 'False') as ?res) WHERE { {SELECT (AVG(?ang_XP) as ?avg_ang_XP) WHERE { ?angels <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast>; <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasXPValue> ?ang_XP FILTER regex(str(?angels), 'angel', 'i')}} {SELECT (AVG(?dem_XP) as ?avg_dem_XP) WHERE { ?demons <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast>; <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasXPValue> ?dem_XP FILTER regex(str(?demons), 'demon', 'i')}} }",
+        "answers": true,
+        "topic_entities": {
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast": "Beast"
+        }
+    },
+    {
+        "question": "do Lamia and Lilith have a common language and alignment?",
+        "query": "ASK WHERE { <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Lamia> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages> ?Lamia_lang; <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasAlignment> ?Lamia_alignment. <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Lilith> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages> ?Lilith_lang; <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasAlignment> ?Lilith_alignment FILTER (?Lamia_lang = ?Lilith_lang && ?Lamia_alignment = ?Lilith_alignment) }",
+        "answers": false,
+        "topic_entities": {
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Lamia": "Lamia",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Lilith": "Lilith"
+        }
+    },
+    {
+        "question": "do Lorelei and sirens speak the same languages?",
+        "query": "ASK WHERE { <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Lorelei> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages> ?Lorelei_lang. <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Siren> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages> ?Siren_lang FILTER (?Lorelei_lang = ?Siren_lang) }",
+        "answers": true,
+        "topic_entities": {
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Lorelei": "Lorelei",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Siren": "Siren"
+        }
+    },
+    {
+        "question": "what is the average dexterity attribute for Phoenix and Sleipnir?",
+        "query": "SELECT ((?Phoenix_dex+?Sleipnir_dex)/2 as ?avg_dex) WHERE { <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Phoenix> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#dex> ?Phoenix_dex. <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Sleipnir> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#dex> ?Sleipnir_dex }",
+        "answers": [
+            "21.5"
+        ],
+        "topic_entities": {
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Phoenix": "Phoenix",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Sleipnir": "Sleipnir"
+        }
+    },
+    {
+        "question": "what is the maximum constitution attribute for Kraken and Leviathan?",
+        "query": "SELECT ?max_con WHERE { <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Kraken> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#con> ?Kraken_con. <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Leviathan> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#con> ?Leviathan_con BIND(if(?Kraken_con > ?Leviathan_con, ?Kraken_con, ?Leviathan_con) as ?max_con) }",
+        "answers": [
+            "44"
+        ],
+        "topic_entities": {
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Kraken": "Kraken",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Leviathan": "Leviathan"
+        }
+    },
+    {
+        "question": "what is the minimum wisdom attribute for Gorynych and Vodyanoi?",
+        "query": "SELECT ?min_wis WHERE { <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Gorynych> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#wis> ?Gorynych_wis. <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Vodyanoi> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#wis> ?Vodyanoi_wis BIND(if(?Gorynych_wis > ?Vodyanoi_wis, ?Vodyanoi_wis, ?Gorynych_wis) as ?min_wis) }",
+        "answers": [
+            "17"
+        ],
+        "topic_entities": {
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Gorynych": "Gorynych",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Vodyanoi": "Vodyanoi"
+        }
+    },
+    {
+        "question": "does Kitsune or Rusalka have charisma attribute more than 20?",
+        "query": "ASK WHERE { <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Kitsune> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#cha> ?Kitsune_cha. <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Rusalka> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#cha> ?Rusalka_cha FILTER(?Kitsune_cha > 20 || ?Rusalka_cha > 20) }",
+        "answers": true,
+        "topic_entities": {
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Kitsune": "Kitsune",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Rusalka": "Rusalka"
+        }
+    },
+    {
+        "question": "do both Amon and Cetus have strength attribute between 15 and 25?",
+        "query": "ASK WHERE { <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Amon> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#str> ?Amon_str. <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Cetus> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#str> ?Cetus_str FILTER((?Amon_str > 15 && ?Amon_str < 25 ) && (?Cetus_str > 15 && ?Cetus_str < 25 )) }",
+        "answers": false,
+        "topic_entities": {
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Cetus": "Cetus",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Amon": "Amon"
+        }
+    },
+    {
+        "question": "does Sandman or Charon speak elder or boggarg language?",
+        "query": "ASK WHERE { <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Sandman> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages> ?Sandman_lang. <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Charon> <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages> ?Charon_lang FILTER((<http://www.semanticweb.org/annab/ontologies/2022/3/ontology#ElderL> in (?Sandman_lang) || <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#BoggargL> in (?Sandman_lang)) || (<http://www.semanticweb.org/annab/ontologies/2022/3/ontology#ElderL> in (?Charon_lang) || <http://www.semanticweb.org/annab/ontologies/2022/3/ontology#BoggargL> in (?Charon_lang)))}",
+        "answers": false,
+        "topic_entities": {
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Charon": "Charon",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#ElderL": "ElderL",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#BoggargL": "BoggargL",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Sandman": "Sandman"
+        }
+    }
+]

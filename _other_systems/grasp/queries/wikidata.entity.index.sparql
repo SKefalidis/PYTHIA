@@ -1,0 +1,33 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX schema: <http://schema.org/>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+
+SELECT
+  ?id
+  (SAMPLE(?label) AS ?main_label)
+  (GROUP_CONCAT(DISTINCT ?alias; SEPARATOR=";;;") AS ?aliases)
+WHERE {
+  # Get ids and label
+  ?id rdf:type wikibase:Item .
+  ?id rdfs:label ?label
+  FILTER(LANG(?label) = "{LANG}")
+
+  MINUS {
+    ?id wdt:P31/wdt:P279* wd:Q17442446
+  }
+
+  # Get score
+  OPTIONAL { ?id ^schema:about/wikibase:sitelinks ?score }
+
+  # Get aliases
+  OPTIONAL {
+    ?id skos:altLabel ?alias
+    FILTER(LANG(?alias) = "{LANG}")
+  }
+}
+GROUP BY ?id
+ORDER BY DESC(MAX(?score))

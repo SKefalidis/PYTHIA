@@ -1,0 +1,34 @@
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX dblp: <https://dblp.org/rdf/schema#>
+
+SELECT
+  ?id
+  (SAMPLE(?label) AS ?main_label)
+  (GROUP_CONCAT(DISTINCT ?alias; SEPARATOR=";;;") AS ?aliases)
+WHERE {
+  # Get ids and their frequencies for score
+  {
+    SELECT ?id (SUM(?freq) AS ?total_freq) WHERE {
+      {
+        SELECT ?id ("SUB" AS ?pos) (COUNT(?id) AS ?freq) WHERE {
+          ?id rdfs:label [] .
+          ?id ?p ?o 
+        } GROUP BY ?id 
+      } UNION {
+        SELECT ?id ("OBJ" AS ?pos) (COUNT(?id) AS ?freq) WHERE {
+          ?id rdfs:label [] .
+          ?s ?p ?id .
+          FILTER(ISIRI(?id)) 
+        } GROUP BY ?id
+      }
+    } GROUP BY ?id
+  }
+
+  # Get label
+  ?id rdfs:label ?label .
+
+  # Get aliases
+  OPTIONAL { ?id dblp:primaryCreatorName ?alias }
+}
+GROUP BY ?id
+ORDER BY DESC(MAX(?total_freq))

@@ -1,0 +1,27 @@
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX fb: <http://rdf.freebase.com/ns/>
+
+SELECT
+  ?id
+  (GROUP_CONCAT(DISTINCT ?info; SEPARATOR=";;;") AS ?infos)
+WHERE {
+  # Get additional information
+  {
+    VALUES ?id { {IDS} }
+    ?id fb:common.topic.description ?info
+    FILTER(LANGMATCHES(LANG(?info), "en"))
+  } UNION {
+    VALUES ?id { {IDS} }
+    ?id fb:common.topic.notable_types/fb:type.object.name ?type
+    FILTER(LANGMATCHES(LANG(?type), "en")) .
+    BIND(CONCAT("has type ", ?type) AS ?info)
+  } UNION {
+    VALUES ?id { {IDS} }
+    ?id fb:freebase.type_hints.mediator ?mediator
+    FILTER(?mediator = "true")
+    BIND("is compound value type / mediator type" AS ?info)
+  }
+}
+GROUP BY ?id

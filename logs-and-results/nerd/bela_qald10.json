@@ -1,0 +1,4205 @@
+[
+    {
+        "precision": 0.8177966101694916,
+        "recall": 0.6296900489396411,
+        "f1": 0.711520737327189,
+        "gold_tp": 613,
+        "queries_correct": 202
+    },
+    {
+        "question": "After whom is the Riemannian geometry named?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q761383"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q761383"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Which animal participated in a military operation with the Australian Defence Force?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q645883",
+            "http://www.wikidata.org/entity/Q625657",
+            "http://www.wikidata.org/entity/Q16521"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q625657"
+        ],
+        "logs": null
+    },
+    {
+        "question": "among the characters in the witcher, who has two unmarried partners, Yennefer of Vengerberg and Triss Merigold?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q11835640",
+            "http://www.wikidata.org/entity/Q4205826",
+            "http://www.wikidata.org/entity/Q4463198"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q11835640"
+        ],
+        "logs": null
+    },
+    {
+        "question": "among the founders of tencent company, who has been member of national people’s congress?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q860580",
+            "http://www.wikidata.org/entity/Q10891456"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q860580",
+            "http://www.wikidata.org/entity/Q19211"
+        ],
+        "logs": null
+    },
+    {
+        "question": "among the other representative work of the author of hunter x hunter, which one is talking about middle school student?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q69071",
+            "http://www.wikidata.org/entity/Q16003532",
+            "http://www.wikidata.org/entity/Q696071"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q696071"
+        ],
+        "logs": null
+    },
+    {
+        "question": "On which stock exchanges are Siemens AG shares traded?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q81230"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q11691",
+            "http://www.wikidata.org/entity/Q81230"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Apart from the book series the witcher, name all of the author’s notable work.",
+        "gold": [
+            "http://www.wikidata.org/entity/Q11835640"
+        ],
+        "predictions": [],
+        "logs": null
+    },
+    {
+        "question": "are brooke raboutou and colin duffy from same state of the usa?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q87192979",
+            "http://www.wikidata.org/entity/Q2926117",
+            "http://www.wikidata.org/entity/Q35657"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q87192979"
+        ],
+        "logs": null
+    },
+    {
+        "question": "What is the boiling point of water?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q283"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q1003183"
+        ],
+        "logs": null
+    },
+    {
+        "question": "At which school was Yayoi Kusama educated at?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q231121"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q231121"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Which High School did Allen Ginsberg attend?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q6711",
+            "http://www.wikidata.org/entity/Q9826"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q6711"
+        ],
+        "logs": null
+    },
+    {
+        "question": "On which island is the Indonesian capital located?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q252",
+            "http://www.wikidata.org/entity/Q23442"
+        ],
+        "predictions": [],
+        "logs": null
+    },
+    {
+        "question": "can i play don't starve on play station 4?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q3208174",
+            "http://www.wikidata.org/entity/Q5014725"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q5014725"
+        ],
+        "logs": null
+    },
+    {
+        "question": "How many General Secretaries of the CPSU were there before Leonid Brezhnev?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q765165",
+            "http://www.wikidata.org/entity/Q1048744"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q765165",
+            "http://www.wikidata.org/entity/Q79854"
+        ],
+        "logs": null
+    },
+    {
+        "question": "How many different presidents of Russia have there been that took the position after 1990?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q218295"
+        ],
+        "predictions": [],
+        "logs": null
+    },
+    {
+        "question": "Did adam ondra win a medal in the 2020 summer olympics?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q350568",
+            "http://www.wikidata.org/entity/Q181278"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q181278"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Did the Chicago Bulls win at least two seasons of the NBA championship?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q155223",
+            "http://www.wikidata.org/entity/Q128109"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q155223",
+            "http://www.wikidata.org/entity/Q128109"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Did Haruki Murakami receive the Nobel Prize in Literature?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q37922",
+            "http://www.wikidata.org/entity/Q134798"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q37922",
+            "http://www.wikidata.org/entity/Q134798"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Did Kobe Bryant leave the Lakers when LeBron James joined that team?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q25369",
+            "http://www.wikidata.org/entity/Q36159",
+            "http://www.wikidata.org/entity/Q121783"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q25369",
+            "http://www.wikidata.org/entity/Q36159",
+            "http://www.wikidata.org/entity/Q121783"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Did Rawson Marshall Thurber, the director of Red Notice also direct Titanic?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q58815001",
+            "http://www.wikidata.org/entity/Q2745616",
+            "http://www.wikidata.org/entity/Q44578"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q58815001",
+            "http://www.wikidata.org/entity/Q2745616",
+            "http://www.wikidata.org/entity/Q44578"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Did Venice at any point belong to the Austrian Empire?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q641",
+            "http://www.wikidata.org/entity/Q131964"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q641",
+            "http://www.wikidata.org/entity/Q131964"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Were at least two of the founders of tencent educated at the same university?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q860580"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q184664"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Do all of batman’s partner speak english as native language?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q1860",
+            "http://www.wikidata.org/entity/Q2695156"
+        ],
+        "predictions": [],
+        "logs": null
+    },
+    {
+        "question": "How many spouses do head of states have on average?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q6256"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q48352"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Was there at least one Formula 1 event on the AVUS?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q108886259",
+            "http://www.wikidata.org/entity/Q155810"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q1023163",
+            "http://www.wikidata.org/entity/Q1968"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Find all Turkish verbs ending with “uş” with their lemma.",
+        "gold": [
+            "http://www.wikidata.org/entity/Q24905"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q18514",
+            "http://www.wikidata.org/entity/Q256"
+        ],
+        "logs": null
+    },
+    {
+        "question": "From which country are the beagles originally from?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q21102"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q21102"
+        ],
+        "logs": null
+    },
+    {
+        "question": "From which country came the 2nd most winners of the Emmy Award ?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q123737"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q123737"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Does the music style of Helloween belong to rock music?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q158895",
+            "http://www.wikidata.org/entity/Q11399"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q158895",
+            "http://www.wikidata.org/entity/Q11399"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Does the postal code 32423 belong to Minden?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q3846"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q3846"
+        ],
+        "logs": null
+    },
+    {
+        "question": "has adam ondra been a winner of IFSC climbing world cup?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q350568",
+            "http://www.wikidata.org/entity/Q406039",
+            "http://www.wikidata.org/entity/Q1774251"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q1774251"
+        ],
+        "logs": null
+    },
+    {
+        "question": "has life expectancy in iran grown in any year after 1999?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q794"
+        ],
+        "predictions": [],
+        "logs": null
+    },
+    {
+        "question": "has population of Isfahan increased at any point after 2006?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q42053"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q42053"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Did Joe Cocker play at the Woodstock festival?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q190076",
+            "http://www.wikidata.org/entity/Q164815"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q190076",
+            "http://www.wikidata.org/entity/Q164815"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Did Udo Bölts participate in the Tour de France?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q33881",
+            "http://www.wikidata.org/entity/Q66432"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q33881",
+            "http://www.wikidata.org/entity/Q66432"
+        ],
+        "logs": null
+    },
+    {
+        "question": "How many of Reinhold Messner's brothers still live?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q6581097",
+            "http://www.wikidata.org/entity/Q189307"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q189307"
+        ],
+        "logs": null
+    },
+    {
+        "question": "In which manner did Hemingway die?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q23434"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q23434"
+        ],
+        "logs": null
+    },
+    {
+        "question": "In which industry does the House of Medici own a business?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q170022"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q170022"
+        ],
+        "logs": null
+    },
+    {
+        "question": "How do people from Turkey call the official name of the united states of america?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q30"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q43",
+            "http://www.wikidata.org/entity/Q30"
+        ],
+        "logs": null
+    },
+    {
+        "question": "How high is the Cologne Cathedral ?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q4176"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q4176"
+        ],
+        "logs": null
+    },
+    {
+        "question": "How is the Harz called in Mandarin Chinese?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q4186"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q9192",
+            "http://www.wikidata.org/entity/Q4186"
+        ],
+        "logs": null
+    },
+    {
+        "question": "How many international airports are located within the city of Hamburg ?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q1055",
+            "http://www.wikidata.org/entity/Q644371"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q1055"
+        ],
+        "logs": null
+    },
+    {
+        "question": "On how many albums does Madonna perform?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q482994",
+            "http://www.wikidata.org/entity/Q1744"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q1744"
+        ],
+        "logs": null
+    },
+    {
+        "question": "On how many albums does Mariah Carey perform?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q482994",
+            "http://www.wikidata.org/entity/Q41076"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q41076"
+        ],
+        "logs": null
+    },
+    {
+        "question": "How many studio albums has Lana Del Rey have?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q37150",
+            "http://www.wikidata.org/entity/Q208569"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q37150"
+        ],
+        "logs": null
+    },
+    {
+        "question": "How many ancient civilizations are there?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q28171280"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q28746198"
+        ],
+        "logs": null
+    },
+    {
+        "question": "In how many years did Kobe Bryant receive an NBA All-Defensive Team award?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q1465181",
+            "http://www.wikidata.org/entity/Q25369"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q1465181",
+            "http://www.wikidata.org/entity/Q25369"
+        ],
+        "logs": null
+    },
+    {
+        "question": "How many All-NBA Team awards have Shaquille O'Neal and Kobe Bryant received in the same year?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q674359",
+            "http://www.wikidata.org/entity/Q169452",
+            "http://www.wikidata.org/entity/Q25369"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q674359",
+            "http://www.wikidata.org/entity/Q169452",
+            "http://www.wikidata.org/entity/Q25369"
+        ],
+        "logs": null
+    },
+    {
+        "question": "How many literary works did Richard Bachman write?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q39829",
+            "http://www.wikidata.org/entity/Q7725634"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q3495759"
+        ],
+        "logs": null
+    },
+    {
+        "question": "How many notable works does Sarah J. Maas have?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q20640708"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q20640708"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Did Bryan Evenson work for at least one university where he was educated at?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q3918",
+            "http://www.wikidata.org/entity/Q4963691"
+        ],
+        "predictions": [],
+        "logs": null
+    },
+    {
+        "question": "How many children (including apopted ones) does Jeff Bezos have with his ex-wife?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q312556"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q312556"
+        ],
+        "logs": null
+    },
+    {
+        "question": "How many children had Paul McCartney together with his ex-wife Linda McCartney?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q228899",
+            "http://www.wikidata.org/entity/Q2599"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q228899",
+            "http://www.wikidata.org/entity/Q2599"
+        ],
+        "logs": null
+    },
+    {
+        "question": "How many Chinese zodiac animals are there in total?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q79226802"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q1976204"
+        ],
+        "logs": null
+    },
+    {
+        "question": "How many cities are part of the Pearl River Delta?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q515",
+            "http://www.wikidata.org/entity/Q1144286"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q20716686"
+        ],
+        "logs": null
+    },
+    {
+        "question": "How many city-states are currently in the world?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q133442"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q133442"
+        ],
+        "logs": null
+    },
+    {
+        "question": "How many businesses did Steve Jobs found?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q19837",
+            "http://www.wikidata.org/entity/Q4830453"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q19837"
+        ],
+        "logs": null
+    },
+    {
+        "question": "How many countries have a democracy index higher than 7 and drive on the left side ?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q6256",
+            "http://www.wikidata.org/entity/Q13196750"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q326174"
+        ],
+        "logs": null
+    },
+    {
+        "question": "How many countries have never been members of the UN?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q6256",
+            "http://www.wikidata.org/entity/Q1065"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q1065"
+        ],
+        "logs": null
+    },
+    {
+        "question": "How many countries are on the continent of South America ?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q6256",
+            "http://www.wikidata.org/entity/Q18"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q18"
+        ],
+        "logs": null
+    },
+    {
+        "question": "How many countries have mountains whose peaks are higher than 2000m above sea level?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q8502"
+        ],
+        "predictions": [],
+        "logs": null
+    },
+    {
+        "question": "How many fictional dragons are present in Game of Thrones?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q30170627",
+            "http://www.wikidata.org/entity/Q23572"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q7559",
+            "http://www.wikidata.org/entity/Q23572"
+        ],
+        "logs": null
+    },
+    {
+        "question": "how many emmy awards has the tv series game of thrones won?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q23572",
+            "http://www.wikidata.org/entity/Q123737"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q123737"
+        ],
+        "logs": null
+    },
+    {
+        "question": "How many films are derived from the original Ghost in the Shell Manga?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q92582",
+            "http://www.wikidata.org/entity/Q11424"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q8274",
+            "http://www.wikidata.org/entity/Q92580"
+        ],
+        "logs": null
+    },
+    {
+        "question": "How many French kings didn't die of natural causes?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q3739104",
+            "http://www.wikidata.org/entity/Q18384454"
+        ],
+        "predictions": [],
+        "logs": null
+    },
+    {
+        "question": "How many given names has Queen Elizabeth II ?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q9682"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q9682"
+        ],
+        "logs": null
+    },
+    {
+        "question": "How many different female mayors did Hamburg have?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q1055",
+            "http://www.wikidata.org/entity/Q6581072"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q1055"
+        ],
+        "logs": null
+    },
+    {
+        "question": "how many head of the state does iran have?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q794"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q794"
+        ],
+        "logs": null
+    },
+    {
+        "question": "How many scholary articles have ImageNet as a subject?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q13442814",
+            "http://www.wikidata.org/entity/Q24901201"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q24901201"
+        ],
+        "logs": null
+    },
+    {
+        "question": "How many inhabitants does the birthplace of Cristiano Ronaldo have?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q11571"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q11571"
+        ],
+        "logs": null
+    },
+    {
+        "question": "How many Japanese writers received the Nobel Prize?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q36180",
+            "http://www.wikidata.org/entity/Q17",
+            "http://www.wikidata.org/entity/Q7191"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q37922"
+        ],
+        "logs": null
+    },
+    {
+        "question": "How many languages are widely used in India?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q668"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q668"
+        ],
+        "logs": null
+    },
+    {
+        "question": "How many different colors can water take?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q283"
+        ],
+        "predictions": [],
+        "logs": null
+    },
+    {
+        "question": "How many locations has Georges Braque worked at (work location)?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q153793"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q153793"
+        ],
+        "logs": null
+    },
+    {
+        "question": "How many months does winter consist of in Germany?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q183",
+            "http://www.wikidata.org/entity/Q1311"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q183",
+            "http://www.wikidata.org/entity/Q1311"
+        ],
+        "logs": null
+    },
+    {
+        "question": "How many movies does the Scream franchise have?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q388659",
+            "http://www.wikidata.org/entity/Q11424"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q388659"
+        ],
+        "logs": null
+    },
+    {
+        "question": "How many movies has James Cameron directed prior to the year 2010?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q42574",
+            "http://www.wikidata.org/entity/Q11424"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q42574"
+        ],
+        "logs": null
+    },
+    {
+        "question": "How many movies were directed by Akira Kurosawa ?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q8006",
+            "http://www.wikidata.org/entity/Q11424"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q8006"
+        ],
+        "logs": null
+    },
+    {
+        "question": "How many musical scales are there?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q179651"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q179651"
+        ],
+        "logs": null
+    },
+    {
+        "question": "How many public holidays does the state Bavaria have in a year?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q980"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q980"
+        ],
+        "logs": null
+    },
+    {
+        "question": "How many literary works besides The Picture of Dorian Gray did its author write?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q82464",
+            "http://www.wikidata.org/entity/Q7725634"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q82464"
+        ],
+        "logs": null
+    },
+    {
+        "question": "How many literary works did Mark Twain write in his lifetime?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q7245",
+            "http://www.wikidata.org/entity/Q7725634"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q7245"
+        ],
+        "logs": null
+    },
+    {
+        "question": "How many occupations did Mark Twain have?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q7245"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q7245"
+        ],
+        "logs": null
+    },
+    {
+        "question": "how many of spiderman perfomers are citizens of the united kingdom?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q79037",
+            "http://www.wikidata.org/entity/Q145"
+        ],
+        "predictions": [],
+        "logs": null
+    },
+    {
+        "question": "how many official languages does the united states of america have?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q30"
+        ],
+        "predictions": [],
+        "logs": null
+    },
+    {
+        "question": "How many official languages has Pakistan ?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q843"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q843"
+        ],
+        "logs": null
+    },
+    {
+        "question": "How many Oscars did all the movies directed by Hayao Miyazaki combined win?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q19020",
+            "http://www.wikidata.org/entity/Q55400"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q19020",
+            "http://www.wikidata.org/entity/Q55400"
+        ],
+        "logs": null
+    },
+    {
+        "question": "How many paintings of Pablo Picasso were ever in a museum?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q5593",
+            "http://www.wikidata.org/entity/Q33506",
+            "http://www.wikidata.org/entity/Q3305213"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q5593",
+            "http://www.wikidata.org/entity/Q33506"
+        ],
+        "logs": null
+    },
+    {
+        "question": "How many people can play \"Mensch ärgere dich nicht\" at most?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q545129"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q545129"
+        ],
+        "logs": null
+    },
+    {
+        "question": "How many people did Oscar Pistorius kill?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q201377",
+            "http://www.wikidata.org/entity/Q5"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q201377"
+        ],
+        "logs": null
+    },
+    {
+        "question": "How many people died due to the Great Leap Forward according to the highest estimate?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q58715"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q58715"
+        ],
+        "logs": null
+    },
+    {
+        "question": "How many people have won the Nobel Prize in Literature since its inception?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q37922",
+            "http://www.wikidata.org/entity/Q5"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q37922"
+        ],
+        "logs": null
+    },
+    {
+        "question": "How many people live in cities in the vicinity of the Nile ?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q515",
+            "http://www.wikidata.org/entity/Q3392"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q3392"
+        ],
+        "logs": null
+    },
+    {
+        "question": "How many pitch classes are part of the chromatic scale?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q202021",
+            "http://www.wikidata.org/entity/Q1760309"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q202021",
+            "http://www.wikidata.org/entity/Q1760309"
+        ],
+        "logs": null
+    },
+    {
+        "question": "how many plays has William Shakespeare written in the 16th century.",
+        "gold": [
+            "http://www.wikidata.org/entity/Q25379",
+            "http://www.wikidata.org/entity/Q7725634",
+            "http://www.wikidata.org/entity/Q692"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q692"
+        ],
+        "logs": null
+    },
+    {
+        "question": "How many poems did Allen Ginsberg published?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q6711",
+            "http://www.wikidata.org/entity/Q7725634",
+            "http://www.wikidata.org/entity/Q482"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q6711"
+        ],
+        "logs": null
+    },
+    {
+        "question": "How many political parties have ever had seats in the German Bundestag ?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q7278",
+            "http://www.wikidata.org/entity/Q154797"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q154797"
+        ],
+        "logs": null
+    },
+    {
+        "question": "How many positions did Kobe Bryant play in his team?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q25369"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q25369"
+        ],
+        "logs": null
+    },
+    {
+        "question": "How many prizes are there established by Alfred Nobel ?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q23810",
+            "http://www.wikidata.org/entity/Q7191"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q23810"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Did SpaceX ever operate a space mission that was a failed launch?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q193701",
+            "http://www.wikidata.org/entity/Q99654400",
+            "http://www.wikidata.org/entity/Q2133344"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q193701"
+        ],
+        "logs": null
+    },
+    {
+        "question": "How many people nominated for the nobel prize in chemistry didn't ever win it?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q44585",
+            "http://www.wikidata.org/entity/Q5"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q2329",
+            "http://www.wikidata.org/entity/Q44585"
+        ],
+        "logs": null
+    },
+    {
+        "question": "How many seasons does Pose have?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q30603704"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q2105776"
+        ],
+        "logs": null
+    },
+    {
+        "question": "How many seats are there in the current German Bundestag ?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q154797"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q154797"
+        ],
+        "logs": null
+    },
+    {
+        "question": "How many siblings had the author of “Little Women” ?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q523076"
+        ],
+        "predictions": [],
+        "logs": null
+    },
+    {
+        "question": "How many ski resorts were there ever in France?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q142",
+            "http://www.wikidata.org/entity/Q130003"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q142",
+            "http://www.wikidata.org/entity/Q130003"
+        ],
+        "logs": null
+    },
+    {
+        "question": "How many songs were composed by Jay Chou but not released in his own albums?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q7366",
+            "http://www.wikidata.org/entity/Q482994",
+            "http://www.wikidata.org/entity/Q238819"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q238819"
+        ],
+        "logs": null
+    },
+    {
+        "question": "How many works that are based on Spider-Man has Venom been a part of?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q1621261",
+            "http://www.wikidata.org/entity/Q79037"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q1621261",
+            "http://www.wikidata.org/entity/Q79037"
+        ],
+        "logs": null
+    },
+    {
+        "question": "How many spouses had Rama V (one of the former Kings of Siam)?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q158861"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q2129890"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Does Switzerland have a place north of the Point (8.57 47.8)?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q39"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q39"
+        ],
+        "logs": null
+    },
+    {
+        "question": "how many times has Giorgio Moroder won golden globe award?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q1011547",
+            "http://www.wikidata.org/entity/Q312674"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q1011547",
+            "http://www.wikidata.org/entity/Q312674"
+        ],
+        "logs": null
+    },
+    {
+        "question": "How many Olympic Games has Kobe Bryant taken part in?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q5389",
+            "http://www.wikidata.org/entity/Q25369"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q5389",
+            "http://www.wikidata.org/entity/Q25369"
+        ],
+        "logs": null
+    },
+    {
+        "question": "How many times was Oskar Lafontaine elected Member of the Landtag of Saarland?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q110719",
+            "http://www.wikidata.org/entity/Q18130478"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q260372",
+            "http://www.wikidata.org/entity/Q110719"
+        ],
+        "logs": null
+    },
+    {
+        "question": "How many wars did the Empire of Japan participate in?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q188712",
+            "http://www.wikidata.org/entity/Q198"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q188712"
+        ],
+        "logs": null
+    },
+    {
+        "question": "How many women were amongst the founding members of “The Bridge” (“Die Brücke”)?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q6581072",
+            "http://www.wikidata.org/entity/Q152778"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q895658"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Who has a higher observed lifespan out of the common bottlenose dolphin and the brown bear?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q36341",
+            "http://www.wikidata.org/entity/Q174199"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q149069",
+            "http://www.wikidata.org/entity/Q36341",
+            "http://www.wikidata.org/entity/Q174199"
+        ],
+        "logs": null
+    },
+    {
+        "question": "What is TNFAIP1 ?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q18032040"
+        ],
+        "predictions": [],
+        "logs": null
+    },
+    {
+        "question": "How often did Naomi Novik win the nebula award?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q242643",
+            "http://www.wikidata.org/entity/Q194285"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q242643",
+            "http://www.wikidata.org/entity/Q194285"
+        ],
+        "logs": null
+    },
+    {
+        "question": "How often did the Mongols try to invade Japan?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q208156"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q41975",
+            "http://www.wikidata.org/entity/Q17"
+        ],
+        "logs": null
+    },
+    {
+        "question": "How often was Naomi Novik nominated for a Hugo Award?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q242643",
+            "http://www.wikidata.org/entity/Q188914"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q242643",
+            "http://www.wikidata.org/entity/Q188914"
+        ],
+        "logs": null
+    },
+    {
+        "question": "How many years did the second oldest dog in the world live?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q144"
+        ],
+        "predictions": [],
+        "logs": null
+    },
+    {
+        "question": "if someone died in 1969, is there any chance they heard of queen’s music?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q15862"
+        ],
+        "predictions": [],
+        "logs": null
+    },
+    {
+        "question": "Is Dr. Pepper named after its inventor?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q623561"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q623561"
+        ],
+        "logs": null
+    },
+    {
+        "question": "In how many movies did Carey Mulligan and Ryan Gosling star together?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q193815",
+            "http://www.wikidata.org/entity/Q11424",
+            "http://www.wikidata.org/entity/Q219655"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q193815",
+            "http://www.wikidata.org/entity/Q219655"
+        ],
+        "logs": null
+    },
+    {
+        "question": "in the country where ghost in the shell is born, who is the current head of the state?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q92580"
+        ],
+        "predictions": [],
+        "logs": null
+    },
+    {
+        "question": "How many rivers are in or next to the U.S. state where cage the elephant is from?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q68061",
+            "http://www.wikidata.org/entity/Q4022",
+            "http://www.wikidata.org/entity/Q35657"
+        ],
+        "predictions": [],
+        "logs": null
+    },
+    {
+        "question": "In which federal state is the Veltins brewery headquarter?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q1221156",
+            "http://www.wikidata.org/entity/Q608350"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q608350",
+            "http://www.wikidata.org/entity/Q35657"
+        ],
+        "logs": null
+    },
+    {
+        "question": "In which stadium do the New York Yankees play?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q213417"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q213417"
+        ],
+        "logs": null
+    },
+    {
+        "question": "In which countries is the Himalayas located?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q5451"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q5451"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Was Isfahan a capital in the year 934?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q42053"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q42053"
+        ],
+        "logs": null
+    },
+    {
+        "question": "In how many countries has IKEA been established?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q6256",
+            "http://www.wikidata.org/entity/Q1769361"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q54078"
+        ],
+        "logs": null
+    },
+    {
+        "question": "In which country did the United Fruit Company have their headquarters?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q1771942",
+            "http://www.wikidata.org/entity/Q6256"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q1771942"
+        ],
+        "logs": null
+    },
+    {
+        "question": "In how many countries is pysanka practiced?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q3233785"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q3233785"
+        ],
+        "logs": null
+    },
+    {
+        "question": "In which country is Oberirrach ?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q98138090"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q83032"
+        ],
+        "logs": null
+    },
+    {
+        "question": "In which country was Spotify created?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q689141"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q689141"
+        ],
+        "logs": null
+    },
+    {
+        "question": "What is the song Vogue by Madonna named after?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q1128775",
+            "http://www.wikidata.org/entity/Q1744"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q1128775",
+            "http://www.wikidata.org/entity/Q1744"
+        ],
+        "logs": null
+    },
+    {
+        "question": "in which language does the united stated have the shortest short name?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q30"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q214102"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Does Bremerhaven's local dialing code start with 4?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q2706"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q106516948",
+            "http://www.wikidata.org/entity/Q2706"
+        ],
+        "logs": null
+    },
+    {
+        "question": "In how many movies was Johnny Depp casted in?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q37175",
+            "http://www.wikidata.org/entity/Q11424"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q37175"
+        ],
+        "logs": null
+    },
+    {
+        "question": "In which year did ABBA publish their album The Visitors ?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q338553"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q18233",
+            "http://www.wikidata.org/entity/Q338553"
+        ],
+        "logs": null
+    },
+    {
+        "question": "In which year was the author of “The Vanishing Half” born?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q98476957"
+        ],
+        "predictions": [],
+        "logs": null
+    },
+    {
+        "question": "Is After Eight manufactured by Unilever?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q157062",
+            "http://www.wikidata.org/entity/Q388973"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q157062",
+            "http://www.wikidata.org/entity/Q388973"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Is ALDI also in Italy?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q125054",
+            "http://www.wikidata.org/entity/Q38"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q125054"
+        ],
+        "logs": null
+    },
+    {
+        "question": "is Isfahan a big city?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q42053",
+            "http://www.wikidata.org/entity/Q1549591"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q42053"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Is math related to science ?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q395",
+            "http://www.wikidata.org/entity/Q336"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q395",
+            "http://www.wikidata.org/entity/Q336"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Is Python a kind of Programming languages?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q9143",
+            "http://www.wikidata.org/entity/Q28865"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q9143",
+            "http://www.wikidata.org/entity/Q28865"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Is samurai champloo a piece of original work or an adaptation?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q143276",
+            "http://www.wikidata.org/entity/Q1213562",
+            "http://www.wikidata.org/entity/Q104640197"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q169672"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Was the first female chancellor in Germany ever married?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q6581072",
+            "http://www.wikidata.org/entity/Q183"
+        ],
+        "predictions": [],
+        "logs": null
+    },
+    {
+        "question": "Is the Mariana Trench deeper than Mount Everest is high (above sea level)?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q510",
+            "http://www.wikidata.org/entity/Q513"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q510",
+            "http://www.wikidata.org/entity/Q513"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Is the number of countries in Europe larger than that in Asia?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q6256",
+            "http://www.wikidata.org/entity/Q48",
+            "http://www.wikidata.org/entity/Q46"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q48",
+            "http://www.wikidata.org/entity/Q46"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Is the production company of samurai champloo still existing?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q143276"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q143276"
+        ],
+        "logs": null
+    },
+    {
+        "question": "is there female main character in hunter x hunter?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q6581072",
+            "http://www.wikidata.org/entity/Q696071"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q696071"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Is water colorless?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q283",
+            "http://www.wikidata.org/entity/Q11567495"
+        ],
+        "predictions": [],
+        "logs": null
+    },
+    {
+        "question": "Is Axel Rose a member of Guns N' Roses?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q11885",
+            "http://www.wikidata.org/entity/Q11895"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q11885",
+            "http://www.wikidata.org/entity/Q11895"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Is the capital of Iran bigger than that of Germany?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q183",
+            "http://www.wikidata.org/entity/Q794"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q5035711",
+            "http://www.wikidata.org/entity/Q794"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Is the Weser longer than the Rhine?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q1650",
+            "http://www.wikidata.org/entity/Q584"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q1650",
+            "http://www.wikidata.org/entity/Q584"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Is Tony Blair taller than Tiger Woods?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q9545",
+            "http://www.wikidata.org/entity/Q10993"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q9545",
+            "http://www.wikidata.org/entity/Q10993"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Is Chicago located at Lake Michigan?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q1169",
+            "http://www.wikidata.org/entity/Q1297"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q1169",
+            "http://www.wikidata.org/entity/Q1297"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Is the district of Höxter next to the district of Paderborn?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q6228",
+            "http://www.wikidata.org/entity/Q6224"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q6228",
+            "http://www.wikidata.org/entity/Q6224"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Are part of the Harz mountains in the district of Nordhausen?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q7858",
+            "http://www.wikidata.org/entity/Q4186"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q4186",
+            "http://www.wikidata.org/entity/Q7033"
+        ],
+        "logs": null
+    },
+    {
+        "question": "How many people won the Nobel Prize in Literature or Physics since 2000?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q37922",
+            "http://www.wikidata.org/entity/Q38104",
+            "http://www.wikidata.org/entity/Q5"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q37922",
+            "http://www.wikidata.org/entity/Q38104"
+        ],
+        "logs": null
+    },
+    {
+        "question": "How many african-american people got a star on the Hollywood Walk of Fame?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q49085",
+            "http://www.wikidata.org/entity/Q17985761",
+            "http://www.wikidata.org/entity/Q5"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q71719"
+        ],
+        "logs": null
+    },
+    {
+        "question": "With how many countries does Australia share a border?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q6256",
+            "http://www.wikidata.org/entity/Q408"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q408"
+        ],
+        "logs": null
+    },
+    {
+        "question": "How many female Chinese Empresses have there been?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q6581072",
+            "http://www.wikidata.org/entity/Q268218"
+        ],
+        "predictions": [],
+        "logs": null
+    },
+    {
+        "question": "Of which political party was Joseph Beuys a member?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q153965"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q153965"
+        ],
+        "logs": null
+    },
+    {
+        "question": "In what year did the Hollywood Walk of Fame open?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q71719"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q71719"
+        ],
+        "logs": null
+    },
+    {
+        "question": "on which video streaming services can i watch hunter x hunter anime series?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q70209136",
+            "http://www.wikidata.org/entity/Q59152282"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q696071"
+        ],
+        "logs": null
+    },
+    {
+        "question": "People of what age belong to the Silent Generation ?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q3044693"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q3044693"
+        ],
+        "logs": null
+    },
+    {
+        "question": "In what year did the district of Höxter come into existence?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q6228"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q6228"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Is the Linux Foundation verified on Twitter?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q858851",
+            "http://www.wikidata.org/entity/Q28378282"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q918",
+            "http://www.wikidata.org/entity/Q858851"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Were Angela Merkel and Tony Blair born in the same year?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q9545",
+            "http://www.wikidata.org/entity/Q567"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q9545",
+            "http://www.wikidata.org/entity/Q567"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Do more than 100000000 people speak Japanese?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q5287"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q5287"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Tell me all the cast members of the film Red Notice directed by Rawson Marshall Thurber ?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q58815001",
+            "http://www.wikidata.org/entity/Q2745616"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q58815001",
+            "http://www.wikidata.org/entity/Q2745616"
+        ],
+        "logs": null
+    },
+    {
+        "question": "The first album of Jay Chou",
+        "gold": [
+            "http://www.wikidata.org/entity/Q482994",
+            "http://www.wikidata.org/entity/Q238819"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q238819"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Through which countries does the Danube go?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q1653"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q1653"
+        ],
+        "logs": null
+    },
+    {
+        "question": "What do sperm whales mainly eat?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q81214"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q81214"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Was Frida Kahlo a surrealist?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q39427",
+            "http://www.wikidata.org/entity/Q5588"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q39427",
+            "http://www.wikidata.org/entity/Q5588"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Was Funny Games and its remake directed by different persons?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q951002",
+            "http://www.wikidata.org/entity/Q696928"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q951002"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Was Google founded by Bill Gates?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q5284",
+            "http://www.wikidata.org/entity/Q95"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q5284",
+            "http://www.wikidata.org/entity/Q95"
+        ],
+        "logs": null
+    },
+    {
+        "question": "What is the second letter in the Greek alphabet?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q8216",
+            "http://www.wikidata.org/entity/Q19793459"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q8216"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Was it the cancer that caused the death of Steve Jobs who was the CEO of Apple?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q19837",
+            "http://www.wikidata.org/entity/Q12078"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q12078",
+            "http://www.wikidata.org/entity/Q19837",
+            "http://www.wikidata.org/entity/Q312"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Was Shaquille O'Neal the teammate of Kobe Bryant in the year of 2000?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q169452",
+            "http://www.wikidata.org/entity/Q25369"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q169452",
+            "http://www.wikidata.org/entity/Q25369"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Was Shaquille O'Neal, as the basketball player, also an film actor?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q10800557",
+            "http://www.wikidata.org/entity/Q169452",
+            "http://www.wikidata.org/entity/Q3665646"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q169452",
+            "http://www.wikidata.org/entity/Q5372"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Was the first album of the band Darkside released in 2012?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q482994",
+            "http://www.wikidata.org/entity/Q16954319"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q16954319"
+        ],
+        "logs": null
+    },
+    {
+        "question": "What are the spin-offs of Breaking Bad?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q1079"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q1079"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Which river flows through the Grand Canyon?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q4022",
+            "http://www.wikidata.org/entity/Q118841"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q118841"
+        ],
+        "logs": null
+    },
+    {
+        "question": "What was the key event related to Salvador Dalí?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q5577"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q5577"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Who passed the German Occupational Safety and Health Act?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q1006079",
+            "http://www.wikidata.org/entity/Q183",
+            "http://www.wikidata.org/entity/Q629029"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q15029658"
+        ],
+        "logs": null
+    },
+    {
+        "question": "What are the German names of academic disciplines containing “linguistik”?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q11862829"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q8162"
+        ],
+        "logs": null
+    },
+    {
+        "question": "What are the names of the head of states of Germany and France ?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q183",
+            "http://www.wikidata.org/entity/Q142"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q183",
+            "http://www.wikidata.org/entity/Q142"
+        ],
+        "logs": null
+    },
+    {
+        "question": "What are the professions of John Lennon’s sons?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q1203",
+            "http://www.wikidata.org/entity/Q5"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q1203"
+        ],
+        "logs": null
+    },
+    {
+        "question": "What are the titles of the Star Wars series movies?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q22092344",
+            "http://www.wikidata.org/entity/Q11424"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q462"
+        ],
+        "logs": null
+    },
+    {
+        "question": "What came first: the TV show The Flintstones or the end of racial discrimination in voting in the US ?",
+        "gold": [],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q201358",
+            "http://www.wikidata.org/entity/Q3112723"
+        ],
+        "logs": null
+    },
+    {
+        "question": "What colors does the German national flag have?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q48160"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q48160"
+        ],
+        "logs": null
+    },
+    {
+        "question": "What did the suffragettes stand for?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q322170"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q322170"
+        ],
+        "logs": null
+    },
+    {
+        "question": "What do you call a female form of an emperor in English?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q39018"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q1860",
+            "http://www.wikidata.org/entity/Q39018"
+        ],
+        "logs": null
+    },
+    {
+        "question": "What event killed the most people in the years 1910 to 1920?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q1190554"
+        ],
+        "predictions": [],
+        "logs": null
+    },
+    {
+        "question": "Does the ATI Company still exist?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q213849"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q213849"
+        ],
+        "logs": null
+    },
+    {
+        "question": "What happened to the dinosaurs ?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q430"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q430"
+        ],
+        "logs": null
+    },
+    {
+        "question": "What instruments did Louis Armstrong play?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q1779"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q1779"
+        ],
+        "logs": null
+    },
+    {
+        "question": "what did the author of the phrase: \"Alea iacta est\" die of?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q271723"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q271723"
+        ],
+        "logs": null
+    },
+    {
+        "question": "What is the binary gender of the partner of Allen Ginsberg ?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q6711"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q6711",
+            "http://www.wikidata.org/entity/Q5530970"
+        ],
+        "logs": null
+    },
+    {
+        "question": "What is the capital of the prefecture Tokyo ?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q1490"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q1490",
+            "http://www.wikidata.org/entity/Q50337"
+        ],
+        "logs": null
+    },
+    {
+        "question": "What is the Chinese zodiac animal that follows the ox?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q79226802",
+            "http://www.wikidata.org/entity/Q599644"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q599644",
+            "http://www.wikidata.org/entity/Q1976204"
+        ],
+        "logs": null
+    },
+    {
+        "question": "What is the combined total revenue of three largest Big Tech companies ordered by number of employees?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q30748112"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q3122864"
+        ],
+        "logs": null
+    },
+    {
+        "question": "What is the coordinate location of Shenzhen ?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q15174"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q15174"
+        ],
+        "logs": null
+    },
+    {
+        "question": "What is the Erlangen program ?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q315296"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q315296"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Did the Roland Corporation produce synthesizers?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q848490",
+            "http://www.wikidata.org/entity/Q163829"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q848490",
+            "http://www.wikidata.org/entity/Q163829"
+        ],
+        "logs": null
+    },
+    {
+        "question": "How many perople do the Port of Rotterdam employ?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q1027807"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q322749",
+            "http://www.wikidata.org/entity/Q1027807"
+        ],
+        "logs": null
+    },
+    {
+        "question": "what is the main subject of the manga \"your lie in april\": primary school, middle school or high school student?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q16003532",
+            "http://www.wikidata.org/entity/Q11419997",
+            "http://www.wikidata.org/entity/Q15360275",
+            "http://www.wikidata.org/entity/Q16003605"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q149566",
+            "http://www.wikidata.org/entity/Q9842",
+            "http://www.wikidata.org/entity/Q8274"
+        ],
+        "logs": null
+    },
+    {
+        "question": "What is the mother tongue of the author Chimamanda Ngozi Adichie ?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q230141"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q230141"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Who was the partner of Allen Ginsberg?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q6711"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q6711"
+        ],
+        "logs": null
+    },
+    {
+        "question": "What is the second game developed by Piranha Bytes?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q677273"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q677273"
+        ],
+        "logs": null
+    },
+    {
+        "question": "What is the TV-show that starred Rowan Atkinson , had 4 seasons and started in 1983?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q5398426",
+            "http://www.wikidata.org/entity/Q23760"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q23760"
+        ],
+        "logs": null
+    },
+    {
+        "question": "What is the english nickname of Ella Fitzgerald?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q1768"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q1768"
+        ],
+        "logs": null
+    },
+    {
+        "question": "What are the occupations of Kazuo Ishiguro’s daughter?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q6581072",
+            "http://www.wikidata.org/entity/Q272855"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q272855"
+        ],
+        "logs": null
+    },
+    {
+        "question": "What are the occupations of Nat King Cole?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q137042"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q137042"
+        ],
+        "logs": null
+    },
+    {
+        "question": "what is the official language of iran?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q794"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q794"
+        ],
+        "logs": null
+    },
+    {
+        "question": "What is the population in Freiburg ?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q2833"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q2833"
+        ],
+        "logs": null
+    },
+    {
+        "question": "What is the title of the 2020 released movie in which Carey Mulligan was the main actress?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q11424",
+            "http://www.wikidata.org/entity/Q219655"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q219655"
+        ],
+        "logs": null
+    },
+    {
+        "question": "What does Ray-Ban produce primarily?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q653941"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q653941"
+        ],
+        "logs": null
+    },
+    {
+        "question": "What language did the famous king, who was also a student of Aristotle's , speak?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q12097",
+            "http://www.wikidata.org/entity/Q868"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q868"
+        ],
+        "logs": null
+    },
+    {
+        "question": "What language do they speak in Poland ?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q36"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q36"
+        ],
+        "logs": null
+    },
+    {
+        "question": "How many different languages are spoken in West Europe?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q27496"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q27496"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Is Germany bigger than Poland?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q36",
+            "http://www.wikidata.org/entity/Q183"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q36"
+        ],
+        "logs": null
+    },
+    {
+        "question": "What notes does a C major chord consist of?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q55706505",
+            "http://www.wikidata.org/entity/Q263478"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q170439",
+            "http://www.wikidata.org/entity/Q1022293",
+            "http://www.wikidata.org/entity/Q7784746"
+        ],
+        "logs": null
+    },
+    {
+        "question": "How many different occupations did/do spouses of winners of the Nobel Prize in Literature hold?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q37922"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q37922"
+        ],
+        "logs": null
+    },
+    {
+        "question": "How many other video games began the same year as Dead by Daylight?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q24514682",
+            "http://www.wikidata.org/entity/Q7889"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q24514682",
+            "http://www.wikidata.org/entity/Q7889"
+        ],
+        "logs": null
+    },
+    {
+        "question": "What other civilizations existed during the Aztecs ?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q12542",
+            "http://www.wikidata.org/entity/Q8432"
+        ],
+        "predictions": [],
+        "logs": null
+    },
+    {
+        "question": "What brand uses petroleum jelly?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q431289",
+            "http://www.wikidata.org/entity/Q457239"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q457239"
+        ],
+        "logs": null
+    },
+    {
+        "question": "How many other musical films were launched the same year as Grease?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q842256",
+            "http://www.wikidata.org/entity/Q267721",
+            "http://www.wikidata.org/entity/Q11424"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q842256",
+            "http://www.wikidata.org/entity/Q267721"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Which creator of The OA also acted in it?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q19798744"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q19798744"
+        ],
+        "logs": null
+    },
+    {
+        "question": "What albums has Atif Aslam been on?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q482994",
+            "http://www.wikidata.org/entity/Q755830"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q755830"
+        ],
+        "logs": null
+    },
+    {
+        "question": "What was Ada Lovelace’s noble title?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q7259"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q7259"
+        ],
+        "logs": null
+    },
+    {
+        "question": "What was Janus the god of?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q167685"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q167685"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Who was the fellow Hobbit who was an enemy of Frodo?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q177329",
+            "http://www.wikidata.org/entity/Q74359"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q177329",
+            "http://www.wikidata.org/entity/Q74359"
+        ],
+        "logs": null
+    },
+    {
+        "question": "What was the last painting that Van Gogh painted?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q5582",
+            "http://www.wikidata.org/entity/Q3305213"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q5582"
+        ],
+        "logs": null
+    },
+    {
+        "question": "What was the main subject addressed in the Deep Purple song “Smoke on the water”?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q636399"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q636399",
+            "http://www.wikidata.org/entity/Q101505"
+        ],
+        "logs": null
+    },
+    {
+        "question": "When did the first sperm whales exist?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q81214"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q81214"
+        ],
+        "logs": null
+    },
+    {
+        "question": "What year did the Berlin Wall fall?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q5086"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q5086"
+        ],
+        "logs": null
+    },
+    {
+        "question": "What year was Riverdale first aired?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q23001951"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q7338128"
+        ],
+        "logs": null
+    },
+    {
+        "question": "When did Allen Ginsberg die?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q6711"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q6711"
+        ],
+        "logs": null
+    },
+    {
+        "question": "When did Ella Fitzgerald die?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q1768"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q1768"
+        ],
+        "logs": null
+    },
+    {
+        "question": "when did human first start to bouldering?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q852989"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q852989"
+        ],
+        "logs": null
+    },
+    {
+        "question": "When did Pakistan become independent?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q843"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q843"
+        ],
+        "logs": null
+    },
+    {
+        "question": "When did Rumi die?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q43347"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q43347"
+        ],
+        "logs": null
+    },
+    {
+        "question": "When did the brother of the author of Slaughterhouse Five die?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q265954",
+            "http://www.wikidata.org/entity/Q6581097"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q265954"
+        ],
+        "logs": null
+    },
+    {
+        "question": "when was the creator of saturday night live born?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q13979"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q13979"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Who was part of the Hambach Festival?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q551416"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q551416"
+        ],
+        "logs": null
+    },
+    {
+        "question": "When did The OA was first released?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q19798744"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q19798744"
+        ],
+        "logs": null
+    },
+    {
+        "question": "How many casualties were a result of the Troubles?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q815436"
+        ],
+        "predictions": [],
+        "logs": null
+    },
+    {
+        "question": "When did the Weimar Republic start?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q41304"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q41304"
+        ],
+        "logs": null
+    },
+    {
+        "question": "When did World War II officially end?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q362"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q362"
+        ],
+        "logs": null
+    },
+    {
+        "question": "when is the first ironman world championship?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q1420480"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q1338800"
+        ],
+        "logs": null
+    },
+    {
+        "question": "when was the magazine in which hunter x hunter is published established?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q41298",
+            "http://www.wikidata.org/entity/Q696071"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q696071"
+        ],
+        "logs": null
+    },
+    {
+        "question": "When the film Red Notice was released?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q58815001"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q58815001"
+        ],
+        "logs": null
+    },
+    {
+        "question": "When was Cologne Cathedral built?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q4176"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q4176"
+        ],
+        "logs": null
+    },
+    {
+        "question": "What can be done against gout?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q133087"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q133087"
+        ],
+        "logs": null
+    },
+    {
+        "question": "When was HIV first identified?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q15787"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q15787"
+        ],
+        "logs": null
+    },
+    {
+        "question": "When was the first article about Liquid State Machines published?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q191067",
+            "http://www.wikidata.org/entity/Q6557482"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q6557482"
+        ],
+        "logs": null
+    },
+    {
+        "question": "When was Marlene Dietrich born?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q4612"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q4612"
+        ],
+        "logs": null
+    },
+    {
+        "question": "When was Penicillin discovered?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q12190"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q12190"
+        ],
+        "logs": null
+    },
+    {
+        "question": "When was Rumi born?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q43347"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q43347"
+        ],
+        "logs": null
+    },
+    {
+        "question": "When was the beginning of Romanticism ?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q37068"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q37068"
+        ],
+        "logs": null
+    },
+    {
+        "question": "When was the Echo Music Prize abolished?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q703237"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q703237"
+        ],
+        "logs": null
+    },
+    {
+        "question": "When was the first album of the American band Typhoon released?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q482994",
+            "http://www.wikidata.org/entity/Q7861093"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q7861093"
+        ],
+        "logs": null
+    },
+    {
+        "question": "When was the Hamburg Airport inaugurated?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q27706"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q27706"
+        ],
+        "logs": null
+    },
+    {
+        "question": "When was the Hamburg S-Bahn officially opened?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q693956"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q693956"
+        ],
+        "logs": null
+    },
+    {
+        "question": "When was the jazz club Birdland in Hamburg founded?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q800176"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q8341",
+            "http://www.wikidata.org/entity/Q1055",
+            "http://www.wikidata.org/entity/Q800176"
+        ],
+        "logs": null
+    },
+    {
+        "question": "When was the poem Howl written?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q1545259"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q1545259"
+        ],
+        "logs": null
+    },
+    {
+        "question": "When was the university of Cambridge founded?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q35794"
+        ],
+        "predictions": [],
+        "logs": null
+    },
+    {
+        "question": "When was the University of Hamburg founded?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q156725"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q156725"
+        ],
+        "logs": null
+    },
+    {
+        "question": "When was the University of Saskatchewan founded?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q1514848"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q1514848"
+        ],
+        "logs": null
+    },
+    {
+        "question": "When was the Vatican City created?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q237"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q237"
+        ],
+        "logs": null
+    },
+    {
+        "question": "When was United Fruit Company founded?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q1771942"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q1771942"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Where did Trotzky die?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q33391"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q33391"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Where are both The Call of the Wild and White Fang set, the most two famous works of Jack London?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q476871",
+            "http://www.wikidata.org/entity/Q152267"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q45765",
+            "http://www.wikidata.org/entity/Q476871",
+            "http://www.wikidata.org/entity/Q152267"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Where did the Hambach Festival happen?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q551416"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q551416"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Where do the novels of the franchise The Lord of the Rings take place?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q15228"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q15228"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Where does the Nutri-Score originate from?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q46577569"
+        ],
+        "predictions": [],
+        "logs": null
+    },
+    {
+        "question": "Are there at least two winners of the Academy Award for Best Actress who have been educated at the same institution?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q103618"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q103618"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Where was K-pop star Lisa Manoban born?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q26707663"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q26707663",
+            "http://www.wikidata.org/entity/Q213665"
+        ],
+        "logs": null
+    },
+    {
+        "question": "What is the highest point of Norway?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q20"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q20"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Where did the psychedelic band “Khruangbin” form?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q54555985"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q54555985",
+            "http://www.wikidata.org/entity/Q846119"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Where was Caesar murdered?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q1048"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q1048"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Where was Goethe’s unmarried partner born ?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q5879"
+        ],
+        "predictions": [],
+        "logs": null
+    },
+    {
+        "question": "Where was Roland Corporation founded?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q848490"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q848490"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Where was the author of The Catcher in the Rye born ?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q183883"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q183883"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Who developed the Erlangen program?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q315296"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q315296"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Which actor starring in Free Guy also starred in Deadpool?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q19347291",
+            "http://www.wikidata.org/entity/Q38685497"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q19347291",
+            "http://www.wikidata.org/entity/Q38685497"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Which American presidents followed in their father‘s step and also became the president?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q11696"
+        ],
+        "predictions": [],
+        "logs": null
+    },
+    {
+        "question": "which animal can possibly live longer, panda or koala?",
+        "gold": [],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q33602",
+            "http://www.wikidata.org/entity/Q36101"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Which archipelago has more islands: the Galápagos Islands or the Hawaiian Islands ?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q38095",
+            "http://www.wikidata.org/entity/Q192626",
+            "http://www.wikidata.org/entity/Q23442"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q38095",
+            "http://www.wikidata.org/entity/Q192626"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Which art movement was Yoko Ono part of?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q117012",
+            "http://www.wikidata.org/entity/Q968159"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q117012"
+        ],
+        "logs": null
+    },
+    {
+        "question": "which band is created earlier, queen or pink floyd?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q15862",
+            "http://www.wikidata.org/entity/Q2306"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q15862",
+            "http://www.wikidata.org/entity/Q2306"
+        ],
+        "logs": null
+    },
+    {
+        "question": "What caused Kobe Bryant's Death?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q25369"
+        ],
+        "predictions": [],
+        "logs": null
+    },
+    {
+        "question": "What are the opposites of zero?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q204"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q204"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Which businesses are founded by the person in charge of Tesla?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q478214",
+            "http://www.wikidata.org/entity/Q4830453"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q478214"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Did Germany have a population growth of at least 1% since 2010?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q183"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q183"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Which aircraft did Howard Hughes build?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q11436",
+            "http://www.wikidata.org/entity/Q189081"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q189081"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Which country has more official languages: South Africa (​​Q258) or Ethiopia ?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q258",
+            "http://www.wikidata.org/entity/Q115"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q258",
+            "http://www.wikidata.org/entity/Q115"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Is throat singing a tradition?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q82821",
+            "http://www.wikidata.org/entity/Q1067089"
+        ],
+        "predictions": [],
+        "logs": null
+    },
+    {
+        "question": "Which disease caused the death of Mark Twain?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q7245",
+            "http://www.wikidata.org/entity/Q12136"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q7245"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Which diseases can be caused by smoking ?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q662860",
+            "http://www.wikidata.org/entity/Q12136"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q662860"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Which genre that Cage the Elephant belongs to has the fewest english characters?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q68061"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q68061"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Which takes less space? 1kg of lead or 1kg of iron.",
+        "gold": [
+            "http://www.wikidata.org/entity/Q708",
+            "http://www.wikidata.org/entity/Q677"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q708",
+            "http://www.wikidata.org/entity/Q677"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Which kingdom preceded the Thonburi Kingdom ?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q1115291",
+            "http://www.wikidata.org/entity/Q7269"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q1115291"
+        ],
+        "logs": null
+    },
+    {
+        "question": "How many mountains are located in Germany?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q183",
+            "http://www.wikidata.org/entity/Q8502"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q183"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Which movements is the painting “Les Demoiselles d'Avignon” assigned to?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q910199"
+        ],
+        "predictions": [],
+        "logs": null
+    },
+    {
+        "question": "Which movies belong to the Cornetto trilogy ?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q169604"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q169604",
+            "http://www.wikidata.org/entity/Q1899311"
+        ],
+        "logs": null
+    },
+    {
+        "question": "During what event was the Four Policemen Council proposed?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q2945433"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q2945433"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Which NBA teams have won the most seasons?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q27020041",
+            "http://www.wikidata.org/entity/Q155223",
+            "http://www.wikidata.org/entity/Q13393265"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q155223"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Which of the dragons in Game of Thrones died?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q30170627",
+            "http://www.wikidata.org/entity/Q23572"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q23572"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Which other movies by the director of Another Round also starred Mads Mikkelsen ?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q294647",
+            "http://www.wikidata.org/entity/Q69303989",
+            "http://www.wikidata.org/entity/Q11424"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q294647",
+            "http://www.wikidata.org/entity/Q69303989"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Which egyptian pyramid is the tallest?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q79",
+            "http://www.wikidata.org/entity/Q12516"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q175582"
+        ],
+        "logs": null
+    },
+    {
+        "question": "What is the offical language of Taipei?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q1867"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q1867"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Which shows aired for the first time the same year as Saturday Night Live ?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q5398426",
+            "http://www.wikidata.org/entity/Q13979"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q13979"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Which songs made up the album Fijación Oral vol. 1 ?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q105543609",
+            "http://www.wikidata.org/entity/Q134556",
+            "http://www.wikidata.org/entity/Q828282"
+        ],
+        "predictions": [],
+        "logs": null
+    },
+    {
+        "question": "Which started first: impressionism or expressionism (art movements)?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q40415",
+            "http://www.wikidata.org/entity/Q80113"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q40415",
+            "http://www.wikidata.org/entity/Q80113"
+        ],
+        "logs": null
+    },
+    {
+        "question": "which state inside USA is batman living in?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q2695156",
+            "http://www.wikidata.org/entity/Q35657"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q2695156",
+            "http://www.wikidata.org/entity/Q30"
+        ],
+        "logs": null
+    },
+    {
+        "question": "which swordfighter in the lord of the rings marry a half-elven and belong to rangers of the north?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q2292830",
+            "http://www.wikidata.org/entity/Q11397897",
+            "http://www.wikidata.org/entity/Q2035494"
+        ],
+        "predictions": [],
+        "logs": null
+    },
+    {
+        "question": "Which teams participated in the 2020 UEFA Champions League Final ?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q46569648"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q46569648"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Which universities have more than 200000 students?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q3918"
+        ],
+        "predictions": [],
+        "logs": null
+    },
+    {
+        "question": "which university is established earlier, university of oxford or university of cambridge?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q34433",
+            "http://www.wikidata.org/entity/Q35794"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q34433",
+            "http://www.wikidata.org/entity/Q35794"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Who developed WordNet?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q533822"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q533822"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Who are the actresses in Portrait of a Lady on Fire?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q6581072",
+            "http://www.wikidata.org/entity/Q63246568"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q63246568"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Did Michael Jordan and Kobe Bryant play for the same team?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q41421",
+            "http://www.wikidata.org/entity/Q25369"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q41421",
+            "http://www.wikidata.org/entity/Q25369"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Who created the Turing machine?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q163310"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q163310"
+        ],
+        "logs": null
+    },
+    {
+        "question": "When was the Hambach Castle built?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q523286"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q523286"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Who died at the North Pole?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q934",
+            "http://www.wikidata.org/entity/Q5"
+        ],
+        "predictions": [],
+        "logs": null
+    },
+    {
+        "question": "Who directed Anne with an E ?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q28091065"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q28091065"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Who wrote \"Prototypical Networks for Few-shot Learning\"?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q44649835"
+        ],
+        "predictions": [],
+        "logs": null
+    },
+    {
+        "question": "Who founded “The Blue Rider”?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q117035"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q117035"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Who founded the Worpswede artist colony ?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q479361"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q269174"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Who is the author of “Convenience Store Woman” ?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q27863945"
+        ],
+        "predictions": [],
+        "logs": null
+    },
+    {
+        "question": "Who is the soccer player with the most goals in their career?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q937857"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q2736"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Who is the creator of the Dinosaurs tv show ?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q1211977"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q1211977"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Who is the current president of the German Bundestag currently?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q154797"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q154797"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Who is the most wealthy entrepreneur?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q131524"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q131524"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Who is the oldest cast member of the Netflix show “Queer Eye” ?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q48817408"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q48817408",
+            "http://www.wikidata.org/entity/Q907311"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Who is the publisher of Smite ?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q2357719"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q2357719"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Who wrote the Erlangen program?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q315296"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q315296"
+        ],
+        "logs": null
+    },
+    {
+        "question": "In which country is the Nanga Parbat located?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q130736"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q130736"
+        ],
+        "logs": null
+    },
+    {
+        "question": "who produced Star Wars: Episode VI – Return of the Jedi?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q181803"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q181803"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Who was an actor in more movies, Daniel Day Lewis or Paul Dano ?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q166389",
+            "http://www.wikidata.org/entity/Q11424",
+            "http://www.wikidata.org/entity/Q343616"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q166389",
+            "http://www.wikidata.org/entity/Q343616"
+        ],
+        "logs": null
+    },
+    {
+        "question": "For what literature prize was Simone de Beauvoir nominated?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q7197",
+            "http://www.wikidata.org/entity/Q378427"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q7197"
+        ],
+        "logs": null
+    },
+    {
+        "question": "What is the website of NPR's “Tiny Desk Concert”?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q30588383"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q671510"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Who was the creator of Boo-Boo Bear ?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q2394280"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q2394280"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Who was the creator of Unbreakable Kimmy Schmidt ?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q16889037"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q16889037"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Who was the director of Llamas with Hats ?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q55621114"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q55621114"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Who founded the Roland Corporation?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q848490"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q848490"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Who was the original actor who played Pinhead ?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q2518973"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q2518973"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Who were the parents of Socrates ?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q913"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q913"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Who wrote Anne of Green Gables ?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q565911"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q565911"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Who wrote the poem Howl ?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q1545259"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q1545259"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Who's the author of The Hellbound Heart ?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q3521239"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q3521239"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Whom did Clara Westhoff marry?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q462333"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q462333"
+        ],
+        "logs": null
+    },
+    {
+        "question": "what is the oldest film festival?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q220505"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q220505"
+        ],
+        "logs": null
+    },
+    {
+        "question": "When was Athens founded?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q1524"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q1524"
+        ],
+        "logs": null
+    },
+    {
+        "question": "which river is longer, the Seine or Elbe？",
+        "gold": [
+            "http://www.wikidata.org/entity/Q1471",
+            "http://www.wikidata.org/entity/Q1644"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q1471",
+            "http://www.wikidata.org/entity/Q1644"
+        ],
+        "logs": null
+    },
+    {
+        "question": "which game is created earlier, super mario bros or Pac-Man?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q11168",
+            "http://www.wikidata.org/entity/Q173626"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q11168",
+            "http://www.wikidata.org/entity/Q173626"
+        ],
+        "logs": null
+    },
+    {
+        "question": "who is the youngested member in g-idle?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q51885404"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q51885404"
+        ],
+        "logs": null
+    },
+    {
+        "question": "who is older, Lionel Messi or Cristiano Ronaldo？",
+        "gold": [
+            "http://www.wikidata.org/entity/Q11571",
+            "http://www.wikidata.org/entity/Q615"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q11571",
+            "http://www.wikidata.org/entity/Q615"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Is heidelberg university or university hamburg founded earlier?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q151510",
+            "http://www.wikidata.org/entity/Q156725"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q151510",
+            "http://www.wikidata.org/entity/Q156725"
+        ],
+        "logs": null
+    },
+    {
+        "question": "which forest is bigger, Amazon Rainforest or Congo Basin?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q932289",
+            "http://www.wikidata.org/entity/Q177567"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q932289",
+            "http://www.wikidata.org/entity/Q177567"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Does Samsung Electronics or Apple have more employees?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q312",
+            "http://www.wikidata.org/entity/Q20718"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q312",
+            "http://www.wikidata.org/entity/Q20718"
+        ],
+        "logs": null
+    },
+    {
+        "question": "which company is founded later, samsung or sony?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q20716",
+            "http://www.wikidata.org/entity/Q41187"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q20716",
+            "http://www.wikidata.org/entity/Q41187"
+        ],
+        "logs": null
+    },
+    {
+        "question": "who is taller, Lionel Messi or Cristiano Ronaldo？",
+        "gold": [
+            "http://www.wikidata.org/entity/Q11571",
+            "http://www.wikidata.org/entity/Q615"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q11571",
+            "http://www.wikidata.org/entity/Q615"
+        ],
+        "logs": null
+    },
+    {
+        "question": "who has won more NBA awards, Michael Jordan or Kobe Bean Bryant？",
+        "gold": [
+            "http://www.wikidata.org/entity/Q41421",
+            "http://www.wikidata.org/entity/Q25369"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q41421",
+            "http://www.wikidata.org/entity/Q25369"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Did Michael Jordan ever weigh more than Kobe Bean Bryant？",
+        "gold": [
+            "http://www.wikidata.org/entity/Q41421",
+            "http://www.wikidata.org/entity/Q25369"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q41421",
+            "http://www.wikidata.org/entity/Q25369"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Who is older, Sebastian Vettel or Lewis Hamilton?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q9673",
+            "http://www.wikidata.org/entity/Q42311"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q9673",
+            "http://www.wikidata.org/entity/Q42311"
+        ],
+        "logs": null
+    },
+    {
+        "question": "which city is more populated, copenhagen or amsterdam?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q727",
+            "http://www.wikidata.org/entity/Q1748"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q727",
+            "http://www.wikidata.org/entity/Q1748"
+        ],
+        "logs": null
+    },
+    {
+        "question": "How many things are part of the \"One Piece\" Franchise?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q673"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q673"
+        ],
+        "logs": null
+    },
+    {
+        "question": "How many fictional female swordfighters are there?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q95074",
+            "http://www.wikidata.org/entity/Q11397897",
+            "http://www.wikidata.org/entity/Q6581072"
+        ],
+        "predictions": [],
+        "logs": null
+    },
+    {
+        "question": "which company started earlier, Black Diamond Equipment or la sportiva?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q2905359",
+            "http://www.wikidata.org/entity/Q3821214"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q2905359"
+        ],
+        "logs": null
+    },
+    {
+        "question": "which desert is bigger, sahara desert or arabian desert?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q208299",
+            "http://www.wikidata.org/entity/Q6583"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q208299",
+            "http://www.wikidata.org/entity/Q6583"
+        ],
+        "logs": null
+    },
+    {
+        "question": "who lives longer, series black or bellatrix Lestrange?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q713701",
+            "http://www.wikidata.org/entity/Q1057918"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q89355531",
+            "http://www.wikidata.org/entity/Q2379528"
+        ],
+        "logs": null
+    },
+    {
+        "question": "What is the area of the great lakes?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q7347"
+        ],
+        "predictions": [],
+        "logs": null
+    },
+    {
+        "question": "What is native name of the composer of the Japanese national anthem?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q17"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q24865159"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Who is the founder of the capital of Vietnam?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q881"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q881"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Who is the manager of the operator of Neumayer III?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q7933"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q7933"
+        ],
+        "logs": null
+    },
+    {
+        "question": "How high is the mountain on which Günther Messner died?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q195351"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q195351"
+        ],
+        "logs": null
+    },
+    {
+        "question": "What is the twitter name of Running Wild?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q163173"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q918",
+            "http://www.wikidata.org/entity/Q7380004"
+        ],
+        "logs": null
+    },
+    {
+        "question": "How many times did the Italian national soccer team win the Fifa World Cup?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q676899",
+            "http://www.wikidata.org/entity/Q19317"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q676899",
+            "http://www.wikidata.org/entity/Q19317"
+        ],
+        "logs": null
+    },
+    {
+        "question": "What is the area of the capital of Spitsbergen?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q25231"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q21162"
+        ],
+        "logs": null
+    },
+    {
+        "question": "What percentage of Andorra is covered with water?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q228"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q228"
+        ],
+        "logs": null
+    },
+    {
+        "question": "How many countries are located around the euorpean Lake Constance?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q4127",
+            "http://www.wikidata.org/entity/Q46"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q4127"
+        ],
+        "logs": null
+    },
+    {
+        "question": "With how many persons was Richard Burton married?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q151973"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q151973"
+        ],
+        "logs": null
+    },
+    {
+        "question": "At what coordinates was the \"Sender Teutoburger Wald\" erected?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q1717891"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q1717891"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Where is the poet Alexander Pope buried?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q923",
+            "http://www.wikidata.org/entity/Q49757",
+            "http://www.wikidata.org/entity/Q15840785"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q164047"
+        ],
+        "logs": null
+    },
+    {
+        "question": "In what country is the Kandahar-downhill?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q327818"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q45604"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Who founded the architectural firm who planned the Elbphilharmonie?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q673223"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q673223"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Where are the founders of the band Metallica from?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q15920"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q15920"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Where does the Granny Smith apple variety come from?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q506040"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q506040"
+        ],
+        "logs": null
+    },
+    {
+        "question": "What is the Fujiyama made of?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q39231"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q1069573"
+        ],
+        "logs": null
+    }
+]

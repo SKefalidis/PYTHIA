@@ -1,0 +1,3609 @@
+[
+    {
+        "question": "does Caypup have more special abilities than Aasimar?",
+        "named_entities": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#aasimar",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#caypup"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasSpecAbils"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#caypup",
+                "?cay_SpecAbils"
+            ],
+            [
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#aasimar",
+                "?aas_SpecAbils"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#caypup",
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasSpecAbils",
+                    "?cay_SpecAbils"
+                ]
+            ],
+            [
+                [
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#aasimar",
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasSpecAbils",
+                    "?aas_SpecAbils"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "what spells Aasimar and Caypup do have in common?",
+        "named_entities": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#aasimar",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#caypup"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#canSpell"
+        ],
+        "known_to_known_paths": [
+            [
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#aasimar",
+                "?common_spells",
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#caypup"
+            ]
+        ],
+        "known_to_known_paths_triples": [
+            [
+                [
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#aasimar",
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#canSpell",
+                    "?common_spells"
+                ],
+                [
+                    "?common_spells",
+                    "~http://www.semanticweb.org/annab/ontologies/2022/3/ontology#canSpell",
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#caypup"
+                ]
+            ]
+        ],
+        "known_to_unknown_paths": [],
+        "known_to_unknown_paths_triples": []
+    },
+    {
+        "question": "is the number of creatures speaking both abyssal and aklo languages greater than infernal and terran?",
+        "named_entities": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#AbyssalL",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#InfernalL",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#TerranL",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#AkloL"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [],
+        "known_to_unknown_paths_triples": []
+    },
+    {
+        "question": "what is the most common alignment type?",
+        "named_entities": [],
+        "classes": [],
+        "predicates": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasAlignment"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [],
+        "known_to_unknown_paths_triples": []
+    },
+    {
+        "question": "how many types of robots are among creatures?",
+        "named_entities": [],
+        "classes": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast"
+        ],
+        "predicates": [
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast",
+                "?creatures"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast",
+                    "~http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+                    "?creatures"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "is there any type of troll with good alignment?",
+        "named_entities": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#chaoticGood",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#lawfulGood",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#neutralGood"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasAlignment"
+        ],
+        "known_to_known_paths": [
+            [
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#chaoticGood",
+                "?creatures",
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#neutralGood"
+            ],
+            [
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#chaoticGood",
+                "?creatures",
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#lawfulGood"
+            ],
+            [
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#neutralGood",
+                "?creatures",
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#lawfulGood"
+            ]
+        ],
+        "known_to_known_paths_triples": [
+            [
+                [
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#chaoticGood",
+                    "~http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasAlignment",
+                    "?creatures"
+                ],
+                [
+                    "?creatures",
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasAlignment",
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#neutralGood"
+                ]
+            ],
+            [
+                [
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#chaoticGood",
+                    "~http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasAlignment",
+                    "?creatures"
+                ],
+                [
+                    "?creatures",
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasAlignment",
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#lawfulGood"
+                ]
+            ],
+            [
+                [
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#neutralGood",
+                    "~http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasAlignment",
+                    "?creatures"
+                ],
+                [
+                    "?creatures",
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasAlignment",
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#lawfulGood"
+                ]
+            ]
+        ],
+        "known_to_unknown_paths": [],
+        "known_to_unknown_paths_triples": []
+    },
+    {
+        "question": "are creatures with good alignment more common than evil?",
+        "named_entities": [],
+        "classes": [],
+        "predicates": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasAlignment"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [],
+        "known_to_unknown_paths_triples": []
+    },
+    {
+        "question": "what creatures do have cold resist?",
+        "named_entities": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#cold"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasResists"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#cold",
+                "?creatures"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#cold",
+                    "~http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasResists",
+                    "?creatures"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "what percentage of dragons do speak both draconic and common languages?",
+        "named_entities": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#DraconicL",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#CommonL"
+        ],
+        "classes": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast"
+        ],
+        "predicates": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages",
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [],
+        "known_to_unknown_paths_triples": []
+    },
+    {
+        "question": "what are the top-5 languages by popularity among creatures?",
+        "named_entities": [],
+        "classes": [],
+        "predicates": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [],
+        "known_to_unknown_paths_triples": []
+    },
+    {
+        "question": "do dragons in average speak more languages than demons?",
+        "named_entities": [],
+        "classes": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast"
+        ],
+        "predicates": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages",
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [],
+        "known_to_unknown_paths_triples": []
+    },
+    {
+        "question": "what creatures do speak both common and undercommon languages?",
+        "named_entities": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#CommonL",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#UndercommonL"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages"
+        ],
+        "known_to_known_paths": [
+            [
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#CommonL",
+                "?creatures",
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#UndercommonL"
+            ]
+        ],
+        "known_to_known_paths_triples": [
+            [
+                [
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#CommonL",
+                    "~http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages",
+                    "?creatures"
+                ],
+                [
+                    "?creatures",
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages",
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#UndercommonL"
+                ]
+            ]
+        ],
+        "known_to_unknown_paths": [],
+        "known_to_unknown_paths_triples": []
+    },
+    {
+        "question": "how many creatures do speak abyssal, sylvan and elven languages?",
+        "named_entities": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#AbyssalL",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#SylvanL",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#ElvenL"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages"
+        ],
+        "known_to_known_paths": [
+            [
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#AbyssalL",
+                "?creatures",
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#SylvanL"
+            ],
+            [
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#AbyssalL",
+                "?creatures",
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#ElvenL"
+            ],
+            [
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#SylvanL",
+                "?creatures",
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#ElvenL"
+            ]
+        ],
+        "known_to_known_paths_triples": [
+            [
+                [
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#AbyssalL",
+                    "~http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages",
+                    "?creatures"
+                ],
+                [
+                    "?creatures",
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages",
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#SylvanL"
+                ]
+            ],
+            [
+                [
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#AbyssalL",
+                    "~http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages",
+                    "?creatures"
+                ],
+                [
+                    "?creatures",
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages",
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#ElvenL"
+                ]
+            ],
+            [
+                [
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#SylvanL",
+                    "~http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages",
+                    "?creatures"
+                ],
+                [
+                    "?creatures",
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages",
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#ElvenL"
+                ]
+            ]
+        ],
+        "known_to_unknown_paths": [],
+        "known_to_unknown_paths_triples": []
+    },
+    {
+        "question": "is there any type of zombie with chaotic evil or chaotic neutral alignment?",
+        "named_entities": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#chaoticEvil",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#chaoticNeutral"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasAlignment"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [],
+        "known_to_unknown_paths_triples": []
+    },
+    {
+        "question": "does Trox speak more languages than Sunlord?",
+        "named_entities": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Trox",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Sunlord"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Trox",
+                "?trox_lang"
+            ],
+            [
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Sunlord",
+                "?sunlord_lang"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Trox",
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages",
+                    "?trox_lang"
+                ]
+            ],
+            [
+                [
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Sunlord",
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages",
+                    "?sunlord_lang"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "does Einherji and Balor have any common language?",
+        "named_entities": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Balor",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Einherji"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages"
+        ],
+        "known_to_known_paths": [
+            [
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Einherji",
+                "?common_language",
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Balor"
+            ]
+        ],
+        "known_to_known_paths_triples": [
+            [
+                [
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Einherji",
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages",
+                    "?common_language"
+                ],
+                [
+                    "?common_language",
+                    "~http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages",
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Balor"
+                ]
+            ]
+        ],
+        "known_to_unknown_paths": [],
+        "known_to_unknown_paths_triples": []
+    },
+    {
+        "question": "how many creatures with lawful neutral alignment can speak giant language?",
+        "named_entities": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#lawfulNeutral",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#GiantL"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasAlignment"
+        ],
+        "known_to_known_paths": [
+            [
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#lawfulNeutral",
+                "?creatures",
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#GiantL"
+            ]
+        ],
+        "known_to_known_paths_triples": [
+            [
+                [
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#lawfulNeutral",
+                    "~http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasAlignment",
+                    "?creatures"
+                ],
+                [
+                    "?creatures",
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages",
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#GiantL"
+                ]
+            ]
+        ],
+        "known_to_unknown_paths": [],
+        "known_to_unknown_paths_triples": []
+    },
+    {
+        "question": "which ogres with lawful evil alignment can speak common language?",
+        "named_entities": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#CommonL",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#lawfulEvil"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasAlignment"
+        ],
+        "known_to_known_paths": [
+            [
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#CommonL",
+                "?ogres",
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#lawfulEvil"
+            ]
+        ],
+        "known_to_known_paths_triples": [
+            [
+                [
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#CommonL",
+                    "~http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages",
+                    "?ogres"
+                ],
+                [
+                    "?ogres",
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasAlignment",
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#lawfulEvil"
+                ]
+            ]
+        ],
+        "known_to_unknown_paths": [],
+        "known_to_unknown_paths_triples": []
+    },
+    {
+        "question": "what is the second most common alignment type for spiders?",
+        "named_entities": [],
+        "classes": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast"
+        ],
+        "predicates": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasAlignment",
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast",
+                "?spiders",
+                "?Alignment"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast",
+                    "~http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+                    "?spiders"
+                ],
+                [
+                    "?spiders",
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasAlignment",
+                    "?Alignment"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "what alignment type is the most common for elementals?",
+        "named_entities": [],
+        "classes": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast"
+        ],
+        "predicates": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasAlignment",
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast",
+                "?elementals",
+                "?Alignment"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast",
+                    "~http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+                    "?elementals"
+                ],
+                [
+                    "?elementals",
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasAlignment",
+                    "?Alignment"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "what alignment type is the rarest for creatures speaking auran language?",
+        "named_entities": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#AuranL"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasAlignment"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#AuranL",
+                "?creatures",
+                "?Alignment"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#AuranL",
+                    "~http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages",
+                    "?creatures"
+                ],
+                [
+                    "?creatures",
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasAlignment",
+                    "?Alignment"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "do skeletons have a greater percentage of true neutral alignment than zombies?",
+        "named_entities": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#trueNeutral"
+        ],
+        "classes": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast"
+        ],
+        "predicates": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasAlignment",
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [],
+        "known_to_unknown_paths_triples": []
+    },
+    {
+        "question": "do raven and ghoul have the same alignment?",
+        "named_entities": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Raven",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Ghoul"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasAlignment"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Raven",
+                "?raven_alignment"
+            ],
+            [
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Ghoul",
+                "?ghoul_alignment"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Raven",
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasAlignment",
+                    "?raven_alignment"
+                ]
+            ],
+            [
+                [
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Ghoul",
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasAlignment",
+                    "?ghoul_alignment"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "what percentage of wolves does have chaotic alignment?",
+        "named_entities": [],
+        "classes": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast"
+        ],
+        "predicates": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasAlignment",
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [],
+        "known_to_unknown_paths_triples": []
+    },
+    {
+        "question": "what percentage of angels does speak aquan language?",
+        "named_entities": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#AquanL"
+        ],
+        "classes": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast"
+        ],
+        "predicates": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages",
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [],
+        "known_to_unknown_paths_triples": []
+    },
+    {
+        "question": "what is an average number of languages for creatures?",
+        "named_entities": [],
+        "classes": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast"
+        ],
+        "predicates": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages",
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [],
+        "known_to_unknown_paths_triples": []
+    },
+    {
+        "question": "what is the maximum value for the numerical offensive attribute?",
+        "named_entities": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#offValues",
+            "http://www.w3.org/2001/XMLSchema#boolean"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://www.w3.org/2000/01/rdf-schema#range",
+            "http://www.w3.org/2000/01/rdf-schema#subPropertyOf"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#offValues",
+                "?off_attr",
+                "?data_type"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#offValues",
+                    "~http://www.w3.org/2000/01/rdf-schema#subPropertyOf",
+                    "?off_attr"
+                ],
+                [
+                    "?off_attr",
+                    "http://www.w3.org/2000/01/rdf-schema#range",
+                    "?data_type"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "is Sangudaemon faster than Eblis?",
+        "named_entities": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Eblis",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Sangudaemon"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasSpeedValue"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Sangudaemon",
+                "?speed_1"
+            ],
+            [
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Eblis",
+                "?speed_2"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Sangudaemon",
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasSpeedValue",
+                    "?speed_1"
+                ]
+            ],
+            [
+                [
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Eblis",
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasSpeedValue",
+                    "?speed_2"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "what is the mean speed value for spiders?",
+        "named_entities": [],
+        "classes": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast"
+        ],
+        "predicates": [
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasSpeedValue"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast",
+                "?spiders",
+                "?speed"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast",
+                    "~http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+                    "?spiders"
+                ],
+                [
+                    "?spiders",
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasSpeedValue",
+                    "?speed"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "what are top 5 by speed chaotic evil creatures?",
+        "named_entities": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#chaoticEvil"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasAlignment",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasSpeedValue"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#chaoticEvil",
+                "?creatures",
+                "?speed"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#chaoticEvil",
+                    "~http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasAlignment",
+                    "?creatures"
+                ],
+                [
+                    "?creatures",
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasSpeedValue",
+                    "?speed"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "what are creatures speaking sphinx language with speed value more than 20?",
+        "named_entities": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#SphinxL"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasSpeedValue"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#SphinxL",
+                "?creatures",
+                "?speed"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#SphinxL",
+                    "~http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages",
+                    "?creatures"
+                ],
+                [
+                    "?creatures",
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasSpeedValue",
+                    "?speed"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "what values of health points are related to creatures with the lowest level?",
+        "named_entities": [],
+        "classes": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast"
+        ],
+        "predicates": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLevel",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasHPValue",
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast",
+                "?creatures",
+                "?level"
+            ],
+            [
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast",
+                "?creatures",
+                "?HP"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast",
+                    "~http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+                    "?creatures"
+                ],
+                [
+                    "?creatures",
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLevel",
+                    "?level"
+                ]
+            ],
+            [
+                [
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast",
+                    "~http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+                    "?creatures"
+                ],
+                [
+                    "?creatures",
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasHPValue",
+                    "?HP"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "what is the maximum value of health point for creatures with chaotic good alignment?",
+        "named_entities": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#chaoticGood"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasHPValue",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasAlignment"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#chaoticGood",
+                "?creatures",
+                "?HP"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#chaoticGood",
+                    "~http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasAlignment",
+                    "?creatures"
+                ],
+                [
+                    "?creatures",
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasHPValue",
+                    "?HP"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "what values of experience points are related to creatures with the highest level?",
+        "named_entities": [],
+        "classes": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast"
+        ],
+        "predicates": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLevel",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasXPValue",
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast",
+                "?creatures",
+                "?level"
+            ],
+            [
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast",
+                "?creatures",
+                "?XP"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast",
+                    "~http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+                    "?creatures"
+                ],
+                [
+                    "?creatures",
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLevel",
+                    "?level"
+                ]
+            ],
+            [
+                [
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast",
+                    "~http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+                    "?creatures"
+                ],
+                [
+                    "?creatures",
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasXPValue",
+                    "?XP"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "what is the average challenge rating for creatures speaking celestial language?",
+        "named_entities": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#CelestialL"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasCRValue"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#CelestialL",
+                "?creatures",
+                "?CR"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#CelestialL",
+                    "~http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages",
+                    "?creatures"
+                ],
+                [
+                    "?creatures",
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasCRValue",
+                    "?CR"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "which elemental creatures do have a challenge rating more than 10?",
+        "named_entities": [],
+        "classes": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast"
+        ],
+        "predicates": [
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasCRValue"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast",
+                "?elementals",
+                "?CR"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast",
+                    "~http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+                    "?elementals"
+                ],
+                [
+                    "?elementals",
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasCRValue",
+                    "?CR"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "what creatures speaking terran language do have an initiative value more than 2 and less than 5?",
+        "named_entities": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#TerranL"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasInitValue"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#TerranL",
+                "?creatures",
+                "?Init"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#TerranL",
+                    "~http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages",
+                    "?creatures"
+                ],
+                [
+                    "?creatures",
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasInitValue",
+                    "?Init"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "what is the minimum non-negative initiative value for creatures with true neutral alignment?",
+        "named_entities": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#trueNeutral"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasAlignment",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasInitValue"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#trueNeutral",
+                "?creatures",
+                "?Init"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#trueNeutral",
+                    "~http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasAlignment",
+                    "?creatures"
+                ],
+                [
+                    "?creatures",
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasInitValue",
+                    "?Init"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "what are top 3 golem types by experience points?",
+        "named_entities": [],
+        "classes": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast"
+        ],
+        "predicates": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasXPValue",
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast",
+                "?golems",
+                "?XP"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast",
+                    "~http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+                    "?golems"
+                ],
+                [
+                    "?golems",
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasXPValue",
+                    "?XP"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "is Abaia superior to vampires in terms of base attributes?",
+        "named_entities": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Vampire",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Abaia",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#base"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://www.w3.org/2000/01/rdf-schema#subPropertyOf"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [],
+        "known_to_unknown_paths_triples": []
+    },
+    {
+        "question": "is Dhampir superior to Gorgon in terms of mean base attributes?",
+        "named_entities": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#base",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Gorgon",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Dhampir"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://www.w3.org/2000/01/rdf-schema#subPropertyOf"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#base",
+                "?base_attr"
+            ],
+            [
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Dhampir",
+                "?dham_attr"
+            ],
+            [
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Gorgon",
+                "?gorg_attr"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#base",
+                    "~http://www.w3.org/2000/01/rdf-schema#subPropertyOf",
+                    "?base_attr"
+                ]
+            ],
+            [
+                [
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Dhampir",
+                    "?base_attr",
+                    "?dham_attr"
+                ]
+            ],
+            [
+                [
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Gorgon",
+                    "?base_attr",
+                    "?gorg_attr"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "is Boggard superior to Selkie in terms of deffencive attributes?",
+        "named_entities": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Selkie",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#defValues",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Boggard"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://www.w3.org/2000/01/rdf-schema#subPropertyOf"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [],
+        "known_to_unknown_paths_triples": []
+    },
+    {
+        "question": "is Centaur superior to Medusa in terms of mean defensive attributes?",
+        "named_entities": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#defValues",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Centaur",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Medusa"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://www.w3.org/2000/01/rdf-schema#subPropertyOf"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#defValues",
+                "?def_attr"
+            ],
+            [
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Centaur",
+                "?cent_attr"
+            ],
+            [
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Medusa",
+                "?med_attr"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#defValues",
+                    "~http://www.w3.org/2000/01/rdf-schema#subPropertyOf",
+                    "?def_attr"
+                ]
+            ],
+            [
+                [
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Centaur",
+                    "?def_attr",
+                    "?cent_attr"
+                ]
+            ],
+            [
+                [
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Medusa",
+                    "?def_attr",
+                    "?med_attr"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "is Biclops superior to Mastodon in terms of statistics sum?",
+        "named_entities": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#statistics",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Biclops",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Mastodon"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://www.w3.org/2000/01/rdf-schema#subPropertyOf"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#statistics",
+                "?stats"
+            ],
+            [
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Biclops",
+                "?bicl_stats"
+            ],
+            [
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Mastodon",
+                "?mast_stats"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#statistics",
+                    "~http://www.w3.org/2000/01/rdf-schema#subPropertyOf",
+                    "?stats"
+                ]
+            ],
+            [
+                [
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Biclops",
+                    "?stats",
+                    "?bicl_stats"
+                ]
+            ],
+            [
+                [
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Mastodon",
+                    "?stats",
+                    "?mast_stats"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "is Satyr superior to Cacodaemon in terms of mean statistics?",
+        "named_entities": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#statistics",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Cacodaemon",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Satyr"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://www.w3.org/2000/01/rdf-schema#subPropertyOf"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#statistics",
+                "?stats"
+            ],
+            [
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Satyr",
+                "?satyr_stats"
+            ],
+            [
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Cacodaemon",
+                "?cacd_stats"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#statistics",
+                    "~http://www.w3.org/2000/01/rdf-schema#subPropertyOf",
+                    "?stats"
+                ]
+            ],
+            [
+                [
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Satyr",
+                    "?stats",
+                    "?satyr_stats"
+                ]
+            ],
+            [
+                [
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Cacodaemon",
+                    "?stats",
+                    "?cacd_stats"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "what is the dominant statistics for golems in average?",
+        "named_entities": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#statistics"
+        ],
+        "classes": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast"
+        ],
+        "predicates": [
+            "http://www.w3.org/2000/01/rdf-schema#subPropertyOf",
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast",
+                "?golems",
+                "?golem_stats"
+            ],
+            [
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#statistics",
+                "?stats"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast",
+                    "~http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+                    "?golems"
+                ],
+                [
+                    "?golems",
+                    "?stats",
+                    "?golem_stats"
+                ]
+            ],
+            [
+                [
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#statistics",
+                    "~http://www.w3.org/2000/01/rdf-schema#subPropertyOf",
+                    "?stats"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "what is the lowest statistics in average for wolves?",
+        "named_entities": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#statistics"
+        ],
+        "classes": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast"
+        ],
+        "predicates": [
+            "http://www.w3.org/2000/01/rdf-schema#subPropertyOf",
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast",
+                "?wolfes",
+                "?wolf_stats"
+            ],
+            [
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#statistics",
+                "?stats"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast",
+                    "~http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+                    "?wolfes"
+                ],
+                [
+                    "?wolfes",
+                    "?stats",
+                    "?wolf_stats"
+                ]
+            ],
+            [
+                [
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#statistics",
+                    "~http://www.w3.org/2000/01/rdf-schema#subPropertyOf",
+                    "?stats"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "what is the dominant defencive attribute for skeletons in average?",
+        "named_entities": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#defValues"
+        ],
+        "classes": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast"
+        ],
+        "predicates": [
+            "http://www.w3.org/2000/01/rdf-schema#subPropertyOf",
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast",
+                "?skeletons",
+                "?skeletons_def_attr"
+            ],
+            [
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#defValues",
+                "?def_attr"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast",
+                    "~http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+                    "?skeletons"
+                ],
+                [
+                    "?skeletons",
+                    "?def_attr",
+                    "?skeletons_def_attr"
+                ]
+            ],
+            [
+                [
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#defValues",
+                    "~http://www.w3.org/2000/01/rdf-schema#subPropertyOf",
+                    "?def_attr"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "what is the lowest defensive attribute for ogres in average?",
+        "named_entities": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#defValues"
+        ],
+        "classes": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast"
+        ],
+        "predicates": [
+            "http://www.w3.org/2000/01/rdf-schema#subPropertyOf",
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast",
+                "?ogres",
+                "?ogres_def_attr"
+            ],
+            [
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#defValues",
+                "?def_attr"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast",
+                    "~http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+                    "?ogres"
+                ],
+                [
+                    "?ogres",
+                    "?def_attr",
+                    "?ogres_def_attr"
+                ]
+            ],
+            [
+                [
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#defValues",
+                    "~http://www.w3.org/2000/01/rdf-schema#subPropertyOf",
+                    "?def_attr"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "does creatures have more offencive attributes than defencive?",
+        "named_entities": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#defValues",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#offValues"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://www.w3.org/2000/01/rdf-schema#subPropertyOf"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#offValues",
+                "?off_attr"
+            ],
+            [
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#defValues",
+                "?def_attr"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#offValues",
+                    "~http://www.w3.org/2000/01/rdf-schema#subPropertyOf",
+                    "?off_attr"
+                ]
+            ],
+            [
+                [
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#defValues",
+                    "~http://www.w3.org/2000/01/rdf-schema#subPropertyOf",
+                    "?def_attr"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "which creatures speaking aklo language do have the maximum attack parameter?",
+        "named_entities": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#AkloL"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#atk"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#AkloL",
+                "?creatures",
+                "?atk"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#AkloL",
+                    "~http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages",
+                    "?creatures"
+                ],
+                [
+                    "?creatures",
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#atk",
+                    "?atk"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "what is the average attack parameter for robots?",
+        "named_entities": [],
+        "classes": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast"
+        ],
+        "predicates": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#atk",
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast",
+                "?robots",
+                "?atk"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast",
+                    "~http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+                    "?robots"
+                ],
+                [
+                    "?robots",
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#atk",
+                    "?atk"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "how many creatures with neutral evil alignment do have combat maneuver bonus less than 4?",
+        "named_entities": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#neutralEvil"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasAlignment",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#cmb"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#neutralEvil",
+                "?creatures",
+                "?cmb"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#neutralEvil",
+                    "~http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasAlignment",
+                    "?creatures"
+                ],
+                [
+                    "?creatures",
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#cmb",
+                    "?cmb"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "what is the minimum combat maneuver bonus for creatures speaking ignan language?",
+        "named_entities": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#IgnanL"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#cmb"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#IgnanL",
+                "?creatures",
+                "?cmb"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#IgnanL",
+                    "~http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages",
+                    "?creatures"
+                ],
+                [
+                    "?creatures",
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#cmb",
+                    "?cmb"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "how many demons do have combat maneuver defense level greater than the average for all creatures?",
+        "named_entities": [],
+        "classes": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast"
+        ],
+        "predicates": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#cmd",
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast",
+                "?demons",
+                "?cmd"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast",
+                    "~http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+                    "?demons"
+                ],
+                [
+                    "?demons",
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#cmd",
+                    "?cmd"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "what is the maximum combat maneuver defense level for creatures with neutral good alignment?",
+        "named_entities": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#neutralGood"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasAlignment",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#cmd"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#neutralGood",
+                "?creatures",
+                "?cmd"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#neutralGood",
+                    "~http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasAlignment",
+                    "?creatures"
+                ],
+                [
+                    "?creatures",
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#cmd",
+                    "?cmd"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "what creatures speaking dwarven language do have armor class greater than 12?",
+        "named_entities": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#DwarvenL"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasACValue"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#DwarvenL",
+                "?creatures",
+                "?AC_value"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#DwarvenL",
+                    "~http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages",
+                    "?creatures"
+                ],
+                [
+                    "?creatures",
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasACValue",
+                    "?AC_value"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "what is the average armor class for angels?",
+        "named_entities": [],
+        "classes": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast"
+        ],
+        "predicates": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasACValue",
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast",
+                "?angels",
+                "?AC_value"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast",
+                    "~http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+                    "?angels"
+                ],
+                [
+                    "?angels",
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasACValue",
+                    "?AC_value"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "what is the minimum flat footed value for creatures with lawful good alignment?",
+        "named_entities": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#lawfulGood"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasAlignment",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasFlatFootedValue"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#lawfulGood",
+                "?creatures",
+                "?FFValue"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#lawfulGood",
+                    "~http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasAlignment",
+                    "?creatures"
+                ],
+                [
+                    "?creatures",
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasFlatFootedValue",
+                    "?FFValue"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "how many trolls do have flat footed value between 13 and 18?",
+        "named_entities": [],
+        "classes": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast"
+        ],
+        "predicates": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasFlatFootedValue",
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast",
+                "?trolls",
+                "?FFValue"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast",
+                    "~http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+                    "?trolls"
+                ],
+                [
+                    "?trolls",
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasFlatFootedValue",
+                    "?FFValue"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "what is the maximum fort value for creatures speaking goblin language?",
+        "named_entities": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#GoblinL"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasFortValue"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#GoblinL",
+                "?creatures",
+                "?fort_value"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#GoblinL",
+                    "~http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages",
+                    "?creatures"
+                ],
+                [
+                    "?creatures",
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasFortValue",
+                    "?fort_value"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "is there any creature with true neutral alignment with fort value equal to 6?",
+        "named_entities": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#trueNeutral"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasAlignment",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasFortValue"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#trueNeutral",
+                "?creatures",
+                "?FortValue"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#trueNeutral",
+                    "~http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasAlignment",
+                    "?creatures"
+                ],
+                [
+                    "?creatures",
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasFortValue",
+                    "?FortValue"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "what is the average number of health points for creatures speaking gnome language?",
+        "named_entities": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#GnomeL"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasHPvalue"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#GnomeL",
+                "?creatures",
+                "?HP"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#GnomeL",
+                    "~http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages",
+                    "?creatures"
+                ],
+                [
+                    "?creatures",
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasHPvalue",
+                    "?HP"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "what is the minimum number of health points for dragons with strenghts attribute more than 10?",
+        "named_entities": [],
+        "classes": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast"
+        ],
+        "predicates": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#str",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasHPvalue",
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast",
+                "?dragons",
+                "?HP"
+            ],
+            [
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast",
+                "?dragons",
+                "?str_attr"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast",
+                    "~http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+                    "?dragons"
+                ],
+                [
+                    "?dragons",
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasHPvalue",
+                    "?HP"
+                ]
+            ],
+            [
+                [
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast",
+                    "~http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+                    "?dragons"
+                ],
+                [
+                    "?dragons",
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#str",
+                    "?str_attr"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "how many creatures speaking halfling language do have ref value more than 10 and atack parameter less than 15?",
+        "named_entities": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#HalflingL"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasRefValue",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#atk"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#HalflingL",
+                "?creatures",
+                "?Ref_value"
+            ],
+            [
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#HalflingL",
+                "?creatures",
+                "?atk"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#HalflingL",
+                    "~http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages",
+                    "?creatures"
+                ],
+                [
+                    "?creatures",
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasRefValue",
+                    "?Ref_value"
+                ]
+            ],
+            [
+                [
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#HalflingL",
+                    "~http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages",
+                    "?creatures"
+                ],
+                [
+                    "?creatures",
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#atk",
+                    "?atk"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "what creatures with chaotic evil alignment do have the maximum ref value?",
+        "named_entities": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#chaoticEvil"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasAlignment",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasRefValue"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#chaoticEvil",
+                "?creatures",
+                "?RefValue"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#chaoticEvil",
+                    "~http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasAlignment",
+                    "?creatures"
+                ],
+                [
+                    "?creatures",
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasRefValue",
+                    "?RefValue"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "is there any spider type with touch value equal to 11?",
+        "named_entities": [],
+        "classes": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast"
+        ],
+        "predicates": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasTouchValue",
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast",
+                "?spiders",
+                "?touch_value"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast",
+                    "~http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+                    "?spiders"
+                ],
+                [
+                    "?spiders",
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasTouchValue",
+                    "?touch_value"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "what is the minimum touch value for creatures speaking druidic language with initiative value less than 2?",
+        "named_entities": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#DruidicL"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasInitValue",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasTouchValue"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#DruidicL",
+                "?creatures",
+                "?touch_value"
+            ],
+            [
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#DruidicL",
+                "?creatures",
+                "?init"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#DruidicL",
+                    "~http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages",
+                    "?creatures"
+                ],
+                [
+                    "?creatures",
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasTouchValue",
+                    "?touch_value"
+                ]
+            ],
+            [
+                [
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#DruidicL",
+                    "~http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages",
+                    "?creatures"
+                ],
+                [
+                    "?creatures",
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasInitValue",
+                    "?init"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "what percentage of creatures with neutral evil alignment do have will value less than 1?",
+        "named_entities": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#neutralEvil"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasAlignment",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasWillValue"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [],
+        "known_to_unknown_paths_triples": []
+    },
+    {
+        "question": "what is the average will value for creatures speaking orc language?",
+        "named_entities": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#OrcL"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasWillValue"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#OrcL",
+                "?creatures",
+                "?will_value"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#OrcL",
+                    "~http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages",
+                    "?creatures"
+                ],
+                [
+                    "?creatures",
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasWillValue",
+                    "?will_value"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "what types of zombies do have charisma attribute between 3 and 7?",
+        "named_entities": [],
+        "classes": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast"
+        ],
+        "predicates": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#cha",
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast",
+                "?zombies",
+                "?cha"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast",
+                    "~http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+                    "?zombies"
+                ],
+                [
+                    "?zombies",
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#cha",
+                    "?cha"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "is there any creature type with lawful evil alignment having charisma attribute greater than sum of strength and intelligence?",
+        "named_entities": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#lawfulEvil"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#int",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasAlignment",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#cha",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#str"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#lawfulEvil",
+                "?creatures",
+                "?cha"
+            ],
+            [
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#lawfulEvil",
+                "?creatures",
+                "?str"
+            ],
+            [
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#lawfulEvil",
+                "?creatures",
+                "?int"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#lawfulEvil",
+                    "~http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasAlignment",
+                    "?creatures"
+                ],
+                [
+                    "?creatures",
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#cha",
+                    "?cha"
+                ]
+            ],
+            [
+                [
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#lawfulEvil",
+                    "~http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasAlignment",
+                    "?creatures"
+                ],
+                [
+                    "?creatures",
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#str",
+                    "?str"
+                ]
+            ],
+            [
+                [
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#lawfulEvil",
+                    "~http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasAlignment",
+                    "?creatures"
+                ],
+                [
+                    "?creatures",
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#int",
+                    "?int"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "how many creatures speaking protean language do have constitution greater than 10?",
+        "named_entities": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#ProteanL"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#con"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#ProteanL",
+                "?creatures",
+                "?con"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#ProteanL",
+                    "~http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages",
+                    "?creatures"
+                ],
+                [
+                    "?creatures",
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#con",
+                    "?con"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "what is the maximum value of constitution attribute for elementals?",
+        "named_entities": [],
+        "classes": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast"
+        ],
+        "predicates": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#con",
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast",
+                "?elementals",
+                "?con"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast",
+                    "~http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+                    "?elementals"
+                ],
+                [
+                    "?elementals",
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#con",
+                    "?con"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "what is the average dexterity attribute for creatures with true neutral alignment?",
+        "named_entities": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#trueNeutral"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasAlignment",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#dex"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#trueNeutral",
+                "?creatures",
+                "?dex"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#trueNeutral",
+                    "~http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasAlignment",
+                    "?creatures"
+                ],
+                [
+                    "?creatures",
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#dex",
+                    "?dex"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "which creatures speaking aboleth language do have dexterity greater than average for all creatures?",
+        "named_entities": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#AbolethL"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#dex"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#AbolethL",
+                "?creatures",
+                "?dex"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#AbolethL",
+                    "~http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages",
+                    "?creatures"
+                ],
+                [
+                    "?creatures",
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#dex",
+                    "?dex"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "how many robots do have intelligence attribute less than 7 and speed value more than 10?",
+        "named_entities": [],
+        "classes": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast"
+        ],
+        "predicates": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#int",
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasSpeedValue"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast",
+                "?robots",
+                "?int"
+            ],
+            [
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast",
+                "?robots",
+                "?speed"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast",
+                    "~http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+                    "?robots"
+                ],
+                [
+                    "?robots",
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#int",
+                    "?int"
+                ]
+            ],
+            [
+                [
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast",
+                    "~http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+                    "?robots"
+                ],
+                [
+                    "?robots",
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasSpeedValue",
+                    "?speed"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "what is the minimum intelligence attribute for creatures with chaotic neutral alignment?",
+        "named_entities": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#chaoticNeutral"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#int",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasAlignment"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#chaoticNeutral",
+                "?creatures",
+                "?int"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#chaoticNeutral",
+                    "~http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasAlignment",
+                    "?creatures"
+                ],
+                [
+                    "?creatures",
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#int",
+                    "?int"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "what percentage of creatures speaking daemonic language do have strength attribute greater than 20?",
+        "named_entities": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#DaemonicL"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#str"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [],
+        "known_to_unknown_paths_triples": []
+    },
+    {
+        "question": "is there any golem type with strength attribute lower than charisma?",
+        "named_entities": [],
+        "classes": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast"
+        ],
+        "predicates": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#cha",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#str",
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast",
+                "?golems",
+                "?str"
+            ],
+            [
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast",
+                "?golems",
+                "?cha"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast",
+                    "~http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+                    "?golems"
+                ],
+                [
+                    "?golems",
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#str",
+                    "?str"
+                ]
+            ],
+            [
+                [
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast",
+                    "~http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+                    "?golems"
+                ],
+                [
+                    "?golems",
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#cha",
+                    "?cha"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "what is the average wisdom attribute for creatures with lawful neutral alignment?",
+        "named_entities": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#lawfulNeutral"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasAlignment",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#wis"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#lawfulNeutral",
+                "?creatures",
+                "?wis"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#lawfulNeutral",
+                    "~http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasAlignment",
+                    "?creatures"
+                ],
+                [
+                    "?creatures",
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#wis",
+                    "?wis"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "which creatures speaking necril and abyssal languages do have wisdom attribute more than 4?",
+        "named_entities": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#NecrilL",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#AbyssalL"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#wis"
+        ],
+        "known_to_known_paths": [
+            [
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#NecrilL",
+                "?creatures",
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#AbyssalL"
+            ]
+        ],
+        "known_to_known_paths_triples": [
+            [
+                [
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#NecrilL",
+                    "~http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages",
+                    "?creatures"
+                ],
+                [
+                    "?creatures",
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages",
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#AbyssalL"
+                ]
+            ]
+        ],
+        "known_to_unknown_paths": [
+            [
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#NecrilL",
+                "?creatures",
+                "?wis"
+            ],
+            [
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#AbyssalL",
+                "?creatures",
+                "?wis"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#NecrilL",
+                    "~http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages",
+                    "?creatures"
+                ],
+                [
+                    "?creatures",
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#wis",
+                    "?wis"
+                ]
+            ],
+            [
+                [
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#AbyssalL",
+                    "~http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages",
+                    "?creatures"
+                ],
+                [
+                    "?creatures",
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#wis",
+                    "?wis"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "what are the sums of the statistics for creatures speaking both gnoll and elven languages?",
+        "named_entities": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#ElvenL",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#statistics",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#GnollL"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages",
+            "http://www.w3.org/2000/01/rdf-schema#subPropertyOf"
+        ],
+        "known_to_known_paths": [
+            [
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#GnollL",
+                "?creatures",
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#ElvenL"
+            ]
+        ],
+        "known_to_known_paths_triples": [
+            [
+                [
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#GnollL",
+                    "~http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages",
+                    "?creatures"
+                ],
+                [
+                    "?creatures",
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages",
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#ElvenL"
+                ]
+            ]
+        ],
+        "known_to_unknown_paths": [
+            [
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#statistics",
+                "?stats"
+            ],
+            [
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#GnollL",
+                "?creatures",
+                "?stats_values"
+            ],
+            [
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#ElvenL",
+                "?creatures",
+                "?stats_values"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#statistics",
+                    "~http://www.w3.org/2000/01/rdf-schema#subPropertyOf",
+                    "?stats"
+                ]
+            ],
+            [
+                [
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#GnollL",
+                    "~http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages",
+                    "?creatures"
+                ],
+                [
+                    "?creatures",
+                    "?stats",
+                    "?stats_values"
+                ]
+            ],
+            [
+                [
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#ElvenL",
+                    "~http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages",
+                    "?creatures"
+                ],
+                [
+                    "?creatures",
+                    "?stats",
+                    "?stats_values"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "do Griffon and Hippogriff have the same alignment?",
+        "named_entities": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Hippogriff",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Griffon"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasAlignment"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Griffon",
+                "?grif_alignment"
+            ],
+            [
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Hippogriff",
+                "?hippogr_alignment"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Griffon",
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasAlignment",
+                    "?grif_alignment"
+                ]
+            ],
+            [
+                [
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Hippogriff",
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasAlignment",
+                    "?hippogr_alignment"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "does Androsphinx have a greater sum of intellegence and wisdom attributes than Blood Queen?",
+        "named_entities": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Androsphinx",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#BloodQueen"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#int",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#wis"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Androsphinx",
+                "?androsphinx_int"
+            ],
+            [
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Androsphinx",
+                "?androsphinx_wis"
+            ],
+            [
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#BloodQueen",
+                "?bqueen_int"
+            ],
+            [
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#BloodQueen",
+                "?bqueen_wis"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Androsphinx",
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#int",
+                    "?androsphinx_int"
+                ]
+            ],
+            [
+                [
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Androsphinx",
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#wis",
+                    "?androsphinx_wis"
+                ]
+            ],
+            [
+                [
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#BloodQueen",
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#int",
+                    "?bqueen_int"
+                ]
+            ],
+            [
+                [
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#BloodQueen",
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#wis",
+                    "?bqueen_wis"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "does Baalzebul have a greater value of average statistics than Dagon?",
+        "named_entities": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#statistics",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Baalzebul",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Dagon"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://www.w3.org/2000/01/rdf-schema#subPropertyOf"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#statistics",
+                "?stats"
+            ],
+            [
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Baalzebul",
+                "?baalz_stats"
+            ],
+            [
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Dagon",
+                "?dagon_stats"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#statistics",
+                    "~http://www.w3.org/2000/01/rdf-schema#subPropertyOf",
+                    "?stats"
+                ]
+            ],
+            [
+                [
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Baalzebul",
+                    "?stats",
+                    "?baalz_stats"
+                ]
+            ],
+            [
+                [
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Dagon",
+                    "?stats",
+                    "?dagon_stats"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "which creatures speaking ghoul language do have the greatest constitution attribute?",
+        "named_entities": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#GhoulL"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#con"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#GhoulL",
+                "?creatures",
+                "?con"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#GhoulL",
+                    "~http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages",
+                    "?creatures"
+                ],
+                [
+                    "?creatures",
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#con",
+                    "?con"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "is the number of creatures speaking dark language greater than cyclops language?",
+        "named_entities": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#CyclopsL",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#DarkL"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#DarkL",
+                "?creatures_1"
+            ],
+            [
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#CyclopsL",
+                "?creatures_2"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#DarkL",
+                    "~http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages",
+                    "?creatures_1"
+                ]
+            ],
+            [
+                [
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#CyclopsL",
+                    "~http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages",
+                    "?creatures_2"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "is the number of creatures speaking polyglot language greater than skald language?",
+        "named_entities": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#SkaldL",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#PolyglotL"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#PolyglotL",
+                "?creatures_1"
+            ],
+            [
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#SkaldL",
+                "?creatures_2"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#PolyglotL",
+                    "~http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages",
+                    "?creatures_1"
+                ]
+            ],
+            [
+                [
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#SkaldL",
+                    "~http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages",
+                    "?creatures_2"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "are angels characterized by the greater average value of experience points than demons?",
+        "named_entities": [],
+        "classes": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Beast"
+        ],
+        "predicates": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasXPValue",
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [],
+        "known_to_unknown_paths_triples": []
+    },
+    {
+        "question": "do Lamia and Lilith have a common language and alignment?",
+        "named_entities": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Lilith",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Lamia"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasAlignment"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Lamia",
+                "?Lamia_lang"
+            ],
+            [
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Lamia",
+                "?Lamia_alignment"
+            ],
+            [
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Lilith",
+                "?Lilith_lang"
+            ],
+            [
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Lilith",
+                "?Lilith_alignment"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Lamia",
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages",
+                    "?Lamia_lang"
+                ]
+            ],
+            [
+                [
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Lamia",
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasAlignment",
+                    "?Lamia_alignment"
+                ]
+            ],
+            [
+                [
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Lilith",
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages",
+                    "?Lilith_lang"
+                ]
+            ],
+            [
+                [
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Lilith",
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasAlignment",
+                    "?Lilith_alignment"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "do Lorelei and sirens speak the same languages?",
+        "named_entities": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Lorelei",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Siren"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Lorelei",
+                "?Lorelei_lang"
+            ],
+            [
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Siren",
+                "?Siren_lang"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Lorelei",
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages",
+                    "?Lorelei_lang"
+                ]
+            ],
+            [
+                [
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Siren",
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages",
+                    "?Siren_lang"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "what is the average dexterity attribute for Phoenix and Sleipnir?",
+        "named_entities": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Sleipnir",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Phoenix"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#dex"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Phoenix",
+                "?Phoenix_dex"
+            ],
+            [
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Sleipnir",
+                "?Sleipnir_dex"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Phoenix",
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#dex",
+                    "?Phoenix_dex"
+                ]
+            ],
+            [
+                [
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Sleipnir",
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#dex",
+                    "?Sleipnir_dex"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "what is the maximum constitution attribute for Kraken and Leviathan?",
+        "named_entities": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Leviathan",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Kraken"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#con"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Kraken",
+                "?Kraken_con"
+            ],
+            [
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Leviathan",
+                "?Leviathan_con"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Kraken",
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#con",
+                    "?Kraken_con"
+                ]
+            ],
+            [
+                [
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Leviathan",
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#con",
+                    "?Leviathan_con"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "what is the minimum wisdom attribute for Gorynych and Vodyanoi?",
+        "named_entities": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Vodyanoi",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Gorynych"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#wis"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Gorynych",
+                "?Gorynych_wis"
+            ],
+            [
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Vodyanoi",
+                "?Vodyanoi_wis"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Gorynych",
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#wis",
+                    "?Gorynych_wis"
+                ]
+            ],
+            [
+                [
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Vodyanoi",
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#wis",
+                    "?Vodyanoi_wis"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "does Kitsune or Rusalka have charisma attribute more than 20?",
+        "named_entities": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Rusalka",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Kitsune"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#cha"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Kitsune",
+                "?Kitsune_cha"
+            ],
+            [
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Rusalka",
+                "?Rusalka_cha"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Kitsune",
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#cha",
+                    "?Kitsune_cha"
+                ]
+            ],
+            [
+                [
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Rusalka",
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#cha",
+                    "?Rusalka_cha"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "do both Amon and Cetus have strength attribute between 15 and 25?",
+        "named_entities": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Amon",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Cetus"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#str"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Amon",
+                "?Amon_str"
+            ],
+            [
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Cetus",
+                "?Cetus_str"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Amon",
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#str",
+                    "?Amon_str"
+                ]
+            ],
+            [
+                [
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Cetus",
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#str",
+                    "?Cetus_str"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "does Sandman or Charon speak elder or boggarg language?",
+        "named_entities": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Charon",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Sandman",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#ElderL",
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#BoggargL"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Sandman",
+                "?Sandman_lang"
+            ],
+            [
+                "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Charon",
+                "?Charon_lang"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Sandman",
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages",
+                    "?Sandman_lang"
+                ]
+            ],
+            [
+                [
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#Charon",
+                    "http://www.semanticweb.org/annab/ontologies/2022/3/ontology#hasLanguages",
+                    "?Charon_lang"
+                ]
+            ]
+        ]
+    }
+]

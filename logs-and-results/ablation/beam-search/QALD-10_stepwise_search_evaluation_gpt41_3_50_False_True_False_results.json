@@ -1,0 +1,5180 @@
+[
+    {
+        "question": "After whom is the Riemannian geometry named?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q761383",
+                "http://www.wikidata.org/prop/direct/P138",
+                "?result"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q761383",
+                    "http://www.wikidata.org/prop/direct/P138",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q761383> <http://www.wikidata.org/prop/direct/P138> ?result .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q761383> <http://www.wikidata.org/prop/direct/P138> ?x0 ."
+        ]
+    },
+    {
+        "question": "On which stock exchanges are Siemens AG shares traded?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q81230",
+                "http://www.wikidata.org/prop/direct/P414",
+                "?result"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q81230",
+                    "http://www.wikidata.org/prop/direct/P414",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q81230> <http://www.wikidata.org/prop/direct/P414> ?result .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q81230> <http://www.wikidata.org/prop/direct/P414> ?x0 ."
+        ]
+    },
+    {
+        "question": "Apart from the book series the witcher, name all of the author\u2019s notable work.",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q11835640",
+                "http://www.wikidata.org/prop/direct/P50",
+                "?author"
+            ],
+            [
+                "?author",
+                "http://www.wikidata.org/prop/direct/P800",
+                "?result"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q11835640",
+                    "http://www.wikidata.org/prop/direct/P50",
+                    "http://www.wikidata.org/entity/Q312101"
+                ],
+                [
+                    "http://www.wikidata.org/entity/Q312101",
+                    "http://www.wikidata.org/prop/direct/P800",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q11835640> <http://www.wikidata.org/prop/direct/P50> ?author .\n?author <http://www.wikidata.org/prop/direct/P800> ?result .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q11835640> <http://www.wikidata.org/prop/direct/P50> <http://www.wikidata.org/entity/Q312101> .\n<http://www.wikidata.org/entity/Q312101> <http://www.wikidata.org/prop/direct/P800> ?x0 ."
+        ]
+    },
+    {
+        "question": "What is the boiling point of water?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q283",
+                "http://www.wikidata.org/prop/direct/P2102",
+                "?result"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q283",
+                    "http://www.wikidata.org/prop/direct/P2102",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q283> <http://www.wikidata.org/prop/direct/P2102> ?result .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q283> <http://www.wikidata.org/prop/direct/P2102> ?x0 ."
+        ]
+    },
+    {
+        "question": "At which school was Yayoi Kusama educated at?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q231121",
+                "http://www.wikidata.org/prop/direct/P69",
+                "?result"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q231121",
+                    "http://www.wikidata.org/prop/direct/P69",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q231121> <http://www.wikidata.org/prop/direct/P69> ?result .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q231121> <http://www.wikidata.org/prop/direct/P69> ?x0 ."
+        ]
+    },
+    {
+        "question": "Were at least two of the founders of tencent educated at the same university?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q860580",
+                "http://www.wikidata.org/prop/direct/P112",
+                "?founder"
+            ],
+            [
+                "?founder",
+                "http://www.wikidata.org/prop/direct/P69",
+                "?uni"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q860580",
+                    "http://www.wikidata.org/prop/direct/P112",
+                    "?x0"
+                ],
+                [
+                    "?x0",
+                    "http://www.wikidata.org/prop/direct/P69",
+                    "?x1"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q860580> <http://www.wikidata.org/prop/direct/P112> ?founder .\n?founder <http://www.wikidata.org/prop/direct/P69> ?uni .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q860580> <http://www.wikidata.org/prop/direct/P112> ?x0 .\n?x0 <http://www.wikidata.org/prop/direct/P69> ?x1 ."
+        ]
+    },
+    {
+        "question": "Were at least two of the founders of tencent educated at the same university?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q860580",
+                "http://www.wikidata.org/prop/direct/P112",
+                "?founder2"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q860580",
+                    "http://www.wikidata.org/prop/direct/P112",
+                    "?x0"
+                ],
+                [
+                    "?x0",
+                    "http://www.wikidata.org/prop/direct/P69",
+                    "?x1"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q860580> <http://www.wikidata.org/prop/direct/P112> ?founder2 .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q860580> <http://www.wikidata.org/prop/direct/P112> ?x0 .\n?x0 <http://www.wikidata.org/prop/direct/P69> ?x1 ."
+        ]
+    },
+    {
+        "question": "Find all Turkish verbs ending with \u201cu\u015f\u201d with their lemma.",
+        "found": false,
+        "macro_f1": 0.0,
+        "correct_path": [
+            [
+                "?result",
+                "http://wikiba.se/ontology#lexicalCategory",
+                "http://www.wikidata.org/entity/Q24905"
+            ],
+            [
+                "?result",
+                "http://wikiba.se/ontology#lemma",
+                "?lemma"
+            ]
+        ],
+        "selected_paths": [],
+        "correct_triples_string": "?result <http://wikiba.se/ontology#lexicalCategory> <http://www.wikidata.org/entity/Q24905> .\n?result <http://wikiba.se/ontology#lemma> ?lemma .\n",
+        "selected_triples_strings": []
+    },
+    {
+        "question": "From which country are the beagles originally from?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q21102",
+                "http://www.wikidata.org/prop/direct/P495",
+                "?result"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q21102",
+                    "http://www.wikidata.org/prop/direct/P495",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q21102> <http://www.wikidata.org/prop/direct/P495> ?result .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q21102> <http://www.wikidata.org/prop/direct/P495> ?x0 ."
+        ]
+    },
+    {
+        "question": "From which country came the 2nd most winners of the Emmy Award ?",
+        "found": false,
+        "macro_f1": 0.0,
+        "correct_path": [
+            [
+                "?person",
+                "http://www.wikidata.org/prop/direct/P166",
+                "http://www.wikidata.org/entity/Q123737"
+            ],
+            [
+                "?person",
+                "http://www.wikidata.org/prop/direct/P27",
+                "?result"
+            ]
+        ],
+        "selected_paths": [],
+        "correct_triples_string": "?person <http://www.wikidata.org/prop/direct/P166> <http://www.wikidata.org/entity/Q123737> .\n?person <http://www.wikidata.org/prop/direct/P27> ?result .\n",
+        "selected_triples_strings": []
+    },
+    {
+        "question": "In which manner did Hemingway die?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q23434",
+                "http://www.wikidata.org/prop/direct/P1196",
+                "?result"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q23434",
+                    "http://www.wikidata.org/prop/direct/P1196",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q23434> <http://www.wikidata.org/prop/direct/P1196> ?result .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q23434> <http://www.wikidata.org/prop/direct/P1196> ?x0 ."
+        ]
+    },
+    {
+        "question": "In which industry does the House of Medici own a business?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q170022",
+                "http://www.wikidata.org/prop/direct/P1830",
+                "?seqTmp0"
+            ],
+            [
+                "?seqTmp0",
+                "http://www.wikidata.org/prop/direct/P452",
+                "?result"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q170022",
+                    "http://www.wikidata.org/prop/direct/P1830",
+                    "http://www.wikidata.org/entity/Q806191"
+                ],
+                [
+                    "http://www.wikidata.org/entity/Q806191",
+                    "http://www.wikidata.org/prop/direct/P452",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q170022> <http://www.wikidata.org/prop/direct/P1830> ?seqTmp0 .\n?seqTmp0 <http://www.wikidata.org/prop/direct/P452> ?result .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q170022> <http://www.wikidata.org/prop/direct/P1830> <http://www.wikidata.org/entity/Q806191> .\n<http://www.wikidata.org/entity/Q806191> <http://www.wikidata.org/prop/direct/P452> ?x0 ."
+        ]
+    },
+    {
+        "question": "How do people from Turkey call the official name of the united states of america?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q30",
+                "http://www.wikidata.org/prop/direct/P1448",
+                "?result"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q30",
+                    "http://www.wikidata.org/prop/direct/P1448",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q30> <http://www.wikidata.org/prop/direct/P1448> ?result .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q30> <http://www.wikidata.org/prop/direct/P1448> ?x0 ."
+        ]
+    },
+    {
+        "question": "How high is the Cologne Cathedral ?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q4176",
+                "http://www.wikidata.org/prop/direct/P2048",
+                "?result"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q4176",
+                    "http://www.wikidata.org/prop/direct/P2048",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q4176> <http://www.wikidata.org/prop/direct/P2048> ?result .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q4176> <http://www.wikidata.org/prop/direct/P2048> ?x0 ."
+        ]
+    },
+    {
+        "question": "How is the Harz called in Mandarin Chinese?",
+        "found": false,
+        "macro_f1": 0.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q4186",
+                "http://www.w3.org/2000/01/rdf-schema#label",
+                "?result"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q4186",
+                    "http://schema.org/description",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q4186> <http://www.w3.org/2000/01/rdf-schema#label> ?result .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q4186> <http://schema.org/description> ?x0 ."
+        ]
+    },
+    {
+        "question": "How many ancient civilizations are there?",
+        "found": false,
+        "macro_f1": 0.0,
+        "correct_path": [
+            [
+                "?civ",
+                "http://www.wikidata.org/prop/direct/P31",
+                "http://www.wikidata.org/entity/Q28171280"
+            ]
+        ],
+        "selected_paths": [],
+        "correct_triples_string": "?civ <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q28171280> .\n",
+        "selected_triples_strings": []
+    },
+    {
+        "question": "How many children (including apopted ones) does Jeff Bezos have with his ex-wife?",
+        "found": false,
+        "macro_f1": 0.0,
+        "correct_path": [
+            [
+                "?child",
+                "http://www.wikidata.org/prop/direct/P22",
+                "http://www.wikidata.org/entity/Q312556"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q312556",
+                    "http://www.wikidata.org/prop/direct/P1971",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "?child <http://www.wikidata.org/prop/direct/P22> <http://www.wikidata.org/entity/Q312556> .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q312556> <http://www.wikidata.org/prop/direct/P1971> ?x0 ."
+        ]
+    },
+    {
+        "question": "How many Chinese zodiac animals are there in total?",
+        "found": false,
+        "macro_f1": 0.0,
+        "correct_path": [
+            [
+                "?animal",
+                "http://www.wikidata.org/prop/direct/P31",
+                "http://www.wikidata.org/entity/Q79226802"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q79226802",
+                    "http://www.wikidata.org/prop/direct/P1114",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "?animal <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q79226802> .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q79226802> <http://www.wikidata.org/prop/direct/P1114> ?x0 ."
+        ]
+    },
+    {
+        "question": "How many city-states are currently in the world?",
+        "found": false,
+        "macro_f1": 0.0,
+        "correct_path": [
+            [
+                "?cs",
+                "http://www.wikidata.org/prop/direct/P31",
+                "http://www.wikidata.org/entity/Q133442"
+            ]
+        ],
+        "selected_paths": [],
+        "correct_triples_string": "?cs <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q133442> .\n",
+        "selected_triples_strings": []
+    },
+    {
+        "question": "How many inhabitants does the birthplace of Cristiano Ronaldo have?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q11571",
+                "http://www.wikidata.org/prop/direct/P19",
+                "?seqTmp0"
+            ],
+            [
+                "?seqTmp0",
+                "http://www.wikidata.org/prop/direct/P1082",
+                "?result"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q11571",
+                    "http://www.wikidata.org/prop/direct/P19",
+                    "http://www.wikidata.org/entity/Q25444"
+                ],
+                [
+                    "http://www.wikidata.org/entity/Q25444",
+                    "http://www.wikidata.org/prop/direct/P1082",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q11571> <http://www.wikidata.org/prop/direct/P19> ?seqTmp0 .\n?seqTmp0 <http://www.wikidata.org/prop/direct/P1082> ?result .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q11571> <http://www.wikidata.org/prop/direct/P19> <http://www.wikidata.org/entity/Q25444> .\n<http://www.wikidata.org/entity/Q25444> <http://www.wikidata.org/prop/direct/P1082> ?x0 ."
+        ]
+    },
+    {
+        "question": "How many languages are widely used in India?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q668",
+                "http://www.wikidata.org/prop/direct/P2936",
+                "?lan"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q668",
+                    "http://www.wikidata.org/prop/direct/P2936",
+                    "?x0"
+                ]
+            ],
+            [
+                [
+                    "http://www.wikidata.org/entity/Q668",
+                    "http://www.wikidata.org/prop/direct/P37",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q668> <http://www.wikidata.org/prop/direct/P2936> ?lan .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q668> <http://www.wikidata.org/prop/direct/P2936> ?x0 .",
+            "<http://www.wikidata.org/entity/Q668> <http://www.wikidata.org/prop/direct/P37> ?x0 ."
+        ]
+    },
+    {
+        "question": "How many different colors can water take?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q283",
+                "http://www.wikidata.org/prop/direct/P462",
+                "?color"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q283",
+                    "http://www.wikidata.org/prop/direct/P462",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q283> <http://www.wikidata.org/prop/direct/P462> ?color .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q283> <http://www.wikidata.org/prop/direct/P462> ?x0 ."
+        ]
+    },
+    {
+        "question": "How many locations has Georges Braque worked at (work location)?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q153793",
+                "http://www.wikidata.org/prop/direct/P937",
+                "?loc"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q153793",
+                    "http://www.wikidata.org/prop/direct/P937",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q153793> <http://www.wikidata.org/prop/direct/P937> ?loc .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q153793> <http://www.wikidata.org/prop/direct/P937> ?x0 ."
+        ]
+    },
+    {
+        "question": "How many musical scales are there?",
+        "found": false,
+        "macro_f1": 0.0,
+        "correct_path": [
+            [
+                "?scale",
+                "http://www.wikidata.org/prop/direct/P31",
+                "http://www.wikidata.org/entity/Q179651"
+            ]
+        ],
+        "selected_paths": [],
+        "correct_triples_string": "?scale <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q179651> .\n",
+        "selected_triples_strings": []
+    },
+    {
+        "question": "How many public holidays does the state Bavaria have in a year?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q980",
+                "http://www.wikidata.org/prop/direct/P832",
+                "?hol"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q980",
+                    "http://www.wikidata.org/prop/direct/P832",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q980> <http://www.wikidata.org/prop/direct/P832> ?hol .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q980> <http://www.wikidata.org/prop/direct/P832> ?x0 ."
+        ]
+    },
+    {
+        "question": "How many occupations did Mark Twain have?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q7245",
+                "http://www.wikidata.org/prop/direct/P106",
+                "?occ"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q7245",
+                    "http://www.wikidata.org/prop/direct/P106",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q7245> <http://www.wikidata.org/prop/direct/P106> ?occ .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q7245> <http://www.wikidata.org/prop/direct/P106> ?x0 ."
+        ]
+    },
+    {
+        "question": "How many people can play \"Mensch \u00e4rgere dich nicht\" at most?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q545129",
+                "http://www.wikidata.org/prop/direct/P1873",
+                "?result"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q545129",
+                    "http://www.wikidata.org/prop/direct/P1873",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q545129> <http://www.wikidata.org/prop/direct/P1873> ?result .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q545129> <http://www.wikidata.org/prop/direct/P1873> ?x0 ."
+        ]
+    },
+    {
+        "question": "How many people died due to the Great Leap Forward according to the highest estimate?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q58715",
+                "http://www.wikidata.org/prop/direct/P1542",
+                "?seqTmp0"
+            ],
+            [
+                "?seqTmp0",
+                "http://www.wikidata.org/prop/direct/P1120",
+                "?d"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q58715",
+                    "http://www.wikidata.org/prop/direct/P527",
+                    "http://www.wikidata.org/entity/Q2454958"
+                ],
+                [
+                    "http://www.wikidata.org/entity/Q2454958",
+                    "http://www.wikidata.org/prop/direct/P1120",
+                    "?x0"
+                ]
+            ],
+            [
+                [
+                    "?x0",
+                    "http://www.wikidata.org/prop/direct/P361",
+                    "http://www.wikidata.org/entity/Q58715"
+                ],
+                [
+                    "?x0",
+                    "http://www.wikidata.org/prop/direct/P1120",
+                    "?x1"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q58715> <http://www.wikidata.org/prop/direct/P1542> ?seqTmp0 .\n?seqTmp0 <http://www.wikidata.org/prop/direct/P1120> ?d .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q58715> <http://www.wikidata.org/prop/direct/P527> <http://www.wikidata.org/entity/Q2454958> .\n<http://www.wikidata.org/entity/Q2454958> <http://www.wikidata.org/prop/direct/P1120> ?x0 .",
+            "?x0 <http://www.wikidata.org/prop/direct/P361> <http://www.wikidata.org/entity/Q58715> .\n?x0 <http://www.wikidata.org/prop/direct/P1120> ?x1 ."
+        ]
+    },
+    {
+        "question": "How many positions did Kobe Bryant play in his team?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q25369",
+                "http://www.wikidata.org/prop/direct/P413",
+                "?pos"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q25369",
+                    "http://www.wikidata.org/prop/direct/P413",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q25369> <http://www.wikidata.org/prop/direct/P413> ?pos .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q25369> <http://www.wikidata.org/prop/direct/P413> ?x0 ."
+        ]
+    },
+    {
+        "question": "How many seasons does Pose have?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q30603704",
+                "http://www.wikidata.org/prop/direct/P2437",
+                "?result"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q30603704",
+                    "http://www.wikidata.org/prop/direct/P2437",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q30603704> <http://www.wikidata.org/prop/direct/P2437> ?result .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q30603704> <http://www.wikidata.org/prop/direct/P2437> ?x0 ."
+        ]
+    },
+    {
+        "question": "How many seats are there in the current German Bundestag ?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q154797",
+                "http://www.wikidata.org/prop/direct/P1342",
+                "?result"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q154797",
+                    "http://www.wikidata.org/prop/direct/P1342",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q154797> <http://www.wikidata.org/prop/direct/P1342> ?result .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q154797> <http://www.wikidata.org/prop/direct/P1342> ?x0 ."
+        ]
+    },
+    {
+        "question": "How many siblings had the author of \u201cLittle Women\u201d ?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q523076",
+                "http://www.wikidata.org/prop/direct/P50",
+                "?aut"
+            ],
+            [
+                "?aut",
+                "http://www.wikidata.org/prop/direct/P3373",
+                "?sib"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q523076",
+                    "http://www.wikidata.org/prop/direct/P50",
+                    "http://www.wikidata.org/entity/Q185696"
+                ],
+                [
+                    "http://www.wikidata.org/entity/Q185696",
+                    "http://www.wikidata.org/prop/direct/P3373",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q523076> <http://www.wikidata.org/prop/direct/P50> ?aut .\n?aut <http://www.wikidata.org/prop/direct/P3373> ?sib .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q523076> <http://www.wikidata.org/prop/direct/P50> <http://www.wikidata.org/entity/Q185696> .\n<http://www.wikidata.org/entity/Q185696> <http://www.wikidata.org/prop/direct/P3373> ?x0 ."
+        ]
+    },
+    {
+        "question": "How many spouses had Rama V (one of the former Kings of Siam)?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q158861",
+                "http://www.wikidata.org/prop/direct/P26",
+                "?sp"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q158861",
+                    "http://www.wikidata.org/prop/direct/P26",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q158861> <http://www.wikidata.org/prop/direct/P26> ?sp .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q158861> <http://www.wikidata.org/prop/direct/P26> ?x0 ."
+        ]
+    },
+    {
+        "question": "Does Switzerland have a place north of the Point (8.57 47.8)?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q39",
+                "http://www.wikidata.org/prop/direct/P1332",
+                "?loc"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q39",
+                    "http://www.wikidata.org/prop/direct/P1332",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q39> <http://www.wikidata.org/prop/direct/P1332> ?loc .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q39> <http://www.wikidata.org/prop/direct/P1332> ?x0 ."
+        ]
+    },
+    {
+        "question": "What is TNFAIP1 ?",
+        "found": false,
+        "macro_f1": 0.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q18032040",
+                "http://www.wikidata.org/prop/direct/P31",
+                "?result"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q18032040",
+                    "http://www.wikidata.org/prop/direct/P688",
+                    "?x0"
+                ]
+            ],
+            [
+                [
+                    "http://www.wikidata.org/entity/Q18032040",
+                    "http://schema.org/description",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q18032040> <http://www.wikidata.org/prop/direct/P31> ?result .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q18032040> <http://www.wikidata.org/prop/direct/P688> ?x0 .",
+            "<http://www.wikidata.org/entity/Q18032040> <http://schema.org/description> ?x0 ."
+        ]
+    },
+    {
+        "question": "How often did the Mongols try to invade Japan?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q208156",
+                "http://www.wikidata.org/prop/direct/P585",
+                "?time"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q208156",
+                    "http://www.wikidata.org/prop/direct/P585",
+                    "?x0"
+                ]
+            ],
+            [
+                [
+                    "http://www.wikidata.org/entity/Q208156",
+                    "http://schema.org/description",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q208156> <http://www.wikidata.org/prop/direct/P585> ?time .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q208156> <http://www.wikidata.org/prop/direct/P585> ?x0 .",
+            "<http://www.wikidata.org/entity/Q208156> <http://schema.org/description> ?x0 ."
+        ]
+    },
+    {
+        "question": "How many years did the second oldest dog in the world live?",
+        "found": false,
+        "macro_f1": 0.0,
+        "correct_path": [
+            [
+                "?dog",
+                "http://www.wikidata.org/prop/direct/P31",
+                "http://www.wikidata.org/entity/Q144"
+            ],
+            [
+                "?dog",
+                "http://www.wikidata.org/prop/direct/P569",
+                "?db"
+            ]
+        ],
+        "selected_paths": [],
+        "correct_triples_string": "?dog <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q144> .\n?dog <http://www.wikidata.org/prop/direct/P569> ?db .\n",
+        "selected_triples_strings": []
+    },
+    {
+        "question": "How many years did the second oldest dog in the world live?",
+        "found": false,
+        "macro_f1": 0.0,
+        "correct_path": [
+            [
+                "?dog",
+                "http://www.wikidata.org/prop/direct/P31",
+                "http://www.wikidata.org/entity/Q144"
+            ],
+            [
+                "?dog",
+                "http://www.wikidata.org/prop/direct/P570",
+                "?dd"
+            ]
+        ],
+        "selected_paths": [],
+        "correct_triples_string": "?dog <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q144> .\n?dog <http://www.wikidata.org/prop/direct/P570> ?dd .\n",
+        "selected_triples_strings": []
+    },
+    {
+        "question": "if someone died in 1969, is there any chance they heard of queen\u2019s music?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q15862",
+                "http://www.wikidata.org/prop/direct/P2031",
+                "?start"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q15862",
+                    "http://www.wikidata.org/prop/direct/P571",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q15862> <http://www.wikidata.org/prop/direct/P2031> ?start .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q15862> <http://www.wikidata.org/prop/direct/P571> ?x0 ."
+        ]
+    },
+    {
+        "question": "Is Dr. Pepper named after its inventor?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q623561",
+                "http://www.wikidata.org/prop/direct/P138",
+                "?na"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q623561",
+                    "http://www.wikidata.org/prop/direct/P138",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q623561> <http://www.wikidata.org/prop/direct/P138> ?na .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q623561> <http://www.wikidata.org/prop/direct/P138> ?x0 ."
+        ]
+    },
+    {
+        "question": "in the country where ghost in the shell is born, who is the current head of the state?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q92580",
+                "http://www.wikidata.org/prop/direct/P495",
+                "?country"
+            ],
+            [
+                "?country",
+                "http://www.wikidata.org/prop/direct/P35",
+                "?result"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q92580",
+                    "http://www.wikidata.org/prop/direct/P495",
+                    "http://www.wikidata.org/entity/Q17"
+                ],
+                [
+                    "http://www.wikidata.org/entity/Q17",
+                    "http://www.wikidata.org/prop/direct/P35",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q92580> <http://www.wikidata.org/prop/direct/P495> ?country .\n?country <http://www.wikidata.org/prop/direct/P35> ?result .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q92580> <http://www.wikidata.org/prop/direct/P495> <http://www.wikidata.org/entity/Q17> .\n<http://www.wikidata.org/entity/Q17> <http://www.wikidata.org/prop/direct/P35> ?x0 ."
+        ]
+    },
+    {
+        "question": "In which stadium do the New York Yankees play?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q213417",
+                "http://www.wikidata.org/prop/direct/P115",
+                "?result"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q213417",
+                    "http://www.wikidata.org/prop/direct/P115",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q213417> <http://www.wikidata.org/prop/direct/P115> ?result .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q213417> <http://www.wikidata.org/prop/direct/P115> ?x0 ."
+        ]
+    },
+    {
+        "question": "In which countries is the Himalayas located?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q5451",
+                "http://www.wikidata.org/prop/direct/P17",
+                "?result"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q5451",
+                    "http://www.wikidata.org/prop/direct/P17",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q5451> <http://www.wikidata.org/prop/direct/P17> ?result .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q5451> <http://www.wikidata.org/prop/direct/P17> ?x0 ."
+        ]
+    },
+    {
+        "question": "In how many countries is pysanka practiced?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q3233785",
+                "http://www.wikidata.org/prop/direct/P17",
+                "?c"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q3233785",
+                    "http://www.wikidata.org/prop/direct/P17",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q3233785> <http://www.wikidata.org/prop/direct/P17> ?c .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q3233785> <http://www.wikidata.org/prop/direct/P17> ?x0 ."
+        ]
+    },
+    {
+        "question": "In which country is Oberirrach ?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q98138090",
+                "http://www.wikidata.org/prop/direct/P17",
+                "?result"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q98138090",
+                    "http://www.wikidata.org/prop/direct/P17",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q98138090> <http://www.wikidata.org/prop/direct/P17> ?result .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q98138090> <http://www.wikidata.org/prop/direct/P17> ?x0 ."
+        ]
+    },
+    {
+        "question": "In which country was Spotify created?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q689141",
+                "http://www.wikidata.org/prop/direct/P495",
+                "?result"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q689141",
+                    "http://www.wikidata.org/prop/direct/P495",
+                    "?x0"
+                ]
+            ],
+            [
+                [
+                    "http://www.wikidata.org/entity/Q689141",
+                    "http://www.wikidata.org/prop/direct/P17",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q689141> <http://www.wikidata.org/prop/direct/P495> ?result .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q689141> <http://www.wikidata.org/prop/direct/P495> ?x0 .",
+            "<http://www.wikidata.org/entity/Q689141> <http://www.wikidata.org/prop/direct/P17> ?x0 ."
+        ]
+    },
+    {
+        "question": "in which language does the united stated have the shortest short name?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q30",
+                "http://www.wikidata.org/prop/direct/P1813",
+                "?name"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q30",
+                    "http://www.wikidata.org/prop/direct/P1813",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q30> <http://www.wikidata.org/prop/direct/P1813> ?name .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q30> <http://www.wikidata.org/prop/direct/P1813> ?x0 ."
+        ]
+    },
+    {
+        "question": "Does Bremerhaven's local dialing code start with 4?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q2706",
+                "http://www.wikidata.org/prop/direct/P473",
+                "?code"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q2706",
+                    "http://www.wikidata.org/prop/direct/P473",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q2706> <http://www.wikidata.org/prop/direct/P473> ?code .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q2706> <http://www.wikidata.org/prop/direct/P473> ?x0 ."
+        ]
+    },
+    {
+        "question": "In which year did ABBA publish their album The Visitors ?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q338553",
+                "http://www.wikidata.org/prop/direct/P577",
+                "?date"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q338553",
+                    "http://www.wikidata.org/prop/direct/P577",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q338553> <http://www.wikidata.org/prop/direct/P577> ?date .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q338553> <http://www.wikidata.org/prop/direct/P577> ?x0 ."
+        ]
+    },
+    {
+        "question": "In which year was the author of \u201cThe Vanishing Half\u201d born?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q98476957",
+                "http://www.wikidata.org/prop/direct/P50",
+                "?seqTmp0"
+            ],
+            [
+                "?seqTmp0",
+                "http://www.wikidata.org/prop/direct/P569",
+                "?date"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q98476957",
+                    "http://www.wikidata.org/prop/direct/P50",
+                    "http://www.wikidata.org/entity/Q27449519"
+                ],
+                [
+                    "http://www.wikidata.org/entity/Q27449519",
+                    "http://www.wikidata.org/prop/direct/P569",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q98476957> <http://www.wikidata.org/prop/direct/P50> ?seqTmp0 .\n?seqTmp0 <http://www.wikidata.org/prop/direct/P569> ?date .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q98476957> <http://www.wikidata.org/prop/direct/P50> <http://www.wikidata.org/entity/Q27449519> .\n<http://www.wikidata.org/entity/Q27449519> <http://www.wikidata.org/prop/direct/P569> ?x0 ."
+        ]
+    },
+    {
+        "question": "Is the production company of samurai champloo still existing?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q143276",
+                "http://www.wikidata.org/prop/direct/P272",
+                "?comp"
+            ],
+            [
+                "?comp",
+                "http://www.wikidata.org/prop/direct/P576",
+                "?o"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q143276",
+                    "http://www.wikidata.org/prop/direct/P272",
+                    "http://www.wikidata.org/entity/Q645476"
+                ],
+                [
+                    "http://www.wikidata.org/entity/Q645476",
+                    "http://www.wikidata.org/prop/direct/P576",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q143276> <http://www.wikidata.org/prop/direct/P272> ?comp .\n?comp <http://www.wikidata.org/prop/direct/P576> ?o .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q143276> <http://www.wikidata.org/prop/direct/P272> <http://www.wikidata.org/entity/Q645476> .\n<http://www.wikidata.org/entity/Q645476> <http://www.wikidata.org/prop/direct/P576> ?x0 ."
+        ]
+    },
+    {
+        "question": "Of which political party was Joseph Beuys a member?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q153965",
+                "http://www.wikidata.org/prop/direct/P102",
+                "?result"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q153965",
+                    "http://www.wikidata.org/prop/direct/P102",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q153965> <http://www.wikidata.org/prop/direct/P102> ?result .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q153965> <http://www.wikidata.org/prop/direct/P102> ?x0 ."
+        ]
+    },
+    {
+        "question": "In what year did the Hollywood Walk of Fame open?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q71719",
+                "http://www.wikidata.org/prop/direct/P1619",
+                "?year"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q71719",
+                    "http://www.wikidata.org/prop/direct/P1619",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q71719> <http://www.wikidata.org/prop/direct/P1619> ?year .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q71719> <http://www.wikidata.org/prop/direct/P1619> ?x0 ."
+        ]
+    },
+    {
+        "question": "People of what age belong to the Silent Generation ?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q3044693",
+                "http://www.wikidata.org/prop/direct/P582",
+                "?time"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q3044693",
+                    "http://schema.org/description",
+                    "?x0"
+                ]
+            ],
+            [
+                [
+                    "http://www.wikidata.org/entity/Q3044693",
+                    "http://www.wikidata.org/prop/direct/P580",
+                    "?x0"
+                ]
+            ],
+            [
+                [
+                    "http://www.wikidata.org/entity/Q3044693",
+                    "http://www.wikidata.org/prop/direct/P582",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q3044693> <http://www.wikidata.org/prop/direct/P582> ?time .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q3044693> <http://schema.org/description> ?x0 .",
+            "<http://www.wikidata.org/entity/Q3044693> <http://www.wikidata.org/prop/direct/P580> ?x0 .",
+            "<http://www.wikidata.org/entity/Q3044693> <http://www.wikidata.org/prop/direct/P582> ?x0 ."
+        ]
+    },
+    {
+        "question": "In what year did the district of H\u00f6xter come into existence?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q6228",
+                "http://www.wikidata.org/prop/direct/P571",
+                "?time"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q6228",
+                    "http://www.wikidata.org/prop/direct/P571",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q6228> <http://www.wikidata.org/prop/direct/P571> ?time .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q6228> <http://www.wikidata.org/prop/direct/P571> ?x0 ."
+        ]
+    },
+    {
+        "question": "Do more than 100000000 people speak Japanese?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q5287",
+                "http://www.wikidata.org/prop/direct/P1098",
+                "?num"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q5287",
+                    "http://www.wikidata.org/prop/direct/P1098",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q5287> <http://www.wikidata.org/prop/direct/P1098> ?num .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q5287> <http://www.wikidata.org/prop/direct/P1098> ?x0 ."
+        ]
+    },
+    {
+        "question": "Through which countries does the Danube go?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q1653",
+                "http://www.wikidata.org/prop/direct/P17",
+                "?result"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q1653",
+                    "http://www.wikidata.org/prop/direct/P17",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q1653> <http://www.wikidata.org/prop/direct/P17> ?result .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q1653> <http://www.wikidata.org/prop/direct/P17> ?x0 ."
+        ]
+    },
+    {
+        "question": "What do sperm whales mainly eat?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q81214",
+                "http://www.wikidata.org/prop/direct/P1034",
+                "?result"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q81214",
+                    "http://www.wikidata.org/prop/direct/P1034",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q81214> <http://www.wikidata.org/prop/direct/P1034> ?result .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q81214> <http://www.wikidata.org/prop/direct/P1034> ?x0 ."
+        ]
+    },
+    {
+        "question": "What are the spin-offs of Breaking Bad?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q1079",
+                "http://www.wikidata.org/prop/direct/P2512",
+                "?result"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q1079",
+                    "http://www.wikidata.org/prop/direct/P2512",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q1079> <http://www.wikidata.org/prop/direct/P2512> ?result .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q1079> <http://www.wikidata.org/prop/direct/P2512> ?x0 ."
+        ]
+    },
+    {
+        "question": "What was the key event related to Salvador Dal\u00ed?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q5577",
+                "http://www.wikidata.org/prop/direct/P793",
+                "?result"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q5577",
+                    "http://www.wikidata.org/prop/direct/P793",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q5577> <http://www.wikidata.org/prop/direct/P793> ?result .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q5577> <http://www.wikidata.org/prop/direct/P793> ?x0 ."
+        ]
+    },
+    {
+        "question": "What are the German names of academic disciplines containing \u201clinguistik\u201d?",
+        "found": false,
+        "macro_f1": 0.0,
+        "correct_path": [
+            [
+                "?disc",
+                "http://www.wikidata.org/prop/direct/P31",
+                "http://www.wikidata.org/entity/Q11862829"
+            ],
+            [
+                "?disc",
+                "http://www.w3.org/2000/01/rdf-schema#label",
+                "?result"
+            ]
+        ],
+        "selected_paths": [],
+        "correct_triples_string": "?disc <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q11862829> .\n?disc <http://www.w3.org/2000/01/rdf-schema#label> ?result .\n",
+        "selected_triples_strings": []
+    },
+    {
+        "question": "What colors does the German national flag have?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q48160",
+                "http://www.wikidata.org/prop/direct/P462",
+                "?result"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q48160",
+                    "http://www.wikidata.org/prop/direct/P462",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q48160> <http://www.wikidata.org/prop/direct/P462> ?result .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q48160> <http://www.wikidata.org/prop/direct/P462> ?x0 ."
+        ]
+    },
+    {
+        "question": "What did the suffragettes stand for?",
+        "found": false,
+        "macro_f1": 0.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q322170",
+                "http://www.wikidata.org/prop/direct/P279",
+                "?seqTmp1"
+            ],
+            [
+                "?seqTmp1",
+                "http://www.wikidata.org/prop/direct/P425",
+                "?seqTmp0"
+            ],
+            [
+                "?seqTmp0",
+                "http://www.wikidata.org/prop/direct/P3712",
+                "?result"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q322170",
+                    "http://schema.org/description",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q322170> <http://www.wikidata.org/prop/direct/P279> ?seqTmp1 .\n?seqTmp1 <http://www.wikidata.org/prop/direct/P425> ?seqTmp0 .\n?seqTmp0 <http://www.wikidata.org/prop/direct/P3712> ?result .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q322170> <http://schema.org/description> ?x0 ."
+        ]
+    },
+    {
+        "question": "What do you call a female form of an emperor in English?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q39018",
+                "http://www.wikidata.org/prop/direct/P2521",
+                "?result"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q39018",
+                    "http://www.wikidata.org/prop/direct/P2521",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q39018> <http://www.wikidata.org/prop/direct/P2521> ?result .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q39018> <http://www.wikidata.org/prop/direct/P2521> ?x0 ."
+        ]
+    },
+    {
+        "question": "Does the ATI Company still exist?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q213849",
+                "http://www.wikidata.org/prop/direct/P576",
+                "?o"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q213849",
+                    "http://www.wikidata.org/prop/direct/P576",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q213849> <http://www.wikidata.org/prop/direct/P576> ?o .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q213849> <http://www.wikidata.org/prop/direct/P576> ?x0 ."
+        ]
+    },
+    {
+        "question": "What happened to the dinosaurs ?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q430",
+                "http://www.wikidata.org/prop/direct/P793",
+                "?result"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q430",
+                    "http://www.wikidata.org/prop/direct/P793",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q430> <http://www.wikidata.org/prop/direct/P793> ?result .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q430> <http://www.wikidata.org/prop/direct/P793> ?x0 ."
+        ]
+    },
+    {
+        "question": "What instruments did Louis Armstrong play?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q1779",
+                "http://www.wikidata.org/prop/direct/P1303",
+                "?result"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q1779",
+                    "http://www.wikidata.org/prop/direct/P1303",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q1779> <http://www.wikidata.org/prop/direct/P1303> ?result .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q1779> <http://www.wikidata.org/prop/direct/P1303> ?x0 ."
+        ]
+    },
+    {
+        "question": "what did the author of the phrase: \"Alea iacta est\" die of?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q271723",
+                "http://www.wikidata.org/prop/direct/P50",
+                "?seqTmp0"
+            ],
+            [
+                "?seqTmp0",
+                "http://www.wikidata.org/prop/direct/P509",
+                "?result"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q271723",
+                    "http://www.wikidata.org/prop/direct/P50",
+                    "http://www.wikidata.org/entity/Q1048"
+                ],
+                [
+                    "http://www.wikidata.org/entity/Q1048",
+                    "http://www.wikidata.org/prop/direct/P509",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q271723> <http://www.wikidata.org/prop/direct/P50> ?seqTmp0 .\n?seqTmp0 <http://www.wikidata.org/prop/direct/P509> ?result .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q271723> <http://www.wikidata.org/prop/direct/P50> <http://www.wikidata.org/entity/Q1048> .\n<http://www.wikidata.org/entity/Q1048> <http://www.wikidata.org/prop/direct/P509> ?x0 ."
+        ]
+    },
+    {
+        "question": "What is the binary gender of the partner of Allen Ginsberg ?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q6711",
+                "http://www.wikidata.org/prop/direct/P451",
+                "?seqTmp0"
+            ],
+            [
+                "?seqTmp0",
+                "http://www.wikidata.org/prop/direct/P21",
+                "?result"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q6711",
+                    "http://www.wikidata.org/prop/direct/P451",
+                    "http://www.wikidata.org/entity/Q1983102"
+                ],
+                [
+                    "http://www.wikidata.org/entity/Q1983102",
+                    "http://www.wikidata.org/prop/direct/P21",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q6711> <http://www.wikidata.org/prop/direct/P451> ?seqTmp0 .\n?seqTmp0 <http://www.wikidata.org/prop/direct/P21> ?result .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q6711> <http://www.wikidata.org/prop/direct/P451> <http://www.wikidata.org/entity/Q1983102> .\n<http://www.wikidata.org/entity/Q1983102> <http://www.wikidata.org/prop/direct/P21> ?x0 ."
+        ]
+    },
+    {
+        "question": "What is the capital of the prefecture Tokyo ?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q1490",
+                "http://www.wikidata.org/prop/direct/P36",
+                "?result"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q1490",
+                    "http://www.wikidata.org/prop/direct/P1376",
+                    "?x0"
+                ]
+            ],
+            [
+                [
+                    "http://www.wikidata.org/entity/Q1490",
+                    "http://www.wikidata.org/prop/direct/P36",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q1490> <http://www.wikidata.org/prop/direct/P36> ?result .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q1490> <http://www.wikidata.org/prop/direct/P1376> ?x0 .",
+            "<http://www.wikidata.org/entity/Q1490> <http://www.wikidata.org/prop/direct/P36> ?x0 ."
+        ]
+    },
+    {
+        "question": "What is the coordinate location of Shenzhen ?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q15174",
+                "http://www.wikidata.org/prop/direct/P625",
+                "?result"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q15174",
+                    "http://www.wikidata.org/prop/direct/P625",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q15174> <http://www.wikidata.org/prop/direct/P625> ?result .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q15174> <http://www.wikidata.org/prop/direct/P625> ?x0 ."
+        ]
+    },
+    {
+        "question": "What is the Erlangen program ?",
+        "found": false,
+        "macro_f1": 0.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q315296",
+                "http://www.wikidata.org/prop/direct/P31",
+                "?result"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q315296",
+                    "http://schema.org/description",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q315296> <http://www.wikidata.org/prop/direct/P31> ?result .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q315296> <http://schema.org/description> ?x0 ."
+        ]
+    },
+    {
+        "question": "How many perople do the Port of Rotterdam employ?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q1027807",
+                "http://www.wikidata.org/prop/direct/P1128",
+                "?result"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q1027807",
+                    "http://www.wikidata.org/prop/direct/P1128",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q1027807> <http://www.wikidata.org/prop/direct/P1128> ?result .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q1027807> <http://www.wikidata.org/prop/direct/P1128> ?x0 ."
+        ]
+    },
+    {
+        "question": "What is the mother tongue of the author Chimamanda Ngozi Adichie ?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q230141",
+                "http://www.wikidata.org/prop/direct/P103",
+                "?result"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q230141",
+                    "http://www.wikidata.org/prop/direct/P103",
+                    "?x0"
+                ]
+            ],
+            [
+                [
+                    "http://www.wikidata.org/entity/Q230141",
+                    "http://www.wikidata.org/prop/direct/P1412",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q230141> <http://www.wikidata.org/prop/direct/P103> ?result .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q230141> <http://www.wikidata.org/prop/direct/P103> ?x0 .",
+            "<http://www.wikidata.org/entity/Q230141> <http://www.wikidata.org/prop/direct/P1412> ?x0 ."
+        ]
+    },
+    {
+        "question": "Who was the partner of Allen Ginsberg?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q6711",
+                "http://www.wikidata.org/prop/direct/P451",
+                "?result"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q6711",
+                    "http://www.wikidata.org/prop/direct/P451",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q6711> <http://www.wikidata.org/prop/direct/P451> ?result .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q6711> <http://www.wikidata.org/prop/direct/P451> ?x0 ."
+        ]
+    },
+    {
+        "question": "What is the second game developed by Piranha Bytes?",
+        "found": false,
+        "macro_f1": 0.0,
+        "correct_path": [
+            [
+                "?result",
+                "http://www.wikidata.org/prop/direct/P178",
+                "http://www.wikidata.org/entity/Q677273"
+            ],
+            [
+                "?result",
+                "http://www.wikidata.org/prop/direct/P577",
+                "?date"
+            ]
+        ],
+        "selected_paths": [],
+        "correct_triples_string": "?result <http://www.wikidata.org/prop/direct/P178> <http://www.wikidata.org/entity/Q677273> .\n?result <http://www.wikidata.org/prop/direct/P577> ?date .\n",
+        "selected_triples_strings": []
+    },
+    {
+        "question": "What is the english nickname of Ella Fitzgerald?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q1768",
+                "http://www.wikidata.org/prop/direct/P1449",
+                "?result"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q1768",
+                    "http://www.wikidata.org/prop/direct/P1449",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q1768> <http://www.wikidata.org/prop/direct/P1449> ?result .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q1768> <http://www.wikidata.org/prop/direct/P1449> ?x0 ."
+        ]
+    },
+    {
+        "question": "What are the occupations of Nat King Cole?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q137042",
+                "http://www.wikidata.org/prop/direct/P106",
+                "?result"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q137042",
+                    "http://www.wikidata.org/prop/direct/P106",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q137042> <http://www.wikidata.org/prop/direct/P106> ?result .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q137042> <http://www.wikidata.org/prop/direct/P106> ?x0 ."
+        ]
+    },
+    {
+        "question": "what is the official language of iran?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q794",
+                "http://www.wikidata.org/prop/direct/P37",
+                "?result"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q794",
+                    "http://www.wikidata.org/prop/direct/P37",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q794> <http://www.wikidata.org/prop/direct/P37> ?result .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q794> <http://www.wikidata.org/prop/direct/P37> ?x0 ."
+        ]
+    },
+    {
+        "question": "What is the population in Freiburg ?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q2833",
+                "http://www.wikidata.org/prop/direct/P1082",
+                "?result"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q2833",
+                    "http://www.wikidata.org/prop/direct/P1082",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q2833> <http://www.wikidata.org/prop/direct/P1082> ?result .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q2833> <http://www.wikidata.org/prop/direct/P1082> ?x0 ."
+        ]
+    },
+    {
+        "question": "What does Ray-Ban produce primarily?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q653941",
+                "http://www.wikidata.org/prop/direct/P1056",
+                "?result"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q653941",
+                    "http://www.wikidata.org/prop/direct/P1056",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q653941> <http://www.wikidata.org/prop/direct/P1056> ?result .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q653941> <http://www.wikidata.org/prop/direct/P1056> ?x0 ."
+        ]
+    },
+    {
+        "question": "What language do they speak in Poland ?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q36",
+                "http://www.wikidata.org/prop/direct/P2936",
+                "?result"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q36",
+                    "http://www.wikidata.org/prop/direct/P37",
+                    "?x0"
+                ]
+            ],
+            [
+                [
+                    "http://www.wikidata.org/entity/Q36",
+                    "http://www.wikidata.org/prop/direct/P2936",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q36> <http://www.wikidata.org/prop/direct/P2936> ?result .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q36> <http://www.wikidata.org/prop/direct/P37> ?x0 .",
+            "<http://www.wikidata.org/entity/Q36> <http://www.wikidata.org/prop/direct/P2936> ?x0 ."
+        ]
+    },
+    {
+        "question": "How many different languages are spoken in West Europe?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q27496",
+                "http://www.wikidata.org/prop/direct/P527",
+                "?seqTmp0"
+            ],
+            [
+                "?seqTmp0",
+                "http://www.wikidata.org/prop/direct/P2936",
+                "?lan"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q27496",
+                    "http://www.wikidata.org/prop/direct/P527",
+                    "?x0"
+                ],
+                [
+                    "?x0",
+                    "http://www.wikidata.org/prop/direct/P2936",
+                    "?x1"
+                ]
+            ],
+            [
+                [
+                    "http://www.wikidata.org/entity/Q27496",
+                    "http://www.wikidata.org/prop/direct/P527",
+                    "?x0"
+                ],
+                [
+                    "?x0",
+                    "http://www.wikidata.org/prop/direct/P37",
+                    "?x1"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q27496> <http://www.wikidata.org/prop/direct/P527> ?seqTmp0 .\n?seqTmp0 <http://www.wikidata.org/prop/direct/P2936> ?lan .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q27496> <http://www.wikidata.org/prop/direct/P527> ?x0 .\n?x0 <http://www.wikidata.org/prop/direct/P2936> ?x1 .",
+            "<http://www.wikidata.org/entity/Q27496> <http://www.wikidata.org/prop/direct/P527> ?x0 .\n?x0 <http://www.wikidata.org/prop/direct/P37> ?x1 ."
+        ]
+    },
+    {
+        "question": "How many different occupations did/do spouses of winners of the Nobel Prize in Literature hold?",
+        "found": false,
+        "macro_f1": 0.4415584415584416,
+        "correct_path": [
+            [
+                "?winner",
+                "http://www.wikidata.org/prop/direct/P166",
+                "http://www.wikidata.org/entity/Q37922"
+            ],
+            [
+                "?winner",
+                "http://www.wikidata.org/prop/direct/P26",
+                "?seqTmp0"
+            ],
+            [
+                "?seqTmp0",
+                "http://www.wikidata.org/prop/direct/P106",
+                "?occ"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q37922",
+                    "http://www.wikidata.org/prop/direct/P1346",
+                    "?x0"
+                ],
+                [
+                    "?x0",
+                    "http://www.wikidata.org/prop/direct/P26",
+                    "?x1"
+                ],
+                [
+                    "?x1",
+                    "http://www.wikidata.org/prop/direct/P106",
+                    "?x2"
+                ]
+            ]
+        ],
+        "correct_triples_string": "?winner <http://www.wikidata.org/prop/direct/P166> <http://www.wikidata.org/entity/Q37922> .\n?winner <http://www.wikidata.org/prop/direct/P26> ?seqTmp0 .\n?seqTmp0 <http://www.wikidata.org/prop/direct/P106> ?occ .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q37922> <http://www.wikidata.org/prop/direct/P1346> ?x0 .\n?x0 <http://www.wikidata.org/prop/direct/P26> ?x1 .\n?x1 <http://www.wikidata.org/prop/direct/P106> ?x2 ."
+        ]
+    },
+    {
+        "question": "Which creator of The OA also acted in it?",
+        "found": false,
+        "macro_f1": 0.16666666666666669,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q19798744",
+                "http://www.wikidata.org/prop/direct/P161",
+                "?result"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q19798744",
+                    "http://www.wikidata.org/prop/direct/P170",
+                    "?x0"
+                ],
+                [
+                    "?x0",
+                    "http://www.wikidata.org/prop/direct/P106",
+                    "?x1"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q19798744> <http://www.wikidata.org/prop/direct/P161> ?result .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q19798744> <http://www.wikidata.org/prop/direct/P170> ?x0 .\n?x0 <http://www.wikidata.org/prop/direct/P106> ?x1 ."
+        ]
+    },
+    {
+        "question": "What was Ada Lovelace\u2019s noble title?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q7259",
+                "http://www.wikidata.org/prop/direct/P97",
+                "?result"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q7259",
+                    "http://www.wikidata.org/prop/direct/P97",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q7259> <http://www.wikidata.org/prop/direct/P97> ?result .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q7259> <http://www.wikidata.org/prop/direct/P97> ?x0 ."
+        ]
+    },
+    {
+        "question": "What was Janus the god of?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q167685",
+                "http://www.wikidata.org/prop/direct/P2925",
+                "?result"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q167685",
+                    "http://www.wikidata.org/prop/direct/P2925",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q167685> <http://www.wikidata.org/prop/direct/P2925> ?result .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q167685> <http://www.wikidata.org/prop/direct/P2925> ?x0 ."
+        ]
+    },
+    {
+        "question": "What was the main subject addressed in the Deep Purple song \u201cSmoke on the water\u201d?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q636399",
+                "http://www.wikidata.org/prop/direct/P921",
+                "?result"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q636399",
+                    "http://www.wikidata.org/prop/direct/P921",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q636399> <http://www.wikidata.org/prop/direct/P921> ?result .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q636399> <http://www.wikidata.org/prop/direct/P921> ?x0 ."
+        ]
+    },
+    {
+        "question": "When did the first sperm whales exist?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q81214",
+                "http://www.wikidata.org/prop/direct/P580",
+                "?result"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q81214",
+                    "http://www.wikidata.org/prop/direct/P580",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q81214> <http://www.wikidata.org/prop/direct/P580> ?result .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q81214> <http://www.wikidata.org/prop/direct/P580> ?x0 ."
+        ]
+    },
+    {
+        "question": "What year did the Berlin Wall fall?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q5086",
+                "http://www.wikidata.org/prop/direct/P576",
+                "?time"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q5086",
+                    "http://www.wikidata.org/prop/direct/P576",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q5086> <http://www.wikidata.org/prop/direct/P576> ?time .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q5086> <http://www.wikidata.org/prop/direct/P576> ?x0 ."
+        ]
+    },
+    {
+        "question": "What year was Riverdale first aired?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q23001951",
+                "http://www.wikidata.org/prop/direct/P580",
+                "?time"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q23001951",
+                    "http://www.wikidata.org/prop/direct/P580",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q23001951> <http://www.wikidata.org/prop/direct/P580> ?time .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q23001951> <http://www.wikidata.org/prop/direct/P580> ?x0 ."
+        ]
+    },
+    {
+        "question": "When did Allen Ginsberg die?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q6711",
+                "http://www.wikidata.org/prop/direct/P570",
+                "?result"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q6711",
+                    "http://www.wikidata.org/prop/direct/P570",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q6711> <http://www.wikidata.org/prop/direct/P570> ?result .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q6711> <http://www.wikidata.org/prop/direct/P570> ?x0 ."
+        ]
+    },
+    {
+        "question": "When did Ella Fitzgerald die?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q1768",
+                "http://www.wikidata.org/prop/direct/P570",
+                "?result"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q1768",
+                    "http://www.wikidata.org/prop/direct/P570",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q1768> <http://www.wikidata.org/prop/direct/P570> ?result .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q1768> <http://www.wikidata.org/prop/direct/P570> ?x0 ."
+        ]
+    },
+    {
+        "question": "when did human first start to bouldering?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q852989",
+                "http://www.wikidata.org/prop/direct/P571",
+                "?result"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q852989",
+                    "http://www.wikidata.org/prop/direct/P571",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q852989> <http://www.wikidata.org/prop/direct/P571> ?result .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q852989> <http://www.wikidata.org/prop/direct/P571> ?x0 ."
+        ]
+    },
+    {
+        "question": "When did Pakistan become independent?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q843",
+                "http://www.wikidata.org/prop/direct/P571",
+                "?result"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q843",
+                    "http://www.wikidata.org/prop/direct/P571",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q843> <http://www.wikidata.org/prop/direct/P571> ?result .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q843> <http://www.wikidata.org/prop/direct/P571> ?x0 ."
+        ]
+    },
+    {
+        "question": "When did Rumi die?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q43347",
+                "http://www.wikidata.org/prop/direct/P570",
+                "?result"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q43347",
+                    "http://www.wikidata.org/prop/direct/P570",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q43347> <http://www.wikidata.org/prop/direct/P570> ?result .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q43347> <http://www.wikidata.org/prop/direct/P570> ?x0 ."
+        ]
+    },
+    {
+        "question": "when was the creator of saturday night live born?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q13979",
+                "http://www.wikidata.org/prop/direct/P170",
+                "?seqTmp0"
+            ],
+            [
+                "?seqTmp0",
+                "http://www.wikidata.org/prop/direct/P569",
+                "?result"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q13979",
+                    "http://www.wikidata.org/prop/direct/P170",
+                    "http://www.wikidata.org/entity/Q521221"
+                ],
+                [
+                    "http://www.wikidata.org/entity/Q521221",
+                    "http://www.wikidata.org/prop/direct/P569",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q13979> <http://www.wikidata.org/prop/direct/P170> ?seqTmp0 .\n?seqTmp0 <http://www.wikidata.org/prop/direct/P569> ?result .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q13979> <http://www.wikidata.org/prop/direct/P170> <http://www.wikidata.org/entity/Q521221> .\n<http://www.wikidata.org/entity/Q521221> <http://www.wikidata.org/prop/direct/P569> ?x0 ."
+        ]
+    },
+    {
+        "question": "Who was part of the Hambach Festival?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q551416",
+                "http://www.wikidata.org/prop/direct/P710",
+                "?result"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q551416",
+                    "http://www.wikidata.org/prop/direct/P710",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q551416> <http://www.wikidata.org/prop/direct/P710> ?result .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q551416> <http://www.wikidata.org/prop/direct/P710> ?x0 ."
+        ]
+    },
+    {
+        "question": "When did The OA was first released?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q19798744",
+                "http://www.wikidata.org/prop/direct/P580",
+                "?result"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q19798744",
+                    "http://www.wikidata.org/prop/direct/P580",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q19798744> <http://www.wikidata.org/prop/direct/P580> ?result .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q19798744> <http://www.wikidata.org/prop/direct/P580> ?x0 ."
+        ]
+    },
+    {
+        "question": "How many casualties were a result of the Troubles?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q815436",
+                "http://www.wikidata.org/prop/direct/P1120",
+                "?result"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q815436",
+                    "http://www.wikidata.org/prop/direct/P1120",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q815436> <http://www.wikidata.org/prop/direct/P1120> ?result .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q815436> <http://www.wikidata.org/prop/direct/P1120> ?x0 ."
+        ]
+    },
+    {
+        "question": "When did the Weimar Republic start?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q41304",
+                "http://www.wikidata.org/prop/direct/P571",
+                "?result"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q41304",
+                    "http://www.wikidata.org/prop/direct/P571",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q41304> <http://www.wikidata.org/prop/direct/P571> ?result .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q41304> <http://www.wikidata.org/prop/direct/P571> ?x0 ."
+        ]
+    },
+    {
+        "question": "When did World War II officially end?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q362",
+                "http://www.wikidata.org/prop/direct/P582",
+                "?result"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q362",
+                    "http://www.wikidata.org/prop/direct/P582",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q362> <http://www.wikidata.org/prop/direct/P582> ?result .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q362> <http://www.wikidata.org/prop/direct/P582> ?x0 ."
+        ]
+    },
+    {
+        "question": "when is the first ironman world championship?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q1420480",
+                "http://www.wikidata.org/prop/direct/P571",
+                "?result"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q1420480",
+                    "http://www.wikidata.org/prop/direct/P571",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q1420480> <http://www.wikidata.org/prop/direct/P571> ?result .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q1420480> <http://www.wikidata.org/prop/direct/P571> ?x0 ."
+        ]
+    },
+    {
+        "question": "When the film Red Notice was released?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q58815001",
+                "http://www.wikidata.org/prop/direct/P577",
+                "?result"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q58815001",
+                    "http://www.wikidata.org/prop/direct/P577",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q58815001> <http://www.wikidata.org/prop/direct/P577> ?result .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q58815001> <http://www.wikidata.org/prop/direct/P577> ?x0 ."
+        ]
+    },
+    {
+        "question": "When was Cologne Cathedral built?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q4176",
+                "http://www.wikidata.org/prop/direct/P571",
+                "?result"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q4176",
+                    "http://www.wikidata.org/prop/direct/P571",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q4176> <http://www.wikidata.org/prop/direct/P571> ?result .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q4176> <http://www.wikidata.org/prop/direct/P571> ?x0 ."
+        ]
+    },
+    {
+        "question": "What can be done against gout?",
+        "found": false,
+        "macro_f1": 0.761904761904762,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q133087",
+                "http://www.wikidata.org/prop/direct/P2176",
+                "?result"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "?x0",
+                    "http://www.wikidata.org/prop/direct/P2175",
+                    "http://www.wikidata.org/entity/Q133087"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q133087> <http://www.wikidata.org/prop/direct/P2176> ?result .\n",
+        "selected_triples_strings": [
+            "?x0 <http://www.wikidata.org/prop/direct/P2175> <http://www.wikidata.org/entity/Q133087> ."
+        ]
+    },
+    {
+        "question": "When was HIV first identified?",
+        "found": false,
+        "macro_f1": 0.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q15787",
+                "http://www.wikidata.org/prop/direct/P575",
+                "?result"
+            ]
+        ],
+        "selected_paths": [],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q15787> <http://www.wikidata.org/prop/direct/P575> ?result .\n",
+        "selected_triples_strings": []
+    },
+    {
+        "question": "When was Marlene Dietrich born?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q4612",
+                "http://www.wikidata.org/prop/direct/P569",
+                "?result"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q4612",
+                    "http://www.wikidata.org/prop/direct/P569",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q4612> <http://www.wikidata.org/prop/direct/P569> ?result .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q4612> <http://www.wikidata.org/prop/direct/P569> ?x0 ."
+        ]
+    },
+    {
+        "question": "When was Penicillin discovered?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q12190",
+                "http://www.wikidata.org/prop/direct/P575",
+                "?result"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q12190",
+                    "http://www.wikidata.org/prop/direct/P575",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q12190> <http://www.wikidata.org/prop/direct/P575> ?result .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q12190> <http://www.wikidata.org/prop/direct/P575> ?x0 ."
+        ]
+    },
+    {
+        "question": "When was Rumi born?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q43347",
+                "http://www.wikidata.org/prop/direct/P569",
+                "?result"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q43347",
+                    "http://www.wikidata.org/prop/direct/P569",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q43347> <http://www.wikidata.org/prop/direct/P569> ?result .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q43347> <http://www.wikidata.org/prop/direct/P569> ?x0 ."
+        ]
+    },
+    {
+        "question": "When was the beginning of Romanticism ?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q37068",
+                "http://www.wikidata.org/prop/direct/P580",
+                "?result"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q37068",
+                    "http://www.wikidata.org/prop/direct/P571",
+                    "?x0"
+                ]
+            ],
+            [
+                [
+                    "http://www.wikidata.org/entity/Q37068",
+                    "http://www.wikidata.org/prop/direct/P580",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q37068> <http://www.wikidata.org/prop/direct/P580> ?result .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q37068> <http://www.wikidata.org/prop/direct/P571> ?x0 .",
+            "<http://www.wikidata.org/entity/Q37068> <http://www.wikidata.org/prop/direct/P580> ?x0 ."
+        ]
+    },
+    {
+        "question": "When was the Echo Music Prize abolished?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q703237",
+                "http://www.wikidata.org/prop/direct/P576",
+                "?result"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q703237",
+                    "http://www.wikidata.org/prop/direct/P576",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q703237> <http://www.wikidata.org/prop/direct/P576> ?result .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q703237> <http://www.wikidata.org/prop/direct/P576> ?x0 ."
+        ]
+    },
+    {
+        "question": "When was the Hamburg Airport inaugurated?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q27706",
+                "http://www.wikidata.org/prop/direct/P571",
+                "?result"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q27706",
+                    "http://www.wikidata.org/prop/direct/P1619",
+                    "?x0"
+                ]
+            ],
+            [
+                [
+                    "http://www.wikidata.org/entity/Q27706",
+                    "http://www.wikidata.org/prop/direct/P571",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q27706> <http://www.wikidata.org/prop/direct/P571> ?result .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q27706> <http://www.wikidata.org/prop/direct/P1619> ?x0 .",
+            "<http://www.wikidata.org/entity/Q27706> <http://www.wikidata.org/prop/direct/P571> ?x0 ."
+        ]
+    },
+    {
+        "question": "When was the Hamburg S-Bahn officially opened?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q693956",
+                "http://www.wikidata.org/prop/direct/P1619",
+                "?result"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q693956",
+                    "http://www.wikidata.org/prop/direct/P1619",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q693956> <http://www.wikidata.org/prop/direct/P1619> ?result .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q693956> <http://www.wikidata.org/prop/direct/P1619> ?x0 ."
+        ]
+    },
+    {
+        "question": "When was the jazz club Birdland in Hamburg founded?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q800176",
+                "http://www.wikidata.org/prop/direct/P571",
+                "?result"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q800176",
+                    "http://www.wikidata.org/prop/direct/P1619",
+                    "?x0"
+                ]
+            ],
+            [
+                [
+                    "http://www.wikidata.org/entity/Q800176",
+                    "http://www.wikidata.org/prop/direct/P571",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q800176> <http://www.wikidata.org/prop/direct/P571> ?result .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q800176> <http://www.wikidata.org/prop/direct/P1619> ?x0 .",
+            "<http://www.wikidata.org/entity/Q800176> <http://www.wikidata.org/prop/direct/P571> ?x0 ."
+        ]
+    },
+    {
+        "question": "When was the poem Howl written?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q1545259",
+                "http://www.wikidata.org/prop/direct/P571",
+                "?result"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q1545259",
+                    "http://www.wikidata.org/prop/direct/P571",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q1545259> <http://www.wikidata.org/prop/direct/P571> ?result .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q1545259> <http://www.wikidata.org/prop/direct/P571> ?x0 ."
+        ]
+    },
+    {
+        "question": "When was the university of Cambridge founded?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q35794",
+                "http://www.wikidata.org/prop/direct/P571",
+                "?result"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q35794",
+                    "http://www.wikidata.org/prop/direct/P571",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q35794> <http://www.wikidata.org/prop/direct/P571> ?result .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q35794> <http://www.wikidata.org/prop/direct/P571> ?x0 ."
+        ]
+    },
+    {
+        "question": "When was the University of Hamburg founded?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q156725",
+                "http://www.wikidata.org/prop/direct/P571",
+                "?result"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q156725",
+                    "http://www.wikidata.org/prop/direct/P571",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q156725> <http://www.wikidata.org/prop/direct/P571> ?result .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q156725> <http://www.wikidata.org/prop/direct/P571> ?x0 ."
+        ]
+    },
+    {
+        "question": "When was the University of Saskatchewan founded?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q1514848",
+                "http://www.wikidata.org/prop/direct/P571",
+                "?result"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q1514848",
+                    "http://www.wikidata.org/prop/direct/P571",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q1514848> <http://www.wikidata.org/prop/direct/P571> ?result .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q1514848> <http://www.wikidata.org/prop/direct/P571> ?x0 ."
+        ]
+    },
+    {
+        "question": "When was the Vatican City created?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q237",
+                "http://www.wikidata.org/prop/direct/P571",
+                "?result"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q237",
+                    "http://www.wikidata.org/prop/direct/P571",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q237> <http://www.wikidata.org/prop/direct/P571> ?result .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q237> <http://www.wikidata.org/prop/direct/P571> ?x0 ."
+        ]
+    },
+    {
+        "question": "When was United Fruit Company founded?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q1771942",
+                "http://www.wikidata.org/prop/direct/P571",
+                "?result"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q1771942",
+                    "http://www.wikidata.org/prop/direct/P571",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q1771942> <http://www.wikidata.org/prop/direct/P571> ?result .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q1771942> <http://www.wikidata.org/prop/direct/P571> ?x0 ."
+        ]
+    },
+    {
+        "question": "Where did Trotzky die?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q33391",
+                "http://www.wikidata.org/prop/direct/P20",
+                "?result"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q33391",
+                    "http://www.wikidata.org/prop/direct/P20",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q33391> <http://www.wikidata.org/prop/direct/P20> ?result .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q33391> <http://www.wikidata.org/prop/direct/P20> ?x0 ."
+        ]
+    },
+    {
+        "question": "Where did the Hambach Festival happen?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q551416",
+                "http://www.wikidata.org/prop/direct/P276",
+                "?result"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q551416",
+                    "http://www.wikidata.org/prop/direct/P276",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q551416> <http://www.wikidata.org/prop/direct/P276> ?result .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q551416> <http://www.wikidata.org/prop/direct/P276> ?x0 ."
+        ]
+    },
+    {
+        "question": "Where do the novels of the franchise The Lord of the Rings take place?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q15228",
+                "http://www.wikidata.org/prop/direct/P840",
+                "?result"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q15228",
+                    "http://www.wikidata.org/prop/direct/P1434",
+                    "?x0"
+                ]
+            ],
+            [
+                [
+                    "http://www.wikidata.org/entity/Q15228",
+                    "http://www.wikidata.org/prop/direct/P840",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q15228> <http://www.wikidata.org/prop/direct/P840> ?result .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q15228> <http://www.wikidata.org/prop/direct/P1434> ?x0 .",
+            "<http://www.wikidata.org/entity/Q15228> <http://www.wikidata.org/prop/direct/P840> ?x0 ."
+        ]
+    },
+    {
+        "question": "Where does the Nutri-Score originate from?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q46577569",
+                "http://www.wikidata.org/prop/direct/P495",
+                "?result"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q46577569",
+                    "http://www.wikidata.org/prop/direct/P495",
+                    "?x0"
+                ]
+            ],
+            [
+                [
+                    "http://www.wikidata.org/entity/Q46577569",
+                    "http://www.wikidata.org/prop/direct/P170",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q46577569> <http://www.wikidata.org/prop/direct/P495> ?result .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q46577569> <http://www.wikidata.org/prop/direct/P495> ?x0 .",
+            "<http://www.wikidata.org/entity/Q46577569> <http://www.wikidata.org/prop/direct/P170> ?x0 ."
+        ]
+    },
+    {
+        "question": "Are there at least two winners of the Academy Award for Best Actress who have been educated at the same institution?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "?act",
+                "http://www.wikidata.org/prop/direct/P166",
+                "http://www.wikidata.org/entity/Q103618"
+            ],
+            [
+                "?act",
+                "http://www.wikidata.org/prop/direct/P69",
+                "?result"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q103618",
+                    "http://www.wikidata.org/prop/direct/P1346",
+                    "?x0"
+                ],
+                [
+                    "?x0",
+                    "http://www.wikidata.org/prop/direct/P69",
+                    "?x1"
+                ]
+            ]
+        ],
+        "correct_triples_string": "?act <http://www.wikidata.org/prop/direct/P166> <http://www.wikidata.org/entity/Q103618> .\n?act <http://www.wikidata.org/prop/direct/P69> ?result .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q103618> <http://www.wikidata.org/prop/direct/P1346> ?x0 .\n?x0 <http://www.wikidata.org/prop/direct/P69> ?x1 ."
+        ]
+    },
+    {
+        "question": "Are there at least two winners of the Academy Award for Best Actress who have been educated at the same institution?",
+        "found": false,
+        "macro_f1": 0.5236051502145923,
+        "correct_path": [
+            [
+                "?act2",
+                "http://www.wikidata.org/prop/direct/P166",
+                "http://www.wikidata.org/entity/Q103618"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q103618",
+                    "http://www.wikidata.org/prop/direct/P1346",
+                    "?x0"
+                ],
+                [
+                    "?x0",
+                    "http://www.wikidata.org/prop/direct/P69",
+                    "?x1"
+                ]
+            ]
+        ],
+        "correct_triples_string": "?act2 <http://www.wikidata.org/prop/direct/P166> <http://www.wikidata.org/entity/Q103618> .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q103618> <http://www.wikidata.org/prop/direct/P1346> ?x0 .\n?x0 <http://www.wikidata.org/prop/direct/P69> ?x1 ."
+        ]
+    },
+    {
+        "question": "Where was K-pop star Lisa Manoban born?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q26707663",
+                "http://www.wikidata.org/prop/direct/P19",
+                "?result"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q26707663",
+                    "http://www.wikidata.org/prop/direct/P19",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q26707663> <http://www.wikidata.org/prop/direct/P19> ?result .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q26707663> <http://www.wikidata.org/prop/direct/P19> ?x0 ."
+        ]
+    },
+    {
+        "question": "What is the highest point of Norway?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q20",
+                "http://www.wikidata.org/prop/direct/P610",
+                "?result"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q20",
+                    "http://www.wikidata.org/prop/direct/P610",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q20> <http://www.wikidata.org/prop/direct/P610> ?result .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q20> <http://www.wikidata.org/prop/direct/P610> ?x0 ."
+        ]
+    },
+    {
+        "question": "Where did the psychedelic band \u201cKhruangbin\u201d form?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q54555985",
+                "http://www.wikidata.org/prop/direct/P740",
+                "?result"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q54555985",
+                    "http://www.wikidata.org/prop/direct/P740",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q54555985> <http://www.wikidata.org/prop/direct/P740> ?result .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q54555985> <http://www.wikidata.org/prop/direct/P740> ?x0 ."
+        ]
+    },
+    {
+        "question": "Where was Caesar murdered?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q1048",
+                "http://www.wikidata.org/prop/direct/P20",
+                "?result"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q1048",
+                    "http://www.wikidata.org/prop/direct/P20",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q1048> <http://www.wikidata.org/prop/direct/P20> ?result .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q1048> <http://www.wikidata.org/prop/direct/P20> ?x0 ."
+        ]
+    },
+    {
+        "question": "Where was Goethe\u2019s unmarried partner born ?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q5879",
+                "http://www.wikidata.org/prop/direct/P451",
+                "?seqTmp0"
+            ],
+            [
+                "?seqTmp0",
+                "http://www.wikidata.org/prop/direct/P19",
+                "?result"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q5879",
+                    "http://www.wikidata.org/prop/direct/P451",
+                    "http://www.wikidata.org/entity/Q96902"
+                ],
+                [
+                    "http://www.wikidata.org/entity/Q96902",
+                    "http://www.wikidata.org/prop/direct/P19",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q5879> <http://www.wikidata.org/prop/direct/P451> ?seqTmp0 .\n?seqTmp0 <http://www.wikidata.org/prop/direct/P19> ?result .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q5879> <http://www.wikidata.org/prop/direct/P451> <http://www.wikidata.org/entity/Q96902> .\n<http://www.wikidata.org/entity/Q96902> <http://www.wikidata.org/prop/direct/P19> ?x0 ."
+        ]
+    },
+    {
+        "question": "Where was Roland Corporation founded?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q848490",
+                "http://www.wikidata.org/prop/direct/P740",
+                "?result"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q848490",
+                    "http://www.wikidata.org/prop/direct/P740",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q848490> <http://www.wikidata.org/prop/direct/P740> ?result .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q848490> <http://www.wikidata.org/prop/direct/P740> ?x0 ."
+        ]
+    },
+    {
+        "question": "Where was the author of The Catcher in the Rye born ?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q183883",
+                "http://www.wikidata.org/prop/direct/P50",
+                "?seqTmp0"
+            ],
+            [
+                "?seqTmp0",
+                "http://www.wikidata.org/prop/direct/P19",
+                "?result"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q183883",
+                    "http://www.wikidata.org/prop/direct/P50",
+                    "http://www.wikidata.org/entity/Q79904"
+                ],
+                [
+                    "http://www.wikidata.org/entity/Q79904",
+                    "http://www.wikidata.org/prop/direct/P19",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q183883> <http://www.wikidata.org/prop/direct/P50> ?seqTmp0 .\n?seqTmp0 <http://www.wikidata.org/prop/direct/P19> ?result .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q183883> <http://www.wikidata.org/prop/direct/P50> <http://www.wikidata.org/entity/Q79904> .\n<http://www.wikidata.org/entity/Q79904> <http://www.wikidata.org/prop/direct/P19> ?x0 ."
+        ]
+    },
+    {
+        "question": "Who developed the Erlangen program?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "?result",
+                "http://www.wikidata.org/prop/direct/P800",
+                "http://www.wikidata.org/entity/Q315296"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "?x0",
+                    "http://www.wikidata.org/prop/direct/P800",
+                    "http://www.wikidata.org/entity/Q315296"
+                ]
+            ]
+        ],
+        "correct_triples_string": "?result <http://www.wikidata.org/prop/direct/P800> <http://www.wikidata.org/entity/Q315296> .\n",
+        "selected_triples_strings": [
+            "?x0 <http://www.wikidata.org/prop/direct/P800> <http://www.wikidata.org/entity/Q315296> ."
+        ]
+    },
+    {
+        "question": "Which American presidents followed in their father\u2018s step and also became the president?",
+        "found": false,
+        "macro_f1": 0.0,
+        "correct_path": [
+            [
+                "?result",
+                "http://www.wikidata.org/prop/direct/P39",
+                "http://www.wikidata.org/entity/Q11696"
+            ]
+        ],
+        "selected_paths": [],
+        "correct_triples_string": "?result <http://www.wikidata.org/prop/direct/P39> <http://www.wikidata.org/entity/Q11696> .\n",
+        "selected_triples_strings": []
+    },
+    {
+        "question": "Which American presidents followed in their father\u2018s step and also became the president?",
+        "found": false,
+        "macro_f1": 0.0,
+        "correct_path": [
+            [
+                "?seqTmp0",
+                "http://www.wikidata.org/prop/direct/P39",
+                "http://www.wikidata.org/entity/Q11696"
+            ]
+        ],
+        "selected_paths": [],
+        "correct_triples_string": "?seqTmp0 <http://www.wikidata.org/prop/direct/P39> <http://www.wikidata.org/entity/Q11696> .\n",
+        "selected_triples_strings": []
+    },
+    {
+        "question": "What caused Kobe Bryant's Death?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q25369",
+                "http://www.wikidata.org/prop/direct/P509",
+                "?result"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q25369",
+                    "http://www.wikidata.org/prop/direct/P509",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q25369> <http://www.wikidata.org/prop/direct/P509> ?result .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q25369> <http://www.wikidata.org/prop/direct/P509> ?x0 ."
+        ]
+    },
+    {
+        "question": "What are the opposites of zero?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q204",
+                "http://www.wikidata.org/prop/direct/P461",
+                "?result"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q204",
+                    "http://www.wikidata.org/prop/direct/P461",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q204> <http://www.wikidata.org/prop/direct/P461> ?result .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q204> <http://www.wikidata.org/prop/direct/P461> ?x0 ."
+        ]
+    },
+    {
+        "question": "Which genre that Cage the Elephant belongs to has the fewest english characters?",
+        "found": false,
+        "macro_f1": 0.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q68061",
+                "http://www.wikidata.org/prop/direct/P136",
+                "?result"
+            ],
+            [
+                "?result",
+                "http://www.w3.org/2000/01/rdf-schema#label",
+                "?label"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q68061",
+                    "http://www.wikidata.org/prop/direct/P136",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q68061> <http://www.wikidata.org/prop/direct/P136> ?result .\n?result <http://www.w3.org/2000/01/rdf-schema#label> ?label .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q68061> <http://www.wikidata.org/prop/direct/P136> ?x0 ."
+        ]
+    },
+    {
+        "question": "Which movements is the painting \u201cLes Demoiselles d'Avignon\u201d assigned to?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q910199",
+                "http://www.wikidata.org/prop/direct/P135",
+                "?result"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q910199",
+                    "http://www.wikidata.org/prop/direct/P135",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q910199> <http://www.wikidata.org/prop/direct/P135> ?result .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q910199> <http://www.wikidata.org/prop/direct/P135> ?x0 ."
+        ]
+    },
+    {
+        "question": "Which movies belong to the Cornetto trilogy ?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q169604",
+                "http://www.wikidata.org/prop/direct/P527",
+                "?result"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "?x0",
+                    "http://www.wikidata.org/prop/direct/P179",
+                    "http://www.wikidata.org/entity/Q169604"
+                ]
+            ],
+            [
+                [
+                    "http://www.wikidata.org/entity/Q169604",
+                    "http://www.wikidata.org/prop/direct/P527",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q169604> <http://www.wikidata.org/prop/direct/P527> ?result .\n",
+        "selected_triples_strings": [
+            "?x0 <http://www.wikidata.org/prop/direct/P179> <http://www.wikidata.org/entity/Q169604> .",
+            "<http://www.wikidata.org/entity/Q169604> <http://www.wikidata.org/prop/direct/P527> ?x0 ."
+        ]
+    },
+    {
+        "question": "During what event was the Four Policemen Council proposed?",
+        "found": false,
+        "macro_f1": 0.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q2945433",
+                "http://www.wikidata.org/prop/direct/P607",
+                "?result"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q2945433",
+                    "http://www.wikidata.org/prop/direct/P607",
+                    "http://www.wikidata.org/entity/Q362"
+                ],
+                [
+                    "http://www.wikidata.org/entity/Q362",
+                    "http://schema.org/name",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q2945433> <http://www.wikidata.org/prop/direct/P607> ?result .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q2945433> <http://www.wikidata.org/prop/direct/P607> <http://www.wikidata.org/entity/Q362> .\n<http://www.wikidata.org/entity/Q362> <http://schema.org/name> ?x0 ."
+        ]
+    },
+    {
+        "question": "What is the offical language of Taipei?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q1867",
+                "http://www.wikidata.org/prop/direct/P37",
+                "?result"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q1867",
+                    "http://www.wikidata.org/prop/direct/P37",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q1867> <http://www.wikidata.org/prop/direct/P37> ?result .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q1867> <http://www.wikidata.org/prop/direct/P37> ?x0 ."
+        ]
+    },
+    {
+        "question": "Which teams participated in the 2020 UEFA Champions League Final ?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q46569648",
+                "http://www.wikidata.org/prop/direct/P1923",
+                "?result"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q46569648",
+                    "http://www.wikidata.org/prop/direct/P1923",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q46569648> <http://www.wikidata.org/prop/direct/P1923> ?result .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q46569648> <http://www.wikidata.org/prop/direct/P1923> ?x0 ."
+        ]
+    },
+    {
+        "question": "Which universities have more than 200000 students?",
+        "found": false,
+        "macro_f1": 0.0,
+        "correct_path": [
+            [
+                "?result",
+                "http://www.wikidata.org/prop/direct/P31",
+                "http://www.wikidata.org/entity/Q3918"
+            ],
+            [
+                "?result",
+                "http://www.wikidata.org/prop/direct/P2196",
+                "?stu"
+            ]
+        ],
+        "selected_paths": [],
+        "correct_triples_string": "?result <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q3918> .\n?result <http://www.wikidata.org/prop/direct/P2196> ?stu .\n",
+        "selected_triples_strings": []
+    },
+    {
+        "question": "Who developed WordNet?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q533822",
+                "http://www.wikidata.org/prop/direct/P178",
+                "?result"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q533822",
+                    "http://www.wikidata.org/prop/direct/P178",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q533822> <http://www.wikidata.org/prop/direct/P178> ?result .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q533822> <http://www.wikidata.org/prop/direct/P178> ?x0 ."
+        ]
+    },
+    {
+        "question": "Who created the Turing machine?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q163310",
+                "http://www.wikidata.org/prop/direct/P61",
+                "?result"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q163310",
+                    "http://www.wikidata.org/prop/direct/P61",
+                    "?x0"
+                ]
+            ],
+            [
+                [
+                    "http://www.wikidata.org/entity/Q163310",
+                    "http://www.wikidata.org/prop/direct/P138",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q163310> <http://www.wikidata.org/prop/direct/P61> ?result .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q163310> <http://www.wikidata.org/prop/direct/P61> ?x0 .",
+            "<http://www.wikidata.org/entity/Q163310> <http://www.wikidata.org/prop/direct/P138> ?x0 ."
+        ]
+    },
+    {
+        "question": "When was the Hambach Castle built?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q523286",
+                "http://www.wikidata.org/prop/direct/P571",
+                "?result"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q523286",
+                    "http://www.wikidata.org/prop/direct/P571",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q523286> <http://www.wikidata.org/prop/direct/P571> ?result .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q523286> <http://www.wikidata.org/prop/direct/P571> ?x0 ."
+        ]
+    },
+    {
+        "question": "Who directed Anne with an E ?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q28091065",
+                "http://www.wikidata.org/prop/direct/P57",
+                "?result"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q28091065",
+                    "http://www.wikidata.org/prop/direct/P57",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q28091065> <http://www.wikidata.org/prop/direct/P57> ?result .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q28091065> <http://www.wikidata.org/prop/direct/P57> ?x0 ."
+        ]
+    },
+    {
+        "question": "Who founded \u201cThe Blue Rider\u201d?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q117035",
+                "http://www.wikidata.org/prop/direct/P112",
+                "?result"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q117035",
+                    "http://www.wikidata.org/prop/direct/P112",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q117035> <http://www.wikidata.org/prop/direct/P112> ?result .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q117035> <http://www.wikidata.org/prop/direct/P112> ?x0 ."
+        ]
+    },
+    {
+        "question": "Who founded the Worpswede artist colony ?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q479361",
+                "http://www.wikidata.org/prop/direct/P112",
+                "?result"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q479361",
+                    "http://www.wikidata.org/prop/direct/P112",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q479361> <http://www.wikidata.org/prop/direct/P112> ?result .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q479361> <http://www.wikidata.org/prop/direct/P112> ?x0 ."
+        ]
+    },
+    {
+        "question": "Who is the author of \u201cConvenience Store Woman\u201d ?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q27863945",
+                "http://www.wikidata.org/prop/direct/P50",
+                "?result"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q27863945",
+                    "http://www.wikidata.org/prop/direct/P50",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q27863945> <http://www.wikidata.org/prop/direct/P50> ?result .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q27863945> <http://www.wikidata.org/prop/direct/P50> ?x0 ."
+        ]
+    },
+    {
+        "question": "Who is the soccer player with the most goals in their career?",
+        "found": false,
+        "macro_f1": 0.0,
+        "correct_path": [
+            [
+                "?result",
+                "http://www.wikidata.org/prop/direct/P106",
+                "http://www.wikidata.org/entity/Q937857"
+            ],
+            [
+                "?result",
+                "http://www.wikidata.org/prop/direct/P6509",
+                "?goals"
+            ]
+        ],
+        "selected_paths": [],
+        "correct_triples_string": "?result <http://www.wikidata.org/prop/direct/P106> <http://www.wikidata.org/entity/Q937857> .\n?result <http://www.wikidata.org/prop/direct/P6509> ?goals .\n",
+        "selected_triples_strings": []
+    },
+    {
+        "question": "Who is the creator of the Dinosaurs tv show ?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q1211977",
+                "http://www.wikidata.org/prop/direct/P170",
+                "?result"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q1211977",
+                    "http://www.wikidata.org/prop/direct/P170",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q1211977> <http://www.wikidata.org/prop/direct/P170> ?result .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q1211977> <http://www.wikidata.org/prop/direct/P170> ?x0 ."
+        ]
+    },
+    {
+        "question": "Who is the current president of the German Bundestag currently?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q154797",
+                "http://www.wikidata.org/prop/direct/P488",
+                "?result"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q154797",
+                    "http://www.wikidata.org/prop/direct/P488",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q154797> <http://www.wikidata.org/prop/direct/P488> ?result .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q154797> <http://www.wikidata.org/prop/direct/P488> ?x0 ."
+        ]
+    },
+    {
+        "question": "Who is the most wealthy entrepreneur?",
+        "found": false,
+        "macro_f1": 0.0,
+        "correct_path": [
+            [
+                "?result",
+                "http://www.wikidata.org/prop/direct/P106",
+                "http://www.wikidata.org/entity/Q131524"
+            ],
+            [
+                "?result",
+                "http://www.wikidata.org/prop/direct/P2218",
+                "?net"
+            ]
+        ],
+        "selected_paths": [],
+        "correct_triples_string": "?result <http://www.wikidata.org/prop/direct/P106> <http://www.wikidata.org/entity/Q131524> .\n?result <http://www.wikidata.org/prop/direct/P2218> ?net .\n",
+        "selected_triples_strings": []
+    },
+    {
+        "question": "Who is the oldest cast member of the Netflix show \u201cQueer Eye\u201d ?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q48817408",
+                "http://www.wikidata.org/prop/direct/P161",
+                "?result"
+            ],
+            [
+                "?result",
+                "http://www.wikidata.org/prop/direct/P569",
+                "?time"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q48817408",
+                    "http://www.wikidata.org/prop/direct/P161",
+                    "?x0"
+                ],
+                [
+                    "?x0",
+                    "http://www.wikidata.org/prop/direct/P569",
+                    "?x1"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q48817408> <http://www.wikidata.org/prop/direct/P161> ?result .\n?result <http://www.wikidata.org/prop/direct/P569> ?time .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q48817408> <http://www.wikidata.org/prop/direct/P161> ?x0 .\n?x0 <http://www.wikidata.org/prop/direct/P569> ?x1 ."
+        ]
+    },
+    {
+        "question": "Who is the publisher of Smite ?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q2357719",
+                "http://www.wikidata.org/prop/direct/P123",
+                "?result"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q2357719",
+                    "http://www.wikidata.org/prop/direct/P123",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q2357719> <http://www.wikidata.org/prop/direct/P123> ?result .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q2357719> <http://www.wikidata.org/prop/direct/P123> ?x0 ."
+        ]
+    },
+    {
+        "question": "Who wrote the Erlangen program?",
+        "found": false,
+        "macro_f1": 0.0,
+        "correct_path": [
+            [
+                "?result",
+                "http://www.wikidata.org/prop/direct/P800",
+                "http://www.wikidata.org/entity/Q315296"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q76641",
+                    "http://www.wikidata.org/prop/direct/P800",
+                    "http://www.wikidata.org/entity/Q315296"
+                ],
+                [
+                    "http://www.wikidata.org/entity/Q76641",
+                    "http://schema.org/name",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "?result <http://www.wikidata.org/prop/direct/P800> <http://www.wikidata.org/entity/Q315296> .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q76641> <http://www.wikidata.org/prop/direct/P800> <http://www.wikidata.org/entity/Q315296> .\n<http://www.wikidata.org/entity/Q76641> <http://schema.org/name> ?x0 ."
+        ]
+    },
+    {
+        "question": "In which country is the Nanga Parbat located?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q130736",
+                "http://www.wikidata.org/prop/direct/P17",
+                "?result"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q130736",
+                    "http://www.wikidata.org/prop/direct/P17",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q130736> <http://www.wikidata.org/prop/direct/P17> ?result .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q130736> <http://www.wikidata.org/prop/direct/P17> ?x0 ."
+        ]
+    },
+    {
+        "question": "who produced Star Wars: Episode VI \u2013 Return of the Jedi?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q181803",
+                "http://www.wikidata.org/prop/direct/P162",
+                "?result"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q181803",
+                    "http://www.wikidata.org/prop/direct/P162",
+                    "?x0"
+                ]
+            ],
+            [
+                [
+                    "http://www.wikidata.org/entity/Q181803",
+                    "http://www.wikidata.org/prop/direct/P1431",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q181803> <http://www.wikidata.org/prop/direct/P162> ?result .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q181803> <http://www.wikidata.org/prop/direct/P162> ?x0 .",
+            "<http://www.wikidata.org/entity/Q181803> <http://www.wikidata.org/prop/direct/P1431> ?x0 ."
+        ]
+    },
+    {
+        "question": "What is the website of NPR's \u201cTiny Desk Concert\u201d?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q30588383",
+                "http://www.wikidata.org/prop/direct/P856",
+                "?result"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q30588383",
+                    "http://www.wikidata.org/prop/direct/P856",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q30588383> <http://www.wikidata.org/prop/direct/P856> ?result .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q30588383> <http://www.wikidata.org/prop/direct/P856> ?x0 ."
+        ]
+    },
+    {
+        "question": "Who was the creator of Boo-Boo Bear ?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q2394280",
+                "http://www.wikidata.org/prop/direct/P170",
+                "?result"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q2394280",
+                    "http://www.wikidata.org/prop/direct/P170",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q2394280> <http://www.wikidata.org/prop/direct/P170> ?result .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q2394280> <http://www.wikidata.org/prop/direct/P170> ?x0 ."
+        ]
+    },
+    {
+        "question": "Who was the creator of Unbreakable Kimmy Schmidt ?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q16889037",
+                "http://www.wikidata.org/prop/direct/P170",
+                "?result"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q16889037",
+                    "http://www.wikidata.org/prop/direct/P170",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q16889037> <http://www.wikidata.org/prop/direct/P170> ?result .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q16889037> <http://www.wikidata.org/prop/direct/P170> ?x0 ."
+        ]
+    },
+    {
+        "question": "Who was the director of Llamas with Hats ?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q55621114",
+                "http://www.wikidata.org/prop/direct/P57",
+                "?result"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q55621114",
+                    "http://www.wikidata.org/prop/direct/P57",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q55621114> <http://www.wikidata.org/prop/direct/P57> ?result .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q55621114> <http://www.wikidata.org/prop/direct/P57> ?x0 ."
+        ]
+    },
+    {
+        "question": "Who founded the Roland Corporation?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q848490",
+                "http://www.wikidata.org/prop/direct/P112",
+                "?result"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q848490",
+                    "http://www.wikidata.org/prop/direct/P112",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q848490> <http://www.wikidata.org/prop/direct/P112> ?result .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q848490> <http://www.wikidata.org/prop/direct/P112> ?x0 ."
+        ]
+    },
+    {
+        "question": "Who was the original actor who played Pinhead ?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q2518973",
+                "http://www.wikidata.org/prop/direct/P175",
+                "?result"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q2518973",
+                    "http://www.wikidata.org/prop/direct/P175",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q2518973> <http://www.wikidata.org/prop/direct/P175> ?result .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q2518973> <http://www.wikidata.org/prop/direct/P175> ?x0 ."
+        ]
+    },
+    {
+        "question": "Who wrote Anne of Green Gables ?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q565911",
+                "http://www.wikidata.org/prop/direct/P50",
+                "?result"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q565911",
+                    "http://www.wikidata.org/prop/direct/P50",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q565911> <http://www.wikidata.org/prop/direct/P50> ?result .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q565911> <http://www.wikidata.org/prop/direct/P50> ?x0 ."
+        ]
+    },
+    {
+        "question": "Who wrote the poem Howl ?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q1545259",
+                "http://www.wikidata.org/prop/direct/P50",
+                "?result"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q1545259",
+                    "http://www.wikidata.org/prop/direct/P50",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q1545259> <http://www.wikidata.org/prop/direct/P50> ?result .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q1545259> <http://www.wikidata.org/prop/direct/P50> ?x0 ."
+        ]
+    },
+    {
+        "question": "Who's the author of The Hellbound Heart ?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q3521239",
+                "http://www.wikidata.org/prop/direct/P50",
+                "?result"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q3521239",
+                    "http://www.wikidata.org/prop/direct/P50",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q3521239> <http://www.wikidata.org/prop/direct/P50> ?result .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q3521239> <http://www.wikidata.org/prop/direct/P50> ?x0 ."
+        ]
+    },
+    {
+        "question": "Whom did Clara Westhoff marry?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q462333",
+                "http://www.wikidata.org/prop/direct/P26",
+                "?result"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q462333",
+                    "http://www.wikidata.org/prop/direct/P26",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q462333> <http://www.wikidata.org/prop/direct/P26> ?result .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q462333> <http://www.wikidata.org/prop/direct/P26> ?x0 ."
+        ]
+    },
+    {
+        "question": "what is the oldest film festival?",
+        "found": false,
+        "macro_f1": 0.0,
+        "correct_path": [
+            [
+                "?result",
+                "http://www.wikidata.org/prop/direct/P31",
+                "http://www.wikidata.org/entity/Q220505"
+            ],
+            [
+                "?result",
+                "http://www.wikidata.org/prop/direct/P571",
+                "?inc"
+            ]
+        ],
+        "selected_paths": [],
+        "correct_triples_string": "?result <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q220505> .\n?result <http://www.wikidata.org/prop/direct/P571> ?inc .\n",
+        "selected_triples_strings": []
+    },
+    {
+        "question": "When was Athens founded?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q1524",
+                "http://www.wikidata.org/prop/direct/P571",
+                "?result"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q1524",
+                    "http://www.wikidata.org/prop/direct/P571",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q1524> <http://www.wikidata.org/prop/direct/P571> ?result .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q1524> <http://www.wikidata.org/prop/direct/P571> ?x0 ."
+        ]
+    },
+    {
+        "question": "who is the youngested member in g-idle?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "?result",
+                "http://www.wikidata.org/prop/direct/P463",
+                "http://www.wikidata.org/entity/Q51885404"
+            ],
+            [
+                "?result",
+                "http://www.wikidata.org/prop/direct/P569",
+                "?date"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "?x0",
+                    "http://www.wikidata.org/prop/direct/P463",
+                    "http://www.wikidata.org/entity/Q51885404"
+                ],
+                [
+                    "?x0",
+                    "http://www.wikidata.org/prop/direct/P569",
+                    "?x1"
+                ]
+            ]
+        ],
+        "correct_triples_string": "?result <http://www.wikidata.org/prop/direct/P463> <http://www.wikidata.org/entity/Q51885404> .\n?result <http://www.wikidata.org/prop/direct/P569> ?date .\n",
+        "selected_triples_strings": [
+            "?x0 <http://www.wikidata.org/prop/direct/P463> <http://www.wikidata.org/entity/Q51885404> .\n?x0 <http://www.wikidata.org/prop/direct/P569> ?x1 ."
+        ]
+    },
+    {
+        "question": "How many things are part of the \"One Piece\" Franchise?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q673",
+                "http://www.wikidata.org/prop/direct/P527",
+                "?part"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q673",
+                    "http://www.wikidata.org/prop/direct/P527",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q673> <http://www.wikidata.org/prop/direct/P527> ?part .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q673> <http://www.wikidata.org/prop/direct/P527> ?x0 ."
+        ]
+    },
+    {
+        "question": "What is the area of the great lakes?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q7347",
+                "http://www.wikidata.org/prop/direct/P2046",
+                "?result"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q7347",
+                    "http://www.wikidata.org/prop/direct/P2046",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q7347> <http://www.wikidata.org/prop/direct/P2046> ?result .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q7347> <http://www.wikidata.org/prop/direct/P2046> ?x0 ."
+        ]
+    },
+    {
+        "question": "What is native name of the composer of the Japanese national anthem?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q17",
+                "http://www.wikidata.org/prop/direct/P85",
+                "?seqTmp1"
+            ],
+            [
+                "?seqTmp1",
+                "http://www.wikidata.org/prop/direct/P86",
+                "?seqTmp0"
+            ],
+            [
+                "?seqTmp0",
+                "http://www.wikidata.org/prop/direct/P1559",
+                "?result"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q17",
+                    "http://www.wikidata.org/prop/direct/P85",
+                    "http://www.wikidata.org/entity/Q81534"
+                ],
+                [
+                    "http://www.wikidata.org/entity/Q81534",
+                    "http://www.wikidata.org/prop/direct/P86",
+                    "http://www.wikidata.org/entity/Q3783782"
+                ],
+                [
+                    "http://www.wikidata.org/entity/Q3783782",
+                    "http://www.wikidata.org/prop/direct/P1559",
+                    "?x0"
+                ]
+            ],
+            [
+                [
+                    "http://www.wikidata.org/entity/Q17",
+                    "http://www.wikidata.org/prop/direct/P85",
+                    "http://www.wikidata.org/entity/Q81534"
+                ],
+                [
+                    "http://www.wikidata.org/entity/Q81534",
+                    "http://www.wikidata.org/prop/direct/P86",
+                    "http://www.wikidata.org/entity/Q3783782"
+                ],
+                [
+                    "http://www.wikidata.org/entity/Q3783782",
+                    "http://www.wikidata.org/prop/direct/P1814",
+                    "?x0"
+                ]
+            ],
+            [
+                [
+                    "http://www.wikidata.org/entity/Q17",
+                    "http://www.wikidata.org/prop/direct/P85",
+                    "http://www.wikidata.org/entity/Q81534"
+                ],
+                [
+                    "http://www.wikidata.org/entity/Q81534",
+                    "http://www.wikidata.org/prop/direct/P86",
+                    "http://www.wikidata.org/entity/Q3783782"
+                ],
+                [
+                    "http://www.wikidata.org/entity/Q3783782",
+                    "http://www.w3.org/2004/02/skos/core#altLabel",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q17> <http://www.wikidata.org/prop/direct/P85> ?seqTmp1 .\n?seqTmp1 <http://www.wikidata.org/prop/direct/P86> ?seqTmp0 .\n?seqTmp0 <http://www.wikidata.org/prop/direct/P1559> ?result .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q17> <http://www.wikidata.org/prop/direct/P85> <http://www.wikidata.org/entity/Q81534> .\n<http://www.wikidata.org/entity/Q81534> <http://www.wikidata.org/prop/direct/P86> <http://www.wikidata.org/entity/Q3783782> .\n<http://www.wikidata.org/entity/Q3783782> <http://www.wikidata.org/prop/direct/P1559> ?x0 .",
+            "<http://www.wikidata.org/entity/Q17> <http://www.wikidata.org/prop/direct/P85> <http://www.wikidata.org/entity/Q81534> .\n<http://www.wikidata.org/entity/Q81534> <http://www.wikidata.org/prop/direct/P86> <http://www.wikidata.org/entity/Q3783782> .\n<http://www.wikidata.org/entity/Q3783782> <http://www.wikidata.org/prop/direct/P1814> ?x0 .",
+            "<http://www.wikidata.org/entity/Q17> <http://www.wikidata.org/prop/direct/P85> <http://www.wikidata.org/entity/Q81534> .\n<http://www.wikidata.org/entity/Q81534> <http://www.wikidata.org/prop/direct/P86> <http://www.wikidata.org/entity/Q3783782> .\n<http://www.wikidata.org/entity/Q3783782> <http://www.w3.org/2004/02/skos/core#altLabel> ?x0 ."
+        ]
+    },
+    {
+        "question": "Who is the founder of the capital of Vietnam?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q881",
+                "http://www.wikidata.org/prop/direct/P36",
+                "?seqTmp0"
+            ],
+            [
+                "?seqTmp0",
+                "http://www.wikidata.org/prop/direct/P112",
+                "?result"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q881",
+                    "http://www.wikidata.org/prop/direct/P36",
+                    "http://www.wikidata.org/entity/Q1858"
+                ],
+                [
+                    "http://www.wikidata.org/entity/Q1858",
+                    "http://www.wikidata.org/prop/direct/P112",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q881> <http://www.wikidata.org/prop/direct/P36> ?seqTmp0 .\n?seqTmp0 <http://www.wikidata.org/prop/direct/P112> ?result .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q881> <http://www.wikidata.org/prop/direct/P36> <http://www.wikidata.org/entity/Q1858> .\n<http://www.wikidata.org/entity/Q1858> <http://www.wikidata.org/prop/direct/P112> ?x0 ."
+        ]
+    },
+    {
+        "question": "Who is the manager of the operator of Neumayer III?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q7933",
+                "http://www.wikidata.org/prop/direct/P137",
+                "?seqTmp0"
+            ],
+            [
+                "?seqTmp0",
+                "http://www.wikidata.org/prop/direct/P1037",
+                "?result"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q7933",
+                    "http://www.wikidata.org/prop/direct/P137",
+                    "http://www.wikidata.org/entity/Q536656"
+                ],
+                [
+                    "http://www.wikidata.org/entity/Q536656",
+                    "http://www.wikidata.org/prop/direct/P1037",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q7933> <http://www.wikidata.org/prop/direct/P137> ?seqTmp0 .\n?seqTmp0 <http://www.wikidata.org/prop/direct/P1037> ?result .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q7933> <http://www.wikidata.org/prop/direct/P137> <http://www.wikidata.org/entity/Q536656> .\n<http://www.wikidata.org/entity/Q536656> <http://www.wikidata.org/prop/direct/P1037> ?x0 ."
+        ]
+    },
+    {
+        "question": "How high is the mountain on which G\u00fcnther Messner died?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q195351",
+                "http://www.wikidata.org/prop/direct/P20",
+                "?seqTmp0"
+            ],
+            [
+                "?seqTmp0",
+                "http://www.wikidata.org/prop/direct/P2044",
+                "?result"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q195351",
+                    "http://www.wikidata.org/prop/direct/P20",
+                    "http://www.wikidata.org/entity/Q130736"
+                ],
+                [
+                    "http://www.wikidata.org/entity/Q130736",
+                    "http://www.wikidata.org/prop/direct/P2044",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q195351> <http://www.wikidata.org/prop/direct/P20> ?seqTmp0 .\n?seqTmp0 <http://www.wikidata.org/prop/direct/P2044> ?result .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q195351> <http://www.wikidata.org/prop/direct/P20> <http://www.wikidata.org/entity/Q130736> .\n<http://www.wikidata.org/entity/Q130736> <http://www.wikidata.org/prop/direct/P2044> ?x0 ."
+        ]
+    },
+    {
+        "question": "What is the twitter name of Running Wild?",
+        "found": false,
+        "macro_f1": 0.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q163173",
+                "http://www.wikidata.org/prop/direct/P740",
+                "?result"
+            ]
+        ],
+        "selected_paths": [],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q163173> <http://www.wikidata.org/prop/direct/P740> ?result .\n",
+        "selected_triples_strings": []
+    },
+    {
+        "question": "What is the area of the capital of Spitsbergen?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q25231",
+                "http://www.wikidata.org/prop/direct/P36",
+                "?seqTmp0"
+            ],
+            [
+                "?seqTmp0",
+                "http://www.wikidata.org/prop/direct/P2046",
+                "?result"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q25231",
+                    "http://www.wikidata.org/prop/direct/P36",
+                    "http://www.wikidata.org/entity/Q25923"
+                ],
+                [
+                    "http://www.wikidata.org/entity/Q25923",
+                    "http://www.wikidata.org/prop/direct/P2046",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q25231> <http://www.wikidata.org/prop/direct/P36> ?seqTmp0 .\n?seqTmp0 <http://www.wikidata.org/prop/direct/P2046> ?result .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q25231> <http://www.wikidata.org/prop/direct/P36> <http://www.wikidata.org/entity/Q25923> .\n<http://www.wikidata.org/entity/Q25923> <http://www.wikidata.org/prop/direct/P2046> ?x0 ."
+        ]
+    },
+    {
+        "question": "What percentage of Andorra is covered with water?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q228",
+                "http://www.wikidata.org/prop/direct/P2927",
+                "?result"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q228",
+                    "http://www.wikidata.org/prop/direct/P2927",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q228> <http://www.wikidata.org/prop/direct/P2927> ?result .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q228> <http://www.wikidata.org/prop/direct/P2927> ?x0 ."
+        ]
+    },
+    {
+        "question": "With how many persons was Richard Burton married?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q151973",
+                "http://www.wikidata.org/prop/direct/P26",
+                "?sp"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q151973",
+                    "http://www.wikidata.org/prop/direct/P26",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q151973> <http://www.wikidata.org/prop/direct/P26> ?sp .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q151973> <http://www.wikidata.org/prop/direct/P26> ?x0 ."
+        ]
+    },
+    {
+        "question": "At what coordinates was the \"Sender Teutoburger Wald\" erected?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q1717891",
+                "http://www.wikidata.org/prop/direct/P625",
+                "?result"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q1717891",
+                    "http://www.wikidata.org/prop/direct/P625",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q1717891> <http://www.wikidata.org/prop/direct/P625> ?result .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q1717891> <http://www.wikidata.org/prop/direct/P625> ?x0 ."
+        ]
+    },
+    {
+        "question": "In what country is the Kandahar-downhill?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q327818",
+                "http://www.wikidata.org/prop/direct/P17",
+                "?result"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q327818",
+                    "http://www.wikidata.org/prop/direct/P17",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q327818> <http://www.wikidata.org/prop/direct/P17> ?result .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q327818> <http://www.wikidata.org/prop/direct/P17> ?x0 ."
+        ]
+    },
+    {
+        "question": "Who founded the architectural firm who planned the Elbphilharmonie?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q673223",
+                "http://www.wikidata.org/prop/direct/P84",
+                "?seqTmp0"
+            ],
+            [
+                "?seqTmp0",
+                "http://www.wikidata.org/prop/direct/P112",
+                "?result"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q673223",
+                    "http://www.wikidata.org/prop/direct/P84",
+                    "http://www.wikidata.org/entity/Q308776"
+                ],
+                [
+                    "http://www.wikidata.org/entity/Q308776",
+                    "http://www.wikidata.org/prop/direct/P112",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q673223> <http://www.wikidata.org/prop/direct/P84> ?seqTmp0 .\n?seqTmp0 <http://www.wikidata.org/prop/direct/P112> ?result .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q673223> <http://www.wikidata.org/prop/direct/P84> <http://www.wikidata.org/entity/Q308776> .\n<http://www.wikidata.org/entity/Q308776> <http://www.wikidata.org/prop/direct/P112> ?x0 ."
+        ]
+    },
+    {
+        "question": "Where are the founders of the band Metallica from?",
+        "found": false,
+        "macro_f1": 0.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q15920",
+                "http://www.wikidata.org/prop/direct/P112",
+                "?seqTmp1"
+            ],
+            [
+                "?seqTmp1",
+                "http://www.wikidata.org/prop/direct/P19",
+                "?seqTmp0"
+            ],
+            [
+                "?seqTmp0",
+                "http://www.wikidata.org/prop/direct/P17",
+                "?result"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q15920",
+                    "http://www.wikidata.org/prop/direct/P112",
+                    "?x0"
+                ],
+                [
+                    "?x0",
+                    "http://www.wikidata.org/prop/direct/P19",
+                    "?x1"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q15920> <http://www.wikidata.org/prop/direct/P112> ?seqTmp1 .\n?seqTmp1 <http://www.wikidata.org/prop/direct/P19> ?seqTmp0 .\n?seqTmp0 <http://www.wikidata.org/prop/direct/P17> ?result .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q15920> <http://www.wikidata.org/prop/direct/P112> ?x0 .\n?x0 <http://www.wikidata.org/prop/direct/P19> ?x1 ."
+        ]
+    },
+    {
+        "question": "Where does the Granny Smith apple variety come from?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q506040",
+                "http://www.wikidata.org/prop/direct/P495",
+                "?result"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q506040",
+                    "http://www.wikidata.org/prop/direct/P495",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q506040> <http://www.wikidata.org/prop/direct/P495> ?result .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q506040> <http://www.wikidata.org/prop/direct/P495> ?x0 ."
+        ]
+    },
+    {
+        "question": "What is the Fujiyama made of?",
+        "found": true,
+        "macro_f1": 1.0,
+        "correct_path": [
+            [
+                "http://www.wikidata.org/entity/Q39231",
+                "http://www.wikidata.org/prop/direct/P186",
+                "?result"
+            ]
+        ],
+        "selected_paths": [
+            [
+                [
+                    "http://www.wikidata.org/entity/Q39231",
+                    "http://www.wikidata.org/prop/direct/P186",
+                    "?x0"
+                ]
+            ]
+        ],
+        "correct_triples_string": "<http://www.wikidata.org/entity/Q39231> <http://www.wikidata.org/prop/direct/P186> ?result .\n",
+        "selected_triples_strings": [
+            "<http://www.wikidata.org/entity/Q39231> <http://www.wikidata.org/prop/direct/P186> ?x0 ."
+        ]
+    }
+]

@@ -1,0 +1,1393 @@
+[
+    {
+        "precision": 0.21568627450980393,
+        "recall": 0.5301204819277109,
+        "f1": 0.3066202090592335,
+        "gold_tp": 83,
+        "queries_correct": 42
+    },
+    {
+        "question": "Which distinct items are subclasses of execution methods or the subclasses of those, and so on?",
+        "gold": [],
+        "predictions": [],
+        "logs": null
+    },
+    {
+        "question": "Which humans who were born in Australia or in any administrative territorial entity within Australia do not have a specified sex or gender?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q408"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q408"
+        ],
+        "logs": null
+    },
+    {
+        "question": "What are the different types of awards received by individuals listed in the GEPRIS Historisch database, along with their labels and the count of each award? The awards should be filtered to include only specific types such as general awards, science awards, cultural prizes, chemistry awards, literary awards, physics awards, national academies, and journalism prizes.",
+        "gold": [
+            "http://www.wikidata.org/entity/Q107471279",
+            "http://www.wikidata.org/entity/Q107494520"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q18528811",
+            "http://www.wikidata.org/entity/Q991937"
+        ],
+        "logs": null
+    },
+    {
+        "question": "What are the names, average latitudes, average longitudes, and average populations of municipalities in Austria that are still in existence, with labels in German?",
+        "gold": [],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q34027",
+            "http://www.wikidata.org/entity/Q36477",
+            "http://www.wikidata.org/entity/Q40",
+            "http://www.wikidata.org/entity/Q188"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Which distinct movies were directed by Steven Spielberg, along with their titles and the earliest year of publication, sorted by year?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q8877"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q8877"
+        ],
+        "logs": null
+    },
+    {
+        "question": "What are the architectural structures within a 5 km radius of the coordinates (13.5812565, 52.5153623), along with their latitude and longitude?",
+        "gold": [],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q34027",
+            "http://www.wikidata.org/entity/Q36477"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Who are the distinct candidates for the Mayor of Germasogeia Municipality Elections?",
+        "gold": [],
+        "predictions": [],
+        "logs": null
+    },
+    {
+        "question": "What are the distinct occupations related to the musical profession, along with their subclasses (if available)?",
+        "gold": [],
+        "predictions": [],
+        "logs": null
+    },
+    {
+        "question": "What are the distinct lithostratigraphic units located in Arizona? Please include any parts they have (if available, the larger units they are part of (if available), and their Geolex IDs (if available).",
+        "gold": [
+            "http://www.wikidata.org/entity/Q816"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q856124",
+            "http://www.wikidata.org/entity/Q816",
+            "http://www.wikidata.org/entity/Q49944"
+        ],
+        "logs": null
+    },
+    {
+        "question": "What are the items that are subclasses of scholarly articles, ordered by their labels?",
+        "gold": [],
+        "predictions": [],
+        "logs": null
+    },
+    {
+        "question": "What are the municipalities of Catalonia, Spain, with an IDESCAT territorial code starting with \"25\"? Include their most recent population using their preferred rank (if available), area (if available), and coat of arms image (if available).",
+        "gold": [],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q5705",
+            "http://www.wikidata.org/entity/Q29",
+            "http://www.wikidata.org/entity/Q1636785"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Which countries are sovereign states, along with their capitals, currencies, populations, flag images, and the determination methods of their capitals, if available? Exclude historical countries and ancient civilizations.",
+        "gold": [],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q3624078"
+        ],
+        "logs": null
+    },
+    {
+        "question": "What are the mountains with an elevation above sea level greater than 8000 meters, excluding those located on any astronomical body?",
+        "gold": [],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q6999"
+        ],
+        "logs": null
+    },
+    {
+        "question": "What is the most recent publication date of \"Minecraft\"?",
+        "gold": [],
+        "predictions": [],
+        "logs": null
+    },
+    {
+        "question": "What are the items in the collection of the Musée d'art et d'histoire de Saint-Brieuc, along with the items of their creators, the items of the creators' places of birth in Brittany, their inventory numbers, and images (if available)?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q3329624",
+            "http://www.wikidata.org/entity/Q12130"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q327"
+        ],
+        "logs": null
+    },
+    {
+        "question": "What are the distinct places where the official language is Swedish, along with their labels, the unique instances they belong to (if available), and the unique entities they are part of (if available)? Order results alphabetically by place label.",
+        "gold": [
+            "http://www.wikidata.org/entity/Q9027"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q9027"
+        ],
+        "logs": null
+    },
+    {
+        "question": "What are the distinct countries and country parts (like Western Russia) in the continent Europe, their labels, and their area in square kilometers (rounded and calculated from either the country's area or the part's area if available)? Also include the part of the country (if applicable), and exclude countries that have been dissolved, abolished, or demolished. Order results by the area in descending order.",
+        "gold": [
+            "http://www.wikidata.org/entity/Q46"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q875134",
+            "http://www.wikidata.org/entity/Q46"
+        ],
+        "logs": null
+    },
+    {
+        "question": "What are the countries along with images of their flags and their populations, ordered by descending population?",
+        "gold": [],
+        "predictions": [],
+        "logs": null
+    },
+    {
+        "question": "What is the current number of operational airports and the population for each country, excluding airports that have an end time or a dissolved, abolished, or demolished date, if available?",
+        "gold": [],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q697292"
+        ],
+        "logs": null
+    },
+    {
+        "question": "What are the items cataloged under the EHRI authority control?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q51278630"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q1483858"
+        ],
+        "logs": null
+    },
+    {
+        "question": "What are the provinces and their corresponding countries?",
+        "gold": [],
+        "predictions": [],
+        "logs": null
+    },
+    {
+        "question": "What are the official languages of countries that use a writing system which is either a subclass of the Latin script or an instance of a Latin-script alphabet? Include a count of each language, and order by the count in descending order.",
+        "gold": [],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q8229"
+        ],
+        "logs": null
+    },
+    {
+        "question": "What are the items located in Ille-et-Vilaine, along with their coordinates and the century of their inception (rounded to the nearest century)?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q12549"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q12549"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Which Italian citizens died before June 18, 1946 and were born within the start and end time of their country of birth's existence? Please include their date of birth and date of death, place of birth and place of death, and the start and end time of their country of birth. Use the MAX function to get only one date of birth and date of death.",
+        "gold": [
+            "http://www.wikidata.org/entity/Q38"
+        ],
+        "predictions": [],
+        "logs": null
+    },
+    {
+        "question": "Which books were authored by Arthur Conan Doyle?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q35610"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q35610"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Which communes of Italy have their northernmost point at a latitude greater than the southernmost point of Trieste? Please include their names, northernmost latitude, and northernmost longitude, and order by from northernmost to southernmost.",
+        "gold": [
+            "http://www.wikidata.org/entity/Q546"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q38",
+            "http://www.wikidata.org/entity/Q34027",
+            "http://www.wikidata.org/entity/Q546",
+            "http://www.wikidata.org/entity/Q36477"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Which items have the official name \"Коломия\" in Ukrainian?",
+        "gold": [],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q8798"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Who are the current members of the Tunisian parliament (Assembly of the Representatives of the People) without an end time specified, along with their start time, electoral district, and the election in which they were elected, if available?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q29169698"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q948",
+            "http://www.wikidata.org/entity/Q18342090"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Which items are role-playing video games? Include their developers, publishers, and publication dates, if available.",
+        "gold": [],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q744038"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Which French audiovisual works have a URL starting with \"https://www.artfilm.ch\"? Include their directors, and the family names of the directors, ordered by the family names.",
+        "gold": [
+            "http://www.wikidata.org/entity/Q150"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q42253"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Which distinct destroyers have an operator not listed in the vessel class's list of operators? For each row, include the vessel class and operator.",
+        "gold": [],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q174736",
+            "http://www.wikidata.org/entity/Q559026"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Which distinct items are subclasses, at any level, of a manuscript (a document written by hand)?",
+        "gold": [],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q87167"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Who has received an honorary doctorate from Bordeaux Montaigne University? Please also include the year they received the doctorate and order results by year",
+        "gold": [
+            "http://www.wikidata.org/entity/Q55455135"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q13342"
+        ],
+        "logs": null
+    },
+    {
+        "question": "What is the second-level parent organization of AdMob, the mobile advertising company?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q1318441"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q1318441",
+            "http://www.wikidata.org/entity/Q2916781"
+        ],
+        "logs": null
+    },
+    {
+        "question": "What are the religious buildings located in the region of Molise, Italy?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q1443"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q1443",
+            "http://www.wikidata.org/entity/Q38"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Which distinct items are instances of video game genres, or subclasses of either video game genres or electronic games? Please return the genre, the OLAC video game genre vocabulary ID (if available), and any subclasses (if available).",
+        "gold": [],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q659563",
+            "http://www.wikidata.org/entity/Q659563",
+            "http://www.wikidata.org/entity/Q2249149",
+            "http://www.wikidata.org/entity/Q28228226"
+        ],
+        "logs": null
+    },
+    {
+        "question": "What are the details of all tennis tournaments that were part of the 2018 ATP World Tour? Please include the tournament item, country (if available), end time (if available), location (if available), edition number (if available), point in time (if available), and surface played on (if available), sorted in ascending order by end time.",
+        "gold": [
+            "http://www.wikidata.org/entity/Q23039138"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q847",
+            "http://www.wikidata.org/entity/Q23039138"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Which objects have two statements of elevation above sea level with a difference of more than 500 meters between the two statements? For each object, please include the specific part to which the elevation applies (if available) and the elevation (in meters) for both elevation statements.",
+        "gold": [],
+        "predictions": [],
+        "logs": null
+    },
+    {
+        "question": "What are the nearest cultural heritage sites within a 25 km radius of the coordinates (52.241980731490386, -3.564224203100305)? Include archaeological sites, historical monuments, historical city centres, historic sites, heritage sites, historic districts, battlefields, former settlements, historic buildings, historic houses, ancient cities, and heritage properties. Provide their item IDs, geocoordinates, and distances, and order outputs by ascending distance, limited to 100 results.",
+        "gold": [
+            "http://www.wikidata.org/entity/Q916475"
+        ],
+        "predictions": [],
+        "logs": null
+    },
+    {
+        "question": "Get a list of roller coasters and their respective countries, if available.",
+        "gold": [],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q204832"
+        ],
+        "logs": null
+    },
+    {
+        "question": "What are the dimensions, items, SI conversions, and units for items that have a conversion to SI unit and a measured physical quantity?",
+        "gold": [],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q12457",
+            "http://www.wikidata.org/entity/Q107715"
+        ],
+        "logs": null
+    },
+    {
+        "question": "What was the total revenue (and revenue unit) of the German nature conservation organization Naturschutzbund Deutschland on January 1, 2019?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q516755"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q516755"
+        ],
+        "logs": null
+    },
+    {
+        "question": "What are the shortest wars on Wikidata? Please include their start times, end times, and duration in days (calculated either from the duration in seconds or from the difference between the start and end times, if available). Order results by duration and start time, and limit to 15 rows.",
+        "gold": [],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q2013"
+        ],
+        "logs": null
+    },
+    {
+        "question": "What are the items referenced in the publication \"Echinoderms from Australia, an account of collections made in 1929 and 1932,\" along with their best-ranked synonym (if any), roles of the references (if available), and page numbers (if available)?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q56025286"
+        ],
+        "predictions": [],
+        "logs": null
+    },
+    {
+        "question": "What are the cultural heritage items located in Helsinki? Please provide their year of creation (if available), commemorated entities (if available), images (if available), and coordinates (if available), and order by item ID.",
+        "gold": [
+            "http://www.wikidata.org/entity/Q1757"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q210272",
+            "http://www.wikidata.org/entity/Q1757"
+        ],
+        "logs": null
+    },
+    {
+        "question": "What are the details of nuclear weapons tests, excluding those that are part of a nuclear test series? For each test, include the date (if available), operator (if available), explosive energy equivalent (if available), and their energy equivalent in kilotons (if available).",
+        "gold": [],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q210112",
+            "http://www.wikidata.org/entity/Q4992853"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Which items are part of the Camino de Santiago (also known as the Way of Saint James), including their coordinates, and the routes they are part of (where those routes are instances of a pilgrims' way)?",
+        "gold": [],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q41150"
+        ],
+        "logs": null
+    },
+    {
+        "question": "What are the items where the property \"properties for this type\" is used, along with the associated properties and their characteristics?",
+        "gold": [],
+        "predictions": [],
+        "logs": null
+    },
+    {
+        "question": "Which international airports have exactly one runway? Please provide their labels and the number of runways, and order by the airport label.",
+        "gold": [],
+        "predictions": [],
+        "logs": null
+    },
+    {
+        "question": "Who are the 100 oldest living tennis players? Include their dates of birth, genders, and ages, and order by age in descending order. Exclude those who are 110 years old or older.",
+        "gold": [
+            "http://www.wikidata.org/entity/Q10833314"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q847"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Who are the distinct individuals who were born in Almería Province and died in a Nazi concentration camp?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q81802"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q81802",
+            "http://www.wikidata.org/entity/Q328468"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Which items are manga chapters that are part of the \"Detective Conan\" series? Provide each chapter's Japanese title (if available), volume (if available), series ordinal (if available), publication date (if available), and place of publication (if available).",
+        "gold": [
+            "http://www.wikidata.org/entity/Q185143"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q8274",
+            "http://www.wikidata.org/entity/Q185143"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Which publishers have worked in Amsterdam? For each publisher, include their date of birth (if available), date of death (if available), image (if available), work location, and coordinates of both the publishers (if available) and their work locations (if available)?",
+        "gold": [],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q727"
+        ],
+        "logs": null
+    },
+    {
+        "question": "What are the individual branches (P527 parts), as well as the overarching libraries, for libraries that are part of the Georgia Public Library Service?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q30268112"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q30268112"
+        ],
+        "logs": null
+    },
+    {
+        "question": "What are the properties and their values associated with John F. Kennedy?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q9696"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q9696"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Get the country, the number of cumulative deaths, and the dates of those deaths related to the COVID-19 pandemic in Italy.",
+        "gold": [
+            "http://www.wikidata.org/entity/Q84104992"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q84104992"
+        ],
+        "logs": null
+    },
+    {
+        "question": "How many women were born in India?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q6581072"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q668"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Which deceased Canadian individuals have a FamilySearch person ID and have a father who does not have a FamilySearch person ID? For each person, include their date of death, FamilySearch person ID, and their father.",
+        "gold": [
+            "http://www.wikidata.org/entity/Q16"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q3066228",
+            "http://www.wikidata.org/entity/Q3066228"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Which chess players have a FIDE player ID but do not have an Elo rating recorded for January 2012?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q10873124"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q718",
+            "http://www.wikidata.org/entity/Q102178",
+            "http://www.wikidata.org/entity/Q105955",
+            "http://www.wikidata.org/entity/Q105955"
+        ],
+        "logs": null
+    },
+    {
+        "question": "What are the church buildings located in Normandy, along with the item of the places they are located in and their images?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q18677875"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q15878"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Which items are labeled \"Madonna and Child\" in English but do not have a label in French?",
+        "gold": [],
+        "predictions": [],
+        "logs": null
+    },
+    {
+        "question": "Who were the top 100 people with the highest Elo ratings in January 2023? Please include their Elo rating, and order by their Elo rating in descending order.",
+        "gold": [],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q105955"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Which items have an official website URL that contains the string \"twitter\"?",
+        "gold": [],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q918"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Which items have exactly the string \"Fred Smith\" listed under its author name string?",
+        "gold": [],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q5498338"
+        ],
+        "logs": null
+    },
+    {
+        "question": "What are the cemeteries in Norway that have either a Commonwealth War Graves Commission burial ground ID or a Foreign war churchyards in Norway ID? Please provide their coordinates (if available), the relevant ID (if available), and an image (if available).",
+        "gold": [
+            "http://www.wikidata.org/entity/Q20"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q20",
+            "http://www.wikidata.org/entity/Q1117074",
+            "http://www.wikidata.org/entity/Q17019610"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Who has received the World Chess Championship award, including start times (if available) and end times of the award (if available)?",
+        "gold": [],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q190042"
+        ],
+        "logs": null
+    },
+    {
+        "question": "What are the countries, ordered by their names in English?",
+        "gold": [],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q1860"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Which items have a formatter URL that includes \"web.archive.org\"?",
+        "gold": [],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q5155729"
+        ],
+        "logs": null
+    },
+    {
+        "question": "What are the stars in the Hydra constellation with an apparent magnitude less than 6? Include their apparent magnitudes if available, and order the results by ascending apparent magnitude, and limit to 10 results.",
+        "gold": [
+            "http://www.wikidata.org/entity/Q10578"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q10578",
+            "http://www.wikidata.org/entity/Q124313"
+        ],
+        "logs": null
+    },
+    {
+        "question": "What are the institutions located in municipalities or cantons of Switzerland that are described in Memobase? Include their types (if available), street addresses (if available), municipalities (if available), and cantons (if available). Exclude any institutions where the municipality is within the canton, as well as institutions that no longer exist. Order results by item ID.",
+        "gold": [
+            "http://www.wikidata.org/entity/Q96192978"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q39",
+            "http://www.wikidata.org/entity/Q30325391"
+        ],
+        "logs": null
+    },
+    {
+        "question": "What are the software version identifiers for the wiki software named \"MediaWiki,\" and their publication dates if available? Order by publication date.",
+        "gold": [],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q83"
+        ],
+        "logs": null
+    },
+    {
+        "question": "What are the distinct museums located in Buenos Aires or any of its subdivisions, along with the administrative territorial entities they are located in?",
+        "gold": [],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q1486"
+        ],
+        "logs": null
+    },
+    {
+        "question": "How many musical ensembles were formed each year, grouped by the year of their inception and sorted by year?",
+        "gold": [],
+        "predictions": [],
+        "logs": null
+    },
+    {
+        "question": "Who are the individuals with a specified voice type (such as soprano, mezzo-soprano, contralto, countertenor, tenor, baritone, bass, and their derivatives) but do not have a defined occupation? For each individual,  include their voice type.",
+        "gold": [],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q1063547",
+            "http://www.wikidata.org/entity/Q30903",
+            "http://www.wikidata.org/entity/Q186506",
+            "http://www.wikidata.org/entity/Q37137",
+            "http://www.wikidata.org/entity/Q223166",
+            "http://www.wikidata.org/entity/Q27914",
+            "http://www.wikidata.org/entity/Q31687",
+            "http://www.wikidata.org/entity/Q27911"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Who are the guests who have appeared on the German political TV talk show \"Anne Will,\" and how many distinct episodes has each guest appeared in, ordered by the number of appearances in descending order?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q565894"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q565894"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Who are the individuals who were born in Venezuela, died in Venezuela, or had Venezuelan citizenship in the years 1833, 1834, 1838, 1839, 1841, 1843, 1844-47, 1849-53, 1855-57, 1865-72, 1874, 1876-80, or 1882? Include their dates of birth, places of birth, dates of death, and places of death (all only if available).",
+        "gold": [
+            "http://www.wikidata.org/entity/Q717"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q717"
+        ],
+        "logs": null
+    },
+    {
+        "question": "What are the names and dates of death of humans who died between January 1, 2021, and January 31, 2021, ordered by their date of death and name and limited to 500 results?",
+        "gold": [],
+        "predictions": [],
+        "logs": null
+    },
+    {
+        "question": "What are the items that are instances or subclasses of artificial intelligence, along with the objects they are part of?",
+        "gold": [],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q11660"
+        ],
+        "logs": null
+    },
+    {
+        "question": "What are the types of organizations located in the Balearic Islands, along with the count of distinct organizations for each type, ordered by the count in descending order?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q5765"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q5765"
+        ],
+        "logs": null
+    },
+    {
+        "question": "What are the distinct items that are instances of either a Wikidata property with datatype 'time' or a Wikidata property related to time and duration?",
+        "gold": [],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q2013"
+        ],
+        "logs": null
+    },
+    {
+        "question": "What are the languages, other than English, that have a Wikipedia language edition and more than 3,000,000 speakers?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q1860"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q1860",
+            "http://www.wikidata.org/entity/Q52"
+        ],
+        "logs": null
+    },
+    {
+        "question": "What are the Indian National Highways that are part of the national highways of India transport network? Return also their English labels and highway numbers (extracted from the labels), only include highways with numbers less than 100, and order by highway number.",
+        "gold": [
+            "http://www.wikidata.org/entity/Q1967342"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q2065643"
+        ],
+        "logs": null
+    },
+    {
+        "question": "What are the urban municipalities in Germany? For each result, return also its official website, coordinates (if available), and parent federated state.",
+        "gold": [],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q183"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Who are the members of the Clubture Network, including the administrative territorial entities they are located in (if available) and the coordinates of these administrative areas (if available)?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q96376996"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q1102980"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Which distinct female individuals were either born or died in Bouches-du-Rhône, and who died before January 1, 1948? Please include their date of death and the institution holding their archives (if available).",
+        "gold": [
+            "http://www.wikidata.org/entity/Q6581072",
+            "http://www.wikidata.org/entity/Q3240"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q3240"
+        ],
+        "logs": null
+    },
+    {
+        "question": "What are the distinct items that have an Encyclopedia of Life ID, but are not taxons or subclasses of taxons? Include item labels and labels of what the items are instances of. ",
+        "gold": [],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q82486",
+            "http://www.wikidata.org/entity/Q82486",
+            "http://www.wikidata.org/entity/Q16521"
+        ],
+        "logs": null
+    },
+    {
+        "question": "What are the public artworks located in London created by female artists? For each artwork, include also the artwork's creator.",
+        "gold": [
+            "http://www.wikidata.org/entity/Q23939248",
+            "http://www.wikidata.org/entity/Q6581072"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q84"
+        ],
+        "logs": null
+    },
+    {
+        "question": "What are the distinct super-classes of July, the seventh month in the Julian and Gregorian calendars, considering any level of subclass hierarchy?",
+        "gold": [],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q121",
+            "http://www.wikidata.org/entity/Q11184",
+            "http://www.wikidata.org/entity/Q12138"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Which production companies have produced more than 100 items, ordered by the number of items produced in descending order?",
+        "gold": [],
+        "predictions": [],
+        "logs": null
+    },
+    {
+        "question": "Who are the individuals from France who have more than one recorded date of death with at least day precision, where the first date of death is earlier than the second? Please provide the first date of death and the second date of death, ordered by the most recent first date of death and then by item ID.",
+        "gold": [],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q142"
+        ],
+        "logs": null
+    },
+    {
+        "question": "What are the main subjects of the scientific paper titled \"Neue Cyclocephalen (Col. Dyn.)\" published in 1923?",
+        "gold": [],
+        "predictions": [],
+        "logs": null
+    },
+    {
+        "question": "What are the yearly patronage statistics for Orly Airport, including the year, number of passengers, reference type, and reference? Exclude deprecated statements in your results.",
+        "gold": [],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q223416"
+        ],
+        "logs": null
+    },
+    {
+        "question": "What are the different types of works, excluding written works, authored by individuals who have exactly one sitelink to Wikisource, and how many of each type are there? Order by the count of each type descending.",
+        "gold": [],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q263"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Who are the YouTubers who are also science communicators and do not have an image? Include their YouTube channel ID and number of social media followers if available, and order by the number of social media followers in descending order.",
+        "gold": [
+            "http://www.wikidata.org/entity/Q15143191"
+        ],
+        "predictions": [],
+        "logs": null
+    },
+    {
+        "question": "What are the constituencies for elected members of the 32nd Parliament of the United Kingdom, along with the expected number of seats (if available) and the actual number of seats? Only include constituencies where the actual number of seats is greater than 1.",
+        "gold": [
+            "http://www.wikidata.org/entity/Q41582584"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q11010"
+        ],
+        "logs": null
+    },
+    {
+        "question": "What are the national wildlife areas in Canada that are located in the province of Quebec, along with their coordinates?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q176"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q16",
+            "http://www.wikidata.org/entity/Q176"
+        ],
+        "logs": null
+    },
+    {
+        "question": "What are the items with GND IDs, along with their subject names, and shared identifiers, where the GND ID statement includes both a subject named as qualifier and an identifier shared with qualifier?",
+        "gold": [],
+        "predictions": [],
+        "logs": null
+    },
+    {
+        "question": "What is the geographic point that represents the midpoint of the coordinates of Paris (the capital of France) and Montigny-le-Bretonneux (a commune in Yvelines, France)? Return one column for the latitude and one column for the longitude",
+        "gold": [],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q44946",
+            "http://www.wikidata.org/entity/Q1645406",
+            "http://www.wikidata.org/entity/Q90",
+            "http://www.wikidata.org/entity/Q142",
+            "http://www.wikidata.org/entity/Q240798",
+            "http://www.wikidata.org/entity/Q484170",
+            "http://www.wikidata.org/entity/Q12820",
+            "http://www.wikidata.org/entity/Q142",
+            "http://www.wikidata.org/entity/Q34027",
+            "http://www.wikidata.org/entity/Q36477"
+        ],
+        "logs": null
+    },
+    {
+        "question": "What are the taxa authored by Edmond Perrier?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q927667"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q16521",
+            "http://www.wikidata.org/entity/Q927667"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Which works were tranlated by Gabriele Sprigath? For each work, return the author (if available), title (if available), subtitle (if available), publication venue, publisher, place of publication, and publication year.",
+        "gold": [
+            "http://www.wikidata.org/entity/Q92759384"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q92759384"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Which Norwegian ships entered operational service between 1939 and 1946, along with their service entry dates?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q20"
+        ],
+        "predictions": [],
+        "logs": null
+    },
+    {
+        "question": "What are the municipalities of Spain located in Biscay, along with their most recent population and the year of that population data, and if available, the population and year of the population data from 10 years prior?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q93366"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q93366"
+        ],
+        "logs": null
+    },
+    {
+        "question": "What are the cities in Russia whose English names end with \"pol\", along with their coordinates? Please include the item ID and the item label (in English).",
+        "gold": [],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q159"
+        ],
+        "logs": null
+    },
+    {
+        "question": "What are the airports, military airbases, or aerodromes that have ceased to exist or stopped being valid? Please provide their item IDs, names, item IDs and labels places they serve (if available), IATA codes (if available), ICAO codes (if available), and end dates.",
+        "gold": [],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q697292",
+            "http://www.wikidata.org/entity/Q19755",
+            "http://www.wikidata.org/entity/Q125761"
+        ],
+        "logs": null
+    },
+    {
+        "question": "What are the sovereign states, their coordinates, and their official languages?",
+        "gold": [],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q3624078"
+        ],
+        "logs": null
+    },
+    {
+        "question": "What are the men's singles tennis events that do not have a winner indicated and are part of a tournament that belongs to either the ATP Tour or the Grand Prix tennis circuit?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q16893072"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q847",
+            "http://www.wikidata.org/entity/Q300008",
+            "http://www.wikidata.org/entity/Q3775082",
+            "http://www.wikidata.org/entity/Q3775082",
+            "http://www.wikidata.org/entity/Q3775082"
+        ],
+        "logs": null
+    },
+    {
+        "question": "What are the municipalities in the Province of Girona, Spain?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q7194"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q7194",
+            "http://www.wikidata.org/entity/Q29"
+        ],
+        "logs": null
+    },
+    {
+        "question": "What are the rural communes of Morocco?",
+        "gold": [],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q1028"
+        ],
+        "logs": null
+    },
+    {
+        "question": "How many students did the educational organization with the Research Organization Registry (ROR) ID \"024z2rq82\" have each year? Please include a count for each year (if available), and order results by year.",
+        "gold": [],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q110235640"
+        ],
+        "logs": null
+    },
+    {
+        "question": "How many votes did the \"PP+Cs\" and \"Vox\" parties receive in each jurisdiction during the 2020 Basque regional election, grouped by each place and party?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q30594119"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q15630787",
+            "http://www.wikidata.org/entity/Q30594119"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Which institutions have the highest number of theses or dissertations submitted to them, ordered by the count of distinct theses or dissertations in descending order?",
+        "gold": [],
+        "predictions": [],
+        "logs": null
+    },
+    {
+        "question": "What are the businesses headquartered in the Czech Republic, excluding Adental Czech Republic and Investiční a poštovní banka, along with their total revenue, headquarters location, date of revenue (if available), net profit, profit margin (rounded to two decimal places), and the unit of revenue (if available)? Please order the results by ascending profit margin and limit the results to 20.",
+        "gold": [
+            "http://www.wikidata.org/entity/Q100707321",
+            "http://www.wikidata.org/entity/Q12021780"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q213",
+            "http://www.wikidata.org/entity/Q14704593",
+            "http://www.wikidata.org/entity/Q12021780",
+            "http://www.wikidata.org/entity/Q722249"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Which distinct works are part of the series \"Dictionnaire critique du marxisme [Critical of Marxism] (German)\"? For each work, include title, publication year, ISBN-10 number, number of page, URL (all if available).",
+        "gold": [
+            "http://www.wikidata.org/entity/Q96024609"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q42253"
+        ],
+        "logs": null
+    },
+    {
+        "question": "What are the cat breeds? For each cat breed, also return the cats that are instances of it if available.",
+        "gold": [],
+        "predictions": [],
+        "logs": null
+    },
+    {
+        "question": "What are the formations in the United States of America, along with their labels, and the number of items that have each formation as their main subject? Please order the results by the count in descending order, followed by the item label.",
+        "gold": [],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q30"
+        ],
+        "logs": null
+    },
+    {
+        "question": "What are the item IDs, populations (if available), and land areas in square kilometers (if available) for Budapest, Wake Island, and Germany, excluding any area measurements that apply to lagoons?",
+        "gold": [],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q1781",
+            "http://www.wikidata.org/entity/Q43296",
+            "http://www.wikidata.org/entity/Q183"
+        ],
+        "logs": null
+    },
+    {
+        "question": "What are the distinct items that either have the Rivière Mégiscane as their mouth of the watercourse or are tributaries of watercourses that have the Rivière Mégiscane as their mouth of the watercourse?",
+        "gold": [],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q2155719",
+            "http://www.wikidata.org/entity/Q159675"
+        ],
+        "logs": null
+    },
+    {
+        "question": "What are the countries and their capitals for all sovereign states, excluding those where the capital has an end date? Please include the labels for both the countries and their capitals and order by country label.",
+        "gold": [],
+        "predictions": [],
+        "logs": null
+    },
+    {
+        "question": "What are the praenomen in anicent Rome, and what are their native labels (e.g. 'Octavus'), if available?",
+        "gold": [],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q1240901",
+            "http://www.wikidata.org/entity/Q2277"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Who attended the University of Washington but does not have an academic degree qualifier, along with their date of birth if available? Order results in descending order by date of birth, and limit to 500 results.",
+        "gold": [
+            "http://www.wikidata.org/entity/Q219563"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q219563"
+        ],
+        "logs": null
+    },
+    {
+        "question": "What are the details of individuals who have held the position of an Italian minister, including their item ID, the specific office they held, their date of birth, place of birth, sex or gender, and the start and end times of their tenure, if available?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q3858501"
+        ],
+        "predictions": [],
+        "logs": null
+    },
+    {
+        "question": "Who were the people appointed by Donald Trump, and which position was this for each person?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q22686"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q22686"
+        ],
+        "logs": null
+    },
+    {
+        "question": "What are the errata (published corrections to previous publications) with English labels starting with \"Erratum:\" that are not referenced by any item using the \"corrigendum / erratum\" property? Also, provide their corresponding item labels (after removing the \"Erratum: \" prefix) and items, where the item labels are longer than 20 characters.",
+        "gold": [],
+        "predictions": [],
+        "logs": null
+    },
+    {
+        "question": "Who has the family name Krupp (the QID Q37069298) and also have \"Bertha\" somewhere in their label?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q37069298"
+        ],
+        "predictions": [],
+        "logs": null
+    },
+    {
+        "question": "What other items are owned by the owner of the merchant ship Edward John? For each item, please also include its owner, the start (if available) and end times (if available) of ownership .",
+        "gold": [
+            "http://www.wikidata.org/entity/Q24027085"
+        ],
+        "predictions": [],
+        "logs": null
+    },
+    {
+        "question": "What are the lighthouses and their colors in Norrköping Municipality, Baltic coast?",
+        "gold": [],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q504676",
+            "http://www.wikidata.org/entity/Q545"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Which poems are in the public domain, either in English or with no specified language, and do not have an audio recording?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q1860"
+        ],
+        "predictions": [],
+        "logs": null
+    },
+    {
+        "question": "Which periodicals have a primary language of Esperanto?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q143"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q1002697",
+            "http://www.wikidata.org/entity/Q143"
+        ],
+        "logs": null
+    },
+    {
+        "question": "What are the distinct items, along with their coordinates, that were born in a place within Norway and either have the United States of America as their country of citizenship or died in a place within the United States of America?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q20"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q20",
+            "http://www.wikidata.org/entity/Q30"
+        ],
+        "logs": null
+    },
+    {
+        "question": "What are the events in the 2020 Formula One World Championship, along with the event times and the sum of the ages of the participants who ranked 1st, 2nd, or 3rd in each event?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q41174436"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q41174436"
+        ],
+        "logs": null
+    },
+    {
+        "question": "What are the paintings in the Bavarian State Painting Collections with labels in German that end in \")\"?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q812285"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q812285"
+        ],
+        "logs": null
+    },
+    {
+        "question": "What are the recordings that feature performers and the instruments they played?",
+        "gold": [],
+        "predictions": [],
+        "logs": null
+    },
+    {
+        "question": "What are the items that are not metro stations, but have a connecting line which is a rapid transit railway line? For each such item, return also the connecting line in your results.",
+        "gold": [],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q5503"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Which scholarly articles published in the journal Geosphere do not have an English label?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q15817086"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q241284"
+        ],
+        "logs": null
+    },
+    {
+        "question": "What are the countries that are members of the United Nations, along with their capitals, populations, area sizes, heads of state, images of the heads of state, currencies, flag images, and coordinate locations (all only if available)?",
+        "gold": [],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q1065"
+        ],
+        "logs": null
+    },
+    {
+        "question": "What are the streets named after female individuals who have an identifier in the Women Writers database? For each street, return also its the Women Writers database ID.",
+        "gold": [
+            "http://www.wikidata.org/entity/Q6581072"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q8031351"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Who are the tennis players that are citizens of only Belgium?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q10833314",
+            "http://www.wikidata.org/entity/Q31"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q847",
+            "http://www.wikidata.org/entity/Q31"
+        ],
+        "logs": null
+    },
+    {
+        "question": "What are the cities in Russia with a population exceeding 100,000? For each one also return their coordinates ",
+        "gold": [],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q159"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Who are the individuals who have held the position of President of the United States and thier names? For each president, the name should be derived from their official name, birth name, or name in their native language, in that order of preference (return only one name for each president).",
+        "gold": [
+            "http://www.wikidata.org/entity/Q11696"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q11696"
+        ],
+        "logs": null
+    },
+    {
+        "question": "What are the counts and sums of various types of awards received by humans who have won the Gottfried Wilhelm Leibniz Prize? Only consider awards that are general awards, science awards, cultural prizes, chemistry awards, literary awards, physics awards, national academies, and journalism prizes. Additionally, if the dates are available, indicate whether these awards were received before, after, at the same time, or at an unknown time relative to the receipt of the Gottfried Wilhelm Leibniz Prize.\n\nEach result row should contain the prize, the count of people who received that prize, and the counts of people who received it before, after, at the same time, or at an unknown time relative to the Leibniz Prize.",
+        "gold": [
+            "http://www.wikidata.org/entity/Q703205"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q703205"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Who has an accused witch ID in the Survey of Scottish Witchcraft? For each person, also include their residences, the coordinates of their residences, and gender (if available).",
+        "gold": [],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q53631968",
+            "http://www.wikidata.org/entity/Q53631968"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Which individuals had an Elo rating in April 2007 that is exactly their year of birth, and what were their Elo ratings and dates of birth?",
+        "gold": [],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q105955",
+            "http://www.wikidata.org/entity/Q105955"
+        ],
+        "logs": null
+    },
+    {
+        "question": "What are the events won by the Czech-American tennis player Ivan Lendl, as well as tournament, year, country, surface played on, prize money, and number of participants (all if available)?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q182736"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q847",
+            "http://www.wikidata.org/entity/Q182736"
+        ],
+        "logs": null
+    },
+    {
+        "question": "What are the castles located in the historic county of Kent, along with their images and/or image of their design plans if available? ",
+        "gold": [
+            "http://www.wikidata.org/entity/Q67479626"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q23298"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Who are the Wikimedians in residence, and their employers (if available), items (if available), coordinates (if available), end years (if available), start years (if available), and lengths of tenure (in months) (if available)? ",
+        "gold": [
+            "http://www.wikidata.org/entity/Q3809586"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q180"
+        ],
+        "logs": null
+    },
+    {
+        "question": "What are the museums in Europe, along with their Biodiversity Repository ID, country, International Standard Name Identifier (ISNI), GRID ID, Research Organization Registry (ROR) ID, and Library of Congress authority ID?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q46"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q54857962",
+            "http://www.wikidata.org/entity/Q423048",
+            "http://www.wikidata.org/entity/Q27768150",
+            "http://www.wikidata.org/entity/Q131454"
+        ],
+        "logs": null
+    },
+    {
+        "question": "What are the films directed by Rob Minkoff and the genres of the films (if available), and the earliest publication date of each film (if available)?",
+        "gold": [
+            "http://www.wikidata.org/entity/Q1151111"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q1151111"
+        ],
+        "logs": null
+    },
+    {
+        "question": "What are the items associated with the DOIs '10.1126/SCIENCE.156.3775.636' and '10.1145/358027.358042', along with their titles if available?",
+        "gold": [],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q25670"
+        ],
+        "logs": null
+    },
+    {
+        "question": "Who are the distinct female individuals with a net worth of at least 1 billion United States dollars? Include their net worth amount, the unit of the net worth, the conversion rate to USD, and the net worth in USD, and order by the net worth in USD in descending order. You should also include net worths in other currencies but are equivalent to more than 1 billion USD",
+        "gold": [
+            "http://www.wikidata.org/entity/Q6581072"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q1933764",
+            "http://www.wikidata.org/entity/Q4917"
+        ],
+        "logs": null
+    },
+    {
+        "question": "What are the settlements (villages and towns) in the Czech Republic within a 35 km radius from the village of Mezno? Please include their coordinates, the coordinates of the center point, and the distance from the center point.",
+        "gold": [
+            "http://www.wikidata.org/entity/Q2180733"
+        ],
+        "predictions": [
+            "http://www.wikidata.org/entity/Q213",
+            "http://www.wikidata.org/entity/Q2180733"
+        ],
+        "logs": null
+    }
+]

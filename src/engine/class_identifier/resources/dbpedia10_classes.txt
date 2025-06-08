@@ -1,0 +1,469 @@
+http://dbpedia.org/ontology/AcademicConference - Academic Conference
+http://dbpedia.org/ontology/AcademicJournal - Academic Journal
+http://dbpedia.org/ontology/Activity - Activity
+http://dbpedia.org/ontology/Actor - Actor
+http://dbpedia.org/ontology/AdministrativeRegion - Administrative Region
+http://dbpedia.org/ontology/AdultActor - Adult Actor
+http://dbpedia.org/ontology/Agent - Agent
+http://dbpedia.org/ontology/Aircraft - Aircraft
+http://dbpedia.org/ontology/Airline - Airline
+http://dbpedia.org/ontology/Airport - Airport
+http://dbpedia.org/ontology/Album - Album
+http://dbpedia.org/ontology/AmateurBoxer - Amateur Boxer
+http://dbpedia.org/ontology/Ambassador - Ambassador
+http://dbpedia.org/ontology/AmericanFootballLeague - American Football League
+http://dbpedia.org/ontology/AmericanFootballPlayer - American Football Player
+http://dbpedia.org/ontology/AmericanFootballTeam - American Football Team
+http://dbpedia.org/ontology/Amphibian - Amphibian
+http://dbpedia.org/ontology/AmusementParkAttraction - Amusement Park Attraction
+http://dbpedia.org/ontology/AnatomicalStructure - Anatomical Structure
+http://dbpedia.org/ontology/Animal - Animal
+http://dbpedia.org/ontology/AnimangaCharacter - Animanga Character
+http://dbpedia.org/ontology/Anime - Anime
+http://dbpedia.org/ontology/Arachnid - Arachnid
+http://dbpedia.org/ontology/Archaea - Archaea
+http://dbpedia.org/ontology/Architect - Architect
+http://dbpedia.org/ontology/ArchitecturalStructure - Architectural Structure
+http://dbpedia.org/ontology/Artery - Artery
+http://dbpedia.org/ontology/ArtificialSatellite - Artificial Satellite
+http://dbpedia.org/ontology/Artist - Artist
+http://dbpedia.org/ontology/ArtistDiscography - Artist Discography
+http://dbpedia.org/ontology/Artwork - Artwork
+http://dbpedia.org/ontology/Asteroid - Asteroid
+http://dbpedia.org/ontology/Astronaut - Astronaut
+http://dbpedia.org/ontology/Athlete - Athlete
+http://dbpedia.org/ontology/AustralianFootballLeague - Australian Football League
+http://dbpedia.org/ontology/AustralianFootballTeam - Australian Football Team
+http://dbpedia.org/ontology/AustralianRulesFootballPlayer - Australian Rules Football Player
+http://dbpedia.org/ontology/AutoRacingLeague - Auto Racing League
+http://dbpedia.org/ontology/Automobile - Automobile
+http://dbpedia.org/ontology/AutomobileEngine - Automobile Engine
+http://dbpedia.org/ontology/Award - Award
+http://dbpedia.org/ontology/Bacteria - Bacteria
+http://dbpedia.org/ontology/BadmintonPlayer - Badminton Player
+http://dbpedia.org/ontology/Band - Band
+http://dbpedia.org/ontology/Bank - Bank
+http://dbpedia.org/ontology/Baronet - Baronet
+http://dbpedia.org/ontology/BaseballLeague - Baseball League
+http://dbpedia.org/ontology/BaseballPlayer - Baseball Player
+http://dbpedia.org/ontology/BaseballSeason - Baseball Season
+http://dbpedia.org/ontology/BaseballTeam - Baseball Team
+http://dbpedia.org/ontology/BasketballLeague - Basketball League
+http://dbpedia.org/ontology/BasketballPlayer - Basketball Player
+http://dbpedia.org/ontology/BasketballTeam - Basketball Team
+http://dbpedia.org/ontology/Bay - Bay
+http://dbpedia.org/ontology/BeachVolleyballPlayer - Beach Volleyball Player
+http://dbpedia.org/ontology/BeautyQueen - Beauty Queen
+http://dbpedia.org/ontology/Beverage - Beverage
+http://dbpedia.org/ontology/BiologicalDatabase - Biological Database
+http://dbpedia.org/ontology/Biomolecule - Biomolecule
+http://dbpedia.org/ontology/Bird - Bird
+http://dbpedia.org/ontology/BodyOfWater - Body Of Water
+http://dbpedia.org/ontology/Bodybuilder - Bodybuilder
+http://dbpedia.org/ontology/Bone - Bone
+http://dbpedia.org/ontology/Book - Book
+http://dbpedia.org/ontology/BowlingLeague - Bowling League
+http://dbpedia.org/ontology/Boxer - Boxer
+http://dbpedia.org/ontology/BoxingLeague - Boxing League
+http://dbpedia.org/ontology/Brain - Brain
+http://dbpedia.org/ontology/Brewery - Brewery
+http://dbpedia.org/ontology/Bridge - Bridge
+http://dbpedia.org/ontology/BritishRoyalty - British Royalty
+http://dbpedia.org/ontology/BroadcastNetwork - Broadcast Network
+http://dbpedia.org/ontology/Broadcaster - Broadcaster
+http://dbpedia.org/ontology/Building - Building
+http://dbpedia.org/ontology/BusCompany - Bus Company
+http://dbpedia.org/ontology/BusinessPerson - Business Person
+http://dbpedia.org/ontology/CanadianFootballLeague - Canadian Football League
+http://dbpedia.org/ontology/CanadianFootballTeam - Canadian Football Team
+http://dbpedia.org/ontology/Canal - Canal
+http://dbpedia.org/ontology/Canoeist - Canoeist
+http://dbpedia.org/ontology/Cardinal - Cardinal
+http://dbpedia.org/ontology/CareerStation - Career Station
+http://dbpedia.org/ontology/Cartoon - Cartoon
+http://dbpedia.org/ontology/Case - Case
+http://dbpedia.org/ontology/Castle - Castle
+http://dbpedia.org/ontology/Cave - Cave
+http://dbpedia.org/ontology/CelestialBody - Celestial Body
+http://dbpedia.org/ontology/Chancellor - Chancellor
+http://dbpedia.org/ontology/Cheese - Cheese
+http://dbpedia.org/ontology/Chef - Chef
+http://dbpedia.org/ontology/ChemicalCompound - Chemical Compound
+http://dbpedia.org/ontology/ChemicalElement - Chemical Element
+http://dbpedia.org/ontology/ChemicalSubstance - Chemical Substance
+http://dbpedia.org/ontology/ChessPlayer - Chess Player
+http://dbpedia.org/ontology/ChristianBishop - Christian Bishop
+http://dbpedia.org/ontology/City - City
+http://dbpedia.org/ontology/ClassicalMusicArtist - Classical Music Artist
+http://dbpedia.org/ontology/ClassicalMusicComposition - Classical Music Composition
+http://dbpedia.org/ontology/Cleric - Cleric
+http://dbpedia.org/ontology/ClericalAdministrativeRegion - Clerical Administrative Region
+http://dbpedia.org/ontology/ClubMoss - Club Moss
+http://dbpedia.org/ontology/Coach - Coach
+http://dbpedia.org/ontology/College - College
+http://dbpedia.org/ontology/CollegeCoach - College Coach
+http://dbpedia.org/ontology/Colour - Colour
+http://dbpedia.org/ontology/Comedian - Comedian
+http://dbpedia.org/ontology/ComedyGroup - Comedy Group
+http://dbpedia.org/ontology/Comic - Comic
+http://dbpedia.org/ontology/ComicStrip - Comic Strip
+http://dbpedia.org/ontology/ComicsCharacter - Comics Character
+http://dbpedia.org/ontology/ComicsCreator - Comics Creator
+http://dbpedia.org/ontology/Company - Company
+http://dbpedia.org/ontology/ConcentrationCamp - Concentration Camp
+http://dbpedia.org/ontology/Congressman - Congressman
+http://dbpedia.org/ontology/Conifer - Conifer
+http://dbpedia.org/ontology/Constellation - Constellation
+http://dbpedia.org/ontology/Continent - Continent
+http://dbpedia.org/ontology/Convention - Convention
+http://dbpedia.org/ontology/Country - Country
+http://dbpedia.org/ontology/Crater - Crater
+http://dbpedia.org/ontology/CricketGround - Cricket Ground
+http://dbpedia.org/ontology/CricketLeague - Cricket League
+http://dbpedia.org/ontology/CricketTeam - Cricket Team
+http://dbpedia.org/ontology/Cricketer - Cricketer
+http://dbpedia.org/ontology/Criminal - Criminal
+http://dbpedia.org/ontology/Crustacean - Crustacean
+http://dbpedia.org/ontology/CultivatedVariety - Cultivated Variety
+http://dbpedia.org/ontology/Curler - Curler
+http://dbpedia.org/ontology/CurlingLeague - Curling League
+http://dbpedia.org/ontology/Currency - Currency
+http://dbpedia.org/ontology/Cycad - Cycad
+http://dbpedia.org/ontology/CyclingRace - Cycling Race
+http://dbpedia.org/ontology/CyclingTeam - Cycling Team
+http://dbpedia.org/ontology/Cyclist - Cyclist
+http://dbpedia.org/ontology/Dam - Dam
+http://dbpedia.org/ontology/DartsPlayer - Darts Player
+http://dbpedia.org/ontology/Database - Database
+http://dbpedia.org/ontology/Device - Device
+http://dbpedia.org/ontology/Diocese - Diocese
+http://dbpedia.org/ontology/Disease - Disease
+http://dbpedia.org/ontology/Document - Document
+http://dbpedia.org/ontology/Drug - Drug
+http://dbpedia.org/ontology/Earthquake - Earthquake
+http://dbpedia.org/ontology/Economist - Economist
+http://dbpedia.org/ontology/EducationalInstitution - Educational Institution
+http://dbpedia.org/ontology/Election - Election
+http://dbpedia.org/ontology/Embryology - Embryology
+http://dbpedia.org/ontology/Engine - Engine
+http://dbpedia.org/ontology/Engineer - Engineer
+http://dbpedia.org/ontology/Entomologist - Entomologist
+http://dbpedia.org/ontology/Enzyme - Enzyme
+http://dbpedia.org/ontology/EthnicGroup - Ethnic Group
+http://dbpedia.org/ontology/Eukaryote - Eukaryote
+http://dbpedia.org/ontology/EurovisionSongContestEntry - Eurovision Song Contest Entry
+http://dbpedia.org/ontology/Event - Event
+http://dbpedia.org/ontology/Farmer - Farmer
+http://dbpedia.org/ontology/Fashion - Fashion
+http://dbpedia.org/ontology/FashionDesigner - Fashion Designer
+http://dbpedia.org/ontology/Fern - Fern
+http://dbpedia.org/ontology/FictionalCharacter - Fictional Character
+http://dbpedia.org/ontology/FieldHockeyLeague - Field Hockey League
+http://dbpedia.org/ontology/FigureSkater - Figure Skater
+http://dbpedia.org/ontology/Film - Film
+http://dbpedia.org/ontology/FilmFestival - Film Festival
+http://dbpedia.org/ontology/Fish - Fish
+http://dbpedia.org/ontology/FloweringPlant - Flowering Plant
+http://dbpedia.org/ontology/Food - Food
+http://dbpedia.org/ontology/FootballLeagueSeason - Football League Season
+http://dbpedia.org/ontology/FootballMatch - Football Match
+http://dbpedia.org/ontology/FormulaOneRacer - Formula One Racer
+http://dbpedia.org/ontology/FormulaOneTeam - Formula One Team
+http://dbpedia.org/ontology/Fungus - Fungus
+http://dbpedia.org/ontology/GaelicGamesPlayer - Gaelic Games Player
+http://dbpedia.org/ontology/Galaxy - Galaxy
+http://dbpedia.org/ontology/Game - Game
+http://dbpedia.org/ontology/Garden - Garden
+http://dbpedia.org/ontology/Gene - Gene
+http://dbpedia.org/ontology/GeneLocation - Gene Location
+http://dbpedia.org/ontology/Genre - Genre
+http://dbpedia.org/ontology/Ginkgo - Ginkgo
+http://dbpedia.org/ontology/GivenName - Given Name
+http://dbpedia.org/ontology/Glacier - Glacier
+http://dbpedia.org/ontology/Gnetophytes - Gnetophytes
+http://dbpedia.org/ontology/GolfCourse - Golf Course
+http://dbpedia.org/ontology/GolfLeague - Golf League
+http://dbpedia.org/ontology/GolfPlayer - Golf Player
+http://dbpedia.org/ontology/GolfTournament - Golf Tournament
+http://dbpedia.org/ontology/GovernmentAgency - Government Agency
+http://dbpedia.org/ontology/Governor - Governor
+http://dbpedia.org/ontology/GrandPrix - Grand Prix
+http://dbpedia.org/ontology/Grape - Grape
+http://dbpedia.org/ontology/GreenAlga - Green Alga
+http://dbpedia.org/ontology/GridironFootballPlayer - Gridiron Football Player
+http://dbpedia.org/ontology/Group - Group
+http://dbpedia.org/ontology/Guitarist - Guitarist
+http://dbpedia.org/ontology/Gymnast - Gymnast
+http://dbpedia.org/ontology/HandballLeague - Handball League
+http://dbpedia.org/ontology/HandballPlayer - Handball Player
+http://dbpedia.org/ontology/HandballTeam - Handball Team
+http://dbpedia.org/ontology/Historian - Historian
+http://dbpedia.org/ontology/HistoricBuilding - Historic Building
+http://dbpedia.org/ontology/HistoricPlace - Historic Place
+http://dbpedia.org/ontology/HockeyTeam - Hockey Team
+http://dbpedia.org/ontology/Holiday - Holiday
+http://dbpedia.org/ontology/HollywoodCartoon - Hollywood Cartoon
+http://dbpedia.org/ontology/Horse - Horse
+http://dbpedia.org/ontology/HorseRace - Horse Race
+http://dbpedia.org/ontology/HorseRider - Horse Rider
+http://dbpedia.org/ontology/HorseTrainer - Horse Trainer
+http://dbpedia.org/ontology/Hospital - Hospital
+http://dbpedia.org/ontology/Hotel - Hotel
+http://dbpedia.org/ontology/HumanGene - Human Gene
+http://dbpedia.org/ontology/HumanGeneLocation - Human Gene Location
+http://dbpedia.org/ontology/IceHockeyLeague - Ice Hockey League
+http://dbpedia.org/ontology/IceHockeyPlayer - Ice Hockey Player
+http://dbpedia.org/ontology/Image - Image
+http://dbpedia.org/ontology/InformationAppliance - Information Appliance
+http://dbpedia.org/ontology/Infrastructure - Infrastructure
+http://dbpedia.org/ontology/InlineHockeyLeague - Inline Hockey League
+http://dbpedia.org/ontology/Insect - Insect
+http://dbpedia.org/ontology/Instrumentalist - Instrumentalist
+http://dbpedia.org/ontology/Island - Island
+http://dbpedia.org/ontology/Jockey - Jockey
+http://dbpedia.org/ontology/Journalist - Journalist
+http://dbpedia.org/ontology/Judge - Judge
+http://dbpedia.org/ontology/LacrosseLeague - Lacrosse League
+http://dbpedia.org/ontology/LacrossePlayer - Lacrosse Player
+http://dbpedia.org/ontology/Lake - Lake
+http://dbpedia.org/ontology/Language - Language
+http://dbpedia.org/ontology/LaunchPad - Launch Pad
+http://dbpedia.org/ontology/LawFirm - Law Firm
+http://dbpedia.org/ontology/Lawyer - Lawyer
+http://dbpedia.org/ontology/LegalCase - Legal Case
+http://dbpedia.org/ontology/Legislature - Legislature
+http://dbpedia.org/ontology/Library - Library
+http://dbpedia.org/ontology/Ligament - Ligament
+http://dbpedia.org/ontology/Lighthouse - Lighthouse
+http://dbpedia.org/ontology/Location - Location
+http://dbpedia.org/ontology/Locomotive - Locomotive
+http://dbpedia.org/ontology/Lymph - Lymph
+http://dbpedia.org/ontology/Magazine - Magazine
+http://dbpedia.org/ontology/Mammal - Mammal
+http://dbpedia.org/ontology/Manga - Manga
+http://dbpedia.org/ontology/MartialArtist - Martial Artist
+http://dbpedia.org/ontology/Mayor - Mayor
+http://dbpedia.org/ontology/MeanOfTransportation - Mean Of Transportation
+http://dbpedia.org/ontology/Medician - Medician
+http://dbpedia.org/ontology/MemberOfParliament - Member Of Parliament
+http://dbpedia.org/ontology/MilitaryConflict - Military Conflict
+http://dbpedia.org/ontology/MilitaryPerson - Military Person
+http://dbpedia.org/ontology/MilitaryStructure - Military Structure
+http://dbpedia.org/ontology/MilitaryUnit - Military Unit
+http://dbpedia.org/ontology/Mineral - Mineral
+http://dbpedia.org/ontology/MixedMartialArtsEvent - Mixed Martial Arts Event
+http://dbpedia.org/ontology/MixedMartialArtsLeague - Mixed Martial Arts League
+http://dbpedia.org/ontology/Model - Model
+http://dbpedia.org/ontology/Mollusca - Mollusca
+http://dbpedia.org/ontology/Monarch - Monarch
+http://dbpedia.org/ontology/Monument - Monument
+http://dbpedia.org/ontology/Moss - Moss
+http://dbpedia.org/ontology/Motorcycle - Motorcycle
+http://dbpedia.org/ontology/MotorcycleRacingLeague - Motorcycle Racing League
+http://dbpedia.org/ontology/MotorcycleRider - Motorcycle Rider
+http://dbpedia.org/ontology/MotorsportRacer - Motorsport Racer
+http://dbpedia.org/ontology/MotorsportSeason - Motorsport Season
+http://dbpedia.org/ontology/Mountain - Mountain
+http://dbpedia.org/ontology/MountainPass - Mountain Pass
+http://dbpedia.org/ontology/MountainRange - Mountain Range
+http://dbpedia.org/ontology/MouseGene - Mouse Gene
+http://dbpedia.org/ontology/MouseGeneLocation - Mouse Gene Location
+http://dbpedia.org/ontology/Murderer - Murderer
+http://dbpedia.org/ontology/Muscle - Muscle
+http://dbpedia.org/ontology/Museum - Museum
+http://dbpedia.org/ontology/MusicFestival - Music Festival
+http://dbpedia.org/ontology/MusicGenre - Music Genre
+http://dbpedia.org/ontology/Musical - Musical
+http://dbpedia.org/ontology/MusicalArtist - Musical Artist
+http://dbpedia.org/ontology/MusicalWork - Musical Work
+http://dbpedia.org/ontology/MythologicalFigure - Mythological Figure
+http://dbpedia.org/ontology/NCAATeamSeason - N C A A Team Season
+http://dbpedia.org/ontology/Name - Name
+http://dbpedia.org/ontology/NascarDriver - Nascar Driver
+http://dbpedia.org/ontology/NationalCollegiateAthleticAssociationAthlete - National Collegiate Athletic Association Athlete
+http://dbpedia.org/ontology/NationalFootballLeagueEvent - National Football League Event
+http://dbpedia.org/ontology/NationalFootballLeagueSeason - National Football League Season
+http://dbpedia.org/ontology/NaturalEvent - Natural Event
+http://dbpedia.org/ontology/NaturalPlace - Natural Place
+http://dbpedia.org/ontology/Nerve - Nerve
+http://dbpedia.org/ontology/NetballPlayer - Netball Player
+http://dbpedia.org/ontology/Newspaper - Newspaper
+http://dbpedia.org/ontology/Noble - Noble
+http://dbpedia.org/ontology/Non-ProfitOrganisation - Non Profit Organisation
+http://dbpedia.org/ontology/Novel - Novel
+http://dbpedia.org/ontology/OfficeHolder - Office Holder
+http://dbpedia.org/ontology/OlympicEvent - Olympic Event
+http://dbpedia.org/ontology/OlympicResult - Olympic Result
+http://dbpedia.org/ontology/Olympics - Olympics
+http://dbpedia.org/ontology/Organisation - Organisation
+http://dbpedia.org/ontology/OrganisationMember - Organisation Member
+http://dbpedia.org/ontology/Painter - Painter
+http://dbpedia.org/ontology/Park - Park
+http://dbpedia.org/ontology/PeriodicalLiterature - Periodical Literature
+http://dbpedia.org/ontology/Person - Person
+http://dbpedia.org/ontology/PersonFunction - Person Function
+http://dbpedia.org/ontology/Philosopher - Philosopher
+http://dbpedia.org/ontology/Photographer - Photographer
+http://dbpedia.org/ontology/Place - Place
+http://dbpedia.org/ontology/Planet - Planet
+http://dbpedia.org/ontology/Plant - Plant
+http://dbpedia.org/ontology/Play - Play
+http://dbpedia.org/ontology/PlayboyPlaymate - Playboy Playmate
+http://dbpedia.org/ontology/Poem - Poem
+http://dbpedia.org/ontology/Poet - Poet
+http://dbpedia.org/ontology/PokerPlayer - Poker Player
+http://dbpedia.org/ontology/PoliticalParty - Political Party
+http://dbpedia.org/ontology/Politician - Politician
+http://dbpedia.org/ontology/PoloLeague - Polo League
+http://dbpedia.org/ontology/Pope - Pope
+http://dbpedia.org/ontology/PopulatedPlace - Populated Place
+http://dbpedia.org/ontology/PowerStation - Power Station
+http://dbpedia.org/ontology/Presenter - Presenter
+http://dbpedia.org/ontology/President - President
+http://dbpedia.org/ontology/Priest - Priest
+http://dbpedia.org/ontology/PrimeMinister - Prime Minister
+http://dbpedia.org/ontology/Prison - Prison
+http://dbpedia.org/ontology/ProgrammingLanguage - Programming Language
+http://dbpedia.org/ontology/Project - Project
+http://dbpedia.org/ontology/ProtectedArea - Protected Area
+http://dbpedia.org/ontology/Protein - Protein
+http://dbpedia.org/ontology/PublicTransitSystem - Public Transit System
+http://dbpedia.org/ontology/Publisher - Publisher
+http://dbpedia.org/ontology/Race - Race
+http://dbpedia.org/ontology/RaceHorse - Race Horse
+http://dbpedia.org/ontology/RaceTrack - Race Track
+http://dbpedia.org/ontology/Racecourse - Racecourse
+http://dbpedia.org/ontology/RacingDriver - Racing Driver
+http://dbpedia.org/ontology/RadioHost - Radio Host
+http://dbpedia.org/ontology/RadioProgram - Radio Program
+http://dbpedia.org/ontology/RadioStation - Radio Station
+http://dbpedia.org/ontology/RailwayLine - Railway Line
+http://dbpedia.org/ontology/RailwayStation - Railway Station
+http://dbpedia.org/ontology/RailwayTunnel - Railway Tunnel
+http://dbpedia.org/ontology/RecordLabel - Record Label
+http://dbpedia.org/ontology/Region - Region
+http://dbpedia.org/ontology/Religious - Religious
+http://dbpedia.org/ontology/ReligiousBuilding - Religious Building
+http://dbpedia.org/ontology/Reptile - Reptile
+http://dbpedia.org/ontology/ResearchProject - Research Project
+http://dbpedia.org/ontology/Restaurant - Restaurant
+http://dbpedia.org/ontology/River - River
+http://dbpedia.org/ontology/Road - Road
+http://dbpedia.org/ontology/RoadJunction - Road Junction
+http://dbpedia.org/ontology/RoadTunnel - Road Tunnel
+http://dbpedia.org/ontology/Rocket - Rocket
+http://dbpedia.org/ontology/RollerCoaster - Roller Coaster
+http://dbpedia.org/ontology/RouteOfTransportation - Route Of Transportation
+http://dbpedia.org/ontology/Rower - Rower
+http://dbpedia.org/ontology/Royalty - Royalty
+http://dbpedia.org/ontology/RugbyClub - Rugby Club
+http://dbpedia.org/ontology/RugbyLeague - Rugby League
+http://dbpedia.org/ontology/RugbyPlayer - Rugby Player
+http://dbpedia.org/ontology/Saint - Saint
+http://dbpedia.org/ontology/Sales - Sales
+http://dbpedia.org/ontology/Satellite - Satellite
+http://dbpedia.org/ontology/School - School
+http://dbpedia.org/ontology/Scientist - Scientist
+http://dbpedia.org/ontology/ScreenWriter - Screen Writer
+http://dbpedia.org/ontology/Sea - Sea
+http://dbpedia.org/ontology/Senator - Senator
+http://dbpedia.org/ontology/Settlement - Settlement
+http://dbpedia.org/ontology/Ship - Ship
+http://dbpedia.org/ontology/ShoppingMall - Shopping Mall
+http://dbpedia.org/ontology/Singer - Singer
+http://dbpedia.org/ontology/Single - Single
+http://dbpedia.org/ontology/SiteOfSpecialScientificInterest - Site Of Special Scientific Interest
+http://dbpedia.org/ontology/Skater - Skater
+http://dbpedia.org/ontology/SkiArea - Ski Area
+http://dbpedia.org/ontology/Skier - Skier
+http://dbpedia.org/ontology/Skyscraper - Skyscraper
+http://dbpedia.org/ontology/SnookerChamp - Snooker Champ
+http://dbpedia.org/ontology/SnookerPlayer - Snooker Player
+http://dbpedia.org/ontology/SnookerWorldRanking - Snooker World Ranking
+http://dbpedia.org/ontology/SoapCharacter - Soap Character
+http://dbpedia.org/ontology/SoccerClub - Soccer Club
+http://dbpedia.org/ontology/SoccerClubSeason - Soccer Club Season
+http://dbpedia.org/ontology/SoccerLeague - Soccer League
+http://dbpedia.org/ontology/SoccerManager - Soccer Manager
+http://dbpedia.org/ontology/SoccerPlayer - Soccer Player
+http://dbpedia.org/ontology/SoccerTournament - Soccer Tournament
+http://dbpedia.org/ontology/SocietalEvent - Societal Event
+http://dbpedia.org/ontology/SoftballLeague - Softball League
+http://dbpedia.org/ontology/Software - Software
+http://dbpedia.org/ontology/SolarEclipse - Solar Eclipse
+http://dbpedia.org/ontology/Song - Song
+http://dbpedia.org/ontology/Sound - Sound
+http://dbpedia.org/ontology/SpaceShuttle - Space Shuttle
+http://dbpedia.org/ontology/SpaceStation - Space Station
+http://dbpedia.org/ontology/Spacecraft - Spacecraft
+http://dbpedia.org/ontology/Species - Species
+http://dbpedia.org/ontology/SpeedwayLeague - Speedway League
+http://dbpedia.org/ontology/SpeedwayRider - Speedway Rider
+http://dbpedia.org/ontology/SpeedwayTeam - Speedway Team
+http://dbpedia.org/ontology/Sport - Sport
+http://dbpedia.org/ontology/SportCompetitionResult - Sport Competition Result
+http://dbpedia.org/ontology/SportFacility - Sport Facility
+http://dbpedia.org/ontology/SportsEvent - Sports Event
+http://dbpedia.org/ontology/SportsLeague - Sports League
+http://dbpedia.org/ontology/SportsManager - Sports Manager
+http://dbpedia.org/ontology/SportsSeason - Sports Season
+http://dbpedia.org/ontology/SportsTeam - Sports Team
+http://dbpedia.org/ontology/SportsTeamMember - Sports Team Member
+http://dbpedia.org/ontology/SportsTeamSeason - Sports Team Season
+http://dbpedia.org/ontology/SquashPlayer - Squash Player
+http://dbpedia.org/ontology/Stadium - Stadium
+http://dbpedia.org/ontology/Star - Star
+http://dbpedia.org/ontology/Station - Station
+http://dbpedia.org/ontology/Stream - Stream
+http://dbpedia.org/ontology/SumoWrestler - Sumo Wrestler
+http://dbpedia.org/ontology/SupremeCourtOfTheUnitedStatesCase - Supreme Court Of The United States Case
+http://dbpedia.org/ontology/Surname - Surname
+http://dbpedia.org/ontology/Swimmer - Swimmer
+http://dbpedia.org/ontology/TableTennisPlayer - Table Tennis Player
+http://dbpedia.org/ontology/TelevisionEpisode - Television Episode
+http://dbpedia.org/ontology/TelevisionHost - Television Host
+http://dbpedia.org/ontology/TelevisionSeason - Television Season
+http://dbpedia.org/ontology/TelevisionShow - Television Show
+http://dbpedia.org/ontology/TelevisionStation - Television Station
+http://dbpedia.org/ontology/TennisLeague - Tennis League
+http://dbpedia.org/ontology/TennisPlayer - Tennis Player
+http://dbpedia.org/ontology/TennisTournament - Tennis Tournament
+http://dbpedia.org/ontology/Theatre - Theatre
+http://dbpedia.org/ontology/TimePeriod - Time Period
+http://dbpedia.org/ontology/TopicalConcept - Topical Concept
+http://dbpedia.org/ontology/Tournament - Tournament
+http://dbpedia.org/ontology/Tower - Tower
+http://dbpedia.org/ontology/Town - Town
+http://dbpedia.org/ontology/TradeUnion - Trade Union
+http://dbpedia.org/ontology/Train - Train
+http://dbpedia.org/ontology/Tunnel - Tunnel
+http://dbpedia.org/ontology/UnitOfWork - Unit Of Work
+http://dbpedia.org/ontology/University - University
+http://dbpedia.org/ontology/Valley - Valley
+http://dbpedia.org/ontology/Vein - Vein
+http://dbpedia.org/ontology/Venue - Venue
+http://dbpedia.org/ontology/VideoGame - Video Game
+http://dbpedia.org/ontology/VideogamesLeague - Videogames League
+http://dbpedia.org/ontology/Village - Village
+http://dbpedia.org/ontology/VoiceActor - Voice Actor
+http://dbpedia.org/ontology/Volcano - Volcano
+http://dbpedia.org/ontology/VolleyballCoach - Volleyball Coach
+http://dbpedia.org/ontology/VolleyballLeague - Volleyball League
+http://dbpedia.org/ontology/VolleyballPlayer - Volleyball Player
+http://dbpedia.org/ontology/WaterRide - Water Ride
+http://dbpedia.org/ontology/WaterwayTunnel - Waterway Tunnel
+http://dbpedia.org/ontology/Weapon - Weapon
+http://dbpedia.org/ontology/Website - Website
+http://dbpedia.org/ontology/Wikidata:Q11424 - Wikidata Q
+http://dbpedia.org/ontology/WineRegion - Wine Region
+http://dbpedia.org/ontology/Winery - Winery
+http://dbpedia.org/ontology/WinterSportPlayer - Winter Sport Player
+http://dbpedia.org/ontology/WomensTennisAssociationTournament - Womens Tennis Association Tournament
+http://dbpedia.org/ontology/Work - Work
+http://dbpedia.org/ontology/WorldHeritageSite - World Heritage Site
+http://dbpedia.org/ontology/Wrestler - Wrestler
+http://dbpedia.org/ontology/WrestlingEvent - Wrestling Event
+http://dbpedia.org/ontology/Writer - Writer
+http://dbpedia.org/ontology/WrittenWork - Written Work
+http://dbpedia.org/ontology/Year - Year
+http://dbpedia.org/ontology/YearInSpaceflight - Year In Spaceflight

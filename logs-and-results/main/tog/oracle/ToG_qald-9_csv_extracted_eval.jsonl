@@ -1,0 +1,3782 @@
+[
+    {
+        "question": "What is the time zone of Salt Lake City?",
+        "csv_answer": "Mountain Time Zone",
+        "results": {
+            "tp": 1,
+            "fp": 0,
+            "fn": 0,
+            "exact_match": true,
+            "hits_at_1": 1,
+            "hits": 1,
+            "lax_hits": 1,
+            "laxxer_hits": 1,
+            "pog_match": 1,
+            "tog_em": 0,
+            "tog_em_fixed": 1,
+            "tog_formatted_properly": 1
+        },
+        "metrics": {
+            "TIME": 2.168884515762329,
+            "SPARQL_CALLS": 10,
+            "SPARQL_TIME": 0.13106703758239746,
+            "LLM_CALLS": 2,
+            "LLM_INPUTS": 2475,
+            "LLM_OUTPUTS": 76,
+            "LLM_TIME": 2.028850793838501
+        }
+    },
+    {
+        "question": "Who killed Caesar?",
+        "csv_answer": "Marcus Junius Brutus the Younger\nDecimus Junius Brutus Albinus",
+        "results": {
+            "tp": 2,
+            "fp": 0,
+            "fn": 7,
+            "exact_match": false,
+            "hits_at_1": 1,
+            "hits": 1,
+            "lax_hits": 1,
+            "laxxer_hits": 1,
+            "pog_match": 1,
+            "tog_em": 0,
+            "tog_em_fixed": 1,
+            "tog_formatted_properly": 1
+        },
+        "metrics": {
+            "TIME": 16.821298122406006,
+            "SPARQL_CALLS": 45,
+            "SPARQL_TIME": 0.38449740409851074,
+            "LLM_CALLS": 8,
+            "LLM_INPUTS": 4334,
+            "LLM_OUTPUTS": 870,
+            "LLM_TIME": 16.42832851409912
+        }
+    },
+    {
+        "question": "What is the highest mountain in Germany?",
+        "csv_answer": "Zugspitze",
+        "results": {
+            "tp": 1,
+            "fp": 0,
+            "fn": 0,
+            "exact_match": true,
+            "hits_at_1": 1,
+            "hits": 1,
+            "lax_hits": 1,
+            "laxxer_hits": 1,
+            "pog_match": 1,
+            "tog_em": 1,
+            "tog_em_fixed": 1,
+            "tog_formatted_properly": 0
+        },
+        "metrics": {
+            "TIME": 6.726436614990234,
+            "SPARQL_CALLS": 18,
+            "SPARQL_TIME": 2.125734567642212,
+            "LLM_CALLS": 5,
+            "LLM_INPUTS": 4890,
+            "LLM_OUTPUTS": 136,
+            "LLM_TIME": 4.405431032180786
+        }
+    },
+    {
+        "question": "Which American presidents were in office during the Vietnam War?",
+        "csv_answer": "Dwight D. Eisenhower\nJohn F. Kennedy\nLyndon B. Johnson\nRichard Nixon\nGerald Ford",
+        "results": {
+            "tp": 3,
+            "fp": 2,
+            "fn": 0,
+            "exact_match": false,
+            "hits_at_1": 0,
+            "hits": 1,
+            "lax_hits": 1,
+            "laxxer_hits": 1,
+            "pog_match": 1,
+            "tog_em": 1,
+            "tog_em_fixed": 1,
+            "tog_formatted_properly": 1
+        },
+        "metrics": {
+            "TIME": 28.762697219848633,
+            "SPARQL_CALLS": 67,
+            "SPARQL_TIME": 0.799910306930542,
+            "LLM_CALLS": 18,
+            "LLM_INPUTS": 9254,
+            "LLM_OUTPUTS": 1157,
+            "LLM_TIME": 27.91218614578247
+        }
+    },
+    {
+        "question": "How many gold medals did Michael Phelps win at the 2008 Olympics?",
+        "csv_answer": "8",
+        "results": {
+            "tp": 1,
+            "fp": 0,
+            "fn": 0,
+            "exact_match": true,
+            "hits_at_1": 1,
+            "hits": 1,
+            "lax_hits": 1,
+            "laxxer_hits": 1,
+            "pog_match": 1,
+            "tog_em": 1,
+            "tog_em_fixed": 1,
+            "tog_formatted_properly": 1
+        },
+        "metrics": {
+            "TIME": 13.122717380523682,
+            "SPARQL_CALLS": 50,
+            "SPARQL_TIME": 0.473386287689209,
+            "LLM_CALLS": 12,
+            "LLM_INPUTS": 7255,
+            "LLM_OUTPUTS": 523,
+            "LLM_TIME": 12.630945920944214
+        }
+    },
+    {
+        "question": "Which artists were born on the same date as Rachel Stevens?",
+        "csv_answer": "",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 3,
+            "exact_match": false,
+            "hits_at_1": 0,
+            "hits": 0,
+            "lax_hits": 0,
+            "laxxer_hits": 0,
+            "pog_match": 0,
+            "tog_em": 0,
+            "tog_em_fixed": 0,
+            "tog_formatted_properly": 0
+        },
+        "metrics": {
+            "TIME": 12.996348142623901,
+            "SPARQL_CALLS": 25,
+            "SPARQL_TIME": 2.416196823120117,
+            "LLM_CALLS": 7,
+            "LLM_INPUTS": 3584,
+            "LLM_OUTPUTS": 414,
+            "LLM_TIME": 10.456425666809082
+        }
+    },
+    {
+        "question": "What is the profession of Frank Herbert?",
+        "csv_answer": "American science fiction writer, novelist",
+        "results": {
+            "tp": 1,
+            "fp": 0,
+            "fn": 0,
+            "exact_match": true,
+            "hits_at_1": 1,
+            "hits": 1,
+            "lax_hits": 1,
+            "laxxer_hits": 1,
+            "pog_match": 1,
+            "tog_em": 0,
+            "tog_em_fixed": 1,
+            "tog_formatted_properly": 1
+        },
+        "metrics": {
+            "TIME": 2.148921489715576,
+            "SPARQL_CALLS": 8,
+            "SPARQL_TIME": 0.08002233505249023,
+            "LLM_CALLS": 2,
+            "LLM_INPUTS": 1735,
+            "LLM_OUTPUTS": 100,
+            "LLM_TIME": 2.062596321105957
+        }
+    },
+    {
+        "question": "How many seats does the home stadium of FC Porto have?",
+        "csv_answer": "Est\u00e1dio do Drag\u00e3o, 50092",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "exact_match": false,
+            "hits_at_1": 0,
+            "hits": 0,
+            "lax_hits": 0,
+            "laxxer_hits": 0,
+            "pog_match": 0,
+            "tog_em": 0,
+            "tog_em_fixed": 0,
+            "tog_formatted_properly": 0
+        },
+        "metrics": {
+            "TIME": 2.007840633392334,
+            "SPARQL_CALLS": 9,
+            "SPARQL_TIME": 0.13390541076660156,
+            "LLM_CALLS": 2,
+            "LLM_INPUTS": 1860,
+            "LLM_OUTPUTS": 86,
+            "LLM_TIME": 1.8610336780548096
+        }
+    },
+    {
+        "question": "Which frequent flyer program has the most airlines?",
+        "csv_answer": "",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 1,
+            "exact_match": false,
+            "hits_at_1": 0,
+            "hits": 0,
+            "lax_hits": 0,
+            "laxxer_hits": 0,
+            "pog_match": 0,
+            "tog_em": 0,
+            "tog_em_fixed": 0,
+            "tog_formatted_properly": 0
+        },
+        "metrics": {
+            "TIME": 2.6603074073791504,
+            "SPARQL_CALLS": 8,
+            "SPARQL_TIME": 0.21992063522338867,
+            "LLM_CALLS": 3,
+            "LLM_INPUTS": 1417,
+            "LLM_OUTPUTS": 92,
+            "LLM_TIME": 2.428927421569824
+        }
+    },
+    {
+        "question": "Which European countries have a constitutional monarchy?",
+        "csv_answer": "United Kingdom\nSweden\nNorway\nDenmark\nthe Netherlands\nBelgium\nSpain\nLuxembourg\nMonaco\nLiechtenstein\nAndorra",
+        "results": {
+            "tp": 4,
+            "fp": 7,
+            "fn": 0,
+            "exact_match": false,
+            "hits_at_1": 0,
+            "hits": 1,
+            "lax_hits": 1,
+            "laxxer_hits": 1,
+            "pog_match": 1,
+            "tog_em": 1,
+            "tog_em_fixed": 1,
+            "tog_formatted_properly": 1
+        },
+        "metrics": {
+            "TIME": 21.6381733417511,
+            "SPARQL_CALLS": 76,
+            "SPARQL_TIME": 1.022763729095459,
+            "LLM_CALLS": 17,
+            "LLM_INPUTS": 11542,
+            "LLM_OUTPUTS": 1009,
+            "LLM_TIME": 20.506089210510254
+        }
+    },
+    {
+        "question": "Which countries have places with more than two caves?",
+        "csv_answer": "United States\nChina\nVietnam\nFrance\nMexico",
+        "results": {
+            "tp": 5,
+            "fp": 0,
+            "fn": 29,
+            "exact_match": false,
+            "hits_at_1": 1,
+            "hits": 1,
+            "lax_hits": 1,
+            "laxxer_hits": 1,
+            "pog_match": 1,
+            "tog_em": 1,
+            "tog_em_fixed": 1,
+            "tog_formatted_properly": 1
+        },
+        "metrics": {
+            "TIME": 22.1797137260437,
+            "SPARQL_CALLS": 85,
+            "SPARQL_TIME": 1.399811029434204,
+            "LLM_CALLS": 18,
+            "LLM_INPUTS": 9589,
+            "LLM_OUTPUTS": 936,
+            "LLM_TIME": 20.73462176322937
+        }
+    },
+    {
+        "question": "Which airports are located in California, USA?",
+        "csv_answer": "Van Nuys Airport\nBrown Field Municipal Airport\nCatalina Airport",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "exact_match": false,
+            "hits_at_1": 0,
+            "hits": 0,
+            "lax_hits": 0,
+            "laxxer_hits": 0,
+            "pog_match": 0,
+            "tog_em": 0,
+            "tog_em_fixed": 0,
+            "tog_formatted_properly": 0
+        },
+        "metrics": {
+            "TIME": 9.164610147476196,
+            "SPARQL_CALLS": 34,
+            "SPARQL_TIME": 0.974353551864624,
+            "LLM_CALLS": 7,
+            "LLM_INPUTS": 5176,
+            "LLM_OUTPUTS": 360,
+            "LLM_TIME": 8.055577039718628
+        }
+    },
+    {
+        "question": "What are the nicknames of San Francisco?",
+        "csv_answer": "\"The City\"\n\"The City by the Bay\"\n\"Fog City\"\n\"San Fran\"\n\"Frisco\"\n\"The City that Knows How\"\n\"Baghdad by the Bay\"\n\"The Paris of the West\"",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "exact_match": false,
+            "hits_at_1": 0,
+            "hits": 0,
+            "lax_hits": 0,
+            "laxxer_hits": 1,
+            "pog_match": 0,
+            "tog_em": 0,
+            "tog_em_fixed": 0,
+            "tog_formatted_properly": 0
+        },
+        "metrics": {
+            "TIME": 3.6944446563720703,
+            "SPARQL_CALLS": 10,
+            "SPARQL_TIME": 0.2174985408782959,
+            "LLM_CALLS": 3,
+            "LLM_INPUTS": 3152,
+            "LLM_OUTPUTS": 159,
+            "LLM_TIME": 3.447282314300537
+        }
+    },
+    {
+        "question": "What is Angela Merkel\u2019s birth name?",
+        "csv_answer": "Angela Dorothea Kasner",
+        "results": {
+            "tp": 1,
+            "fp": 0,
+            "fn": 0,
+            "exact_match": true,
+            "hits_at_1": 1,
+            "hits": 1,
+            "lax_hits": 1,
+            "laxxer_hits": 1,
+            "pog_match": 1,
+            "tog_em": 0,
+            "tog_em_fixed": 1,
+            "tog_formatted_properly": 1
+        },
+        "metrics": {
+            "TIME": 2.776829242706299,
+            "SPARQL_CALLS": 7,
+            "SPARQL_TIME": 0.0936579704284668,
+            "LLM_CALLS": 2,
+            "LLM_INPUTS": 1702,
+            "LLM_OUTPUTS": 82,
+            "LLM_TIME": 2.672757148742676
+        }
+    },
+    {
+        "question": "Who is the mayor of Berlin?",
+        "csv_answer": "Michael M\u00fcller",
+        "results": {
+            "tp": 1,
+            "fp": 0,
+            "fn": 0,
+            "exact_match": true,
+            "hits_at_1": 1,
+            "hits": 1,
+            "lax_hits": 1,
+            "laxxer_hits": 1,
+            "pog_match": 1,
+            "tog_em": 0,
+            "tog_em_fixed": 1,
+            "tog_formatted_properly": 1
+        },
+        "metrics": {
+            "TIME": 3.567837953567505,
+            "SPARQL_CALLS": 13,
+            "SPARQL_TIME": 0.2175137996673584,
+            "LLM_CALLS": 3,
+            "LLM_INPUTS": 3766,
+            "LLM_OUTPUTS": 105,
+            "LLM_TIME": 3.3096890449523926
+        }
+    },
+    {
+        "question": "Which countries in the European Union adopted the Euro?",
+        "csv_answer": "Austria\nBelgium\nCyprus\nEstonia\nFinland\nFrance\nGermany\nGreece\nIreland\nItaly\nLatvia\nLithuania\nLuxembourg\nMalta\nthe Netherlands\nPortugal\nSlovakia\nSlovenia\nSpain",
+        "results": {
+            "tp": 14,
+            "fp": 5,
+            "fn": 33,
+            "exact_match": false,
+            "hits_at_1": 1,
+            "hits": 1,
+            "lax_hits": 1,
+            "laxxer_hits": 1,
+            "pog_match": 1,
+            "tog_em": 0,
+            "tog_em_fixed": 1,
+            "tog_formatted_properly": 1
+        },
+        "metrics": {
+            "TIME": 8.386773109436035,
+            "SPARQL_CALLS": 34,
+            "SPARQL_TIME": 0.33705997467041016,
+            "LLM_CALLS": 6,
+            "LLM_INPUTS": 3385,
+            "LLM_OUTPUTS": 288,
+            "LLM_TIME": 8.014053583145142
+        }
+    },
+    {
+        "question": "How many grand-children did Jacques Cousteau have?",
+        "csv_answer": "N/A",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "exact_match": false,
+            "hits_at_1": 0,
+            "hits": 0,
+            "lax_hits": 0,
+            "laxxer_hits": 0,
+            "pog_match": 0,
+            "tog_em": 0,
+            "tog_em_fixed": 0,
+            "tog_formatted_properly": 0
+        },
+        "metrics": {
+            "TIME": 23.015055894851685,
+            "SPARQL_CALLS": 50,
+            "SPARQL_TIME": 0.4054558277130127,
+            "LLM_CALLS": 15,
+            "LLM_INPUTS": 7354,
+            "LLM_OUTPUTS": 1028,
+            "LLM_TIME": 22.600451707839966
+        }
+    },
+    {
+        "question": "Give me all professional skateboarders from Sweden.",
+        "csv_answer": "Pontus Alv",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "exact_match": false,
+            "hits_at_1": 0,
+            "hits": 0,
+            "lax_hits": 0,
+            "laxxer_hits": 0,
+            "pog_match": 0,
+            "tog_em": 0,
+            "tog_em_fixed": 0,
+            "tog_formatted_properly": 0
+        },
+        "metrics": {
+            "TIME": 28.134233951568604,
+            "SPARQL_CALLS": 116,
+            "SPARQL_TIME": 1.136610746383667,
+            "LLM_CALLS": 19,
+            "LLM_INPUTS": 10827,
+            "LLM_OUTPUTS": 1193,
+            "LLM_TIME": 26.906790256500244
+        }
+    },
+    {
+        "question": "Give me all Argentine films.",
+        "csv_answer": "The Secret in Their Eyes\nWild Tales\nNine Queens\nThe Official Story\nCarancho",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "exact_match": false,
+            "hits_at_1": 0,
+            "hits": 0,
+            "lax_hits": 0,
+            "laxxer_hits": 0,
+            "pog_match": 0,
+            "tog_em": 0,
+            "tog_em_fixed": 0,
+            "tog_formatted_properly": 0
+        },
+        "metrics": {
+            "TIME": 30.952346324920654,
+            "SPARQL_CALLS": 88,
+            "SPARQL_TIME": 2.4101202487945557,
+            "LLM_CALLS": 18,
+            "LLM_INPUTS": 12326,
+            "LLM_OUTPUTS": 1175,
+            "LLM_TIME": 28.23585271835327
+        }
+    },
+    {
+        "question": "How did Michael Jackson die?",
+        "csv_answer": "Homicide",
+        "results": {
+            "tp": 1,
+            "fp": 0,
+            "fn": 0,
+            "exact_match": true,
+            "hits_at_1": 1,
+            "hits": 1,
+            "lax_hits": 1,
+            "laxxer_hits": 1,
+            "pog_match": 1,
+            "tog_em": 0,
+            "tog_em_fixed": 1,
+            "tog_formatted_properly": 1
+        },
+        "metrics": {
+            "TIME": 2.094597816467285,
+            "SPARQL_CALLS": 8,
+            "SPARQL_TIME": 0.12081074714660645,
+            "LLM_CALLS": 2,
+            "LLM_INPUTS": 2016,
+            "LLM_OUTPUTS": 72,
+            "LLM_TIME": 1.9583539962768555
+        }
+    },
+    {
+        "question": "Which U.S. state has been admitted latest?",
+        "csv_answer": "Iowa",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "exact_match": false,
+            "hits_at_1": 0,
+            "hits": 0,
+            "lax_hits": 0,
+            "laxxer_hits": 0,
+            "pog_match": 0,
+            "tog_em": 0,
+            "tog_em_fixed": 0,
+            "tog_formatted_properly": 0
+        },
+        "metrics": {
+            "TIME": 15.152908563613892,
+            "SPARQL_CALLS": 43,
+            "SPARQL_TIME": 0.5692846775054932,
+            "LLM_CALLS": 10,
+            "LLM_INPUTS": 7837,
+            "LLM_OUTPUTS": 588,
+            "LLM_TIME": 14.524426221847534
+        }
+    },
+    {
+        "question": "Which classes does the Millepede belong to?",
+        "csv_answer": "Diplopoda\nChilognatha",
+        "results": {
+            "tp": 1,
+            "fp": 1,
+            "fn": 0,
+            "exact_match": false,
+            "hits_at_1": 1,
+            "hits": 1,
+            "lax_hits": 1,
+            "laxxer_hits": 1,
+            "pog_match": 1,
+            "tog_em": 0,
+            "tog_em_fixed": 1,
+            "tog_formatted_properly": 1
+        },
+        "metrics": {
+            "TIME": 30.620455026626587,
+            "SPARQL_CALLS": 34,
+            "SPARQL_TIME": 14.594258546829224,
+            "LLM_CALLS": 7,
+            "LLM_INPUTS": 3985,
+            "LLM_OUTPUTS": 380,
+            "LLM_TIME": 8.898744821548462
+        }
+    },
+    {
+        "question": "Give me the homepage of Forbes.",
+        "csv_answer": "http://forbes.com",
+        "results": {
+            "tp": 1,
+            "fp": 0,
+            "fn": 0,
+            "exact_match": true,
+            "hits_at_1": 1,
+            "hits": 1,
+            "lax_hits": 1,
+            "laxxer_hits": 1,
+            "pog_match": 1,
+            "tog_em": 0,
+            "tog_em_fixed": 1,
+            "tog_formatted_properly": 1
+        },
+        "metrics": {
+            "TIME": 2.5024919509887695,
+            "SPARQL_CALLS": 8,
+            "SPARQL_TIME": 0.10073542594909668,
+            "LLM_CALLS": 3,
+            "LLM_INPUTS": 1888,
+            "LLM_OUTPUTS": 76,
+            "LLM_TIME": 2.3900318145751953
+        }
+    },
+    {
+        "question": "Who is the husband of Amanda Palmer?",
+        "csv_answer": "Amanda Palmer, Neil Gaiman",
+        "results": {
+            "tp": 1,
+            "fp": 0,
+            "fn": 0,
+            "exact_match": true,
+            "hits_at_1": 1,
+            "hits": 1,
+            "lax_hits": 1,
+            "laxxer_hits": 1,
+            "pog_match": 1,
+            "tog_em": 0,
+            "tog_em_fixed": 1,
+            "tog_formatted_properly": 1
+        },
+        "metrics": {
+            "TIME": 2.1458523273468018,
+            "SPARQL_CALLS": 10,
+            "SPARQL_TIME": 0.10263538360595703,
+            "LLM_CALLS": 2,
+            "LLM_INPUTS": 1665,
+            "LLM_OUTPUTS": 78,
+            "LLM_TIME": 2.038029193878174
+        }
+    },
+    {
+        "question": "Who painted The Storm on the Sea of Galilee?",
+        "csv_answer": "Rembrandt van Rijn",
+        "results": {
+            "tp": 1,
+            "fp": 0,
+            "fn": 0,
+            "exact_match": true,
+            "hits_at_1": 1,
+            "hits": 1,
+            "lax_hits": 1,
+            "laxxer_hits": 1,
+            "pog_match": 1,
+            "tog_em": 0,
+            "tog_em_fixed": 1,
+            "tog_formatted_properly": 1
+        },
+        "metrics": {
+            "TIME": 1.990816593170166,
+            "SPARQL_CALLS": 10,
+            "SPARQL_TIME": 0.08465862274169922,
+            "LLM_CALLS": 2,
+            "LLM_INPUTS": 1584,
+            "LLM_OUTPUTS": 83,
+            "LLM_TIME": 1.9042441844940186
+        }
+    },
+    {
+        "question": "What is the highest place of Karakoram?",
+        "csv_answer": "K2, 8611",
+        "results": {
+            "tp": 1,
+            "fp": 0,
+            "fn": 0,
+            "exact_match": true,
+            "hits_at_1": 1,
+            "hits": 1,
+            "lax_hits": 1,
+            "laxxer_hits": 1,
+            "pog_match": 1,
+            "tog_em": 0,
+            "tog_em_fixed": 1,
+            "tog_formatted_properly": 1
+        },
+        "metrics": {
+            "TIME": 2.287137746810913,
+            "SPARQL_CALLS": 8,
+            "SPARQL_TIME": 0.07985496520996094,
+            "LLM_CALLS": 2,
+            "LLM_INPUTS": 1566,
+            "LLM_OUTPUTS": 84,
+            "LLM_TIME": 2.2019636631011963
+        }
+    },
+    {
+        "question": "When did Finland join the EU?",
+        "csv_answer": "1995-01-01",
+        "results": {
+            "tp": 1,
+            "fp": 0,
+            "fn": 0,
+            "exact_match": true,
+            "hits_at_1": 1,
+            "hits": 1,
+            "lax_hits": 1,
+            "laxxer_hits": 1,
+            "pog_match": 1,
+            "tog_em": 0,
+            "tog_em_fixed": 1,
+            "tog_formatted_properly": 1
+        },
+        "metrics": {
+            "TIME": 3.838423490524292,
+            "SPARQL_CALLS": 10,
+            "SPARQL_TIME": 0.16651558876037598,
+            "LLM_CALLS": 4,
+            "LLM_INPUTS": 3706,
+            "LLM_OUTPUTS": 123,
+            "LLM_TIME": 3.63376784324646
+        }
+    },
+    {
+        "question": "Which actors play in Big Bang Theory?",
+        "csv_answer": "Jim Parsons\nJohnny Galecki\nKaley Cuoco",
+        "results": {
+            "tp": 3,
+            "fp": 0,
+            "fn": 7,
+            "exact_match": false,
+            "hits_at_1": 1,
+            "hits": 1,
+            "lax_hits": 1,
+            "laxxer_hits": 1,
+            "pog_match": 1,
+            "tog_em": 0,
+            "tog_em_fixed": 1,
+            "tog_formatted_properly": 1
+        },
+        "metrics": {
+            "TIME": 8.465646743774414,
+            "SPARQL_CALLS": 30,
+            "SPARQL_TIME": 0.26313352584838867,
+            "LLM_CALLS": 5,
+            "LLM_INPUTS": 2461,
+            "LLM_OUTPUTS": 401,
+            "LLM_TIME": 8.192710161209106
+        }
+    },
+    {
+        "question": "Which computer scientist won an oscar?",
+        "csv_answer": "Ed Catmull\nAlvy Ray Smith",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "exact_match": false,
+            "hits_at_1": 0,
+            "hits": 0,
+            "lax_hits": 0,
+            "laxxer_hits": 0,
+            "pog_match": 0,
+            "tog_em": 0,
+            "tog_em_fixed": 0,
+            "tog_formatted_properly": 0
+        },
+        "metrics": {
+            "TIME": 26.407633781433105,
+            "SPARQL_CALLS": 99,
+            "SPARQL_TIME": 0.8941967487335205,
+            "LLM_CALLS": 19,
+            "LLM_INPUTS": 8831,
+            "LLM_OUTPUTS": 1064,
+            "LLM_TIME": 25.474169492721558
+        }
+    },
+    {
+        "question": "Who wrote Harry Potter?",
+        "csv_answer": "J. K. Rowling",
+        "results": {
+            "tp": 1,
+            "fp": 0,
+            "fn": 0,
+            "exact_match": true,
+            "hits_at_1": 1,
+            "hits": 1,
+            "lax_hits": 1,
+            "laxxer_hits": 1,
+            "pog_match": 1,
+            "tog_em": 0,
+            "tog_em_fixed": 1,
+            "tog_formatted_properly": 1
+        },
+        "metrics": {
+            "TIME": 3.8941307067871094,
+            "SPARQL_CALLS": 12,
+            "SPARQL_TIME": 0.13551092147827148,
+            "LLM_CALLS": 4,
+            "LLM_INPUTS": 2043,
+            "LLM_OUTPUTS": 145,
+            "LLM_TIME": 3.751431941986084
+        }
+    },
+    {
+        "question": "Give me all writers that won the Nobel Prize in literature.",
+        "csv_answer": "Sully Prudhomme, 1901\nRabindranath Tagore, 1913\nThomas Mann, 1929\nSinclair Lewis, 1930\nGabriela Mistral, 1945\nT.S. Eliot, 1948\nWilliam Faulkner, 1949\nErnest Hemingway, 1954\nAlbert Camus, 1957\nBoris Pasternak, 1958\nJohn Steinbeck, 1962\nPablo Neruda, 1971\nGabriel Garc\u00eda M\u00e1rquez, 1982\nToni Morrison, 1993\nOrhan Pamuk, 2006\nAlice Munro, 2013\nKazuo Ishiguro, 2017\nLouise Gl\u00fcck, 2020",
+        "results": {
+            "tp": 6,
+            "fp": 12,
+            "fn": 15,
+            "exact_match": false,
+            "hits_at_1": 0,
+            "hits": 1,
+            "lax_hits": 1,
+            "laxxer_hits": 1,
+            "pog_match": 1,
+            "tog_em": 1,
+            "tog_em_fixed": 1,
+            "tog_formatted_properly": 0
+        },
+        "metrics": {
+            "TIME": 24.295052766799927,
+            "SPARQL_CALLS": 77,
+            "SPARQL_TIME": 1.3588054180145264,
+            "LLM_CALLS": 17,
+            "LLM_INPUTS": 8597,
+            "LLM_OUTPUTS": 1046,
+            "LLM_TIME": 22.85028886795044
+        }
+    },
+    {
+        "question": "Give me English actors starring in Lovesick.",
+        "csv_answer": "Johnny Flynn\nAntonia Thomas",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "exact_match": false,
+            "hits_at_1": 0,
+            "hits": 0,
+            "lax_hits": 0,
+            "laxxer_hits": 0,
+            "pog_match": 0,
+            "tog_em": 0,
+            "tog_em_fixed": 0,
+            "tog_formatted_properly": 0
+        },
+        "metrics": {
+            "TIME": 23.937198638916016,
+            "SPARQL_CALLS": 72,
+            "SPARQL_TIME": 1.0499460697174072,
+            "LLM_CALLS": 16,
+            "LLM_INPUTS": 10657,
+            "LLM_OUTPUTS": 986,
+            "LLM_TIME": 22.6807382106781
+        }
+    },
+    {
+        "question": "What is the nick name of Baghdad?",
+        "csv_answer": "The City of Peace",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "exact_match": false,
+            "hits_at_1": 0,
+            "hits": 0,
+            "lax_hits": 0,
+            "laxxer_hits": 1,
+            "pog_match": 0,
+            "tog_em": 0,
+            "tog_em_fixed": 0,
+            "tog_formatted_properly": 0
+        },
+        "metrics": {
+            "TIME": 1.93703293800354,
+            "SPARQL_CALLS": 8,
+            "SPARQL_TIME": 0.08413290977478027,
+            "LLM_CALLS": 2,
+            "LLM_INPUTS": 2959,
+            "LLM_OUTPUTS": 78,
+            "LLM_TIME": 1.8404340744018555
+        }
+    },
+    {
+        "question": "In which city was the president of Montenegro born?",
+        "csv_answer": "Belgrade",
+        "results": {
+            "tp": 1,
+            "fp": 0,
+            "fn": 0,
+            "exact_match": true,
+            "hits_at_1": 1,
+            "hits": 1,
+            "lax_hits": 1,
+            "laxxer_hits": 1,
+            "pog_match": 1,
+            "tog_em": 0,
+            "tog_em_fixed": 1,
+            "tog_formatted_properly": 1
+        },
+        "metrics": {
+            "TIME": 14.933475255966187,
+            "SPARQL_CALLS": 49,
+            "SPARQL_TIME": 0.4574744701385498,
+            "LLM_CALLS": 11,
+            "LLM_INPUTS": 6171,
+            "LLM_OUTPUTS": 565,
+            "LLM_TIME": 14.452110052108765
+        }
+    },
+    {
+        "question": "Which U.S. state has the highest population density?",
+        "csv_answer": "New Jersey",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "exact_match": false,
+            "hits_at_1": 0,
+            "hits": 0,
+            "lax_hits": 0,
+            "laxxer_hits": 0,
+            "pog_match": 0,
+            "tog_em": 0,
+            "tog_em_fixed": 0,
+            "tog_formatted_properly": 0
+        },
+        "metrics": {
+            "TIME": 7.206741571426392,
+            "SPARQL_CALLS": 14,
+            "SPARQL_TIME": 1.6634948253631592,
+            "LLM_CALLS": 5,
+            "LLM_INPUTS": 6128,
+            "LLM_OUTPUTS": 217,
+            "LLM_TIME": 4.8993518352508545
+        }
+    },
+    {
+        "question": "What is the longest river in China?",
+        "csv_answer": "Yangtze River",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "exact_match": false,
+            "hits_at_1": 0,
+            "hits": 0,
+            "lax_hits": 1,
+            "laxxer_hits": 1,
+            "pog_match": 1,
+            "tog_em": 1,
+            "tog_em_fixed": 1,
+            "tog_formatted_properly": 1
+        },
+        "metrics": {
+            "TIME": 19.017998695373535,
+            "SPARQL_CALLS": 76,
+            "SPARQL_TIME": 1.5398612022399902,
+            "LLM_CALLS": 16,
+            "LLM_INPUTS": 12522,
+            "LLM_OUTPUTS": 750,
+            "LLM_TIME": 17.254490613937378
+        }
+    },
+    {
+        "question": "What is the area code of Berlin?",
+        "csv_answer": "030",
+        "results": {
+            "tp": 1,
+            "fp": 0,
+            "fn": 0,
+            "exact_match": true,
+            "hits_at_1": 1,
+            "hits": 1,
+            "lax_hits": 1,
+            "laxxer_hits": 1,
+            "pog_match": 1,
+            "tog_em": 0,
+            "tog_em_fixed": 1,
+            "tog_formatted_properly": 1
+        },
+        "metrics": {
+            "TIME": 2.9256553649902344,
+            "SPARQL_CALLS": 8,
+            "SPARQL_TIME": 0.17774415016174316,
+            "LLM_CALLS": 2,
+            "LLM_INPUTS": 3548,
+            "LLM_OUTPUTS": 71,
+            "LLM_TIME": 2.7084109783172607
+        }
+    },
+    {
+        "question": "How many scientists graduated from an Ivy League university?",
+        "csv_answer": "N/A",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "exact_match": false,
+            "hits_at_1": 0,
+            "hits": 0,
+            "lax_hits": 0,
+            "laxxer_hits": 0,
+            "pog_match": 0,
+            "tog_em": 0,
+            "tog_em_fixed": 0,
+            "tog_formatted_properly": 0
+        },
+        "metrics": {
+            "TIME": 38.04040002822876,
+            "SPARQL_CALLS": 86,
+            "SPARQL_TIME": 2.186004400253296,
+            "LLM_CALLS": 19,
+            "LLM_INPUTS": 9614,
+            "LLM_OUTPUTS": 1729,
+            "LLM_TIME": 35.702256202697754
+        }
+    },
+    {
+        "question": "Which professional surfers were born in Australia?",
+        "csv_answer": "Mick Fanning\nStephanie Gilmore\nJoel Parkinson",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "exact_match": false,
+            "hits_at_1": 0,
+            "hits": 0,
+            "lax_hits": 0,
+            "laxxer_hits": 0,
+            "pog_match": 0,
+            "tog_em": 0,
+            "tog_em_fixed": 0,
+            "tog_formatted_properly": 0
+        },
+        "metrics": {
+            "TIME": 30.482049465179443,
+            "SPARQL_CALLS": 84,
+            "SPARQL_TIME": 5.181860446929932,
+            "LLM_CALLS": 16,
+            "LLM_INPUTS": 10086,
+            "LLM_OUTPUTS": 987,
+            "LLM_TIME": 23.368630170822144
+        }
+    },
+    {
+        "question": "Give me all Dutch parties.",
+        "csv_answer": "Volkspartij voor Vrijheid en Democratie,VVD\nPartij van de Arbeid,PvdA\nDemocraten 66,D66\nChristen-Democratisch App\u00e8l,CDA\nGroenLinks,N/A\nPartij voor de Vrijheid,PVV\nSocialistische Partij,SP\nChristenUnie,CU\nPartij voor de Dieren,PvdD\nForum voor Democratie,FvD\n50PLUS,N/A\nDENK,N/A\nStaatkundig Gereformeerde Partij,SGP",
+        "results": {
+            "tp": 1,
+            "fp": 12,
+            "fn": 10,
+            "exact_match": false,
+            "hits_at_1": 0,
+            "hits": 1,
+            "lax_hits": 1,
+            "laxxer_hits": 1,
+            "pog_match": 1,
+            "tog_em": 1,
+            "tog_em_fixed": 1,
+            "tog_formatted_properly": 0
+        },
+        "metrics": {
+            "TIME": 29.281030893325806,
+            "SPARQL_CALLS": 93,
+            "SPARQL_TIME": 1.1291351318359375,
+            "LLM_CALLS": 18,
+            "LLM_INPUTS": 11417,
+            "LLM_OUTPUTS": 1253,
+            "LLM_TIME": 28.023133039474487
+        }
+    },
+    {
+        "question": "How many moons does Mars have?",
+        "csv_answer": "2",
+        "results": {
+            "tp": 1,
+            "fp": 0,
+            "fn": 0,
+            "exact_match": true,
+            "hits_at_1": 1,
+            "hits": 1,
+            "lax_hits": 1,
+            "laxxer_hits": 1,
+            "pog_match": 1,
+            "tog_em": 0,
+            "tog_em_fixed": 1,
+            "tog_formatted_properly": 1
+        },
+        "metrics": {
+            "TIME": 3.87857985496521,
+            "SPARQL_CALLS": 10,
+            "SPARQL_TIME": 0.10080599784851074,
+            "LLM_CALLS": 3,
+            "LLM_INPUTS": 2053,
+            "LLM_OUTPUTS": 120,
+            "LLM_TIME": 3.7620368003845215
+        }
+    },
+    {
+        "question": "What is Batman's real name?",
+        "csv_answer": "Bruce Wayne",
+        "results": {
+            "tp": 1,
+            "fp": 0,
+            "fn": 0,
+            "exact_match": true,
+            "hits_at_1": 1,
+            "hits": 1,
+            "lax_hits": 1,
+            "laxxer_hits": 1,
+            "pog_match": 1,
+            "tog_em": 0,
+            "tog_em_fixed": 1,
+            "tog_formatted_properly": 1
+        },
+        "metrics": {
+            "TIME": 1.9856443405151367,
+            "SPARQL_CALLS": 9,
+            "SPARQL_TIME": 0.09044432640075684,
+            "LLM_CALLS": 2,
+            "LLM_INPUTS": 1682,
+            "LLM_OUTPUTS": 75,
+            "LLM_TIME": 1.8841302394866943
+        }
+    },
+    {
+        "question": "What is Elon Musk famous for?",
+        "csv_answer": "Entrepreneur, Inventor, Hyperloop, OpenAI",
+        "results": {
+            "tp": 1,
+            "fp": 0,
+            "fn": 5,
+            "exact_match": false,
+            "hits_at_1": 1,
+            "hits": 1,
+            "lax_hits": 1,
+            "laxxer_hits": 1,
+            "pog_match": 1,
+            "tog_em": 0,
+            "tog_em_fixed": 1,
+            "tog_formatted_properly": 1
+        },
+        "metrics": {
+            "TIME": 7.274596929550171,
+            "SPARQL_CALLS": 20,
+            "SPARQL_TIME": 0.15012526512145996,
+            "LLM_CALLS": 4,
+            "LLM_INPUTS": 2154,
+            "LLM_OUTPUTS": 376,
+            "LLM_TIME": 7.117722034454346
+        }
+    },
+    {
+        "question": "Who is the author of WikiLeaks?",
+        "csv_answer": "Julian Assange",
+        "results": {
+            "tp": 1,
+            "fp": 0,
+            "fn": 0,
+            "exact_match": true,
+            "hits_at_1": 1,
+            "hits": 1,
+            "lax_hits": 1,
+            "laxxer_hits": 1,
+            "pog_match": 1,
+            "tog_em": 0,
+            "tog_em_fixed": 1,
+            "tog_formatted_properly": 1
+        },
+        "metrics": {
+            "TIME": 3.375361680984497,
+            "SPARQL_CALLS": 9,
+            "SPARQL_TIME": 0.08897709846496582,
+            "LLM_CALLS": 3,
+            "LLM_INPUTS": 2028,
+            "LLM_OUTPUTS": 118,
+            "LLM_TIME": 3.2776002883911133
+        }
+    },
+    {
+        "question": "Sean Parnell was the governor of which U.S. state?",
+        "csv_answer": "Sean Parnell, Alaska",
+        "results": {
+            "tp": 1,
+            "fp": 0,
+            "fn": 0,
+            "exact_match": true,
+            "hits_at_1": 1,
+            "hits": 1,
+            "lax_hits": 1,
+            "laxxer_hits": 1,
+            "pog_match": 1,
+            "tog_em": 0,
+            "tog_em_fixed": 1,
+            "tog_formatted_properly": 1
+        },
+        "metrics": {
+            "TIME": 3.2029306888580322,
+            "SPARQL_CALLS": 10,
+            "SPARQL_TIME": 0.10199594497680664,
+            "LLM_CALLS": 2,
+            "LLM_INPUTS": 1696,
+            "LLM_OUTPUTS": 138,
+            "LLM_TIME": 3.0977540016174316
+        }
+    },
+    {
+        "question": "How many years was the Ford Model T manufactured?",
+        "csv_answer": "19",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "exact_match": false,
+            "hits_at_1": 0,
+            "hits": 0,
+            "lax_hits": 0,
+            "laxxer_hits": 0,
+            "pog_match": 0,
+            "tog_em": 0,
+            "tog_em_fixed": 0,
+            "tog_formatted_properly": 0
+        },
+        "metrics": {
+            "TIME": 4.083557605743408,
+            "SPARQL_CALLS": 6,
+            "SPARQL_TIME": 0.05712389945983887,
+            "LLM_CALLS": 3,
+            "LLM_INPUTS": 2326,
+            "LLM_OUTPUTS": 186,
+            "LLM_TIME": 4.02214789390564
+        }
+    },
+    {
+        "question": "When was Carlo Giuliani shot?",
+        "csv_answer": "20 07 2001",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "exact_match": false,
+            "hits_at_1": 0,
+            "hits": 0,
+            "lax_hits": 0,
+            "laxxer_hits": 0,
+            "pog_match": 0,
+            "tog_em": 0,
+            "tog_em_fixed": 0,
+            "tog_formatted_properly": 0
+        },
+        "metrics": {
+            "TIME": 2.2285611629486084,
+            "SPARQL_CALLS": 8,
+            "SPARQL_TIME": 0.06476235389709473,
+            "LLM_CALLS": 2,
+            "LLM_INPUTS": 1578,
+            "LLM_OUTPUTS": 79,
+            "LLM_TIME": 2.161881923675537
+        }
+    },
+    {
+        "question": "Give me all animals that are extinct.",
+        "csv_answer": "",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 915,
+            "exact_match": false,
+            "hits_at_1": 0,
+            "hits": 0,
+            "lax_hits": 0,
+            "laxxer_hits": 0,
+            "pog_match": 0,
+            "tog_em": 0,
+            "tog_em_fixed": 0,
+            "tog_formatted_properly": 0
+        },
+        "metrics": {
+            "TIME": 4.494414329528809,
+            "SPARQL_CALLS": 8,
+            "SPARQL_TIME": 1.2677903175354004,
+            "LLM_CALLS": 3,
+            "LLM_INPUTS": 1424,
+            "LLM_OUTPUTS": 142,
+            "LLM_TIME": 2.8858494758605957
+        }
+    },
+    {
+        "question": "Who was the wife of President Lincoln?",
+        "csv_answer": "Mary Todd Lincoln",
+        "results": {
+            "tp": 1,
+            "fp": 0,
+            "fn": 0,
+            "exact_match": true,
+            "hits_at_1": 1,
+            "hits": 1,
+            "lax_hits": 1,
+            "laxxer_hits": 1,
+            "pog_match": 1,
+            "tog_em": 0,
+            "tog_em_fixed": 1,
+            "tog_formatted_properly": 1
+        },
+        "metrics": {
+            "TIME": 4.9523537158966064,
+            "SPARQL_CALLS": 9,
+            "SPARQL_TIME": 0.10707306861877441,
+            "LLM_CALLS": 4,
+            "LLM_INPUTS": 2686,
+            "LLM_OUTPUTS": 152,
+            "LLM_TIME": 4.828987121582031
+        }
+    },
+    {
+        "question": "How many awards has Bertrand Russell?",
+        "csv_answer": "2",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "exact_match": false,
+            "hits_at_1": 0,
+            "hits": 0,
+            "lax_hits": 0,
+            "laxxer_hits": 0,
+            "pog_match": 0,
+            "tog_em": 0,
+            "tog_em_fixed": 0,
+            "tog_formatted_properly": 0
+        },
+        "metrics": {
+            "TIME": 6.431662559509277,
+            "SPARQL_CALLS": 13,
+            "SPARQL_TIME": 0.12602829933166504,
+            "LLM_CALLS": 5,
+            "LLM_INPUTS": 2998,
+            "LLM_OUTPUTS": 256,
+            "LLM_TIME": 6.291485071182251
+        }
+    },
+    {
+        "question": "Which space probes were sent into orbit around the sun?",
+        "csv_answer": "Parker Solar Probe\nHelios 1\nHelios 2",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "exact_match": false,
+            "hits_at_1": 0,
+            "hits": 0,
+            "lax_hits": 0,
+            "laxxer_hits": 0,
+            "pog_match": 0,
+            "tog_em": 0,
+            "tog_em_fixed": 0,
+            "tog_formatted_properly": 0
+        },
+        "metrics": {
+            "TIME": 25.004290103912354,
+            "SPARQL_CALLS": 64,
+            "SPARQL_TIME": 0.4937417507171631,
+            "LLM_CALLS": 15,
+            "LLM_INPUTS": 7546,
+            "LLM_OUTPUTS": 1057,
+            "LLM_TIME": 24.471469402313232
+        }
+    },
+    {
+        "question": "Which German cities have more than 250000 inhabitants?",
+        "csv_answer": "",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 26,
+            "exact_match": false,
+            "hits_at_1": 0,
+            "hits": 0,
+            "lax_hits": 0,
+            "laxxer_hits": 0,
+            "pog_match": 0,
+            "tog_em": 0,
+            "tog_em_fixed": 0,
+            "tog_formatted_properly": 0
+        },
+        "metrics": {
+            "TIME": 11.069072008132935,
+            "SPARQL_CALLS": 32,
+            "SPARQL_TIME": 1.4523015022277832,
+            "LLM_CALLS": 9,
+            "LLM_INPUTS": 6659,
+            "LLM_OUTPUTS": 427,
+            "LLM_TIME": 9.324416399002075
+        }
+    },
+    {
+        "question": "Who is the daughter of Robert Kennedy married to?",
+        "csv_answer": "Courtney Kennedy Hill, Jeffrey Robert Ruhe",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "exact_match": false,
+            "hits_at_1": 0,
+            "hits": 0,
+            "lax_hits": 0,
+            "laxxer_hits": 0,
+            "pog_match": 0,
+            "tog_em": 0,
+            "tog_em_fixed": 0,
+            "tog_formatted_properly": 0
+        },
+        "metrics": {
+            "TIME": 10.85814619064331,
+            "SPARQL_CALLS": 52,
+            "SPARQL_TIME": 0.3617076873779297,
+            "LLM_CALLS": 9,
+            "LLM_INPUTS": 5130,
+            "LLM_OUTPUTS": 401,
+            "LLM_TIME": 10.48154616355896
+        }
+    },
+    {
+        "question": "How many students does the Free University of Amsterdam have?",
+        "csv_answer": "23656",
+        "results": {
+            "tp": 1,
+            "fp": 0,
+            "fn": 0,
+            "exact_match": true,
+            "hits_at_1": 1,
+            "hits": 1,
+            "lax_hits": 1,
+            "laxxer_hits": 1,
+            "pog_match": 0,
+            "tog_em": 0,
+            "tog_em_fixed": 0,
+            "tog_formatted_properly": 0
+        },
+        "metrics": {
+            "TIME": 2.008308172225952,
+            "SPARQL_CALLS": 9,
+            "SPARQL_TIME": 0.07319879531860352,
+            "LLM_CALLS": 2,
+            "LLM_INPUTS": 1610,
+            "LLM_OUTPUTS": 82,
+            "LLM_TIME": 1.9316608905792236
+        }
+    },
+    {
+        "question": "What is the revenue of IBM?",
+        "csv_answer": "81741000000",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "exact_match": false,
+            "hits_at_1": 0,
+            "hits": 0,
+            "lax_hits": 0,
+            "laxxer_hits": 0,
+            "pog_match": 1,
+            "tog_em": 0,
+            "tog_em_fixed": 0,
+            "tog_formatted_properly": 0
+        },
+        "metrics": {
+            "TIME": 2.2430365085601807,
+            "SPARQL_CALLS": 8,
+            "SPARQL_TIME": 0.09038043022155762,
+            "LLM_CALLS": 2,
+            "LLM_INPUTS": 2016,
+            "LLM_OUTPUTS": 89,
+            "LLM_TIME": 2.1396074295043945
+        }
+    },
+    {
+        "question": "How many James Bond movies do exist?",
+        "csv_answer": "25",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "exact_match": false,
+            "hits_at_1": 0,
+            "hits": 0,
+            "lax_hits": 0,
+            "laxxer_hits": 0,
+            "pog_match": 0,
+            "tog_em": 0,
+            "tog_em_fixed": 0,
+            "tog_formatted_properly": 0
+        },
+        "metrics": {
+            "TIME": 16.970242977142334,
+            "SPARQL_CALLS": 61,
+            "SPARQL_TIME": 2.284637928009033,
+            "LLM_CALLS": 13,
+            "LLM_INPUTS": 6899,
+            "LLM_OUTPUTS": 626,
+            "LLM_TIME": 14.250624656677246
+        }
+    },
+    {
+        "question": "Who does the voice of Bart Simpson?",
+        "csv_answer": "Nancy Cartwright",
+        "results": {
+            "tp": 1,
+            "fp": 0,
+            "fn": 0,
+            "exact_match": true,
+            "hits_at_1": 1,
+            "hits": 1,
+            "lax_hits": 1,
+            "laxxer_hits": 1,
+            "pog_match": 1,
+            "tog_em": 0,
+            "tog_em_fixed": 1,
+            "tog_formatted_properly": 1
+        },
+        "metrics": {
+            "TIME": 1.9429171085357666,
+            "SPARQL_CALLS": 10,
+            "SPARQL_TIME": 0.07082748413085938,
+            "LLM_CALLS": 2,
+            "LLM_INPUTS": 1476,
+            "LLM_OUTPUTS": 76,
+            "LLM_TIME": 1.8679172992706299
+        }
+    },
+    {
+        "question": "Who was Tom Hanks married to?",
+        "csv_answer": "Rita Wilson",
+        "results": {
+            "tp": 1,
+            "fp": 0,
+            "fn": 0,
+            "exact_match": true,
+            "hits_at_1": 1,
+            "hits": 1,
+            "lax_hits": 1,
+            "laxxer_hits": 1,
+            "pog_match": 1,
+            "tog_em": 0,
+            "tog_em_fixed": 1,
+            "tog_formatted_properly": 1
+        },
+        "metrics": {
+            "TIME": 3.0571892261505127,
+            "SPARQL_CALLS": 11,
+            "SPARQL_TIME": 0.09068489074707031,
+            "LLM_CALLS": 3,
+            "LLM_INPUTS": 1997,
+            "LLM_OUTPUTS": 106,
+            "LLM_TIME": 2.963143825531006
+        }
+    },
+    {
+        "question": "Through which countries does the Yenisei river flow?",
+        "csv_answer": "Mongolia\nRussia",
+        "results": {
+            "tp": 2,
+            "fp": 0,
+            "fn": 0,
+            "exact_match": true,
+            "hits_at_1": 1,
+            "hits": 1,
+            "lax_hits": 1,
+            "laxxer_hits": 1,
+            "pog_match": 1,
+            "tog_em": 0,
+            "tog_em_fixed": 1,
+            "tog_formatted_properly": 1
+        },
+        "metrics": {
+            "TIME": 5.224708795547485,
+            "SPARQL_CALLS": 13,
+            "SPARQL_TIME": 0.13139581680297852,
+            "LLM_CALLS": 4,
+            "LLM_INPUTS": 2229,
+            "LLM_OUTPUTS": 179,
+            "LLM_TIME": 5.088922023773193
+        }
+    },
+    {
+        "question": "Give me all cars that are produced in Germany.",
+        "csv_answer": "Volkswagen\nBMW\nMercedes-Benz\nAudi\nPorsche",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "exact_match": false,
+            "hits_at_1": 0,
+            "hits": 0,
+            "lax_hits": 0,
+            "laxxer_hits": 1,
+            "pog_match": 0,
+            "tog_em": 0,
+            "tog_em_fixed": 0,
+            "tog_formatted_properly": 0
+        },
+        "metrics": {
+            "TIME": 18.766797065734863,
+            "SPARQL_CALLS": 70,
+            "SPARQL_TIME": 1.4806978702545166,
+            "LLM_CALLS": 13,
+            "LLM_INPUTS": 12825,
+            "LLM_OUTPUTS": 644,
+            "LLM_TIME": 16.937148571014404
+        }
+    },
+    {
+        "question": "When did Michael Jackson die?",
+        "csv_answer": "20090625",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "exact_match": false,
+            "hits_at_1": 0,
+            "hits": 0,
+            "lax_hits": 0,
+            "laxxer_hits": 0,
+            "pog_match": 0,
+            "tog_em": 0,
+            "tog_em_fixed": 0,
+            "tog_formatted_properly": 0
+        },
+        "metrics": {
+            "TIME": 2.3559701442718506,
+            "SPARQL_CALLS": 8,
+            "SPARQL_TIME": 0.06907248497009277,
+            "LLM_CALLS": 2,
+            "LLM_INPUTS": 1953,
+            "LLM_OUTPUTS": 82,
+            "LLM_TIME": 2.274521827697754
+        }
+    },
+    {
+        "question": "What is the highest volcano in Africa?",
+        "csv_answer": "Mount Kilimanjaro",
+        "results": {
+            "tp": 1,
+            "fp": 0,
+            "fn": 0,
+            "exact_match": true,
+            "hits_at_1": 1,
+            "hits": 1,
+            "lax_hits": 1,
+            "laxxer_hits": 1,
+            "pog_match": 1,
+            "tog_em": 1,
+            "tog_em_fixed": 1,
+            "tog_formatted_properly": 1
+        },
+        "metrics": {
+            "TIME": 11.047571420669556,
+            "SPARQL_CALLS": 28,
+            "SPARQL_TIME": 0.2648749351501465,
+            "LLM_CALLS": 8,
+            "LLM_INPUTS": 4668,
+            "LLM_OUTPUTS": 343,
+            "LLM_TIME": 10.7702476978302
+        }
+    },
+    {
+        "question": "Which poet wrote the most books?",
+        "csv_answer": "Pablo Neruda",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "exact_match": false,
+            "hits_at_1": 0,
+            "hits": 0,
+            "lax_hits": 0,
+            "laxxer_hits": 0,
+            "pog_match": 0,
+            "tog_em": 0,
+            "tog_em_fixed": 0,
+            "tog_formatted_properly": 0
+        },
+        "metrics": {
+            "TIME": 29.146803617477417,
+            "SPARQL_CALLS": 89,
+            "SPARQL_TIME": 1.4800944328308105,
+            "LLM_CALLS": 18,
+            "LLM_INPUTS": 8895,
+            "LLM_OUTPUTS": 1307,
+            "LLM_TIME": 27.515036821365356
+        }
+    },
+    {
+        "question": "Give me all gangsters from the prohibition era.",
+        "csv_answer": "",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 22,
+            "exact_match": false,
+            "hits_at_1": 0,
+            "hits": 0,
+            "lax_hits": 0,
+            "laxxer_hits": 0,
+            "pog_match": 0,
+            "tog_em": 0,
+            "tog_em_fixed": 0,
+            "tog_formatted_properly": 0
+        },
+        "metrics": {
+            "TIME": 21.158411264419556,
+            "SPARQL_CALLS": 66,
+            "SPARQL_TIME": 0.4942288398742676,
+            "LLM_CALLS": 12,
+            "LLM_INPUTS": 6193,
+            "LLM_OUTPUTS": 989,
+            "LLM_TIME": 20.64991331100464
+        }
+    },
+    {
+        "question": "Give me all spacecrafts that flew to Mars.",
+        "csv_answer": "Mariner 4\nMariner 6\nMariner 7\nMariner 9\nViking 1\nViking 2\nMars Global Surveyor\nMars Odyssey\nMars Express\nMars Reconnaissance Orbiter\nPhoenix\nCuriosity Rover\nMAVEN\nInSight\nTianwen-1\nPerseverance Rover",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "exact_match": false,
+            "hits_at_1": 0,
+            "hits": 0,
+            "lax_hits": 0,
+            "laxxer_hits": 0,
+            "pog_match": 1,
+            "tog_em": 0,
+            "tog_em_fixed": 0,
+            "tog_formatted_properly": 0
+        },
+        "metrics": {
+            "TIME": 25.1894474029541,
+            "SPARQL_CALLS": 64,
+            "SPARQL_TIME": 0.4897580146789551,
+            "LLM_CALLS": 14,
+            "LLM_INPUTS": 7858,
+            "LLM_OUTPUTS": 968,
+            "LLM_TIME": 24.663872718811035
+        }
+    },
+    {
+        "question": "Show me all Czech movies.",
+        "csv_answer": "Closely Watched Trains, 1966\nThe Firemen's Ball, 1967\nKolya, 1996\nThe Shop on Main Street, 1965\nMarketa Lazarov\u00e1, 1967\nPel\u00ed\u0161ky, 1999\nThe Cremator, 1969",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "exact_match": false,
+            "hits_at_1": 0,
+            "hits": 0,
+            "lax_hits": 0,
+            "laxxer_hits": 0,
+            "pog_match": 1,
+            "tog_em": 1,
+            "tog_em_fixed": 1,
+            "tog_formatted_properly": 0
+        },
+        "metrics": {
+            "TIME": 28.55826163291931,
+            "SPARQL_CALLS": 82,
+            "SPARQL_TIME": 1.7280170917510986,
+            "LLM_CALLS": 20,
+            "LLM_INPUTS": 10898,
+            "LLM_OUTPUTS": 941,
+            "LLM_TIME": 26.413957595825195
+        }
+    },
+    {
+        "question": "Give me all taikonauts.",
+        "csv_answer": "Yang Liwei\nFei Junlong\nNie Haisheng\nZhai Zhigang\nLiu Boming\nJing Haipeng\nChen Dong\nWang Yaping\nZhang Xiaoguang\nYe Guangfu\nLiu Yang\nTang Hongbo\nCai Xuzhe",
+        "results": {
+            "tp": 5,
+            "fp": 8,
+            "fn": 2,
+            "exact_match": false,
+            "hits_at_1": 0,
+            "hits": 1,
+            "lax_hits": 1,
+            "laxxer_hits": 1,
+            "pog_match": 1,
+            "tog_em": 1,
+            "tog_em_fixed": 1,
+            "tog_formatted_properly": 0
+        },
+        "metrics": {
+            "TIME": 34.42213726043701,
+            "SPARQL_CALLS": 104,
+            "SPARQL_TIME": 1.111067533493042,
+            "LLM_CALLS": 20,
+            "LLM_INPUTS": 12843,
+            "LLM_OUTPUTS": 1318,
+            "LLM_TIME": 33.19824481010437
+        }
+    },
+    {
+        "question": "Which countries have more than ten volcanoes?",
+        "csv_answer": "",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 18,
+            "exact_match": false,
+            "hits_at_1": 0,
+            "hits": 0,
+            "lax_hits": 0,
+            "laxxer_hits": 0,
+            "pog_match": 0,
+            "tog_em": 0,
+            "tog_em_fixed": 0,
+            "tog_formatted_properly": 0
+        },
+        "metrics": {
+            "TIME": 14.891805648803711,
+            "SPARQL_CALLS": 55,
+            "SPARQL_TIME": 0.4571802616119385,
+            "LLM_CALLS": 12,
+            "LLM_INPUTS": 6371,
+            "LLM_OUTPUTS": 639,
+            "LLM_TIME": 14.401520729064941
+        }
+    },
+    {
+        "question": "Give me all movies with Tom Cruise.",
+        "csv_answer": "Interview with the Vampire (film)\nJerry Maguire\nKnight and Day",
+        "results": {
+            "tp": 3,
+            "fp": 0,
+            "fn": 23,
+            "exact_match": false,
+            "hits_at_1": 1,
+            "hits": 1,
+            "lax_hits": 1,
+            "laxxer_hits": 1,
+            "pog_match": 1,
+            "tog_em": 0,
+            "tog_em_fixed": 1,
+            "tog_formatted_properly": 1
+        },
+        "metrics": {
+            "TIME": 9.343702554702759,
+            "SPARQL_CALLS": 26,
+            "SPARQL_TIME": 0.8342676162719727,
+            "LLM_CALLS": 6,
+            "LLM_INPUTS": 2823,
+            "LLM_OUTPUTS": 374,
+            "LLM_TIME": 8.307120323181152
+        }
+    },
+    {
+        "question": "When did Dracula's creator die?",
+        "csv_answer": "19120420",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "exact_match": false,
+            "hits_at_1": 0,
+            "hits": 0,
+            "lax_hits": 0,
+            "laxxer_hits": 0,
+            "pog_match": 0,
+            "tog_em": 0,
+            "tog_em_fixed": 0,
+            "tog_formatted_properly": 0
+        },
+        "metrics": {
+            "TIME": 4.856492280960083,
+            "SPARQL_CALLS": 20,
+            "SPARQL_TIME": 0.20602965354919434,
+            "LLM_CALLS": 5,
+            "LLM_INPUTS": 3721,
+            "LLM_OUTPUTS": 181,
+            "LLM_TIME": 4.63693904876709
+        }
+    },
+    {
+        "question": "Who created English Wikipedia?",
+        "csv_answer": "Jimmy Wales\nLarry Sanger",
+        "results": {
+            "tp": 2,
+            "fp": 0,
+            "fn": 0,
+            "exact_match": true,
+            "hits_at_1": 1,
+            "hits": 1,
+            "lax_hits": 1,
+            "laxxer_hits": 1,
+            "pog_match": 1,
+            "tog_em": 0,
+            "tog_em_fixed": 1,
+            "tog_formatted_properly": 1
+        },
+        "metrics": {
+            "TIME": 3.465096950531006,
+            "SPARQL_CALLS": 13,
+            "SPARQL_TIME": 0.13353657722473145,
+            "LLM_CALLS": 4,
+            "LLM_INPUTS": 2128,
+            "LLM_OUTPUTS": 106,
+            "LLM_TIME": 3.317410945892334
+        }
+    },
+    {
+        "question": "Give me all female German chancellors.",
+        "csv_answer": "Angela Merkel",
+        "results": {
+            "tp": 1,
+            "fp": 0,
+            "fn": 0,
+            "exact_match": true,
+            "hits_at_1": 1,
+            "hits": 1,
+            "lax_hits": 1,
+            "laxxer_hits": 1,
+            "pog_match": 1,
+            "tog_em": 1,
+            "tog_em_fixed": 1,
+            "tog_formatted_properly": 1
+        },
+        "metrics": {
+            "TIME": 11.682856559753418,
+            "SPARQL_CALLS": 17,
+            "SPARQL_TIME": 3.419541835784912,
+            "LLM_CALLS": 5,
+            "LLM_INPUTS": 2937,
+            "LLM_OUTPUTS": 207,
+            "LLM_TIME": 6.690823316574097
+        }
+    },
+    {
+        "question": "Who owns Aldi?",
+        "csv_answer": "Albrecht family",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "exact_match": false,
+            "hits_at_1": 0,
+            "hits": 0,
+            "lax_hits": 0,
+            "laxxer_hits": 0,
+            "pog_match": 0,
+            "tog_em": 0,
+            "tog_em_fixed": 0,
+            "tog_formatted_properly": 0
+        },
+        "metrics": {
+            "TIME": 19.12961220741272,
+            "SPARQL_CALLS": 70,
+            "SPARQL_TIME": 0.8339793682098389,
+            "LLM_CALLS": 17,
+            "LLM_INPUTS": 10797,
+            "LLM_OUTPUTS": 655,
+            "LLM_TIME": 18.11127805709839
+        }
+    },
+    {
+        "question": "Which books were written by Danielle Steel?",
+        "csv_answer": "\"A Perfect Stranger\"\n\"Family Album (novel)\"",
+        "results": {
+            "tp": 2,
+            "fp": 0,
+            "fn": 45,
+            "exact_match": false,
+            "hits_at_1": 1,
+            "hits": 1,
+            "lax_hits": 1,
+            "laxxer_hits": 1,
+            "pog_match": 1,
+            "tog_em": 0,
+            "tog_em_fixed": 1,
+            "tog_formatted_properly": 1
+        },
+        "metrics": {
+            "TIME": 15.224287986755371,
+            "SPARQL_CALLS": 84,
+            "SPARQL_TIME": 0.9183187484741211,
+            "LLM_CALLS": 13,
+            "LLM_INPUTS": 6351,
+            "LLM_OUTPUTS": 642,
+            "LLM_TIME": 14.200248003005981
+        }
+    },
+    {
+        "question": "Who was influenced by Socrates?",
+        "csv_answer": "Plato\nAristotle\nAristippus\nAntisthenes\nmost subsequent Western philosophy",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "exact_match": false,
+            "hits_at_1": 0,
+            "hits": 0,
+            "lax_hits": 0,
+            "laxxer_hits": 1,
+            "pog_match": 0,
+            "tog_em": 0,
+            "tog_em_fixed": 0,
+            "tog_formatted_properly": 0
+        },
+        "metrics": {
+            "TIME": 5.66782021522522,
+            "SPARQL_CALLS": 16,
+            "SPARQL_TIME": 0.14729809761047363,
+            "LLM_CALLS": 4,
+            "LLM_INPUTS": 2131,
+            "LLM_OUTPUTS": 273,
+            "LLM_TIME": 5.512253999710083
+        }
+    },
+    {
+        "question": "How deep is Lake Chiemsee?",
+        "csv_answer": "72.7",
+        "results": {
+            "tp": 1,
+            "fp": 0,
+            "fn": 0,
+            "exact_match": true,
+            "hits_at_1": 1,
+            "hits": 1,
+            "lax_hits": 1,
+            "laxxer_hits": 1,
+            "pog_match": 1,
+            "tog_em": 0,
+            "tog_em_fixed": 1,
+            "tog_formatted_properly": 1
+        },
+        "metrics": {
+            "TIME": 2.027125835418701,
+            "SPARQL_CALLS": 9,
+            "SPARQL_TIME": 0.07515931129455566,
+            "LLM_CALLS": 2,
+            "LLM_INPUTS": 1588,
+            "LLM_OUTPUTS": 80,
+            "LLM_TIME": 1.9495322704315186
+        }
+    },
+    {
+        "question": "Which companies work in the aerospace industry as well as in medicine?",
+        "csv_answer": "Boeing\nLockheed Martin\nHoneywell",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "exact_match": false,
+            "hits_at_1": 0,
+            "hits": 0,
+            "lax_hits": 0,
+            "laxxer_hits": 0,
+            "pog_match": 0,
+            "tog_em": 0,
+            "tog_em_fixed": 0,
+            "tog_formatted_properly": 0
+        },
+        "metrics": {
+            "TIME": 39.57202196121216,
+            "SPARQL_CALLS": 159,
+            "SPARQL_TIME": 3.0884933471679688,
+            "LLM_CALLS": 27,
+            "LLM_INPUTS": 12189,
+            "LLM_OUTPUTS": 1555,
+            "LLM_TIME": 36.24932289123535
+        }
+    },
+    {
+        "question": "Which professional surfers were born on the Philippines?",
+        "csv_answer": "Luke Landrigan\nRoger Casugay",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "exact_match": false,
+            "hits_at_1": 0,
+            "hits": 0,
+            "lax_hits": 0,
+            "laxxer_hits": 0,
+            "pog_match": 0,
+            "tog_em": 0,
+            "tog_em_fixed": 0,
+            "tog_formatted_properly": 0
+        },
+        "metrics": {
+            "TIME": 34.004908084869385,
+            "SPARQL_CALLS": 140,
+            "SPARQL_TIME": 1.3078536987304688,
+            "LLM_CALLS": 24,
+            "LLM_INPUTS": 14241,
+            "LLM_OUTPUTS": 1671,
+            "LLM_TIME": 32.57171058654785
+        }
+    },
+    {
+        "question": "Who were the parents of Queen Victoria?",
+        "csv_answer": "Prince Edward Duke of Kent and Strathearn, Princess Victoria of Saxe-Coburg-Saalfeld",
+        "results": {
+            "tp": 1,
+            "fp": 0,
+            "fn": 1,
+            "exact_match": false,
+            "hits_at_1": 1,
+            "hits": 1,
+            "lax_hits": 1,
+            "laxxer_hits": 1,
+            "pog_match": 1,
+            "tog_em": 0,
+            "tog_em_fixed": 1,
+            "tog_formatted_properly": 1
+        },
+        "metrics": {
+            "TIME": 4.813807010650635,
+            "SPARQL_CALLS": 12,
+            "SPARQL_TIME": 0.14369654655456543,
+            "LLM_CALLS": 3,
+            "LLM_INPUTS": 2228,
+            "LLM_OUTPUTS": 145,
+            "LLM_TIME": 4.653840065002441
+        }
+    },
+    {
+        "question": "Are there any castles in the United States?",
+        "csv_answer": "True",
+        "results": {
+            "tp": 1,
+            "fp": 0,
+            "fn": 0,
+            "exact_match": true,
+            "hits_at_1": 1,
+            "hits": 1,
+            "lax_hits": 1,
+            "laxxer_hits": 1,
+            "pog_match": 0,
+            "tog_em": 0,
+            "tog_em_fixed": 0,
+            "tog_formatted_properly": 0
+        },
+        "metrics": {
+            "TIME": 7.8509368896484375,
+            "SPARQL_CALLS": 27,
+            "SPARQL_TIME": 0.2141590118408203,
+            "LLM_CALLS": 6,
+            "LLM_INPUTS": 3506,
+            "LLM_OUTPUTS": 359,
+            "LLM_TIME": 7.632534980773926
+        }
+    },
+    {
+        "question": "Which languages are spoken in Estonia?",
+        "csv_answer": "Estonian\nSeto",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "exact_match": false,
+            "hits_at_1": 0,
+            "hits": 0,
+            "lax_hits": 0,
+            "laxxer_hits": 1,
+            "pog_match": 0,
+            "tog_em": 0,
+            "tog_em_fixed": 0,
+            "tog_formatted_properly": 0
+        },
+        "metrics": {
+            "TIME": 3.1567320823669434,
+            "SPARQL_CALLS": 13,
+            "SPARQL_TIME": 0.1699385643005371,
+            "LLM_CALLS": 4,
+            "LLM_INPUTS": 3289,
+            "LLM_OUTPUTS": 118,
+            "LLM_TIME": 2.9593727588653564
+        }
+    },
+    {
+        "question": "Give me a list of all critically endangered birds.",
+        "csv_answer": "",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 198,
+            "exact_match": false,
+            "hits_at_1": 0,
+            "hits": 0,
+            "lax_hits": 0,
+            "laxxer_hits": 0,
+            "pog_match": 0,
+            "tog_em": 0,
+            "tog_em_fixed": 0,
+            "tog_formatted_properly": 0
+        },
+        "metrics": {
+            "TIME": 9.753359079360962,
+            "SPARQL_CALLS": 32,
+            "SPARQL_TIME": 0.3511486053466797,
+            "LLM_CALLS": 9,
+            "LLM_INPUTS": 4868,
+            "LLM_OUTPUTS": 426,
+            "LLM_TIME": 9.376871347427368
+        }
+    },
+    {
+        "question": "Which countries are connected by the Rhine?",
+        "csv_answer": "Switzerland\nFrance\nNetherlands",
+        "results": {
+            "tp": 3,
+            "fp": 0,
+            "fn": 8,
+            "exact_match": false,
+            "hits_at_1": 1,
+            "hits": 1,
+            "lax_hits": 1,
+            "laxxer_hits": 1,
+            "pog_match": 1,
+            "tog_em": 0,
+            "tog_em_fixed": 1,
+            "tog_formatted_properly": 1
+        },
+        "metrics": {
+            "TIME": 16.35154914855957,
+            "SPARQL_CALLS": 62,
+            "SPARQL_TIME": 0.5209476947784424,
+            "LLM_CALLS": 11,
+            "LLM_INPUTS": 7689,
+            "LLM_OUTPUTS": 792,
+            "LLM_TIME": 15.804555892944336
+        }
+    },
+    {
+        "question": "Who was the father of Queen Elizabeth II?",
+        "csv_answer": "Queen Elizabeth II, George VI",
+        "results": {
+            "tp": 1,
+            "fp": 0,
+            "fn": 0,
+            "exact_match": true,
+            "hits_at_1": 1,
+            "hits": 1,
+            "lax_hits": 1,
+            "laxxer_hits": 1,
+            "pog_match": 1,
+            "tog_em": 0,
+            "tog_em_fixed": 1,
+            "tog_formatted_properly": 1
+        },
+        "metrics": {
+            "TIME": 2.2063241004943848,
+            "SPARQL_CALLS": 10,
+            "SPARQL_TIME": 0.08657002449035645,
+            "LLM_CALLS": 3,
+            "LLM_INPUTS": 2279,
+            "LLM_OUTPUTS": 91,
+            "LLM_TIME": 2.1100170612335205
+        }
+    },
+    {
+        "question": "Give me all chemical elements.",
+        "csv_answer": "Hydrogen,H\nHelium,He\nLithium,Li\nBeryllium,Be\nBoron,B\nCarbon,C\nNitrogen,N\nOxygen,O\nFluorine,F\nNeon,Ne\nSodium,Na\nMagnesium,Mg\nAluminum,Al\nSilicon,Si\nPhosphorus,P\nSulfur,S\nChlorine,Cl\nArgon,Ar\nPotassium,K\nCalcium,Ca\nScandium,Sc\nTitanium,Ti\nVanadium,V\nChromium,Cr\nManganese,Mn\nIron,Fe\nCobalt,Co\nNickel,Ni\nCopper,Cu\nZinc,Zn\nGallium,Ga\nGermanium,Ge\nArsenic,As\nSelenium,Se\nBromine,Br\nKrypton,Kr\nRubidium,Rb\nStrontium,Sr\nYttrium,Y\nZirconium,Zr\nNiobium,Nb\nMolybdenum,Mo\nTechnetium,Tc\nRuthenium,Ru\nRhodium,Rh\nPalladium,Pd\nSilver,Ag\nCadmium,Cd\nIndium,In\nTin,Sn\nAntimony,Sb\nTellurium,Te\nIodine,I\nXenon,Xe\nCesium,Cs\nBarium,Ba\nLanthanum,La\nCerium,Ce\nPraseodymium,Pr\nNeodymium,Nd\nPromethium,Pm\nSamarium,Sm",
+        "results": {
+            "tp": 59,
+            "fp": 3,
+            "fn": 60,
+            "exact_match": false,
+            "hits_at_1": 1,
+            "hits": 1,
+            "lax_hits": 1,
+            "laxxer_hits": 1,
+            "pog_match": 1,
+            "tog_em": 1,
+            "tog_em_fixed": 1,
+            "tog_formatted_properly": 0
+        },
+        "metrics": {
+            "TIME": 37.491182804107666,
+            "SPARQL_CALLS": 38,
+            "SPARQL_TIME": 14.393081665039062,
+            "LLM_CALLS": 9,
+            "LLM_INPUTS": 5293,
+            "LLM_OUTPUTS": 851,
+            "LLM_TIME": 16.062013626098633
+        }
+    },
+    {
+        "question": "Give me all American presidents of the last 20 years.",
+        "csv_answer": "George W. Bush, 2001, 2009\nBarack Obama, 2009, 2017\nDonald J. Trump, 2017, 2021\nJoe Biden, 2021, present",
+        "results": {
+            "tp": 2,
+            "fp": 2,
+            "fn": 0,
+            "exact_match": false,
+            "hits_at_1": 1,
+            "hits": 1,
+            "lax_hits": 1,
+            "laxxer_hits": 1,
+            "pog_match": 1,
+            "tog_em": 1,
+            "tog_em_fixed": 1,
+            "tog_formatted_properly": 0
+        },
+        "metrics": {
+            "TIME": 39.73989820480347,
+            "SPARQL_CALLS": 62,
+            "SPARQL_TIME": 11.780087947845459,
+            "LLM_CALLS": 22,
+            "LLM_INPUTS": 11322,
+            "LLM_OUTPUTS": 914,
+            "LLM_TIME": 25.161145448684692
+        }
+    },
+    {
+        "question": "When is the movie Worst Case Scenario going to be in cinemas in the Netherlands?",
+        "csv_answer": "Worst Case Scenario, 2008-01-30",
+        "results": {
+            "tp": 1,
+            "fp": 0,
+            "fn": 0,
+            "exact_match": true,
+            "hits_at_1": 1,
+            "hits": 1,
+            "lax_hits": 1,
+            "laxxer_hits": 1,
+            "pog_match": 1,
+            "tog_em": 1,
+            "tog_em_fixed": 1,
+            "tog_formatted_properly": 0
+        },
+        "metrics": {
+            "TIME": 7.524224281311035,
+            "SPARQL_CALLS": 22,
+            "SPARQL_TIME": 0.17309880256652832,
+            "LLM_CALLS": 6,
+            "LLM_INPUTS": 4323,
+            "LLM_OUTPUTS": 305,
+            "LLM_TIME": 7.347579479217529
+        }
+    },
+    {
+        "question": "Whom did Lance Bass marry?",
+        "csv_answer": "Lance Bass, Michael Turchin",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "exact_match": false,
+            "hits_at_1": 0,
+            "hits": 0,
+            "lax_hits": 0,
+            "laxxer_hits": 0,
+            "pog_match": 0,
+            "tog_em": 0,
+            "tog_em_fixed": 0,
+            "tog_formatted_properly": 0
+        },
+        "metrics": {
+            "TIME": 2.680089235305786,
+            "SPARQL_CALLS": 10,
+            "SPARQL_TIME": 0.09527754783630371,
+            "LLM_CALLS": 3,
+            "LLM_INPUTS": 1815,
+            "LLM_OUTPUTS": 86,
+            "LLM_TIME": 2.5799202919006348
+        }
+    },
+    {
+        "question": "Which subsidiary of TUI Travel serves both Glasgow and Dublin?",
+        "csv_answer": "Thomson Airways",
+        "results": {
+            "tp": 1,
+            "fp": 0,
+            "fn": 0,
+            "exact_match": true,
+            "hits_at_1": 1,
+            "hits": 1,
+            "lax_hits": 1,
+            "laxxer_hits": 1,
+            "pog_match": 1,
+            "tog_em": 1,
+            "tog_em_fixed": 1,
+            "tog_formatted_properly": 1
+        },
+        "metrics": {
+            "TIME": 26.08547353744507,
+            "SPARQL_CALLS": 91,
+            "SPARQL_TIME": 0.7664711475372314,
+            "LLM_CALLS": 23,
+            "LLM_INPUTS": 11370,
+            "LLM_OUTPUTS": 947,
+            "LLM_TIME": 25.29600739479065
+        }
+    },
+    {
+        "question": "What languages are spoken in Pakistan?",
+        "csv_answer": "Urdu\nEnglish\nBalochi",
+        "results": {
+            "tp": 1,
+            "fp": 2,
+            "fn": 15,
+            "exact_match": false,
+            "hits_at_1": 1,
+            "hits": 1,
+            "lax_hits": 1,
+            "laxxer_hits": 1,
+            "pog_match": 1,
+            "tog_em": 0,
+            "tog_em_fixed": 1,
+            "tog_formatted_properly": 1
+        },
+        "metrics": {
+            "TIME": 9.22394347190857,
+            "SPARQL_CALLS": 41,
+            "SPARQL_TIME": 0.3803212642669678,
+            "LLM_CALLS": 5,
+            "LLM_INPUTS": 4155,
+            "LLM_OUTPUTS": 489,
+            "LLM_TIME": 8.796103954315186
+        }
+    },
+    {
+        "question": "Who is the daughter of Bill Clinton married to?",
+        "csv_answer": "Chelsea Clinton, Marc Mezvinsky",
+        "results": {
+            "tp": 1,
+            "fp": 0,
+            "fn": 0,
+            "exact_match": true,
+            "hits_at_1": 1,
+            "hits": 1,
+            "lax_hits": 1,
+            "laxxer_hits": 1,
+            "pog_match": 1,
+            "tog_em": 0,
+            "tog_em_fixed": 1,
+            "tog_formatted_properly": 1
+        },
+        "metrics": {
+            "TIME": 6.791689395904541,
+            "SPARQL_CALLS": 33,
+            "SPARQL_TIME": 0.33194780349731445,
+            "LLM_CALLS": 8,
+            "LLM_INPUTS": 5326,
+            "LLM_OUTPUTS": 248,
+            "LLM_TIME": 6.425320148468018
+        }
+    },
+    {
+        "question": "Who was on the Apollo 11 mission?",
+        "csv_answer": "Neil Armstrong\nBuzz Aldrin\nMichael Collins",
+        "results": {
+            "tp": 2,
+            "fp": 1,
+            "fn": 1,
+            "exact_match": false,
+            "hits_at_1": 1,
+            "hits": 1,
+            "lax_hits": 1,
+            "laxxer_hits": 1,
+            "pog_match": 1,
+            "tog_em": 1,
+            "tog_em_fixed": 1,
+            "tog_formatted_properly": 1
+        },
+        "metrics": {
+            "TIME": 18.6020450592041,
+            "SPARQL_CALLS": 60,
+            "SPARQL_TIME": 0.49192094802856445,
+            "LLM_CALLS": 18,
+            "LLM_INPUTS": 8851,
+            "LLM_OUTPUTS": 626,
+            "LLM_TIME": 18.08510446548462
+        }
+    },
+    {
+        "question": "What is the wavelength of Indigo?",
+        "csv_answer": "Indigo,450",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "exact_match": false,
+            "hits_at_1": 0,
+            "hits": 0,
+            "lax_hits": 0,
+            "laxxer_hits": 0,
+            "pog_match": 1,
+            "tog_em": 0,
+            "tog_em_fixed": 0,
+            "tog_formatted_properly": 0
+        },
+        "metrics": {
+            "TIME": 2.6985063552856445,
+            "SPARQL_CALLS": 9,
+            "SPARQL_TIME": 0.09412479400634766,
+            "LLM_CALLS": 3,
+            "LLM_INPUTS": 1797,
+            "LLM_OUTPUTS": 107,
+            "LLM_TIME": 2.5990166664123535
+        }
+    },
+    {
+        "question": "Give me all B-sides of the Ramones.",
+        "csv_answer": "",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 11,
+            "exact_match": false,
+            "hits_at_1": 0,
+            "hits": 0,
+            "lax_hits": 0,
+            "laxxer_hits": 0,
+            "pog_match": 0,
+            "tog_em": 0,
+            "tog_em_fixed": 0,
+            "tog_formatted_properly": 0
+        },
+        "metrics": {
+            "TIME": 5.0659520626068115,
+            "SPARQL_CALLS": 9,
+            "SPARQL_TIME": 0.0984811782836914,
+            "LLM_CALLS": 4,
+            "LLM_INPUTS": 2922,
+            "LLM_OUTPUTS": 214,
+            "LLM_TIME": 4.957084655761719
+        }
+    },
+    {
+        "question": "Who was called Scarface?",
+        "csv_answer": "Al Capone",
+        "results": {
+            "tp": 1,
+            "fp": 0,
+            "fn": 1,
+            "exact_match": false,
+            "hits_at_1": 1,
+            "hits": 1,
+            "lax_hits": 1,
+            "laxxer_hits": 1,
+            "pog_match": 1,
+            "tog_em": 1,
+            "tog_em_fixed": 1,
+            "tog_formatted_properly": 1
+        },
+        "metrics": {
+            "TIME": 0.6104235649108887,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0.0,
+            "LLM_CALLS": 1,
+            "LLM_INPUTS": 386,
+            "LLM_OUTPUTS": 23,
+            "LLM_TIME": 0.6103951930999756
+        }
+    },
+    {
+        "question": "Which rivers flow into the North Sea?",
+        "csv_answer": "Elbe\nEms\nHumber",
+        "results": {
+            "tp": 1,
+            "fp": 2,
+            "fn": 16,
+            "exact_match": false,
+            "hits_at_1": 1,
+            "hits": 1,
+            "lax_hits": 1,
+            "laxxer_hits": 1,
+            "pog_match": 1,
+            "tog_em": 0,
+            "tog_em_fixed": 1,
+            "tog_formatted_properly": 1
+        },
+        "metrics": {
+            "TIME": 9.115157842636108,
+            "SPARQL_CALLS": 51,
+            "SPARQL_TIME": 0.5579299926757812,
+            "LLM_CALLS": 6,
+            "LLM_INPUTS": 3079,
+            "LLM_OUTPUTS": 453,
+            "LLM_TIME": 8.482791423797607
+        }
+    },
+    {
+        "question": "Where is Fort Knox located?",
+        "csv_answer": "Kentucky",
+        "results": {
+            "tp": 1,
+            "fp": 0,
+            "fn": 0,
+            "exact_match": true,
+            "hits_at_1": 1,
+            "hits": 1,
+            "lax_hits": 1,
+            "laxxer_hits": 1,
+            "pog_match": 1,
+            "tog_em": 0,
+            "tog_em_fixed": 1,
+            "tog_formatted_properly": 1
+        },
+        "metrics": {
+            "TIME": 9.054888486862183,
+            "SPARQL_CALLS": 20,
+            "SPARQL_TIME": 4.392426490783691,
+            "LLM_CALLS": 4,
+            "LLM_INPUTS": 2222,
+            "LLM_OUTPUTS": 107,
+            "LLM_TIME": 3.3448328971862793
+        }
+    },
+    {
+        "question": "How many emperors did China have?",
+        "csv_answer": "200",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "exact_match": false,
+            "hits_at_1": 0,
+            "hits": 0,
+            "lax_hits": 0,
+            "laxxer_hits": 0,
+            "pog_match": 0,
+            "tog_em": 0,
+            "tog_em_fixed": 0,
+            "tog_formatted_properly": 0
+        },
+        "metrics": {
+            "TIME": 14.062870979309082,
+            "SPARQL_CALLS": 57,
+            "SPARQL_TIME": 0.5198369026184082,
+            "LLM_CALLS": 15,
+            "LLM_INPUTS": 8171,
+            "LLM_OUTPUTS": 565,
+            "LLM_TIME": 13.516913652420044
+        }
+    },
+    {
+        "question": "What are the names of the Teenage Mutant Ninja Turtles?",
+        "csv_answer": "Leonardo\nDonatello\nMichelangelo\nRaphael",
+        "results": {
+            "tp": 4,
+            "fp": 0,
+            "fn": 0,
+            "exact_match": true,
+            "hits_at_1": 1,
+            "hits": 1,
+            "lax_hits": 1,
+            "laxxer_hits": 1,
+            "pog_match": 1,
+            "tog_em": 1,
+            "tog_em_fixed": 1,
+            "tog_formatted_properly": 0
+        },
+        "metrics": {
+            "TIME": 15.556350708007812,
+            "SPARQL_CALLS": 36,
+            "SPARQL_TIME": 0.3210921287536621,
+            "LLM_CALLS": 11,
+            "LLM_INPUTS": 6275,
+            "LLM_OUTPUTS": 592,
+            "LLM_TIME": 15.22289514541626
+        }
+    },
+    {
+        "question": "Where does Piccadilly start?",
+        "csv_answer": "Piccadilly,Dover Street",
+        "results": {
+            "tp": 1,
+            "fp": 0,
+            "fn": 0,
+            "exact_match": true,
+            "hits_at_1": 1,
+            "hits": 1,
+            "lax_hits": 1,
+            "laxxer_hits": 1,
+            "pog_match": 1,
+            "tog_em": 0,
+            "tog_em_fixed": 1,
+            "tog_formatted_properly": 1
+        },
+        "metrics": {
+            "TIME": 5.655362844467163,
+            "SPARQL_CALLS": 17,
+            "SPARQL_TIME": 0.13844799995422363,
+            "LLM_CALLS": 3,
+            "LLM_INPUTS": 1760,
+            "LLM_OUTPUTS": 232,
+            "LLM_TIME": 5.510734558105469
+        }
+    },
+    {
+        "question": "What is the name of the university where Obama's wife studied?",
+        "csv_answer": "",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 2,
+            "exact_match": false,
+            "hits_at_1": 0,
+            "hits": 0,
+            "lax_hits": 0,
+            "laxxer_hits": 0,
+            "pog_match": 1,
+            "tog_em": 0,
+            "tog_em_fixed": 1,
+            "tog_formatted_properly": 1
+        },
+        "metrics": {
+            "TIME": 21.534343719482422,
+            "SPARQL_CALLS": 62,
+            "SPARQL_TIME": 0.603935956954956,
+            "LLM_CALLS": 15,
+            "LLM_INPUTS": 7539,
+            "LLM_OUTPUTS": 795,
+            "LLM_TIME": 20.88176965713501
+        }
+    },
+    {
+        "question": "When did Paraguay proclaim its independence?",
+        "csv_answer": "May 14 1811",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "exact_match": false,
+            "hits_at_1": 0,
+            "hits": 0,
+            "lax_hits": 0,
+            "laxxer_hits": 0,
+            "pog_match": 0,
+            "tog_em": 0,
+            "tog_em_fixed": 0,
+            "tog_formatted_properly": 0
+        },
+        "metrics": {
+            "TIME": 3.5724613666534424,
+            "SPARQL_CALLS": 8,
+            "SPARQL_TIME": 0.09378600120544434,
+            "LLM_CALLS": 4,
+            "LLM_INPUTS": 2970,
+            "LLM_OUTPUTS": 119,
+            "LLM_TIME": 3.4652481079101562
+        }
+    },
+    {
+        "question": "How short is the shortest active NBA player?",
+        "csv_answer": "N/A",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "exact_match": false,
+            "hits_at_1": 0,
+            "hits": 0,
+            "lax_hits": 0,
+            "laxxer_hits": 0,
+            "pog_match": 0,
+            "tog_em": 0,
+            "tog_em_fixed": 0,
+            "tog_formatted_properly": 0
+        },
+        "metrics": {
+            "TIME": 9.236199378967285,
+            "SPARQL_CALLS": 21,
+            "SPARQL_TIME": 0.25603389739990234,
+            "LLM_CALLS": 7,
+            "LLM_INPUTS": 4713,
+            "LLM_OUTPUTS": 420,
+            "LLM_TIME": 8.943272113800049
+        }
+    },
+    {
+        "question": "Where did Abraham Lincoln die?",
+        "csv_answer": "Petersen House Washington D.C.",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "exact_match": false,
+            "hits_at_1": 0,
+            "hits": 0,
+            "lax_hits": 0,
+            "laxxer_hits": 0,
+            "pog_match": 1,
+            "tog_em": 0,
+            "tog_em_fixed": 1,
+            "tog_formatted_properly": 1
+        },
+        "metrics": {
+            "TIME": 21.964625358581543,
+            "SPARQL_CALLS": 11,
+            "SPARQL_TIME": 0.09099221229553223,
+            "LLM_CALLS": 4,
+            "LLM_INPUTS": 2721,
+            "LLM_OUTPUTS": 203,
+            "LLM_TIME": 21.863807678222656
+        }
+    },
+    {
+        "question": "When was Jack Wolfskin founded?",
+        "csv_answer": "1981",
+        "results": {
+            "tp": 1,
+            "fp": 0,
+            "fn": 0,
+            "exact_match": true,
+            "hits_at_1": 1,
+            "hits": 1,
+            "lax_hits": 1,
+            "laxxer_hits": 1,
+            "pog_match": 1,
+            "tog_em": 0,
+            "tog_em_fixed": 1,
+            "tog_formatted_properly": 1
+        },
+        "metrics": {
+            "TIME": 2.668325424194336,
+            "SPARQL_CALLS": 12,
+            "SPARQL_TIME": 0.11068558692932129,
+            "LLM_CALLS": 3,
+            "LLM_INPUTS": 1728,
+            "LLM_OUTPUTS": 91,
+            "LLM_TIME": 2.555593490600586
+        }
+    },
+    {
+        "question": "What is the founding year of the brewery that produces Pilsner Urquell?",
+        "csv_answer": "1842",
+        "results": {
+            "tp": 1,
+            "fp": 0,
+            "fn": 0,
+            "exact_match": true,
+            "hits_at_1": 1,
+            "hits": 1,
+            "lax_hits": 1,
+            "laxxer_hits": 1,
+            "pog_match": 1,
+            "tog_em": 0,
+            "tog_em_fixed": 1,
+            "tog_formatted_properly": 1
+        },
+        "metrics": {
+            "TIME": 2.0498580932617188,
+            "SPARQL_CALLS": 9,
+            "SPARQL_TIME": 0.07610821723937988,
+            "LLM_CALLS": 2,
+            "LLM_INPUTS": 1624,
+            "LLM_OUTPUTS": 93,
+            "LLM_TIME": 1.9717986583709717
+        }
+    },
+    {
+        "question": "When did the Boston Tea Party take place?",
+        "csv_answer": "17731216",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "exact_match": false,
+            "hits_at_1": 0,
+            "hits": 0,
+            "lax_hits": 0,
+            "laxxer_hits": 0,
+            "pog_match": 1,
+            "tog_em": 0,
+            "tog_em_fixed": 0,
+            "tog_formatted_properly": 0
+        },
+        "metrics": {
+            "TIME": 1.8287832736968994,
+            "SPARQL_CALLS": 9,
+            "SPARQL_TIME": 0.07283163070678711,
+            "LLM_CALLS": 2,
+            "LLM_INPUTS": 1519,
+            "LLM_OUTPUTS": 84,
+            "LLM_TIME": 1.7518723011016846
+        }
+    },
+    {
+        "question": "Which animals are critically endangered?",
+        "csv_answer": "",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 1503,
+            "exact_match": false,
+            "hits_at_1": 0,
+            "hits": 0,
+            "lax_hits": 0,
+            "laxxer_hits": 0,
+            "pog_match": 0,
+            "tog_em": 0,
+            "tog_em_fixed": 0,
+            "tog_formatted_properly": 0
+        },
+        "metrics": {
+            "TIME": 7.1476967334747314,
+            "SPARQL_CALLS": 18,
+            "SPARQL_TIME": 1.0300829410552979,
+            "LLM_CALLS": 6,
+            "LLM_INPUTS": 3780,
+            "LLM_OUTPUTS": 263,
+            "LLM_TIME": 5.780826568603516
+        }
+    },
+    {
+        "question": "Which politicians were married to a German?",
+        "csv_answer": "",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 11,
+            "exact_match": false,
+            "hits_at_1": 0,
+            "hits": 0,
+            "lax_hits": 0,
+            "laxxer_hits": 0,
+            "pog_match": 0,
+            "tog_em": 0,
+            "tog_em_fixed": 0,
+            "tog_formatted_properly": 0
+        },
+        "metrics": {
+            "TIME": 16.99185538291931,
+            "SPARQL_CALLS": 75,
+            "SPARQL_TIME": 1.1109230518341064,
+            "LLM_CALLS": 15,
+            "LLM_INPUTS": 10875,
+            "LLM_OUTPUTS": 638,
+            "LLM_TIME": 15.643081903457642
+        }
+    },
+    {
+        "question": "How big is the earth's diameter?",
+        "csv_answer": "12742",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "exact_match": false,
+            "hits_at_1": 0,
+            "hits": 0,
+            "lax_hits": 0,
+            "laxxer_hits": 0,
+            "pog_match": 0,
+            "tog_em": 0,
+            "tog_em_fixed": 0,
+            "tog_formatted_properly": 0
+        },
+        "metrics": {
+            "TIME": 3.4352221488952637,
+            "SPARQL_CALLS": 9,
+            "SPARQL_TIME": 0.10150575637817383,
+            "LLM_CALLS": 3,
+            "LLM_INPUTS": 2034,
+            "LLM_OUTPUTS": 119,
+            "LLM_TIME": 3.3210902214050293
+        }
+    },
+    {
+        "question": "Is the wife of President Obama called Michelle?",
+        "csv_answer": "True",
+        "results": {
+            "tp": 1,
+            "fp": 0,
+            "fn": 0,
+            "exact_match": true,
+            "hits_at_1": 1,
+            "hits": 1,
+            "lax_hits": 1,
+            "laxxer_hits": 1,
+            "pog_match": 0,
+            "tog_em": 0,
+            "tog_em_fixed": 0,
+            "tog_formatted_properly": 0
+        },
+        "metrics": {
+            "TIME": 3.1224613189697266,
+            "SPARQL_CALLS": 10,
+            "SPARQL_TIME": 0.08066391944885254,
+            "LLM_CALLS": 3,
+            "LLM_INPUTS": 2365,
+            "LLM_OUTPUTS": 78,
+            "LLM_TIME": 3.0230722427368164
+        }
+    },
+    {
+        "question": "When did Muhammad die?",
+        "csv_answer": "June 8, 632",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "exact_match": false,
+            "hits_at_1": 0,
+            "hits": 0,
+            "lax_hits": 0,
+            "laxxer_hits": 1,
+            "pog_match": 0,
+            "tog_em": 0,
+            "tog_em_fixed": 0,
+            "tog_formatted_properly": 0
+        },
+        "metrics": {
+            "TIME": 3.0202295780181885,
+            "SPARQL_CALLS": 8,
+            "SPARQL_TIME": 0.08803725242614746,
+            "LLM_CALLS": 3,
+            "LLM_INPUTS": 1944,
+            "LLM_OUTPUTS": 87,
+            "LLM_TIME": 2.9211535453796387
+        }
+    },
+    {
+        "question": "What is the atmosphere of the Moon composed of?",
+        "csv_answer": "Argon\nHelium",
+        "results": {
+            "tp": 2,
+            "fp": 0,
+            "fn": 5,
+            "exact_match": false,
+            "hits_at_1": 1,
+            "hits": 1,
+            "lax_hits": 1,
+            "laxxer_hits": 1,
+            "pog_match": 1,
+            "tog_em": 0,
+            "tog_em_fixed": 1,
+            "tog_formatted_properly": 1
+        },
+        "metrics": {
+            "TIME": 3.202476739883423,
+            "SPARQL_CALLS": 15,
+            "SPARQL_TIME": 0.13938283920288086,
+            "LLM_CALLS": 3,
+            "LLM_INPUTS": 2018,
+            "LLM_OUTPUTS": 121,
+            "LLM_TIME": 3.05329966545105
+        }
+    },
+    {
+        "question": "Who is the governor of Texas?",
+        "csv_answer": "Greg Abbott",
+        "results": {
+            "tp": 1,
+            "fp": 0,
+            "fn": 0,
+            "exact_match": true,
+            "hits_at_1": 1,
+            "hits": 1,
+            "lax_hits": 1,
+            "laxxer_hits": 1,
+            "pog_match": 1,
+            "tog_em": 0,
+            "tog_em_fixed": 1,
+            "tog_formatted_properly": 1
+        },
+        "metrics": {
+            "TIME": 2.0610692501068115,
+            "SPARQL_CALLS": 7,
+            "SPARQL_TIME": 0.20168185234069824,
+            "LLM_CALLS": 2,
+            "LLM_INPUTS": 3215,
+            "LLM_OUTPUTS": 74,
+            "LLM_TIME": 1.8063876628875732
+        }
+    },
+    {
+        "question": "Which movies did Kurosawa direct?",
+        "csv_answer": "Drunken Angel\nIkiru",
+        "results": {
+            "tp": 2,
+            "fp": 0,
+            "fn": 30,
+            "exact_match": false,
+            "hits_at_1": 1,
+            "hits": 1,
+            "lax_hits": 1,
+            "laxxer_hits": 1,
+            "pog_match": 1,
+            "tog_em": 0,
+            "tog_em_fixed": 1,
+            "tog_formatted_properly": 1
+        },
+        "metrics": {
+            "TIME": 7.927955627441406,
+            "SPARQL_CALLS": 26,
+            "SPARQL_TIME": 0.7736787796020508,
+            "LLM_CALLS": 6,
+            "LLM_INPUTS": 2840,
+            "LLM_OUTPUTS": 271,
+            "LLM_TIME": 6.9538586139678955
+        }
+    },
+    {
+        "question": "What was the name of the famous battle in 1836 in San Antonio?",
+        "csv_answer": "Battle of the Alamo",
+        "results": {
+            "tp": 1,
+            "fp": 0,
+            "fn": 0,
+            "exact_match": true,
+            "hits_at_1": 1,
+            "hits": 1,
+            "lax_hits": 1,
+            "laxxer_hits": 1,
+            "pog_match": 1,
+            "tog_em": 1,
+            "tog_em_fixed": 1,
+            "tog_formatted_properly": 1
+        },
+        "metrics": {
+            "TIME": 20.292619943618774,
+            "SPARQL_CALLS": 66,
+            "SPARQL_TIME": 0.8012359142303467,
+            "LLM_CALLS": 15,
+            "LLM_INPUTS": 8662,
+            "LLM_OUTPUTS": 742,
+            "LLM_TIME": 19.423808813095093
+        }
+    },
+    {
+        "question": "Give me the official websites of actors of the television show Charmed.",
+        "csv_answer": "",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 2,
+            "exact_match": false,
+            "hits_at_1": 0,
+            "hits": 0,
+            "lax_hits": 0,
+            "laxxer_hits": 0,
+            "pog_match": 0,
+            "tog_em": 0,
+            "tog_em_fixed": 0,
+            "tog_formatted_properly": 0
+        },
+        "metrics": {
+            "TIME": 12.519482135772705,
+            "SPARQL_CALLS": 37,
+            "SPARQL_TIME": 0.2946135997772217,
+            "LLM_CALLS": 5,
+            "LLM_INPUTS": 3211,
+            "LLM_OUTPUTS": 692,
+            "LLM_TIME": 12.213682889938354
+        }
+    },
+    {
+        "question": "How many calories does a baguette have?",
+        "csv_answer": "263",
+        "results": {
+            "tp": 1,
+            "fp": 0,
+            "fn": 0,
+            "exact_match": true,
+            "hits_at_1": 1,
+            "hits": 1,
+            "lax_hits": 1,
+            "laxxer_hits": 1,
+            "pog_match": 1,
+            "tog_em": 0,
+            "tog_em_fixed": 1,
+            "tog_formatted_properly": 1
+        },
+        "metrics": {
+            "TIME": 4.609894752502441,
+            "SPARQL_CALLS": 11,
+            "SPARQL_TIME": 0.10351061820983887,
+            "LLM_CALLS": 3,
+            "LLM_INPUTS": 1710,
+            "LLM_OUTPUTS": 247,
+            "LLM_TIME": 4.503258228302002
+        }
+    },
+    {
+        "question": "Give me all libraries established before 1400.",
+        "csv_answer": "Library of Alexandria,N/A\nLibrary of Nalanda,N/A\nHouse of Wisdom,N/A\nBodleian Library,1320",
+        "results": {
+            "tp": 1,
+            "fp": 3,
+            "fn": 11,
+            "exact_match": false,
+            "hits_at_1": 1,
+            "hits": 1,
+            "lax_hits": 1,
+            "laxxer_hits": 1,
+            "pog_match": 1,
+            "tog_em": 1,
+            "tog_em_fixed": 1,
+            "tog_formatted_properly": 1
+        },
+        "metrics": {
+            "TIME": 14.7176034450531,
+            "SPARQL_CALLS": 36,
+            "SPARQL_TIME": 0.3359720706939697,
+            "LLM_CALLS": 10,
+            "LLM_INPUTS": 5316,
+            "LLM_OUTPUTS": 674,
+            "LLM_TIME": 14.357455730438232
+        }
+    },
+    {
+        "question": "Which museum exhibits The Scream by Munch?",
+        "csv_answer": "National Gallery (Norway)",
+        "results": {
+            "tp": 1,
+            "fp": 0,
+            "fn": 0,
+            "exact_match": true,
+            "hits_at_1": 1,
+            "hits": 1,
+            "lax_hits": 1,
+            "laxxer_hits": 1,
+            "pog_match": 1,
+            "tog_em": 0,
+            "tog_em_fixed": 1,
+            "tog_formatted_properly": 1
+        },
+        "metrics": {
+            "TIME": 2.154219388961792,
+            "SPARQL_CALLS": 11,
+            "SPARQL_TIME": 0.07274365425109863,
+            "LLM_CALLS": 2,
+            "LLM_INPUTS": 1493,
+            "LLM_OUTPUTS": 87,
+            "LLM_TIME": 2.0794384479522705
+        }
+    },
+    {
+        "question": "When was the De Beers company founded?",
+        "csv_answer": "1888",
+        "results": {
+            "tp": 1,
+            "fp": 0,
+            "fn": 0,
+            "exact_match": true,
+            "hits_at_1": 1,
+            "hits": 1,
+            "lax_hits": 1,
+            "laxxer_hits": 1,
+            "pog_match": 1,
+            "tog_em": 0,
+            "tog_em_fixed": 1,
+            "tog_formatted_properly": 1
+        },
+        "metrics": {
+            "TIME": 1.9333443641662598,
+            "SPARQL_CALLS": 9,
+            "SPARQL_TIME": 0.06369161605834961,
+            "LLM_CALLS": 2,
+            "LLM_INPUTS": 1632,
+            "LLM_OUTPUTS": 77,
+            "LLM_TIME": 1.8654842376708984
+        }
+    },
+    {
+        "question": "Who became president after JFK died?",
+        "csv_answer": "Lyndon B. Johnson",
+        "results": {
+            "tp": 1,
+            "fp": 0,
+            "fn": 0,
+            "exact_match": true,
+            "hits_at_1": 1,
+            "hits": 1,
+            "lax_hits": 1,
+            "laxxer_hits": 1,
+            "pog_match": 1,
+            "tog_em": 0,
+            "tog_em_fixed": 1,
+            "tog_formatted_properly": 1
+        },
+        "metrics": {
+            "TIME": 17.374961137771606,
+            "SPARQL_CALLS": 23,
+            "SPARQL_TIME": 8.468425512313843,
+            "LLM_CALLS": 6,
+            "LLM_INPUTS": 3528,
+            "LLM_OUTPUTS": 231,
+            "LLM_TIME": 6.123675346374512
+        }
+    },
+    {
+        "question": "Who are the parents of the wife of Juan Carlos I?",
+        "csv_answer": "Paul of Greece, Frederika of Hanover",
+        "results": {
+            "tp": 1,
+            "fp": 0,
+            "fn": 1,
+            "exact_match": false,
+            "hits_at_1": 1,
+            "hits": 1,
+            "lax_hits": 1,
+            "laxxer_hits": 1,
+            "pog_match": 1,
+            "tog_em": 0,
+            "tog_em_fixed": 1,
+            "tog_formatted_properly": 1
+        },
+        "metrics": {
+            "TIME": 6.066393852233887,
+            "SPARQL_CALLS": 23,
+            "SPARQL_TIME": 0.21819090843200684,
+            "LLM_CALLS": 6,
+            "LLM_INPUTS": 3896,
+            "LLM_OUTPUTS": 212,
+            "LLM_TIME": 5.836095571517944
+        }
+    },
+    {
+        "question": "Who is the novelist of the work a song of ice and fire?",
+        "csv_answer": "George R. R. Martin",
+        "results": {
+            "tp": 1,
+            "fp": 0,
+            "fn": 0,
+            "exact_match": true,
+            "hits_at_1": 1,
+            "hits": 1,
+            "lax_hits": 1,
+            "laxxer_hits": 1,
+            "pog_match": 1,
+            "tog_em": 0,
+            "tog_em_fixed": 1,
+            "tog_formatted_properly": 1
+        },
+        "metrics": {
+            "TIME": 5.102408409118652,
+            "SPARQL_CALLS": 19,
+            "SPARQL_TIME": 0.15485715866088867,
+            "LLM_CALLS": 3,
+            "LLM_INPUTS": 1803,
+            "LLM_OUTPUTS": 266,
+            "LLM_TIME": 4.941869258880615
+        }
+    },
+    {
+        "question": "In which studio did the Beatles record their first album?",
+        "csv_answer": "Abbey Road Studios",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "exact_match": false,
+            "hits_at_1": 0,
+            "hits": 0,
+            "lax_hits": 0,
+            "laxxer_hits": 0,
+            "pog_match": 0,
+            "tog_em": 0,
+            "tog_em_fixed": 0,
+            "tog_formatted_properly": 0
+        },
+        "metrics": {
+            "TIME": 6.383813381195068,
+            "SPARQL_CALLS": 14,
+            "SPARQL_TIME": 1.255462408065796,
+            "LLM_CALLS": 5,
+            "LLM_INPUTS": 3275,
+            "LLM_OUTPUTS": 159,
+            "LLM_TIME": 4.874724864959717
+        }
+    },
+    {
+        "question": "Which beer brewing companies are located in North-Rhine Westphalia?",
+        "csv_answer": "Krombacher Brewery\nWarsteiner Brewery\nVeltins Brewery",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "exact_match": false,
+            "hits_at_1": 0,
+            "hits": 0,
+            "lax_hits": 1,
+            "laxxer_hits": 1,
+            "pog_match": 1,
+            "tog_em": 1,
+            "tog_em_fixed": 1,
+            "tog_formatted_properly": 1
+        },
+        "metrics": {
+            "TIME": 15.563249111175537,
+            "SPARQL_CALLS": 48,
+            "SPARQL_TIME": 0.42005014419555664,
+            "LLM_CALLS": 12,
+            "LLM_INPUTS": 6161,
+            "LLM_OUTPUTS": 627,
+            "LLM_TIME": 15.130731344223022
+        }
+    },
+    {
+        "question": "When did princess Diana die?",
+        "csv_answer": "1997-08-31",
+        "results": {
+            "tp": 1,
+            "fp": 0,
+            "fn": 1,
+            "exact_match": false,
+            "hits_at_1": 1,
+            "hits": 1,
+            "lax_hits": 1,
+            "laxxer_hits": 1,
+            "pog_match": 0,
+            "tog_em": 0,
+            "tog_em_fixed": 0,
+            "tog_formatted_properly": 0
+        },
+        "metrics": {
+            "TIME": 3.3271405696868896,
+            "SPARQL_CALLS": 8,
+            "SPARQL_TIME": 0.07235527038574219,
+            "LLM_CALLS": 3,
+            "LLM_INPUTS": 1917,
+            "LLM_OUTPUTS": 105,
+            "LLM_TIME": 3.2467398643493652
+        }
+    },
+    {
+        "question": "Who founded Intel?",
+        "csv_answer": "Gordon Moore\nRobert Noyce",
+        "results": {
+            "tp": 2,
+            "fp": 0,
+            "fn": 0,
+            "exact_match": true,
+            "hits_at_1": 1,
+            "hits": 1,
+            "lax_hits": 1,
+            "laxxer_hits": 1,
+            "pog_match": 1,
+            "tog_em": 0,
+            "tog_em_fixed": 1,
+            "tog_formatted_properly": 1
+        },
+        "metrics": {
+            "TIME": 3.765310287475586,
+            "SPARQL_CALLS": 13,
+            "SPARQL_TIME": 0.13416361808776855,
+            "LLM_CALLS": 5,
+            "LLM_INPUTS": 2399,
+            "LLM_OUTPUTS": 121,
+            "LLM_TIME": 3.620698928833008
+        }
+    },
+    {
+        "question": "Who is the youngest player in the Premier League?",
+        "csv_answer": "N/A",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "exact_match": false,
+            "hits_at_1": 0,
+            "hits": 0,
+            "lax_hits": 0,
+            "laxxer_hits": 0,
+            "pog_match": 0,
+            "tog_em": 0,
+            "tog_em_fixed": 0,
+            "tog_formatted_properly": 0
+        },
+        "metrics": {
+            "TIME": 12.461639881134033,
+            "SPARQL_CALLS": 34,
+            "SPARQL_TIME": 0.30449676513671875,
+            "LLM_CALLS": 11,
+            "LLM_INPUTS": 5767,
+            "LLM_OUTPUTS": 512,
+            "LLM_TIME": 12.142189025878906
+        }
+    },
+    {
+        "question": "Which instruments does Cat Stevens play?",
+        "csv_answer": "vocals\nguitar\nbass guitar\ndouble bass\norgan\npiano",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "exact_match": false,
+            "hits_at_1": 0,
+            "hits": 0,
+            "lax_hits": 0,
+            "laxxer_hits": 1,
+            "pog_match": 0,
+            "tog_em": 0,
+            "tog_em_fixed": 0,
+            "tog_formatted_properly": 0
+        },
+        "metrics": {
+            "TIME": 8.030760288238525,
+            "SPARQL_CALLS": 28,
+            "SPARQL_TIME": 0.19260454177856445,
+            "LLM_CALLS": 5,
+            "LLM_INPUTS": 2463,
+            "LLM_OUTPUTS": 448,
+            "LLM_TIME": 7.829892158508301
+        }
+    },
+    {
+        "question": "How many rivers and lakes are in South Carolina?",
+        "csv_answer": "0,0",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "exact_match": false,
+            "hits_at_1": 0,
+            "hits": 0,
+            "lax_hits": 0,
+            "laxxer_hits": 0,
+            "pog_match": 0,
+            "tog_em": 0,
+            "tog_em_fixed": 0,
+            "tog_formatted_properly": 0
+        },
+        "metrics": {
+            "TIME": 6.6715404987335205,
+            "SPARQL_CALLS": 21,
+            "SPARQL_TIME": 0.28822851181030273,
+            "LLM_CALLS": 6,
+            "LLM_INPUTS": 4555,
+            "LLM_OUTPUTS": 288,
+            "LLM_TIME": 6.3416149616241455
+        }
+    },
+    {
+        "question": "Who was called Rodzilla?",
+        "csv_answer": "Rod Stewart",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "exact_match": false,
+            "hits_at_1": 0,
+            "hits": 0,
+            "lax_hits": 0,
+            "laxxer_hits": 0,
+            "pog_match": 0,
+            "tog_em": 0,
+            "tog_em_fixed": 0,
+            "tog_formatted_properly": 0
+        },
+        "metrics": {
+            "TIME": 0.8071079254150391,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0.0,
+            "LLM_CALLS": 1,
+            "LLM_INPUTS": 386,
+            "LLM_OUTPUTS": 27,
+            "LLM_TIME": 0.8070840835571289
+        }
+    },
+    {
+        "question": "Give me the capitals of all countries in Africa.",
+        "csv_answer": "Algeria,Algiers\nAngola,Luanda\nBenin,Porto-Novo\nBotswana,Gaborone\nBurkina Faso,Ouagadougou\nBurundi,Gitega\nCabo Verde,Praia\nCameroon,Yaound\u00e9\nCentral African Republic,Bangui\nChad,N'Djamena\nComoros,Moroni\nDemocratic Republic of the Congo,Kinshasa\nRepublic of the Congo,Brazzaville\nDjibouti,Djibouti\nEgypt,Cairo\nEquatorial Guinea,Malabo\nEritrea,Asmara\nEswatini,Mbabane\nEthiopia,Addis Ababa\nGabon,Libreville\nGambia,Banjul\nGhana,Accra\nGuinea,Conakry\nGuinea-Bissau,Bissau\nIvory Coast,Yamoussoukro\nKenya,Nairobi\nLesotho,Maseru\nLiberia,Monrovia\nLibya,Tripoli\nMadagascar,Antananarivo\nMalawi,Lilongwe\nMali,Bamako\nMauritania,Nouakchott\nMauritius,Port Louis\nMorocco,Rabat\nMozambique,Maputo\nNamibia,Windhoek\nNiger,Niamey\nNigeria,Abuja\nRwanda,Kigali\nS\u00e3o Tom\u00e9 and Pr\u00edncipe,\"S\u00e3o Tom\u00e9\"\nSenegal,Dakar\nSeychelles,Victoria\nSierra Leone,Freetown\nSomalia,Mogadishu\nSouth Africa,Pretoria\nSouth Sudan,Juba\nSudan,Khartoum\nTanzania,Dodoma\nTogo,Lom\u00e9\nTunisia,Tunis\nUganda,Kampala\nZambia,Lusaka",
+        "results": {
+            "tp": 47,
+            "fp": 6,
+            "fn": 12,
+            "exact_match": false,
+            "hits_at_1": 1,
+            "hits": 1,
+            "lax_hits": 1,
+            "laxxer_hits": 1,
+            "pog_match": 1,
+            "tog_em": 1,
+            "tog_em_fixed": 1,
+            "tog_formatted_properly": 0
+        },
+        "metrics": {
+            "TIME": 21.617665767669678,
+            "SPARQL_CALLS": 32,
+            "SPARQL_TIME": 0.1939256191253662,
+            "LLM_CALLS": 9,
+            "LLM_INPUTS": 5285,
+            "LLM_OUTPUTS": 855,
+            "LLM_TIME": 21.416664600372314
+        }
+    },
+    {
+        "question": "Which bridges are of the same type as the Manhattan Bridge?",
+        "csv_answer": "",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 160,
+            "exact_match": false,
+            "hits_at_1": 0,
+            "hits": 0,
+            "lax_hits": 0,
+            "laxxer_hits": 0,
+            "pog_match": 0,
+            "tog_em": 0,
+            "tog_em_fixed": 0,
+            "tog_formatted_properly": 0
+        },
+        "metrics": {
+            "TIME": 13.87986969947815,
+            "SPARQL_CALLS": 42,
+            "SPARQL_TIME": 0.36324143409729004,
+            "LLM_CALLS": 9,
+            "LLM_INPUTS": 5820,
+            "LLM_OUTPUTS": 610,
+            "LLM_TIME": 13.490715980529785
+        }
+    },
+    {
+        "question": "How many companies were founded by the founder of Facebook?",
+        "csv_answer": "1",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "exact_match": false,
+            "hits_at_1": 0,
+            "hits": 0,
+            "lax_hits": 0,
+            "laxxer_hits": 0,
+            "pog_match": 0,
+            "tog_em": 0,
+            "tog_em_fixed": 0,
+            "tog_formatted_properly": 0
+        },
+        "metrics": {
+            "TIME": 14.496833086013794,
+            "SPARQL_CALLS": 50,
+            "SPARQL_TIME": 0.47434306144714355,
+            "LLM_CALLS": 12,
+            "LLM_INPUTS": 7083,
+            "LLM_OUTPUTS": 615,
+            "LLM_TIME": 13.994800806045532
+        }
+    },
+    {
+        "question": "Show me hiking trails in the Grand Canyon where there's no danger of flash floods.",
+        "csv_answer": "Rim Trail, South Rim, No\nBright Angel Trail (above the river), South Rim, No\nNorth Kaibab Trail (above the river), North Rim, No\nPlateau Point Trail, South Rim, No",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "exact_match": false,
+            "hits_at_1": 0,
+            "hits": 0,
+            "lax_hits": 1,
+            "laxxer_hits": 1,
+            "pog_match": 1,
+            "tog_em": 1,
+            "tog_em_fixed": 1,
+            "tog_formatted_properly": 0
+        },
+        "metrics": {
+            "TIME": 42.34263062477112,
+            "SPARQL_CALLS": 114,
+            "SPARQL_TIME": 0.9417600631713867,
+            "LLM_CALLS": 20,
+            "LLM_INPUTS": 9982,
+            "LLM_OUTPUTS": 1806,
+            "LLM_TIME": 41.3634819984436
+        }
+    },
+    {
+        "question": "Which book has the most pages?",
+        "csv_answer": "Encyclopedia Talmudit,5801",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "exact_match": false,
+            "hits_at_1": 0,
+            "hits": 0,
+            "lax_hits": 0,
+            "laxxer_hits": 0,
+            "pog_match": 0,
+            "tog_em": 0,
+            "tog_em_fixed": 0,
+            "tog_formatted_properly": 0
+        },
+        "metrics": {
+            "TIME": 6.09482479095459,
+            "SPARQL_CALLS": 18,
+            "SPARQL_TIME": 0.38804054260253906,
+            "LLM_CALLS": 5,
+            "LLM_INPUTS": 3085,
+            "LLM_OUTPUTS": 216,
+            "LLM_TIME": 5.60954737663269
+        }
+    },
+    {
+        "question": "What is the largest state in the United States?",
+        "csv_answer": "Alaska",
+        "results": {
+            "tp": 1,
+            "fp": 0,
+            "fn": 0,
+            "exact_match": true,
+            "hits_at_1": 1,
+            "hits": 1,
+            "lax_hits": 1,
+            "laxxer_hits": 1,
+            "pog_match": 1,
+            "tog_em": 1,
+            "tog_em_fixed": 1,
+            "tog_formatted_properly": 1
+        },
+        "metrics": {
+            "TIME": 17.421120405197144,
+            "SPARQL_CALLS": 63,
+            "SPARQL_TIME": 0.8025736808776855,
+            "LLM_CALLS": 16,
+            "LLM_INPUTS": 9021,
+            "LLM_OUTPUTS": 591,
+            "LLM_TIME": 16.556641340255737
+        }
+    },
+    {
+        "question": "Give me the websites of companies with more than 500000 employees.",
+        "csv_answer": "https://www.walmart.com\nhttps://www.amazon.com\nhttp://www.cnpc.com.cn\nhttp://www.sgcc.com.cn",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "exact_match": false,
+            "hits_at_1": 0,
+            "hits": 0,
+            "lax_hits": 0,
+            "laxxer_hits": 1,
+            "pog_match": 0,
+            "tog_em": 0,
+            "tog_em_fixed": 0,
+            "tog_formatted_properly": 0
+        },
+        "metrics": {
+            "TIME": 2.318354368209839,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0.0,
+            "LLM_CALLS": 1,
+            "LLM_INPUTS": 394,
+            "LLM_OUTPUTS": 136,
+            "LLM_TIME": 2.318326711654663
+        }
+    },
+    {
+        "question": "What were the names of the three ships by Columbus?",
+        "csv_answer": "Ni\u00f1a\nPinta\nSanta Mar\u00eda",
+        "results": {
+            "tp": 1,
+            "fp": 2,
+            "fn": 2,
+            "exact_match": false,
+            "hits_at_1": 1,
+            "hits": 1,
+            "lax_hits": 1,
+            "laxxer_hits": 1,
+            "pog_match": 1,
+            "tog_em": 1,
+            "tog_em_fixed": 1,
+            "tog_formatted_properly": 1
+        },
+        "metrics": {
+            "TIME": 16.428569793701172,
+            "SPARQL_CALLS": 63,
+            "SPARQL_TIME": 0.813601016998291,
+            "LLM_CALLS": 14,
+            "LLM_INPUTS": 8111,
+            "LLM_OUTPUTS": 507,
+            "LLM_TIME": 15.506239652633667
+        }
+    }
+]

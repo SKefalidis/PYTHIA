@@ -1,0 +1,1310 @@
+[
+    {
+        "question": "What is the time zone of Salt Lake City?",
+        "topic_entity": {
+            "http://dbpedia.org/resource/Salt_Lake_City": "salt lake city",
+            "http://dbpedia.org/resource/Time_zone": "time zone"
+        },
+        "topic_entities": {
+            "http://dbpedia.org/resource/Salt_Lake_City": "salt lake city",
+            "http://dbpedia.org/resource/Time_zone": "time zone"
+        }
+    },
+    {
+        "question": "Who killed Caesar?",
+        "topic_entity": {
+            "http://dbpedia.org/resource/Julius_Caesar": "julius caesar"
+        },
+        "topic_entities": {
+            "http://dbpedia.org/resource/Julius_Caesar": "julius caesar"
+        }
+    },
+    {
+        "question": "What is the highest mountain in Germany?",
+        "topic_entity": {
+            "http://dbpedia.org/resource/Germany": "germany"
+        },
+        "topic_entities": {
+            "http://dbpedia.org/resource/Germany": "germany"
+        }
+    },
+    {
+        "question": "Which American presidents were in office during the Vietnam War?",
+        "topic_entity": {
+            "http://dbpedia.org/resource/Vietnam_War": "vietnam war"
+        },
+        "topic_entities": {
+            "http://dbpedia.org/resource/Vietnam_War": "vietnam war"
+        }
+    },
+    {
+        "question": "Butch Otter is the governor of which U.S. state?",
+        "topic_entity": {
+            "http://dbpedia.org/resource/U.S._state": "u.s. state",
+            "http://dbpedia.org/resource/Butch_Otter": "butch otter"
+        },
+        "topic_entities": {
+            "http://dbpedia.org/resource/U.S._state": "u.s. state",
+            "http://dbpedia.org/resource/Butch_Otter": "butch otter"
+        }
+    },
+    {
+        "question": "How many gold medals did Michael Phelps win at the 2008 Olympics?",
+        "topic_entity": {
+            "http://dbpedia.org/resource/Michael_Phelps": "michael phelps",
+            "http://dbpedia.org/resource/2008_Summer_Olympics": "2008 summer olympics"
+        },
+        "topic_entities": {
+            "http://dbpedia.org/resource/Michael_Phelps": "michael phelps",
+            "http://dbpedia.org/resource/2008_Summer_Olympics": "2008 summer olympics"
+        }
+    },
+    {
+        "question": "Which artists were born on the same date as Rachel Stevens?",
+        "topic_entity": {
+            "http://dbpedia.org/resource/Rachel_Stevens": "rachel stevens"
+        },
+        "topic_entities": {
+            "http://dbpedia.org/resource/Rachel_Stevens": "rachel stevens"
+        }
+    },
+    {
+        "question": "What is the profession of Frank Herbert?",
+        "topic_entity": {
+            "http://dbpedia.org/resource/Frank_Herbert": "frank herbert"
+        },
+        "topic_entities": {
+            "http://dbpedia.org/resource/Frank_Herbert": "frank herbert"
+        }
+    },
+    {
+        "question": "Are Taiko some kind of Japanese musical instrument?",
+        "topic_entity": {
+            "http://dbpedia.org/resource/Musical_instrument": "musical instrument",
+            "http://dbpedia.org/resource/Japan": "japan",
+            "http://dbpedia.org/resource/Traditional_Japanese_musical_instruments": "traditional japanese musical instruments"
+        },
+        "topic_entities": {
+            "http://dbpedia.org/resource/Musical_instrument": "musical instrument",
+            "http://dbpedia.org/resource/Japan": "japan",
+            "http://dbpedia.org/resource/Traditional_Japanese_musical_instruments": "traditional japanese musical instruments"
+        }
+    },
+    {
+        "question": "How many seats does the home stadium of FC Porto have?",
+        "topic_entity": {
+            "http://dbpedia.org/resource/FC_Porto": "fc porto"
+        },
+        "topic_entities": {
+            "http://dbpedia.org/resource/FC_Porto": "fc porto"
+        }
+    },
+    {
+        "question": "Which frequent flyer program has the most airlines?",
+        "topic_entity": {
+            "http://dbpedia.org/resource/Frequent-flyer_program": "frequent-flyer program"
+        },
+        "topic_entities": {
+            "http://dbpedia.org/resource/Frequent-flyer_program": "frequent-flyer program"
+        }
+    },
+    {
+        "question": "Which European countries have a constitutional monarchy?",
+        "topic_entity": {
+            "http://dbpedia.org/resource/Constitutional_monarchy": "constitutional monarchy"
+        },
+        "topic_entities": {
+            "http://dbpedia.org/resource/Constitutional_monarchy": "constitutional monarchy"
+        }
+    },
+    {
+        "question": "Which countries have places with more than two caves?",
+        "topic_entity": {},
+        "topic_entities": {}
+    },
+    {
+        "question": "Which airports are located in California, USA?",
+        "topic_entity": {
+            "http://dbpedia.org/resource/United_States": "united states",
+            "http://dbpedia.org/resource/California": "california",
+            "http://dbpedia.org/resource/AirPort": "airport"
+        },
+        "topic_entities": {
+            "http://dbpedia.org/resource/United_States": "united states",
+            "http://dbpedia.org/resource/California": "california",
+            "http://dbpedia.org/resource/AirPort": "airport"
+        }
+    },
+    {
+        "question": "What are the nicknames of San Francisco?",
+        "topic_entity": {
+            "http://dbpedia.org/resource/San_Francisco": "san francisco"
+        },
+        "topic_entities": {
+            "http://dbpedia.org/resource/San_Francisco": "san francisco"
+        }
+    },
+    {
+        "question": "What is Angela Merkel\u2019s birth name?",
+        "topic_entity": {
+            "http://dbpedia.org/resource/Angela_Merkel": "angela merkel"
+        },
+        "topic_entities": {
+            "http://dbpedia.org/resource/Angela_Merkel": "angela merkel"
+        }
+    },
+    {
+        "question": "Who is the mayor of Berlin?",
+        "topic_entity": {
+            "http://dbpedia.org/resource/Berlin": "berlin"
+        },
+        "topic_entities": {
+            "http://dbpedia.org/resource/Berlin": "berlin"
+        }
+    },
+    {
+        "question": "Which countries in the European Union adopted the Euro?",
+        "topic_entity": {
+            "http://dbpedia.org/resource/Euro": "euro",
+            "http://dbpedia.org/resource/European_Union": "european union"
+        },
+        "topic_entities": {
+            "http://dbpedia.org/resource/Euro": "euro",
+            "http://dbpedia.org/resource/European_Union": "european union"
+        }
+    },
+    {
+        "question": "Which software has been published by Mean Hamster Software?",
+        "topic_entity": {
+            "http://dbpedia.org/resource/Mean_Hamster_Software": "mean hamster software"
+        },
+        "topic_entities": {
+            "http://dbpedia.org/resource/Mean_Hamster_Software": "mean hamster software"
+        }
+    },
+    {
+        "question": "Which country was Bill Gates born in?",
+        "topic_entity": {
+            "http://dbpedia.org/resource/Bill_Gates": "bill gates"
+        },
+        "topic_entities": {
+            "http://dbpedia.org/resource/Bill_Gates": "bill gates"
+        }
+    },
+    {
+        "question": "How many grand-children did Jacques Cousteau have?",
+        "topic_entity": {
+            "http://dbpedia.org/resource/Jacques_Cousteau": "jacques cousteau"
+        },
+        "topic_entities": {
+            "http://dbpedia.org/resource/Jacques_Cousteau": "jacques cousteau"
+        }
+    },
+    {
+        "question": "Give me all professional skateboarders from Sweden.",
+        "topic_entity": {
+            "http://dbpedia.org/resource/Sweden": "sweden",
+            "http://dbpedia.org/resource/Skateboarding": "skateboarding"
+        },
+        "topic_entities": {
+            "http://dbpedia.org/resource/Sweden": "sweden",
+            "http://dbpedia.org/resource/Skateboarding": "skateboarding"
+        }
+    },
+    {
+        "question": "Which monarchs of the United Kingdom were married to a German?",
+        "topic_entity": {},
+        "topic_entities": {}
+    },
+    {
+        "question": "Give me all Argentine films.",
+        "topic_entity": {},
+        "topic_entities": {}
+    },
+    {
+        "question": "How did Michael Jackson die?",
+        "topic_entity": {
+            "http://dbpedia.org/resource/Michael_Jackson": "michael jackson"
+        },
+        "topic_entities": {
+            "http://dbpedia.org/resource/Michael_Jackson": "michael jackson"
+        }
+    },
+    {
+        "question": "Which U.S. state has been admitted latest?",
+        "topic_entity": {},
+        "topic_entities": {}
+    },
+    {
+        "question": "Which classes does the Millepede belong to?",
+        "topic_entity": {},
+        "topic_entities": {}
+    },
+    {
+        "question": "Give me the homepage of Forbes.",
+        "topic_entity": {
+            "http://dbpedia.org/resource/Forbes": "forbes"
+        },
+        "topic_entities": {
+            "http://dbpedia.org/resource/Forbes": "forbes"
+        }
+    },
+    {
+        "question": "Who is the husband of Amanda Palmer?",
+        "topic_entity": {
+            "http://dbpedia.org/resource/Amanda_Palmer": "amanda palmer"
+        },
+        "topic_entities": {
+            "http://dbpedia.org/resource/Amanda_Palmer": "amanda palmer"
+        }
+    },
+    {
+        "question": "Who painted The Storm on the Sea of Galilee?",
+        "topic_entity": {
+            "http://dbpedia.org/resource/The_Storm_on_the_Sea_of_Galilee": "the storm on the sea of galilee"
+        },
+        "topic_entities": {
+            "http://dbpedia.org/resource/The_Storm_on_the_Sea_of_Galilee": "the storm on the sea of galilee"
+        }
+    },
+    {
+        "question": "What is the highest place of Karakoram?",
+        "topic_entity": {
+            "http://dbpedia.org/resource/Karakoram": "karakoram"
+        },
+        "topic_entities": {
+            "http://dbpedia.org/resource/Karakoram": "karakoram"
+        }
+    },
+    {
+        "question": "When did Finland join the EU?",
+        "topic_entity": {
+            "http://dbpedia.org/resource/Finland": "finland",
+            "http://dbpedia.org/resource/European_Union": "european union"
+        },
+        "topic_entities": {
+            "http://dbpedia.org/resource/Finland": "finland",
+            "http://dbpedia.org/resource/European_Union": "european union"
+        }
+    },
+    {
+        "question": "Which actors play in Big Bang Theory?",
+        "topic_entity": {
+            "http://dbpedia.org/resource/The_Big_Bang_Theory": "the big bang theory"
+        },
+        "topic_entities": {
+            "http://dbpedia.org/resource/The_Big_Bang_Theory": "the big bang theory"
+        }
+    },
+    {
+        "question": "Which computer scientist won an oscar?",
+        "topic_entity": {
+            "http://dbpedia.org/resource/Computer_scientist": "computer scientist",
+            "http://dbpedia.org/resource/Academy_Awards": "academy awards"
+        },
+        "topic_entities": {
+            "http://dbpedia.org/resource/Computer_scientist": "computer scientist",
+            "http://dbpedia.org/resource/Academy_Awards": "academy awards"
+        }
+    },
+    {
+        "question": "Who wrote Harry Potter?",
+        "topic_entity": {},
+        "topic_entities": {}
+    },
+    {
+        "question": "Give me all writers that won the Nobel Prize in literature.",
+        "topic_entity": {
+            "http://dbpedia.org/resource/Nobel_Prize": "nobel prize",
+            "http://dbpedia.org/resource/Nobel_Prize_in_Literature": "nobel prize in literature"
+        },
+        "topic_entities": {
+            "http://dbpedia.org/resource/Nobel_Prize": "nobel prize",
+            "http://dbpedia.org/resource/Nobel_Prize_in_Literature": "nobel prize in literature"
+        }
+    },
+    {
+        "question": "Give me English actors starring in Lovesick.",
+        "topic_entity": {
+            "http://dbpedia.org/resource/Lovesick_(1983_film)": "lovesick (1983 film)"
+        },
+        "topic_entities": {
+            "http://dbpedia.org/resource/Lovesick_(1983_film)": "lovesick (1983 film)"
+        }
+    },
+    {
+        "question": "What is the nick name of Baghdad?",
+        "topic_entity": {
+            "http://dbpedia.org/resource/Baghdad": "baghdad"
+        },
+        "topic_entities": {
+            "http://dbpedia.org/resource/Baghdad": "baghdad"
+        }
+    },
+    {
+        "question": "In which city was the president of Montenegro born?",
+        "topic_entity": {
+            "http://dbpedia.org/resource/Montenegro": "montenegro"
+        },
+        "topic_entities": {
+            "http://dbpedia.org/resource/Montenegro": "montenegro"
+        }
+    },
+    {
+        "question": "Which U.S. state has the highest population density?",
+        "topic_entity": {
+            "http://dbpedia.org/resource/U.S._state": "u.s. state",
+            "http://dbpedia.org/resource/Population_density": "population density"
+        },
+        "topic_entities": {
+            "http://dbpedia.org/resource/U.S._state": "u.s. state",
+            "http://dbpedia.org/resource/Population_density": "population density"
+        }
+    },
+    {
+        "question": "What is the longest river in China?",
+        "topic_entity": {
+            "http://dbpedia.org/resource/China": "china"
+        },
+        "topic_entities": {
+            "http://dbpedia.org/resource/China": "china"
+        }
+    },
+    {
+        "question": "What is the area code of Berlin?",
+        "topic_entity": {
+            "http://dbpedia.org/resource/Berlin": "berlin"
+        },
+        "topic_entities": {
+            "http://dbpedia.org/resource/Berlin": "berlin"
+        }
+    },
+    {
+        "question": "How many scientists graduated from an Ivy League university?",
+        "topic_entity": {
+            "http://dbpedia.org/resource/Ivy_League": "ivy league"
+        },
+        "topic_entities": {
+            "http://dbpedia.org/resource/Ivy_League": "ivy league"
+        }
+    },
+    {
+        "question": "Which professional surfers were born in Australia?",
+        "topic_entity": {
+            "http://dbpedia.org/resource/Surfing": "surfing",
+            "http://dbpedia.org/resource/Australia": "australia"
+        },
+        "topic_entities": {
+            "http://dbpedia.org/resource/Surfing": "surfing",
+            "http://dbpedia.org/resource/Australia": "australia"
+        }
+    },
+    {
+        "question": "Give me all Dutch parties.",
+        "topic_entity": {},
+        "topic_entities": {}
+    },
+    {
+        "question": "How many moons does Mars have?",
+        "topic_entity": {
+            "http://dbpedia.org/resource/Mars": "mars"
+        },
+        "topic_entities": {
+            "http://dbpedia.org/resource/Mars": "mars"
+        }
+    },
+    {
+        "question": "What is Batman's real name?",
+        "topic_entity": {
+            "http://dbpedia.org/resource/Batman": "batman"
+        },
+        "topic_entities": {
+            "http://dbpedia.org/resource/Batman": "batman"
+        }
+    },
+    {
+        "question": "What is Elon Musk famous for?",
+        "topic_entity": {
+            "http://dbpedia.org/resource/Elon_Musk": "elon musk"
+        },
+        "topic_entities": {
+            "http://dbpedia.org/resource/Elon_Musk": "elon musk"
+        }
+    },
+    {
+        "question": "Who is the author of WikiLeaks?",
+        "topic_entity": {
+            "http://dbpedia.org/resource/WikiLeaks": "wikileaks"
+        },
+        "topic_entities": {
+            "http://dbpedia.org/resource/WikiLeaks": "wikileaks"
+        }
+    },
+    {
+        "question": "Sean Parnell was the governor of which U.S. state?",
+        "topic_entity": {},
+        "topic_entities": {}
+    },
+    {
+        "question": "How many years was the Ford Model T manufactured?",
+        "topic_entity": {
+            "http://dbpedia.org/resource/Ford_Model_T": "ford model t"
+        },
+        "topic_entities": {
+            "http://dbpedia.org/resource/Ford_Model_T": "ford model t"
+        }
+    },
+    {
+        "question": "When was Carlo Giuliani shot?",
+        "topic_entity": {
+            "http://dbpedia.org/resource/Death_of_Carlo_Giuliani": "death of carlo giuliani"
+        },
+        "topic_entities": {
+            "http://dbpedia.org/resource/Death_of_Carlo_Giuliani": "death of carlo giuliani"
+        }
+    },
+    {
+        "question": "Give me all animals that are extinct.",
+        "topic_entity": {},
+        "topic_entities": {}
+    },
+    {
+        "question": "Who was the wife of President Lincoln?",
+        "topic_entity": {
+            "http://dbpedia.org/resource/Abraham_Lincoln": "abraham lincoln"
+        },
+        "topic_entities": {
+            "http://dbpedia.org/resource/Abraham_Lincoln": "abraham lincoln"
+        }
+    },
+    {
+        "question": "How many awards has Bertrand Russell?",
+        "topic_entity": {
+            "http://dbpedia.org/resource/Bertrand_Russell": "bertrand russell"
+        },
+        "topic_entities": {
+            "http://dbpedia.org/resource/Bertrand_Russell": "bertrand russell"
+        }
+    },
+    {
+        "question": "Is Pamela Anderson a vegan?",
+        "topic_entity": {
+            "http://dbpedia.org/resource/Veganism": "veganism",
+            "http://dbpedia.org/resource/Pamela_Anderson": "pamela anderson"
+        },
+        "topic_entities": {
+            "http://dbpedia.org/resource/Veganism": "veganism",
+            "http://dbpedia.org/resource/Pamela_Anderson": "pamela anderson"
+        }
+    },
+    {
+        "question": "Which space probes were sent into orbit around the sun?",
+        "topic_entity": {
+            "http://dbpedia.org/resource/Space_probe": "space probe",
+            "http://dbpedia.org/resource/Sun": "sun"
+        },
+        "topic_entities": {
+            "http://dbpedia.org/resource/Space_probe": "space probe",
+            "http://dbpedia.org/resource/Sun": "sun"
+        }
+    },
+    {
+        "question": "Which German cities have more than 250000 inhabitants?",
+        "topic_entity": {
+            "http://dbpedia.org/resource/Germany": "germany"
+        },
+        "topic_entities": {
+            "http://dbpedia.org/resource/Germany": "germany"
+        }
+    },
+    {
+        "question": "Who is the daughter of Robert Kennedy married to?",
+        "topic_entity": {
+            "http://dbpedia.org/resource/Robert_F._Kennedy": "robert f. kennedy"
+        },
+        "topic_entities": {
+            "http://dbpedia.org/resource/Robert_F._Kennedy": "robert f. kennedy"
+        }
+    },
+    {
+        "question": "How many students does the Free University of Amsterdam have?",
+        "topic_entity": {
+            "http://dbpedia.org/resource/Vrije_Universiteit_Amsterdam": "vrije universiteit amsterdam"
+        },
+        "topic_entities": {
+            "http://dbpedia.org/resource/Vrije_Universiteit_Amsterdam": "vrije universiteit amsterdam"
+        }
+    },
+    {
+        "question": "What is the revenue of IBM?",
+        "topic_entity": {
+            "http://dbpedia.org/resource/IBM": "ibm"
+        },
+        "topic_entities": {
+            "http://dbpedia.org/resource/IBM": "ibm"
+        }
+    },
+    {
+        "question": "How many James Bond movies do exist?",
+        "topic_entity": {
+            "http://dbpedia.org/resource/James_Bond": "james bond"
+        },
+        "topic_entities": {
+            "http://dbpedia.org/resource/James_Bond": "james bond"
+        }
+    },
+    {
+        "question": "Who does the voice of Bart Simpson?",
+        "topic_entity": {
+            "http://dbpedia.org/resource/Bart_Simpson": "bart simpson"
+        },
+        "topic_entities": {
+            "http://dbpedia.org/resource/Bart_Simpson": "bart simpson"
+        }
+    },
+    {
+        "question": "Who was Tom Hanks married to?",
+        "topic_entity": {
+            "http://dbpedia.org/resource/Tom_Hanks": "tom hanks"
+        },
+        "topic_entities": {
+            "http://dbpedia.org/resource/Tom_Hanks": "tom hanks"
+        }
+    },
+    {
+        "question": "Through which countries does the Yenisei river flow?",
+        "topic_entity": {
+            "http://dbpedia.org/resource/Yenisei": "Yenisei"
+        },
+        "topic_entities": {
+            "http://dbpedia.org/resource/Yenisei": "Yenisei"
+        }
+    },
+    {
+        "question": "Give me all cars that are produced in Germany.",
+        "topic_entity": {
+            "http://dbpedia.org/resource/Germany": "germany"
+        },
+        "topic_entities": {
+            "http://dbpedia.org/resource/Germany": "germany"
+        }
+    },
+    {
+        "question": "When did Michael Jackson die?",
+        "topic_entity": {
+            "http://dbpedia.org/resource/Michael_Jackson": "michael jackson"
+        },
+        "topic_entities": {
+            "http://dbpedia.org/resource/Michael_Jackson": "michael jackson"
+        }
+    },
+    {
+        "question": "What is the highest volcano in Africa?",
+        "topic_entity": {
+            "http://dbpedia.org/resource/Volcano": "volcano",
+            "http://dbpedia.org/resource/Africa": "africa"
+        },
+        "topic_entities": {
+            "http://dbpedia.org/resource/Volcano": "volcano",
+            "http://dbpedia.org/resource/Africa": "africa"
+        }
+    },
+    {
+        "question": "Which poet wrote the most books?",
+        "topic_entity": {},
+        "topic_entities": {}
+    },
+    {
+        "question": "Give me all gangsters from the prohibition era.",
+        "topic_entity": {},
+        "topic_entities": {}
+    },
+    {
+        "question": "Give me all spacecrafts that flew to Mars.",
+        "topic_entity": {
+            "http://dbpedia.org/resource/Mars": "mars",
+            "http://dbpedia.org/resource/Spacecraft": "spacecraft"
+        },
+        "topic_entities": {
+            "http://dbpedia.org/resource/Mars": "mars",
+            "http://dbpedia.org/resource/Spacecraft": "spacecraft"
+        }
+    },
+    {
+        "question": "Show me all Czech movies.",
+        "topic_entity": {
+            "http://dbpedia.org/resource/Cinema_of_the_Czech_Republic": "cinema of the czech republic"
+        },
+        "topic_entities": {
+            "http://dbpedia.org/resource/Cinema_of_the_Czech_Republic": "cinema of the czech republic"
+        }
+    },
+    {
+        "question": "Give me all taikonauts.",
+        "topic_entity": {
+            "http://dbpedia.org/resource/Vaikuntha": "vaikuntha"
+        },
+        "topic_entities": {
+            "http://dbpedia.org/resource/Vaikuntha": "vaikuntha"
+        }
+    },
+    {
+        "question": "Which countries have more than ten volcanoes?",
+        "topic_entity": {
+            "http://dbpedia.org/resource/Volcano": "volcano"
+        },
+        "topic_entities": {
+            "http://dbpedia.org/resource/Volcano": "volcano"
+        }
+    },
+    {
+        "question": "Give me all movies with Tom Cruise.",
+        "topic_entity": {
+            "http://dbpedia.org/resource/Tom_Cruise": "tom cruise"
+        },
+        "topic_entities": {
+            "http://dbpedia.org/resource/Tom_Cruise": "tom cruise"
+        }
+    },
+    {
+        "question": "When did Dracula's creator die?",
+        "topic_entity": {
+            "http://dbpedia.org/resource/Count_Dracula": "count dracula"
+        },
+        "topic_entities": {
+            "http://dbpedia.org/resource/Count_Dracula": "count dracula"
+        }
+    },
+    {
+        "question": "Who created English Wikipedia?",
+        "topic_entity": {},
+        "topic_entities": {}
+    },
+    {
+        "question": "Give me all female German chancellors.",
+        "topic_entity": {},
+        "topic_entities": {}
+    },
+    {
+        "question": "Who owns Aldi?",
+        "topic_entity": {
+            "http://dbpedia.org/resource/Aldi": "aldi"
+        },
+        "topic_entities": {
+            "http://dbpedia.org/resource/Aldi": "aldi"
+        }
+    },
+    {
+        "question": "Which books were written by Danielle Steel?",
+        "topic_entity": {
+            "http://dbpedia.org/resource/Danielle_Steel": "danielle steel"
+        },
+        "topic_entities": {
+            "http://dbpedia.org/resource/Danielle_Steel": "danielle steel"
+        }
+    },
+    {
+        "question": "Who was influenced by Socrates?",
+        "topic_entity": {
+            "http://dbpedia.org/resource/Socrates": "socrates"
+        },
+        "topic_entities": {
+            "http://dbpedia.org/resource/Socrates": "socrates"
+        }
+    },
+    {
+        "question": "How deep is Lake Chiemsee?",
+        "topic_entity": {
+            "http://dbpedia.org/resource/Chiemsee": "chiemsee"
+        },
+        "topic_entities": {
+            "http://dbpedia.org/resource/Chiemsee": "chiemsee"
+        }
+    },
+    {
+        "question": "Which companies work in the aerospace industry as well as in medicine?",
+        "topic_entity": {
+            "http://dbpedia.org/resource/Aerospace": "aerospace",
+            "http://dbpedia.org/resource/Medicine": "medicine"
+        },
+        "topic_entities": {
+            "http://dbpedia.org/resource/Aerospace": "aerospace",
+            "http://dbpedia.org/resource/Medicine": "medicine"
+        }
+    },
+    {
+        "question": "Which professional surfers were born on the Philippines?",
+        "topic_entity": {
+            "http://dbpedia.org/resource/Surfing": "surfing",
+            "http://dbpedia.org/resource/Philippines": "philippines"
+        },
+        "topic_entities": {
+            "http://dbpedia.org/resource/Surfing": "surfing",
+            "http://dbpedia.org/resource/Philippines": "philippines"
+        }
+    },
+    {
+        "question": "Who were the parents of Queen Victoria?",
+        "topic_entity": {
+            "http://dbpedia.org/resource/Queen_Victoria": "queen victoria"
+        },
+        "topic_entities": {
+            "http://dbpedia.org/resource/Queen_Victoria": "queen victoria"
+        }
+    },
+    {
+        "question": "Are there any castles in the United States?",
+        "topic_entity": {
+            "http://dbpedia.org/resource/United_States": "united states",
+            "http://dbpedia.org/resource/Castle": "castle"
+        },
+        "topic_entities": {
+            "http://dbpedia.org/resource/United_States": "united states",
+            "http://dbpedia.org/resource/Castle": "castle"
+        }
+    },
+    {
+        "question": "Which languages are spoken in Estonia?",
+        "topic_entity": {
+            "http://dbpedia.org/resource/Estonia": "estonia"
+        },
+        "topic_entities": {
+            "http://dbpedia.org/resource/Estonia": "estonia"
+        }
+    },
+    {
+        "question": "Give me a list of all critically endangered birds.",
+        "topic_entity": {
+            "http://dbpedia.org/resource/List_of_critically_endangered_birds": "list of critically endangered birds",
+            "http://dbpedia.org/resource/Critically_endangered": "critically endangered"
+        },
+        "topic_entities": {
+            "http://dbpedia.org/resource/List_of_critically_endangered_birds": "list of critically endangered birds",
+            "http://dbpedia.org/resource/Critically_endangered": "critically endangered"
+        }
+    },
+    {
+        "question": "Which countries are connected by the Rhine?",
+        "topic_entity": {
+            "http://dbpedia.org/resource/Rhine": "rhine"
+        },
+        "topic_entities": {
+            "http://dbpedia.org/resource/Rhine": "rhine"
+        }
+    },
+    {
+        "question": "Who was the father of Queen Elizabeth II?",
+        "topic_entity": {
+            "http://dbpedia.org/resource/Elizabeth_II": "elizabeth ii"
+        },
+        "topic_entities": {
+            "http://dbpedia.org/resource/Elizabeth_II": "elizabeth ii"
+        }
+    },
+    {
+        "question": "Give me all chemical elements.",
+        "topic_entity": {
+            "http://dbpedia.org/resource/Chemical_element": "chemical element"
+        },
+        "topic_entities": {
+            "http://dbpedia.org/resource/Chemical_element": "chemical element"
+        }
+    },
+    {
+        "question": "Give me all American presidents of the last 20 years.",
+        "topic_entity": {},
+        "topic_entities": {}
+    },
+    {
+        "question": "When is the movie Worst Case Scenario going to be in cinemas in the Netherlands?",
+        "topic_entity": {
+            "http://dbpedia.org/resource/Worst_Case_Scenario_(cancelled_film)": "Worst Case Scenario (cancelled film)",
+            "http://dbpedia.org/resource/Netherlands": "netherlands"
+        },
+        "topic_entities": {
+            "http://dbpedia.org/resource/Worst_Case_Scenario_(cancelled_film)": "Worst Case Scenario (cancelled film)",
+            "http://dbpedia.org/resource/Netherlands": "netherlands"
+        }
+    },
+    {
+        "question": "Whom did Lance Bass marry?",
+        "topic_entity": {
+            "http://dbpedia.org/resource/Lance_Bass": "lance bass"
+        },
+        "topic_entities": {
+            "http://dbpedia.org/resource/Lance_Bass": "lance bass"
+        }
+    },
+    {
+        "question": "Which subsidiary of TUI Travel serves both Glasgow and Dublin?",
+        "topic_entity": {
+            "http://dbpedia.org/resource/TUI_Travel": "tui travel",
+            "http://dbpedia.org/resource/Dublin": "dublin",
+            "http://dbpedia.org/resource/Glasgow": "glasgow"
+        },
+        "topic_entities": {
+            "http://dbpedia.org/resource/TUI_Travel": "tui travel",
+            "http://dbpedia.org/resource/Dublin": "dublin",
+            "http://dbpedia.org/resource/Glasgow": "glasgow"
+        }
+    },
+    {
+        "question": "What languages are spoken in Pakistan?",
+        "topic_entity": {
+            "http://dbpedia.org/resource/Pakistan": "pakistan"
+        },
+        "topic_entities": {
+            "http://dbpedia.org/resource/Pakistan": "pakistan"
+        }
+    },
+    {
+        "question": "Who is the daughter of Bill Clinton married to?",
+        "topic_entity": {
+            "http://dbpedia.org/resource/Bill_Clinton": "bill clinton"
+        },
+        "topic_entities": {
+            "http://dbpedia.org/resource/Bill_Clinton": "bill clinton"
+        }
+    },
+    {
+        "question": "Who was on the Apollo 11 mission?",
+        "topic_entity": {
+            "http://dbpedia.org/resource/Apollo_11": "apollo 11"
+        },
+        "topic_entities": {
+            "http://dbpedia.org/resource/Apollo_11": "apollo 11"
+        }
+    },
+    {
+        "question": "What is the wavelength of Indigo?",
+        "topic_entity": {
+            "http://dbpedia.org/resource/IndiGo": "indigo",
+            "http://dbpedia.org/resource/WaveLength": "WaveLength"
+        },
+        "topic_entities": {
+            "http://dbpedia.org/resource/IndiGo": "indigo",
+            "http://dbpedia.org/resource/WaveLength": "WaveLength"
+        }
+    },
+    {
+        "question": "Give me all B-sides of the Ramones.",
+        "topic_entity": {
+            "http://dbpedia.org/resource/Ramones": "ramones"
+        },
+        "topic_entities": {
+            "http://dbpedia.org/resource/Ramones": "ramones"
+        }
+    },
+    {
+        "question": "Who was called Scarface?",
+        "topic_entity": {},
+        "topic_entities": {}
+    },
+    {
+        "question": "Which rivers flow into the North Sea?",
+        "topic_entity": {
+            "http://dbpedia.org/resource/North_Sea": "north sea"
+        },
+        "topic_entities": {
+            "http://dbpedia.org/resource/North_Sea": "north sea"
+        }
+    },
+    {
+        "question": "Where is Fort Knox located?",
+        "topic_entity": {
+            "http://dbpedia.org/resource/Fort_Knox": "fort knox"
+        },
+        "topic_entities": {
+            "http://dbpedia.org/resource/Fort_Knox": "fort knox"
+        }
+    },
+    {
+        "question": "Which daughters of British earls died at the same place they were born at?",
+        "topic_entity": {},
+        "topic_entities": {}
+    },
+    {
+        "question": "How many emperors did China have?",
+        "topic_entity": {
+            "http://dbpedia.org/resource/China": "china",
+            "http://dbpedia.org/resource/Emperor": "emperor"
+        },
+        "topic_entities": {
+            "http://dbpedia.org/resource/China": "china",
+            "http://dbpedia.org/resource/Emperor": "emperor"
+        }
+    },
+    {
+        "question": "What are the names of the Teenage Mutant Ninja Turtles?",
+        "topic_entity": {
+            "http://dbpedia.org/resource/Teenage_Mutant_Ninja_Turtles": "teenage mutant ninja turtles"
+        },
+        "topic_entities": {
+            "http://dbpedia.org/resource/Teenage_Mutant_Ninja_Turtles": "teenage mutant ninja turtles"
+        }
+    },
+    {
+        "question": "Where does Piccadilly start?",
+        "topic_entity": {
+            "http://dbpedia.org/resource/Piccadilly": "piccadilly"
+        },
+        "topic_entities": {
+            "http://dbpedia.org/resource/Piccadilly": "piccadilly"
+        }
+    },
+    {
+        "question": "What is the name of the university where Obama's wife studied?",
+        "topic_entity": {},
+        "topic_entities": {}
+    },
+    {
+        "question": "When did Paraguay proclaim its independence?",
+        "topic_entity": {
+            "http://dbpedia.org/resource/Paraguay": "paraguay"
+        },
+        "topic_entities": {
+            "http://dbpedia.org/resource/Paraguay": "paraguay"
+        }
+    },
+    {
+        "question": "How short is the shortest active NBA player?",
+        "topic_entity": {
+            "http://dbpedia.org/resource/National_Basketball_Association": "national basketball association"
+        },
+        "topic_entities": {
+            "http://dbpedia.org/resource/National_Basketball_Association": "national basketball association"
+        }
+    },
+    {
+        "question": "Where did Abraham Lincoln die?",
+        "topic_entity": {
+            "http://dbpedia.org/resource/Abraham_Lincoln": "abraham lincoln"
+        },
+        "topic_entities": {
+            "http://dbpedia.org/resource/Abraham_Lincoln": "abraham lincoln"
+        }
+    },
+    {
+        "question": "When was Jack Wolfskin founded?",
+        "topic_entity": {
+            "http://dbpedia.org/resource/Jack_Wolfskin": "jack wolfskin"
+        },
+        "topic_entities": {
+            "http://dbpedia.org/resource/Jack_Wolfskin": "jack wolfskin"
+        }
+    },
+    {
+        "question": "In which city is the headquarter of Air China?",
+        "topic_entity": {
+            "http://dbpedia.org/resource/Air_China": "air china"
+        },
+        "topic_entities": {
+            "http://dbpedia.org/resource/Air_China": "air china"
+        }
+    },
+    {
+        "question": "What is the founding year of the brewery that produces Pilsner Urquell?",
+        "topic_entity": {
+            "http://dbpedia.org/resource/Pilsner_Urquell": "pilsner urquell"
+        },
+        "topic_entities": {
+            "http://dbpedia.org/resource/Pilsner_Urquell": "pilsner urquell"
+        }
+    },
+    {
+        "question": "When did the Boston Tea Party take place?",
+        "topic_entity": {
+            "http://dbpedia.org/resource/Boston_Tea_Party": "boston tea party"
+        },
+        "topic_entities": {
+            "http://dbpedia.org/resource/Boston_Tea_Party": "boston tea party"
+        }
+    },
+    {
+        "question": "Which animals are critically endangered?",
+        "topic_entity": {
+            "http://dbpedia.org/resource/Critically_endangered": "critically endangered"
+        },
+        "topic_entities": {
+            "http://dbpedia.org/resource/Critically_endangered": "critically endangered"
+        }
+    },
+    {
+        "question": "Which politicians were married to a German?",
+        "topic_entity": {},
+        "topic_entities": {}
+    },
+    {
+        "question": "How big is the earth's diameter?",
+        "topic_entity": {},
+        "topic_entities": {}
+    },
+    {
+        "question": "Is the wife of President Obama called Michelle?",
+        "topic_entity": {
+            "http://dbpedia.org/resource/Barack_Obama": "barack obama"
+        },
+        "topic_entities": {
+            "http://dbpedia.org/resource/Barack_Obama": "barack obama"
+        }
+    },
+    {
+        "question": "Which U.S. state has the abbreviation MN?",
+        "topic_entity": {
+            "http://dbpedia.org/resource/U.S._state": "u.s. state"
+        },
+        "topic_entities": {
+            "http://dbpedia.org/resource/U.S._state": "u.s. state"
+        }
+    },
+    {
+        "question": "When did Muhammad die?",
+        "topic_entity": {
+            "http://dbpedia.org/resource/Muhammad": "muhammad"
+        },
+        "topic_entities": {
+            "http://dbpedia.org/resource/Muhammad": "muhammad"
+        }
+    },
+    {
+        "question": "What is the atmosphere of the Moon composed of?",
+        "topic_entity": {
+            "http://dbpedia.org/resource/Moon": "moon"
+        },
+        "topic_entities": {
+            "http://dbpedia.org/resource/Moon": "moon"
+        }
+    },
+    {
+        "question": "Who is the governor of Texas?",
+        "topic_entity": {},
+        "topic_entities": {}
+    },
+    {
+        "question": "Which movies did Kurosawa direct?",
+        "topic_entity": {
+            "http://dbpedia.org/resource/Akira_Kurosawa": "akira kurosawa"
+        },
+        "topic_entities": {
+            "http://dbpedia.org/resource/Akira_Kurosawa": "akira kurosawa"
+        }
+    },
+    {
+        "question": "What was the name of the famous battle in 1836 in San Antonio?",
+        "topic_entity": {
+            "http://dbpedia.org/resource/San_Antonio": "san antonio"
+        },
+        "topic_entities": {
+            "http://dbpedia.org/resource/San_Antonio": "san antonio"
+        }
+    },
+    {
+        "question": "Give me the official websites of actors of the television show Charmed.",
+        "topic_entity": {
+            "http://dbpedia.org/resource/Charmed": "charmed"
+        },
+        "topic_entities": {
+            "http://dbpedia.org/resource/Charmed": "charmed"
+        }
+    },
+    {
+        "question": "How many calories does a baguette have?",
+        "topic_entity": {
+            "http://dbpedia.org/resource/Baguette": "baguette",
+            "http://dbpedia.org/resource/Calorie": "calorie"
+        },
+        "topic_entities": {
+            "http://dbpedia.org/resource/Baguette": "baguette",
+            "http://dbpedia.org/resource/Calorie": "calorie"
+        }
+    },
+    {
+        "question": "Give me all libraries established before 1400.",
+        "topic_entity": {},
+        "topic_entities": {}
+    },
+    {
+        "question": "Give me all Frisian islands that belong to the Netherlands.",
+        "topic_entity": {
+            "http://dbpedia.org/resource/Netherlands": "netherlands",
+            "http://dbpedia.org/resource/Friesland": "friesland"
+        },
+        "topic_entities": {
+            "http://dbpedia.org/resource/Netherlands": "netherlands",
+            "http://dbpedia.org/resource/Friesland": "friesland"
+        }
+    },
+    {
+        "question": "Which museum exhibits The Scream by Munch?",
+        "topic_entity": {
+            "http://dbpedia.org/resource/The_Scream": "the scream"
+        },
+        "topic_entities": {
+            "http://dbpedia.org/resource/The_Scream": "the scream"
+        }
+    },
+    {
+        "question": "When was the De Beers company founded?",
+        "topic_entity": {
+            "http://dbpedia.org/resource/De_Beers": "de beers"
+        },
+        "topic_entities": {
+            "http://dbpedia.org/resource/De_Beers": "de beers"
+        }
+    },
+    {
+        "question": "Who became president after JFK died?",
+        "topic_entity": {
+            "http://dbpedia.org/resource/John_F._Kennedy": "john f. kennedy"
+        },
+        "topic_entities": {
+            "http://dbpedia.org/resource/John_F._Kennedy": "john f. kennedy"
+        }
+    },
+    {
+        "question": "Who are the parents of the wife of Juan Carlos I?",
+        "topic_entity": {
+            "http://dbpedia.org/resource/Juan_Carlos_I": "Juan Carlos I"
+        },
+        "topic_entities": {
+            "http://dbpedia.org/resource/Juan_Carlos_I": "Juan Carlos I"
+        }
+    },
+    {
+        "question": "Who is the novelist of the work a song of ice and fire?",
+        "topic_entity": {},
+        "topic_entities": {}
+    },
+    {
+        "question": "In which studio did the Beatles record their first album?",
+        "topic_entity": {
+            "http://dbpedia.org/resource/The_Beatles": "the beatles"
+        },
+        "topic_entities": {
+            "http://dbpedia.org/resource/The_Beatles": "the beatles"
+        }
+    },
+    {
+        "question": "Which beer brewing companies are located in North-Rhine Westphalia?",
+        "topic_entity": {
+            "http://dbpedia.org/resource/North_Rhine-Westphalia": "north rhine-westphalia",
+            "http://dbpedia.org/resource/Brewing": "brewing"
+        },
+        "topic_entities": {
+            "http://dbpedia.org/resource/North_Rhine-Westphalia": "north rhine-westphalia",
+            "http://dbpedia.org/resource/Brewing": "brewing"
+        }
+    },
+    {
+        "question": "When did princess Diana die?",
+        "topic_entity": {},
+        "topic_entities": {}
+    },
+    {
+        "question": "Who founded Intel?",
+        "topic_entity": {
+            "http://dbpedia.org/resource/Intel": "intel"
+        },
+        "topic_entities": {
+            "http://dbpedia.org/resource/Intel": "intel"
+        }
+    },
+    {
+        "question": "Who is the youngest player in the Premier League?",
+        "topic_entity": {
+            "http://dbpedia.org/resource/Premier_League": "premier league"
+        },
+        "topic_entities": {
+            "http://dbpedia.org/resource/Premier_League": "premier league"
+        }
+    },
+    {
+        "question": "Which instruments does Cat Stevens play?",
+        "topic_entity": {
+            "http://dbpedia.org/resource/Cat_Stevens": "cat stevens"
+        },
+        "topic_entities": {
+            "http://dbpedia.org/resource/Cat_Stevens": "cat stevens"
+        }
+    },
+    {
+        "question": "How many rivers and lakes are in South Carolina?",
+        "topic_entity": {
+            "http://dbpedia.org/resource/South_Carolina": "south carolina"
+        },
+        "topic_entities": {
+            "http://dbpedia.org/resource/South_Carolina": "south carolina"
+        }
+    },
+    {
+        "question": "Who was called Rodzilla?",
+        "topic_entity": {},
+        "topic_entities": {}
+    },
+    {
+        "question": "Give me the capitals of all countries in Africa.",
+        "topic_entity": {
+            "http://dbpedia.org/resource/Africa": "africa"
+        },
+        "topic_entities": {
+            "http://dbpedia.org/resource/Africa": "africa"
+        }
+    },
+    {
+        "question": "Which bridges are of the same type as the Manhattan Bridge?",
+        "topic_entity": {
+            "http://dbpedia.org/resource/Manhattan_Bridge": "manhattan bridge"
+        },
+        "topic_entities": {
+            "http://dbpedia.org/resource/Manhattan_Bridge": "manhattan bridge"
+        }
+    },
+    {
+        "question": "How many companies were founded by the founder of Facebook?",
+        "topic_entity": {
+            "http://dbpedia.org/resource/Facebook": "facebook"
+        },
+        "topic_entities": {
+            "http://dbpedia.org/resource/Facebook": "facebook"
+        }
+    },
+    {
+        "question": "Show me hiking trails in the Grand Canyon where there's no danger of flash floods.",
+        "topic_entity": {
+            "http://dbpedia.org/resource/Grand_Canyon": "grand canyon",
+            "http://dbpedia.org/resource/Flash_flood": "flash flood"
+        },
+        "topic_entities": {
+            "http://dbpedia.org/resource/Grand_Canyon": "grand canyon",
+            "http://dbpedia.org/resource/Flash_flood": "flash flood"
+        }
+    },
+    {
+        "question": "Which book has the most pages?",
+        "topic_entity": {},
+        "topic_entities": {}
+    },
+    {
+        "question": "What is the largest state in the United States?",
+        "topic_entity": {
+            "http://dbpedia.org/resource/United_States": "united states"
+        },
+        "topic_entities": {
+            "http://dbpedia.org/resource/United_States": "united states"
+        }
+    },
+    {
+        "question": "Give me the websites of companies with more than 500000 employees.",
+        "topic_entity": {},
+        "topic_entities": {}
+    },
+    {
+        "question": "What were the names of the three ships by Columbus?",
+        "topic_entity": {
+            "http://dbpedia.org/resource/Christopher_Columbus": "christopher columbus"
+        },
+        "topic_entities": {
+            "http://dbpedia.org/resource/Christopher_Columbus": "christopher columbus"
+        }
+    }
+]

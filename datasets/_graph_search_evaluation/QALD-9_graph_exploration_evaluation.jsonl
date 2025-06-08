@@ -1,0 +1,4683 @@
+[
+    {
+        "question": "What is the time zone of Salt Lake City?",
+        "named_entities": [
+            "http://dbpedia.org/resource/Salt_Lake_City"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://dbpedia.org/ontology/timeZone"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://dbpedia.org/resource/Salt_Lake_City",
+                "?uri"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://dbpedia.org/resource/Salt_Lake_City",
+                    "http://dbpedia.org/ontology/timeZone",
+                    "?uri"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Who killed Caesar?",
+        "named_entities": [
+            "http://dbpedia.org/resource/Category:Assassins_of_Julius_Caesar"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://purl.org/dc/terms/subject"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://dbpedia.org/resource/Category:Assassins_of_Julius_Caesar",
+                "?uri"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://dbpedia.org/resource/Category:Assassins_of_Julius_Caesar",
+                    "~http://purl.org/dc/terms/subject",
+                    "?uri"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What is the highest mountain in Germany?",
+        "named_entities": [
+            "http://dbpedia.org/resource/Germany"
+        ],
+        "classes": [
+            "http://dbpedia.org/ontology/Mountain"
+        ],
+        "predicates": [
+            "http://dbpedia.org/ontology/locatedInArea",
+            "http://dbpedia.org/ontology/elevation",
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        ],
+        "known_to_known_paths": [
+            [
+                "http://dbpedia.org/ontology/Mountain",
+                "?uri",
+                "http://dbpedia.org/resource/Germany"
+            ]
+        ],
+        "known_to_known_paths_triples": [
+            [
+                [
+                    "http://dbpedia.org/ontology/Mountain",
+                    "~http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+                    "?uri"
+                ],
+                [
+                    "?uri",
+                    "http://dbpedia.org/ontology/locatedInArea",
+                    "http://dbpedia.org/resource/Germany"
+                ]
+            ]
+        ],
+        "known_to_unknown_paths": [
+            [
+                "http://dbpedia.org/ontology/Mountain",
+                "?uri",
+                "?elevation"
+            ],
+            [
+                "http://dbpedia.org/resource/Germany",
+                "?uri",
+                "?elevation"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://dbpedia.org/ontology/Mountain",
+                    "~http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+                    "?uri"
+                ],
+                [
+                    "?uri",
+                    "http://dbpedia.org/ontology/elevation",
+                    "?elevation"
+                ]
+            ],
+            [
+                [
+                    "http://dbpedia.org/resource/Germany",
+                    "~http://dbpedia.org/ontology/locatedInArea",
+                    "?uri"
+                ],
+                [
+                    "?uri",
+                    "http://dbpedia.org/ontology/elevation",
+                    "?elevation"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Which American presidents were in office during the Vietnam War?",
+        "named_entities": [
+            "http://dbpedia.org/resource/Category:Presidents_of_the_United_States",
+            "http://dbpedia.org/resource/Vietnam_War"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://purl.org/dc/terms/subject",
+            "http://dbpedia.org/ontology/commander"
+        ],
+        "known_to_known_paths": [
+            [
+                "http://dbpedia.org/resource/Category:Presidents_of_the_United_States",
+                "?uri",
+                "http://dbpedia.org/resource/Vietnam_War"
+            ]
+        ],
+        "known_to_known_paths_triples": [
+            [
+                [
+                    "http://dbpedia.org/resource/Category:Presidents_of_the_United_States",
+                    "~http://purl.org/dc/terms/subject",
+                    "?uri"
+                ],
+                [
+                    "?uri",
+                    "~http://dbpedia.org/ontology/commander",
+                    "http://dbpedia.org/resource/Vietnam_War"
+                ]
+            ]
+        ],
+        "known_to_unknown_paths": [],
+        "known_to_unknown_paths_triples": []
+    },
+    {
+        "question": "Butch Otter is the governor of which U.S. state?",
+        "named_entities": [
+            "http://dbpedia.org/resource/Butch_Otter"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://dbpedia.org/property/governor",
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        ],
+        "known_to_known_paths": [
+            [
+                "http://dbpedia.org/class/yago/WikicatStatesOfTheUnitedStates",
+                "?uri",
+                "http://dbpedia.org/resource/Butch_Otter"
+            ]
+        ],
+        "known_to_known_paths_triples": [
+            [
+                [
+                    "http://dbpedia.org/class/yago/WikicatStatesOfTheUnitedStates",
+                    "~http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+                    "?uri"
+                ],
+                [
+                    "?uri",
+                    "http://dbpedia.org/property/governor",
+                    "http://dbpedia.org/resource/Butch_Otter"
+                ]
+            ]
+        ],
+        "known_to_unknown_paths": [],
+        "known_to_unknown_paths_triples": []
+    },
+    {
+        "question": "How many gold medals did Michael Phelps win at the 2008 Olympics?",
+        "named_entities": [
+            "http://dbpedia.org/resource/Michael_Phelps"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://dbpedia.org/ontology/goldMedalist"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://dbpedia.org/resource/Michael_Phelps",
+                "?sub"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://dbpedia.org/resource/Michael_Phelps",
+                    "~http://dbpedia.org/ontology/goldMedalist",
+                    "?sub"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Which artists were born on the same date as Rachel Stevens?",
+        "named_entities": [
+            "http://dbpedia.org/resource/Rachel_Stevens"
+        ],
+        "classes": [
+            "http://dbpedia.org/ontology/Artist"
+        ],
+        "predicates": [
+            "http://dbpedia.org/ontology/birthDate",
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        ],
+        "known_to_known_paths": [
+            [
+                "http://dbpedia.org/ontology/Artist",
+                "?uri",
+                "?birthdate",
+                "http://dbpedia.org/resource/Rachel_Stevens"
+            ]
+        ],
+        "known_to_known_paths_triples": [
+            [
+                [
+                    "http://dbpedia.org/ontology/Artist",
+                    "~http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+                    "?uri"
+                ],
+                [
+                    "?uri",
+                    "http://dbpedia.org/ontology/birthDate",
+                    "?birthdate"
+                ],
+                [
+                    "?birthdate",
+                    "~http://dbpedia.org/ontology/birthDate",
+                    "http://dbpedia.org/resource/Rachel_Stevens"
+                ]
+            ]
+        ],
+        "known_to_unknown_paths": [],
+        "known_to_unknown_paths_triples": []
+    },
+    {
+        "question": "What is the profession of Frank Herbert?",
+        "named_entities": [
+            "http://dbpedia.org/resource/Frank_Herbert"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://dbpedia.org/property/occupation"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://dbpedia.org/resource/Frank_Herbert",
+                "?string"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://dbpedia.org/resource/Frank_Herbert",
+                    "http://dbpedia.org/property/occupation",
+                    "?string"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Are Taiko some kind of Japanese musical instrument?",
+        "named_entities": [
+            "http://dbpedia.org/resource/Taiko"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        ],
+        "known_to_known_paths": [
+            [
+                "http://dbpedia.org/resource/Taiko",
+                "http://dbpedia.org/class/yago/WikicatJapaneseMusicalInstruments"
+            ]
+        ],
+        "known_to_known_paths_triples": [
+            [
+                [
+                    "http://dbpedia.org/resource/Taiko",
+                    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+                    "http://dbpedia.org/class/yago/WikicatJapaneseMusicalInstruments"
+                ]
+            ]
+        ],
+        "known_to_unknown_paths": [],
+        "known_to_unknown_paths_triples": []
+    },
+    {
+        "question": "Which frequent flyer program has the most airlines?",
+        "named_entities": [],
+        "classes": [
+            "http://dbpedia.org/ontology/Airline"
+        ],
+        "predicates": [
+            "http://dbpedia.org/property/frequentFlyer",
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://dbpedia.org/ontology/Airline",
+                "?airline",
+                "?uri"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://dbpedia.org/ontology/Airline",
+                    "~http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+                    "?airline"
+                ],
+                [
+                    "?airline",
+                    "http://dbpedia.org/property/frequentFlyer",
+                    "?uri"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Which European countries have a constitutional monarchy?",
+        "named_entities": [
+            "http://dbpedia.org/resource/Constitutional_monarchy",
+            "http://dbpedia.org/resource/Category:Countries_in_Europe"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://dbpedia.org/ontology/governmentType",
+            "http://purl.org/dc/terms/subject"
+        ],
+        "known_to_known_paths": [
+            [
+                "http://dbpedia.org/resource/Category:Countries_in_Europe",
+                "?uri",
+                "http://dbpedia.org/resource/Constitutional_monarchy"
+            ]
+        ],
+        "known_to_known_paths_triples": [
+            [
+                [
+                    "http://dbpedia.org/resource/Category:Countries_in_Europe",
+                    "~http://purl.org/dc/terms/subject",
+                    "?uri"
+                ],
+                [
+                    "?uri",
+                    "http://dbpedia.org/ontology/governmentType",
+                    "http://dbpedia.org/resource/Constitutional_monarchy"
+                ]
+            ]
+        ],
+        "known_to_unknown_paths": [],
+        "known_to_unknown_paths_triples": []
+    },
+    {
+        "question": "Which countries have places with more than two caves?",
+        "named_entities": [],
+        "classes": [
+            "http://dbpedia.org/ontology/Cave",
+            "http://dbpedia.org/ontology/Country"
+        ],
+        "predicates": [
+            "http://dbpedia.org/ontology/location",
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        ],
+        "known_to_known_paths": [
+            [
+                "http://dbpedia.org/ontology/Cave",
+                "?cave",
+                "?uri",
+                "http://dbpedia.org/ontology/Country"
+            ]
+        ],
+        "known_to_known_paths_triples": [
+            [
+                [
+                    "http://dbpedia.org/ontology/Cave",
+                    "~http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+                    "?cave"
+                ],
+                [
+                    "?cave",
+                    "http://dbpedia.org/ontology/location",
+                    "?uri"
+                ],
+                [
+                    "?uri",
+                    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+                    "http://dbpedia.org/ontology/Country"
+                ]
+            ]
+        ],
+        "known_to_unknown_paths": [],
+        "known_to_unknown_paths_triples": []
+    },
+    {
+        "question": "What are the nicknames of San Francisco?",
+        "named_entities": [
+            "http://dbpedia.org/resource/San_Francisco"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://xmlns.com/foaf/0.1/nick"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://dbpedia.org/resource/San_Francisco",
+                "?string"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://dbpedia.org/resource/San_Francisco",
+                    "http://xmlns.com/foaf/0.1/nick",
+                    "?string"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What is Angela Merkel’s birth name?",
+        "named_entities": [
+            "http://dbpedia.org/resource/Angela_Merkel"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://dbpedia.org/property/birthName"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://dbpedia.org/resource/Angela_Merkel",
+                "?string"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://dbpedia.org/resource/Angela_Merkel",
+                    "http://dbpedia.org/property/birthName",
+                    "?string"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Who is the mayor of Berlin?",
+        "named_entities": [
+            "http://dbpedia.org/resource/Berlin"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://dbpedia.org/property/leader"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://dbpedia.org/resource/Berlin",
+                "?uri"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://dbpedia.org/resource/Berlin",
+                    "http://dbpedia.org/property/leader",
+                    "?uri"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "How many grand-children did Jacques Cousteau have?",
+        "named_entities": [
+            "http://dbpedia.org/resource/Jacques_Cousteau"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://dbpedia.org/ontology/child"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://dbpedia.org/resource/Jacques_Cousteau",
+                "?x",
+                "?y"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://dbpedia.org/resource/Jacques_Cousteau",
+                    "http://dbpedia.org/ontology/child",
+                    "?x"
+                ],
+                [
+                    "?x",
+                    "http://dbpedia.org/ontology/child",
+                    "?y"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Which monarchs of the United Kingdom were married to a German?",
+        "named_entities": [
+            "http://dbpedia.org/resource/Germany"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://dbpedia.org/ontology/birthPlace",
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+            "http://dbpedia.org/ontology/spouse"
+        ],
+        "known_to_known_paths": [
+            [
+                "http://dbpedia.org/class/yago/WikicatMonarchsOfTheUnitedKingdom",
+                "?uri",
+                "?spouse",
+                "http://dbpedia.org/resource/Germany"
+            ]
+        ],
+        "known_to_known_paths_triples": [
+            [
+                [
+                    "http://dbpedia.org/class/yago/WikicatMonarchsOfTheUnitedKingdom",
+                    "~http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+                    "?uri"
+                ],
+                [
+                    "?uri",
+                    "http://dbpedia.org/ontology/spouse",
+                    "?spouse"
+                ],
+                [
+                    "?spouse",
+                    "http://dbpedia.org/ontology/birthPlace",
+                    "http://dbpedia.org/resource/Germany"
+                ]
+            ]
+        ],
+        "known_to_unknown_paths": [],
+        "known_to_unknown_paths_triples": []
+    },
+    {
+        "question": "How did Michael Jackson die?",
+        "named_entities": [
+            "http://dbpedia.org/resource/Michael_Jackson"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://dbpedia.org/property/deathCause"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://dbpedia.org/resource/Michael_Jackson",
+                "?s"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://dbpedia.org/resource/Michael_Jackson",
+                    "http://dbpedia.org/property/deathCause",
+                    "?s"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Which U.S. state has been admitted latest?",
+        "named_entities": [
+            "http://dbpedia.org/resource/Category:States_of_the_United_States"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://dbpedia.org/property/admittancedate",
+            "http://purl.org/dc/terms/subject"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://dbpedia.org/resource/Category:States_of_the_United_States",
+                "?uri",
+                "?x"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://dbpedia.org/resource/Category:States_of_the_United_States",
+                    "~http://purl.org/dc/terms/subject",
+                    "?uri"
+                ],
+                [
+                    "?uri",
+                    "http://dbpedia.org/property/admittancedate",
+                    "?x"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Which classes does the Millepede belong to?",
+        "named_entities": [
+            "http://dbpedia.org/resource/Millipede"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://dbpedia.org/property/taxon"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://dbpedia.org/resource/Millipede",
+                "?String"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://dbpedia.org/resource/Millipede",
+                    "http://dbpedia.org/property/taxon",
+                    "?String"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Give me the homepage of Forbes.",
+        "named_entities": [
+            "http://dbpedia.org/resource/Forbes"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://xmlns.com/foaf/0.1/homepage"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://dbpedia.org/resource/Forbes",
+                "?string"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://dbpedia.org/resource/Forbes",
+                    "http://xmlns.com/foaf/0.1/homepage",
+                    "?string"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Who is the husband of Amanda Palmer?",
+        "named_entities": [
+            "http://dbpedia.org/resource/Amanda_Palmer"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://dbpedia.org/ontology/spouse"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://dbpedia.org/resource/Amanda_Palmer",
+                "?uri"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://dbpedia.org/resource/Amanda_Palmer",
+                    "~http://dbpedia.org/ontology/spouse",
+                    "?uri"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Who painted The Storm on the Sea of Galilee?",
+        "named_entities": [
+            "http://dbpedia.org/resource/The_Storm_on_the_Sea_of_Galilee"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://dbpedia.org/ontology/author"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://dbpedia.org/resource/The_Storm_on_the_Sea_of_Galilee",
+                "?uri"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://dbpedia.org/resource/The_Storm_on_the_Sea_of_Galilee",
+                    "http://dbpedia.org/ontology/author",
+                    "?uri"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What is the highest place of Karakoram?",
+        "named_entities": [
+            "http://dbpedia.org/resource/Karakoram"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://dbpedia.org/property/highest"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://dbpedia.org/resource/Karakoram",
+                "?uri"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://dbpedia.org/resource/Karakoram",
+                    "http://dbpedia.org/property/highest",
+                    "?uri"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "When did Finland join the EU?",
+        "named_entities": [
+            "http://dbpedia.org/resource/Finland"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://dbpedia.org/property/accessioneudate"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://dbpedia.org/resource/Finland",
+                "?date"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://dbpedia.org/resource/Finland",
+                    "http://dbpedia.org/property/accessioneudate",
+                    "?date"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Which actors play in Big Bang Theory?",
+        "named_entities": [
+            "http://dbpedia.org/resource/The_Big_Bang_Theory"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://dbpedia.org/ontology/starring"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://dbpedia.org/resource/The_Big_Bang_Theory",
+                "?uri"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://dbpedia.org/resource/The_Big_Bang_Theory",
+                    "http://dbpedia.org/ontology/starring",
+                    "?uri"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Which computer scientist won an oscar?",
+        "named_entities": [
+            "http://dbpedia.org/resource/Academy_Award",
+            "http://dbpedia.org/resource/Computer_science"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://dbpedia.org/ontology/field",
+            "http://dbpedia.org/ontology/award"
+        ],
+        "known_to_known_paths": [
+            [
+                "http://dbpedia.org/resource/Computer_science",
+                "?uri",
+                "http://dbpedia.org/resource/Academy_Award"
+            ]
+        ],
+        "known_to_known_paths_triples": [
+            [
+                [
+                    "http://dbpedia.org/resource/Computer_science",
+                    "~http://dbpedia.org/ontology/field",
+                    "?uri"
+                ],
+                [
+                    "?uri",
+                    "http://dbpedia.org/ontology/award",
+                    "http://dbpedia.org/resource/Academy_Award"
+                ]
+            ]
+        ],
+        "known_to_unknown_paths": [],
+        "known_to_unknown_paths_triples": []
+    },
+    {
+        "question": "Who wrote Harry Potter?",
+        "named_entities": [
+            "http://dbpedia.org/resource/Harry_Potter"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://dbpedia.org/property/author"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://dbpedia.org/resource/Harry_Potter",
+                "?uri"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://dbpedia.org/resource/Harry_Potter",
+                    "http://dbpedia.org/property/author",
+                    "?uri"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Give me all writers that won the Nobel Prize in literature.",
+        "named_entities": [
+            "http://dbpedia.org/resource/Nobel_Prize_in_Literature"
+        ],
+        "classes": [
+            "http://dbpedia.org/ontology/Writer"
+        ],
+        "predicates": [
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+            "http://dbpedia.org/ontology/award"
+        ],
+        "known_to_known_paths": [
+            [
+                "http://dbpedia.org/ontology/Writer",
+                "?uri",
+                "http://dbpedia.org/resource/Nobel_Prize_in_Literature"
+            ]
+        ],
+        "known_to_known_paths_triples": [
+            [
+                [
+                    "http://dbpedia.org/ontology/Writer",
+                    "~http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+                    "?uri"
+                ],
+                [
+                    "?uri",
+                    "http://dbpedia.org/ontology/award",
+                    "http://dbpedia.org/resource/Nobel_Prize_in_Literature"
+                ]
+            ]
+        ],
+        "known_to_unknown_paths": [],
+        "known_to_unknown_paths_triples": []
+    },
+    {
+        "question": "Give me English actors starring in Lovesick.",
+        "named_entities": [
+            "http://dbpedia.org/resource/Lovesick_(1983_film)",
+            "http://dbpedia.org/resource/United_Kingdom"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://dbpedia.org/ontology/starring",
+            "http://dbpedia.org/ontology/birthPlace",
+            "http://dbpedia.org/ontology/country"
+        ],
+        "known_to_known_paths": [
+            [
+                "http://dbpedia.org/resource/Lovesick_(1983_film)",
+                "?uri",
+                "?city",
+                "http://dbpedia.org/resource/United_Kingdom"
+            ]
+        ],
+        "known_to_known_paths_triples": [
+            [
+                [
+                    "http://dbpedia.org/resource/Lovesick_(1983_film)",
+                    "http://dbpedia.org/ontology/starring",
+                    "?uri"
+                ],
+                [
+                    "?uri",
+                    "http://dbpedia.org/ontology/birthPlace",
+                    "?city"
+                ],
+                [
+                    "?city",
+                    "http://dbpedia.org/ontology/country",
+                    "http://dbpedia.org/resource/United_Kingdom"
+                ]
+            ]
+        ],
+        "known_to_unknown_paths": [],
+        "known_to_unknown_paths_triples": []
+    },
+    {
+        "question": "What is the nick name of Baghdad?",
+        "named_entities": [
+            "http://dbpedia.org/resource/Baghdad"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://xmlns.com/foaf/0.1/nick"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://dbpedia.org/resource/Baghdad",
+                "?nm"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://dbpedia.org/resource/Baghdad",
+                    "http://xmlns.com/foaf/0.1/nick",
+                    "?nm"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "In which city was the president of Montenegro born?",
+        "named_entities": [
+            "http://dbpedia.org/resource/President_of_Montenegro",
+            "http://dbpedia.org/resource/Capital_city"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://dbpedia.org/ontology/birthPlace",
+            "http://dbpedia.org/ontology/type",
+            "http://dbpedia.org/property/title"
+        ],
+        "known_to_known_paths": [
+            [
+                "http://dbpedia.org/resource/President_of_Montenegro",
+                "?x",
+                "?uri",
+                "http://dbpedia.org/resource/Capital_city"
+            ]
+        ],
+        "known_to_known_paths_triples": [
+            [
+                [
+                    "http://dbpedia.org/resource/President_of_Montenegro",
+                    "~http://dbpedia.org/property/title",
+                    "?x"
+                ],
+                [
+                    "?x",
+                    "http://dbpedia.org/ontology/birthPlace",
+                    "?uri"
+                ],
+                [
+                    "?uri",
+                    "http://dbpedia.org/ontology/type",
+                    "http://dbpedia.org/resource/Capital_city"
+                ]
+            ]
+        ],
+        "known_to_unknown_paths": [],
+        "known_to_unknown_paths_triples": []
+    },
+    {
+        "question": "Which U.S. state has the highest population density?",
+        "named_entities": [
+            "http://dbpedia.org/resource/United_States"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://www.w3.org/2000/01/rdf-schema#label",
+            "http://dbpedia.org/ontology/country",
+            "http://dbpedia.org/ontology/capital",
+            "http://dbpedia.org/property/densityrank"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://dbpedia.org/resource/United_States",
+                "?uri",
+                "?capital"
+            ],
+            [
+                "http://dbpedia.org/resource/United_States",
+                "?uri",
+                "?density"
+            ],
+            [
+                "http://dbpedia.org/resource/United_States",
+                "?uri",
+                "?string"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://dbpedia.org/resource/United_States",
+                    "~http://dbpedia.org/ontology/country",
+                    "?uri"
+                ],
+                [
+                    "?uri",
+                    "http://dbpedia.org/ontology/capital",
+                    "?capital"
+                ]
+            ],
+            [
+                [
+                    "http://dbpedia.org/resource/United_States",
+                    "~http://dbpedia.org/ontology/country",
+                    "?uri"
+                ],
+                [
+                    "?uri",
+                    "http://dbpedia.org/property/densityrank",
+                    "?density"
+                ]
+            ],
+            [
+                [
+                    "http://dbpedia.org/resource/United_States",
+                    "~http://dbpedia.org/ontology/country",
+                    "?uri"
+                ],
+                [
+                    "?uri",
+                    "http://www.w3.org/2000/01/rdf-schema#label",
+                    "?string"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What is the longest river in China?",
+        "named_entities": [
+            "http://dbpedia.org/resource/China"
+        ],
+        "classes": [
+            "http://dbpedia.org/ontology/River"
+        ],
+        "predicates": [
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+            "http://dbpedia.org/property/length",
+            "http://dbpedia.org/ontology/country"
+        ],
+        "known_to_known_paths": [
+            [
+                "http://dbpedia.org/ontology/River",
+                "?uri",
+                "http://dbpedia.org/resource/China"
+            ]
+        ],
+        "known_to_known_paths_triples": [
+            [
+                [
+                    "http://dbpedia.org/ontology/River",
+                    "~http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+                    "?uri"
+                ],
+                [
+                    "?uri",
+                    "http://dbpedia.org/ontology/country",
+                    "http://dbpedia.org/resource/China"
+                ]
+            ]
+        ],
+        "known_to_unknown_paths": [
+            [
+                "http://dbpedia.org/ontology/River",
+                "?uri",
+                "?l"
+            ],
+            [
+                "http://dbpedia.org/resource/China",
+                "?uri",
+                "?l"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://dbpedia.org/ontology/River",
+                    "~http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+                    "?uri"
+                ],
+                [
+                    "?uri",
+                    "http://dbpedia.org/property/length",
+                    "?l"
+                ]
+            ],
+            [
+                [
+                    "http://dbpedia.org/resource/China",
+                    "~http://dbpedia.org/ontology/country",
+                    "?uri"
+                ],
+                [
+                    "?uri",
+                    "http://dbpedia.org/property/length",
+                    "?l"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What is the area code of Berlin?",
+        "named_entities": [
+            "http://dbpedia.org/resource/Berlin"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://dbpedia.org/ontology/areaCode"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://dbpedia.org/resource/Berlin",
+                "?string"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://dbpedia.org/resource/Berlin",
+                    "http://dbpedia.org/ontology/areaCode",
+                    "?string"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "How many scientists graduated from an Ivy League university?",
+        "named_entities": [
+            "http://dbpedia.org/resource/Ivy_League"
+        ],
+        "classes": [
+            "http://dbpedia.org/ontology/Scientist",
+            "http://dbpedia.org/ontology/University"
+        ],
+        "predicates": [
+            "http://dbpedia.org/ontology/almaMater",
+            "http://dbpedia.org/ontology/affiliation",
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        ],
+        "known_to_known_paths": [
+            [
+                "http://dbpedia.org/ontology/Scientist",
+                "?uri",
+                "?university",
+                "http://dbpedia.org/resource/Ivy_League"
+            ],
+            [
+                "http://dbpedia.org/ontology/Scientist",
+                "?uri",
+                "?university",
+                "http://dbpedia.org/ontology/University"
+            ],
+            [
+                "http://dbpedia.org/resource/Ivy_League",
+                "?university",
+                "http://dbpedia.org/ontology/University"
+            ]
+        ],
+        "known_to_known_paths_triples": [
+            [
+                [
+                    "http://dbpedia.org/ontology/Scientist",
+                    "~http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+                    "?uri"
+                ],
+                [
+                    "?uri",
+                    "http://dbpedia.org/ontology/almaMater",
+                    "?university"
+                ],
+                [
+                    "?university",
+                    "http://dbpedia.org/ontology/affiliation",
+                    "http://dbpedia.org/resource/Ivy_League"
+                ]
+            ],
+            [
+                [
+                    "http://dbpedia.org/ontology/Scientist",
+                    "~http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+                    "?uri"
+                ],
+                [
+                    "?uri",
+                    "http://dbpedia.org/ontology/almaMater",
+                    "?university"
+                ],
+                [
+                    "?university",
+                    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+                    "http://dbpedia.org/ontology/University"
+                ]
+            ],
+            [
+                [
+                    "http://dbpedia.org/resource/Ivy_League",
+                    "~http://dbpedia.org/ontology/affiliation",
+                    "?university"
+                ],
+                [
+                    "?university",
+                    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+                    "http://dbpedia.org/ontology/University"
+                ]
+            ]
+        ],
+        "known_to_unknown_paths": [],
+        "known_to_unknown_paths_triples": []
+    },
+    {
+        "question": "Give me all Dutch parties.",
+        "named_entities": [
+            "http://dbpedia.org/resource/Netherlands"
+        ],
+        "classes": [
+            "http://dbpedia.org/ontology/PoliticalParty"
+        ],
+        "predicates": [
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+            "http://dbpedia.org/ontology/country"
+        ],
+        "known_to_known_paths": [
+            [
+                "http://dbpedia.org/ontology/PoliticalParty",
+                "?uri",
+                "http://dbpedia.org/resource/Netherlands"
+            ]
+        ],
+        "known_to_known_paths_triples": [
+            [
+                [
+                    "http://dbpedia.org/ontology/PoliticalParty",
+                    "~http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+                    "?uri"
+                ],
+                [
+                    "?uri",
+                    "http://dbpedia.org/ontology/country",
+                    "http://dbpedia.org/resource/Netherlands"
+                ]
+            ]
+        ],
+        "known_to_unknown_paths": [],
+        "known_to_unknown_paths_triples": []
+    },
+    {
+        "question": "How many moons does Mars have?",
+        "named_entities": [
+            "http://dbpedia.org/resource/Mars"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://dbpedia.org/property/satellites"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://dbpedia.org/resource/Mars",
+                "?n"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://dbpedia.org/resource/Mars",
+                    "http://dbpedia.org/property/satellites",
+                    "?n"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What is Batman's real name?",
+        "named_entities": [
+            "http://dbpedia.org/resource/Batman"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://xmlns.com/foaf/0.1/name"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://dbpedia.org/resource/Batman",
+                "?label"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://dbpedia.org/resource/Batman",
+                    "http://xmlns.com/foaf/0.1/name",
+                    "?label"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What is Elon Musk famous for?",
+        "named_entities": [
+            "http://dbpedia.org/resource/Elon_Musk"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://dbpedia.org/ontology/knownFor"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://dbpedia.org/resource/Elon_Musk",
+                "?uri"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://dbpedia.org/resource/Elon_Musk",
+                    "http://dbpedia.org/ontology/knownFor",
+                    "?uri"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Who is the author of WikiLeaks?",
+        "named_entities": [
+            "http://dbpedia.org/resource/WikiLeaks"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://dbpedia.org/ontology/author"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://dbpedia.org/resource/WikiLeaks",
+                "?uri"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://dbpedia.org/resource/WikiLeaks",
+                    "http://dbpedia.org/ontology/author",
+                    "?uri"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Sean Parnell was the governor of which U.S. state?",
+        "named_entities": [
+            "http://dbpedia.org/resource/Sean_Parnell"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://dbpedia.org/ontology/region"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://dbpedia.org/resource/Sean_Parnell",
+                "?uri"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://dbpedia.org/resource/Sean_Parnell",
+                    "http://dbpedia.org/ontology/region",
+                    "?uri"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "How many years was the Ford Model T manufactured?",
+        "named_entities": [
+            "http://dbpedia.org/resource/Ford_Model_T"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://dbpedia.org/ontology/productionStartYear",
+            "http://dbpedia.org/ontology/productionEndYear"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://dbpedia.org/resource/Ford_Model_T",
+                "?end"
+            ],
+            [
+                "http://dbpedia.org/resource/Ford_Model_T",
+                "?start"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://dbpedia.org/resource/Ford_Model_T",
+                    "http://dbpedia.org/ontology/productionEndYear",
+                    "?end"
+                ]
+            ],
+            [
+                [
+                    "http://dbpedia.org/resource/Ford_Model_T",
+                    "http://dbpedia.org/ontology/productionStartYear",
+                    "?start"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "When was Carlo Giuliani shot?",
+        "named_entities": [
+            "http://dbpedia.org/resource/Death_of_Carlo_Giuliani"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://dbpedia.org/ontology/deathDate"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://dbpedia.org/resource/Death_of_Carlo_Giuliani",
+                "?date"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://dbpedia.org/resource/Death_of_Carlo_Giuliani",
+                    "http://dbpedia.org/ontology/deathDate",
+                    "?date"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Give me all animals that are extinct.",
+        "named_entities": [],
+        "classes": [
+            "http://dbpedia.org/ontology/Animal"
+        ],
+        "predicates": [
+            "http://dbpedia.org/ontology/conservationStatus",
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [],
+        "known_to_unknown_paths_triples": []
+    },
+    {
+        "question": "Who was the wife of President Lincoln?",
+        "named_entities": [
+            "http://dbpedia.org/resource/Abraham_Lincoln"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://dbpedia.org/ontology/spouse"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://dbpedia.org/resource/Abraham_Lincoln",
+                "?uri"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://dbpedia.org/resource/Abraham_Lincoln",
+                    "http://dbpedia.org/ontology/spouse",
+                    "?uri"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "How many awards has Bertrand Russell?",
+        "named_entities": [
+            "http://dbpedia.org/resource/Bertrand_Russell"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://dbpedia.org/property/awards"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://dbpedia.org/resource/Bertrand_Russell",
+                "?Awards"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://dbpedia.org/resource/Bertrand_Russell",
+                    "http://dbpedia.org/property/awards",
+                    "?Awards"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Is Pamela Anderson a vegan?",
+        "named_entities": [
+            "http://dbpedia.org/resource/Pamela_Anderson"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        ],
+        "known_to_known_paths": [
+            [
+                "http://dbpedia.org/resource/Pamela_Anderson",
+                "http://dbpedia.org/class/yago/WikicatAmericanVegans"
+            ]
+        ],
+        "known_to_known_paths_triples": [
+            [
+                [
+                    "http://dbpedia.org/resource/Pamela_Anderson",
+                    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+                    "http://dbpedia.org/class/yago/WikicatAmericanVegans"
+                ]
+            ]
+        ],
+        "known_to_unknown_paths": [],
+        "known_to_unknown_paths_triples": []
+    },
+    {
+        "question": "Which space probes were sent into orbit around the sun?",
+        "named_entities": [
+            "http://dbpedia.org/resource/Category:Missions_to_the_Sun"
+        ],
+        "classes": [
+            "http://dbpedia.org/ontology/ArtificialSatellite",
+            "http://dbpedia.org/ontology/Satellite"
+        ],
+        "predicates": [
+            "http://purl.org/dc/terms/subject",
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://dbpedia.org/resource/Category:Missions_to_the_Sun",
+                "?s",
+                "?type"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://dbpedia.org/resource/Category:Missions_to_the_Sun",
+                    "~http://purl.org/dc/terms/subject",
+                    "?s"
+                ],
+                [
+                    "?s",
+                    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+                    "?type"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Who is the daughter of Robert Kennedy married to?",
+        "named_entities": [
+            "http://dbpedia.org/resource/Robert_F._Kennedy"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://dbpedia.org/ontology/child",
+            "http://dbpedia.org/ontology/spouse"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://dbpedia.org/resource/Robert_F._Kennedy",
+                "?child",
+                "?uri"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://dbpedia.org/resource/Robert_F._Kennedy",
+                    "http://dbpedia.org/ontology/child",
+                    "?child"
+                ],
+                [
+                    "?child",
+                    "http://dbpedia.org/ontology/spouse",
+                    "?uri"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "How many students does the Free University of Amsterdam have?",
+        "named_entities": [
+            "http://dbpedia.org/resource/Vrije_Universiteit_Amsterdam"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://dbpedia.org/ontology/numberOfStudents"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://dbpedia.org/resource/Vrije_Universiteit_Amsterdam",
+                "?num"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://dbpedia.org/resource/Vrije_Universiteit_Amsterdam",
+                    "http://dbpedia.org/ontology/numberOfStudents",
+                    "?num"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What is the revenue of IBM?",
+        "named_entities": [
+            "http://dbpedia.org/resource/IBM"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://dbpedia.org/ontology/revenue"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://dbpedia.org/resource/IBM",
+                "?number"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://dbpedia.org/resource/IBM",
+                    "http://dbpedia.org/ontology/revenue",
+                    "?number"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "How many James Bond movies do exist?",
+        "named_entities": [
+            "http://dbpedia.org/resource/Category:James_Bond_films"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://purl.org/dc/terms/subject"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://dbpedia.org/resource/Category:James_Bond_films",
+                "?uri"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://dbpedia.org/resource/Category:James_Bond_films",
+                    "~http://purl.org/dc/terms/subject",
+                    "?uri"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Who does the voice of Bart Simpson?",
+        "named_entities": [
+            "http://dbpedia.org/resource/Bart_Simpson"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://dbpedia.org/property/voiceactor"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://dbpedia.org/resource/Bart_Simpson",
+                "?uri"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://dbpedia.org/resource/Bart_Simpson",
+                    "http://dbpedia.org/property/voiceactor",
+                    "?uri"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Who was Tom Hanks married to?",
+        "named_entities": [
+            "http://dbpedia.org/resource/Tom_Hanks"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://dbpedia.org/ontology/spouse"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://dbpedia.org/resource/Tom_Hanks",
+                "?uri"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://dbpedia.org/resource/Tom_Hanks",
+                    "http://dbpedia.org/ontology/spouse",
+                    "?uri"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Through which countries does the Yenisei river flow?",
+        "named_entities": [
+            "http://dbpedia.org/resource/Yenisei_River"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://dbpedia.org/ontology/country"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://dbpedia.org/resource/Yenisei_River",
+                "?uri"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://dbpedia.org/resource/Yenisei_River",
+                    "http://dbpedia.org/ontology/country",
+                    "?uri"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "When did Michael Jackson die?",
+        "named_entities": [
+            "http://dbpedia.org/resource/Michael_Jackson"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://dbpedia.org/property/deathDate"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://dbpedia.org/resource/Michael_Jackson",
+                "?date"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://dbpedia.org/resource/Michael_Jackson",
+                    "http://dbpedia.org/property/deathDate",
+                    "?date"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What is the highest volcano in Africa?",
+        "named_entities": [
+            "http://dbpedia.org/resource/Category:Countries_in_Africa"
+        ],
+        "classes": [
+            "http://dbpedia.org/ontology/Volcano"
+        ],
+        "predicates": [
+            "http://dbpedia.org/ontology/locatedInArea",
+            "http://purl.org/dc/terms/subject",
+            "http://dbpedia.org/ontology/elevation",
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        ],
+        "known_to_known_paths": [
+            [
+                "http://dbpedia.org/ontology/Volcano",
+                "?uri",
+                "?area",
+                "http://dbpedia.org/resource/Category:Countries_in_Africa"
+            ]
+        ],
+        "known_to_known_paths_triples": [
+            [
+                [
+                    "http://dbpedia.org/ontology/Volcano",
+                    "~http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+                    "?uri"
+                ],
+                [
+                    "?uri",
+                    "http://dbpedia.org/ontology/locatedInArea",
+                    "?area"
+                ],
+                [
+                    "?area",
+                    "http://purl.org/dc/terms/subject",
+                    "http://dbpedia.org/resource/Category:Countries_in_Africa"
+                ]
+            ]
+        ],
+        "known_to_unknown_paths": [
+            [
+                "http://dbpedia.org/ontology/Volcano",
+                "?uri",
+                "?elevation"
+            ],
+            [
+                "http://dbpedia.org/resource/Category:Countries_in_Africa",
+                "?area",
+                "?uri",
+                "?elevation"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://dbpedia.org/ontology/Volcano",
+                    "~http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+                    "?uri"
+                ],
+                [
+                    "?uri",
+                    "http://dbpedia.org/ontology/elevation",
+                    "?elevation"
+                ]
+            ],
+            [
+                [
+                    "http://dbpedia.org/resource/Category:Countries_in_Africa",
+                    "~http://purl.org/dc/terms/subject",
+                    "?area"
+                ],
+                [
+                    "?area",
+                    "~http://dbpedia.org/ontology/locatedInArea",
+                    "?uri"
+                ],
+                [
+                    "?uri",
+                    "http://dbpedia.org/ontology/elevation",
+                    "?elevation"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Which poet wrote the most books?",
+        "named_entities": [
+            "http://dbpedia.org/resource/Poet"
+        ],
+        "classes": [
+            "http://dbpedia.org/ontology/Book"
+        ],
+        "predicates": [
+            "http://dbpedia.org/ontology/author",
+            "http://dbpedia.org/ontology/occupation",
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        ],
+        "known_to_known_paths": [
+            [
+                "http://dbpedia.org/resource/Poet",
+                "?uri",
+                "?x",
+                "http://dbpedia.org/ontology/Book"
+            ]
+        ],
+        "known_to_known_paths_triples": [
+            [
+                [
+                    "http://dbpedia.org/resource/Poet",
+                    "~http://dbpedia.org/ontology/occupation",
+                    "?uri"
+                ],
+                [
+                    "?uri",
+                    "~http://dbpedia.org/ontology/author",
+                    "?x"
+                ],
+                [
+                    "?x",
+                    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+                    "http://dbpedia.org/ontology/Book"
+                ]
+            ]
+        ],
+        "known_to_unknown_paths": [],
+        "known_to_unknown_paths_triples": []
+    },
+    {
+        "question": "Give me all gangsters from the prohibition era.",
+        "named_entities": [
+            "http://dbpedia.org/resource/Gangster",
+            "http://dbpedia.org/resource/Category:Prohibition-era_gangsters"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://dbpedia.org/ontology/occupation",
+            "http://purl.org/dc/terms/subject"
+        ],
+        "known_to_known_paths": [
+            [
+                "http://dbpedia.org/resource/Gangster",
+                "?uri",
+                "http://dbpedia.org/resource/Category:Prohibition-era_gangsters"
+            ]
+        ],
+        "known_to_known_paths_triples": [
+            [
+                [
+                    "http://dbpedia.org/resource/Gangster",
+                    "~http://dbpedia.org/ontology/occupation",
+                    "?uri"
+                ],
+                [
+                    "?uri",
+                    "http://purl.org/dc/terms/subject",
+                    "http://dbpedia.org/resource/Category:Prohibition-era_gangsters"
+                ]
+            ]
+        ],
+        "known_to_unknown_paths": [],
+        "known_to_unknown_paths_triples": []
+    },
+    {
+        "question": "Give me all spacecrafts that flew to Mars.",
+        "named_entities": [
+            "http://dbpedia.org/resource/Category:Mars_rovers"
+        ],
+        "classes": [
+            "http://dbpedia.org/ontology/ArtificialSatellite",
+            "http://dbpedia.org/ontology/Satellite"
+        ],
+        "predicates": [
+            "http://purl.org/dc/terms/subject",
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://dbpedia.org/resource/Category:Mars_rovers",
+                "?s",
+                "?type"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://dbpedia.org/resource/Category:Mars_rovers",
+                    "~http://purl.org/dc/terms/subject",
+                    "?s"
+                ],
+                [
+                    "?s",
+                    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+                    "?type"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Show me all Czech movies.",
+        "named_entities": [
+            "http://dbpedia.org/resource/Czech_Republic"
+        ],
+        "classes": [
+            "http://dbpedia.org/ontology/Film"
+        ],
+        "predicates": [
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+            "http://dbpedia.org/ontology/country"
+        ],
+        "known_to_known_paths": [
+            [
+                "http://dbpedia.org/ontology/Film",
+                "?uri",
+                "http://dbpedia.org/resource/Czech_Republic"
+            ]
+        ],
+        "known_to_known_paths_triples": [
+            [
+                [
+                    "http://dbpedia.org/ontology/Film",
+                    "~http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+                    "?uri"
+                ],
+                [
+                    "?uri",
+                    "http://dbpedia.org/ontology/country",
+                    "http://dbpedia.org/resource/Czech_Republic"
+                ]
+            ]
+        ],
+        "known_to_unknown_paths": [],
+        "known_to_unknown_paths_triples": []
+    },
+    {
+        "question": "Which countries have more than ten volcanoes?",
+        "named_entities": [],
+        "classes": [
+            "http://dbpedia.org/ontology/Volcano",
+            "http://dbpedia.org/ontology/Country"
+        ],
+        "predicates": [
+            "http://dbpedia.org/ontology/locatedInArea",
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        ],
+        "known_to_known_paths": [
+            [
+                "http://dbpedia.org/ontology/Volcano",
+                "?x",
+                "?uri",
+                "http://dbpedia.org/ontology/Country"
+            ]
+        ],
+        "known_to_known_paths_triples": [
+            [
+                [
+                    "http://dbpedia.org/ontology/Volcano",
+                    "~http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+                    "?x"
+                ],
+                [
+                    "?x",
+                    "http://dbpedia.org/ontology/locatedInArea",
+                    "?uri"
+                ],
+                [
+                    "?uri",
+                    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+                    "http://dbpedia.org/ontology/Country"
+                ]
+            ]
+        ],
+        "known_to_unknown_paths": [],
+        "known_to_unknown_paths_triples": []
+    },
+    {
+        "question": "When did Dracula's creator die?",
+        "named_entities": [
+            "http://dbpedia.org/resource/Count_Dracula"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://dbpedia.org/ontology/creator",
+            "http://dbpedia.org/ontology/deathDate"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://dbpedia.org/resource/Count_Dracula",
+                "?x",
+                "?date"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://dbpedia.org/resource/Count_Dracula",
+                    "http://dbpedia.org/ontology/creator",
+                    "?x"
+                ],
+                [
+                    "?x",
+                    "http://dbpedia.org/ontology/deathDate",
+                    "?date"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Who created English Wikipedia?",
+        "named_entities": [
+            "http://dbpedia.org/resource/Wikipedia"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://dbpedia.org/ontology/author"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://dbpedia.org/resource/Wikipedia",
+                "?uri"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://dbpedia.org/resource/Wikipedia",
+                    "http://dbpedia.org/ontology/author",
+                    "?uri"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Give me all female German chancellors.",
+        "named_entities": [
+            "http://dbpedia.org/resource/Chancellor_of_Germany"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://dbpedia.org/property/incumbent"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://dbpedia.org/resource/Chancellor_of_Germany",
+                "?uri"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://dbpedia.org/resource/Chancellor_of_Germany",
+                    "http://dbpedia.org/property/incumbent",
+                    "?uri"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Who owns Aldi?",
+        "named_entities": [
+            "http://dbpedia.org/resource/Aldi"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://dbpedia.org/property/founders"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://dbpedia.org/resource/Aldi",
+                "?uri"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://dbpedia.org/resource/Aldi",
+                    "http://dbpedia.org/property/founders",
+                    "?uri"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Which books were written by Danielle Steel?",
+        "named_entities": [
+            "http://dbpedia.org/resource/Danielle_Steel"
+        ],
+        "classes": [
+            "http://dbpedia.org/ontology/Book"
+        ],
+        "predicates": [
+            "http://dbpedia.org/ontology/author",
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        ],
+        "known_to_known_paths": [
+            [
+                "http://dbpedia.org/ontology/Book",
+                "?uri",
+                "http://dbpedia.org/resource/Danielle_Steel"
+            ]
+        ],
+        "known_to_known_paths_triples": [
+            [
+                [
+                    "http://dbpedia.org/ontology/Book",
+                    "~http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+                    "?uri"
+                ],
+                [
+                    "?uri",
+                    "http://dbpedia.org/ontology/author",
+                    "http://dbpedia.org/resource/Danielle_Steel"
+                ]
+            ]
+        ],
+        "known_to_unknown_paths": [],
+        "known_to_unknown_paths_triples": []
+    },
+    {
+        "question": "Who was influenced by Socrates?",
+        "named_entities": [
+            "http://dbpedia.org/resource/Socrates"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://dbpedia.org/ontology/influencedBy"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://dbpedia.org/resource/Socrates",
+                "?uri"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://dbpedia.org/resource/Socrates",
+                    "~http://dbpedia.org/ontology/influencedBy",
+                    "?uri"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "How deep is Lake Chiemsee?",
+        "named_entities": [
+            "http://dbpedia.org/resource/Chiemsee"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://dbpedia.org/ontology/maximumDepth"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://dbpedia.org/resource/Chiemsee",
+                "?n"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://dbpedia.org/resource/Chiemsee",
+                    "http://dbpedia.org/ontology/maximumDepth",
+                    "?n"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Which companies work in the aerospace industry as well as in medicine?",
+        "named_entities": [
+            "http://dbpedia.org/resource/Medical",
+            "http://dbpedia.org/resource/Aerospace"
+        ],
+        "classes": [
+            "http://dbpedia.org/ontology/Company"
+        ],
+        "predicates": [
+            "http://dbpedia.org/ontology/industry",
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        ],
+        "known_to_known_paths": [
+            [
+                "http://dbpedia.org/ontology/Company",
+                "?uri",
+                "http://dbpedia.org/resource/Aerospace"
+            ],
+            [
+                "http://dbpedia.org/ontology/Company",
+                "?uri",
+                "http://dbpedia.org/resource/Medical"
+            ],
+            [
+                "http://dbpedia.org/resource/Aerospace",
+                "?uri",
+                "http://dbpedia.org/resource/Medical"
+            ]
+        ],
+        "known_to_known_paths_triples": [
+            [
+                [
+                    "http://dbpedia.org/ontology/Company",
+                    "~http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+                    "?uri"
+                ],
+                [
+                    "?uri",
+                    "http://dbpedia.org/ontology/industry",
+                    "http://dbpedia.org/resource/Aerospace"
+                ]
+            ],
+            [
+                [
+                    "http://dbpedia.org/ontology/Company",
+                    "~http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+                    "?uri"
+                ],
+                [
+                    "?uri",
+                    "http://dbpedia.org/ontology/industry",
+                    "http://dbpedia.org/resource/Medical"
+                ]
+            ],
+            [
+                [
+                    "http://dbpedia.org/resource/Aerospace",
+                    "~http://dbpedia.org/ontology/industry",
+                    "?uri"
+                ],
+                [
+                    "?uri",
+                    "http://dbpedia.org/ontology/industry",
+                    "http://dbpedia.org/resource/Medical"
+                ]
+            ]
+        ],
+        "known_to_unknown_paths": [],
+        "known_to_unknown_paths_triples": []
+    },
+    {
+        "question": "Which professional surfers were born on the Philippines?",
+        "named_entities": [
+            "http://dbpedia.org/resource/Surfer",
+            "http://dbpedia.org/resource/Philippines"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://dbpedia.org/ontology/birthPlace",
+            "http://dbpedia.org/ontology/occupation"
+        ],
+        "known_to_known_paths": [
+            [
+                "http://dbpedia.org/resource/Surfer",
+                "?uri",
+                "http://dbpedia.org/resource/Philippines"
+            ]
+        ],
+        "known_to_known_paths_triples": [
+            [
+                [
+                    "http://dbpedia.org/resource/Surfer",
+                    "~http://dbpedia.org/ontology/occupation",
+                    "?uri"
+                ],
+                [
+                    "?uri",
+                    "http://dbpedia.org/ontology/birthPlace",
+                    "http://dbpedia.org/resource/Philippines"
+                ]
+            ]
+        ],
+        "known_to_unknown_paths": [],
+        "known_to_unknown_paths_triples": []
+    },
+    {
+        "question": "Who were the parents of Queen Victoria?",
+        "named_entities": [
+            "http://dbpedia.org/resource/Queen_Victoria"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://dbpedia.org/ontology/parent"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://dbpedia.org/resource/Queen_Victoria",
+                "?uri"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://dbpedia.org/resource/Queen_Victoria",
+                    "http://dbpedia.org/ontology/parent",
+                    "?uri"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Are there any castles in the United States?",
+        "named_entities": [
+            "http://dbpedia.org/resource/Category:Castles_in_the_United_States"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://purl.org/dc/terms/subject"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://dbpedia.org/resource/Category:Castles_in_the_United_States",
+                "?uri"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://dbpedia.org/resource/Category:Castles_in_the_United_States",
+                    "~http://purl.org/dc/terms/subject",
+                    "?uri"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Which languages are spoken in Estonia?",
+        "named_entities": [
+            "http://dbpedia.org/resource/Estonia"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://dbpedia.org/ontology/spokenIn"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://dbpedia.org/resource/Estonia",
+                "?uri"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://dbpedia.org/resource/Estonia",
+                    "~http://dbpedia.org/ontology/spokenIn",
+                    "?uri"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Who was the father of Queen Elizabeth II?",
+        "named_entities": [
+            "http://dbpedia.org/resource/Elizabeth_II"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://dbpedia.org/property/father"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://dbpedia.org/resource/Elizabeth_II",
+                "?father"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://dbpedia.org/resource/Elizabeth_II",
+                    "http://dbpedia.org/property/father",
+                    "?father"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Give me all chemical elements.",
+        "named_entities": [
+            "http://dbpedia.org/resource/Category:Chemical_elements"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://purl.org/dc/terms/subject",
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        ],
+        "known_to_known_paths": [
+            [
+                "http://www.w3.org/2002/07/owl#Thing",
+                "?uri",
+                "http://dbpedia.org/resource/Category:Chemical_elements"
+            ]
+        ],
+        "known_to_known_paths_triples": [
+            [
+                [
+                    "http://www.w3.org/2002/07/owl#Thing",
+                    "~http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+                    "?uri"
+                ],
+                [
+                    "?uri",
+                    "http://purl.org/dc/terms/subject",
+                    "http://dbpedia.org/resource/Category:Chemical_elements"
+                ]
+            ]
+        ],
+        "known_to_unknown_paths": [],
+        "known_to_unknown_paths_triples": []
+    },
+    {
+        "question": "Give me all American presidents of the last 20 years.",
+        "named_entities": [
+            "http://dbpedia.org/resource/Category:Presidents_of_the_United_States"
+        ],
+        "classes": [
+            "http://dbpedia.org/ontology/Person"
+        ],
+        "predicates": [
+            "http://dbpedia.org/ontology/activeYearsEndDate",
+            "http://purl.org/dc/terms/subject",
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        ],
+        "known_to_known_paths": [
+            [
+                "http://dbpedia.org/ontology/Person",
+                "?uri",
+                "http://dbpedia.org/resource/Category:Presidents_of_the_United_States"
+            ]
+        ],
+        "known_to_known_paths_triples": [
+            [
+                [
+                    "http://dbpedia.org/ontology/Person",
+                    "~http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+                    "?uri"
+                ],
+                [
+                    "?uri",
+                    "http://purl.org/dc/terms/subject",
+                    "http://dbpedia.org/resource/Category:Presidents_of_the_United_States"
+                ]
+            ]
+        ],
+        "known_to_unknown_paths": [
+            [
+                "http://dbpedia.org/ontology/Person",
+                "?uri",
+                "?termEnd"
+            ],
+            [
+                "http://dbpedia.org/resource/Category:Presidents_of_the_United_States",
+                "?uri",
+                "?termEnd"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://dbpedia.org/ontology/Person",
+                    "~http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+                    "?uri"
+                ],
+                [
+                    "?uri",
+                    "http://dbpedia.org/ontology/activeYearsEndDate",
+                    "?termEnd"
+                ]
+            ],
+            [
+                [
+                    "http://dbpedia.org/resource/Category:Presidents_of_the_United_States",
+                    "~http://purl.org/dc/terms/subject",
+                    "?uri"
+                ],
+                [
+                    "?uri",
+                    "http://dbpedia.org/ontology/activeYearsEndDate",
+                    "?termEnd"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "When is the movie Worst Case Scenario going to be in cinemas in the Netherlands?",
+        "named_entities": [
+            "http://dbpedia.org/resource/Worst_Case_Scenario_(film)"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://dbpedia.org/ontology/releaseDate"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://dbpedia.org/resource/Worst_Case_Scenario_(film)",
+                "?o"
+            ],
+            [
+                "http://dbpedia.org/resource/Worst_Case_Scenario_(film)",
+                "?rel"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://dbpedia.org/resource/Worst_Case_Scenario_(film)",
+                    "?p",
+                    "?o"
+                ]
+            ],
+            [
+                [
+                    "http://dbpedia.org/resource/Worst_Case_Scenario_(film)",
+                    "http://dbpedia.org/ontology/releaseDate",
+                    "?rel"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Which subsidiary of TUI Travel serves both Glasgow and Dublin?",
+        "named_entities": [
+            "http://dbpedia.org/resource/Glasgow_International_Airport",
+            "http://dbpedia.org/resource/TUI_Travel",
+            "http://dbpedia.org/resource/Dublin_Airport"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://dbpedia.org/ontology/subsidiary",
+            "http://dbpedia.org/ontology/targetAirport"
+        ],
+        "known_to_known_paths": [
+            [
+                "http://dbpedia.org/resource/TUI_Travel",
+                "?uri",
+                "http://dbpedia.org/resource/Glasgow_International_Airport"
+            ],
+            [
+                "http://dbpedia.org/resource/TUI_Travel",
+                "?uri",
+                "http://dbpedia.org/resource/Dublin_Airport"
+            ],
+            [
+                "http://dbpedia.org/resource/Glasgow_International_Airport",
+                "?uri",
+                "http://dbpedia.org/resource/Dublin_Airport"
+            ]
+        ],
+        "known_to_known_paths_triples": [
+            [
+                [
+                    "http://dbpedia.org/resource/TUI_Travel",
+                    "http://dbpedia.org/ontology/subsidiary",
+                    "?uri"
+                ],
+                [
+                    "?uri",
+                    "http://dbpedia.org/ontology/targetAirport",
+                    "http://dbpedia.org/resource/Glasgow_International_Airport"
+                ]
+            ],
+            [
+                [
+                    "http://dbpedia.org/resource/TUI_Travel",
+                    "http://dbpedia.org/ontology/subsidiary",
+                    "?uri"
+                ],
+                [
+                    "?uri",
+                    "http://dbpedia.org/ontology/targetAirport",
+                    "http://dbpedia.org/resource/Dublin_Airport"
+                ]
+            ],
+            [
+                [
+                    "http://dbpedia.org/resource/Glasgow_International_Airport",
+                    "~http://dbpedia.org/ontology/targetAirport",
+                    "?uri"
+                ],
+                [
+                    "?uri",
+                    "http://dbpedia.org/ontology/targetAirport",
+                    "http://dbpedia.org/resource/Dublin_Airport"
+                ]
+            ]
+        ],
+        "known_to_unknown_paths": [],
+        "known_to_unknown_paths_triples": []
+    },
+    {
+        "question": "What languages are spoken in Pakistan?",
+        "named_entities": [
+            "http://dbpedia.org/resource/Pakistan"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://dbpedia.org/ontology/language"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://dbpedia.org/resource/Pakistan",
+                "?uri"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://dbpedia.org/resource/Pakistan",
+                    "http://dbpedia.org/ontology/language",
+                    "?uri"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Who is the daughter of Bill Clinton married to?",
+        "named_entities": [
+            "http://dbpedia.org/resource/Bill_Clinton"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://www.w3.org/2000/01/rdf-schema#label",
+            "http://dbpedia.org/ontology/child",
+            "http://dbpedia.org/ontology/spouse"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://dbpedia.org/resource/Bill_Clinton",
+                "?child",
+                "?uri",
+                "?string"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://dbpedia.org/resource/Bill_Clinton",
+                    "http://dbpedia.org/ontology/child",
+                    "?child"
+                ],
+                [
+                    "?child",
+                    "http://dbpedia.org/ontology/spouse",
+                    "?uri"
+                ],
+                [
+                    "?uri",
+                    "http://www.w3.org/2000/01/rdf-schema#label",
+                    "?string"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Who was on the Apollo 11 mission?",
+        "named_entities": [
+            "http://dbpedia.org/resource/Apollo_11"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://dbpedia.org/property/crewMembers"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://dbpedia.org/resource/Apollo_11",
+                "?uri"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://dbpedia.org/resource/Apollo_11",
+                    "http://dbpedia.org/property/crewMembers",
+                    "?uri"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What is the wavelength of Indigo?",
+        "named_entities": [
+            "http://dbpedia.org/resource/Indigo"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://dbpedia.org/ontology/wavelength"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://dbpedia.org/resource/Indigo",
+                "?n"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://dbpedia.org/resource/Indigo",
+                    "http://dbpedia.org/ontology/wavelength",
+                    "?n"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Give me all B-sides of the Ramones.",
+        "named_entities": [
+            "http://dbpedia.org/resource/Ramones"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://dbpedia.org/ontology/musicalArtist",
+            "http://dbpedia.org/ontology/bSide"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://dbpedia.org/resource/Ramones",
+                "?x",
+                "?string"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://dbpedia.org/resource/Ramones",
+                    "~http://dbpedia.org/ontology/musicalArtist",
+                    "?x"
+                ],
+                [
+                    "?x",
+                    "http://dbpedia.org/ontology/bSide",
+                    "?string"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Who was called Scarface?",
+        "named_entities": [],
+        "classes": [],
+        "predicates": [
+            "http://dbpedia.org/ontology/alias"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [],
+        "known_to_unknown_paths_triples": []
+    },
+    {
+        "question": "Which rivers flow into the North Sea?",
+        "named_entities": [
+            "http://dbpedia.org/resource/North_Sea"
+        ],
+        "classes": [
+            "http://dbpedia.org/ontology/River"
+        ],
+        "predicates": [
+            "http://dbpedia.org/ontology/riverMouth",
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        ],
+        "known_to_known_paths": [
+            [
+                "http://dbpedia.org/ontology/River",
+                "?uri",
+                "http://dbpedia.org/resource/North_Sea"
+            ]
+        ],
+        "known_to_known_paths_triples": [
+            [
+                [
+                    "http://dbpedia.org/ontology/River",
+                    "~http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+                    "?uri"
+                ],
+                [
+                    "?uri",
+                    "http://dbpedia.org/ontology/riverMouth",
+                    "http://dbpedia.org/resource/North_Sea"
+                ]
+            ]
+        ],
+        "known_to_unknown_paths": [],
+        "known_to_unknown_paths_triples": []
+    },
+    {
+        "question": "Where is Fort Knox located?",
+        "named_entities": [
+            "http://dbpedia.org/resource/Fort_Knox"
+        ],
+        "classes": [
+            "http://dbpedia.org/ontology/Place"
+        ],
+        "predicates": [
+            "http://dbpedia.org/ontology/location",
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        ],
+        "known_to_known_paths": [
+            [
+                "http://dbpedia.org/resource/Fort_Knox",
+                "?uri",
+                "http://dbpedia.org/ontology/Place"
+            ]
+        ],
+        "known_to_known_paths_triples": [
+            [
+                [
+                    "http://dbpedia.org/resource/Fort_Knox",
+                    "http://dbpedia.org/ontology/location",
+                    "?uri"
+                ],
+                [
+                    "?uri",
+                    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+                    "http://dbpedia.org/ontology/Place"
+                ]
+            ]
+        ],
+        "known_to_unknown_paths": [],
+        "known_to_unknown_paths_triples": []
+    },
+    {
+        "question": "Which daughters of British earls died at the same place they were born at?",
+        "named_entities": [],
+        "classes": [],
+        "predicates": [
+            "http://dbpedia.org/ontology/birthPlace",
+            "http://dbpedia.org/ontology/deathPlace",
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://dbpedia.org/class/yago/WikicatDaughtersOfBritishEarls",
+                "?uri",
+                "?x"
+            ],
+            [
+                "http://dbpedia.org/class/yago/WikicatDaughtersOfBritishEarls",
+                "?uri",
+                "?y"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://dbpedia.org/class/yago/WikicatDaughtersOfBritishEarls",
+                    "~http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+                    "?uri"
+                ],
+                [
+                    "?uri",
+                    "http://dbpedia.org/ontology/birthPlace",
+                    "?x"
+                ]
+            ],
+            [
+                [
+                    "http://dbpedia.org/class/yago/WikicatDaughtersOfBritishEarls",
+                    "~http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+                    "?uri"
+                ],
+                [
+                    "?uri",
+                    "http://dbpedia.org/ontology/deathPlace",
+                    "?y"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "How many emperors did China have?",
+        "named_entities": [
+            "http://dbpedia.org/resource/Emperor_of_China"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://dbpedia.org/property/title"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://dbpedia.org/resource/Emperor_of_China",
+                "?uri"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://dbpedia.org/resource/Emperor_of_China",
+                    "~http://dbpedia.org/property/title",
+                    "?uri"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What are the names of the Teenage Mutant Ninja Turtles?",
+        "named_entities": [
+            "http://dbpedia.org/resource/Teenage_Mutant_Ninja_Turtles"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://xmlns.com/foaf/0.1/givenName",
+            "http://dbpedia.org/property/members"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://dbpedia.org/resource/Teenage_Mutant_Ninja_Turtles",
+                "?x",
+                "?s"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://dbpedia.org/resource/Teenage_Mutant_Ninja_Turtles",
+                    "http://dbpedia.org/property/members",
+                    "?x"
+                ],
+                [
+                    "?x",
+                    "http://xmlns.com/foaf/0.1/givenName",
+                    "?s"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Where does Piccadilly start?",
+        "named_entities": [
+            "http://dbpedia.org/resource/Piccadilly"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://dbpedia.org/ontology/routeStart"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://dbpedia.org/resource/Piccadilly",
+                "?uri"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://dbpedia.org/resource/Piccadilly",
+                    "~http://dbpedia.org/ontology/routeStart",
+                    "?uri"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What is the name of the university where Obama's wife studied?",
+        "named_entities": [
+            "http://dbpedia.org/resource/Barack_Obama"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://dbpedia.org/ontology/almaMater",
+            "http://dbpedia.org/ontology/spouse"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://dbpedia.org/resource/Barack_Obama",
+                "?x",
+                "?s"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://dbpedia.org/resource/Barack_Obama",
+                    "http://dbpedia.org/ontology/spouse",
+                    "?x"
+                ],
+                [
+                    "?x",
+                    "http://dbpedia.org/ontology/almaMater",
+                    "?s"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "When did Paraguay proclaim its independence?",
+        "named_entities": [
+            "http://dbpedia.org/resource/Paraguay"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://dbpedia.org/ontology/foundingDate"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://dbpedia.org/resource/Paraguay",
+                "?date"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://dbpedia.org/resource/Paraguay",
+                    "http://dbpedia.org/ontology/foundingDate",
+                    "?date"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "How short is the shortest active NBA player?",
+        "named_entities": [
+            "http://dbpedia.org/resource/National_Basketball_Association"
+        ],
+        "classes": [
+            "http://dbpedia.org/ontology/BasketballPlayer"
+        ],
+        "predicates": [
+            "http://dbpedia.org/ontology/league",
+            "http://dbpedia.org/ontology/height",
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        ],
+        "known_to_known_paths": [
+            [
+                "http://dbpedia.org/ontology/BasketballPlayer",
+                "?x",
+                "http://dbpedia.org/resource/National_Basketball_Association"
+            ]
+        ],
+        "known_to_known_paths_triples": [
+            [
+                [
+                    "http://dbpedia.org/ontology/BasketballPlayer",
+                    "~http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+                    "?x"
+                ],
+                [
+                    "?x",
+                    "http://dbpedia.org/ontology/league",
+                    "http://dbpedia.org/resource/National_Basketball_Association"
+                ]
+            ]
+        ],
+        "known_to_unknown_paths": [
+            [
+                "http://dbpedia.org/ontology/BasketballPlayer",
+                "?x",
+                "?n"
+            ],
+            [
+                "http://dbpedia.org/ontology/BasketballPlayer",
+                "?x",
+                "?d"
+            ],
+            [
+                "http://dbpedia.org/resource/National_Basketball_Association",
+                "?x",
+                "?n"
+            ],
+            [
+                "http://dbpedia.org/resource/National_Basketball_Association",
+                "?x",
+                "?d"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://dbpedia.org/ontology/BasketballPlayer",
+                    "~http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+                    "?x"
+                ],
+                [
+                    "?x",
+                    "http://dbpedia.org/ontology/height",
+                    "?n"
+                ]
+            ],
+            [
+                [
+                    "http://dbpedia.org/ontology/BasketballPlayer",
+                    "~http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+                    "?x"
+                ],
+                [
+                    "?x",
+                    "http://dbpedia.org/ontology/activeYearsEndYear",
+                    "?d"
+                ]
+            ],
+            [
+                [
+                    "http://dbpedia.org/resource/National_Basketball_Association",
+                    "~http://dbpedia.org/ontology/league",
+                    "?x"
+                ],
+                [
+                    "?x",
+                    "http://dbpedia.org/ontology/height",
+                    "?n"
+                ]
+            ],
+            [
+                [
+                    "http://dbpedia.org/resource/National_Basketball_Association",
+                    "~http://dbpedia.org/ontology/league",
+                    "?x"
+                ],
+                [
+                    "?x",
+                    "http://dbpedia.org/ontology/activeYearsEndYear",
+                    "?d"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Where did Abraham Lincoln die?",
+        "named_entities": [
+            "http://dbpedia.org/resource/Abraham_Lincoln"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://dbpedia.org/ontology/deathPlace"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://dbpedia.org/resource/Abraham_Lincoln",
+                "?uri"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://dbpedia.org/resource/Abraham_Lincoln",
+                    "http://dbpedia.org/ontology/deathPlace",
+                    "?uri"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "When was Jack Wolfskin founded?",
+        "named_entities": [
+            "http://dbpedia.org/resource/Jack_Wolfskin"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://dbpedia.org/ontology/foundingYear"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://dbpedia.org/resource/Jack_Wolfskin",
+                "?year"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://dbpedia.org/resource/Jack_Wolfskin",
+                    "http://dbpedia.org/ontology/foundingYear",
+                    "?year"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "In which city is the headquarter of Air China?",
+        "named_entities": [
+            "http://dbpedia.org/resource/Air_China"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://dbpedia.org/ontology/headquarter",
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        ],
+        "known_to_known_paths": [
+            [
+                "http://dbpedia.org/resource/Air_China",
+                "?uri",
+                "http://dbpedia.org/class/yago/City108524735"
+            ]
+        ],
+        "known_to_known_paths_triples": [
+            [
+                [
+                    "http://dbpedia.org/resource/Air_China",
+                    "http://dbpedia.org/ontology/headquarter",
+                    "?uri"
+                ],
+                [
+                    "?uri",
+                    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+                    "http://dbpedia.org/class/yago/City108524735"
+                ]
+            ]
+        ],
+        "known_to_unknown_paths": [],
+        "known_to_unknown_paths_triples": []
+    },
+    {
+        "question": "What is the founding year of the brewery that produces Pilsner Urquell?",
+        "named_entities": [
+            "http://dbpedia.org/resource/Pilsner_Urquell"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://dbpedia.org/property/brewery",
+            "http://dbpedia.org/ontology/foundingYear"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://dbpedia.org/resource/Pilsner_Urquell",
+                "?uri",
+                "?num"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://dbpedia.org/resource/Pilsner_Urquell",
+                    "http://dbpedia.org/property/brewery",
+                    "?uri"
+                ],
+                [
+                    "?uri",
+                    "http://dbpedia.org/ontology/foundingYear",
+                    "?num"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "When did the Boston Tea Party take place?",
+        "named_entities": [
+            "http://dbpedia.org/resource/Boston_Tea_Party"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://dbpedia.org/property/date"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://dbpedia.org/resource/Boston_Tea_Party",
+                "?d"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://dbpedia.org/resource/Boston_Tea_Party",
+                    "http://dbpedia.org/property/date",
+                    "?d"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Which animals are critically endangered?",
+        "named_entities": [],
+        "classes": [
+            "http://dbpedia.org/ontology/Animal"
+        ],
+        "predicates": [
+            "http://dbpedia.org/ontology/conservationStatus",
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [],
+        "known_to_unknown_paths_triples": []
+    },
+    {
+        "question": "How big is the earth's diameter?",
+        "named_entities": [
+            "http://dbpedia.org/resource/Earth"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://dbpedia.org/ontology/meanRadius"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://dbpedia.org/resource/Earth",
+                "?radius"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://dbpedia.org/resource/Earth",
+                    "http://dbpedia.org/ontology/meanRadius",
+                    "?radius"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Is the wife of President Obama called Michelle?",
+        "named_entities": [
+            "http://dbpedia.org/resource/Barack_Obama"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://www.w3.org/2000/01/rdf-schema#label",
+            "http://dbpedia.org/ontology/spouse"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://dbpedia.org/resource/Barack_Obama",
+                "?spouse",
+                "?name"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://dbpedia.org/resource/Barack_Obama",
+                    "http://dbpedia.org/ontology/spouse",
+                    "?spouse"
+                ],
+                [
+                    "?spouse",
+                    "http://www.w3.org/2000/01/rdf-schema#label",
+                    "?name"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Which U.S. state has the abbreviation MN?",
+        "named_entities": [],
+        "classes": [],
+        "predicates": [
+            "http://dbpedia.org/property/postalabbreviation",
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [],
+        "known_to_unknown_paths_triples": []
+    },
+    {
+        "question": "When did Muhammad die?",
+        "named_entities": [
+            "http://dbpedia.org/resource/Muhammad"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://dbpedia.org/ontology/deathDate"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://dbpedia.org/resource/Muhammad",
+                "?date"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://dbpedia.org/resource/Muhammad",
+                    "http://dbpedia.org/ontology/deathDate",
+                    "?date"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What is the atmosphere of the Moon composed of?",
+        "named_entities": [
+            "http://dbpedia.org/resource/Moon"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://dbpedia.org/property/atmosphereComposition"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://dbpedia.org/resource/Moon",
+                "?uri"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://dbpedia.org/resource/Moon",
+                    "http://dbpedia.org/property/atmosphereComposition",
+                    "?uri"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Who is the governor of Texas?",
+        "named_entities": [
+            "http://dbpedia.org/resource/Texas"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://dbpedia.org/property/governor"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://dbpedia.org/resource/Texas",
+                "?string"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://dbpedia.org/resource/Texas",
+                    "http://dbpedia.org/property/governor",
+                    "?string"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Which movies did Kurosawa direct?",
+        "named_entities": [
+            "http://dbpedia.org/resource/Akira_Kurosawa"
+        ],
+        "classes": [
+            "http://dbpedia.org/ontology/Film"
+        ],
+        "predicates": [
+            "http://dbpedia.org/ontology/director",
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        ],
+        "known_to_known_paths": [
+            [
+                "http://dbpedia.org/ontology/Film",
+                "?uri",
+                "http://dbpedia.org/resource/Akira_Kurosawa"
+            ]
+        ],
+        "known_to_known_paths_triples": [
+            [
+                [
+                    "http://dbpedia.org/ontology/Film",
+                    "~http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+                    "?uri"
+                ],
+                [
+                    "?uri",
+                    "http://dbpedia.org/ontology/director",
+                    "http://dbpedia.org/resource/Akira_Kurosawa"
+                ]
+            ]
+        ],
+        "known_to_unknown_paths": [],
+        "known_to_unknown_paths_triples": []
+    },
+    {
+        "question": "What was the name of the famous battle in 1836 in San Antonio?",
+        "named_entities": [
+            "http://dbpedia.org/resource/San_Antonio"
+        ],
+        "classes": [
+            "http://dbpedia.org/ontology/MilitaryConflict"
+        ],
+        "predicates": [
+            "http://dbpedia.org/ontology/place",
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+            "http://dbpedia.org/ontology/date"
+        ],
+        "known_to_known_paths": [
+            [
+                "http://dbpedia.org/ontology/MilitaryConflict",
+                "?uri",
+                "http://dbpedia.org/resource/San_Antonio"
+            ]
+        ],
+        "known_to_known_paths_triples": [
+            [
+                [
+                    "http://dbpedia.org/ontology/MilitaryConflict",
+                    "~http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+                    "?uri"
+                ],
+                [
+                    "?uri",
+                    "http://dbpedia.org/ontology/place",
+                    "http://dbpedia.org/resource/San_Antonio"
+                ]
+            ]
+        ],
+        "known_to_unknown_paths": [
+            [
+                "http://dbpedia.org/ontology/MilitaryConflict",
+                "?uri",
+                "?date"
+            ],
+            [
+                "http://dbpedia.org/resource/San_Antonio",
+                "?uri",
+                "?date"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://dbpedia.org/ontology/MilitaryConflict",
+                    "~http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+                    "?uri"
+                ],
+                [
+                    "?uri",
+                    "http://dbpedia.org/ontology/date",
+                    "?date"
+                ]
+            ],
+            [
+                [
+                    "http://dbpedia.org/resource/San_Antonio",
+                    "~http://dbpedia.org/ontology/place",
+                    "?uri"
+                ],
+                [
+                    "?uri",
+                    "http://dbpedia.org/ontology/date",
+                    "?date"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Give me the official websites of actors of the television show Charmed.",
+        "named_entities": [
+            "http://dbpedia.org/resource/Charmed"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://dbpedia.org/ontology/starring",
+            "http://xmlns.com/foaf/0.1/homepage"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://dbpedia.org/resource/Charmed",
+                "?actors",
+                "?uri"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://dbpedia.org/resource/Charmed",
+                    "http://dbpedia.org/ontology/starring",
+                    "?actors"
+                ],
+                [
+                    "?actors",
+                    "http://xmlns.com/foaf/0.1/homepage",
+                    "?uri"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "How many calories does a baguette have?",
+        "named_entities": [
+            "http://dbpedia.org/resource/Baguette"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://dbpedia.org/property/calories"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://dbpedia.org/resource/Baguette",
+                "?n"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://dbpedia.org/resource/Baguette",
+                    "http://dbpedia.org/property/calories",
+                    "?n"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Give me all libraries established before 1400.",
+        "named_entities": [],
+        "classes": [
+            "http://dbpedia.org/ontology/Library"
+        ],
+        "predicates": [
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+            "http://dbpedia.org/property/established"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://dbpedia.org/ontology/Library",
+                "?uri",
+                "?year"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://dbpedia.org/ontology/Library",
+                    "~http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+                    "?uri"
+                ],
+                [
+                    "?uri",
+                    "http://dbpedia.org/property/established",
+                    "?year"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Give me all Frisian islands that belong to the Netherlands.",
+        "named_entities": [
+            "http://dbpedia.org/resource/Netherlands"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+            "http://dbpedia.org/ontology/country"
+        ],
+        "known_to_known_paths": [
+            [
+                "http://dbpedia.org/class/yago/WikicatFrisianIslands",
+                "?uri",
+                "http://dbpedia.org/resource/Netherlands"
+            ]
+        ],
+        "known_to_known_paths_triples": [
+            [
+                [
+                    "http://dbpedia.org/class/yago/WikicatFrisianIslands",
+                    "~http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+                    "?uri"
+                ],
+                [
+                    "?uri",
+                    "http://dbpedia.org/ontology/country",
+                    "http://dbpedia.org/resource/Netherlands"
+                ]
+            ]
+        ],
+        "known_to_unknown_paths": [],
+        "known_to_unknown_paths_triples": []
+    },
+    {
+        "question": "Which museum exhibits The Scream by Munch?",
+        "named_entities": [
+            "http://dbpedia.org/resource/The_Scream"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://dbpedia.org/ontology/museum"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://dbpedia.org/resource/The_Scream",
+                "?uri"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://dbpedia.org/resource/The_Scream",
+                    "http://dbpedia.org/ontology/museum",
+                    "?uri"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "When was the De Beers company founded?",
+        "named_entities": [
+            "http://dbpedia.org/resource/De_Beers"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://dbpedia.org/ontology/foundingYear"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://dbpedia.org/resource/De_Beers",
+                "?date"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://dbpedia.org/resource/De_Beers",
+                    "http://dbpedia.org/ontology/foundingYear",
+                    "?date"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Who became president after JFK died?",
+        "named_entities": [
+            "http://dbpedia.org/resource/John_F._Kennedy"
+        ],
+        "classes": [
+            "http://dbpedia.org/ontology/Person"
+        ],
+        "predicates": [
+            "http://dbpedia.org/property/presidentStart",
+            "http://dbpedia.org/property/presidentEnd",
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        ],
+        "known_to_known_paths": [
+            [
+                "http://dbpedia.org/resource/John_F._Kennedy",
+                "?x",
+                "?uri",
+                "http://dbpedia.org/ontology/Person"
+            ]
+        ],
+        "known_to_known_paths_triples": [
+            [
+                [
+                    "http://dbpedia.org/resource/John_F._Kennedy",
+                    "http://dbpedia.org/property/presidentEnd",
+                    "?x"
+                ],
+                [
+                    "?x",
+                    "~http://dbpedia.org/property/presidentStart",
+                    "?uri"
+                ],
+                [
+                    "?uri",
+                    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+                    "http://dbpedia.org/ontology/Person"
+                ]
+            ]
+        ],
+        "known_to_unknown_paths": [],
+        "known_to_unknown_paths_triples": []
+    },
+    {
+        "question": "Who are the parents of the wife of Juan Carlos I?",
+        "named_entities": [
+            "http://dbpedia.org/resource/Juan_Carlos_I_of_Spain"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://dbpedia.org/ontology/parent",
+            "http://dbpedia.org/ontology/spouse"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://dbpedia.org/resource/Juan_Carlos_I_of_Spain",
+                "?x",
+                "?uri"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://dbpedia.org/resource/Juan_Carlos_I_of_Spain",
+                    "http://dbpedia.org/ontology/spouse",
+                    "?x"
+                ],
+                [
+                    "?x",
+                    "http://dbpedia.org/ontology/parent",
+                    "?uri"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Who is the novelist of the work a song of ice and fire?",
+        "named_entities": [
+            "http://dbpedia.org/resource/A_Song_of_Ice_and_Fire"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://dbpedia.org/property/author"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://dbpedia.org/resource/A_Song_of_Ice_and_Fire",
+                "?Novelist"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://dbpedia.org/resource/A_Song_of_Ice_and_Fire",
+                    "http://dbpedia.org/property/author",
+                    "?Novelist"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "In which studio did the Beatles record their first album?",
+        "named_entities": [
+            "http://dbpedia.org/resource/The_Beatles"
+        ],
+        "classes": [
+            "http://dbpedia.org/ontology/Album"
+        ],
+        "predicates": [
+            "http://dbpedia.org/ontology/artist",
+            "http://dbpedia.org/ontology/releaseDate",
+            "http://dbpedia.org/property/studio",
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        ],
+        "known_to_known_paths": [
+            [
+                "http://dbpedia.org/resource/The_Beatles",
+                "?album",
+                "http://dbpedia.org/ontology/Album"
+            ]
+        ],
+        "known_to_known_paths_triples": [
+            [
+                [
+                    "http://dbpedia.org/resource/The_Beatles",
+                    "~http://dbpedia.org/ontology/artist",
+                    "?album"
+                ],
+                [
+                    "?album",
+                    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+                    "http://dbpedia.org/ontology/Album"
+                ]
+            ]
+        ],
+        "known_to_unknown_paths": [
+            [
+                "http://dbpedia.org/resource/The_Beatles",
+                "?album",
+                "?date"
+            ],
+            [
+                "http://dbpedia.org/resource/The_Beatles",
+                "?album",
+                "?studio"
+            ],
+            [
+                "http://dbpedia.org/ontology/Album",
+                "?album",
+                "?date"
+            ],
+            [
+                "http://dbpedia.org/ontology/Album",
+                "?album",
+                "?studio"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://dbpedia.org/resource/The_Beatles",
+                    "~http://dbpedia.org/ontology/artist",
+                    "?album"
+                ],
+                [
+                    "?album",
+                    "http://dbpedia.org/ontology/releaseDate",
+                    "?date"
+                ]
+            ],
+            [
+                [
+                    "http://dbpedia.org/resource/The_Beatles",
+                    "~http://dbpedia.org/ontology/artist",
+                    "?album"
+                ],
+                [
+                    "?album",
+                    "http://dbpedia.org/property/studio",
+                    "?studio"
+                ]
+            ],
+            [
+                [
+                    "http://dbpedia.org/ontology/Album",
+                    "~http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+                    "?album"
+                ],
+                [
+                    "?album",
+                    "http://dbpedia.org/ontology/releaseDate",
+                    "?date"
+                ]
+            ],
+            [
+                [
+                    "http://dbpedia.org/ontology/Album",
+                    "~http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+                    "?album"
+                ],
+                [
+                    "?album",
+                    "http://dbpedia.org/property/studio",
+                    "?studio"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Which beer brewing companies are located in North-Rhine Westphalia?",
+        "named_entities": [
+            "http://dbpedia.org/resource/Category:Companies_based_in_North_Rhine-Westphalia"
+        ],
+        "classes": [
+            "http://dbpedia.org/ontology/Brewery"
+        ],
+        "predicates": [
+            "http://purl.org/dc/terms/subject",
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        ],
+        "known_to_known_paths": [
+            [
+                "http://dbpedia.org/resource/Category:Companies_based_in_North_Rhine-Westphalia",
+                "?company",
+                "http://dbpedia.org/ontology/Brewery"
+            ]
+        ],
+        "known_to_known_paths_triples": [
+            [
+                [
+                    "http://dbpedia.org/resource/Category:Companies_based_in_North_Rhine-Westphalia",
+                    "~http://purl.org/dc/terms/subject",
+                    "?company"
+                ],
+                [
+                    "?company",
+                    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+                    "http://dbpedia.org/ontology/Brewery"
+                ]
+            ]
+        ],
+        "known_to_unknown_paths": [],
+        "known_to_unknown_paths_triples": []
+    },
+    {
+        "question": "When did princess Diana die?",
+        "named_entities": [
+            "http://dbpedia.org/resource/Diana,_Princess_of_Wales"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://dbpedia.org/ontology/deathDate"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://dbpedia.org/resource/Diana,_Princess_of_Wales",
+                "?d"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://dbpedia.org/resource/Diana,_Princess_of_Wales",
+                    "http://dbpedia.org/ontology/deathDate",
+                    "?d"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Who founded Intel?",
+        "named_entities": [
+            "http://dbpedia.org/resource/Intel"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://dbpedia.org/property/founders"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://dbpedia.org/resource/Intel",
+                "?uri"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://dbpedia.org/resource/Intel",
+                    "http://dbpedia.org/property/founders",
+                    "?uri"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Who is the youngest player in the Premier League?",
+        "named_entities": [
+            "http://dbpedia.org/resource/Premier_League"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://dbpedia.org/ontology/league",
+            "http://dbpedia.org/ontology/birthDate",
+            "http://dbpedia.org/ontology/team"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://dbpedia.org/resource/Premier_League",
+                "?league",
+                "?team",
+                "?uri",
+                "?date"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://dbpedia.org/resource/Premier_League",
+                    "~http://dbpedia.org/ontology/league",
+                    "?league"
+                ],
+                [
+                    "?league",
+                    "http://dbpedia.org/ontology/team",
+                    "?team"
+                ],
+                [
+                    "?team",
+                    "~http://dbpedia.org/ontology/team",
+                    "?uri"
+                ],
+                [
+                    "?uri",
+                    "http://dbpedia.org/ontology/birthDate",
+                    "?date"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Which instruments does Cat Stevens play?",
+        "named_entities": [
+            "http://dbpedia.org/resource/Cat_Stevens"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://dbpedia.org/ontology/instrument"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://dbpedia.org/resource/Cat_Stevens",
+                "?uri"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://dbpedia.org/resource/Cat_Stevens",
+                    "http://dbpedia.org/ontology/instrument",
+                    "?uri"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Who was called Rodzilla?",
+        "named_entities": [],
+        "classes": [],
+        "predicates": [
+            "http://xmlns.com/foaf/0.1/nick"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [],
+        "known_to_unknown_paths_triples": []
+    },
+    {
+        "question": "Give me the capitals of all countries in Africa.",
+        "named_entities": [
+            "http://dbpedia.org/resource/Category:Countries_in_Africa"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://dbpedia.org/ontology/capital",
+            "http://purl.org/dc/terms/subject"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://dbpedia.org/resource/Category:Countries_in_Africa",
+                "?country",
+                "?uri"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://dbpedia.org/resource/Category:Countries_in_Africa",
+                    "~http://purl.org/dc/terms/subject",
+                    "?country"
+                ],
+                [
+                    "?country",
+                    "http://dbpedia.org/ontology/capital",
+                    "?uri"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Which bridges are of the same type as the Manhattan Bridge?",
+        "named_entities": [
+            "http://dbpedia.org/resource/Manhattan_Bridge"
+        ],
+        "classes": [
+            "http://dbpedia.org/ontology/Bridge"
+        ],
+        "predicates": [
+            "http://dbpedia.org/ontology/type",
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        ],
+        "known_to_known_paths": [
+            [
+                "http://dbpedia.org/resource/Manhattan_Bridge",
+                "?type",
+                "?bridge",
+                "http://dbpedia.org/ontology/Bridge"
+            ]
+        ],
+        "known_to_known_paths_triples": [
+            [
+                [
+                    "http://dbpedia.org/resource/Manhattan_Bridge",
+                    "http://dbpedia.org/ontology/type",
+                    "?type"
+                ],
+                [
+                    "?type",
+                    "~http://dbpedia.org/ontology/type",
+                    "?bridge"
+                ],
+                [
+                    "?bridge",
+                    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+                    "http://dbpedia.org/ontology/Bridge"
+                ]
+            ]
+        ],
+        "known_to_unknown_paths": [],
+        "known_to_unknown_paths_triples": []
+    },
+    {
+        "question": "How many companies were founded by the founder of Facebook?",
+        "named_entities": [
+            "http://dbpedia.org/resource/Facebook"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://dbpedia.org/ontology/foundedBy"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://dbpedia.org/resource/Facebook",
+                "?uri",
+                "?x"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://dbpedia.org/resource/Facebook",
+                    "http://dbpedia.org/ontology/foundedBy",
+                    "?uri"
+                ],
+                [
+                    "?uri",
+                    "~http://dbpedia.org/ontology/foundedBy",
+                    "?x"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Show me hiking trails in the Grand Canyon where there's no danger of flash floods.",
+        "named_entities": [
+            "http://dbpedia.org/resource/Flash_flood",
+            "http://dbpedia.org/resource/Grand_Canyon"
+        ],
+        "classes": [],
+        "predicates": [
+            "http://dbpedia.org/property/trailheads"
+        ],
+        "known_to_known_paths": [
+            [
+                "http://dbpedia.org/resource/Grand_Canyon",
+                "?uri",
+                "http://dbpedia.org/resource/Flash_flood"
+            ]
+        ],
+        "known_to_known_paths_triples": [
+            [
+                [
+                    "http://dbpedia.org/resource/Grand_Canyon",
+                    "~http://dbpedia.org/property/trailheads",
+                    "?uri"
+                ],
+                [
+                    "?uri",
+                    "http://dbpedia.org/property/hazards",
+                    "http://dbpedia.org/resource/Flash_flood"
+                ]
+            ]
+        ],
+        "known_to_unknown_paths": [],
+        "known_to_unknown_paths_triples": []
+    },
+    {
+        "question": "Which book has the most pages?",
+        "named_entities": [],
+        "classes": [
+            "http://dbpedia.org/ontology/Book"
+        ],
+        "predicates": [
+            "http://dbpedia.org/ontology/numberOfPages",
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [
+            [
+                "http://dbpedia.org/ontology/Book",
+                "?uri",
+                "?n"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://dbpedia.org/ontology/Book",
+                    "~http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+                    "?uri"
+                ],
+                [
+                    "?uri",
+                    "http://dbpedia.org/ontology/numberOfPages",
+                    "?n"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What is the largest state in the United States?",
+        "named_entities": [
+            "http://dbpedia.org/resource/Category:States_of_the_United_States"
+        ],
+        "classes": [
+            "http://dbpedia.org/ontology/AdministrativeRegion"
+        ],
+        "predicates": [
+            "http://purl.org/dc/terms/subject",
+            "http://dbpedia.org/ontology/areaTotal",
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        ],
+        "known_to_known_paths": [
+            [
+                "http://dbpedia.org/resource/Category:States_of_the_United_States",
+                "?uri",
+                "http://dbpedia.org/ontology/AdministrativeRegion"
+            ]
+        ],
+        "known_to_known_paths_triples": [
+            [
+                [
+                    "http://dbpedia.org/resource/Category:States_of_the_United_States",
+                    "~http://purl.org/dc/terms/subject",
+                    "?uri"
+                ],
+                [
+                    "?uri",
+                    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+                    "http://dbpedia.org/ontology/AdministrativeRegion"
+                ]
+            ]
+        ],
+        "known_to_unknown_paths": [
+            [
+                "http://dbpedia.org/resource/Category:States_of_the_United_States",
+                "?uri",
+                "?area"
+            ],
+            [
+                "http://dbpedia.org/ontology/AdministrativeRegion",
+                "?uri",
+                "?area"
+            ]
+        ],
+        "known_to_unknown_paths_triples": [
+            [
+                [
+                    "http://dbpedia.org/resource/Category:States_of_the_United_States",
+                    "~http://purl.org/dc/terms/subject",
+                    "?uri"
+                ],
+                [
+                    "?uri",
+                    "http://dbpedia.org/ontology/areaTotal",
+                    "?area"
+                ]
+            ],
+            [
+                [
+                    "http://dbpedia.org/ontology/AdministrativeRegion",
+                    "~http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+                    "?uri"
+                ],
+                [
+                    "?uri",
+                    "http://dbpedia.org/ontology/areaTotal",
+                    "?area"
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Give me the websites of companies with more than 500000 employees.",
+        "named_entities": [],
+        "classes": [],
+        "predicates": [
+            "http://xmlns.com/foaf/0.1/homepage",
+            "http://dbpedia.org/ontology/numberOfEmployees"
+        ],
+        "known_to_known_paths": [],
+        "known_to_known_paths_triples": [],
+        "known_to_unknown_paths": [],
+        "known_to_unknown_paths_triples": []
+    },
+    {
+        "question": "What were the names of the three ships by Columbus?",
+        "named_entities": [
+            "http://dbpedia.org/resource/Category:Exploration_ships",
+            "http://dbpedia.org/resource/Category:Christopher_Columbus"
+        ],
+        "classes": [
+            "http://dbpedia.org/ontology/Ship"
+        ],
+        "predicates": [
+            "http://purl.org/dc/terms/subject",
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        ],
+        "known_to_known_paths": [
+            [
+                "http://dbpedia.org/ontology/Ship",
+                "?uri",
+                "http://dbpedia.org/resource/Category:Christopher_Columbus"
+            ],
+            [
+                "http://dbpedia.org/ontology/Ship",
+                "?uri",
+                "http://dbpedia.org/resource/Category:Exploration_ships"
+            ],
+            [
+                "http://dbpedia.org/resource/Category:Christopher_Columbus",
+                "?uri",
+                "http://dbpedia.org/resource/Category:Exploration_ships"
+            ]
+        ],
+        "known_to_known_paths_triples": [
+            [
+                [
+                    "http://dbpedia.org/ontology/Ship",
+                    "~http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+                    "?uri"
+                ],
+                [
+                    "?uri",
+                    "http://purl.org/dc/terms/subject",
+                    "http://dbpedia.org/resource/Category:Christopher_Columbus"
+                ]
+            ],
+            [
+                [
+                    "http://dbpedia.org/ontology/Ship",
+                    "~http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+                    "?uri"
+                ],
+                [
+                    "?uri",
+                    "http://purl.org/dc/terms/subject",
+                    "http://dbpedia.org/resource/Category:Exploration_ships"
+                ]
+            ],
+            [
+                [
+                    "http://dbpedia.org/resource/Category:Christopher_Columbus",
+                    "~http://purl.org/dc/terms/subject",
+                    "?uri"
+                ],
+                [
+                    "?uri",
+                    "http://purl.org/dc/terms/subject",
+                    "http://dbpedia.org/resource/Category:Exploration_ships"
+                ]
+            ]
+        ],
+        "known_to_unknown_paths": [],
+        "known_to_unknown_paths_triples": []
+    }
+]

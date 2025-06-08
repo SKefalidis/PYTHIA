@@ -1,0 +1,32 @@
+model: env(MODEL:openai/gpt-5-mini)
+model_endpoint: env(MODEL_ENDPOINT:null)
+
+seed: env(SEED:22)
+
+fn_set: env(FN_SET:all)
+feedback: env(FEEDBACK:false)
+know_before_use: env(KNOW_BEFORE_USE:false)
+notes_file: env(NOTES_FILE:null)
+
+temperature: env(TEMPERATURE:1.0)
+top_p: env(TOP_P:1.0)
+reasoning_effort: env(REASONING_EFFORT:null)
+reasoning_summary: env(REASONING_SUMMARY:null)
+api: env(API:null)
+
+list_k: env(LIST_K:10)
+search_top_k: env(SEARCH_TOP_K:10)
+result_max_rows: env(RESULT_MAX_ROWS:10)
+result_max_columns: env(RESULT_MAX_COLUMNS:10)
+
+force_examples: env(FORCE_EXAMPLES:null)
+random_examples: env(RANDOM_EXAMPLES:false)
+num_examples: env(NUM_EXAMPLES:3)
+
+knowledge_graphs:
+  - kg: env(KG:wikidata)
+    endpoint: env(KG_ENDPOINT:null)
+    example_index: env(KG_EXAMPLES:null)
+    entities_type: env(ENTITIES_TYPE:null)
+    properties_type: env(PROPERTIES_TYPE:null)
+    notes_file: env(KG_NOTES_FILE:null)

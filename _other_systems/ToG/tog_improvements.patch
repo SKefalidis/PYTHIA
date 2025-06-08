@@ -1,0 +1,775 @@
+diff --git a/ToG/freebase_func.py b/ToG/freebase_func.py
+index e141764..f2b3efb 100644
+--- a/ToG/freebase_func.py
++++ b/ToG/freebase_func.py
+@@ -1,49 +1,172 @@
++from operator import is_
++from site import PREFIXES
++import traceback
+ from SPARQLWrapper import SPARQLWrapper, JSON
+-from utils import *
++from utils import run_llm, compute_bm25_similarity, retrieve_top_docs, extract_answer, save_2_jsonl, if_true, clean_scores, all_unknown_entity, del_unknown_entity
++from globals import get_current_metrics, get_global_metrics, get_password, get_user
++import globals
+ 
+-SPARQLPATH = "http://192.168.80.12:8890/sparql"  # depend on your own internal address and port, shown in Freebase folder's readme.md
++SPARQLPATH = "None"
++def set_sparql_path(sparql_path):
++    global SPARQLPATH
++    SPARQLPATH = sparql_path
+ 
+ # pre-defined sparqls
+-sparql_head_relations = """\nPREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT ?relation\nWHERE {\n  ns:%s ?relation ?x .\n}"""
+-sparql_tail_relations = """\nPREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT ?relation\nWHERE {\n  ?x ?relation ns:%s .\n}"""
+-sparql_tail_entities_extract = """PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT ?tailEntity\nWHERE {\nns:%s ns:%s ?tailEntity .\n}""" 
+-sparql_head_entities_extract = """PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT ?tailEntity\nWHERE {\n?tailEntity ns:%s ns:%s  .\n}"""
+-sparql_id = """PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?tailEntity\nWHERE {\n  {\n    ?entity ns:type.object.name ?tailEntity .\n    FILTER(?entity = ns:%s)\n  }\n  UNION\n  {\n    ?entity <http://www.w3.org/2002/07/owl#sameAs> ?tailEntity .\n    FILTER(?entity = ns:%s)\n  }\n}"""
+-    
++sparql_head_relations = """
++{prefixes}
++SELECT ?relation WHERE {{
++    {entity} ?relation ?x .
++}}
++"""
++sparql_tail_relations = """
++{prefixes}
++SELECT ?relation WHERE {{
++    ?x ?relation {entity} .
++}}"""
++
++sparql_tail_entities_extract = """
++{prefixes}
++SELECT ?tailEntity WHERE {{
++    {entity} {predicate} ?tailEntity .
++}}"""
++sparql_head_entities_extract = """
++{prefixes}
++SELECT ?tailEntity WHERE {{
++    ?tailEntity {predicate} {entity} .
++}}"""
++
++sparql_id = """
++{prefixes}
++SELECT DISTINCT ?tailEntity WHERE {{
++    {{
++        {entity} <{label_predicate_uri}> ?tailEntity .
++    }}
++    UNION 
++    {{
++        {entity} <http://www.w3.org/2002/07/owl#sameAs> ?tailEntity .
++    }}
++}}"""
++
++# FIXME: Will leave this as is.
+ def check_end_word(s):
+     words = [" ID", " code", " number", "instance of", "website", "URL", "inception", "image", " rate", " count"]
+     return any(s.endswith(word) for word in words)
+ 
+-def abandon_rels(relation):
+-    if relation == "type.object.type" or relation == "type.object.name" or relation.startswith("common.") or relation.startswith("freebase.") or "sameAs" in relation:
++# FIXME: Must find type-predicate and name-predicate for all KGs. It turns out that this is a speed optimization, therefore disabled by default.
++def abandon_rels(relation, type_predicates=['type.object.type'], name_predicates=['type.object.name']):
++    for predicate in type_predicates:
++        if relation in predicate:
++            return True
++    for predicate in name_predicates:
++        if relation in predicate:
++            return True
++    if "sameAs" in relation:
+         return True
+-
++    # Disabled KG-specific optimizations.
++    # if relation.startswith("common.") or relation.startswith("freebase.") or "sameAs" in relation:
++    #     return True
++    return False
++
++def replace_relation_prefix(relations, prefixes):
++    "Also prunes non-relation results."
++    new_relations = []
++    for relation in relations:
++        relation_value = relation['relation']['value']
++        for prefix in prefixes:
++            if relation_value.startswith(prefix[1]):
++                new_relations.append(relation_value.replace(prefix[1], prefix[0] + ":"))
++                break
++    return new_relations
++
++def replace_entities_prefix(entities, prefixes):
++    "Also prunes non-entity results."
++    new_entities = []
++    new_values = []
++    for entity in entities:
++        entity_value = entity['tailEntity']['value']
++        is_value = True
++        for prefix in prefixes:
++            if entity_value.startswith(prefix[1]):
++                new_entities.append(entity_value.replace(prefix[1], prefix[0] + ":"))
++                is_value = False
++                break
++        if is_value:
++            new_values.append(entity_value)
++    return new_entities, new_values
++
++def expand_prefix(entity):
++    if ("http:" in entity or "https:" in entity) and entity.startswith("<") and entity.endswith(">"):
++        return entity
++    elif "http:" in entity or "https:" in entity:
++        return "<" + entity + ">"
++    for prefix in globals.PREFIXES_LIST:
++        if entity.startswith(prefix[0] + ":"):
++            return "<" + entity.replace(prefix[0] + ":", prefix[1]) + ">"
++    return entity
+ 
+ def execurte_sparql(sparql_query):
++    get_current_metrics().SPARQL_CALLS += 1
++    start_time = time.time()
+     sparql = SPARQLWrapper(SPARQLPATH)
++    sparql.setCredentials(get_user(), get_password())
+     sparql.setQuery(sparql_query)
+     sparql.setReturnFormat(JSON)
+-    results = sparql.query().convert()
++    sparql.setTimeout(91)
++    print(sparql_query)
++    try:
++        results = sparql.query().convert()
++    except Exception as e:
++        print("SPARQL failed:", e)
++        print(traceback.format_exc())
++        results = {"results": {"bindings": []}}
++    get_current_metrics().SPARQL_TIME += time.time() - start_time
+     return results["results"]["bindings"]
+ 
+-
+-def replace_relation_prefix(relations):
+-    return [relation['relation']['value'].replace("http://rdf.freebase.com/ns/","") for relation in relations]
+-
+-def replace_entities_prefix(entities):
+-    return [entity['tailEntity']['value'].replace("http://rdf.freebase.com/ns/","") for entity in entities]
+-
+-
+ def id2entity_name_or_type(entity_id):
+-    sparql_query = sparql_id % (entity_id, entity_id)
+-    sparql = SPARQLWrapper(SPARQLPATH)
+-    sparql.setQuery(sparql_query)
+-    sparql.setReturnFormat(JSON)
+-    results = sparql.query().convert()
+-    if len(results["results"]["bindings"])==0:
++    if isinstance(globals.LABEL_PREDICATE, str) and globals.LABEL_PREDICATE != "":
++        get_current_metrics().SPARQL_CALLS += 1
++        start_time = time.time()
++        sparql_query = sparql_id.format(prefixes=globals.PREFIXES, entity=expand_prefix(entity_id), label_predicate_uri=globals.LABEL_PREDICATE)
++        sparql = SPARQLWrapper(SPARQLPATH)
++        sparql.setCredentials(get_user(), get_password())
++        sparql.setQuery(sparql_query)
++        sparql.setReturnFormat(JSON)
++        sparql.setTimeout(91)
++        print(sparql_query)
++        try:
++            results = sparql.query().convert()
++        except Exception as e:
++            print("SPARQL failed:", e)
++            print(traceback.format_exc())
++            results = {"results": {"bindings": []}}
++        get_current_metrics().SPARQL_TIME += time.time() - start_time
++        if len(results["results"]["bindings"])==0:
++            return "UnName_Entity"
++        else:
++            return results["results"]["bindings"][0]['tailEntity']['value']
++    elif isinstance(globals.LABEL_PREDICATE, list) and len(globals.LABEL_PREDICATE) > 0:
++        for label_predicate in globals.LABEL_PREDICATE:
++            get_current_metrics().SPARQL_CALLS += 1
++            start_time = time.time()
++            sparql_query = sparql_id.format(prefixes=globals.PREFIXES, entity=expand_prefix(entity_id), label_predicate_uri=label_predicate)
++            sparql = SPARQLWrapper(SPARQLPATH)
++            sparql.setCredentials(get_user(), get_password())
++            sparql.setQuery(sparql_query)
++            sparql.setReturnFormat(JSON)
++            sparql.setTimeout(91)
++            print(sparql_query)
++            try:
++                results = sparql.query().convert()
++            except Exception as e:
++                print("SPARQL failed:", e)
++                print(traceback.format_exc())
++                results = {"results": {"bindings": []}}
++            get_current_metrics().SPARQL_TIME += time.time() - start_time
++            if len(results["results"]["bindings"])>0:
++                return results["results"]["bindings"][0]['tailEntity']['value']
+         return "UnName_Entity"
+     else:
+-        return results["results"]["bindings"][0]['tailEntity']['value']
++        return re.split(r'[#/]', entity_id)[-1]
+     
+ from freebase_func import *
+ from prompt_list import *
+@@ -107,13 +230,15 @@ def construct_entity_score_prompt(question, relation, entity_candidates):
+ 
+ 
+ def relation_search_prune(entity_id, entity_name, pre_relations, pre_head, question, args):
+-    sparql_relations_extract_head = sparql_head_relations % (entity_id)
++    sparql_relations_extract_head = sparql_head_relations.format(prefixes=globals.PREFIXES, entity=expand_prefix(entity_id))
+     head_relations = execurte_sparql(sparql_relations_extract_head)
+-    head_relations = replace_relation_prefix(head_relations)
++    head_relations = replace_relation_prefix(head_relations, globals.PREFIXES_LIST)
++    head_relations = list(set(head_relations))
+     
+-    sparql_relations_extract_tail= sparql_tail_relations % (entity_id)
++    sparql_relations_extract_tail= sparql_tail_relations.format(prefixes=globals.PREFIXES, entity=expand_prefix(entity_id))
+     tail_relations = execurte_sparql(sparql_relations_extract_tail)
+-    tail_relations = replace_relation_prefix(tail_relations)
++    tail_relations = replace_relation_prefix(tail_relations, globals.PREFIXES_LIST)
++    tail_relations = list(set(tail_relations))
+ 
+     if args.remove_unnecessary_rel:
+         head_relations = [relation for relation in head_relations if not abandon_rels(relation)]
+@@ -128,12 +253,16 @@ def relation_search_prune(entity_id, entity_name, pre_relations, pre_head, quest
+     tail_relations = list(set(tail_relations))
+     total_relations = head_relations+tail_relations
+     total_relations.sort()  # make sure the order in prompt is always equal
++
++    print("Total relations before pruning: ", total_relations)
+     
+     if args.prune_tools == "llm":
+         prompt = construct_relation_prune_prompt(question, entity_name, total_relations, args)
+-
++        print(prompt)
+         result = run_llm(prompt, args.temperature_exploration, args.max_length, args.opeani_api_keys, args.LLM_type)
++        print(result)
+         flag, retrieve_relations_with_scores = clean_relations(result, entity_id, head_relations) 
++        print("Retrieved relations with scores: ", retrieve_relations_with_scores)
+ 
+     elif args.prune_tools == "bm25":
+         topn_relations, topn_scores = compute_bm25_similarity(question, total_relations, args.width)
+@@ -144,6 +273,7 @@ def relation_search_prune(entity_id, entity_name, pre_relations, pre_head, quest
+         flag, retrieve_relations_with_scores = clean_relations_bm25_sent(topn_relations, topn_scores, entity_id, head_relations) 
+ 
+     if flag:
++        # print("Retrieved relations with scores: ", retrieve_relations_with_scores)
+         return retrieve_relations_with_scores
+     else:
+         return [] # format error or too small max_length
+@@ -151,16 +281,17 @@ def relation_search_prune(entity_id, entity_name, pre_relations, pre_head, quest
+     
+ def entity_search(entity, relation, head=True):
+     if head:
+-        tail_entities_extract = sparql_tail_entities_extract% (entity, relation)
++        tail_entities_extract = sparql_tail_entities_extract.format(prefixes=globals.PREFIXES, entity=expand_prefix(entity), predicate=expand_prefix(relation))
+         entities = execurte_sparql(tail_entities_extract)
+     else:
+-        head_entities_extract = sparql_head_entities_extract% (entity, relation)
++        head_entities_extract = sparql_head_entities_extract.format(prefixes=globals.PREFIXES, entity=expand_prefix(entity), predicate=expand_prefix(relation))
+         entities = execurte_sparql(head_entities_extract)
+ 
+-
+-    entity_ids = replace_entities_prefix(entities)
+-    new_entity = [entity for entity in entity_ids if entity.startswith("m.")]
+-    return new_entity
++    entity_ids, literal_values = replace_entities_prefix(entities, globals.PREFIXES_LIST) # Replacement also filters non-entities as the original code did (returned as separate lists).
++    
++    # print("Retrieved entities: ", entity_ids)
++    
++    return entity_ids, literal_values # literal values are only used in improved ToG
+ 
+ 
+ def entity_score(question, entity_candidates_id, score, relation, args):
+@@ -193,6 +324,35 @@ def entity_score(question, entity_candidates_id, score, relation, args):
+         topn_scores = [float(1/len(topn_scores))] * len(topn_scores)
+     return [float(x) * score for x in topn_scores], topn_entities, entity_candidates_id
+ 
++
++def improved_entity_score(question, entity_candidates_id, literal_values, score, relation, args):
++    entity_candidates = [id2entity_name_or_type(entity_id) for entity_id in entity_candidates_id]
++    literal_candidates = literal_values
++
++    combined_candidates = entity_candidates + literal_candidates
++    combined_ids = entity_candidates_id + ["LITERAL_"+str(i) for i in range(len(literal_candidates))]
++
++    if all_unknown_entity(combined_candidates):
++        return [1/len(combined_candidates) * score] * len(combined_candidates), combined_candidates, combined_ids
++    combined_candidates = del_unknown_entity(combined_candidates)
++    if len(combined_candidates) == 1:
++        return [score], combined_candidates, combined_ids
++    if len(combined_candidates) == 0:
++        return [0.0], combined_candidates, combined_ids
++    
++    # make sure the id and entity are in the same order
++    zipped_lists = sorted(zip(combined_candidates, combined_ids))
++    combined_candidates, combined_ids = zip(*zipped_lists)
++    combined_candidates = list(combined_candidates)
++    combined_ids = list(combined_ids)
++    if args.prune_tools == "llm":
++        prompt = construct_entity_score_prompt(question, relation, combined_candidates)
++
++        result = run_llm(prompt, args.temperature_exploration, args.max_length, args.opeani_api_keys, args.LLM_type)
++        return [float(x) * score for x in clean_scores(result, combined_candidates)], combined_candidates, combined_ids
++    else:
++        raise NotImplementedError("Improved entity scoring is only implemented for LLM pruning.")
++
+     
+ def update_history(entity_candidates, entity, scores, entity_candidates_id, total_candidates, total_scores, total_relations, total_entities_id, total_topic_entities, total_head):
+     if len(entity_candidates) == 0:
+@@ -252,8 +412,4 @@ def reasoning(question, cluster_chain_of_entities, args):
+     if if_true(result):
+         return True, response
+     else:
+-        return False, response
+-    
+-
+-
+-
++        return False, response
+\ No newline at end of file
+diff --git a/ToG/main_freebase.py b/ToG/main_freebase.py
+index 0515d26..219cb69 100644
+--- a/ToG/main_freebase.py
++++ b/ToG/main_freebase.py
+@@ -1,17 +1,22 @@
++from narwhals import lit
++# from numpy.strings import lower
+ from tqdm import tqdm
+ import argparse
+ from utils import *
+-from freebase_func import *
+ import random
++import os
++import json
+ from client import *
+-
++from globals import *
+ 
+ if __name__ == '__main__':
++    from freebase_func import *
++
+     parser = argparse.ArgumentParser()
+     parser.add_argument("--dataset", type=str,
+                         default="webqsp", help="choose the dataset.")
+     parser.add_argument("--max_length", type=int,
+-                        default=256, help="the max length of LLMs output.")
++                        default=512, help="the max length of LLMs output.")
+     parser.add_argument("--temperature_exploration", type=float,
+                         default=0.4, help="the temperature in exploration stage.")
+     parser.add_argument("--temperature_reasoning", type=float,
+@@ -21,22 +26,69 @@ if __name__ == '__main__':
+     parser.add_argument("--depth", type=int,
+                         default=3, help="choose the search depth of ToG.")
+     parser.add_argument("--remove_unnecessary_rel", type=bool,
+-                        default=True, help="whether removing unnecessary relations.")
++                        default=False, help="whether removing unnecessary relations.") # Set to FALSE to disable KG-specific optimizations
+     parser.add_argument("--LLM_type", type=str,
+-                        default="gpt-3.5-turbo", help="base LLM model.")
++                        default="gpt-4.1-mini", help="base LLM model.") # Set the same LLM as Pythia
+     parser.add_argument("--opeani_api_keys", type=str,
+                         default="", help="if the LLM_type is gpt-3.5-turbo or gpt-4, you need add your own openai api keys.")
+     parser.add_argument("--num_retain_entity", type=int,
+                         default=5, help="Number of entities retained during entities search.")
+     parser.add_argument("--prune_tools", type=str,
+                         default="llm", help="prune tools for ToG, can be llm (same as LLM_type), bm25 or sentencebert.")
++    parser.add_argument("--endpoint", type=str)
++    parser.add_argument("--user", type=str, default="user")
++    parser.add_argument("--password", type=str, default="user")
++    parser.add_argument("--improved_tog", action='store_true',
++                        help="whether using improved ToG with support for literal values.")
+     args = parser.parse_args()
+ 
++    set_user(args.user)
++    set_password(args.password)
++
++    set_improved_tog(args.improved_tog)
++
++    if args.improved_tog:
++        print("Improved ToG enabled: literal values are considered during entity search and scoring.")
++    else:
++        print("Original ToG enabled: only entity candidates are considered during entity search and scoring.")
++
+     datas, question_string = prepare_dataset(args.dataset)
+     print("Start Running ToG on %s dataset." % args.dataset)
++    
++    entries_r_count = -1
++    if os.path.exists("ToG_{}.jsonl".format(args.dataset)):
++        with open("ToG_{}.jsonl".format(args.dataset), "r") as infile:
++            entries = json.load(infile)
++            entries_r_count = len(entries)
++
++    entries_m_count = -1
++    if os.path.exists("ToG_{}_metrics.json".format(args.dataset)):
++        with open("ToG_{}_metrics.json".format(args.dataset), "r") as infile:
++            get_global_metrics().load_from_file("ToG_{}_metrics.json".format(args.dataset))
++            entries_m_count = get_global_metrics().QUESTIONS
++
++    if entries_r_count > 0 and entries_m_count > 0 and entries_r_count != entries_m_count:
++        print("Warning: The number of entries in ToG_{}.jsonl and ToG_{}_metrics.json are inconsistent.".format(args.dataset, args.dataset))
++        exit(1)
++    elif entries_r_count > 0 and entries_m_count > 0 and entries_r_count == entries_m_count:
++        print("Resuming from entry %d." % entries_r_count)
++        datas = datas[entries_r_count:]
++    
+     for data in tqdm(datas):
++        get_current_metrics(new=True)
++        set_timer_to_current()
++        set_sparql_path(args.endpoint)
++
+         question = data[question_string]
+-        topic_entity = data['topic_entity']
++        # topic_entity = data['topic_entity']
++        # FIXME: Temporary workaround for Freebase!!
++        
++        if args.dataset.lower() in ['webqsp', 'cwq']:
++            topic_entity = {"ns:"+k: v for k, v in data['topic_entity'].items()}
++            
++        if args.dataset.lower() in ['qald-10', 'qald-9', 'lc-quad-1', 'lc-quad-2', 'spinach', 'bestiary', 'geoq1089', 'qald-10-bela', 'qald-9-bela', 'lc-quad-1-bela', 'lc-quad-2-bela', 'webqsp-bela', 'cwq-bela']:
++            topic_entity = {k: v for k, v in data['topic_entities'].items()}
++    
+         cluster_chain_of_entities = []
+         if len(topic_entity) == 0:
+             results = generate_without_explored_paths(question, args)
+@@ -49,9 +101,17 @@ if __name__ == '__main__':
+             current_entity_relations_list = []
+             i=0
+             for entity in topic_entity:
+-                if entity!="[FINISH_ID]":
+-                    retrieve_relations_with_scores = relation_search_prune(entity, topic_entity[entity], pre_relations, pre_heads[i], question, args)  # best entity triplet, entitiy_id
+-                    current_entity_relations_list.extend(retrieve_relations_with_scores)
++                if entity!="[FINISH_ID]" and len(pre_heads)>0:
++                    try:
++                        retrieve_relations_with_scores = relation_search_prune(entity, topic_entity[entity], pre_relations, pre_heads[i], question, args)  # best entity triplet, entitiy_id
++                        print("Retrieved relations for entity %s: %s" % (entity, retrieve_relations_with_scores))
++                        current_entity_relations_list.extend(retrieve_relations_with_scores)
++                    except Exception as e:
++                        print(topic_entity)
++                        print(pre_heads)
++                        print(entity)
++                        print(i)
++                        raise e
+                 i+=1
+             total_candidates = []
+             total_scores = []
+@@ -62,19 +122,38 @@ if __name__ == '__main__':
+ 
+             for entity in current_entity_relations_list:
+                 if entity['head']:
+-                    entity_candidates_id = entity_search(entity['entity'], entity['relation'], True)
++                    # literal values empty unless improved ToG is enabled
++                    entity_candidates_id, literal_values = entity_search(entity['entity'], entity['relation'], True)
+                 else:
+-                    entity_candidates_id = entity_search(entity['entity'], entity['relation'], False)
++                    entity_candidates_id, literal_values = entity_search(entity['entity'], entity['relation'], False)
++
++                # only entity candidates unless improved ToG is enabled
++                combined = entity_candidates_id + literal_values
+                 
+                 if args.prune_tools == "llm":
+-                    if len(entity_candidates_id) >=20:
+-                        entity_candidates_id = random.sample(entity_candidates_id, args.num_retain_entity)
++                    if len(combined) >=20:
++                        combined = random.sample(combined, args.num_retain_entity)
++                    if args.improved_tog == False:
++                        entity_candidates_id = combined
++                        literal_values = []
++                    else:
++                        entity_candidates_id = [c for c in combined if c in entity_candidates_id]
++                        literal_values = [c for c in combined if c in literal_values]
+ 
+-                if len(entity_candidates_id) ==0:
+-                    continue
+-                scores, entity_candidates, entity_candidates_id = entity_score(question, entity_candidates_id, entity['score'], entity['relation'], args)
++                if len(entity_candidates_id) == 0:
++                    if args.improved_tog == False: # Original ToG behavior
++                        continue
++                    elif len(literal_values) == 0:
++                        continue
++                
++                if args.improved_tog == False:
++                    scores, entity_candidates, entity_candidates_id = entity_score(question, entity_candidates_id, literal_values, entity['score'], entity['relation'], args)
++                else: # also consider literal values
++                    scores, entity_candidates, entity_candidates_id = improved_entity_score(question, entity_candidates_id, literal_values, entity['score'], entity['relation'], args)
++                print("Entity candidates after scoring: ", entity_candidates_id)
+                 
+                 total_candidates, total_scores, total_relations, total_entities_id, total_topic_entities, total_head = update_history(entity_candidates, entity, scores, entity_candidates_id, total_candidates, total_scores, total_relations, total_entities_id, total_topic_entities, total_head)
++                print(total_candidates)
+             
+             if len(total_candidates) ==0:
+                 half_stop(question, cluster_chain_of_entities, depth, args)
+@@ -97,7 +176,7 @@ if __name__ == '__main__':
+                         half_stop(question, cluster_chain_of_entities, depth, args)
+                         flag_printed = True
+                     else:
+-                        topic_entity = {entity: id2entity_name_or_type(entity) for entity in entities_id}
++                        topic_entity = {entity: id2entity_name_or_type(entity) for entity in entities_id if not entity.startswith("LITERAL")} # avoid literal values as topic entities
+                         continue
+             else:
+                 half_stop(question, cluster_chain_of_entities, depth, args)
+diff --git a/ToG/prompt_list.py b/ToG/prompt_list.py
+index 875eef7..d9a7f9e 100644
+--- a/ToG/prompt_list.py
++++ b/ToG/prompt_list.py
+@@ -1,11 +1,11 @@
+ extract_relation_prompt = """Please retrieve %s relations (separated by semicolon) that contribute to the question and rate their contribution on a scale from 0 to 1 (the sum of the scores of %s relations is 1).
+ Q: Name the president of the country whose main spoken language was Brahui in 1980?
+ Topic Entity: Brahui Language
+-Relations: language.human_language.main_country; language.human_language.language_family; language.human_language.iso_639_3_code; base.rosetta.languoid.parent; language.human_language.writing_system; base.rosetta.languoid.languoid_class; language.human_language.countries_spoken_in; kg.object_profile.prominent_type; base.rosetta.languoid.document; base.ontologies.ontology_instance.equivalent_instances; base.rosetta.languoid.local_name; language.human_language.region
+-A: 1. {language.human_language.main_country (Score: 0.4))}: This relation is highly relevant as it directly relates to the country whose president is being asked for, and the main country where Brahui language is spoken in 1980.
+-2. {language.human_language.countries_spoken_in (Score: 0.3)}: This relation is also relevant as it provides information on the countries where Brahui language is spoken, which could help narrow down the search for the president.
+-3. {base.rosetta.languoid.parent (Score: 0.2)}: This relation is less relevant but still provides some context on the language family to which Brahui belongs, which could be useful in understanding the linguistic and cultural background of the country in question.
+-
++Relations: ns:language.human_language.main_country; ns:language.human_language.language_family; ns:language.human_language.iso_639_3_code; ns:base.rosetta.languoid.parent; ns:language.human_language.writing_system; ns:base.rosetta.languoid.languoid_class; ns:language.human_language.countries_spoken_in; ns:kg.object_profile.prominent_type; ns:base.rosetta.languoid.document; ns:base.ontologies.ontology_instance.equivalent_instances; ns:base.rosetta.languoid.local_name; ns:language.human_language.region
++A: 1. {ns:language.human_language.main_country (Score: 0.4)}: This relation is highly relevant as it directly relates to the country whose president is being asked for, and the main country where Brahui language is spoken in 1980.
++2. {ns:language.human_language.countries_spoken_in (Score: 0.3)}: This relation is also relevant as it provides information on the countries where Brahui language is spoken, which could help narrow down the search for the president.
++3. {ns:base.rosetta.languoid.parent (Score: 0.2)}: This relation is less relevant but still provides some context on the language family to which Brahui belongs, which could be useful in understanding the linguistic and cultural background of the country in question.
++You must follow the exact format { RELATION_ID (Score: DECIMAL_NUMBER) }. Do not include any other text or change the format.
+ Q: """
+ 
+ score_entity_candidates_prompt = """Please score the entities' contribution to the question on a scale from 0 to 1 (the sum of the scores of all entities is 1).
+@@ -54,7 +54,7 @@ A: Based on the given knowledge triplets, we can infer that the National Anthem
+ Q: {}
+ """
+ 
+-prompt_evaluate="""Given a question and the associated retrieved knowledge graph triplets (entity, relation, entity), you are asked to answer whether it's sufficient for you to answer the question with these triplets and your knowledge (Yes or No).
++prompt_evaluate="""Given a question and the associated retrieved knowledge graph triplets (entity, relation, entity), you are asked to answer whether it's sufficient for you to answer the question with these triplets and your knowledge (Yes or No). Put both Yes or No and the final answer (if you can answer) in curly braces.
+ Q: Find the person who said \"Taste cannot be controlled by law\", what did this person die from?
+ Knowledge Triplets: Taste cannot be controlled by law., media_common.quotation.author, Thomas Jefferson
+ A: {No}. Based on the given knowledge triplets, it's not sufficient to answer the entire question. The triplets only provide information about the person who said "Taste cannot be controlled by law," which is Thomas Jefferson. To answer the second part of the question, it's necessary to have additional knowledge about where Thomas Jefferson's dead.
+diff --git a/ToG/utils.py b/ToG/utils.py
+index 30f5c75..c5174e4 100644
+--- a/ToG/utils.py
++++ b/ToG/utils.py
+@@ -3,6 +3,7 @@ import json
+ import time
+ import openai
+ import re
++import os
+ from prompt_list import *
+ from rank_bm25 import BM25Okapi
+ from sentence_transformers import util
+@@ -102,14 +103,18 @@ def clean_relations_bm25_sent(topn_relations, topn_scores, entity_id, head_relat
+         i+=1
+     return True, relations
+ 
++from globals import *
+ 
+ def run_llm(prompt, temperature, max_tokens, opeani_api_keys, engine="gpt-3.5-turbo"):
++    get_current_metrics().LLM_CALLS += 1
++    start_time = time.time()
++
+     if "llama" in engine.lower():
+         openai.api_key = "EMPTY"
+         openai.api_base = "http://localhost:8000/v1"  # your local llama server port
+         engine = openai.Model.list()["data"][0]["id"]
+     else:
+-        openai.api_key = opeani_api_keys
++        openai_obj = openai.OpenAI(api_key=opeani_api_keys)
+ 
+     messages = [{"role":"system","content":"You are an AI assistant that helps people find information."}]
+     message_prompt = {"role":"user","content":prompt}
+@@ -117,18 +122,25 @@ def run_llm(prompt, temperature, max_tokens, opeani_api_keys, engine="gpt-3.5-tu
+     f = 0
+     while(f == 0):
+         try:
+-            response = openai.ChatCompletion.create(
+-                    model=engine,
+-                    messages = messages,
+-                    temperature=temperature,
+-                    max_tokens=max_tokens,
+-                    frequency_penalty=0,
+-                    presence_penalty=0)
+-            result = response["choices"][0]['message']['content']
++            response = openai_obj.chat.completions.create(
++                seed=451, # 0451
++                model=engine,
++                messages=messages,
++                temperature=temperature,
++                max_tokens=max_tokens,
++                frequency_penalty=0,
++                presence_penalty=0
++            )
++            result = response.choices[0].message.content
++            usage = response.usage
++            get_current_metrics().LLM_INPUTS += usage.prompt_tokens
++            get_current_metrics().LLM_OUTPUTS += usage.completion_tokens
+             f = 1
+-        except:
++        except Exception as e:
+             print("openai error, retry")
++            print(e)
+             time.sleep(2)
++    get_current_metrics().LLM_TIME += time.time() - start_time
+     return result
+ 
+     
+@@ -154,10 +166,37 @@ def clean_scores(string, entity_candidates):
+     
+ 
+ def save_2_jsonl(question, answer, cluster_chain_of_entities, file_name):
+-    dict = {"question":question, "results": answer, "reasoning_chains": cluster_chain_of_entities}
+-    with open("ToG_{}.jsonl".format(file_name), "a") as outfile:
+-        json_str = json.dumps(dict)
+-        outfile.write(json_str + "\n")
++    time_taken = time.time() - get_timer()
++    get_current_metrics().TIME = time_taken
++
++    dict = {
++        "question":question, 
++        "results": answer, 
++        "reasoning_chains": cluster_chain_of_entities, 
++        "metrics" : {
++            "TIME": get_current_metrics().TIME,
++            "SPARQL_CALLS": get_current_metrics().SPARQL_CALLS,
++            "SPARQL_TIME": get_current_metrics().SPARQL_TIME,
++            "LLM_CALLS": get_current_metrics().LLM_CALLS,
++            "LLM_INPUTS": get_current_metrics().LLM_INPUTS,
++            "LLM_OUTPUTS": get_current_metrics().LLM_OUTPUTS,
++            "LLM_TIME": get_current_metrics().LLM_TIME
++        }
++    }
++    
++    entries = []
++    if os.path.exists("ToG_{}.jsonl".format(file_name)):
++        with open("ToG_{}.jsonl".format(file_name), "r") as outfile:
++            entries = json.load(outfile)
++
++    with open("ToG_{}.jsonl".format(file_name), "w") as outfile:
++        entries.append(dict)
++        json.dump(entries, outfile, indent=4)
++
++    get_global_metrics().add_metrics(get_current_metrics())
++
++    with open("ToG_{}_metrics.json".format(file_name), "w") as outfile:
++        json.dump(get_global_metrics().to_dict(), outfile, indent=4)
+ 
+     
+ def extract_answer(text):
+@@ -190,26 +229,119 @@ def if_finish_list(lst):
+ 
+ 
+ def prepare_dataset(dataset_name):
++    import globals
++    global LABEL_PREDICATE
++    global PREFIXES_LIST
++    global PREFIXES
+     if dataset_name == 'cwq':
+         with open('../data/cwq.json',encoding='utf-8') as f:
+             datas = json.load(f)
+         question_string = 'question'
++        globals.LABEL_PREDICATE = globals.FREEBASE_LABEL_PREDICATE
++        globals.PREFIXES_LIST = globals.FREEBASE_PREFIXES
++        globals.PREFIXES = globals.get_prefixes(globals.FREEBASE_PREFIXES)
++    elif dataset_name == 'cwq-bela':
++        with open('../data/bela_cwq_topic_entities.json',encoding='utf-8') as f:
++            datas = json.load(f)
++        question_string = 'question'
++        globals.LABEL_PREDICATE = globals.FREEBASE_LABEL_PREDICATE
++        globals.PREFIXES_LIST = globals.FREEBASE_PREFIXES
++        globals.PREFIXES = globals.get_prefixes(globals.FREEBASE_PREFIXES)
+     elif dataset_name == 'webqsp':
+         with open('../data/WebQSP.json',encoding='utf-8') as f:
+             datas = json.load(f)
+         question_string = 'RawQuestion'
++        globals.LABEL_PREDICATE = globals.FREEBASE_LABEL_PREDICATE
++        globals.PREFIXES_LIST = globals.FREEBASE_PREFIXES
++        globals.PREFIXES = globals.get_prefixes(globals.FREEBASE_PREFIXES)
++    elif dataset_name == 'webqsp-bela':
++        with open('../data/bela_webqsp_topic_entities.json',encoding='utf-8') as f:
++            datas = json.load(f)
++        question_string = 'question'
++        globals.LABEL_PREDICATE = globals.FREEBASE_LABEL_PREDICATE
++        globals.PREFIXES_LIST = globals.FREEBASE_PREFIXES
++        globals.PREFIXES = globals.get_prefixes(globals.FREEBASE_PREFIXES)
+     elif dataset_name == 'grailqa':
+         with open('../data/grailqa.json',encoding='utf-8') as f:
+             datas = json.load(f)
+         question_string = 'question'
++        globals.LABEL_PREDICATE = globals.FREEBASE_LABEL_PREDICATE
++        globals.PREFIXES_LIST = globals.FREEBASE_PREFIXES
++        globals.PREFIXES = globals.get_prefixes(globals.FREEBASE_PREFIXES)
+     elif dataset_name == 'simpleqa':
+         with open('../data/SimpleQA.json',encoding='utf-8') as f:
+             datas = json.load(f)    
+         question_string = 'question'
+-    elif dataset_name == 'qald':
+-        with open('../data/qald_10-en.json',encoding='utf-8') as f:
++    elif dataset_name == 'qald-9':
++        with open('../data/qald_9_test_topic_entities.json',encoding='utf-8') as f:
++            datas = json.load(f) 
++        question_string = 'question'
++        globals.LABEL_PREDICATE = globals.DBPEDIA_LABEL_PREDICATE
++        globals.PREFIXES_LIST = globals.DBPEDIA_PREFIXES
++        globals.PREFIXES = globals.get_prefixes(globals.DBPEDIA_PREFIXES)     
++    elif dataset_name == 'qald-9-bela':
++        with open('../data/bela_qald9_topic_entities.json',encoding='utf-8') as f:
++            datas = json.load(f) 
++        question_string = 'question'
++        globals.LABEL_PREDICATE = globals.DBPEDIA_LABEL_PREDICATE
++        globals.PREFIXES_LIST = globals.DBPEDIA_PREFIXES
++        globals.PREFIXES = globals.get_prefixes(globals.DBPEDIA_PREFIXES)   
++    elif dataset_name == 'lc-quad-1':
++        with open('../data/lc_quad_1_test-data_topic_entities.json',encoding='utf-8') as f:
+             datas = json.load(f) 
+-        question_string = 'question'   
++        question_string = 'corrected_question'  
++        globals.LABEL_PREDICATE = globals.DBPEDIA_LABEL_PREDICATE
++        globals.PREFIXES_LIST = globals.DBPEDIA_PREFIXES
++        globals.PREFIXES = globals.get_prefixes(globals.DBPEDIA_PREFIXES)
++    elif dataset_name == "lc-quad-1-bela":
++        with open('../data/bela_lc_quad_topic_entities.json',encoding='utf-8') as f:
++            datas = json.load(f) 
++        question_string = 'question'  
++        globals.LABEL_PREDICATE = globals.DBPEDIA_LABEL_PREDICATE
++        globals.PREFIXES_LIST = globals.DBPEDIA_PREFIXES
++        globals.PREFIXES = globals.get_prefixes(globals.DBPEDIA_PREFIXES)
++    elif dataset_name == 'qald-10':
++        with open('../data/qald_10_topic_entities.json',encoding='utf-8') as f:
++            datas = json.load(f) 
++        question_string = 'question'
++        globals.LABEL_PREDICATE = globals.WIKIDATA_LABEL_PREDICATE
++        globals.PREFIXES_LIST = globals.WIKIDATA_PREFIXES
++        globals.PREFIXES = globals.get_prefixes(globals.WIKIDATA_PREFIXES)
++    elif dataset_name == 'qald-10-bela':
++        with open('../data/bela_qald10_topic_entities.json',encoding='utf-8') as f:
++            datas = json.load(f) 
++        question_string = 'question'
++        globals.LABEL_PREDICATE = globals.WIKIDATA_LABEL_PREDICATE
++        globals.PREFIXES_LIST = globals.WIKIDATA_PREFIXES
++        globals.PREFIXES = globals.get_prefixes(globals.WIKIDATA_PREFIXES)
++    elif dataset_name == 'lc-quad-2':
++        with open('../data/lc_quad_2_test_topic_entities.json',encoding='utf-8') as f:
++            datas = json.load(f) 
++        question_string = 'question'
++        globals.LABEL_PREDICATE = globals.WIKIDATA_LABEL_PREDICATE
++        globals.PREFIXES_LIST = globals.WIKIDATA_PREFIXES
++        globals.PREFIXES = globals.get_prefixes(globals.WIKIDATA_PREFIXES)
++    elif dataset_name == 'spinach':
++        with open('../data/spinach_test_topic_entities.json',encoding='utf-8') as f:
++            datas = json.load(f) 
++        question_string = 'question'
++        globals.LABEL_PREDICATE = globals.WIKIDATA_LABEL_PREDICATE
++        globals.PREFIXES_LIST = globals.WIKIDATA_PREFIXES
++        globals.PREFIXES = globals.get_prefixes(globals.WIKIDATA_PREFIXES)
++    elif dataset_name == 'bestiary':
++        with open('../data/bestiary_topic_entities.json',encoding='utf-8') as f:
++            datas = json.load(f) 
++        question_string = 'question'
++        globals.LABEL_PREDICATE = globals.BESTIARY_LABEL_PREDICATE
++        globals.PREFIXES_LIST = globals.BESTIARY_PREFIXES
++        globals.PREFIXES = globals.get_prefixes(globals.BESTIARY_PREFIXES)
++    elif dataset_name == 'geoq1089':
++        with open('../data/GeoQuestions1089_topic_entities.json',encoding='utf-8') as f:
++            datas = json.load(f) 
++        question_string = 'question'
++        globals.LABEL_PREDICATE = globals.YAGO2GEO_LABEL_PREDICATE
++        globals.PREFIXES_LIST = globals.YAGO2GEO_PREFIXES
++        globals.PREFIXES = globals.get_prefixes(globals.YAGO2GEO_PREFIXES)
+     elif dataset_name == 'webquestions':
+         with open('../data/WebQuestions.json',encoding='utf-8') as f:
+             datas = json.load(f)
+diff --git a/eval/utils.py b/eval/utils.py
+index fdcd977..464e775 100644
+--- a/eval/utils.py
++++ b/eval/utils.py
+@@ -103,7 +103,7 @@ def align(dataset_name, question_string, data, ground_truth_datas):
+ def check_string(string):
+     return "{" in string
+ 
+-def clean_results(string):
++def clean_results(string:str):
+     if "{" in string:
+         start = string.find("{") + 1
+         end = string.find("}")

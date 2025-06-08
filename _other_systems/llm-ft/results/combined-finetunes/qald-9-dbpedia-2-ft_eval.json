@@ -1,0 +1,3268 @@
+[
+    {
+        "question": "What is the time zone of Salt Lake City?",
+        "generated_query": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { res:Salt_Lake_City dbo:timeZone ?uri } ",
+        "generated_answer": null,
+        "results": {
+            "tp": 1,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 1,
+            "exact_match": true
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 2.1795654296875,
+            "LLM_INPUTS": 113,
+            "LLM_OUTPUTS": 59
+        }
+    },
+    {
+        "question": "Who killed Caesar?",
+        "generated_query": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { ?uri dbo:occupation res:Category:Assassins_of_Julius_Caesar } ",
+        "generated_answer": null,
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 9,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.8448686599731445,
+            "LLM_INPUTS": 119,
+            "LLM_OUTPUTS": 64
+        }
+    },
+    {
+        "question": "What is the highest mountain in Germany?",
+        "generated_query": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Mountain ; dbo:locatedInArea res:Germany ; dbo:elevation ?elevation } ORDER BY DESC(?elevation) OFFSET 0 LIMIT 1 ",
+        "generated_answer": null,
+        "results": {
+            "tp": 1,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 1,
+            "exact_match": true
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 3.5942745208740234,
+            "LLM_INPUTS": 123,
+            "LLM_OUTPUTS": 126
+        }
+    },
+    {
+        "question": "Which American presidents were in office during the Vietnam War?",
+        "generated_query": "SELECT DISTINCT ?uri WHERE { ?uri a <http://dbpedia.org/resource/Category:Presidents_of_the_United_States> ; <http://dbpedia.org/ontology/president> ?uri ; <http://dbpedia.org/ontology/militaryConflict> <http://dbpedia.org/resource/Vietnam_War> } ",
+        "generated_answer": null,
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 3,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 2.696516752243042,
+            "LLM_INPUTS": 147,
+            "LLM_OUTPUTS": 94
+        }
+    },
+    {
+        "question": "How many gold medals did Michael Phelps win at the 2008 Olympics?",
+        "generated_query": "SELECT DISTINCT ?uri WHERE { <http://dbpedia.org/resource/Michael_Phelps> <http://dbpedia.org/property/goldMedals> ?uri } ",
+        "generated_answer": null,
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 1,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.347351312637329,
+            "LLM_INPUTS": 121,
+            "LLM_OUTPUTS": 46
+        }
+    },
+    {
+        "question": "Which artists were born on the same date as Rachel Stevens?",
+        "generated_query": "SELECT DISTINCT ?uri WHERE { ?uri <http://dbpedia.org/ontology/birthDate> <http://dbpedia.org/resource/Rachel_Stevens>  . ?uri <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Artist>} ",
+        "generated_answer": null,
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 3,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 2.7587368488311768,
+            "LLM_INPUTS": 133,
+            "LLM_OUTPUTS": 96
+        }
+    },
+    {
+        "question": "What is the profession of Frank Herbert?",
+        "generated_query": "SELECT DISTINCT ?uri WHERE { <http://dbpedia.org/resource/Frank_Herbert> <http://dbpedia.org/ontology/occupation> ?uri } ",
+        "generated_answer": null,
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 1,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.2673416137695312,
+            "LLM_INPUTS": 108,
+            "LLM_OUTPUTS": 44
+        }
+    },
+    {
+        "question": "How many seats does the home stadium of FC Porto have?",
+        "generated_query": "SELECT DISTINCT ?n WHERE { <http://dbpedia.org/resource/FC_Porto> <http://dbpedia.org/property/homeStadium> ?x . ?x <http://dbpedia.org/ontology/seatingCapacity> ?n  . } ",
+        "generated_answer": null,
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 1,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 2.0000455379486084,
+            "LLM_INPUTS": 111,
+            "LLM_OUTPUTS": 69
+        }
+    },
+    {
+        "question": "Which frequent flyer program has the most airlines?",
+        "generated_query": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Airline ; dbo:frequentFlyerProgram ?x FILTER ( ?x != null ) } ORDER BY DESC(?x) OFFSET 0 LIMIT 1 ",
+        "generated_answer": null,
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 1,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 3.1146633625030518,
+            "LLM_INPUTS": 111,
+            "LLM_OUTPUTS": 108
+        }
+    },
+    {
+        "question": "Which European countries have a constitutional monarchy?",
+        "generated_query": "SELECT DISTINCT ?uri WHERE { ?uri <http://dbpedia.org/ontology/governmentType> <http://dbpedia.org/resource/Constitutional_monarchy> ; <http://dbpedia.org/ontology/country> <http://dbpedia.org/resource/Category:Countries_in_Europe> } ",
+        "generated_answer": null,
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 4,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 2.4067277908325195,
+            "LLM_INPUTS": 140,
+            "LLM_OUTPUTS": 83
+        }
+    },
+    {
+        "question": "Which countries have places with more than two caves?",
+        "generated_query": "SELECT DISTINCT ?uri WHERE { ?x <http://dbpedia.org/ontology/type> <http://dbpedia.org/ontology/Cave> . ?x <http://dbpedia.org/ontology/location> ?uri  . ?x <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Country>} ",
+        "generated_answer": null,
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 34,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 3.1393115520477295,
+            "LLM_INPUTS": 124,
+            "LLM_OUTPUTS": 109
+        }
+    },
+    {
+        "question": "Which airports are located in California, USA?",
+        "generated_query": "SELECT DISTINCT ?uri WHERE {?uri <http://dbpedia.org/ontology/cityServed> <http://dbpedia.org/resource/California>  . ?uri <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Airport>} ",
+        "generated_answer": null,
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 208,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 2.7428722381591797,
+            "LLM_INPUTS": 128,
+            "LLM_OUTPUTS": 94
+        }
+    },
+    {
+        "question": "What are the nicknames of San Francisco?",
+        "generated_query": "SELECT DISTINCT ?uri WHERE { <http://dbpedia.org/resource/San_Francisco> <http://dbpedia.org/ontology/nickname> ?uri } ",
+        "generated_answer": null,
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 1,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.3121554851531982,
+            "LLM_INPUTS": 108,
+            "LLM_OUTPUTS": 45
+        }
+    },
+    {
+        "question": "What is Angela Merkel\u2019s birth name?",
+        "generated_query": "SELECT DISTINCT ?uri WHERE { <http://dbpedia.org/resource/Angela_Merkel> <http://dbpedia.org/property/birthName> ?uri } ",
+        "generated_answer": null,
+        "results": {
+            "tp": 1,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 1,
+            "exact_match": true
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.3329269886016846,
+            "LLM_INPUTS": 113,
+            "LLM_OUTPUTS": 46
+        }
+    },
+    {
+        "question": "Who is the mayor of Berlin?",
+        "generated_query": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { res:Berlin dbo:leaderName ?uri } ",
+        "generated_answer": null,
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 1,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.6168932914733887,
+            "LLM_INPUTS": 103,
+            "LLM_OUTPUTS": 55
+        }
+    },
+    {
+        "question": "Which countries in the European Union adopted the Euro?",
+        "generated_query": "SELECT DISTINCT ?uri WHERE { ?uri a <http://dbpedia.org/ontology/Country> ; <http://dbpedia.org/ontology/currency> <http://dbpedia.org/resource/Euro> } ",
+        "generated_answer": null,
+        "results": {
+            "tp": 47,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 1,
+            "exact_match": true
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.6703574657440186,
+            "LLM_INPUTS": 122,
+            "LLM_OUTPUTS": 57
+        }
+    },
+    {
+        "question": "Which software has been published by Mean Hamster Software?",
+        "generated_query": "SELECT DISTINCT ?uri WHERE {?uri <http://dbpedia.org/property/publisher> <http://dbpedia.org/resource/Mean_Hamster_Software>  . ?uri <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Software>} ",
+        "generated_answer": null,
+        "results": {
+            "tp": 1,
+            "fp": 0,
+            "fn": 1,
+            "hits_at_1": 1,
+            "exact_match": false
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 2.790332078933716,
+            "LLM_INPUTS": 135,
+            "LLM_OUTPUTS": 97
+        }
+    },
+    {
+        "question": "Which country was Bill Gates born in?",
+        "generated_query": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { res:Bill_Gates dbo:birthPlace ?uri } ",
+        "generated_answer": null,
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.6768805980682373,
+            "LLM_INPUTS": 111,
+            "LLM_OUTPUTS": 58
+        }
+    },
+    {
+        "question": "How many grand-children did Jacques Cousteau have?",
+        "generated_query": "SELECT DISTINCT ?n WHERE { <http://dbpedia.org/resource/Jacques_Cousteau> <http://dbpedia.org/property/children> ?n } ",
+        "generated_answer": null,
+        "results": {
+            "tp": 1,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 1,
+            "exact_match": true
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.3077468872070312,
+            "LLM_INPUTS": 116,
+            "LLM_OUTPUTS": 45
+        }
+    },
+    {
+        "question": "Give me all professional skateboarders from Sweden.",
+        "generated_query": "SELECT DISTINCT ?uri WHERE {?uri <http://dbpedia.org/ontology/occupation> <http://dbpedia.org/resource/Skateboarder> . ?uri <http://dbpedia.org/ontology/birthPlace> <http://dbpedia.org/resource/Sweden>  . } ",
+        "generated_answer": null,
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 2,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 2.2688164710998535,
+            "LLM_INPUTS": 128,
+            "LLM_OUTPUTS": 78
+        }
+    },
+    {
+        "question": "Give me all Argentine films.",
+        "generated_query": "SELECT DISTINCT ?uri WHERE { ?uri a <http://dbpedia.org/ontology/Film> ; <http://dbpedia.org/ontology/country> <http://dbpedia.org/resource/Argentina> } ",
+        "generated_answer": null,
+        "results": {
+            "tp": 250,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 1,
+            "exact_match": true
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.7017872333526611,
+            "LLM_INPUTS": 123,
+            "LLM_OUTPUTS": 59
+        }
+    },
+    {
+        "question": "How did Michael Jackson die?",
+        "generated_query": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { res:Michael_Jackson dbo:deathCause ?uri } ",
+        "generated_answer": null,
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 1,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.6716148853302002,
+            "LLM_INPUTS": 104,
+            "LLM_OUTPUTS": 58
+        }
+    },
+    {
+        "question": "Which U.S. state has been admitted latest?",
+        "generated_query": "SELECT DISTINCT ?uri WHERE { ?uri <http://dbpedia.org/ontology/state> <http://dbpedia.org/resource/Category:States_of_the_United_States> } ",
+        "generated_answer": null,
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 1,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.559143304824829,
+            "LLM_INPUTS": 126,
+            "LLM_OUTPUTS": 53
+        }
+    },
+    {
+        "question": "Which classes does the Millepede belong to?",
+        "generated_query": "SELECT DISTINCT ?uri WHERE { <http://dbpedia.org/resource/Millipede> <http://dbpedia.org/ontology/class> ?uri } ",
+        "generated_answer": null,
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 1,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.2165398597717285,
+            "LLM_INPUTS": 110,
+            "LLM_OUTPUTS": 42
+        }
+    },
+    {
+        "question": "Give me the homepage of Forbes.",
+        "generated_query": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?homepage WHERE { res:Forbes dbo:homepage ?homepage } ",
+        "generated_answer": null,
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 1,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.6400947570800781,
+            "LLM_INPUTS": 106,
+            "LLM_OUTPUTS": 56
+        }
+    },
+    {
+        "question": "Who is the husband of Amanda Palmer?",
+        "generated_query": "SELECT DISTINCT ?uri WHERE {?uri <http://dbpedia.org/property/spouse> <http://dbpedia.org/resource/Amanda_Palmer>  . } ",
+        "generated_answer": null,
+        "results": {
+            "tp": 1,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 1,
+            "exact_match": true
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.3342740535736084,
+            "LLM_INPUTS": 111,
+            "LLM_OUTPUTS": 46
+        }
+    },
+    {
+        "question": "Who painted The Storm on the Sea of Galilee?",
+        "generated_query": "SELECT DISTINCT ?uri WHERE { <http://dbpedia.org/resource/The_Storm_on_the_Sea_of_Galilee> <http://dbpedia.org/ontology/artist> ?uri } ",
+        "generated_answer": null,
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 1,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.6768779754638672,
+            "LLM_INPUTS": 131,
+            "LLM_OUTPUTS": 58
+        }
+    },
+    {
+        "question": "What is the highest place of Karakoram?",
+        "generated_query": "SELECT DISTINCT ?uri WHERE { <http://dbpedia.org/resource/Karakoram> <http://dbpedia.org/ontology/highestMountainPeak> ?uri } ",
+        "generated_answer": null,
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 1,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.4036188125610352,
+            "LLM_INPUTS": 111,
+            "LLM_OUTPUTS": 48
+        }
+    },
+    {
+        "question": "When did Finland join the EU?",
+        "generated_query": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?date WHERE { res:Finland dbo:dateOfAccessionToEuropeanUnion ?date } ",
+        "generated_answer": null,
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 1,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.7670609951019287,
+            "LLM_INPUTS": 103,
+            "LLM_OUTPUTS": 60
+        }
+    },
+    {
+        "question": "Which actors play in Big Bang Theory?",
+        "generated_query": "SELECT DISTINCT ?uri WHERE { <http://dbpedia.org/resource/The_Big_Bang_Theory> <http://dbpedia.org/ontology/starring> ?uri } ",
+        "generated_answer": null,
+        "results": {
+            "tp": 10,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 1,
+            "exact_match": true
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.4338905811309814,
+            "LLM_INPUTS": 114,
+            "LLM_OUTPUTS": 49
+        }
+    },
+    {
+        "question": "Which computer scientist won an oscar?",
+        "generated_query": "SELECT DISTINCT ?uri WHERE {?uri <http://dbpedia.org/ontology/award> <http://dbpedia.org/resource/Academy_Award> . ?uri <http://dbpedia.org/property/fields> <http://dbpedia.org/resource/Computer_science> } ",
+        "generated_answer": null,
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 1,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 2.262988567352295,
+            "LLM_INPUTS": 130,
+            "LLM_OUTPUTS": 78
+        }
+    },
+    {
+        "question": "Who wrote Harry Potter?",
+        "generated_query": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { res:Harry_Potter dbo:author ?uri } ",
+        "generated_answer": null,
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 1,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.656740665435791,
+            "LLM_INPUTS": 108,
+            "LLM_OUTPUTS": 57
+        }
+    },
+    {
+        "question": "Give me all writers that won the Nobel Prize in literature.",
+        "generated_query": "SELECT DISTINCT ?uri WHERE {?uri <http://dbpedia.org/ontology/award> <http://dbpedia.org/resource/Nobel_Prize_in_Literature>  . ?uri <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Writer>} ",
+        "generated_answer": null,
+        "results": {
+            "tp": 21,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 1,
+            "exact_match": true
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 2.879936933517456,
+            "LLM_INPUTS": 139,
+            "LLM_OUTPUTS": 100
+        }
+    },
+    {
+        "question": "Give me English actors starring in Lovesick.",
+        "generated_query": "SELECT DISTINCT ?uri WHERE { ?uri <http://dbpedia.org/ontology/birthPlace> <http://dbpedia.org/resource/United_Kingdom> . ?uri <http://dbpedia.org/property/starring> <http://dbpedia.org/resource/Lovesick_(1983_film)> } ",
+        "generated_answer": null,
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 2,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 2.547940492630005,
+            "LLM_INPUTS": 147,
+            "LLM_OUTPUTS": 87
+        }
+    },
+    {
+        "question": "What is the nick name of Baghdad?",
+        "generated_query": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?nickname WHERE { res:Baghdad dbo:nickname ?nickname } ",
+        "generated_answer": null,
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 1,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.6465258598327637,
+            "LLM_INPUTS": 108,
+            "LLM_OUTPUTS": 57
+        }
+    },
+    {
+        "question": "In which city was the president of Montenegro born?",
+        "generated_query": "SELECT DISTINCT ?uri WHERE { <http://dbpedia.org/resource/President_of_Montenegro> <http://dbpedia.org/property/birthPlace> ?uri. <http://dbpedia.org/resource/Capital_city> <http://dbpedia.org/ontology/city> ?uri} ",
+        "generated_answer": null,
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 1,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 2.401538848876953,
+            "LLM_INPUTS": 140,
+            "LLM_OUTPUTS": 82
+        }
+    },
+    {
+        "question": "Which U.S. state has the highest population density?",
+        "generated_query": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { ?uri dbo:country res:United_States } ORDER BY DESC(?uri) LIMIT 1 ",
+        "generated_answer": null,
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.8866453170776367,
+            "LLM_INPUTS": 113,
+            "LLM_OUTPUTS": 65
+        }
+    },
+    {
+        "question": "What is the longest river in China?",
+        "generated_query": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:River ; dbo:locatedInArea res:China ; dbo:length ?x } ORDER BY DESC(?x) OFFSET 0 LIMIT 1 ",
+        "generated_answer": null,
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 1,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 3.4575412273406982,
+            "LLM_INPUTS": 121,
+            "LLM_OUTPUTS": 119
+        }
+    },
+    {
+        "question": "What is the area code of Berlin?",
+        "generated_query": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?area WHERE { res:Berlin dbo:areaCode ?area } ",
+        "generated_answer": null,
+        "results": {
+            "tp": 1,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 1,
+            "exact_match": true
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.5697658061981201,
+            "LLM_INPUTS": 104,
+            "LLM_OUTPUTS": 54
+        }
+    },
+    {
+        "question": "How many scientists graduated from an Ivy League university?",
+        "generated_query": "SELECT DISTINCT COUNT(?uri) WHERE { ?x <http://dbpedia.org/ontology/type> <http://dbpedia.org/resource/Ivy_League> . ?uri <http://dbpedia.org/property/almaMater> ?x  . ?uri <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Scientist>} ",
+        "generated_answer": null,
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 1,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 3.3883354663848877,
+            "LLM_INPUTS": 148,
+            "LLM_OUTPUTS": 117
+        }
+    },
+    {
+        "question": "Which professional surfers were born in Australia?",
+        "generated_query": "SELECT DISTINCT ?uri WHERE {?uri <http://dbpedia.org/ontology/birthPlace> <http://dbpedia.org/resource/Australia>  . ?uri <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/resource/Surfer>} ",
+        "generated_answer": null,
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 2,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 2.613170623779297,
+            "LLM_INPUTS": 122,
+            "LLM_OUTPUTS": 91
+        }
+    },
+    {
+        "question": "Give me all Dutch parties.",
+        "generated_query": "SELECT DISTINCT ?uri WHERE { ?uri a <http://dbpedia.org/ontology/PoliticalParty> ; <http://dbpedia.org/ontology/nationality> <http://dbpedia.org/resource/Netherlands> } ",
+        "generated_answer": null,
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 11,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.853694200515747,
+            "LLM_INPUTS": 128,
+            "LLM_OUTPUTS": 64
+        }
+    },
+    {
+        "question": "How many moons does Mars have?",
+        "generated_query": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?n WHERE { res:Mars dbo:moon ?n } ",
+        "generated_answer": null,
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 1,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.5761449337005615,
+            "LLM_INPUTS": 104,
+            "LLM_OUTPUTS": 54
+        }
+    },
+    {
+        "question": "What is Batman's real name?",
+        "generated_query": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { res:Batman dbo:realName ?uri } ",
+        "generated_answer": null,
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 1,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.5985980033874512,
+            "LLM_INPUTS": 107,
+            "LLM_OUTPUTS": 55
+        }
+    },
+    {
+        "question": "What is Elon Musk famous for?",
+        "generated_query": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { res:Elon_Musk dbo:knownFor ?uri } ",
+        "generated_answer": null,
+        "results": {
+            "tp": 6,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 1,
+            "exact_match": true
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.6586494445800781,
+            "LLM_INPUTS": 110,
+            "LLM_OUTPUTS": 57
+        }
+    },
+    {
+        "question": "Who is the author of WikiLeaks?",
+        "generated_query": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { res:WikiLeaks dbo:author ?uri } ",
+        "generated_answer": null,
+        "results": {
+            "tp": 1,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 1,
+            "exact_match": true
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.596290111541748,
+            "LLM_INPUTS": 110,
+            "LLM_OUTPUTS": 55
+        }
+    },
+    {
+        "question": "Sean Parnell was the governor of which U.S. state?",
+        "generated_query": "SELECT DISTINCT ?uri WHERE { <http://dbpedia.org/resource/Sean_Parnell> <http://dbpedia.org/property/governor> ?uri } ",
+        "generated_answer": null,
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.317476749420166,
+            "LLM_INPUTS": 116,
+            "LLM_OUTPUTS": 45
+        }
+    },
+    {
+        "question": "How many years was the Ford Model T manufactured?",
+        "generated_query": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?year WHERE { res:Ford_Model_T dbo:manufacturerYear ?year } ",
+        "generated_answer": null,
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 1,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.7410187721252441,
+            "LLM_INPUTS": 113,
+            "LLM_OUTPUTS": 60
+        }
+    },
+    {
+        "question": "When was Carlo Giuliani shot?",
+        "generated_query": "SELECT DISTINCT ?date WHERE { <http://dbpedia.org/resource/Death_of_Carlo_Giuliani> <http://dbpedia.org/property/deathDate> ?date } ",
+        "generated_answer": null,
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 1,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.5076582431793213,
+            "LLM_INPUTS": 116,
+            "LLM_OUTPUTS": 51
+        }
+    },
+    {
+        "question": "Give me all animals that are extinct.",
+        "generated_query": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Animal ; dbo:extinct true } ",
+        "generated_answer": null,
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 915,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 2.7410690784454346,
+            "LLM_INPUTS": 107,
+            "LLM_OUTPUTS": 95
+        }
+    },
+    {
+        "question": "Who was the wife of President Lincoln?",
+        "generated_query": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { res:Abraham_Lincoln dbo:spouse ?uri } ",
+        "generated_answer": null,
+        "results": {
+            "tp": 1,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 1,
+            "exact_match": true
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.6924829483032227,
+            "LLM_INPUTS": 110,
+            "LLM_OUTPUTS": 58
+        }
+    },
+    {
+        "question": "How many awards has Bertrand Russell?",
+        "generated_query": "SELECT DISTINCT ?n WHERE { <http://dbpedia.org/resource/Bertrand_Russell> <http://dbpedia.org/property/awards> ?n } ",
+        "generated_answer": null,
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.3102333545684814,
+            "LLM_INPUTS": 111,
+            "LLM_OUTPUTS": 45
+        }
+    },
+    {
+        "question": "Which space probes were sent into orbit around the sun?",
+        "generated_query": "SELECT DISTINCT ?uri WHERE { ?uri <http://dbpedia.org/ontology/orbit> <http://dbpedia.org/resource/Category:Missions_to_the_Sun>  . ?uri <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/ArtificialSatellite>} ",
+        "generated_answer": null,
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 19,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 2.9805092811584473,
+            "LLM_INPUTS": 167,
+            "LLM_OUTPUTS": 104
+        }
+    },
+    {
+        "question": "Which German cities have more than 250000 inhabitants?",
+        "generated_query": "SELECT DISTINCT ?uri WHERE { ?x <http://dbpedia.org/ontology/capital> <http://dbpedia.org/resource/Germany> . ?x <http://dbpedia.org/ontology/populationTotal> ?n FILTER regex(?n, \"\\\\d+\") . ?x <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/City> . ?x <http://dbpedia.org/ontology/populationTotal> ?n FILTER regex(?n, \"\\\\d+\") . ?x <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Town>} ",
+        "generated_answer": null,
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 26,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 5.891830682754517,
+            "LLM_INPUTS": 146,
+            "LLM_OUTPUTS": 204
+        }
+    },
+    {
+        "question": "Who is the daughter of Robert Kennedy married to?",
+        "generated_query": "SELECT DISTINCT ?uri WHERE {?uri <http://dbpedia.org/property/spouse> <http://dbpedia.org/resource/Robert_F._Kennedy>  . } ",
+        "generated_answer": null,
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.418330430984497,
+            "LLM_INPUTS": 115,
+            "LLM_OUTPUTS": 49
+        }
+    },
+    {
+        "question": "How many students does the Free University of Amsterdam have?",
+        "generated_query": "SELECT DISTINCT ?n WHERE { <http://dbpedia.org/resource/Vrije_Universiteit_Amsterdam> <http://dbpedia.org/property/numberOfStudents> ?n } ",
+        "generated_answer": null,
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 1,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.5005757808685303,
+            "LLM_INPUTS": 118,
+            "LLM_OUTPUTS": 51
+        }
+    },
+    {
+        "question": "What is the revenue of IBM?",
+        "generated_query": "SELECT DISTINCT ?value WHERE { <http://dbpedia.org/resource/IBM> <http://dbpedia.org/property/revenue> ?value } ",
+        "generated_answer": null,
+        "results": {
+            "tp": 1,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 1,
+            "exact_match": true
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.2169711589813232,
+            "LLM_INPUTS": 104,
+            "LLM_OUTPUTS": 41
+        }
+    },
+    {
+        "question": "How many James Bond movies do exist?",
+        "generated_query": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?n WHERE { res:Category:James_Bond_films dbo:numFilms ?n } ",
+        "generated_answer": null,
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 1,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.807511806488037,
+            "LLM_INPUTS": 115,
+            "LLM_OUTPUTS": 62
+        }
+    },
+    {
+        "question": "Who does the voice of Bart Simpson?",
+        "generated_query": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { res:Bart_Simpson dbo:voicedBy ?uri } ",
+        "generated_answer": null,
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 1,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.6893091201782227,
+            "LLM_INPUTS": 110,
+            "LLM_OUTPUTS": 58
+        }
+    },
+    {
+        "question": "Who was Tom Hanks married to?",
+        "generated_query": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { res:Tom_Hanks dbo:partner ?uri } ",
+        "generated_answer": null,
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 1,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.6554388999938965,
+            "LLM_INPUTS": 107,
+            "LLM_OUTPUTS": 56
+        }
+    },
+    {
+        "question": "Through which countries does the Yenisei river flow?",
+        "generated_query": "SELECT DISTINCT ?uri WHERE { <http://dbpedia.org/resource/Yenisei_River> <http://dbpedia.org/property/sourceCountry> ?uri } ",
+        "generated_answer": null,
+        "results": {
+            "tp": 1,
+            "fp": 0,
+            "fn": 1,
+            "hits_at_1": 1,
+            "exact_match": false
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.3181962966918945,
+            "LLM_INPUTS": 118,
+            "LLM_OUTPUTS": 46
+        }
+    },
+    {
+        "question": "Give me all cars that are produced in Germany.",
+        "generated_query": "SELECT DISTINCT ?uri WHERE { ?uri a <http://dbpedia.org/ontology/Automobile> ; <http://dbpedia.org/ontology/manufacturer> <http://dbpedia.org/resource/Germany> } ",
+        "generated_answer": null,
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.766392469406128,
+            "LLM_INPUTS": 126,
+            "LLM_OUTPUTS": 61
+        }
+    },
+    {
+        "question": "When did Michael Jackson die?",
+        "generated_query": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?date WHERE { res:Michael_Jackson dbo:deathDate ?date } ",
+        "generated_answer": null,
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.6807208061218262,
+            "LLM_INPUTS": 104,
+            "LLM_OUTPUTS": 57
+        }
+    },
+    {
+        "question": "What is the highest volcano in Africa?",
+        "generated_query": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Volcano ; dbo:locatedInArea res:Category:Countries_in_Africa ; dbo:elevation ?elevation } ORDER BY DESC(?elevation) OFFSET 0 LIMIT 1 ",
+        "generated_answer": null,
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 1,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 3.8021531105041504,
+            "LLM_INPUTS": 133,
+            "LLM_OUTPUTS": 132
+        }
+    },
+    {
+        "question": "Which poet wrote the most books?",
+        "generated_query": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Poet ; dbo:numberOfBooks ?num } ORDER BY DESC(?num) OFFSET 0 LIMIT 1 ",
+        "generated_answer": null,
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 1,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 3.2494285106658936,
+            "LLM_INPUTS": 119,
+            "LLM_OUTPUTS": 112
+        }
+    },
+    {
+        "question": "Give me all gangsters from the prohibition era.",
+        "generated_query": "SELECT DISTINCT ?uri WHERE { ?uri a <http://dbpedia.org/ontology/Person> { ?uri <http://dbpedia.org/ontology/occupation> <http://dbpedia.org/resource/Category:Prohibition-era_gangsters> } UNION { ?uri <http://dbpedia.org/ontology/occupation> <http://dbpedia.org/resource/Gangster> } } ",
+        "generated_answer": null,
+        "results": {
+            "tp": 22,
+            "fp": 56,
+            "fn": 0,
+            "hits_at_1": 1,
+            "exact_match": false
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 2.966707944869995,
+            "LLM_INPUTS": 141,
+            "LLM_OUTPUTS": 102
+        }
+    },
+    {
+        "question": "Give me all spacecrafts that flew to Mars.",
+        "generated_query": "SELECT DISTINCT ?uri WHERE { ?uri a <http://dbpedia.org/ontology/ArtificialSatellite> ; <http://dbpedia.org/ontology/mission> <http://dbpedia.org/resource/Category:Mars_rovers> ; <http://dbpedia.org/ontology/launchPlatform> <http://dbpedia.org/resource/Satellite> } ",
+        "generated_answer": null,
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 15,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 2.826496124267578,
+            "LLM_INPUTS": 162,
+            "LLM_OUTPUTS": 98
+        }
+    },
+    {
+        "question": "Show me all Czech movies.",
+        "generated_query": "SELECT DISTINCT ?uri WHERE {?uri <http://dbpedia.org/ontology/director> <http://dbpedia.org/resource/Czech_Republic>  . ?uri <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Film>} ",
+        "generated_answer": null,
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 49,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 2.748650550842285,
+            "LLM_INPUTS": 124,
+            "LLM_OUTPUTS": 94
+        }
+    },
+    {
+        "question": "Give me all taikonauts.",
+        "generated_query": "SELECT DISTINCT ?uri WHERE {?uri <http://dbpedia.org/ontology/nationality> <http://dbpedia.org/resource/People's_Republic_of_China>  . ?uri <http://dbpedia.org/ontology/profession> <http://dbpedia.org/resource/Astronaut>  . ?uri <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Astronaut>} ",
+        "generated_answer": null,
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 7,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 3.9562132358551025,
+            "LLM_INPUTS": 155,
+            "LLM_OUTPUTS": 137
+        }
+    },
+    {
+        "question": "Which countries have more than ten volcanoes?",
+        "generated_query": "SELECT DISTINCT ?uri WHERE { ?x <http://dbpedia.org/property/mountainType> <http://dbpedia.org/ontology/Volcano> . ?x <http://dbpedia.org/ontology/country> ?uri  . ?x <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Country>} ",
+        "generated_answer": null,
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 18,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 3.1914820671081543,
+            "LLM_INPUTS": 123,
+            "LLM_OUTPUTS": 110
+        }
+    },
+    {
+        "question": "Give me all movies with Tom Cruise.",
+        "generated_query": "SELECT DISTINCT ?uri WHERE {?uri <http://dbpedia.org/ontology/starring> <http://dbpedia.org/resource/Tom_Cruise>  . ?uri <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Film>} ",
+        "generated_answer": null,
+        "results": {
+            "tp": 26,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 1,
+            "exact_match": true
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 2.7385716438293457,
+            "LLM_INPUTS": 128,
+            "LLM_OUTPUTS": 94
+        }
+    },
+    {
+        "question": "When did Dracula's creator die?",
+        "generated_query": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?date WHERE { res:Count_Dracula dbo:authorYearOfDeath ?date } ",
+        "generated_answer": null,
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 2,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.7449486255645752,
+            "LLM_INPUTS": 112,
+            "LLM_OUTPUTS": 60
+        }
+    },
+    {
+        "question": "Who created English Wikipedia?",
+        "generated_query": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { res:Wikipedia dbo:creator ?uri } ",
+        "generated_answer": null,
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 2,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.5770022869110107,
+            "LLM_INPUTS": 101,
+            "LLM_OUTPUTS": 54
+        }
+    },
+    {
+        "question": "Give me all female German chancellors.",
+        "generated_query": "SELECT DISTINCT ?uri WHERE {?uri <http://dbpedia.org/ontology/office> <http://dbpedia.org/resource/Chancellor_of_Germany>  . } ",
+        "generated_answer": null,
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 1,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.4783720970153809,
+            "LLM_INPUTS": 119,
+            "LLM_OUTPUTS": 51
+        }
+    },
+    {
+        "question": "Who owns Aldi?",
+        "generated_query": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { res:Aldi dbo:owner ?uri } ",
+        "generated_answer": null,
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 2,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.5738513469696045,
+            "LLM_INPUTS": 104,
+            "LLM_OUTPUTS": 54
+        }
+    },
+    {
+        "question": "Which books were written by Danielle Steel?",
+        "generated_query": "SELECT DISTINCT ?uri WHERE {?uri <http://dbpedia.org/ontology/author> <http://dbpedia.org/resource/Danielle_Steel>  . ?uri <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Book>} ",
+        "generated_answer": null,
+        "results": {
+            "tp": 47,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 1,
+            "exact_match": true
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 2.664318084716797,
+            "LLM_INPUTS": 127,
+            "LLM_OUTPUTS": 92
+        }
+    },
+    {
+        "question": "Who was influenced by Socrates?",
+        "generated_query": "SELECT DISTINCT ?uri WHERE {?uri <http://dbpedia.org/ontology/influencedBy> <http://dbpedia.org/resource/Socrates> } ",
+        "generated_answer": null,
+        "results": {
+            "tp": 22,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 1,
+            "exact_match": true
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.3300375938415527,
+            "LLM_INPUTS": 106,
+            "LLM_OUTPUTS": 45
+        }
+    },
+    {
+        "question": "How deep is Lake Chiemsee?",
+        "generated_query": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT ?Lake_Chiemsee WHERE { res:Chiemsee dbo:maximumDepth ?Lake_Chiemsee } ",
+        "generated_answer": null,
+        "results": {
+            "tp": 1,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 1,
+            "exact_match": true
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.8501954078674316,
+            "LLM_INPUTS": 106,
+            "LLM_OUTPUTS": 64
+        }
+    },
+    {
+        "question": "Which companies work in the aerospace industry as well as in medicine?",
+        "generated_query": "SELECT DISTINCT ?uri WHERE { ?uri <http://dbpedia.org/ontology/industry> <http://dbpedia.org/resource/Aerospace> . ?uri <http://dbpedia.org/ontology/industry> <http://dbpedia.org/resource/Medical> . ?uri <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Company>} ",
+        "generated_answer": null,
+        "results": {
+            "tp": 2,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 1,
+            "exact_match": true
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 3.5631637573242188,
+            "LLM_INPUTS": 145,
+            "LLM_OUTPUTS": 122
+        }
+    },
+    {
+        "question": "Which professional surfers were born on the Philippines?",
+        "generated_query": "SELECT DISTINCT ?uri WHERE { ?uri a <http://dbpedia.org/resource/Surfer> ; <http://dbpedia.org/ontology/birthPlace> <http://dbpedia.org/resource/Philippines> } ",
+        "generated_answer": null,
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 1,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.7623155117034912,
+            "LLM_INPUTS": 127,
+            "LLM_OUTPUTS": 61
+        }
+    },
+    {
+        "question": "Who were the parents of Queen Victoria?",
+        "generated_query": "SELECT DISTINCT ?uri WHERE { <http://dbpedia.org/resource/Queen_Victoria> <http://dbpedia.org/ontology/parent> ?uri } ",
+        "generated_answer": null,
+        "results": {
+            "tp": 2,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 1,
+            "exact_match": true
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.3102211952209473,
+            "LLM_INPUTS": 109,
+            "LLM_OUTPUTS": 45
+        }
+    },
+    {
+        "question": "Are there any castles in the United States?",
+        "generated_query": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { ?uri dbo:country res:Category:Castles_in_the_United_States } ",
+        "generated_answer": null,
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 1,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.9001703262329102,
+            "LLM_INPUTS": 124,
+            "LLM_OUTPUTS": 65
+        }
+    },
+    {
+        "question": "Which languages are spoken in Estonia?",
+        "generated_query": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { res:Estonia dbo:officialLanguage ?uri } ",
+        "generated_answer": null,
+        "results": {
+            "tp": 1,
+            "fp": 0,
+            "fn": 7,
+            "hits_at_1": 1,
+            "exact_match": false
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.590273141860962,
+            "LLM_INPUTS": 105,
+            "LLM_OUTPUTS": 55
+        }
+    },
+    {
+        "question": "Give me a list of all critically endangered birds.",
+        "generated_query": "SELECT DISTINCT ?uri WHERE { ?uri a <http://dbpedia.org/ontology/Bird> ; <http://dbpedia.org/ontology/status> <http://dbpedia.org/resource/Category:Critically_endangered_animals> } ",
+        "generated_answer": null,
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 198,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.9982407093048096,
+            "LLM_INPUTS": 144,
+            "LLM_OUTPUTS": 68
+        }
+    },
+    {
+        "question": "Which countries are connected by the Rhine?",
+        "generated_query": "SELECT DISTINCT ?uri WHERE { <http://dbpedia.org/resource/Rhine> <http://dbpedia.org/ontology/sourceCountry> ?uri } ",
+        "generated_answer": null,
+        "results": {
+            "tp": 1,
+            "fp": 0,
+            "fn": 10,
+            "hits_at_1": 1,
+            "exact_match": false
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.2722203731536865,
+            "LLM_INPUTS": 108,
+            "LLM_OUTPUTS": 43
+        }
+    },
+    {
+        "question": "Who was the father of Queen Elizabeth II?",
+        "generated_query": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { res:Elizabeth_II dbo:parent ?uri } ",
+        "generated_answer": null,
+        "results": {
+            "tp": 1,
+            "fp": 1,
+            "fn": 0,
+            "hits_at_1": 1,
+            "exact_match": false
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.6214361190795898,
+            "LLM_INPUTS": 110,
+            "LLM_OUTPUTS": 56
+        }
+    },
+    {
+        "question": "Give me all chemical elements.",
+        "generated_query": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { ?uri dbo:elementType res:Chemical_elements } ",
+        "generated_answer": null,
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 119,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.6698925495147705,
+            "LLM_INPUTS": 112,
+            "LLM_OUTPUTS": 57
+        }
+    },
+    {
+        "question": "Give me all American presidents of the last 20 years.",
+        "generated_query": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Person ; dbo:president ?date ; dbo:presidentYear ?dateYear } ORDER BY ASC(?dateYear) OFFSET 0 LIMIT 20 ",
+        "generated_answer": null,
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 2,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 3.469188928604126,
+            "LLM_INPUTS": 144,
+            "LLM_OUTPUTS": 120
+        }
+    },
+    {
+        "question": "When is the movie Worst Case Scenario going to be in cinemas in the Netherlands?",
+        "generated_query": "SELECT DISTINCT ?date WHERE { <http://dbpedia.org/resource/Worst_Case_Scenario_(film)> <http://dbpedia.org/property/releaseDate> ?date } ",
+        "generated_answer": null,
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 1,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.4457356929779053,
+            "LLM_INPUTS": 130,
+            "LLM_OUTPUTS": 49
+        }
+    },
+    {
+        "question": "Whom did Lance Bass marry?",
+        "generated_query": "SELECT DISTINCT ?uri WHERE { <http://dbpedia.org/resource/Lance_Bass> <http://dbpedia.org/property/spouse> ?uri } ",
+        "generated_answer": null,
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.3018457889556885,
+            "LLM_INPUTS": 108,
+            "LLM_OUTPUTS": 44
+        }
+    },
+    {
+        "question": "Which subsidiary of TUI Travel serves both Glasgow and Dublin?",
+        "generated_query": "SELECT DISTINCT ?uri WHERE {?uri <http://dbpedia.org/ontology/subsidiary> <http://dbpedia.org/resource/TUI_Travel> . ?uri <http://dbpedia.org/property/destinations> <http://dbpedia.org/resource/Glasgow_International_Airport> ; <http://dbpedia.org/ontology/destination> <http://dbpedia.org/resource/Dublin_Airport> } ",
+        "generated_answer": null,
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 1,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 3.4933738708496094,
+            "LLM_INPUTS": 167,
+            "LLM_OUTPUTS": 121
+        }
+    },
+    {
+        "question": "What languages are spoken in Pakistan?",
+        "generated_query": "SELECT DISTINCT ?uri WHERE { <http://dbpedia.org/resource/Pakistan> <http://dbpedia.org/property/languages> ?uri } ",
+        "generated_answer": null,
+        "results": {
+            "tp": 14,
+            "fp": 1,
+            "fn": 2,
+            "hits_at_1": 1,
+            "exact_match": false
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.247262716293335,
+            "LLM_INPUTS": 105,
+            "LLM_OUTPUTS": 42
+        }
+    },
+    {
+        "question": "Who is the daughter of Bill Clinton married to?",
+        "generated_query": "SELECT DISTINCT ?uri WHERE {?uri <http://dbpedia.org/property/spouse> <http://dbpedia.org/resource/Bill_Clinton> } ",
+        "generated_answer": null,
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 1,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.3046023845672607,
+            "LLM_INPUTS": 112,
+            "LLM_OUTPUTS": 44
+        }
+    },
+    {
+        "question": "Who was on the Apollo 11 mission?",
+        "generated_query": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { res:Apollo_11 dbo:crew ?uri } ",
+        "generated_answer": null,
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 3,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.7069041728973389,
+            "LLM_INPUTS": 115,
+            "LLM_OUTPUTS": 58
+        }
+    },
+    {
+        "question": "What is the wavelength of Indigo?",
+        "generated_query": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?w WHERE { res:Indigo dbo:wavelength ?w } ",
+        "generated_answer": null,
+        "results": {
+            "tp": 1,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 1,
+            "exact_match": true
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.620048999786377,
+            "LLM_INPUTS": 106,
+            "LLM_OUTPUTS": 55
+        }
+    },
+    {
+        "question": "Give me all B-sides of the Ramones.",
+        "generated_query": "SELECT DISTINCT ?uri WHERE { ?x <http://dbpedia.org/ontology/artist> <http://dbpedia.org/resource/Ramones> . ?x <http://dbpedia.org/property/bSide> ?uri  . } ",
+        "generated_answer": null,
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.8502001762390137,
+            "LLM_INPUTS": 111,
+            "LLM_OUTPUTS": 64
+        }
+    },
+    {
+        "question": "Who was called Scarface?",
+        "generated_query": "SELECT DISTINCT ?uri WHERE {?uri <http://dbpedia.org/ontology/nickname> \"Scarface\" } ",
+        "generated_answer": null,
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 2,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.9807186126708984,
+            "LLM_INPUTS": 87,
+            "LLM_OUTPUTS": 33
+        }
+    },
+    {
+        "question": "Which rivers flow into the North Sea?",
+        "generated_query": "SELECT DISTINCT ?uri WHERE {?uri <http://dbpedia.org/ontology/riverMouth> <http://dbpedia.org/resource/North_Sea>  . ?uri <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/River>} ",
+        "generated_answer": null,
+        "results": {
+            "tp": 17,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 1,
+            "exact_match": true
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 2.7738685607910156,
+            "LLM_INPUTS": 126,
+            "LLM_OUTPUTS": 95
+        }
+    },
+    {
+        "question": "Where is Fort Knox located?",
+        "generated_query": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> SELECT DISTINCT ?uri WHERE { res:Fort_Knox dbo:location ?uri } ",
+        "generated_answer": null,
+        "results": {
+            "tp": 1,
+            "fp": 1,
+            "fn": 0,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 2.6566054821014404,
+            "LLM_INPUTS": 124,
+            "LLM_OUTPUTS": 92
+        }
+    },
+    {
+        "question": "How many emperors did China have?",
+        "generated_query": "SELECT DISTINCT COUNT(?uri) WHERE {?uri <http://dbpedia.org/property/title> <http://dbpedia.org/resource/Emperor_of_China>  . } ",
+        "generated_answer": null,
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 1,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.4518699645996094,
+            "LLM_INPUTS": 112,
+            "LLM_OUTPUTS": 49
+        }
+    },
+    {
+        "question": "What are the names of the Teenage Mutant Ninja Turtles?",
+        "generated_query": "SELECT DISTINCT ?uri WHERE { <http://dbpedia.org/resource/Teenage_Mutant_Ninja_Turtles> <http://dbpedia.org/property/name> ?uri } ",
+        "generated_answer": null,
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 4,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.5657401084899902,
+            "LLM_INPUTS": 134,
+            "LLM_OUTPUTS": 53
+        }
+    },
+    {
+        "question": "Where does Piccadilly start?",
+        "generated_query": "SELECT DISTINCT ?uri WHERE { <http://dbpedia.org/resource/Piccadilly> <http://dbpedia.org/ontology/routeStart> ?uri } ",
+        "generated_answer": null,
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 1,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.331871747970581,
+            "LLM_INPUTS": 110,
+            "LLM_OUTPUTS": 45
+        }
+    },
+    {
+        "question": "What is the name of the university where Obama's wife studied?",
+        "generated_query": "SELECT DISTINCT ?uri WHERE { ?x <http://dbpedia.org/ontology/spouse> <http://dbpedia.org/resource/Barack_Obama> . ?x <http://dbpedia.org/property/almaMater> ?uri  . } ",
+        "generated_answer": null,
+        "results": {
+            "tp": 2,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 1,
+            "exact_match": true
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.976151943206787,
+            "LLM_INPUTS": 116,
+            "LLM_OUTPUTS": 68
+        }
+    },
+    {
+        "question": "When did Paraguay proclaim its independence?",
+        "generated_query": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?date WHERE { res:Paraguay dbo:declarationOfIndependence ?date } ",
+        "generated_answer": null,
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 2,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.779822587966919,
+            "LLM_INPUTS": 108,
+            "LLM_OUTPUTS": 61
+        }
+    },
+    {
+        "question": "How short is the shortest active NBA player?",
+        "generated_query": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:BasketballPlayer ; dbo:league res:National_Basketball_Association ; dbo:height ?n } ORDER BY ASC(?n) OFFSET 0 LIMIT 1 ",
+        "generated_answer": null,
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 3.5872485637664795,
+            "LLM_INPUTS": 131,
+            "LLM_OUTPUTS": 124
+        }
+    },
+    {
+        "question": "Where did Abraham Lincoln die?",
+        "generated_query": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { res:Abraham_Lincoln dbo:deathPlace ?uri } ",
+        "generated_answer": null,
+        "results": {
+            "tp": 2,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 1,
+            "exact_match": true
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.7335026264190674,
+            "LLM_INPUTS": 108,
+            "LLM_OUTPUTS": 59
+        }
+    },
+    {
+        "question": "When was Jack Wolfskin founded?",
+        "generated_query": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX dbr: <http://dbpedia.org/resource/> SELECT ?date WHERE { dbr:Jack_Wolfskin dbo:foundationYear ?date } ",
+        "generated_answer": null,
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 1,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.703732967376709,
+            "LLM_INPUTS": 110,
+            "LLM_OUTPUTS": 58
+        }
+    },
+    {
+        "question": "What is the founding year of the brewery that produces Pilsner Urquell?",
+        "generated_query": "SELECT DISTINCT ?year WHERE { <http://dbpedia.org/resource/Pilsner_Urquell> <http://dbpedia.org/property/brewery> ?x . ?x <http://dbpedia.org/ontology/founded> ?year } ",
+        "generated_answer": null,
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 1,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.973128318786621,
+            "LLM_INPUTS": 126,
+            "LLM_OUTPUTS": 68
+        }
+    },
+    {
+        "question": "When did the Boston Tea Party take place?",
+        "generated_query": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?date WHERE { res:Boston_Tea_Party dbo:date ?date } ",
+        "generated_answer": null,
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 1,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.7221040725708008,
+            "LLM_INPUTS": 115,
+            "LLM_OUTPUTS": 59
+        }
+    },
+    {
+        "question": "Which animals are critically endangered?",
+        "generated_query": "SELECT DISTINCT ?uri WHERE { ?uri a <http://dbpedia.org/ontology/Animal> { ?uri <http://dbpedia.org/ontology/status> <http://dbpedia.org/ontology/criticallyEndangered> } UNION { ?uri <http://dbpedia.org/ontology/status> <http://dbpedia.org/ontology/criticallyEndangered> } } ",
+        "generated_answer": null,
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 1503,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 2.9483399391174316,
+            "LLM_INPUTS": 107,
+            "LLM_OUTPUTS": 102
+        }
+    },
+    {
+        "question": "Which politicians were married to a German?",
+        "generated_query": "SELECT DISTINCT ?uri WHERE { ?x <http://dbpedia.org/ontology/birthPlace> <http://dbpedia.org/resource/Germany> . ?uri <http://dbpedia.org/ontology/spouse> ?x  . ?uri <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Politician>} ",
+        "generated_answer": null,
+        "results": {
+            "tp": 2,
+            "fp": 0,
+            "fn": 9,
+            "hits_at_1": 1,
+            "exact_match": false
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 3.296785593032837,
+            "LLM_INPUTS": 127,
+            "LLM_OUTPUTS": 114
+        }
+    },
+    {
+        "question": "How big is the earth's diameter?",
+        "generated_query": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX dbr: <http://dbpedia.org/resource/> SELECT ?diameter WHERE { dbr:Earth dbo:diameter ?diameter } ",
+        "generated_answer": null,
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 1,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.7043991088867188,
+            "LLM_INPUTS": 105,
+            "LLM_OUTPUTS": 58
+        }
+    },
+    {
+        "question": "Is the wife of President Obama called Michelle?",
+        "generated_query": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> ASK WHERE { res:Barack_Obama dbo:spouse ?x . ?x <http://dbpedia.org/property/name> ?name } ",
+        "generated_answer": null,
+        "results": {
+            "tp": 1,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 1,
+            "exact_match": true
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 2.0804834365844727,
+            "LLM_INPUTS": 112,
+            "LLM_OUTPUTS": 71
+        }
+    },
+    {
+        "question": "When did Muhammad die?",
+        "generated_query": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?date WHERE { res:Muhammad dbo:deathDate ?date } ",
+        "generated_answer": null,
+        "results": {
+            "tp": 2,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 1,
+            "exact_match": true
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.6790263652801514,
+            "LLM_INPUTS": 105,
+            "LLM_OUTPUTS": 57
+        }
+    },
+    {
+        "question": "What is the atmosphere of the Moon composed of?",
+        "generated_query": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?atmosphere WHERE { res:Moon dbo:atmosphere ?atmosphere } ",
+        "generated_answer": null,
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 7,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.7322163581848145,
+            "LLM_INPUTS": 106,
+            "LLM_OUTPUTS": 59
+        }
+    },
+    {
+        "question": "Who is the governor of Texas?",
+        "generated_query": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { res:Texas dbo:governor ?uri } ",
+        "generated_answer": null,
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 1,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.5857598781585693,
+            "LLM_INPUTS": 103,
+            "LLM_OUTPUTS": 55
+        }
+    },
+    {
+        "question": "Which movies did Kurosawa direct?",
+        "generated_query": "SELECT DISTINCT ?uri WHERE {?uri <http://dbpedia.org/ontology/director> <http://dbpedia.org/resource/Akira_Kurosawa>  . ?uri <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Film>} ",
+        "generated_answer": null,
+        "results": {
+            "tp": 32,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 1,
+            "exact_match": true
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 2.714958667755127,
+            "LLM_INPUTS": 133,
+            "LLM_OUTPUTS": 97
+        }
+    },
+    {
+        "question": "What was the name of the famous battle in 1836 in San Antonio?",
+        "generated_query": "SELECT DISTINCT ?uri WHERE { ?x <http://dbpedia.org/ontology/battle> <http://dbpedia.org/resource/San_Antonio> . ?x <http://dbpedia.org/ontology/battle> ?uri  . ?x <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/MilitaryConflict>} ",
+        "generated_answer": null,
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 1,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 3.286587715148926,
+            "LLM_INPUTS": 139,
+            "LLM_OUTPUTS": 116
+        }
+    },
+    {
+        "question": "Give me the official websites of actors of the television show Charmed.",
+        "generated_query": "SELECT DISTINCT ?uri WHERE { <http://dbpedia.org/resource/Charmed> <http://dbpedia.org/ontology/starring> ?x . ?x <http://dbpedia.org/ontology/officialWebsite> ?uri  . } ",
+        "generated_answer": null,
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 2,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.8962249755859375,
+            "LLM_INPUTS": 111,
+            "LLM_OUTPUTS": 66
+        }
+    },
+    {
+        "question": "How many calories does a baguette have?",
+        "generated_query": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?n WHERE { res:Baguette dbo:nutrition ?n } ",
+        "generated_answer": null,
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 1,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.6286041736602783,
+            "LLM_INPUTS": 109,
+            "LLM_OUTPUTS": 56
+        }
+    },
+    {
+        "question": "Give me all libraries established before 1400.",
+        "generated_query": "SELECT DISTINCT ?uri WHERE { ?uri a <http://dbpedia.org/ontology/Library> ; <http://dbpedia.org/ontology/established> ?date FILTER regex(?date, \"^[0-9][0-9][0-9][0-9][0-9] [A-Z]\") } ",
+        "generated_answer": null,
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 12,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 2.401243209838867,
+            "LLM_INPUTS": 108,
+            "LLM_OUTPUTS": 82
+        }
+    },
+    {
+        "question": "Which museum exhibits The Scream by Munch?",
+        "generated_query": "SELECT DISTINCT ?uri WHERE { <http://dbpedia.org/resource/The_Scream> <http://dbpedia.org/ontology/museum> ?uri } ",
+        "generated_answer": null,
+        "results": {
+            "tp": 1,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 1,
+            "exact_match": true
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.288987636566162,
+            "LLM_INPUTS": 114,
+            "LLM_OUTPUTS": 44
+        }
+    },
+    {
+        "question": "When was the De Beers company founded?",
+        "generated_query": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?date WHERE { res:De_Beers dbo:foundationYear ?date } ",
+        "generated_answer": null,
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 1,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.6782820224761963,
+            "LLM_INPUTS": 108,
+            "LLM_OUTPUTS": 57
+        }
+    },
+    {
+        "question": "Who became president after JFK died?",
+        "generated_query": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Person ; dbo:president res:John_F._Kennedy } ",
+        "generated_answer": null,
+        "results": {
+            "tp": 1,
+            "fp": 88,
+            "fn": 0,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 2.939950466156006,
+            "LLM_INPUTS": 127,
+            "LLM_OUTPUTS": 102
+        }
+    },
+    {
+        "question": "Who are the parents of the wife of Juan Carlos I?",
+        "generated_query": "SELECT DISTINCT ?uri WHERE { <http://dbpedia.org/resource/Juan_Carlos_I_of_Spain> <http://dbpedia.org/ontology/spouse> ?x . ?x <http://dbpedia.org/ontology/parent> ?uri  . } ",
+        "generated_answer": null,
+        "results": {
+            "tp": 2,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 1,
+            "exact_match": true
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 2.140897750854492,
+            "LLM_INPUTS": 122,
+            "LLM_OUTPUTS": 73
+        }
+    },
+    {
+        "question": "Who is the novelist of the work a song of ice and fire?",
+        "generated_query": "SELECT DISTINCT ?uri WHERE { <http://dbpedia.org/resource/A_Song_of_Ice_and_Fire> <http://dbpedia.org/ontology/author> ?uri } ",
+        "generated_answer": null,
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 1,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.530456304550171,
+            "LLM_INPUTS": 126,
+            "LLM_OUTPUTS": 52
+        }
+    },
+    {
+        "question": "In which studio did the Beatles record their first album?",
+        "generated_query": "SELECT DISTINCT ?uri WHERE { <http://dbpedia.org/resource/The_Beatles> <http://dbpedia.org/ontology/debutAlbum> ?x . ?x <http://dbpedia.org/ontology/recordedIn> ?uri  . ?x <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Album>} ",
+        "generated_answer": null,
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 1,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 3.377671480178833,
+            "LLM_INPUTS": 129,
+            "LLM_OUTPUTS": 117
+        }
+    },
+    {
+        "question": "Which beer brewing companies are located in North-Rhine Westphalia?",
+        "generated_query": "SELECT DISTINCT ?uri WHERE { ?x <http://dbpedia.org/ontology/locationCity> <http://dbpedia.org/resource/Category:Companies_based_in_North_Rhine-Westphalia> . ?x <http://dbpedia.org/property/locationCity> ?uri  . ?x <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Brewery>} ",
+        "generated_answer": null,
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 4,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 3.727832078933716,
+            "LLM_INPUTS": 164,
+            "LLM_OUTPUTS": 129
+        }
+    },
+    {
+        "question": "When did princess Diana die?",
+        "generated_query": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?date WHERE { res:Diana,_Princess_of_Wales dbo:deathDate ?date } ",
+        "generated_answer": null,
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 2,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.9110758304595947,
+            "LLM_INPUTS": 118,
+            "LLM_OUTPUTS": 65
+        }
+    },
+    {
+        "question": "Who founded Intel?",
+        "generated_query": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { res:Intel dbo:foundedBy ?uri } ",
+        "generated_answer": null,
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 2,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.616288185119629,
+            "LLM_INPUTS": 100,
+            "LLM_OUTPUTS": 55
+        }
+    },
+    {
+        "question": "Who is the youngest player in the Premier League?",
+        "generated_query": "SELECT DISTINCT ?uri WHERE {?uri <http://dbpedia.org/ontology/birthDate> ?date FILTER ( ?date <SYS>>9000-01-01T00:00:00Z)  . ?uri <http://dbpedia.org/ontology/team> <http://dbpedia.org/resource/Premier_League>} ",
+        "generated_answer": null,
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 1,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 2.8619544506073,
+            "LLM_INPUTS": 113,
+            "LLM_OUTPUTS": 98
+        }
+    },
+    {
+        "question": "Which instruments does Cat Stevens play?",
+        "generated_query": "SELECT DISTINCT ?uri WHERE { <http://dbpedia.org/resource/Cat_Stevens> <http://dbpedia.org/ontology/instrument> ?uri } ",
+        "generated_answer": null,
+        "results": {
+            "tp": 10,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 1,
+            "exact_match": true
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.300675630569458,
+            "LLM_INPUTS": 106,
+            "LLM_OUTPUTS": 44
+        }
+    },
+    {
+        "question": "How many rivers and lakes are in South Carolina?",
+        "generated_query": "SELECT DISTINCT COUNT(?uri) WHERE { ?uri <http://dbpedia.org/ontology/location> <http://dbpedia.org/resource/South_Carolina> . ?uri <http://dbpedia.org/ontology/type> <http://dbpedia.org/resource/Category:Rivers_and_streams_of_South_Carolina>  . } ",
+        "generated_answer": null,
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 1,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 2.8092312812805176,
+            "LLM_INPUTS": 168,
+            "LLM_OUTPUTS": 96
+        }
+    },
+    {
+        "question": "Who was called Rodzilla?",
+        "generated_query": "SELECT DISTINCT ?uri WHERE {?uri <http://dbpedia.org/ontology/nickname> \"Rodzilla\"@en } ",
+        "generated_answer": null,
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 2,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.0724990367889404,
+            "LLM_INPUTS": 87,
+            "LLM_OUTPUTS": 36
+        }
+    },
+    {
+        "question": "Give me the capitals of all countries in Africa.",
+        "generated_query": "SELECT DISTINCT ?uri WHERE { ?x <http://dbpedia.org/property/continent> <http://dbpedia.org/resource/Category:Countries_in_Africa> . ?x <http://dbpedia.org/ontology/capital> ?uri  . } ",
+        "generated_answer": null,
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 59,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 2.0488924980163574,
+            "LLM_INPUTS": 119,
+            "LLM_OUTPUTS": 70
+        }
+    },
+    {
+        "question": "Which bridges are of the same type as the Manhattan Bridge?",
+        "generated_query": "SELECT DISTINCT ?uri WHERE {?uri <http://dbpedia.org/ontology/designer> <http://dbpedia.org/resource/Manhattan_Bridge>  . ?uri <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Bridge>} ",
+        "generated_answer": null,
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 160,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 2.7484288215637207,
+            "LLM_INPUTS": 134,
+            "LLM_OUTPUTS": 95
+        }
+    },
+    {
+        "question": "How many companies were founded by the founder of Facebook?",
+        "generated_query": "SELECT DISTINCT COUNT(?uri) WHERE { <http://dbpedia.org/resource/Facebook> <http://dbpedia.org/property/founded> ?uri  . } ",
+        "generated_answer": null,
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 1,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.3306610584259033,
+            "LLM_INPUTS": 107,
+            "LLM_OUTPUTS": 45
+        }
+    },
+    {
+        "question": "Show me hiking trails in the Grand Canyon where there's no danger of flash floods.",
+        "generated_query": "SELECT DISTINCT ?uri WHERE { ?uri <http://dbpedia.org/ontology/location> <http://dbpedia.org/resource/Grand_Canyon> . ?uri <http://dbpedia.org/ontology/hazard> <http://dbpedia.org/resource/Flash_flood> } ",
+        "generated_answer": null,
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 1,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 2.3664872646331787,
+            "LLM_INPUTS": 149,
+            "LLM_OUTPUTS": 82
+        }
+    },
+    {
+        "question": "Which book has the most pages?",
+        "generated_query": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { ?uri dbo:numPages ?n . ?n > 1000 } ORDER BY DESC(?n) OFFSET 0 LIMIT 1 ",
+        "generated_answer": null,
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 1,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 2.204014778137207,
+            "LLM_INPUTS": 103,
+            "LLM_OUTPUTS": 75
+        }
+    },
+    {
+        "question": "What is the largest state in the United States?",
+        "generated_query": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:AdministrativeRegion ; dbo:stateType ?state ; dbo:state res:Category:States_of_the_United_States } ORDER BY DESC(?state) OFFSET 0 LIMIT 1 ",
+        "generated_answer": null,
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 1,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 3.8154876232147217,
+            "LLM_INPUTS": 145,
+            "LLM_OUTPUTS": 132
+        }
+    },
+    {
+        "question": "Give me the websites of companies with more than 500000 employees.",
+        "generated_query": "SELECT DISTINCT ?uri WHERE { ?x <http://dbpedia.org/ontology/numberOfEmployees> <http://dbpedia.org/resource/500000> . ?x <http://dbpedia.org/ontology/website> ?uri  . } ",
+        "generated_answer": null,
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 43,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 2.056406021118164,
+            "LLM_INPUTS": 99,
+            "LLM_OUTPUTS": 70
+        }
+    },
+    {
+        "question": "What were the names of the three ships by Columbus?",
+        "generated_query": "SELECT DISTINCT ?uri WHERE { ?x <http://dbpedia.org/property/commanders> <http://dbpedia.org/resource/Category:Christopher_Columbus> . ?x <http://dbpedia.org/property/name> ?uri  . ?x <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Ship>} ",
+        "generated_answer": null,
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 3,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "QUESTIONS": 1,
+            "TIME": 0,
+            "TIME PER QUESTION": 0,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 3.2945444583892822,
+            "LLM_INPUTS": 160,
+            "LLM_OUTPUTS": 114
+        }
+    }
+]

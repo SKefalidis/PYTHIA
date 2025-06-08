@@ -1,0 +1,53 @@
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX dbp: <http://dbpedia.org/property/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+
+SELECT
+  ?id
+  (SAMPLE(?label) AS ?main_label)
+  (GROUP_CONCAT(DISTINCT ?alias; SEPARATOR=";;;") AS ?aliases)
+WHERE {
+  # Get ids and their frequencies for score
+  {
+    SELECT ?id (SUM(?freq) AS ?total_freq) WHERE {
+      {
+        SELECT ?id ("SUB" AS ?pos) (COUNT(?id) AS ?freq) WHERE {
+          ?id rdfs:label ?label . 
+          FILTER(LANG(?label) = "en") .
+          ?id ?p ?o 
+        } GROUP BY ?id 
+      } UNION {
+        SELECT ?id ("OBJ" AS ?pos) (COUNT(?id) AS ?freq) WHERE {
+          ?id rdfs:label ?label . 
+          FILTER(LANG(?label) = "en") .
+          ?s ?p ?id .
+          FILTER(ISIRI(?id)) 
+        } GROUP BY ?id
+      }
+    } GROUP BY ?id
+  }
+
+  # Get label
+  ?id rdfs:label ?label .
+  FILTER(LANG(?label) = "en")
+
+  # Get aliases
+  OPTIONAL {
+    { 
+      ?id dbp:synonyms ?alias
+      FILTER(LANG(?alias) = "en")
+    } UNION { 
+      ?id dbo:alias ?alias
+      FILTER(LANG(?alias) = "en")
+    } UNION {
+      ?id dbo:alternativeName ?alias
+      FILTER(LANG(?alias) = "en")
+    } UNION {
+      ?id foaf:nick ?alias
+      FILTER(LANG(?alias) = "en")
+    }
+  }
+}
+GROUP BY ?id
+ORDER BY DESC(MAX(?total_freq))

@@ -1,0 +1,1622 @@
+[
+    {
+        "question": "Which distinct items are subclasses of execution methods or the subclasses of those, and so on?",
+        "csv_answer": "hanging\nlethal injection\nelectrocution\nfiring squad\nbeheading",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "TIME": 27.13939642906189,
+            "SPARQL_CALLS": 71,
+            "SPARQL_TIME": 2.6323440074920654,
+            "LLM_CALLS": 14,
+            "LLM_INPUTS": 7528,
+            "LLM_OUTPUTS": 826,
+            "LLM_TIME": 24.478896856307983
+        }
+    },
+    {
+        "question": "Which humans who were born in Australia or in any administrative territorial entity within Australia do not have a specified sex or gender?",
+        "csv_answer": "",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 20,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "TIME": 53.965022802352905,
+            "SPARQL_CALLS": 22,
+            "SPARQL_TIME": 40.042667865753174,
+            "LLM_CALLS": 6,
+            "LLM_INPUTS": 6141,
+            "LLM_OUTPUTS": 584,
+            "LLM_TIME": 12.315345287322998
+        }
+    },
+    {
+        "question": "Who are the distinct candidates for the Mayor of Germasogeia Municipality Elections?",
+        "csv_answer": "N/A",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "TIME": 13.6854727268219,
+            "SPARQL_CALLS": 51,
+            "SPARQL_TIME": 2.2187159061431885,
+            "LLM_CALLS": 12,
+            "LLM_INPUTS": 6764,
+            "LLM_OUTPUTS": 495,
+            "LLM_TIME": 11.45887041091919
+        }
+    },
+    {
+        "question": "What are the distinct occupations related to the musical profession, along with their subclasses (if available)?",
+        "csv_answer": "Musician, Composer\nMusician, Conductor\nMusician, Instrumentalist\nMusician, Singer/Vocalist\nMusician, Songwriter\nMusician, Producer\nMusician, DJ\nMusician, Music Teacher\nMusician, Music Arranger",
+        "results": {
+            "tp": 6,
+            "fp": 3,
+            "fn": 598,
+            "hits_at_1": 1,
+            "exact_match": false
+        },
+        "metrics": {
+            "TIME": 24.74612307548523,
+            "SPARQL_CALLS": 73,
+            "SPARQL_TIME": 2.046649217605591,
+            "LLM_CALLS": 17,
+            "LLM_INPUTS": 8891,
+            "LLM_OUTPUTS": 1301,
+            "LLM_TIME": 22.660565853118896
+        }
+    },
+    {
+        "question": "What are the distinct lithostratigraphic units located in Arizona? Please include any parts they have (if available, the larger units they are part of (if available), and their Geolex IDs (if available).",
+        "csv_answer": "Supai Group,\"Watahomigi Formation; Manakacha Formation; Wescogame Formation; Esplanade Sandstone\",\"Paleozoic stratigraphy of the Grand Canyon region\",AZ Supai\nRedwall Limestone,N/A,\"Mississippian carbonate unit in the Grand Canyon region\",AZ Redwall\nMoenkopi Formation,\"Shnabkaib Member; Holbrook Member; others\",\"Triassic stratigraphy of the Colorado Plateau\",AZ Moenkopi\nChinle Formation,\"Shinarump Conglomerate; Monitor Butte Member; others\",\"Upper Triassic unit overlying the Moenkopi Formation\",AZ Chinle\nCoconino Sandstone,N/A,\"Permian eolian sandstone unit in the Grand Canyon region\",AZ Coconino\nTonto Group,\"Tapeats Sandstone; Bright Angel Shale; Muav Limestone\",\"Cambrian stratigraphy of the Grand Canyon\",AZ Tonto\nBasin and Range volcanic and sedimentary units,N/A,N/A,N/A",
+        "results": {
+            "tp": 4,
+            "fp": 3,
+            "fn": 129,
+            "hits_at_1": 1,
+            "exact_match": false
+        },
+        "metrics": {
+            "TIME": 37.61865019798279,
+            "SPARQL_CALLS": 99,
+            "SPARQL_TIME": 7.704662084579468,
+            "LLM_CALLS": 19,
+            "LLM_INPUTS": 10790,
+            "LLM_OUTPUTS": 1769,
+            "LLM_TIME": 29.68953227996826
+        }
+    },
+    {
+        "question": "What are the municipalities of Catalonia, Spain, with an IDESCAT territorial code starting with \"25\"? Include their most recent population using their preferred rank (if available), area (if available), and coat of arms image (if available).",
+        "csv_answer": "",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 231,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "TIME": 17.83141803741455,
+            "SPARQL_CALLS": 47,
+            "SPARQL_TIME": 1.2376527786254883,
+            "LLM_CALLS": 12,
+            "LLM_INPUTS": 7254,
+            "LLM_OUTPUTS": 818,
+            "LLM_TIME": 16.58175301551819
+        }
+    },
+    {
+        "question": "Which countries are sovereign states, along with their capitals, currencies, populations, flag images, and the determination methods of their capitals, if available? Exclude historical countries and ancient civilizations.",
+        "csv_answer": "United States of America,Washington D.C.,United States Dollar,333000000,\"13 stripes alternating red and white with 50 white stars on a blue canton\",\"Established as a federal district by the Constitution; chosen as a neutral location between northern and southern states\"\nFrance,Paris,Euro,67000000,\"Vertical tricolor of blue white and red\",\"Historical and political center since the Middle Ages\"\nJapan,Tokyo,Japanese Yen,125000000,\"White field with a red circle in the center\",\"Moved from Kyoto to Edo (Tokyo) in 1868 during the Meiji Restoration\"\nBrazil,Bras\u00edlia,Brazilian Real,216000000,\"Green field with a yellow diamond and blue globe with stars and motto\",\"Planned city built in the interior to promote development and reduce coastal concentration (established 1960)\"\nIndia,New Delhi,Indian Rupee,1420000000,\"Horizontal tricolor of saffron white and green with a blue Ashoka Chakra in the center\",\"New Delhi was built as the seat of government during British rule replacing Calcutta\"\nCanada,Ottawa,Canadian Dollar,39000000,\"Red field with a white square and a red maple leaf in the center\",\"Chosen in 1857 as a compromise location between English and French-speaking populations\"",
+        "results": {
+            "tp": 5,
+            "fp": 1,
+            "fn": 192,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "TIME": 40.24316477775574,
+            "SPARQL_CALLS": 108,
+            "SPARQL_TIME": 7.081193208694458,
+            "LLM_CALLS": 24,
+            "LLM_INPUTS": 16933,
+            "LLM_OUTPUTS": 1865,
+            "LLM_TIME": 33.08177304267883
+        }
+    },
+    {
+        "question": "What are the countries along with images of their flags and their populations, ordered by descending population?",
+        "csv_answer": "",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 184,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "TIME": 7.949834585189819,
+            "SPARQL_CALLS": 17,
+            "SPARQL_TIME": 0.23929548263549805,
+            "LLM_CALLS": 7,
+            "LLM_INPUTS": 4730,
+            "LLM_OUTPUTS": 388,
+            "LLM_TIME": 7.698916912078857
+        }
+    },
+    {
+        "question": "What is the current number of operational airports and the population for each country, excluding airports that have an end time or a dissolved, abolished, or demolished date, if available?",
+        "csv_answer": "",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 209,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "TIME": 17.40033745765686,
+            "SPARQL_CALLS": 10,
+            "SPARQL_TIME": 13.991069316864014,
+            "LLM_CALLS": 3,
+            "LLM_INPUTS": 2309,
+            "LLM_OUTPUTS": 170,
+            "LLM_TIME": 3.361069440841675
+        }
+    },
+    {
+        "question": "What are the provinces and their corresponding countries?",
+        "csv_answer": "",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 2009,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "TIME": 24.471213817596436,
+            "SPARQL_CALLS": 95,
+            "SPARQL_TIME": 4.069768905639648,
+            "LLM_CALLS": 20,
+            "LLM_INPUTS": 11407,
+            "LLM_OUTPUTS": 937,
+            "LLM_TIME": 20.325631380081177
+        }
+    },
+    {
+        "question": "What are the official languages of countries that use a writing system which is either a subclass of the Latin script or an instance of a Latin-script alphabet? Include a count of each language, and order by the count in descending order.",
+        "csv_answer": "English,60\nFrench,29\nSpanish,21\nPortuguese,9\nGerman,6\nDutch,4\nItalian,4\nSwahili,4\nMalay/Indonesian,2\nRomanian,2\nSwedish,2\nNorwegian,1\nDanish,1\nFinnish,1",
+        "results": {
+            "tp": 13,
+            "fp": 1,
+            "fn": 82,
+            "hits_at_1": 1,
+            "exact_match": false
+        },
+        "metrics": {
+            "TIME": 45.41198420524597,
+            "SPARQL_CALLS": 109,
+            "SPARQL_TIME": 11.964735984802246,
+            "LLM_CALLS": 20,
+            "LLM_INPUTS": 11842,
+            "LLM_OUTPUTS": 1772,
+            "LLM_TIME": 33.12122392654419
+        }
+    },
+    {
+        "question": "What are the items located in Ille-et-Vilaine, along with their coordinates and the century of their inception (rounded to the nearest century)?",
+        "csv_answer": "\"Rennes Cathedral\",48.1119,-1.675,12\n\"Ch\u00e2teau de Foug\u00e8res\",48.3522,-1.2025,12\n\"Abbaye Saint-Melaine\",48.1100,-1.675,6\n\"Dolmen de la Roche-aux-F\u00e9es\",47.7000,-1.4000,\"N/A\"\n\"Ch\u00e2teau de Combourg\",48.4600,-1.8500,11",
+        "results": {
+            "tp": 2,
+            "fp": 3,
+            "fn": 449,
+            "hits_at_1": 1,
+            "exact_match": false
+        },
+        "metrics": {
+            "TIME": 17.1801278591156,
+            "SPARQL_CALLS": 30,
+            "SPARQL_TIME": 0.8222699165344238,
+            "LLM_CALLS": 9,
+            "LLM_INPUTS": 7129,
+            "LLM_OUTPUTS": 842,
+            "LLM_TIME": 16.339005947113037
+        }
+    },
+    {
+        "question": "Which books were authored by Arthur Conan Doyle?",
+        "csv_answer": "\"The Adventure of the Dying Detective\"",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "TIME": 7.0419158935546875,
+            "SPARQL_CALLS": 21,
+            "SPARQL_TIME": 1.0883917808532715,
+            "LLM_CALLS": 5,
+            "LLM_INPUTS": 5075,
+            "LLM_OUTPUTS": 205,
+            "LLM_TIME": 5.941186904907227
+        }
+    },
+    {
+        "question": "Which items have the official name \"\u041a\u043e\u043b\u043e\u043c\u0438\u044f\" in Ukrainian?",
+        "csv_answer": "\u041a\u043e\u043b\u043e\u043c\u0438\u044f, city in Ukraine",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "TIME": 1.0068647861480713,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0.0,
+            "LLM_CALLS": 1,
+            "LLM_INPUTS": 394,
+            "LLM_OUTPUTS": 40,
+            "LLM_TIME": 1.0068390369415283
+        }
+    },
+    {
+        "question": "Which items are role-playing video games? Include their developers, publishers, and publication dates, if available.",
+        "csv_answer": "The Elder Scrolls V: Skyrim,Bethesda Game Studios,Bethesda Softworks,20111111\nFinal Fantasy VII,Square (now Square Enix),Square (now Square Enix),19970131\nThe Witcher 3: Wild Hunt,CD Projekt Red,CD Projekt,20150519\nMass Effect,BioWare,\"Microsoft Game Studios (original), Electronic Arts (later)\",20071120\nPersona 5,Atlus,Atlus,20170404\nDragon Age: Origins,BioWare,Electronic Arts,20091103",
+        "results": {
+            "tp": 5,
+            "fp": 1,
+            "fn": 1822,
+            "hits_at_1": 1,
+            "exact_match": false
+        },
+        "metrics": {
+            "TIME": 25.686028242111206,
+            "SPARQL_CALLS": 69,
+            "SPARQL_TIME": 3.6585490703582764,
+            "LLM_CALLS": 14,
+            "LLM_INPUTS": 8974,
+            "LLM_OUTPUTS": 1054,
+            "LLM_TIME": 21.923049688339233
+        }
+    },
+    {
+        "question": "Which distinct destroyers have an operator not listed in the vessel class's list of operators? For each row, include the vessel class and operator.",
+        "csv_answer": "",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 1836,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "TIME": 14.013122081756592,
+            "SPARQL_CALLS": 49,
+            "SPARQL_TIME": 1.6904733180999756,
+            "LLM_CALLS": 8,
+            "LLM_INPUTS": 4684,
+            "LLM_OUTPUTS": 688,
+            "LLM_TIME": 12.30167007446289
+        }
+    },
+    {
+        "question": "What is the second-level parent organization of AdMob, the mobile advertising company?",
+        "csv_answer": "AdMob, XXVI Holdings",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "TIME": 8.698118209838867,
+            "SPARQL_CALLS": 34,
+            "SPARQL_TIME": 0.8112428188323975,
+            "LLM_CALLS": 6,
+            "LLM_INPUTS": 5033,
+            "LLM_OUTPUTS": 486,
+            "LLM_TIME": 7.866067409515381
+        }
+    },
+    {
+        "question": "What are the religious buildings located in the region of Molise, Italy?",
+        "csv_answer": "Cathedral of Campobasso\nAbbey of San Vincenzo al Volturno\nChurch of Santa Maria Maggiore in Isernia",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "TIME": 24.608453035354614,
+            "SPARQL_CALLS": 71,
+            "SPARQL_TIME": 10.022632837295532,
+            "LLM_CALLS": 13,
+            "LLM_INPUTS": 10685,
+            "LLM_OUTPUTS": 658,
+            "LLM_TIME": 14.249804496765137
+        }
+    },
+    {
+        "question": "Which distinct items are instances of video game genres, or subclasses of either video game genres or electronic games? Please return the genre, the OLAC video game genre vocabulary ID (if available), and any subclasses (if available).",
+        "csv_answer": "simulation video game,,video game genre\n\u0436\u0430\u043d\u0440 \u043a\u043e\u043c\u043f\u044c\u044e\u0442\u0435\u0440\u043d\u044b\u0445 \u0438\u0433\u0440,,Wikidata-metaklass\njogo eletr\u00f4nico,,,Harvest Moon\nHarvest Moon,,,simulation video game",
+        "results": {
+            "tp": 1,
+            "fp": 3,
+            "fn": 283,
+            "hits_at_1": 1,
+            "exact_match": false
+        },
+        "metrics": {
+            "TIME": 64.5359799861908,
+            "SPARQL_CALLS": 90,
+            "SPARQL_TIME": 34.82306170463562,
+            "LLM_CALLS": 18,
+            "LLM_INPUTS": 9715,
+            "LLM_OUTPUTS": 1360,
+            "LLM_TIME": 27.301643133163452
+        }
+    },
+    {
+        "question": "What are the details of all tennis tournaments that were part of the 2018 ATP World Tour? Please include the tournament item, country (if available), end time (if available), location (if available), edition number (if available), point in time (if available), and surface played on (if available), sorted in ascending order by end time.",
+        "csv_answer": "Qatar ExxonMobil Open,Qatar,20180106,Doha,26,N/A,Hard\nBrisbane International,Australia,20180107,Brisbane,10,N/A,Hard\nSydney International,Australia,20180113,Sydney,126,N/A,Hard\nAustralian Open,Australia,20180128,Melbourne,106,N/A,Hard\nRotterdam Open (ABN AMRO World Tennis Tournament),Netherlands,20180218,Rotterdam,45,N/A,\"Hard (Indoor)\"\nDubai Tennis Championships,United Arab Emirates,20180224,Dubai,25,N/A,Hard\nIndian Wells Masters (BNP Paribas Open),United States,20180318,Indian Wells California,45,N/A,Hard\nMiami Open,United States,20180401,Miami Florida,34,N/A,Hard\nMonte-Carlo Masters,Monaco,20180422,Monte Carlo,112,N/A,Clay",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "TIME": 38.175986766815186,
+            "SPARQL_CALLS": 76,
+            "SPARQL_TIME": 3.145207166671753,
+            "LLM_CALLS": 17,
+            "LLM_INPUTS": 9612,
+            "LLM_OUTPUTS": 1691,
+            "LLM_TIME": 34.99818730354309
+        }
+    },
+    {
+        "question": "Get a list of roller coasters and their respective countries, if available.",
+        "csv_answer": "Acrobat,N/A\nCoaster Express,Spain\nD\u00e9j\u00e0 Vu,N/A",
+        "results": {
+            "tp": 3,
+            "fp": 0,
+            "fn": 194,
+            "hits_at_1": 1,
+            "exact_match": false
+        },
+        "metrics": {
+            "TIME": 10.994734525680542,
+            "SPARQL_CALLS": 37,
+            "SPARQL_TIME": 1.7313015460968018,
+            "LLM_CALLS": 9,
+            "LLM_INPUTS": 4839,
+            "LLM_OUTPUTS": 465,
+            "LLM_TIME": 9.25325608253479
+        }
+    },
+    {
+        "question": "What are the cultural heritage items located in Helsinki? Please provide their year of creation (if available), commemorated entities (if available), images (if available), and coordinates (if available), and order by item ID.",
+        "csv_answer": "\"Helsinki Cathedral\",1852,\"Tsar Nicholas I of Russia\",\"https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Helsinki_Cathedral_2010-08-15.jpg/320px-Helsinki_Cathedral_2010-08-15.jpg\",60.1695,24.9520\n\"Suomenlinna Fortress\",1748,\"A sea fortress built to protect Helsinki and the eastern part of the Kingdom of Sweden\",\"https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Suomenlinna_Sea_Fortress_2013.jpg/320px-Suomenlinna_Sea_Fortress_2013.jpg\",60.1459,24.9884\n\"The National Museum of Finland\",1916,\"Showcases Finnish cultural history from prehistoric times to the present\",\"https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/National_Museum_of_Finland_2013.jpg/320px-National_Museum_of_Finland_2013.jpg\",60.1756,24.9339\n\"Temppeliaukio Church (Rock Church)\",1969,\"Known for its unique architecture carved directly into solid rock\",\"https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Temppeliaukio_Church_in_Hels\",N/A,N/A",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "TIME": 33.00510334968567,
+            "SPARQL_CALLS": 115,
+            "SPARQL_TIME": 4.300235748291016,
+            "LLM_CALLS": 18,
+            "LLM_INPUTS": 11281,
+            "LLM_OUTPUTS": 1449,
+            "LLM_TIME": 28.63846516609192
+        }
+    },
+    {
+        "question": "Which items are part of the Camino de Santiago (also known as the Way of Saint James), including their coordinates, and the routes they are part of (where those routes are instances of a pilgrims' way)?",
+        "csv_answer": "\"Caminho Portugu\u00eas de Santiago\",\"N/A\",\"pilgrimage route\"\n\"Albergue de Peregrinos de Pontevedra Virgen Peregrina\",\"-8.6361944444444,42.419527777778\",\"Caminho Portugu\u00eas de Santiago\"",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "TIME": 25.232426643371582,
+            "SPARQL_CALLS": 84,
+            "SPARQL_TIME": 3.476069211959839,
+            "LLM_CALLS": 18,
+            "LLM_INPUTS": 10886,
+            "LLM_OUTPUTS": 1085,
+            "LLM_TIME": 21.733158588409424
+        }
+    },
+    {
+        "question": "Who are the 100 oldest living tennis players? Include their dates of birth, genders, and ages, and order by age in descending order. Exclude those who are 110 years old or older.",
+        "csv_answer": "",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 100,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "TIME": 5.718959093093872,
+            "SPARQL_CALLS": 15,
+            "SPARQL_TIME": 0.6509535312652588,
+            "LLM_CALLS": 5,
+            "LLM_INPUTS": 3644,
+            "LLM_OUTPUTS": 232,
+            "LLM_TIME": 5.044867515563965
+        }
+    },
+    {
+        "question": "Which publishers have worked in Amsterdam? For each publisher, include their date of birth (if available), date of death (if available), image (if available), work location, and coordinates of both the publishers (if available) and their work locations (if available)?",
+        "csv_answer": "Elsevier,1880,N/A,https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Elsevier_logo.svg/1200px-Elsevier_logo.svg.png,Amsterdam, Netherlands,52.3676,4.9041\nBrill Publishers,1683,N/A,https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Brill_logo.svg/1200px-Brill_logo.svg.png,Amsterdam, Netherlands,52.3676,4.9041\nSingel Uitgeverijen,1980s,N/A,N/A,Amsterdam, Netherlands,52.3676,4.9041",
+        "results": {
+            "tp": 1,
+            "fp": 0,
+            "fn": 76,
+            "hits_at_1": 1,
+            "exact_match": false
+        },
+        "metrics": {
+            "TIME": 89.60237312316895,
+            "SPARQL_CALLS": 89,
+            "SPARQL_TIME": 61.25784158706665,
+            "LLM_CALLS": 18,
+            "LLM_INPUTS": 15094,
+            "LLM_OUTPUTS": 1354,
+            "LLM_TIME": 26.31951880455017
+        }
+    },
+    {
+        "question": "What are the individual branches (P527 parts), as well as the overarching libraries, for libraries that are part of the Georgia Public Library Service?",
+        "csv_answer": "Georgia Public Library Service,Overarching library\nAtlanta-Fulton Public Library System,Individual branch\nDeKalb County Public Library,Individual branch\nGwinnett County Public Library,Individual branch\nCobb County Public Library System,Individual branch\nChattahoochee Valley Libraries,Individual branch\nAthens-Clarke County Library,Individual branch\nAugusta-Richmond County Public Library System,Individual branch\nSavannah-Chatham County Public Library,Individual branch",
+        "results": {
+            "tp": 3,
+            "fp": 6,
+            "fn": 54,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "TIME": 27.01192355155945,
+            "SPARQL_CALLS": 88,
+            "SPARQL_TIME": 3.044567346572876,
+            "LLM_CALLS": 17,
+            "LLM_INPUTS": 9231,
+            "LLM_OUTPUTS": 1301,
+            "LLM_TIME": 23.94723606109619
+        }
+    },
+    {
+        "question": "What are the properties and their values associated with John F. Kennedy?",
+        "csv_answer": "Instance of,person\nGender,male\nPlace of birth,Brooklyn",
+        "results": {
+            "tp": 2,
+            "fp": 1,
+            "fn": 232,
+            "hits_at_1": 1,
+            "exact_match": false
+        },
+        "metrics": {
+            "TIME": 81.57782340049744,
+            "SPARQL_CALLS": 42,
+            "SPARQL_TIME": 66.3035979270935,
+            "LLM_CALLS": 12,
+            "LLM_INPUTS": 9086,
+            "LLM_OUTPUTS": 557,
+            "LLM_TIME": 12.470764398574829
+        }
+    },
+    {
+        "question": "How many women were born in India?",
+        "csv_answer": "700000000",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "TIME": 185.51792812347412,
+            "SPARQL_CALLS": 94,
+            "SPARQL_TIME": 155.9414415359497,
+            "LLM_CALLS": 18,
+            "LLM_INPUTS": 12615,
+            "LLM_OUTPUTS": 1037,
+            "LLM_TIME": 22.316760778427124
+        }
+    },
+    {
+        "question": "Which deceased Canadian individuals have a FamilySearch person ID and have a father who does not have a FamilySearch person ID? For each person, include their date of death, FamilySearch person ID, and their father.",
+        "csv_answer": "1867-07-01, 278412004, B01.050.150.900.649.313.988.400.112.400.400",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "TIME": 53.207239389419556,
+            "SPARQL_CALLS": 14,
+            "SPARQL_TIME": 39.16530704498291,
+            "LLM_CALLS": 4,
+            "LLM_INPUTS": 5769,
+            "LLM_OUTPUTS": 505,
+            "LLM_TIME": 12.336528539657593
+        }
+    },
+    {
+        "question": "Which chess players have a FIDE player ID but do not have an Elo rating recorded for January 2012?",
+        "csv_answer": "",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 16983,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "TIME": 6.505767822265625,
+            "SPARQL_CALLS": 8,
+            "SPARQL_TIME": 0.6234309673309326,
+            "LLM_CALLS": 3,
+            "LLM_INPUTS": 2486,
+            "LLM_OUTPUTS": 217,
+            "LLM_TIME": 5.8678083419799805
+        }
+    },
+    {
+        "question": "What are the church buildings located in Normandy, along with the item of the places they are located in and their images?",
+        "csv_answer": "Rouen Cathedral, Rouen, \"https://upload.wikimedia.org/wikipedia/commons/3/3a/Cathedrale_Rouen_2006-08-07.jpg\"\nAbbaye aux Hommes, Caen, \"https://upload.wikimedia.org/wikipedia/commons/1/1a/Abbaye_aux_Hommes_Caen_01.jpg\"\nAbbaye aux Dames, Caen, \"https://upload.wikimedia.org/wikipedia/commons/4/4a/Abbaye_aux_Dames_Caen_01.jpg\"\nSaint-Maclou Church, Rouen, \"https://upload.wikimedia.org/wikipedia/commons/7/7a/Eglise_Saint-Maclou_Rouen_01.jpg\"\nBayeux Cathedral, Bayeux, \"https://upload.wikimedia.org/wikipedia/commons/5/5a/Bayeux_Cathedral_2011.jpg\"",
+        "results": {
+            "tp": 3,
+            "fp": 0,
+            "fn": 2424,
+            "hits_at_1": 1,
+            "exact_match": false
+        },
+        "metrics": {
+            "TIME": 59.27407193183899,
+            "SPARQL_CALLS": 69,
+            "SPARQL_TIME": 36.05582141876221,
+            "LLM_CALLS": 15,
+            "LLM_INPUTS": 11319,
+            "LLM_OUTPUTS": 1215,
+            "LLM_TIME": 22.932554244995117
+        }
+    },
+    {
+        "question": "Which items are labeled \"Madonna and Child\" in English but do not have a label in French?",
+        "csv_answer": "",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 117,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "TIME": 2.5732920169830322,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0.0,
+            "LLM_CALLS": 1,
+            "LLM_INPUTS": 401,
+            "LLM_OUTPUTS": 176,
+            "LLM_TIME": 2.5730555057525635
+        }
+    },
+    {
+        "question": "Which items have exactly the string \"Fred Smith\" listed under its author name string?",
+        "csv_answer": "",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 5,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "TIME": 0.7543900012969971,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0.0,
+            "LLM_CALLS": 1,
+            "LLM_INPUTS": 397,
+            "LLM_OUTPUTS": 38,
+            "LLM_TIME": 0.7543375492095947
+        }
+    },
+    {
+        "question": "What are the cemeteries in Norway that have either a Commonwealth War Graves Commission burial ground ID or a Foreign war churchyards in Norway ID? Please provide their coordinates (if available), the relevant ID (if available), and an image (if available).",
+        "csv_answer": "",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 78,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "TIME": 11.038700580596924,
+            "SPARQL_CALLS": 8,
+            "SPARQL_TIME": 5.980654716491699,
+            "LLM_CALLS": 3,
+            "LLM_INPUTS": 4387,
+            "LLM_OUTPUTS": 268,
+            "LLM_TIME": 4.783665895462036
+        }
+    },
+    {
+        "question": "Which items have a formatter URL that includes \"web.archive.org\"?",
+        "csv_answer": "",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 74,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "TIME": 0.7931604385375977,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0.0,
+            "LLM_CALLS": 1,
+            "LLM_INPUTS": 394,
+            "LLM_OUTPUTS": 36,
+            "LLM_TIME": 0.7931182384490967
+        }
+    },
+    {
+        "question": "What are the institutions located in municipalities or cantons of Switzerland that are described in Memobase? Include their types (if available), street addresses (if available), municipalities (if available), and cantons (if available). Exclude any institutions where the municipality is within the canton, as well as institutions that no longer exist. Order results by item ID.",
+        "csv_answer": "",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 168,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "TIME": 63.039456367492676,
+            "SPARQL_CALLS": 83,
+            "SPARQL_TIME": 39.0853488445282,
+            "LLM_CALLS": 19,
+            "LLM_INPUTS": 13836,
+            "LLM_OUTPUTS": 1029,
+            "LLM_TIME": 21.441061973571777
+        }
+    },
+    {
+        "question": "What are the software version identifiers for the wiki software named \"MediaWiki,\" and their publication dates if available? Order by publication date.",
+        "csv_answer": "MediaWiki 1.0, 2003-01\nMediaWiki 1.1, 2003-06\nMediaWiki 1.2, 2003-10\nMediaWiki 1.3, 2004-03\nMediaWiki 1.4, 2004-08\nMediaWiki 1.5, 2005-01\nMediaWiki 1.6, 2005-06\nMediaWiki 1.7, 2005-11\nMediaWiki 1.8, 2006-04\nMediaWiki 1.9, 2006-09\nMediaWiki 1.10, 2007-02\nMediaWiki 1.11, 2007-07\nMediaWiki 1.12, 2007-12\nMediaWiki 1.13, 2008-05\nMediaWiki 1.14, 2008-10\nMediaWiki 1.15, 2009-03\nMediaWiki 1.16, 2009-08\nMediaWiki 1.17, 2010-01\nMediaWiki 1.18, 2010-06\nMediaWiki 1.19, 2010-11\nMediaWiki 1.20, 2011-04\nMediaWiki 1.21, 2011-09\nMediaWiki 1.22, 2012-02\nMediaWiki 1.23, 2012-07\nMediaWiki 1.24, 2012-12\nMediaWiki 1.25, 2013-05\nMediaWiki 1.26, 2013-10\nMediaWiki 1.27, 2014-03\nMediaWiki 1.28, 2014-08\nMediaWiki 1.29, 2015-01\nMediaWiki 1.30, 2015-06\nMediaWiki 1.31, 2015-11\nMediaWiki 1.32, N/A",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "TIME": 19.861186265945435,
+            "SPARQL_CALLS": 50,
+            "SPARQL_TIME": 1.3332273960113525,
+            "LLM_CALLS": 11,
+            "LLM_INPUTS": 6727,
+            "LLM_OUTPUTS": 1013,
+            "LLM_TIME": 18.512582778930664
+        }
+    },
+    {
+        "question": "How many musical ensembles were formed each year, grouped by the year of their inception and sorted by year?",
+        "csv_answer": "",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 277,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "TIME": 23.808181524276733,
+            "SPARQL_CALLS": 62,
+            "SPARQL_TIME": 9.55878496170044,
+            "LLM_CALLS": 13,
+            "LLM_INPUTS": 7421,
+            "LLM_OUTPUTS": 620,
+            "LLM_TIME": 14.216130495071411
+        }
+    },
+    {
+        "question": "Who are the individuals with a specified voice type (such as soprano, mezzo-soprano, contralto, countertenor, tenor, baritone, bass, and their derivatives) but do not have a defined occupation? For each individual,  include their voice type.",
+        "csv_answer": "",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 11,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "TIME": 47.25761270523071,
+            "SPARQL_CALLS": 60,
+            "SPARQL_TIME": 34.08957529067993,
+            "LLM_CALLS": 11,
+            "LLM_INPUTS": 7873,
+            "LLM_OUTPUTS": 507,
+            "LLM_TIME": 11.746007442474365
+        }
+    },
+    {
+        "question": "Who are the guests who have appeared on the German political TV talk show \"Anne Will,\" and how many distinct episodes has each guest appeared in, ordered by the number of appearances in descending order?",
+        "csv_answer": "",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 325,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "TIME": 15.691067457199097,
+            "SPARQL_CALLS": 63,
+            "SPARQL_TIME": 2.461501121520996,
+            "LLM_CALLS": 11,
+            "LLM_INPUTS": 8123,
+            "LLM_OUTPUTS": 665,
+            "LLM_TIME": 13.188186645507812
+        }
+    },
+    {
+        "question": "What are the items that are instances or subclasses of artificial intelligence, along with the objects they are part of?",
+        "csv_answer": "teko\u00e4ly, \u0438\u043d\u0444\u043e\u0440\u043c\u0430\u0442\u0438\u043a\u0430",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "TIME": 14.710902452468872,
+            "SPARQL_CALLS": 47,
+            "SPARQL_TIME": 1.7075259685516357,
+            "LLM_CALLS": 12,
+            "LLM_INPUTS": 6504,
+            "LLM_OUTPUTS": 682,
+            "LLM_TIME": 12.979483604431152
+        }
+    },
+    {
+        "question": "What are the distinct items that are instances of either a Wikidata property with datatype 'time' or a Wikidata property related to time and duration?",
+        "csv_answer": "\"Wikidata property with datatype 'time'\"\n\"Wikidata property related to time and duration\"\n\"chronologie\"\n\"Vikidatu \u012bpa\u0161\u012bba\"",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "TIME": 20.290189027786255,
+            "SPARQL_CALLS": 97,
+            "SPARQL_TIME": 2.0751500129699707,
+            "LLM_CALLS": 15,
+            "LLM_INPUTS": 7182,
+            "LLM_OUTPUTS": 1073,
+            "LLM_TIME": 18.19664430618286
+        }
+    },
+    {
+        "question": "What are the Indian National Highways that are part of the national highways of India transport network? Return also their English labels and highway numbers (extracted from the labels), only include highways with numbers less than 100, and order by highway number.",
+        "csv_answer": "National Highway 1,1\nNational Highway 2,2\nNational Highway 3,3\nNational Highway 4,4\nNational Highway 5,5\nNational Highway 6,6\nNational Highway 7,7\nNational Highway 8,8\nNational Highway 9,9\nNational Highway 10,10\nNational Highway 11,11\nNational Highway 12,12\nNational Highway 13,13\nNational Highway 14,14\nNational Highway 15,15\nNational Highway 16,16\nNational Highway 17,17\nNational Highway 18,18\nNational Highway 19,19\nNational Highway 20,20\nNational Highway 21,21\nNational Highway 22,22\nNational Highway 23,23\nNational Highway 24,24\nNational Highway 25,25\nNational Highway 26,26\nNational Highway 27,27\nNational Highway 28,28\nNational Highway 29,29\nNational Highway 30,30\nNational Highway 31,31\nNational Highway 32,32\nNational Highway 33,33\nNational Highway 34,34\nNational Highway 35,35\nNational Highway 36,36\nNational Highway 37,37\nNational Highway 38,38",
+        "results": {
+            "tp": 38,
+            "fp": 0,
+            "fn": 52,
+            "hits_at_1": 1,
+            "exact_match": false
+        },
+        "metrics": {
+            "TIME": 22.976019859313965,
+            "SPARQL_CALLS": 41,
+            "SPARQL_TIME": 1.1826436519622803,
+            "LLM_CALLS": 15,
+            "LLM_INPUTS": 7708,
+            "LLM_OUTPUTS": 1308,
+            "LLM_TIME": 21.777742862701416
+        }
+    },
+    {
+        "question": "What are the urban municipalities in Germany? For each result, return also its official website, coordinates (if available), and parent federated state.",
+        "csv_answer": "Berlin,https://www.berlin.de/,52.5200,13.4050,Berlin (city-state)\nHamburg,https://www.hamburg.de/,53.5511,9.9937,Hamburg (city-state)\nMunich,https://www.muenchen.de/,48.1351,11.5820,Bavaria (Bayern)\nFrankfurt am Main,https://www.frankfurt.de/,50.1109,8.6821,Hesse (Hessen)\nCologne,https://www.stadt-koeln.de/,50.9375,6.9603,North Rhine-Westphalia (Nordrhein-Westfalen)\nStuttgart,https://www.stuttgart.de/,48.7758,9.1829,Baden-W\u00fcrttemberg\nD\u00fcsseldorf,https://www.duesseldorf.de/,51.2277,6.7735,North Rhine-Westphalia (Nordrhein-Westfalen)\nBremen,https://www.bremen.de/,53.0793,8.8017,Bremen (city-state)",
+        "results": {
+            "tp": 5,
+            "fp": 3,
+            "fn": 2035,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "TIME": 44.423545837402344,
+            "SPARQL_CALLS": 76,
+            "SPARQL_TIME": 19.324407815933228,
+            "LLM_CALLS": 18,
+            "LLM_INPUTS": 11649,
+            "LLM_OUTPUTS": 1230,
+            "LLM_TIME": 24.340847730636597
+        }
+    },
+    {
+        "question": "Which distinct female individuals were either born or died in Bouches-du-Rh\u00f4ne, and who died before January 1, 1948? Please include their date of death and the institution holding their archives (if available).",
+        "csv_answer": "",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 122,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "TIME": 81.16119980812073,
+            "SPARQL_CALLS": 80,
+            "SPARQL_TIME": 58.354315996170044,
+            "LLM_CALLS": 15,
+            "LLM_INPUTS": 10258,
+            "LLM_OUTPUTS": 1028,
+            "LLM_TIME": 20.40708899497986
+        }
+    },
+    {
+        "question": "What are the public artworks located in London created by female artists? For each artwork, include also the artwork's creator.",
+        "csv_answer": "\"Statue of Millicent Fawcett\",\"Gillian Wearing\"\n\"Statue of Emmeline Pankhurst\",\"Angela Conner\"",
+        "results": {
+            "tp": 2,
+            "fp": 0,
+            "fn": 40,
+            "hits_at_1": 1,
+            "exact_match": false
+        },
+        "metrics": {
+            "TIME": 106.03075194358826,
+            "SPARQL_CALLS": 96,
+            "SPARQL_TIME": 73.75530433654785,
+            "LLM_CALLS": 23,
+            "LLM_INPUTS": 13764,
+            "LLM_OUTPUTS": 1462,
+            "LLM_TIME": 30.407068967819214
+        }
+    },
+    {
+        "question": "What are the distinct super-classes of July, the seventh month in the Julian and Gregorian calendars, considering any level of subclass hierarchy?",
+        "csv_answer": "\u043c\u0435\u0441\u044f\u0446 \u0433\u0440\u0438\u0433\u043e\u0440\u0438\u0430\u043d\u0441\u043a\u043e\u0433\u043e \u043a\u0430\u043b\u0435\u043d\u0434\u0430\u0440\u044f\n\u6708\u4efd\nMonat",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "TIME": 9.593066930770874,
+            "SPARQL_CALLS": 39,
+            "SPARQL_TIME": 1.5420165061950684,
+            "LLM_CALLS": 7,
+            "LLM_INPUTS": 4653,
+            "LLM_OUTPUTS": 389,
+            "LLM_TIME": 8.029884815216064
+        }
+    },
+    {
+        "question": "Which production companies have produced more than 100 items, ordered by the number of items produced in descending order?",
+        "csv_answer": "",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 163,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "TIME": 0.8223230838775635,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0.0,
+            "LLM_CALLS": 1,
+            "LLM_INPUTS": 402,
+            "LLM_OUTPUTS": 35,
+            "LLM_TIME": 0.8222885131835938
+        }
+    },
+    {
+        "question": "Who are the YouTubers who are also science communicators and do not have an image? Include their YouTube channel ID and number of social media followers if available, and order by the number of social media followers in descending order.",
+        "csv_answer": "",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 10,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "TIME": 23.708544969558716,
+            "SPARQL_CALLS": 56,
+            "SPARQL_TIME": 4.517013788223267,
+            "LLM_CALLS": 12,
+            "LLM_INPUTS": 7278,
+            "LLM_OUTPUTS": 789,
+            "LLM_TIME": 19.148512601852417
+        }
+    },
+    {
+        "question": "What are the national wildlife areas in Canada that are located in the province of Quebec, along with their coordinates?",
+        "csv_answer": "Cap Tourmente National Wildlife Area, 4655N, 7110W\n\u00cele-Brion National Wildlife Area, 4840N, 6400W\n\u00celes de la Madeleine National Wildlife Area, 4723N, 6152W\nBaie de l'Isle-Verte National Wildlife Area, 4800N, 6930W",
+        "results": {
+            "tp": 2,
+            "fp": 2,
+            "fn": 6,
+            "hits_at_1": 1,
+            "exact_match": false
+        },
+        "metrics": {
+            "TIME": 25.09718370437622,
+            "SPARQL_CALLS": 71,
+            "SPARQL_TIME": 2.7409327030181885,
+            "LLM_CALLS": 18,
+            "LLM_INPUTS": 10397,
+            "LLM_OUTPUTS": 1134,
+            "LLM_TIME": 22.31773352622986
+        }
+    },
+    {
+        "question": "What is the geographic point that represents the midpoint of the coordinates of Paris (the capital of France) and Montigny-le-Bretonneux (a commune in Yvelines, France)? Return one column for the latitude and one column for the longitude",
+        "csv_answer": "48.81375,2.19194444444445",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "TIME": 8.253382205963135,
+            "SPARQL_CALLS": 18,
+            "SPARQL_TIME": 2.3082010746002197,
+            "LLM_CALLS": 4,
+            "LLM_INPUTS": 4573,
+            "LLM_OUTPUTS": 360,
+            "LLM_TIME": 5.876011848449707
+        }
+    },
+    {
+        "question": "Which works were tranlated by Gabriele Sprigath? For each work, return the author (if available), title (if available), subtitle (if available), publication venue, publisher, place of publication, and publication year.",
+        "csv_answer": "",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 8,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "TIME": 16.876078128814697,
+            "SPARQL_CALLS": 53,
+            "SPARQL_TIME": 2.981478214263916,
+            "LLM_CALLS": 12,
+            "LLM_INPUTS": 8438,
+            "LLM_OUTPUTS": 759,
+            "LLM_TIME": 13.882692098617554
+        }
+    },
+    {
+        "question": "Which Norwegian ships entered operational service between 1939 and 1946, along with their service entry dates?",
+        "csv_answer": "HNoMS Garm,1940\nHNoMS Stord (G26),1943\nHNoMS Svenner (G03),1943\nHNoMS King Haakon VII,1942",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "TIME": 23.780357837677002,
+            "SPARQL_CALLS": 37,
+            "SPARQL_TIME": 9.17656135559082,
+            "LLM_CALLS": 10,
+            "LLM_INPUTS": 9096,
+            "LLM_OUTPUTS": 600,
+            "LLM_TIME": 14.23476266860962
+        }
+    },
+    {
+        "question": "What are the cities in Russia whose English names end with \"pol\", along with their coordinates? Please include the item ID and the item label (in English).",
+        "csv_answer": "Q1329,Sevastopol,44.36,33.31\nQ1328,Simferopol,44.57,34.06",
+        "results": {
+            "tp": 1,
+            "fp": 1,
+            "fn": 1,
+            "hits_at_1": 1,
+            "exact_match": false
+        },
+        "metrics": {
+            "TIME": 32.56784749031067,
+            "SPARQL_CALLS": 54,
+            "SPARQL_TIME": 15.37591552734375,
+            "LLM_CALLS": 14,
+            "LLM_INPUTS": 12952,
+            "LLM_OUTPUTS": 705,
+            "LLM_TIME": 16.7604660987854
+        }
+    },
+    {
+        "question": "What are the sovereign states, their coordinates, and their official languages?",
+        "csv_answer": "",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 351,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "TIME": 16.329131603240967,
+            "SPARQL_CALLS": 48,
+            "SPARQL_TIME": 1.295154333114624,
+            "LLM_CALLS": 12,
+            "LLM_INPUTS": 6629,
+            "LLM_OUTPUTS": 561,
+            "LLM_TIME": 15.019134998321533
+        }
+    },
+    {
+        "question": "What are the men's singles tennis events that do not have a winner indicated and are part of a tournament that belongs to either the ATP Tour or the Grand Prix tennis circuit?",
+        "csv_answer": "",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 120,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "TIME": 34.587027072906494,
+            "SPARQL_CALLS": 113,
+            "SPARQL_TIME": 4.6566126346588135,
+            "LLM_CALLS": 25,
+            "LLM_INPUTS": 12449,
+            "LLM_OUTPUTS": 1349,
+            "LLM_TIME": 29.837281703948975
+        }
+    },
+    {
+        "question": "What are the municipalities in the Province of Girona, Spain?",
+        "csv_answer": "Girona\nFigueres\nLloret de Mar\nBlanes\nOlot\nRoses",
+        "results": {
+            "tp": 6,
+            "fp": 0,
+            "fn": 150,
+            "hits_at_1": 1,
+            "exact_match": false
+        },
+        "metrics": {
+            "TIME": 35.97788858413696,
+            "SPARQL_CALLS": 112,
+            "SPARQL_TIME": 10.623308181762695,
+            "LLM_CALLS": 20,
+            "LLM_INPUTS": 14233,
+            "LLM_OUTPUTS": 1087,
+            "LLM_TIME": 24.991082906723022
+        }
+    },
+    {
+        "question": "What are the rural communes of Morocco?",
+        "csv_answer": "Ait Bouguemez\nTizi Ousli\nImilchil",
+        "results": {
+            "tp": 1,
+            "fp": 2,
+            "fn": 1346,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "TIME": 24.04457926750183,
+            "SPARQL_CALLS": 93,
+            "SPARQL_TIME": 4.778008222579956,
+            "LLM_CALLS": 17,
+            "LLM_INPUTS": 10053,
+            "LLM_OUTPUTS": 936,
+            "LLM_TIME": 19.19031524658203
+        }
+    },
+    {
+        "question": "Which institutions have the highest number of theses or dissertations submitted to them, ordered by the count of distinct theses or dissertations in descending order?",
+        "csv_answer": "Harvard University\nUniversity of California System\nUniversity of Michigan\nStanford University\nUniversity of Texas System\nColumbia University\nUniversity of Illinois Urbana-Champaign\nUniversity of Wisconsin-Madison\nUniversity of Pennsylvania\nMassachusetts Institute of Technology",
+        "results": {
+            "tp": 6,
+            "fp": 4,
+            "fn": 547,
+            "hits_at_1": 1,
+            "exact_match": false
+        },
+        "metrics": {
+            "TIME": 18.407601594924927,
+            "SPARQL_CALLS": 66,
+            "SPARQL_TIME": 1.5041332244873047,
+            "LLM_CALLS": 14,
+            "LLM_INPUTS": 8134,
+            "LLM_OUTPUTS": 865,
+            "LLM_TIME": 16.857940196990967
+        }
+    },
+    {
+        "question": "Which distinct works are part of the series \"Dictionnaire critique du marxisme [Critical of Marxism] (German)\"? For each work, include title, publication year, ISBN-10 number, number of page, URL (all if available).",
+        "csv_answer": "\"Dictionnaire critique du marxisme\", 2009, 2862725123, 400, \"https://www.editionsladecouverte.fr/catalogue/index-Dictionnaire_critique_du_marxisme-9782707155123.html\"\n\"Dictionnaire critique du marxisme (German edition)\", 2011, 386153591X, 432, \"https://www.buchhandel.de/buch/Dictionnaire-critique-du-marxisme-9783861535913\"\n\"Dictionnaire critique du marxisme (Updated edition)\", 2015, 2707155123, 450, \"https://www.ladecouverte.fr/catalogue/index-Dictionnaire_critique_du_marxisme-9782707155123.html\"",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "TIME": 23.295926332473755,
+            "SPARQL_CALLS": 58,
+            "SPARQL_TIME": 1.3561813831329346,
+            "LLM_CALLS": 12,
+            "LLM_INPUTS": 8667,
+            "LLM_OUTPUTS": 941,
+            "LLM_TIME": 21.93119764328003
+        }
+    },
+    {
+        "question": "What are the cat breeds? For each cat breed, also return the cats that are instances of it if available.",
+        "csv_answer": "\u043f\u043e\u0440\u043e\u0434\u0430 \u043a\u043e\u0448\u0435\u043a, American Bobtail\n\u043f\u043e\u0440\u043e\u0434\u0430 \u043a\u043e\u0448\u0435\u043a, Burmila",
+        "results": {
+            "tp": 1,
+            "fp": 1,
+            "fn": 113,
+            "hits_at_1": 1,
+            "exact_match": false
+        },
+        "metrics": {
+            "TIME": 4.1675193309783936,
+            "SPARQL_CALLS": 14,
+            "SPARQL_TIME": 0.8224821090698242,
+            "LLM_CALLS": 3,
+            "LLM_INPUTS": 1738,
+            "LLM_OUTPUTS": 143,
+            "LLM_TIME": 3.341731309890747
+        }
+    },
+    {
+        "question": "What are the item IDs, populations (if available), and land areas in square kilometers (if available) for Budapest, Wake Island, and Germany, excluding any area measurements that apply to lagoons?",
+        "csv_answer": "Budapest,N/A,1752286,52514\nWake Island,N/A,N/A,N/A\nGermany,http://sws.geonames.org/2921044/,N/A,N/A",
+        "results": {
+            "tp": 3,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 1,
+            "exact_match": true
+        },
+        "metrics": {
+            "TIME": 31.508694648742676,
+            "SPARQL_CALLS": 32,
+            "SPARQL_TIME": 20.60214638710022,
+            "LLM_CALLS": 9,
+            "LLM_INPUTS": 9386,
+            "LLM_OUTPUTS": 549,
+            "LLM_TIME": 10.120493173599243
+        }
+    },
+    {
+        "question": "What are the distinct items that either have the Rivi\u00e8re M\u00e9giscane as their mouth of the watercourse or are tributaries of watercourses that have the Rivi\u00e8re M\u00e9giscane as their mouth of the watercourse?",
+        "csv_answer": "M\u00e9giscane River\nSuzie River\nCapousacataca River\nBerthelot River",
+        "results": {
+            "tp": 3,
+            "fp": 1,
+            "fn": 11,
+            "hits_at_1": 1,
+            "exact_match": false
+        },
+        "metrics": {
+            "TIME": 2.489464282989502,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0.0,
+            "LLM_CALLS": 1,
+            "LLM_INPUTS": 426,
+            "LLM_OUTPUTS": 160,
+            "LLM_TIME": 2.48943829536438
+        }
+    },
+    {
+        "question": "What are the praenomen in anicent Rome, and what are their native labels (e.g. 'Octavus'), if available?",
+        "csv_answer": "Gaius,Gaius\nLucius,Lucius\nMarcus,Marcus\nQuintus,Quintus\nPublius,Publius\nSextus,Sextus\nTitus,Titus\nTiberius,Tiberius\nDecimus,Decimus\nOctavius,Octavus",
+        "results": {
+            "tp": 10,
+            "fp": 0,
+            "fn": 56,
+            "hits_at_1": 1,
+            "exact_match": false
+        },
+        "metrics": {
+            "TIME": 35.74040150642395,
+            "SPARQL_CALLS": 63,
+            "SPARQL_TIME": 2.3480570316314697,
+            "LLM_CALLS": 23,
+            "LLM_INPUTS": 10502,
+            "LLM_OUTPUTS": 1687,
+            "LLM_TIME": 33.36131191253662
+        }
+    },
+    {
+        "question": "Who has the family name Krupp (the QID Q37069298) and also have \"Bertha\" somewhere in their label?",
+        "csv_answer": "Bertha Krupp von Bohlen und Halbach",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "TIME": 11.664809703826904,
+            "SPARQL_CALLS": 26,
+            "SPARQL_TIME": 0.9230258464813232,
+            "LLM_CALLS": 5,
+            "LLM_INPUTS": 2250,
+            "LLM_OUTPUTS": 342,
+            "LLM_TIME": 10.73317265510559
+        }
+    },
+    {
+        "question": "Which poems are in the public domain, either in English or with no specified language, and do not have an audio recording?",
+        "csv_answer": "",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 5726,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "TIME": 72.8783130645752,
+            "SPARQL_CALLS": 77,
+            "SPARQL_TIME": 51.50967526435852,
+            "LLM_CALLS": 16,
+            "LLM_INPUTS": 9929,
+            "LLM_OUTPUTS": 785,
+            "LLM_TIME": 19.273515462875366
+        }
+    },
+    {
+        "question": "Which periodicals have a primary language of Esperanto?",
+        "csv_answer": "miljaro, Esperanto",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "TIME": 36.497901916503906,
+            "SPARQL_CALLS": 36,
+            "SPARQL_TIME": 28.027752161026,
+            "LLM_CALLS": 8,
+            "LLM_INPUTS": 5662,
+            "LLM_OUTPUTS": 326,
+            "LLM_TIME": 8.35469126701355
+        }
+    },
+    {
+        "question": "What are the distinct items, along with their coordinates, that were born in a place within Norway and either have the United States of America as their country of citizenship or died in a place within the United States of America?",
+        "csv_answer": "Knute Rockne, Voss, 6063, 643\nOle Edvart R\u00f8lvaag, D\u00f8nna, 6600, 1250",
+        "results": {
+            "tp": 2,
+            "fp": 0,
+            "fn": 331,
+            "hits_at_1": 1,
+            "exact_match": false
+        },
+        "metrics": {
+            "TIME": 211.01074624061584,
+            "SPARQL_CALLS": 116,
+            "SPARQL_TIME": 161.06195330619812,
+            "LLM_CALLS": 23,
+            "LLM_INPUTS": 20556,
+            "LLM_OUTPUTS": 2973,
+            "LLM_TIME": 45.679969787597656
+        }
+    },
+    {
+        "question": "What are the paintings in the Bavarian State Painting Collections with labels in German that end in \")\"?",
+        "csv_answer": "",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 2444,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "TIME": 53.07684636116028,
+            "SPARQL_CALLS": 32,
+            "SPARQL_TIME": 39.47837448120117,
+            "LLM_CALLS": 13,
+            "LLM_INPUTS": 7038,
+            "LLM_OUTPUTS": 554,
+            "LLM_TIME": 12.677138805389404
+        }
+    },
+    {
+        "question": "What are the items that are not metro stations, but have a connecting line which is a rapid transit railway line? For each such item, return also the connecting line in your results.",
+        "csv_answer": "metroojaam,tunnelbanelinje",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "TIME": 28.320362091064453,
+            "SPARQL_CALLS": 30,
+            "SPARQL_TIME": 16.407474517822266,
+            "LLM_CALLS": 7,
+            "LLM_INPUTS": 3366,
+            "LLM_OUTPUTS": 672,
+            "LLM_TIME": 11.871134042739868
+        }
+    },
+    {
+        "question": "Which scholarly articles published in the journal Geosphere do not have an English label?",
+        "csv_answer": "",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 1,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "TIME": 86.81200671195984,
+            "SPARQL_CALLS": 27,
+            "SPARQL_TIME": 66.54781365394592,
+            "LLM_CALLS": 9,
+            "LLM_INPUTS": 4606,
+            "LLM_OUTPUTS": 804,
+            "LLM_TIME": 16.646188974380493
+        }
+    },
+    {
+        "question": "What are the countries that are members of the United Nations, along with their capitals, populations, area sizes, heads of state, images of the heads of state, currencies, flag images, and coordinate locations (all only if available)?",
+        "csv_answer": "",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 216,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "TIME": 25.406068086624146,
+            "SPARQL_CALLS": 91,
+            "SPARQL_TIME": 5.353749513626099,
+            "LLM_CALLS": 18,
+            "LLM_INPUTS": 14273,
+            "LLM_OUTPUTS": 920,
+            "LLM_TIME": 19.910316944122314
+        }
+    },
+    {
+        "question": "What are the streets named after female individuals who have an identifier in the Women Writers database? For each street, return also its the Women Writers database ID.",
+        "csv_answer": "",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 1463,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "TIME": 59.0059711933136,
+            "SPARQL_CALLS": 78,
+            "SPARQL_TIME": 39.707988023757935,
+            "LLM_CALLS": 15,
+            "LLM_INPUTS": 9044,
+            "LLM_OUTPUTS": 804,
+            "LLM_TIME": 17.693019151687622
+        }
+    },
+    {
+        "question": "Who are the tennis players that are citizens of only Belgium?",
+        "csv_answer": "",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 132,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "TIME": 92.10129570960999,
+            "SPARQL_CALLS": 55,
+            "SPARQL_TIME": 75.0041732788086,
+            "LLM_CALLS": 13,
+            "LLM_INPUTS": 9563,
+            "LLM_OUTPUTS": 675,
+            "LLM_TIME": 14.493929147720337
+        }
+    },
+    {
+        "question": "What are the cities in Russia with a population exceeding 100,000? For each one also return their coordinates ",
+        "csv_answer": "Moscow,55.7558,37.6173\nSaint Petersburg,59.9343,30.3351\nNovosibirsk,55.0084,82.9357\nYekaterinburg,56.8389,60.6057\nNizhny Novgorod,56.2965,43.9361\nKazan,55.7903,49.1347\nChelyabinsk,55.1644,61.4368\nOmsk,54.9885,73.3242\nSamara,53.1959,50.1008\nRostov-on-Don,47.2357,39.7015\nUfa,54.7388,55.9721\nKrasnoyarsk,56.0153,92.8932",
+        "results": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 0,
+            "exact_match": false
+        },
+        "metrics": {
+            "TIME": 71.23569703102112,
+            "SPARQL_CALLS": 68,
+            "SPARQL_TIME": 46.77890133857727,
+            "LLM_CALLS": 14,
+            "LLM_INPUTS": 14313,
+            "LLM_OUTPUTS": 1183,
+            "LLM_TIME": 23.35038137435913
+        }
+    },
+    {
+        "question": "Who are the individuals who have held the position of President of the United States and thier names? For each president, the name should be derived from their official name, birth name, or name in their native language, in that order of preference (return only one name for each president).",
+        "csv_answer": "George Washington\nJohn Adams\nThomas Jefferson\nJames Madison\nJames Monroe\nJohn Quincy Adams\nAndrew Jackson\nMartin Van Buren\nWilliam Henry Harrison\nJohn Tyler\nJames K. Polk\nZachary Taylor\nMillard Fillmore\nFranklin Pierce\nJames Buchanan\nAbraham Lincoln\nAndrew Johnson\nUlysses S. Grant\nRutherford B. Hayes\nJames A. Garfield\nChester A. Arthur\nGrover Cleveland\nBenjamin Harrison\nGrover Cleveland\nWilliam McKinley\nTheodore Roosevelt\nWilliam Howard Taft\nWoodrow Wilson\nWarren G. Harding\nCalvin Coolidge\nHerbert Hoover\nFranklin D. Roosevelt\nHarry S. Truman\nDwight D. Eisenhower\nJohn F. Kennedy\nLyndon B. Johnson\nRichard Nixon\nGerald Ford\nJimmy Carter\nRonald Reagan\nGeorge H. W. Bush\nBill Clinton\nGeorge W. Bush\nBarack Obama\nDonald Trump\nJoe Biden",
+        "results": {
+            "tp": 43,
+            "fp": 2,
+            "fn": 2,
+            "hits_at_1": 1,
+            "exact_match": false
+        },
+        "metrics": {
+            "TIME": 60.71774935722351,
+            "SPARQL_CALLS": 52,
+            "SPARQL_TIME": 35.35857343673706,
+            "LLM_CALLS": 22,
+            "LLM_INPUTS": 14016,
+            "LLM_OUTPUTS": 1071,
+            "LLM_TIME": 23.881688356399536
+        }
+    },
+    {
+        "question": "Who has an accused witch ID in the Survey of Scottish Witchcraft? For each person, also include their residences, the coordinates of their residences, and gender (if available).",
+        "csv_answer": "Isobel Gowdie, Auldearn Nairnshire Scotland, 57.5667, -3.8833, Female\nAgnes Sampson, Haddington East Lothian Scotland, 55.9500, -2.7833, Female\nBessie Dunlop, Ayrshire Scotland, 55.4580, -4.6290, Female\nJanet Horne, Dornoch Sutherland Scotland, 58.0000, -4.0000, Female",
+        "results": {
+            "tp": 3,
+            "fp": 1,
+            "fn": 2956,
+            "hits_at_1": 1,
+            "exact_match": false
+        },
+        "metrics": {
+            "TIME": 5.0647759437561035,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0.0,
+            "LLM_CALLS": 1,
+            "LLM_INPUTS": 415,
+            "LLM_OUTPUTS": 333,
+            "LLM_TIME": 5.064749479293823
+        }
+    },
+    {
+        "question": "What are the events won by the Czech-American tennis player Ivan Lendl, as well as tournament, year, country, surface played on, prize money, and number of participants (all if available)?",
+        "csv_answer": "US Open,1985,United States,Hard court,128, N/A\nUS Open,1986,United States,Hard court,128, N/A\nUS Open,1987,United States,Hard court,128,150000\nFrench Open,1984,France,Clay,128, N/A\nFrench Open,1986,France,Clay,128, N/A\nFrench Open,1987,France,Clay,128,N/A\nAustralian Open,1989,Australia,Hard court,128,N/A\nAustralian Open,1990,Australia,Hard court,128,200000\nMasters Grand Prix,1981,N/A,Indoor carpet,8,N/A\nMasters Grand Prix,1982,N/A,Indoor carpet,8,N/A\nMasters Grand Prix,1985,N/A,Indoor carpet,8,N/A\nMasters Grand Prix,1986,N/A,Indoor carpet,8,N/A\nMasters Grand Prix,1987,N/A,Indoor carpet,8,N/A",
+        "results": {
+            "tp": 3,
+            "fp": 5,
+            "fn": 56,
+            "hits_at_1": 1,
+            "exact_match": false
+        },
+        "metrics": {
+            "TIME": 53.45525813102722,
+            "SPARQL_CALLS": 49,
+            "SPARQL_TIME": 32.21543765068054,
+            "LLM_CALLS": 10,
+            "LLM_INPUTS": 10546,
+            "LLM_OUTPUTS": 864,
+            "LLM_TIME": 19.92398500442505
+        }
+    },
+    {
+        "question": "What are the museums in Europe, along with their Biodiversity Repository ID, country, International Standard Name Identifier (ISNI), GRID ID, Research Organization Registry (ROR) ID, and Library of Congress authority ID?",
+        "csv_answer": "The British Museum, United Kingdom, N/A, 0000000121311234, grid1234567, 02yrm5c26, n79021164\nThe Louvre Museum, France, N/A, 0000000121034567, grid5432189, 03yrm5c89, n79021165\nThe Rijksmuseum, Netherlands, N/A, 0000000122047890, grid6789012, 04yrm5c34, n79021166",
+        "results": {
+            "tp": 2,
+            "fp": 1,
+            "fn": 14,
+            "hits_at_1": 1,
+            "exact_match": false
+        },
+        "metrics": {
+            "TIME": 22.359687089920044,
+            "SPARQL_CALLS": 60,
+            "SPARQL_TIME": 1.983780860900879,
+            "LLM_CALLS": 15,
+            "LLM_INPUTS": 9829,
+            "LLM_OUTPUTS": 1024,
+            "LLM_TIME": 20.330479383468628
+        }
+    },
+    {
+        "question": "What are the films directed by Rob Minkoff and the genres of the films (if available), and the earliest publication date of each film (if available)?",
+        "csv_answer": "The Lion King, Animated musical drama, 1994\nStuart Little, Family Adventure Comedy, 1999\nThe Haunted Mansion, Comedy Fantasy Horror, 2003\nMr. Peabody & Sherman, Animated Adventure Comedy, 2014",
+        "results": {
+            "tp": 4,
+            "fp": 0,
+            "fn": 7,
+            "hits_at_1": 1,
+            "exact_match": false
+        },
+        "metrics": {
+            "TIME": 34.545777797698975,
+            "SPARQL_CALLS": 86,
+            "SPARQL_TIME": 4.271026611328125,
+            "LLM_CALLS": 18,
+            "LLM_INPUTS": 11376,
+            "LLM_OUTPUTS": 1600,
+            "LLM_TIME": 30.23353099822998
+        }
+    },
+    {
+        "question": "What are the items associated with the DOIs '10.1126/SCIENCE.156.3775.636' and '10.1145/358027.358042', along with their titles if available?",
+        "csv_answer": "10.1126/SCIENCE.156.3775.636,\"Molecular Structure of Nucleic Acids: A Structure for Deoxyribose Nucleic Acid\",\"J.D. Watson and F.H.C. Crick\",\"Science\",1967\n10.1145/358027.358042,\"The Complexity of Theorem-Proving Procedures\",\"Stephen A. Cook\",\"Proceedings of the Third Annual ACM Symposium on Theory of Computing\",1971",
+        "results": {
+            "tp": 2,
+            "fp": 0,
+            "fn": 0,
+            "hits_at_1": 1,
+            "exact_match": true
+        },
+        "metrics": {
+            "TIME": 4.6968958377838135,
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0.0,
+            "LLM_CALLS": 1,
+            "LLM_INPUTS": 425,
+            "LLM_OUTPUTS": 362,
+            "LLM_TIME": 4.696861982345581
+        }
+    }
+]

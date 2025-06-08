@@ -1,0 +1,14 @@
+beastiarykg:
+  default_graphdb_endpoint: beastiary
+
+dbpedia4:
+  default_graphdb_endpoint: dbpedia2016
+
+dbpedia10:
+  default_graphdb_endpoint: dbpedia10
+
+freebase:
+  default_graphdb_endpoint: freebase
+
+wikidata:
+  default_graphdb_endpoint: wikidata-qald-10

@@ -1,0 +1,7230 @@
+[
+    {
+        "question": "After whom is the Riemannian geometry named?",
+        "answer": [
+            [
+                "Bernhard Riemann"
+            ]
+        ],
+        "elapsed": 0.6151549816131592,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.6149740219116211,
+            "LLM_INPUTS": 227,
+            "LLM_OUTPUTS": 9
+        }
+    },
+    {
+        "question": "Which animal participated in a military operation with the Australian Defence Force?",
+        "answer": [
+            [
+                "Cheshire the Dolphin"
+            ]
+        ],
+        "elapsed": 0.4740900993347168,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.473984956741333,
+            "LLM_INPUTS": 229,
+            "LLM_OUTPUTS": 8
+        }
+    },
+    {
+        "question": "among the characters in the witcher, who has two unmarried partners, Yennefer of Vengerberg and Triss Merigold?",
+        "answer": [
+            [
+                "Geralt of Rivia Yennefer of Vengerberg Triss Merigold"
+            ]
+        ],
+        "elapsed": 0.8778650760650635,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.8777596950531006,
+            "LLM_INPUTS": 244,
+            "LLM_OUTPUTS": 21
+        }
+    },
+    {
+        "question": "among the founders of tencent company, who has been member of national people\u2019s congress?",
+        "answer": [
+            [
+                "Ma Huateng"
+            ]
+        ],
+        "elapsed": 0.48161864280700684,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.4815182685852051,
+            "LLM_INPUTS": 234,
+            "LLM_OUTPUTS": 8
+        }
+    },
+    {
+        "question": "among the other representative work of the author of hunter x hunter, which one is talking about middle school student?",
+        "answer": [
+            [
+                "Yu Yu Hakusho"
+            ]
+        ],
+        "elapsed": 1.003183126449585,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.0030605792999268,
+            "LLM_INPUTS": 238,
+            "LLM_OUTPUTS": 8
+        }
+    },
+    {
+        "question": "On which stock exchanges are Siemens AG shares traded?",
+        "answer": [
+            [
+                "Frankfurt Stock Exchange"
+            ],
+            [
+                "Xetra"
+            ]
+        ],
+        "elapsed": 1.0082926750183105,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.0081498622894287,
+            "LLM_INPUTS": 226,
+            "LLM_OUTPUTS": 12
+        }
+    },
+    {
+        "question": "Apart from the book series the witcher, name all of the author\u2019s notable work.",
+        "answer": [
+            [
+                "Season of Storms",
+                " The Malady and Other Stories: From the Witcher Saga",
+                " Something Ends",
+                " Something Begins"
+            ]
+        ],
+        "elapsed": 0.923882246017456,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.9237511157989502,
+            "LLM_INPUTS": 234,
+            "LLM_OUTPUTS": 27
+        }
+    },
+    {
+        "question": "are brooke raboutou and colin duffy from same state of the usa?",
+        "answer": [
+            [
+                "False"
+            ]
+        ],
+        "elapsed": 0.7637417316436768,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.7636349201202393,
+            "LLM_INPUTS": 235,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "What is the boiling point of water?",
+        "answer": [
+            [
+                "100\u00b0C"
+            ]
+        ],
+        "elapsed": 0.5329229831695557,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5328323841094971,
+            "LLM_INPUTS": 224,
+            "LLM_OUTPUTS": 6
+        }
+    },
+    {
+        "question": "At which school was Yayoi Kusama educated at?",
+        "answer": [
+            [
+                "Tokyo Municipal Art School"
+            ]
+        ],
+        "elapsed": 0.485302209854126,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.48519372940063477,
+            "LLM_INPUTS": 227,
+            "LLM_OUTPUTS": 8
+        }
+    },
+    {
+        "question": "Which High School did Allen Ginsberg attend?",
+        "answer": [
+            [
+                "Columbia High School"
+            ]
+        ],
+        "elapsed": 0.49762821197509766,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.4975321292877197,
+            "LLM_INPUTS": 226,
+            "LLM_OUTPUTS": 8
+        }
+    },
+    {
+        "question": "On which island is the Indonesian capital located?",
+        "answer": [
+            [
+                "Java"
+            ]
+        ],
+        "elapsed": 0.9545786380767822,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.9544801712036133,
+            "LLM_INPUTS": 225,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "can i play don't starve on play station 4?",
+        "answer": [
+            [
+                "True"
+            ]
+        ],
+        "elapsed": 0.41756772994995117,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.41744303703308105,
+            "LLM_INPUTS": 228,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "How many General Secretaries of the CPSU were there before Leonid Brezhnev?",
+        "answer": [
+            [
+                "3"
+            ]
+        ],
+        "elapsed": 0.7519266605377197,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.7518296241760254,
+            "LLM_INPUTS": 234,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "How many different presidents of Russia have there been that took the position after 1990?",
+        "answer": [
+            [
+                "3"
+            ]
+        ],
+        "elapsed": 0.7902626991271973,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.7901477813720703,
+            "LLM_INPUTS": 234,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "Did adam ondra win a medal in the 2020 summer olympics?",
+        "answer": [
+            [
+                "False"
+            ]
+        ],
+        "elapsed": 0.4426760673522949,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.4425637722015381,
+            "LLM_INPUTS": 232,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "Did the Chicago Bulls win at least two seasons of the NBA championship?",
+        "answer": [
+            [
+                "True"
+            ]
+        ],
+        "elapsed": 0.7580423355102539,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.7579545974731445,
+            "LLM_INPUTS": 230,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "Did Haruki Murakami receive the Nobel Prize in Literature?",
+        "answer": [
+            [
+                "False"
+            ]
+        ],
+        "elapsed": 0.4658031463623047,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.4657168388366699,
+            "LLM_INPUTS": 229,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "Did Kobe Bryant leave the Lakers when LeBron James joined that team?",
+        "answer": [
+            [
+                "False"
+            ]
+        ],
+        "elapsed": 0.450289249420166,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.45017457008361816,
+            "LLM_INPUTS": 230,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "Did Rawson Marshall Thurber, the director of Red Notice also direct Titanic?",
+        "answer": [
+            [
+                "False"
+            ]
+        ],
+        "elapsed": 0.5518834590911865,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5517678260803223,
+            "LLM_INPUTS": 232,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "Did Venice at any point belong to the Austrian Empire?",
+        "answer": [
+            [
+                "True"
+            ]
+        ],
+        "elapsed": 0.5251493453979492,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5250444412231445,
+            "LLM_INPUTS": 227,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "Were at least two of the founders of tencent educated at the same university?",
+        "answer": [
+            [
+                "True"
+            ]
+        ],
+        "elapsed": 0.4435594081878662,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.44344592094421387,
+            "LLM_INPUTS": 232,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "Do all of batman\u2019s partner speak english as native language?",
+        "answer": [
+            [
+                "False"
+            ]
+        ],
+        "elapsed": 0.4116673469543457,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.4115562438964844,
+            "LLM_INPUTS": 229,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "How many spouses do head of states have on average?",
+        "answer": [
+            [
+                "1"
+            ]
+        ],
+        "elapsed": 0.7779617309570312,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.7778644561767578,
+            "LLM_INPUTS": 227,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "Was there at least one Formula 1 event on the AVUS?",
+        "answer": [
+            [
+                "True"
+            ]
+        ],
+        "elapsed": 0.43793559074401855,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.43781471252441406,
+            "LLM_INPUTS": 230,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "Find all Turkish verbs ending with \u201cu\u015f\u201d with their lemma.",
+        "answer": [
+            [
+                "ko\u015fu\u015f",
+                " ko\u015fmak"
+            ],
+            [
+                "duru\u015f",
+                " durmak"
+            ],
+            [
+                "al\u0131\u015f",
+                " almak"
+            ]
+        ],
+        "elapsed": 1.0815625190734863,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.0814428329467773,
+            "LLM_INPUTS": 229,
+            "LLM_OUTPUTS": 42
+        }
+    },
+    {
+        "question": "From which country are the beagles originally from?",
+        "answer": [
+            [
+                "United Kingdom"
+            ]
+        ],
+        "elapsed": 0.4898409843444824,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.48973870277404785,
+            "LLM_INPUTS": 226,
+            "LLM_OUTPUTS": 6
+        }
+    },
+    {
+        "question": "From which country came the 2nd most winners of the Emmy Award ?",
+        "answer": [
+            [
+                "United Kingdom"
+            ]
+        ],
+        "elapsed": 0.4650132656097412,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.4648926258087158,
+            "LLM_INPUTS": 231,
+            "LLM_OUTPUTS": 6
+        }
+    },
+    {
+        "question": "Does the music style of Helloween belong to rock music?",
+        "answer": [
+            [
+                "True"
+            ]
+        ],
+        "elapsed": 0.4373338222503662,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.4372224807739258,
+            "LLM_INPUTS": 229,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "Does the postal code 32423 belong to Minden?",
+        "answer": [
+            [
+                "False"
+            ]
+        ],
+        "elapsed": 1.2415902614593506,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.2414908409118652,
+            "LLM_INPUTS": 228,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "has adam ondra been a winner of IFSC climbing world cup?",
+        "answer": [
+            [
+                "True"
+            ]
+        ],
+        "elapsed": 0.46613407135009766,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.4659867286682129,
+            "LLM_INPUTS": 230,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "has life expectancy in iran grown in any year after 1999?",
+        "answer": [
+            [
+                "True"
+            ]
+        ],
+        "elapsed": 0.5754878520965576,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5753874778747559,
+            "LLM_INPUTS": 230,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "has population of Isfahan increased at any point after 2006?",
+        "answer": [
+            [
+                "True"
+            ]
+        ],
+        "elapsed": 1.2105495929718018,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.210449457168579,
+            "LLM_INPUTS": 231,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "Did Joe Cocker play at the Woodstock festival?",
+        "answer": [
+            [
+                "True"
+            ]
+        ],
+        "elapsed": 0.4409799575805664,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.4408750534057617,
+            "LLM_INPUTS": 226,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "Did Udo B\u00f6lts participate in the Tour de France?",
+        "answer": [
+            [
+                "True"
+            ]
+        ],
+        "elapsed": 0.41404223442077637,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.41391944885253906,
+            "LLM_INPUTS": 228,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "How many of Reinhold Messner's brothers still live?",
+        "answer": [
+            [
+                "One"
+            ]
+        ],
+        "elapsed": 0.5316779613494873,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5315670967102051,
+            "LLM_INPUTS": 228,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "In which manner did Hemingway die?",
+        "answer": [
+            [
+                "Suicide"
+            ]
+        ],
+        "elapsed": 0.8085494041442871,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.8084301948547363,
+            "LLM_INPUTS": 223,
+            "LLM_OUTPUTS": 6
+        }
+    },
+    {
+        "question": "In which industry does the House of Medici own a business?",
+        "answer": [
+            [
+                "Banking"
+            ]
+        ],
+        "elapsed": 0.6756794452667236,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.6755654811859131,
+            "LLM_INPUTS": 229,
+            "LLM_OUTPUTS": 6
+        }
+    },
+    {
+        "question": "How do people from Turkey call the official name of the united states of america?",
+        "answer": [
+            [
+                "Amerika Birle\u015fik Devletleri"
+            ]
+        ],
+        "elapsed": 0.5989313125610352,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5988180637359619,
+            "LLM_INPUTS": 232,
+            "LLM_OUTPUTS": 12
+        }
+    },
+    {
+        "question": "How high is the Cologne Cathedral ?",
+        "answer": [
+            [
+                "157 meters"
+            ]
+        ],
+        "elapsed": 0.5021276473999023,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5020265579223633,
+            "LLM_INPUTS": 223,
+            "LLM_OUTPUTS": 6
+        }
+    },
+    {
+        "question": "How is the Harz called in Mandarin Chinese?",
+        "answer": [
+            [
+                "\u54c8\u8328"
+            ]
+        ],
+        "elapsed": 0.4492912292480469,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.4491844177246094,
+            "LLM_INPUTS": 226,
+            "LLM_OUTPUTS": 7
+        }
+    },
+    {
+        "question": "How many international airports are located within the city of Hamburg ?",
+        "answer": [
+            [
+                "1"
+            ]
+        ],
+        "elapsed": 0.4459199905395508,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.4458351135253906,
+            "LLM_INPUTS": 228,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "On how many albums does Madonna perform?",
+        "answer": [
+            [
+                "14"
+            ]
+        ],
+        "elapsed": 0.41565513610839844,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.4155426025390625,
+            "LLM_INPUTS": 224,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "On how many albums does Mariah Carey perform?",
+        "answer": [
+            [
+                "15"
+            ]
+        ],
+        "elapsed": 0.5142855644226074,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5141947269439697,
+            "LLM_INPUTS": 226,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "How many studio albums has Lana Del Rey have?",
+        "answer": [
+            [
+                "8"
+            ]
+        ],
+        "elapsed": 0.4301459789276123,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.43004465103149414,
+            "LLM_INPUTS": 226,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "How many ancient civilizations are there?",
+        "answer": [
+            [
+                "7"
+            ]
+        ],
+        "elapsed": 0.7572574615478516,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.7571620941162109,
+            "LLM_INPUTS": 223,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "In how many years did Kobe Bryant receive an NBA All-Defensive Team award?",
+        "answer": [
+            [
+                "12"
+            ]
+        ],
+        "elapsed": 0.4749007225036621,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.4748237133026123,
+            "LLM_INPUTS": 233,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "How many All-NBA Team awards have Shaquille O'Neal and Kobe Bryant received in the same year?",
+        "answer": [
+            [
+                "8"
+            ]
+        ],
+        "elapsed": 0.4371373653411865,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.4370391368865967,
+            "LLM_INPUTS": 240,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "How many literary works did Richard Bachman write?",
+        "answer": [
+            [
+                "6"
+            ]
+        ],
+        "elapsed": 0.7936961650848389,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.7935800552368164,
+            "LLM_INPUTS": 226,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "How many notable works does Sarah J. Maas have?",
+        "answer": [
+            [
+                "8"
+            ]
+        ],
+        "elapsed": 0.5060079097747803,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5058932304382324,
+            "LLM_INPUTS": 227,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "Did Bryan Evenson work for at least one university where he was educated at?",
+        "answer": [
+            [
+                "True"
+            ]
+        ],
+        "elapsed": 0.4754183292388916,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.47531628608703613,
+            "LLM_INPUTS": 232,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "How many children (including apopted ones) does Jeff Bezos have with his ex-wife?",
+        "answer": [
+            [
+                "4"
+            ]
+        ],
+        "elapsed": 0.5041904449462891,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5040740966796875,
+            "LLM_INPUTS": 234,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "How many children had Paul McCartney together with his ex-wife Linda McCartney?",
+        "answer": [
+            [
+                "4"
+            ]
+        ],
+        "elapsed": 0.46211719512939453,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.4620046615600586,
+            "LLM_INPUTS": 232,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "How many Chinese zodiac animals are there in total?",
+        "answer": [
+            [
+                "12"
+            ]
+        ],
+        "elapsed": 0.49018335342407227,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.4900782108306885,
+            "LLM_INPUTS": 226,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "How many cities are part of the Pearl River Delta?",
+        "answer": [
+            [
+                "9"
+            ]
+        ],
+        "elapsed": 0.5057799816131592,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5056836605072021,
+            "LLM_INPUTS": 227,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "How many city-states are currently in the world?",
+        "answer": [
+            [
+                "5"
+            ]
+        ],
+        "elapsed": 0.5685298442840576,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5684173107147217,
+            "LLM_INPUTS": 227,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "How many businesses did Steve Jobs found?",
+        "answer": [
+            [
+                "3"
+            ]
+        ],
+        "elapsed": 0.45533180236816406,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.4552335739135742,
+            "LLM_INPUTS": 224,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "How many countries have a democracy index higher than 7 and drive on the left side ?",
+        "answer": [
+            [
+                "3"
+            ]
+        ],
+        "elapsed": 0.4186117649078369,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.41849541664123535,
+            "LLM_INPUTS": 234,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "How many countries have never been members of the UN?",
+        "answer": [
+            [
+                "4"
+            ]
+        ],
+        "elapsed": 0.5017690658569336,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5016560554504395,
+            "LLM_INPUTS": 227,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "How many countries are on the continent of South America ?",
+        "answer": [
+            [
+                "12"
+            ]
+        ],
+        "elapsed": 0.6445224285125732,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.6444027423858643,
+            "LLM_INPUTS": 227,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "How many countries have mountains whose peaks are higher than 2000m above sea level?",
+        "answer": [
+            [
+                "195"
+            ]
+        ],
+        "elapsed": 0.9033877849578857,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.9032742977142334,
+            "LLM_INPUTS": 234,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "How many fictional dragons are present in Game of Thrones?",
+        "answer": [
+            [
+                "3"
+            ]
+        ],
+        "elapsed": 0.4336516857147217,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.43354034423828125,
+            "LLM_INPUTS": 227,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "how many emmy awards has the tv series game of thrones won?",
+        "answer": [
+            [
+                "59"
+            ]
+        ],
+        "elapsed": 0.7841587066650391,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.7840628623962402,
+            "LLM_INPUTS": 231,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "How many films are derived from the original Ghost in the Shell Manga?",
+        "answer": [
+            [
+                "7"
+            ]
+        ],
+        "elapsed": 0.41796374320983887,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.4178469181060791,
+            "LLM_INPUTS": 230,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "How many French kings didn't die of natural causes?",
+        "answer": [
+            [
+                "10"
+            ]
+        ],
+        "elapsed": 0.8013796806335449,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.8012468814849854,
+            "LLM_INPUTS": 226,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "How many given names has Queen Elizabeth II ?",
+        "answer": [
+            [
+                "Elizabeth Alexandra Mary"
+            ]
+        ],
+        "elapsed": 0.5289411544799805,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5288238525390625,
+            "LLM_INPUTS": 225,
+            "LLM_OUTPUTS": 7
+        }
+    },
+    {
+        "question": "How many different female mayors did Hamburg have?",
+        "answer": [
+            [
+                "1"
+            ]
+        ],
+        "elapsed": 0.7564282417297363,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.7563304901123047,
+            "LLM_INPUTS": 226,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "how many head of the state does iran have?",
+        "answer": [
+            [
+                "1"
+            ]
+        ],
+        "elapsed": 0.4920477867126465,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.49195170402526855,
+            "LLM_INPUTS": 226,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "How many scholary articles have ImageNet as a subject?",
+        "answer": [
+            [
+                "Over 20",
+                "000"
+            ]
+        ],
+        "elapsed": 0.7804617881774902,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.7803454399108887,
+            "LLM_INPUTS": 228,
+            "LLM_OUTPUTS": 9
+        }
+    },
+    {
+        "question": "How many inhabitants does the birthplace of Cristiano Ronaldo have?",
+        "answer": [
+            [
+                "215",
+                "000"
+            ]
+        ],
+        "elapsed": 0.46266698837280273,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.4625535011291504,
+            "LLM_INPUTS": 227,
+            "LLM_OUTPUTS": 7
+        }
+    },
+    {
+        "question": "How many Japanese writers received the Nobel Prize?",
+        "answer": [
+            [
+                "3"
+            ]
+        ],
+        "elapsed": 0.43160367012023926,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.43147969245910645,
+            "LLM_INPUTS": 225,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "How many languages are widely used in India?",
+        "answer": [
+            [
+                "22"
+            ]
+        ],
+        "elapsed": 0.4725368022918701,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.4724116325378418,
+            "LLM_INPUTS": 225,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "How many different colors can water take?",
+        "answer": [
+            [
+                "1"
+            ]
+        ],
+        "elapsed": 0.9077630043029785,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.9076473712921143,
+            "LLM_INPUTS": 224,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "How many locations has Georges Braque worked at (work location)?",
+        "answer": [
+            [
+                "5"
+            ]
+        ],
+        "elapsed": 0.5618159770965576,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5617146492004395,
+            "LLM_INPUTS": 229,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "How many months does winter consist of in Germany?",
+        "answer": [
+            [
+                "3"
+            ]
+        ],
+        "elapsed": 0.5609774589538574,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5608785152435303,
+            "LLM_INPUTS": 226,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "How many movies does the Scream franchise have?",
+        "answer": [
+            [
+                "5"
+            ]
+        ],
+        "elapsed": 0.4966602325439453,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.49651122093200684,
+            "LLM_INPUTS": 226,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "How many movies has James Cameron directed prior to the year 2010?",
+        "answer": [
+            [
+                "6"
+            ]
+        ],
+        "elapsed": 0.45505833625793457,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.45494818687438965,
+            "LLM_INPUTS": 231,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "How many movies were directed by Akira Kurosawa ?",
+        "answer": [
+            [
+                "30"
+            ]
+        ],
+        "elapsed": 0.4823582172393799,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.48228883743286133,
+            "LLM_INPUTS": 228,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "How many musical scales are there?",
+        "answer": [
+            [
+                "There is no fixed number of musical scales as they vary across musical cultures",
+                " but commonly recognized scales include major",
+                " minor",
+                " pentatonic",
+                " blues",
+                " chromatic",
+                " whole tone",
+                " and various modes",
+                " totaling dozens to hundreds depending on classification."
+            ]
+        ],
+        "elapsed": 1.2054286003112793,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.2053208351135254,
+            "LLM_INPUTS": 223,
+            "LLM_OUTPUTS": 51
+        }
+    },
+    {
+        "question": "How many public holidays does the state Bavaria have in a year?",
+        "answer": [
+            [
+                "14"
+            ]
+        ],
+        "elapsed": 0.8291690349578857,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.8290696144104004,
+            "LLM_INPUTS": 229,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "How many literary works besides The Picture of Dorian Gray did its author write?",
+        "answer": [
+            [
+                "10"
+            ]
+        ],
+        "elapsed": 1.9261536598205566,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.9260518550872803,
+            "LLM_INPUTS": 232,
+            "LLM_OUTPUTS": 80
+        }
+    },
+    {
+        "question": "How many literary works did Mark Twain write in his lifetime?",
+        "answer": [
+            [
+                "28"
+            ]
+        ],
+        "elapsed": 0.4679133892059326,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.46779513359069824,
+            "LLM_INPUTS": 228,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "How many occupations did Mark Twain have?",
+        "answer": [
+            [
+                "Mark Twain had multiple occupations throughout his life",
+                " including being a writer",
+                " humorist",
+                " lecturer",
+                " riverboat pilot",
+                " journalist",
+                " and entrepreneur. Generally",
+                " he is known to have had at least 6 notable occupations."
+            ]
+        ],
+        "elapsed": 1.4434988498687744,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.443392276763916,
+            "LLM_INPUTS": 224,
+            "LLM_OUTPUTS": 46
+        }
+    },
+    {
+        "question": "how many of spiderman perfomers are citizens of the united kingdom?",
+        "answer": [
+            [
+                "3"
+            ]
+        ],
+        "elapsed": 0.9490838050842285,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.9489810466766357,
+            "LLM_INPUTS": 230,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "how many official languages does the united states of america have?",
+        "answer": [
+            [
+                "0"
+            ]
+        ],
+        "elapsed": 0.8818213939666748,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.8817248344421387,
+            "LLM_INPUTS": 228,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "How many official languages has Pakistan ?",
+        "answer": [
+            [
+                "2"
+            ]
+        ],
+        "elapsed": 0.5043027400970459,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.50421142578125,
+            "LLM_INPUTS": 223,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "How many Oscars did all the movies directed by Hayao Miyazaki combined win?",
+        "answer": [
+            [
+                "1"
+            ]
+        ],
+        "elapsed": 0.9646987915039062,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.9645769596099854,
+            "LLM_INPUTS": 233,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "How many paintings of Pablo Picasso were ever in a museum?",
+        "answer": [
+            [
+                "There is no exact or publicly available figure for the total number of Pablo Picasso's paintings that have ever been exhibited in museums",
+                " as his works are widely distributed and frequently loaned for exhibitions globally. However",
+                " many hundreds of his paintings reside permanently in museums worldwide."
+            ]
+        ],
+        "elapsed": 1.2769553661346436,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.2768793106079102,
+            "LLM_INPUTS": 228,
+            "LLM_OUTPUTS": 55
+        }
+    },
+    {
+        "question": "How many people can play \"Mensch \u00e4rgere dich nicht\" at most?",
+        "answer": [
+            [
+                "4"
+            ]
+        ],
+        "elapsed": 0.4088778495788574,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.4088001251220703,
+            "LLM_INPUTS": 232,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "How many people did Oscar Pistorius kill?",
+        "answer": [
+            [
+                "1"
+            ]
+        ],
+        "elapsed": 0.5302636623382568,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5301694869995117,
+            "LLM_INPUTS": 225,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "How many people died due to the Great Leap Forward according to the highest estimate?",
+        "answer": [
+            [
+                "45",
+                "000",
+                "000"
+            ]
+        ],
+        "elapsed": 1.4243619441986084,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.424262523651123,
+            "LLM_INPUTS": 232,
+            "LLM_OUTPUTS": 9
+        }
+    },
+    {
+        "question": "How many people have won the Nobel Prize in Literature since its inception?",
+        "answer": [
+            [
+                "117"
+            ]
+        ],
+        "elapsed": 0.574465274810791,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5743699073791504,
+            "LLM_INPUTS": 230,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "How many people live in cities in the vicinity of the Nile ?",
+        "answer": [
+            [
+                "Approximately 150 million"
+            ]
+        ],
+        "elapsed": 0.5729949474334717,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5728726387023926,
+            "LLM_INPUTS": 229,
+            "LLM_OUTPUTS": 8
+        }
+    },
+    {
+        "question": "How many pitch classes are part of the chromatic scale?",
+        "answer": [
+            [
+                "12"
+            ]
+        ],
+        "elapsed": 1.2520525455474854,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.251908779144287,
+            "LLM_INPUTS": 228,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "how many plays has William Shakespeare written in the 16th century.",
+        "answer": [
+            [
+                "approximately 18"
+            ]
+        ],
+        "elapsed": 0.5525815486907959,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5525028705596924,
+            "LLM_INPUTS": 230,
+            "LLM_OUTPUTS": 7
+        }
+    },
+    {
+        "question": "How many poems did Allen Ginsberg published?",
+        "answer": [
+            [
+                "3"
+            ]
+        ],
+        "elapsed": 0.6184792518615723,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.6184110641479492,
+            "LLM_INPUTS": 226,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "How many political parties have ever had seats in the German Bundestag ?",
+        "answer": [
+            [
+                "16"
+            ]
+        ],
+        "elapsed": 0.6273677349090576,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.6272869110107422,
+            "LLM_INPUTS": 230,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "How many positions did Kobe Bryant play in his team?",
+        "answer": [
+            [
+                "2"
+            ]
+        ],
+        "elapsed": 0.5023894309997559,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5022799968719482,
+            "LLM_INPUTS": 227,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "How many prizes are there established by Alfred Nobel ?",
+        "answer": [
+            [
+                "5"
+            ]
+        ],
+        "elapsed": 0.4930853843688965,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.4929840564727783,
+            "LLM_INPUTS": 226,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "Did SpaceX ever operate a space mission that was a failed launch?",
+        "answer": [
+            [
+                "True"
+            ]
+        ],
+        "elapsed": 0.5212666988372803,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5211827754974365,
+            "LLM_INPUTS": 230,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "How many people nominated for the nobel prize in chemistry didn't ever win it?",
+        "answer": [
+            [
+                "Approximately 58%"
+            ]
+        ],
+        "elapsed": 0.542083740234375,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5419628620147705,
+            "LLM_INPUTS": 232,
+            "LLM_OUTPUTS": 7
+        }
+    },
+    {
+        "question": "How many seasons does Pose have?",
+        "answer": [
+            [
+                "3"
+            ]
+        ],
+        "elapsed": 0.4278414249420166,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.4277660846710205,
+            "LLM_INPUTS": 223,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "How many seats are there in the current German Bundestag ?",
+        "answer": [
+            [
+                "736"
+            ]
+        ],
+        "elapsed": 0.4651191234588623,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.46503233909606934,
+            "LLM_INPUTS": 228,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "How many siblings had the author of \u201cLittle Women\u201d ?",
+        "answer": [
+            [
+                "3"
+            ]
+        ],
+        "elapsed": 0.48059606552124023,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.48047304153442383,
+            "LLM_INPUTS": 228,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "How many ski resorts were there ever in France?",
+        "answer": [
+            [
+                "Over 300"
+            ]
+        ],
+        "elapsed": 0.5327110290527344,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.532642126083374,
+            "LLM_INPUTS": 226,
+            "LLM_OUTPUTS": 7
+        }
+    },
+    {
+        "question": "How many songs were composed by Jay Chou but not released in his own albums?",
+        "answer": [
+            [
+                "5"
+            ]
+        ],
+        "elapsed": 0.551185131072998,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5511162281036377,
+            "LLM_INPUTS": 233,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "How many works that are based on Spider-Man has Venom been a part of?",
+        "answer": [
+            [
+                "6"
+            ]
+        ],
+        "elapsed": 0.4721059799194336,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.47202157974243164,
+            "LLM_INPUTS": 233,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "How many spouses had Rama V (one of the former Kings of Siam)?",
+        "answer": [
+            [
+                "92"
+            ]
+        ],
+        "elapsed": 0.5115711688995361,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5114850997924805,
+            "LLM_INPUTS": 231,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "Does Switzerland have a place north of the Point (8.57 47.8)?",
+        "answer": [
+            [
+                "True"
+            ]
+        ],
+        "elapsed": 0.4249858856201172,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.4248940944671631,
+            "LLM_INPUTS": 234,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "how many times has Giorgio Moroder won golden globe award?",
+        "answer": [
+            [
+                "4"
+            ]
+        ],
+        "elapsed": 0.5733029842376709,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5732290744781494,
+            "LLM_INPUTS": 228,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "How many Olympic Games has Kobe Bryant taken part in?",
+        "answer": [
+            [
+                "3"
+            ]
+        ],
+        "elapsed": 0.4971656799316406,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.4970889091491699,
+            "LLM_INPUTS": 227,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "How many times was Oskar Lafontaine elected Member of the Landtag of Saarland?",
+        "answer": [
+            [
+                "6"
+            ]
+        ],
+        "elapsed": 0.5897798538208008,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5896859169006348,
+            "LLM_INPUTS": 235,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "How many wars did the Empire of Japan participate in?",
+        "answer": [
+            [
+                "9"
+            ]
+        ],
+        "elapsed": 0.5416486263275146,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5415585041046143,
+            "LLM_INPUTS": 227,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "How many women were amongst the founding members of \u201cThe Bridge\u201d (\u201cDie Br\u00fccke\u201d)?",
+        "answer": [
+            [
+                "0"
+            ]
+        ],
+        "elapsed": 0.8344883918762207,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.834404468536377,
+            "LLM_INPUTS": 235,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "Who has a higher observed lifespan out of the common bottlenose dolphin and the brown bear?",
+        "answer": [
+            [
+                "Common bottlenose dolphin"
+            ]
+        ],
+        "elapsed": 0.6919689178466797,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.6918771266937256,
+            "LLM_INPUTS": 235,
+            "LLM_OUTPUTS": 9
+        }
+    },
+    {
+        "question": "What is TNFAIP1 ?",
+        "answer": [
+            [
+                "TNFAIP1",
+                " Tumor necrosis factor alpha-induced protein 1",
+                " is a gene encoding a protein involved in inflammation and cellular stress response."
+            ]
+        ],
+        "elapsed": 1.4828059673309326,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.482713222503662,
+            "LLM_INPUTS": 223,
+            "LLM_OUTPUTS": 33
+        }
+    },
+    {
+        "question": "How often did Naomi Novik win the nebula award?",
+        "answer": [
+            [
+                "0"
+            ]
+        ],
+        "elapsed": 0.5717849731445312,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.571692943572998,
+            "LLM_INPUTS": 228,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "How often did the Mongols try to invade Japan?",
+        "answer": [
+            [
+                "Twice"
+            ]
+        ],
+        "elapsed": 0.5267314910888672,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5266551971435547,
+            "LLM_INPUTS": 227,
+            "LLM_OUTPUTS": 6
+        }
+    },
+    {
+        "question": "How often was Naomi Novik nominated for a Hugo Award?",
+        "answer": [
+            [
+                "4"
+            ]
+        ],
+        "elapsed": 0.48200058937072754,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.48192358016967773,
+            "LLM_INPUTS": 228,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "How many years did the second oldest dog in the world live?",
+        "answer": [
+            [
+                "21"
+            ]
+        ],
+        "elapsed": 0.4798099994659424,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.479722261428833,
+            "LLM_INPUTS": 229,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "if someone died in 1969, is there any chance they heard of queen\u2019s music?",
+        "answer": [
+            [
+                "True"
+            ]
+        ],
+        "elapsed": 0.44965243339538574,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.44957733154296875,
+            "LLM_INPUTS": 235,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "Is Dr. Pepper named after its inventor?",
+        "answer": [
+            [
+                "False"
+            ]
+        ],
+        "elapsed": 0.5049004554748535,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5048096179962158,
+            "LLM_INPUTS": 225,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "In how many movies did Carey Mulligan and Ryan Gosling star together?",
+        "answer": [
+            [
+                "2"
+            ]
+        ],
+        "elapsed": 0.4156339168548584,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.415555477142334,
+            "LLM_INPUTS": 231,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "in the country where ghost in the shell is born, who is the current head of the state?",
+        "answer": [
+            [
+                "Emperor Naruhito"
+            ]
+        ],
+        "elapsed": 0.4971625804901123,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.4970724582672119,
+            "LLM_INPUTS": 236,
+            "LLM_OUTPUTS": 9
+        }
+    },
+    {
+        "question": "How many rivers are in or next to the U.S. state where cage the elephant is from?",
+        "answer": [
+            [
+                "Ohio River",
+                "Kentucky River",
+                "Cumberland River",
+                "Licking River",
+                "Green River",
+                "Tennessee River",
+                "Tradewater River",
+                "Big Sandy River",
+                "Greenup Creek",
+                "Red River"
+            ]
+        ],
+        "elapsed": 4.177135944366455,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 4.177043914794922,
+            "LLM_INPUTS": 236,
+            "LLM_OUTPUTS": 114
+        }
+    },
+    {
+        "question": "In which federal state is the Veltins brewery headquarter?",
+        "answer": [
+            [
+                "North Rhine-Westphalia"
+            ]
+        ],
+        "elapsed": 1.3059158325195312,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.3058338165283203,
+            "LLM_INPUTS": 229,
+            "LLM_OUTPUTS": 9
+        }
+    },
+    {
+        "question": "In which stadium do the New York Yankees play?",
+        "answer": [
+            [
+                "Yankee Stadium"
+            ]
+        ],
+        "elapsed": 0.49141788482666016,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.49132680892944336,
+            "LLM_INPUTS": 226,
+            "LLM_OUTPUTS": 8
+        }
+    },
+    {
+        "question": "In which countries is the Himalayas located?",
+        "answer": [
+            [
+                "India"
+            ],
+            [
+                "Nepal"
+            ],
+            [
+                "Bhutan"
+            ],
+            [
+                "China"
+            ],
+            [
+                "Pakistan"
+            ]
+        ],
+        "elapsed": 0.7058742046356201,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.7057633399963379,
+            "LLM_INPUTS": 225,
+            "LLM_OUTPUTS": 15
+        }
+    },
+    {
+        "question": "Was Isfahan a capital in the year 934?",
+        "answer": [
+            [
+                "True"
+            ]
+        ],
+        "elapsed": 0.5937759876251221,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.593672513961792,
+            "LLM_INPUTS": 228,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "In how many countries has IKEA been established?",
+        "answer": [
+            [
+                "52"
+            ]
+        ],
+        "elapsed": 0.45989274978637695,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.45979976654052734,
+            "LLM_INPUTS": 225,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "In which country did the United Fruit Company have their headquarters?",
+        "answer": [
+            [
+                "United States"
+            ]
+        ],
+        "elapsed": 0.9607584476470947,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.9606835842132568,
+            "LLM_INPUTS": 228,
+            "LLM_OUTPUTS": 6
+        }
+    },
+    {
+        "question": "In how many countries is pysanka practiced?",
+        "answer": [
+            [
+                "6"
+            ]
+        ],
+        "elapsed": 0.4595658779144287,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.45949435234069824,
+            "LLM_INPUTS": 225,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "In which country is Oberirrach ?",
+        "answer": [
+            [
+                "Switzerland"
+            ]
+        ],
+        "elapsed": 0.49337244033813477,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.4932987689971924,
+            "LLM_INPUTS": 224,
+            "LLM_OUTPUTS": 6
+        }
+    },
+    {
+        "question": "In which country was Spotify created?",
+        "answer": [
+            [
+                "Sweden"
+            ]
+        ],
+        "elapsed": 0.5601456165313721,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5600695610046387,
+            "LLM_INPUTS": 223,
+            "LLM_OUTPUTS": 6
+        }
+    },
+    {
+        "question": "What is the song Vogue by Madonna named after?",
+        "answer": [
+            [
+                "The dance style \"Vogue\""
+            ]
+        ],
+        "elapsed": 0.6910402774810791,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.6909635066986084,
+            "LLM_INPUTS": 226,
+            "LLM_OUTPUTS": 10
+        }
+    },
+    {
+        "question": "in which language does the united stated have the shortest short name?",
+        "answer": [
+            [
+                "English US"
+            ]
+        ],
+        "elapsed": 0.4733853340148926,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.473308801651001,
+            "LLM_INPUTS": 229,
+            "LLM_OUTPUTS": 6
+        }
+    },
+    {
+        "question": "Does Bremerhaven's local dialing code start with 4?",
+        "answer": [
+            [
+                "False"
+            ]
+        ],
+        "elapsed": 0.5276594161987305,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5275766849517822,
+            "LLM_INPUTS": 229,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "In how many movies was Johnny Depp casted in?",
+        "answer": [
+            [
+                "90"
+            ]
+        ],
+        "elapsed": 0.7969088554382324,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.7968182563781738,
+            "LLM_INPUTS": 227,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "In which year did ABBA publish their album The Visitors ?",
+        "answer": [
+            [
+                "1981"
+            ]
+        ],
+        "elapsed": 0.5580968856811523,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5580084323883057,
+            "LLM_INPUTS": 228,
+            "LLM_OUTPUTS": 6
+        }
+    },
+    {
+        "question": "In which year was the author of \u201cThe Vanishing Half\u201d born?",
+        "answer": [
+            [
+                "1980"
+            ]
+        ],
+        "elapsed": 0.4633190631866455,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.46320247650146484,
+            "LLM_INPUTS": 231,
+            "LLM_OUTPUTS": 6
+        }
+    },
+    {
+        "question": "Is After Eight manufactured by Unilever?",
+        "answer": [
+            [
+                "False"
+            ]
+        ],
+        "elapsed": 0.5354697704315186,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.535386323928833,
+            "LLM_INPUTS": 224,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "Is ALDI also in Italy?",
+        "answer": [
+            [
+                "True"
+            ]
+        ],
+        "elapsed": 0.45610570907592773,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.45601892471313477,
+            "LLM_INPUTS": 223,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "is Isfahan a big city?",
+        "answer": [
+            [
+                "True"
+            ]
+        ],
+        "elapsed": 0.5202007293701172,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5201132297515869,
+            "LLM_INPUTS": 224,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "Is math related to science ?",
+        "answer": [
+            [
+                "True"
+            ]
+        ],
+        "elapsed": 0.4702339172363281,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.47014808654785156,
+            "LLM_INPUTS": 222,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "Is Python a kind of Programming languages?",
+        "answer": [
+            [
+                "True"
+            ]
+        ],
+        "elapsed": 0.516249418258667,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5161623954772949,
+            "LLM_INPUTS": 224,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "Is samurai champloo a piece of original work or an adaptation?",
+        "answer": [
+            [
+                "original work"
+            ]
+        ],
+        "elapsed": 0.5815863609313965,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5814995765686035,
+            "LLM_INPUTS": 231,
+            "LLM_OUTPUTS": 6
+        }
+    },
+    {
+        "question": "Was the first female chancellor in Germany ever married?",
+        "answer": [
+            [
+                "True"
+            ]
+        ],
+        "elapsed": 0.5233192443847656,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5232198238372803,
+            "LLM_INPUTS": 227,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "Is the Mariana Trench deeper than Mount Everest is high (above sea level)?",
+        "answer": [
+            [
+                "True"
+            ]
+        ],
+        "elapsed": 0.5642430782318115,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.564157247543335,
+            "LLM_INPUTS": 232,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "Is the number of countries in Europe larger than that in Asia?",
+        "answer": [
+            [
+                "False"
+            ]
+        ],
+        "elapsed": 0.459561824798584,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.4594745635986328,
+            "LLM_INPUTS": 229,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "Is the production company of samurai champloo still existing?",
+        "answer": [
+            [
+                "True"
+            ]
+        ],
+        "elapsed": 0.9187333583831787,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.9186584949493408,
+            "LLM_INPUTS": 229,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "is there female main character in hunter x hunter?",
+        "answer": [
+            [
+                "True"
+            ]
+        ],
+        "elapsed": 0.47484660148620605,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.47477030754089355,
+            "LLM_INPUTS": 226,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "Is water colorless?",
+        "answer": [
+            [
+                "True"
+            ]
+        ],
+        "elapsed": 0.411754846572876,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.41166114807128906,
+            "LLM_INPUTS": 221,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "Is Axel Rose a member of Guns N' Roses?",
+        "answer": [
+            [
+                "True"
+            ]
+        ],
+        "elapsed": 0.4961702823638916,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.4960930347442627,
+            "LLM_INPUTS": 227,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "Is the capital of Iran bigger than that of Germany?",
+        "answer": [
+            [
+                "True"
+            ]
+        ],
+        "elapsed": 0.44927358627319336,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.44918084144592285,
+            "LLM_INPUTS": 227,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "Is the Weser longer than the Rhine?",
+        "answer": [
+            [
+                "False"
+            ]
+        ],
+        "elapsed": 0.5132768154144287,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5132086277008057,
+            "LLM_INPUTS": 225,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "Is Tony Blair taller than Tiger Woods?",
+        "answer": [
+            [
+                "True"
+            ]
+        ],
+        "elapsed": 0.4299461841583252,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.4298713207244873,
+            "LLM_INPUTS": 224,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "Is Chicago located at Lake Michigan?",
+        "answer": [
+            [
+                "True"
+            ]
+        ],
+        "elapsed": 0.6756453514099121,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.6755659580230713,
+            "LLM_INPUTS": 223,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "Is the district of H\u00f6xter next to the district of Paderborn?",
+        "answer": [
+            [
+                "True"
+            ]
+        ],
+        "elapsed": 0.5261611938476562,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5260734558105469,
+            "LLM_INPUTS": 232,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "Are part of the Harz mountains in the district of Nordhausen?",
+        "answer": [
+            [
+                "True"
+            ]
+        ],
+        "elapsed": 0.5406391620635986,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5405604839324951,
+            "LLM_INPUTS": 230,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "How many people won the Nobel Prize in Literature or Physics since 2000?",
+        "answer": [
+            [
+                "44"
+            ],
+            [
+                "37"
+            ]
+        ],
+        "elapsed": 0.5216464996337891,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5215756893157959,
+            "LLM_INPUTS": 232,
+            "LLM_OUTPUTS": 7
+        }
+    },
+    {
+        "question": "How many african-american people got a star on the Hollywood Walk of Fame?",
+        "answer": [
+            [
+                "Approximately 200"
+            ]
+        ],
+        "elapsed": 0.4774208068847656,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.4773440361022949,
+            "LLM_INPUTS": 232,
+            "LLM_OUTPUTS": 7
+        }
+    },
+    {
+        "question": "With how many countries does Australia share a border?",
+        "answer": [
+            [
+                "0"
+            ]
+        ],
+        "elapsed": 0.48290514945983887,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.4828000068664551,
+            "LLM_INPUTS": 226,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "How many female Chinese Empresses have there been?",
+        "answer": [
+            [
+                "2"
+            ]
+        ],
+        "elapsed": 0.9564037322998047,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.9562978744506836,
+            "LLM_INPUTS": 227,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "Of which political party was Joseph Beuys a member?",
+        "answer": [
+            [
+                "German Green Party"
+            ]
+        ],
+        "elapsed": 0.4408395290374756,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.44075894355773926,
+            "LLM_INPUTS": 228,
+            "LLM_OUTPUTS": 7
+        }
+    },
+    {
+        "question": "In what year did the Hollywood Walk of Fame open?",
+        "answer": [
+            [
+                "1960"
+            ]
+        ],
+        "elapsed": 0.5527400970458984,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5526471138000488,
+            "LLM_INPUTS": 227,
+            "LLM_OUTPUTS": 6
+        }
+    },
+    {
+        "question": "on which video streaming services can i watch hunter x hunter anime series?",
+        "answer": [
+            [
+                "Crunchyroll"
+            ],
+            [
+                "Netflix"
+            ],
+            [
+                "Hulu"
+            ],
+            [
+                "Funimation"
+            ],
+            [
+                "VRV"
+            ]
+        ],
+        "elapsed": 0.9361836910247803,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.9360945224761963,
+            "LLM_INPUTS": 230,
+            "LLM_OUTPUTS": 18
+        }
+    },
+    {
+        "question": "People of what age belong to the Silent Generation ?",
+        "answer": [
+            [
+                "People born between 1928 and 1945"
+            ]
+        ],
+        "elapsed": 0.9063117504119873,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.9062201976776123,
+            "LLM_INPUTS": 226,
+            "LLM_OUTPUTS": 14
+        }
+    },
+    {
+        "question": "In what year did the district of H\u00f6xter come into existence?",
+        "answer": [
+            [
+                "1832"
+            ]
+        ],
+        "elapsed": 0.5476510524749756,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5475389957427979,
+            "LLM_INPUTS": 230,
+            "LLM_OUTPUTS": 6
+        }
+    },
+    {
+        "question": "Is the Linux Foundation verified on Twitter?",
+        "answer": [
+            [
+                "True"
+            ]
+        ],
+        "elapsed": 0.7660927772521973,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.7660079002380371,
+            "LLM_INPUTS": 224,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "Were Angela Merkel and Tony Blair born in the same year?",
+        "answer": [
+            [
+                "False"
+            ]
+        ],
+        "elapsed": 0.9703924655914307,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.9703178405761719,
+            "LLM_INPUTS": 228,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "Do more than 100000000 people speak Japanese?",
+        "answer": [
+            [
+                "False"
+            ]
+        ],
+        "elapsed": 0.5491595268249512,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5490696430206299,
+            "LLM_INPUTS": 227,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "Tell me all the cast members of the film Red Notice directed by Rawson Marshall Thurber ?",
+        "answer": [
+            [
+                "Dwayne Johnson"
+            ],
+            [
+                "Ryan Reynolds"
+            ],
+            [
+                "Gal Gadot"
+            ],
+            [
+                "Ritu Arya"
+            ],
+            [
+                "Chris Diamantopoulos"
+            ],
+            [
+                "Ivan Mbakop"
+            ],
+            [
+                "Rim Zribi"
+            ],
+            [
+                "Rawson Marshall Thurber"
+            ]
+        ],
+        "elapsed": 0.9059312343597412,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.9058337211608887,
+            "LLM_INPUTS": 235,
+            "LLM_OUTPUTS": 42
+        }
+    },
+    {
+        "question": "The first album of Jay Chou",
+        "answer": [
+            [
+                "Jay"
+            ]
+        ],
+        "elapsed": 0.7284407615661621,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.7283260822296143,
+            "LLM_INPUTS": 224,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "Through which countries does the Danube go?",
+        "answer": [
+            [
+                "Germany"
+            ],
+            [
+                "Austria"
+            ],
+            [
+                "Slovakia"
+            ],
+            [
+                "Hungary"
+            ],
+            [
+                "Croatia"
+            ],
+            [
+                "Serbia"
+            ],
+            [
+                "Bulgaria"
+            ],
+            [
+                "Romania"
+            ],
+            [
+                "Moldova"
+            ],
+            [
+                "Ukraine"
+            ]
+        ],
+        "elapsed": 1.092137336730957,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.092050552368164,
+            "LLM_INPUTS": 225,
+            "LLM_OUTPUTS": 34
+        }
+    },
+    {
+        "question": "What do sperm whales mainly eat?",
+        "answer": [
+            [
+                "squid"
+            ],
+            [
+                "fish"
+            ],
+            [
+                "deep-sea octopuses"
+            ]
+        ],
+        "elapsed": 0.5413177013397217,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.54123854637146,
+            "LLM_INPUTS": 223,
+            "LLM_OUTPUTS": 15
+        }
+    },
+    {
+        "question": "Was Frida Kahlo a surrealist?",
+        "answer": [
+            [
+                "False"
+            ]
+        ],
+        "elapsed": 0.42466092109680176,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.42458224296569824,
+            "LLM_INPUTS": 225,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "Was Funny Games and its remake directed by different persons?",
+        "answer": [
+            [
+                "False"
+            ]
+        ],
+        "elapsed": 0.43432164192199707,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.43422818183898926,
+            "LLM_INPUTS": 227,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "Was Google founded by Bill Gates?",
+        "answer": [
+            [
+                "False"
+            ]
+        ],
+        "elapsed": 0.4562852382659912,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.4562067985534668,
+            "LLM_INPUTS": 223,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "What is the second letter in the Greek alphabet?",
+        "answer": [
+            [
+                "Beta"
+            ]
+        ],
+        "elapsed": 0.49782323837280273,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.4977452754974365,
+            "LLM_INPUTS": 226,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "Was it the cancer that caused the death of Steve Jobs who was the CEO of Apple?",
+        "answer": [
+            [
+                "True"
+            ]
+        ],
+        "elapsed": 0.44060492515563965,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.4405374526977539,
+            "LLM_INPUTS": 234,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "Was Shaquille O'Neal the teammate of Kobe Bryant in the year of 2000?",
+        "answer": [
+            [
+                "True"
+            ]
+        ],
+        "elapsed": 0.5359625816345215,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5358726978302002,
+            "LLM_INPUTS": 237,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "Was Shaquille O'Neal, as the basketball player, also an film actor?",
+        "answer": [
+            [
+                "True"
+            ]
+        ],
+        "elapsed": 0.4035074710845947,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.4034245014190674,
+            "LLM_INPUTS": 235,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "Was the first album of the band Darkside released in 2012?",
+        "answer": [
+            [
+                "False"
+            ]
+        ],
+        "elapsed": 0.44182825088500977,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.44174933433532715,
+            "LLM_INPUTS": 231,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "What are the spin-offs of Breaking Bad?",
+        "answer": [
+            [
+                "Better Call Saul"
+            ],
+            [
+                "El Camino: A Breaking Bad Movie"
+            ]
+        ],
+        "elapsed": 0.7224359512329102,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.7223584651947021,
+            "LLM_INPUTS": 225,
+            "LLM_OUTPUTS": 15
+        }
+    },
+    {
+        "question": "Which river flows through the Grand Canyon?",
+        "answer": [
+            [
+                "Colorado River"
+            ]
+        ],
+        "elapsed": 0.43989086151123047,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.43981289863586426,
+            "LLM_INPUTS": 224,
+            "LLM_OUTPUTS": 6
+        }
+    },
+    {
+        "question": "What was the key event related to Salvador Dal\u00ed?",
+        "answer": [
+            [
+                "The key event related to Salvador Dal\u00ed was the creation of his famous painting \"The Persistence of Memory\" in 1931."
+            ]
+        ],
+        "elapsed": 0.7841081619262695,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.7840182781219482,
+            "LLM_INPUTS": 227,
+            "LLM_OUTPUTS": 29
+        }
+    },
+    {
+        "question": "Who passed the German Occupational Safety and Health Act?",
+        "answer": [
+            [
+                "The German Federal Ministry of Labour and Social Affairs"
+            ]
+        ],
+        "elapsed": 0.6146230697631836,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.6145524978637695,
+            "LLM_INPUTS": 226,
+            "LLM_OUTPUTS": 13
+        }
+    },
+    {
+        "question": "What are the German names of academic disciplines containing \u201clinguistik\u201d?",
+        "answer": [
+            [
+                "Linguistik"
+            ],
+            [
+                "Angewandte Linguistik"
+            ],
+            [
+                "Historische Linguistik"
+            ],
+            [
+                "Indogermanische Linguistik"
+            ],
+            [
+                "Kognitive Linguistik"
+            ],
+            [
+                "Computerlinguistik"
+            ],
+            [
+                "Soziolinguistik"
+            ],
+            [
+                "Psycholinguistik"
+            ],
+            [
+                "Phonetik und Phonologie (Teil der Linguistik)"
+            ],
+            [
+                "Semantik (Teil der Linguistik)"
+            ],
+            [
+                "Pragmalinguistik"
+            ],
+            [
+                "Typologische Linguistik"
+            ]
+        ],
+        "elapsed": 1.3668103218078613,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.3667268753051758,
+            "LLM_INPUTS": 231,
+            "LLM_OUTPUTS": 80
+        }
+    },
+    {
+        "question": "What are the names of the head of states of Germany and France ?",
+        "answer": [
+            [
+                "Frank-Walter Steinmeier"
+            ],
+            [
+                "Emmanuel Macron"
+            ]
+        ],
+        "elapsed": 0.5408148765563965,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.540736198425293,
+            "LLM_INPUTS": 230,
+            "LLM_OUTPUTS": 14
+        }
+    },
+    {
+        "question": "What are the professions of John Lennon\u2019s sons?",
+        "answer": [
+            [
+                "Sean Lennon musician"
+            ],
+            [
+                "Julian Lennon musician"
+            ]
+        ],
+        "elapsed": 0.6375126838684082,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.637397289276123,
+            "LLM_INPUTS": 226,
+            "LLM_OUTPUTS": 12
+        }
+    },
+    {
+        "question": "What are the titles of the Star Wars series movies?",
+        "answer": [
+            [
+                "Star Wars: Episode IV \u2013 A New Hope"
+            ],
+            [
+                "Star Wars: Episode V \u2013 The Empire Strikes Back"
+            ],
+            [
+                "Star Wars: Episode VI \u2013 Return of the Jedi"
+            ],
+            [
+                "Star Wars: Episode I \u2013 The Phantom Menace"
+            ],
+            [
+                "Star Wars: Episode II \u2013 Attack of the Clones"
+            ],
+            [
+                "Star Wars: Episode III \u2013 Revenge of the Sith"
+            ],
+            [
+                "Star Wars: Episode VII \u2013 The Force Awakens"
+            ],
+            [
+                "Star Wars: Episode VIII \u2013 The Last Jedi"
+            ],
+            [
+                "Star Wars: Episode IX \u2013 The Rise of Skywalker"
+            ]
+        ],
+        "elapsed": 1.72432541847229,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.7242467403411865,
+            "LLM_INPUTS": 227,
+            "LLM_OUTPUTS": 103
+        }
+    },
+    {
+        "question": "What came first: the TV show The Flintstones or the end of racial discrimination in voting in the US ?",
+        "answer": [
+            [
+                "The Flintstones",
+                " 1960"
+            ],
+            [
+                "End of racial discrimination in voting",
+                " 1965"
+            ]
+        ],
+        "elapsed": 0.7816650867462158,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.7815749645233154,
+            "LLM_INPUTS": 238,
+            "LLM_OUTPUTS": 22
+        }
+    },
+    {
+        "question": "What colors does the German national flag have?",
+        "answer": [
+            [
+                "Black",
+                " Red",
+                " Gold"
+            ]
+        ],
+        "elapsed": 0.5646388530731201,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5645625591278076,
+            "LLM_INPUTS": 225,
+            "LLM_OUTPUTS": 9
+        }
+    },
+    {
+        "question": "What did the suffragettes stand for?",
+        "answer": [
+            [
+                "Women's right to vote"
+            ],
+            [
+                "Equal rights for women"
+            ],
+            [
+                "Political and social equality for women"
+            ]
+        ],
+        "elapsed": 0.6149523258209229,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.6148724555969238,
+            "LLM_INPUTS": 225,
+            "LLM_OUTPUTS": 20
+        }
+    },
+    {
+        "question": "What do you call a female form of an emperor in English?",
+        "answer": [
+            [
+                "Empress"
+            ]
+        ],
+        "elapsed": 0.5092995166778564,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5092248916625977,
+            "LLM_INPUTS": 229,
+            "LLM_OUTPUTS": 6
+        }
+    },
+    {
+        "question": "What event killed the most people in the years 1910 to 1920?",
+        "answer": [
+            [
+                "World War I"
+            ]
+        ],
+        "elapsed": 0.6148154735565186,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.6147332191467285,
+            "LLM_INPUTS": 233,
+            "LLM_OUTPUTS": 7
+        }
+    },
+    {
+        "question": "Does the ATI Company still exist?",
+        "answer": [
+            [
+                "False"
+            ]
+        ],
+        "elapsed": 0.476423978805542,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.47635650634765625,
+            "LLM_INPUTS": 223,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "What happened to the dinosaurs ?",
+        "answer": [
+            [
+                "Most dinosaurs went extinct about 66 million years ago due to a mass extinction event likely caused by an asteroid impact and volcanic activity."
+            ]
+        ],
+        "elapsed": 0.9429633617401123,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.9428813457489014,
+            "LLM_INPUTS": 222,
+            "LLM_OUTPUTS": 29
+        }
+    },
+    {
+        "question": "What instruments did Louis Armstrong play?",
+        "answer": [],
+        "elapsed": 0.5804252624511719,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5803267955780029,
+            "LLM_INPUTS": 223,
+            "LLM_OUTPUTS": 6
+        }
+    },
+    {
+        "question": "what did the author of the phrase: \"Alea iacta est\" die of?",
+        "answer": [
+            [
+                "assassination"
+            ]
+        ],
+        "elapsed": 0.5152201652526855,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5151422023773193,
+            "LLM_INPUTS": 234,
+            "LLM_OUTPUTS": 7
+        }
+    },
+    {
+        "question": "What is the binary gender of the partner of Allen Ginsberg ?",
+        "answer": [
+            [
+                "female"
+            ]
+        ],
+        "elapsed": 1.1819641590118408,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.181880235671997,
+            "LLM_INPUTS": 230,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "What is the capital of the prefecture Tokyo ?",
+        "answer": [
+            [
+                "Tokyo"
+            ]
+        ],
+        "elapsed": 0.5285954475402832,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5285098552703857,
+            "LLM_INPUTS": 226,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "What is the Chinese zodiac animal that follows the ox?",
+        "answer": [
+            [
+                "Tiger"
+            ]
+        ],
+        "elapsed": 0.7983441352844238,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.7982692718505859,
+            "LLM_INPUTS": 227,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "What is the combined total revenue of three largest Big Tech companies ordered by number of employees?",
+        "answer": [
+            [
+                "925700000000"
+            ]
+        ],
+        "elapsed": 2.154677629470825,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 2.1545586585998535,
+            "LLM_INPUTS": 234,
+            "LLM_OUTPUTS": 104
+        }
+    },
+    {
+        "question": "What is the coordinate location of Shenzhen ?",
+        "answer": [
+            [
+                "22.5431\u00b0 N",
+                " 114.0579\u00b0 E"
+            ]
+        ],
+        "elapsed": 0.6731104850769043,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.6730179786682129,
+            "LLM_INPUTS": 224,
+            "LLM_OUTPUTS": 18
+        }
+    },
+    {
+        "question": "What is the Erlangen program ?",
+        "answer": [
+            [
+                "A mathematical framework introduced by Felix Klein in 1872",
+                " classifying geometries based on their underlying symmetry groups"
+            ]
+        ],
+        "elapsed": 0.6849973201751709,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.6848952770233154,
+            "LLM_INPUTS": 223,
+            "LLM_OUTPUTS": 26
+        }
+    },
+    {
+        "question": "Did the Roland Corporation produce synthesizers?",
+        "answer": [
+            [
+                "True"
+            ]
+        ],
+        "elapsed": 0.5325775146484375,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5324888229370117,
+            "LLM_INPUTS": 224,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "How many perople do the Port of Rotterdam employ?",
+        "answer": [
+            [
+                "12300"
+            ]
+        ],
+        "elapsed": 0.44248533248901367,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.4423973560333252,
+            "LLM_INPUTS": 227,
+            "LLM_OUTPUTS": 6
+        }
+    },
+    {
+        "question": "what is the main subject of the manga \"your lie in april\": primary school, middle school or high school student?",
+        "answer": [
+            [
+                "middle school student"
+            ]
+        ],
+        "elapsed": 1.2868883609771729,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.286808729171753,
+            "LLM_INPUTS": 240,
+            "LLM_OUTPUTS": 7
+        }
+    },
+    {
+        "question": "What is the mother tongue of the author Chimamanda Ngozi Adichie ?",
+        "answer": [
+            [
+                "Igbo"
+            ]
+        ],
+        "elapsed": 0.7703721523284912,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.7702853679656982,
+            "LLM_INPUTS": 233,
+            "LLM_OUTPUTS": 6
+        }
+    },
+    {
+        "question": "Who was the partner of Allen Ginsberg?",
+        "answer": [
+            [
+                "Peter Orlovsky"
+            ]
+        ],
+        "elapsed": 0.7683148384094238,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.7682406902313232,
+            "LLM_INPUTS": 226,
+            "LLM_OUTPUTS": 8
+        }
+    },
+    {
+        "question": "What is the second game developed by Piranha Bytes?",
+        "answer": [
+            [
+                "Gothic II"
+            ]
+        ],
+        "elapsed": 0.4929842948913574,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.49291491508483887,
+            "LLM_INPUTS": 228,
+            "LLM_OUTPUTS": 8
+        }
+    },
+    {
+        "question": "What is the TV-show that starred Rowan Atkinson , had 4 seasons and started in 1983?",
+        "answer": [
+            [
+                "Blackadder"
+            ]
+        ],
+        "elapsed": 0.5835967063903809,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.58351731300354,
+            "LLM_INPUTS": 238,
+            "LLM_OUTPUTS": 6
+        }
+    },
+    {
+        "question": "What is the english nickname of Ella Fitzgerald?",
+        "answer": [
+            [
+                "First Lady of Song"
+            ]
+        ],
+        "elapsed": 0.48096799850463867,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.4808847904205322,
+            "LLM_INPUTS": 225,
+            "LLM_OUTPUTS": 8
+        }
+    },
+    {
+        "question": "What are the occupations of Kazuo Ishiguro\u2019s daughter?",
+        "answer": [
+            [
+                "Barista"
+            ]
+        ],
+        "elapsed": 0.5038230419158936,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5037245750427246,
+            "LLM_INPUTS": 229,
+            "LLM_OUTPUTS": 6
+        }
+    },
+    {
+        "question": "What are the occupations of Nat King Cole?",
+        "answer": [
+            [
+                "Singer",
+                "Pianist",
+                "Actor"
+            ]
+        ],
+        "elapsed": 0.6186785697937012,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.6185815334320068,
+            "LLM_INPUTS": 225,
+            "LLM_OUTPUTS": 10
+        }
+    },
+    {
+        "question": "what is the official language of iran?",
+        "answer": [
+            [
+                "Persian"
+            ]
+        ],
+        "elapsed": 0.4680440425872803,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.46795654296875,
+            "LLM_INPUTS": 224,
+            "LLM_OUTPUTS": 6
+        }
+    },
+    {
+        "question": "What is the population in Freiburg ?",
+        "answer": [
+            [
+                "230000"
+            ]
+        ],
+        "elapsed": 0.46973109245300293,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.4696485996246338,
+            "LLM_INPUTS": 223,
+            "LLM_OUTPUTS": 6
+        }
+    },
+    {
+        "question": "What is the title of the 2020 released movie in which Carey Mulligan was the main actress?",
+        "answer": [
+            [
+                "Promising Young Woman"
+            ]
+        ],
+        "elapsed": 0.5323178768157959,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5322179794311523,
+            "LLM_INPUTS": 237,
+            "LLM_OUTPUTS": 8
+        }
+    },
+    {
+        "question": "What does Ray-Ban produce primarily?",
+        "answer": [
+            [
+                "Eyewear"
+            ],
+            [
+                "Sunglasses"
+            ],
+            [
+                "Optical glasses"
+            ]
+        ],
+        "elapsed": 0.8211886882781982,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.82110595703125,
+            "LLM_INPUTS": 224,
+            "LLM_OUTPUTS": 15
+        }
+    },
+    {
+        "question": "What language did the famous king, who was also a student of Aristotle's , speak?",
+        "answer": [
+            [
+                "Ancient Greek"
+            ]
+        ],
+        "elapsed": 0.4706547260284424,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.47057271003723145,
+            "LLM_INPUTS": 234,
+            "LLM_OUTPUTS": 7
+        }
+    },
+    {
+        "question": "What language do they speak in Poland ?",
+        "answer": [
+            [
+                "Polish"
+            ]
+        ],
+        "elapsed": 0.4446723461151123,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.4445834159851074,
+            "LLM_INPUTS": 224,
+            "LLM_OUTPUTS": 6
+        }
+    },
+    {
+        "question": "How many different languages are spoken in West Europe?",
+        "answer": [
+            [
+                "24"
+            ]
+        ],
+        "elapsed": 0.5157089233398438,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5156400203704834,
+            "LLM_INPUTS": 226,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "Is Germany bigger than Poland?",
+        "answer": [
+            [
+                "True"
+            ]
+        ],
+        "elapsed": 0.41439127922058105,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.41429686546325684,
+            "LLM_INPUTS": 222,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "What notes does a C major chord consist of?",
+        "answer": [
+            [
+                "C",
+                "E",
+                "G"
+            ]
+        ],
+        "elapsed": 0.5621676445007324,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5620787143707275,
+            "LLM_INPUTS": 226,
+            "LLM_OUTPUTS": 7
+        }
+    },
+    {
+        "question": "How many different occupations did/do spouses of winners of the Nobel Prize in Literature hold?",
+        "answer": [
+            [
+                "Numerous diverse occupations across various fields including academia",
+                " writing",
+                " science",
+                " art",
+                " politics",
+                " journalism",
+                " and more"
+            ]
+        ],
+        "elapsed": 0.7184288501739502,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.718336820602417,
+            "LLM_INPUTS": 233,
+            "LLM_OUTPUTS": 26
+        }
+    },
+    {
+        "question": "How many other video games began the same year as Dead by Daylight?",
+        "answer": [
+            [
+                "0"
+            ]
+        ],
+        "elapsed": 1.295320749282837,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.2952334880828857,
+            "LLM_INPUTS": 231,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "What other civilizations existed during the Aztecs ?",
+        "answer": [],
+        "elapsed": 0.7588319778442383,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.7576701641082764,
+            "LLM_INPUTS": 226,
+            "LLM_OUTPUTS": 30
+        }
+    },
+    {
+        "question": "What brand uses petroleum jelly?",
+        "answer": [
+            [
+                "Vaseline"
+            ]
+        ],
+        "elapsed": 0.5002164840698242,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.500138521194458,
+            "LLM_INPUTS": 222,
+            "LLM_OUTPUTS": 7
+        }
+    },
+    {
+        "question": "How many other musical films were launched the same year as Grease?",
+        "answer": [
+            [
+                "2"
+            ]
+        ],
+        "elapsed": 0.5025510787963867,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5024855136871338,
+            "LLM_INPUTS": 230,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "Which creator of The OA also acted in it?",
+        "answer": [
+            [
+                "Brit Marling"
+            ]
+        ],
+        "elapsed": 0.5452902317047119,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5451922416687012,
+            "LLM_INPUTS": 226,
+            "LLM_OUTPUTS": 7
+        }
+    },
+    {
+        "question": "What albums has Atif Aslam been on?",
+        "answer": [
+            [
+                "Jal Pari"
+            ],
+            [
+                "Doorie"
+            ],
+            [
+                "Meri Kahani"
+            ],
+            [
+                "Bol"
+            ],
+            [
+                "Meri Kahani (Meri Kahani)"
+            ],
+            [
+                "Khuda Jaane"
+            ],
+            [
+                "Tere Bin (Bas Ek Pal)"
+            ],
+            [
+                "Tanha"
+            ],
+            [
+                "Balu Mahi"
+            ],
+            [
+                "Dekhte Dekhte"
+            ],
+            [
+                "Jeene Laga Hoon"
+            ],
+            [
+                "Tera Hone Laga Hoon"
+            ]
+        ],
+        "elapsed": 1.9679067134857178,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.9678118228912354,
+            "LLM_INPUTS": 226,
+            "LLM_OUTPUTS": 103
+        }
+    },
+    {
+        "question": "What was Ada Lovelace\u2019s noble title?",
+        "answer": [
+            [
+                "Countess of Lovelace"
+            ]
+        ],
+        "elapsed": 1.0033869743347168,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.0033011436462402,
+            "LLM_INPUTS": 226,
+            "LLM_OUTPUTS": 10
+        }
+    },
+    {
+        "question": "What was Janus the god of?",
+        "answer": [
+            [
+                "beginning and endings doorways and gates transitions time"
+            ]
+        ],
+        "elapsed": 0.5709373950958252,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5708482265472412,
+            "LLM_INPUTS": 224,
+            "LLM_OUTPUTS": 14
+        }
+    },
+    {
+        "question": "Who was the fellow Hobbit who was an enemy of Frodo?",
+        "answer": [
+            [
+                "Gollum Sm\u00e9agol"
+            ]
+        ],
+        "elapsed": 1.513777732849121,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.5136878490447998,
+            "LLM_INPUTS": 229,
+            "LLM_OUTPUTS": 11
+        }
+    },
+    {
+        "question": "What was the last painting that Van Gogh painted?",
+        "answer": [
+            [
+                "Wheatfield with Crows"
+            ]
+        ],
+        "elapsed": 0.5418050289154053,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5417160987854004,
+            "LLM_INPUTS": 226,
+            "LLM_OUTPUTS": 10
+        }
+    },
+    {
+        "question": "What was the main subject addressed in the Deep Purple song \u201cSmoke on the water\u201d?",
+        "answer": [
+            [
+                "A fire at a music venue in Montreux",
+                " Switzerland"
+            ]
+        ],
+        "elapsed": 0.649517297744751,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.649425745010376,
+            "LLM_INPUTS": 234,
+            "LLM_OUTPUTS": 16
+        }
+    },
+    {
+        "question": "When did the first sperm whales exist?",
+        "answer": [
+            [
+                "Eocene epoch",
+                " around 34-56 million years ago"
+            ]
+        ],
+        "elapsed": 0.6206462383270264,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.6205728054046631,
+            "LLM_INPUTS": 224,
+            "LLM_OUTPUTS": 16
+        }
+    },
+    {
+        "question": "What year did the Berlin Wall fall?",
+        "answer": [
+            [
+                "1989"
+            ]
+        ],
+        "elapsed": 0.4735903739929199,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.473522424697876,
+            "LLM_INPUTS": 224,
+            "LLM_OUTPUTS": 6
+        }
+    },
+    {
+        "question": "What year was Riverdale first aired?",
+        "answer": [
+            [
+                "2017"
+            ]
+        ],
+        "elapsed": 0.5220611095428467,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5219817161560059,
+            "LLM_INPUTS": 224,
+            "LLM_OUTPUTS": 6
+        }
+    },
+    {
+        "question": "When did Allen Ginsberg die?",
+        "answer": [
+            [
+                "1997"
+            ]
+        ],
+        "elapsed": 0.48320460319519043,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.4830937385559082,
+            "LLM_INPUTS": 224,
+            "LLM_OUTPUTS": 6
+        }
+    },
+    {
+        "question": "When did Ella Fitzgerald die?",
+        "answer": [
+            [
+                "1996"
+            ]
+        ],
+        "elapsed": 0.7402360439300537,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.7401490211486816,
+            "LLM_INPUTS": 222,
+            "LLM_OUTPUTS": 6
+        }
+    },
+    {
+        "question": "when did human first start to bouldering?",
+        "answer": [
+            [
+                "20th century 1930s 1940s"
+            ]
+        ],
+        "elapsed": 0.7129197120666504,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.7128071784973145,
+            "LLM_INPUTS": 226,
+            "LLM_OUTPUTS": 15
+        }
+    },
+    {
+        "question": "When did Pakistan become independent?",
+        "answer": [
+            [
+                "1947-08-14"
+            ]
+        ],
+        "elapsed": 0.5270957946777344,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5270287990570068,
+            "LLM_INPUTS": 222,
+            "LLM_OUTPUTS": 10
+        }
+    },
+    {
+        "question": "When did Rumi die?",
+        "answer": [
+            [
+                "1273"
+            ]
+        ],
+        "elapsed": 0.46381473541259766,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.4637415409088135,
+            "LLM_INPUTS": 222,
+            "LLM_OUTPUTS": 6
+        }
+    },
+    {
+        "question": "When did the brother of the author of Slaughterhouse Five die?",
+        "answer": [
+            [
+                "2013"
+            ]
+        ],
+        "elapsed": 1.0628023147583008,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.0627248287200928,
+            "LLM_INPUTS": 230,
+            "LLM_OUTPUTS": 43
+        }
+    },
+    {
+        "question": "when was the creator of saturday night live born?",
+        "answer": [
+            [
+                "1943"
+            ]
+        ],
+        "elapsed": 0.479799747467041,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.47973155975341797,
+            "LLM_INPUTS": 226,
+            "LLM_OUTPUTS": 6
+        }
+    },
+    {
+        "question": "Who was part of the Hambach Festival?",
+        "answer": [
+            [
+                "Democratic activists"
+            ],
+            [
+                "German liberals"
+            ],
+            [
+                "Rhineland activists"
+            ],
+            [
+                "Proponents of freedom and unity in Germany"
+            ]
+        ],
+        "elapsed": 0.7174193859100342,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.7173395156860352,
+            "LLM_INPUTS": 225,
+            "LLM_OUTPUTS": 24
+        }
+    },
+    {
+        "question": "When did The OA was first released?",
+        "answer": [
+            [
+                "2016"
+            ]
+        ],
+        "elapsed": 0.4523346424102783,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.4522573947906494,
+            "LLM_INPUTS": 224,
+            "LLM_OUTPUTS": 6
+        }
+    },
+    {
+        "question": "How many casualties were a result of the Troubles?",
+        "answer": [
+            [
+                "Approximately 3",
+                "500"
+            ]
+        ],
+        "elapsed": 0.6090490818023682,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.6089706420898438,
+            "LLM_INPUTS": 226,
+            "LLM_OUTPUTS": 9
+        }
+    },
+    {
+        "question": "When did the Weimar Republic start?",
+        "answer": [
+            [
+                "1919"
+            ]
+        ],
+        "elapsed": 0.536752462387085,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5366740226745605,
+            "LLM_INPUTS": 224,
+            "LLM_OUTPUTS": 6
+        }
+    },
+    {
+        "question": "When did World War II officially end?",
+        "answer": [
+            [
+                "1945"
+            ]
+        ],
+        "elapsed": 0.7937471866607666,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.7936346530914307,
+            "LLM_INPUTS": 224,
+            "LLM_OUTPUTS": 6
+        }
+    },
+    {
+        "question": "when is the first ironman world championship?",
+        "answer": [
+            [
+                "1978"
+            ]
+        ],
+        "elapsed": 0.8311424255371094,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.8310749530792236,
+            "LLM_INPUTS": 225,
+            "LLM_OUTPUTS": 6
+        }
+    },
+    {
+        "question": "when was the magazine in which hunter x hunter is published established?",
+        "answer": [
+            [
+                "1968"
+            ]
+        ],
+        "elapsed": 0.5127353668212891,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5126595497131348,
+            "LLM_INPUTS": 229,
+            "LLM_OUTPUTS": 6
+        }
+    },
+    {
+        "question": "When the film Red Notice was released?",
+        "answer": [
+            [
+                "2021-11-12"
+            ]
+        ],
+        "elapsed": 0.48064517974853516,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.48056840896606445,
+            "LLM_INPUTS": 224,
+            "LLM_OUTPUTS": 10
+        }
+    },
+    {
+        "question": "When was Cologne Cathedral built?",
+        "answer": [
+            [
+                "1248-1880"
+            ]
+        ],
+        "elapsed": 0.4231579303741455,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.4230973720550537,
+            "LLM_INPUTS": 222,
+            "LLM_OUTPUTS": 9
+        }
+    },
+    {
+        "question": "What can be done against gout?",
+        "answer": [
+            [
+                "Medication",
+                " lifestyle changes",
+                " dietary adjustments",
+                " avoiding alcohol",
+                " increasing hydration",
+                " managing weight",
+                " reducing intake of purine-rich foods"
+            ]
+        ],
+        "elapsed": 0.7792768478393555,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.7791745662689209,
+            "LLM_INPUTS": 223,
+            "LLM_OUTPUTS": 28
+        }
+    },
+    {
+        "question": "When was HIV first identified?",
+        "answer": [
+            [
+                "1983"
+            ]
+        ],
+        "elapsed": 0.7879903316497803,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.7879095077514648,
+            "LLM_INPUTS": 222,
+            "LLM_OUTPUTS": 6
+        }
+    },
+    {
+        "question": "When was the first article about Liquid State Machines published?",
+        "answer": [
+            [
+                "2002"
+            ]
+        ],
+        "elapsed": 0.6296505928039551,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.6295642852783203,
+            "LLM_INPUTS": 227,
+            "LLM_OUTPUTS": 6
+        }
+    },
+    {
+        "question": "When was Marlene Dietrich born?",
+        "answer": [
+            [
+                "1901-12-27"
+            ]
+        ],
+        "elapsed": 0.46303820610046387,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.46296143531799316,
+            "LLM_INPUTS": 224,
+            "LLM_OUTPUTS": 10
+        }
+    },
+    {
+        "question": "When was Penicillin discovered?",
+        "answer": [
+            [
+                "1928"
+            ]
+        ],
+        "elapsed": 0.5091588497161865,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5090768337249756,
+            "LLM_INPUTS": 222,
+            "LLM_OUTPUTS": 6
+        }
+    },
+    {
+        "question": "When was Rumi born?",
+        "answer": [
+            [
+                "1207"
+            ]
+        ],
+        "elapsed": 0.7598583698272705,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.7597908973693848,
+            "LLM_INPUTS": 222,
+            "LLM_OUTPUTS": 6
+        }
+    },
+    {
+        "question": "When was the beginning of Romanticism ?",
+        "answer": [
+            [
+                "late 18th century"
+            ]
+        ],
+        "elapsed": 0.5826206207275391,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5825455188751221,
+            "LLM_INPUTS": 224,
+            "LLM_OUTPUTS": 9
+        }
+    },
+    {
+        "question": "When was the Echo Music Prize abolished?",
+        "answer": [
+            [
+                "2017"
+            ]
+        ],
+        "elapsed": 0.4467329978942871,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.4466559886932373,
+            "LLM_INPUTS": 224,
+            "LLM_OUTPUTS": 6
+        }
+    },
+    {
+        "question": "When was the first album of the American band Typhoon released?",
+        "answer": [
+            [
+                "2010"
+            ]
+        ],
+        "elapsed": 0.4989054203033447,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.49881529808044434,
+            "LLM_INPUTS": 229,
+            "LLM_OUTPUTS": 6
+        }
+    },
+    {
+        "question": "When was the Hamburg Airport inaugurated?",
+        "answer": [
+            [
+                "1911"
+            ]
+        ],
+        "elapsed": 0.6319057941436768,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.631829023361206,
+            "LLM_INPUTS": 223,
+            "LLM_OUTPUTS": 6
+        }
+    },
+    {
+        "question": "When was the Hamburg S-Bahn officially opened?",
+        "answer": [
+            [
+                "1934"
+            ]
+        ],
+        "elapsed": 0.45236635208129883,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.45229053497314453,
+            "LLM_INPUTS": 225,
+            "LLM_OUTPUTS": 6
+        }
+    },
+    {
+        "question": "When was the jazz club Birdland in Hamburg founded?",
+        "answer": [
+            [
+                "1985"
+            ]
+        ],
+        "elapsed": 0.5634844303131104,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5634074211120605,
+            "LLM_INPUTS": 227,
+            "LLM_OUTPUTS": 6
+        }
+    },
+    {
+        "question": "When was the poem Howl written?",
+        "answer": [
+            [
+                "1955"
+            ]
+        ],
+        "elapsed": 0.8943367004394531,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.8942227363586426,
+            "LLM_INPUTS": 224,
+            "LLM_OUTPUTS": 6
+        }
+    },
+    {
+        "question": "When was the university of Cambridge founded?",
+        "answer": [
+            [
+                "1209"
+            ]
+        ],
+        "elapsed": 0.5507564544677734,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5506813526153564,
+            "LLM_INPUTS": 224,
+            "LLM_OUTPUTS": 6
+        }
+    },
+    {
+        "question": "When was the University of Hamburg founded?",
+        "answer": [
+            [
+                "1919"
+            ]
+        ],
+        "elapsed": 0.4580841064453125,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.4580073356628418,
+            "LLM_INPUTS": 224,
+            "LLM_OUTPUTS": 6
+        }
+    },
+    {
+        "question": "When was the University of Saskatchewan founded?",
+        "answer": [
+            [
+                "1907"
+            ]
+        ],
+        "elapsed": 0.7140867710113525,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.7140092849731445,
+            "LLM_INPUTS": 224,
+            "LLM_OUTPUTS": 6
+        }
+    },
+    {
+        "question": "When was the Vatican City created?",
+        "answer": [
+            [
+                "1929"
+            ]
+        ],
+        "elapsed": 0.4738788604736328,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.4738001823425293,
+            "LLM_INPUTS": 223,
+            "LLM_OUTPUTS": 6
+        }
+    },
+    {
+        "question": "When was United Fruit Company founded?",
+        "answer": [
+            [
+                "1899"
+            ]
+        ],
+        "elapsed": 0.47598910331726074,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.47591137886047363,
+            "LLM_INPUTS": 223,
+            "LLM_OUTPUTS": 6
+        }
+    },
+    {
+        "question": "Where did Trotzky die?",
+        "answer": [
+            [
+                "Mexico City"
+            ]
+        ],
+        "elapsed": 0.7893903255462646,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.789301872253418,
+            "LLM_INPUTS": 222,
+            "LLM_OUTPUTS": 6
+        }
+    },
+    {
+        "question": "Where are both The Call of the Wild and White Fang set, the most two famous works of Jack London?",
+        "answer": [
+            [
+                "Yukon Territory"
+            ]
+        ],
+        "elapsed": 0.6798946857452393,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.6797800064086914,
+            "LLM_INPUTS": 238,
+            "LLM_OUTPUTS": 8
+        }
+    },
+    {
+        "question": "Where did the Hambach Festival happen?",
+        "answer": [
+            [
+                "Hambach Castle",
+                " Germany"
+            ]
+        ],
+        "elapsed": 0.7287757396697998,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.7286510467529297,
+            "LLM_INPUTS": 224,
+            "LLM_OUTPUTS": 9
+        }
+    },
+    {
+        "question": "Where do the novels of the franchise The Lord of the Rings take place?",
+        "answer": [
+            [
+                "Middle-earth"
+            ]
+        ],
+        "elapsed": 0.4614071846008301,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.46130990982055664,
+            "LLM_INPUTS": 231,
+            "LLM_OUTPUTS": 6
+        }
+    },
+    {
+        "question": "Where does the Nutri-Score originate from?",
+        "answer": [
+            [
+                "France"
+            ]
+        ],
+        "elapsed": 1.2238333225250244,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.223719835281372,
+            "LLM_INPUTS": 226,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "Are there at least two winners of the Academy Award for Best Actress who have been educated at the same institution?",
+        "answer": [
+            [
+                "True"
+            ]
+        ],
+        "elapsed": 0.5881788730621338,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5881028175354004,
+            "LLM_INPUTS": 238,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "Where was K-pop star Lisa Manoban born?",
+        "answer": [
+            [
+                "Buriram",
+                " Thailand"
+            ]
+        ],
+        "elapsed": 0.5109577178955078,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5108902454376221,
+            "LLM_INPUTS": 226,
+            "LLM_OUTPUTS": 8
+        }
+    },
+    {
+        "question": "What is the highest point of Norway?",
+        "answer": [
+            [
+                "Galdh\u00f8piggen"
+            ]
+        ],
+        "elapsed": 1.2447021007537842,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.2446210384368896,
+            "LLM_INPUTS": 224,
+            "LLM_OUTPUTS": 10
+        }
+    },
+    {
+        "question": "Where did the psychedelic band \u201cKhruangbin\u201d form?",
+        "answer": [
+            [
+                "Houston",
+                " Texas"
+            ]
+        ],
+        "elapsed": 0.4566819667816162,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.45659327507019043,
+            "LLM_INPUTS": 229,
+            "LLM_OUTPUTS": 7
+        }
+    },
+    {
+        "question": "Where was Caesar murdered?",
+        "answer": [
+            [
+                "Rome",
+                " Italy"
+            ]
+        ],
+        "elapsed": 0.9411089420318604,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.941009521484375,
+            "LLM_INPUTS": 221,
+            "LLM_OUTPUTS": 7
+        }
+    },
+    {
+        "question": "Where was Goethe\u2019s unmarried partner born ?",
+        "answer": [
+            [
+                "Weimar"
+            ]
+        ],
+        "elapsed": 0.42058897018432617,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.4205143451690674,
+            "LLM_INPUTS": 224,
+            "LLM_OUTPUTS": 6
+        }
+    },
+    {
+        "question": "Where was Roland Corporation founded?",
+        "answer": [
+            [
+                "Itako",
+                " Ibaraki",
+                " Japan"
+            ]
+        ],
+        "elapsed": 0.8491959571838379,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.8491175174713135,
+            "LLM_INPUTS": 222,
+            "LLM_OUTPUTS": 12
+        }
+    },
+    {
+        "question": "Where was the author of The Catcher in the Rye born ?",
+        "answer": [
+            [
+                "New York City"
+            ]
+        ],
+        "elapsed": 0.6290323734283447,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.6289558410644531,
+            "LLM_INPUTS": 229,
+            "LLM_OUTPUTS": 7
+        }
+    },
+    {
+        "question": "Who developed the Erlangen program?",
+        "answer": [
+            [
+                "Felix Klein"
+            ]
+        ],
+        "elapsed": 0.5136308670043945,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5135083198547363,
+            "LLM_INPUTS": 223,
+            "LLM_OUTPUTS": 7
+        }
+    },
+    {
+        "question": "Which actor starring in Free Guy also starred in Deadpool?",
+        "answer": [
+            [
+                "Ryan Reynolds"
+            ]
+        ],
+        "elapsed": 0.5124282836914062,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5123326778411865,
+            "LLM_INPUTS": 228,
+            "LLM_OUTPUTS": 6
+        }
+    },
+    {
+        "question": "Which American presidents followed in their father\u2018s step and also became the president?",
+        "answer": [
+            [
+                "John Adams John Quincy Adams"
+            ],
+            [
+                "George H. W. Bush George W. Bush"
+            ]
+        ],
+        "elapsed": 1.099489688873291,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.099384069442749,
+            "LLM_INPUTS": 231,
+            "LLM_OUTPUTS": 20
+        }
+    },
+    {
+        "question": "which animal can possibly live longer, panda or koala?",
+        "answer": [
+            [
+                "Koala"
+            ]
+        ],
+        "elapsed": 0.47026920318603516,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.470196008682251,
+            "LLM_INPUTS": 228,
+            "LLM_OUTPUTS": 6
+        }
+    },
+    {
+        "question": "Which archipelago has more islands: the Gal\u00e1pagos Islands or the Hawaiian Islands ?",
+        "answer": [
+            [
+                "Gal\u00e1pagos Islands"
+            ]
+        ],
+        "elapsed": 0.5774152278900146,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.57733154296875,
+            "LLM_INPUTS": 233,
+            "LLM_OUTPUTS": 8
+        }
+    },
+    {
+        "question": "Which art movement was Yoko Ono part of?",
+        "answer": [
+            [
+                "Fluxus"
+            ]
+        ],
+        "elapsed": 0.6171813011169434,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.6170778274536133,
+            "LLM_INPUTS": 226,
+            "LLM_OUTPUTS": 6
+        }
+    },
+    {
+        "question": "which band is created earlier, queen or pink floyd?",
+        "answer": [
+            [
+                "Pink Floyd"
+            ]
+        ],
+        "elapsed": 0.6740038394927979,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.6739273071289062,
+            "LLM_INPUTS": 228,
+            "LLM_OUTPUTS": 6
+        }
+    },
+    {
+        "question": "What caused Kobe Bryant's Death?",
+        "answer": [
+            [
+                "Helicopter crash"
+            ]
+        ],
+        "elapsed": 0.4976778030395508,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.49759840965270996,
+            "LLM_INPUTS": 223,
+            "LLM_OUTPUTS": 8
+        }
+    },
+    {
+        "question": "What are the opposites of zero?",
+        "answer": [
+            [
+                "positive numbers",
+                " negative numbers"
+            ]
+        ],
+        "elapsed": 0.8511843681335449,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.8511052131652832,
+            "LLM_INPUTS": 224,
+            "LLM_OUTPUTS": 9
+        }
+    },
+    {
+        "question": "Which businesses are founded by the person in charge of Tesla?",
+        "answer": [
+            [
+                "Zip2"
+            ],
+            [
+                "X.com (which became PayPal)"
+            ],
+            [
+                "Tesla",
+                " Inc."
+            ],
+            [
+                "SpaceX"
+            ],
+            [
+                "Neuralink"
+            ],
+            [
+                "The Boring Company"
+            ],
+            [
+                "OpenAI (co-founder",
+                " not directly in charge)"
+            ]
+        ],
+        "elapsed": 0.8388333320617676,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.8387377262115479,
+            "LLM_INPUTS": 228,
+            "LLM_OUTPUTS": 41
+        }
+    },
+    {
+        "question": "Did Germany have a population growth of at least 1% since 2010?",
+        "answer": [
+            [
+                "False"
+            ]
+        ],
+        "elapsed": 0.5385236740112305,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5384166240692139,
+            "LLM_INPUTS": 233,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "Which aircraft did Howard Hughes build?",
+        "answer": [
+            [
+                "Hughes H-1 Racer"
+            ],
+            [
+                "Hughes XF-11"
+            ],
+            [
+                "Hughes YOH-6 Cayuse"
+            ],
+            [
+                "Hughes Helicopter Model 269"
+            ],
+            [
+                "Spruce Goose (Hughes H-4 Hercules)"
+            ]
+        ],
+        "elapsed": 1.0225985050201416,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.022517442703247,
+            "LLM_INPUTS": 223,
+            "LLM_OUTPUTS": 49
+        }
+    },
+    {
+        "question": "Which country has more official languages: South Africa (\u200b\u200bQ258) or Ethiopia ?",
+        "answer": [
+            [
+                "South Africa"
+            ]
+        ],
+        "elapsed": 0.46209168434143066,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.46201276779174805,
+            "LLM_INPUTS": 233,
+            "LLM_OUTPUTS": 6
+        }
+    },
+    {
+        "question": "Is throat singing a tradition?",
+        "answer": [
+            [
+                "True"
+            ]
+        ],
+        "elapsed": 0.5546219348907471,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5545444488525391,
+            "LLM_INPUTS": 222,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "Which disease caused the death of Mark Twain?",
+        "answer": [
+            [
+                "Heart attack"
+            ]
+        ],
+        "elapsed": 0.78835129737854,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.7882750034332275,
+            "LLM_INPUTS": 225,
+            "LLM_OUTPUTS": 6
+        }
+    },
+    {
+        "question": "Which diseases can be caused by smoking ?",
+        "answer": [
+            [
+                "Lung cancer"
+            ],
+            [
+                "Chronic obstructive pulmonary disease (COPD)"
+            ],
+            [
+                "Heart disease"
+            ],
+            [
+                "Stroke"
+            ],
+            [
+                "Emphysema"
+            ],
+            [
+                "Chronic bronchitis"
+            ],
+            [
+                "Throat cancer"
+            ],
+            [
+                "Mouth cancer"
+            ],
+            [
+                "Esophageal cancer"
+            ],
+            [
+                "Bladder cancer"
+            ],
+            [
+                "Pancreatic cancer"
+            ],
+            [
+                "Kidney cancer"
+            ],
+            [
+                "Cervical cancer"
+            ],
+            [
+                "Stomach cancer"
+            ],
+            [
+                "Peripheral artery disease"
+            ],
+            [
+                "Asthma exacerbation"
+            ],
+            [
+                "Reduced fertility"
+            ],
+            [
+                "Diabetes complications"
+            ]
+        ],
+        "elapsed": 2.352032423019409,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 2.3519558906555176,
+            "LLM_INPUTS": 224,
+            "LLM_OUTPUTS": 82
+        }
+    },
+    {
+        "question": "Which genre that Cage the Elephant belongs to has the fewest english characters?",
+        "answer": [
+            [
+                "Rock"
+            ]
+        ],
+        "elapsed": 0.5068724155426025,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5067970752716064,
+            "LLM_INPUTS": 231,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "Which takes less space? 1kg of lead or 1kg of iron.",
+        "answer": [
+            [
+                "1kg of lead"
+            ]
+        ],
+        "elapsed": 0.45363378524780273,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.4535555839538574,
+            "LLM_INPUTS": 233,
+            "LLM_OUTPUTS": 8
+        }
+    },
+    {
+        "question": "Which kingdom preceded the Thonburi Kingdom ?",
+        "answer": [
+            [
+                "Ayutthaya Kingdom"
+            ]
+        ],
+        "elapsed": 0.524268627166748,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5241901874542236,
+            "LLM_INPUTS": 226,
+            "LLM_OUTPUTS": 9
+        }
+    },
+    {
+        "question": "How many mountains are located in Germany?",
+        "answer": [
+            [
+                "More than 2",
+                "000"
+            ]
+        ],
+        "elapsed": 0.8592953681945801,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.8592047691345215,
+            "LLM_INPUTS": 224,
+            "LLM_OUTPUTS": 10
+        }
+    },
+    {
+        "question": "Which movements is the painting \u201cLes Demoiselles d'Avignon\u201d assigned to?",
+        "answer": [
+            [
+                "Cubism"
+            ],
+            [
+                "Proto-Cubism"
+            ],
+            [
+                "Modernism"
+            ]
+        ],
+        "elapsed": 0.5394840240478516,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5394067764282227,
+            "LLM_INPUTS": 234,
+            "LLM_OUTPUTS": 14
+        }
+    },
+    {
+        "question": "Which movies belong to the Cornetto trilogy ?",
+        "answer": [
+            [
+                "Shaun of the Dead"
+            ],
+            [
+                "Hot Fuzz"
+            ],
+            [
+                "The World's End"
+            ]
+        ],
+        "elapsed": 0.6208271980285645,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.6207501888275146,
+            "LLM_INPUTS": 225,
+            "LLM_OUTPUTS": 17
+        }
+    },
+    {
+        "question": "During what event was the Four Policemen Council proposed?",
+        "answer": [
+            [
+                "Yalta Conference"
+            ]
+        ],
+        "elapsed": 0.743450403213501,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.743370771408081,
+            "LLM_INPUTS": 227,
+            "LLM_OUTPUTS": 7
+        }
+    },
+    {
+        "question": "Which NBA teams have won the most seasons?",
+        "answer": [
+            [
+                "Boston Celtics 17"
+            ],
+            [
+                "Los Angeles Lakers 17"
+            ]
+        ],
+        "elapsed": 0.5375773906707764,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5375099182128906,
+            "LLM_INPUTS": 225,
+            "LLM_OUTPUTS": 14
+        }
+    },
+    {
+        "question": "Which of the dragons in Game of Thrones died?",
+        "answer": [
+            [
+                "Viserion"
+            ],
+            [
+                "Drogon (did not die in the TV series)"
+            ],
+            [
+                "Rhaegal"
+            ]
+        ],
+        "elapsed": 0.9756410121917725,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.97556471824646,
+            "LLM_INPUTS": 226,
+            "LLM_OUTPUTS": 53
+        }
+    },
+    {
+        "question": "Which other movies by the director of Another Round also starred Mads Mikkelsen ?",
+        "answer": [
+            [
+                "The Hunt"
+            ]
+        ],
+        "elapsed": 0.5123164653778076,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5122392177581787,
+            "LLM_INPUTS": 233,
+            "LLM_OUTPUTS": 7
+        }
+    },
+    {
+        "question": "Which egyptian pyramid is the tallest?",
+        "answer": [
+            [
+                "Great Pyramid of Giza"
+            ]
+        ],
+        "elapsed": 0.5117595195770264,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5116817951202393,
+            "LLM_INPUTS": 224,
+            "LLM_OUTPUTS": 9
+        }
+    },
+    {
+        "question": "What is the offical language of Taipei?",
+        "answer": [
+            [
+                "Mandarin Chinese"
+            ]
+        ],
+        "elapsed": 0.47429490089416504,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.4741795063018799,
+            "LLM_INPUTS": 225,
+            "LLM_OUTPUTS": 7
+        }
+    },
+    {
+        "question": "Which shows aired for the first time the same year as Saturday Night Live ?",
+        "answer": [
+            [
+                "All in the Family 1975"
+            ],
+            [
+                "The Jeffersons 1975"
+            ],
+            [
+                "Wheel of Fortune 1975"
+            ]
+        ],
+        "elapsed": 0.9284226894378662,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.9283525943756104,
+            "LLM_INPUTS": 231,
+            "LLM_OUTPUTS": 25
+        }
+    },
+    {
+        "question": "Which songs made up the album Fijaci\u00f3n Oral vol. 1 ?",
+        "answer": [
+            [
+                "Loba"
+            ],
+            [
+                "Lo Que Pens\u00e9 Que Era"
+            ],
+            [
+                "El Amor Despu\u00e9s Del Amor"
+            ],
+            [
+                "En El Plato"
+            ],
+            [
+                "D\u00eda De Enero"
+            ],
+            [
+                "T\u00fa"
+            ],
+            [
+                "Se Quiere",
+                " Se Mata"
+            ],
+            [
+                "Es Por Ti"
+            ],
+            [
+                "La Pared"
+            ],
+            [
+                "Obtener Un S\u00ed"
+            ],
+            [
+                "Siempre Es Hoy"
+            ]
+        ],
+        "elapsed": 1.108790636062622,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.1087048053741455,
+            "LLM_INPUTS": 231,
+            "LLM_OUTPUTS": 55
+        }
+    },
+    {
+        "question": "Which started first: impressionism or expressionism (art movements)?",
+        "answer": [
+            [
+                "Impressionism"
+            ]
+        ],
+        "elapsed": 0.8028571605682373,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.8027901649475098,
+            "LLM_INPUTS": 229,
+            "LLM_OUTPUTS": 7
+        }
+    },
+    {
+        "question": "which state inside USA is batman living in?",
+        "answer": [
+            [
+                "Gotham City",
+                " New Jersey"
+            ]
+        ],
+        "elapsed": 0.5621228218078613,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5620453357696533,
+            "LLM_INPUTS": 226,
+            "LLM_OUTPUTS": 11
+        }
+    },
+    {
+        "question": "which swordfighter in the lord of the rings marry a half-elven and belong to rangers of the north?",
+        "answer": [
+            [
+                "Aragorn Arwen Rangers of the North"
+            ]
+        ],
+        "elapsed": 0.6959030628204346,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.6958174705505371,
+            "LLM_INPUTS": 239,
+            "LLM_OUTPUTS": 13
+        }
+    },
+    {
+        "question": "Which teams participated in the 2020 UEFA Champions League Final ?",
+        "answer": [
+            [
+                "Paris Saint-Germain"
+            ],
+            [
+                "Bayern Munich"
+            ]
+        ],
+        "elapsed": 1.0535573959350586,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.0534729957580566,
+            "LLM_INPUTS": 229,
+            "LLM_OUTPUTS": 11
+        }
+    },
+    {
+        "question": "Which universities have more than 200000 students?",
+        "answer": [
+            [
+                "Indira Gandhi National Open University (IGNOU)",
+                " India",
+                " ~4",
+                "000",
+                "000 students"
+            ],
+            [
+                "Anadolu University",
+                " Turkey",
+                " ~1",
+                "000",
+                "000 students"
+            ],
+            [
+                "Bangladesh National University",
+                " Bangladesh",
+                " ~2",
+                "000",
+                "000 students"
+            ],
+            [
+                "The Islamic Azad University",
+                " Iran",
+                " ~1",
+                "000",
+                "000 students"
+            ],
+            [
+                "California Community Colleges System",
+                " USA",
+                " ~2",
+                "000",
+                "000 students"
+            ]
+        ],
+        "elapsed": 1.6299419403076172,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.6298534870147705,
+            "LLM_INPUTS": 226,
+            "LLM_OUTPUTS": 84
+        }
+    },
+    {
+        "question": "which university is established earlier, university of oxford or university of cambridge?",
+        "answer": [
+            [
+                "University of Oxford"
+            ]
+        ],
+        "elapsed": 0.5554873943328857,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5554237365722656,
+            "LLM_INPUTS": 232,
+            "LLM_OUTPUTS": 7
+        }
+    },
+    {
+        "question": "Who developed WordNet?",
+        "answer": [
+            [
+                "George A. Miller"
+            ],
+            [
+                "Princeton University"
+            ]
+        ],
+        "elapsed": 0.5252609252929688,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5251960754394531,
+            "LLM_INPUTS": 221,
+            "LLM_OUTPUTS": 12
+        }
+    },
+    {
+        "question": "Who are the actresses in Portrait of a Lady on Fire?",
+        "answer": [
+            [
+                "No\u00e9mie Merlant"
+            ],
+            [
+                "Ad\u00e8le Haenel"
+            ],
+            [
+                "Lu\u00e0na Bajrami"
+            ],
+            [
+                "Valeria Golino"
+            ]
+        ],
+        "elapsed": 0.7528657913208008,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.7527756690979004,
+            "LLM_INPUTS": 228,
+            "LLM_OUTPUTS": 25
+        }
+    },
+    {
+        "question": "Did Michael Jordan and Kobe Bryant play for the same team?",
+        "answer": [
+            [
+                "False"
+            ]
+        ],
+        "elapsed": 0.45778346061706543,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.45770740509033203,
+            "LLM_INPUTS": 228,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "Who created the Turing machine?",
+        "answer": [
+            [
+                "Alan Turing"
+            ]
+        ],
+        "elapsed": 0.46814537048339844,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.46806883811950684,
+            "LLM_INPUTS": 223,
+            "LLM_OUTPUTS": 7
+        }
+    },
+    {
+        "question": "When was the Hambach Castle built?",
+        "answer": [
+            [
+                "1115"
+            ]
+        ],
+        "elapsed": 0.4678170680999756,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.4677419662475586,
+            "LLM_INPUTS": 224,
+            "LLM_OUTPUTS": 6
+        }
+    },
+    {
+        "question": "Who died at the North Pole?",
+        "answer": [
+            [
+                "Robert Peary's daughter Josephine Peary claimed that her father died near the North Pole",
+                " but there is no confirmed record of anyone definitively dying at the exact geographic North Pole itself."
+            ]
+        ],
+        "elapsed": 1.2225151062011719,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.2224345207214355,
+            "LLM_INPUTS": 223,
+            "LLM_OUTPUTS": 41
+        }
+    },
+    {
+        "question": "Who directed Anne with an E ?",
+        "answer": [
+            [
+                "Moira Walley-Beckett"
+            ]
+        ],
+        "elapsed": 0.5935311317443848,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5934529304504395,
+            "LLM_INPUTS": 223,
+            "LLM_OUTPUTS": 12
+        }
+    },
+    {
+        "question": "Who wrote \"Prototypical Networks for Few-shot Learning\"?",
+        "answer": [
+            [
+                "Victor Garcia"
+            ],
+            [
+                "Joan Bruna"
+            ],
+            [
+                "Sharpnack James"
+            ]
+        ],
+        "elapsed": 0.5771653652191162,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.57708740234375,
+            "LLM_INPUTS": 230,
+            "LLM_OUTPUTS": 16
+        }
+    },
+    {
+        "question": "Who founded \u201cThe Blue Rider\u201d?",
+        "answer": [
+            [
+                "Wassily Kandinsky"
+            ],
+            [
+                "Franz Marc"
+            ]
+        ],
+        "elapsed": 1.0899715423583984,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.0898892879486084,
+            "LLM_INPUTS": 224,
+            "LLM_OUTPUTS": 13
+        }
+    },
+    {
+        "question": "Who founded the Worpswede artist colony ?",
+        "answer": [
+            [
+                "Heinrich Vogeler"
+            ],
+            [
+                "Paula Modersohn-Becker"
+            ],
+            [
+                "Otto Modersohn"
+            ]
+        ],
+        "elapsed": 0.7381951808929443,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.7381143569946289,
+            "LLM_INPUTS": 226,
+            "LLM_OUTPUTS": 23
+        }
+    },
+    {
+        "question": "Who is the author of \u201cConvenience Store Woman\u201d ?",
+        "answer": [
+            [
+                "Sayaka Murata"
+            ]
+        ],
+        "elapsed": 0.8659031391143799,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.8658061027526855,
+            "LLM_INPUTS": 228,
+            "LLM_OUTPUTS": 8
+        }
+    },
+    {
+        "question": "Who is the soccer player with the most goals in their career?",
+        "answer": [
+            [
+                "Josef Bican"
+            ]
+        ],
+        "elapsed": 0.5801486968994141,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5800735950469971,
+            "LLM_INPUTS": 229,
+            "LLM_OUTPUTS": 8
+        }
+    },
+    {
+        "question": "Who is the creator of the Dinosaurs tv show ?",
+        "answer": [
+            [
+                "Chris Nee"
+            ]
+        ],
+        "elapsed": 0.8631119728088379,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.863041877746582,
+            "LLM_INPUTS": 227,
+            "LLM_OUTPUTS": 6
+        }
+    },
+    {
+        "question": "Who is the current president of the German Bundestag currently?",
+        "answer": [
+            [
+                "Wolfgang Sch\u00e4uble"
+            ]
+        ],
+        "elapsed": 0.6578400135040283,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.6577703952789307,
+            "LLM_INPUTS": 228,
+            "LLM_OUTPUTS": 8
+        }
+    },
+    {
+        "question": "Who is the most wealthy entrepreneur?",
+        "answer": [
+            [
+                "Elon Musk"
+            ]
+        ],
+        "elapsed": 0.44049906730651855,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.4404165744781494,
+            "LLM_INPUTS": 223,
+            "LLM_OUTPUTS": 7
+        }
+    },
+    {
+        "question": "Who is the oldest cast member of the Netflix show \u201cQueer Eye\u201d ?",
+        "answer": [
+            [
+                "Antoni Porowski"
+            ]
+        ],
+        "elapsed": 0.4754056930541992,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.47532033920288086,
+            "LLM_INPUTS": 232,
+            "LLM_OUTPUTS": 8
+        }
+    },
+    {
+        "question": "Who is the publisher of Smite ?",
+        "answer": [
+            [
+                "Hi-Rez Studios"
+            ]
+        ],
+        "elapsed": 1.119429588317871,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.1193397045135498,
+            "LLM_INPUTS": 224,
+            "LLM_OUTPUTS": 8
+        }
+    },
+    {
+        "question": "Who wrote the Erlangen program?",
+        "answer": [
+            [
+                "Felix Klein"
+            ]
+        ],
+        "elapsed": 0.9856724739074707,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.9855992794036865,
+            "LLM_INPUTS": 223,
+            "LLM_OUTPUTS": 7
+        }
+    },
+    {
+        "question": "In which country is the Nanga Parbat located?",
+        "answer": [
+            [
+                "Pakistan"
+            ]
+        ],
+        "elapsed": 0.44179511070251465,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.44171571731567383,
+            "LLM_INPUTS": 227,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "who produced Star Wars: Episode VI \u2013 Return of the Jedi?",
+        "answer": [
+            [
+                "George Lucas"
+            ]
+        ],
+        "elapsed": 0.5976018905639648,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5975246429443359,
+            "LLM_INPUTS": 229,
+            "LLM_OUTPUTS": 6
+        }
+    },
+    {
+        "question": "Who was an actor in more movies, Daniel Day Lewis or Paul Dano ?",
+        "answer": [
+            [
+                "Paul Dano"
+            ]
+        ],
+        "elapsed": 0.5767228603363037,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5766294002532959,
+            "LLM_INPUTS": 232,
+            "LLM_OUTPUTS": 7
+        }
+    },
+    {
+        "question": "For what literature prize was Simone de Beauvoir nominated?",
+        "answer": [
+            [
+                "Nobel Prize in Literature"
+            ]
+        ],
+        "elapsed": 0.7777140140533447,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.7776362895965576,
+            "LLM_INPUTS": 227,
+            "LLM_OUTPUTS": 9
+        }
+    },
+    {
+        "question": "What is the website of NPR's \u201cTiny Desk Concert\u201d?",
+        "answer": [
+            [
+                "https://www.npr.org/series/tiny-desk-concerts"
+            ]
+        ],
+        "elapsed": 0.6340634822845459,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.6339707374572754,
+            "LLM_INPUTS": 229,
+            "LLM_OUTPUTS": 19
+        }
+    },
+    {
+        "question": "Who was the creator of Boo-Boo Bear ?",
+        "answer": [
+            [
+                "Michael Maltese"
+            ]
+        ],
+        "elapsed": 0.5551116466522217,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5550341606140137,
+            "LLM_INPUTS": 226,
+            "LLM_OUTPUTS": 7
+        }
+    },
+    {
+        "question": "Who was the creator of Unbreakable Kimmy Schmidt ?",
+        "answer": [
+            [
+                "Tina Fey"
+            ],
+            [
+                "Robert Carlock"
+            ]
+        ],
+        "elapsed": 0.679415225982666,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.6793370246887207,
+            "LLM_INPUTS": 228,
+            "LLM_OUTPUTS": 11
+        }
+    },
+    {
+        "question": "Who was the director of Llamas with Hats ?",
+        "answer": [
+            [
+                "Jason Steele"
+            ]
+        ],
+        "elapsed": 0.5803401470184326,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5802638530731201,
+            "LLM_INPUTS": 227,
+            "LLM_OUTPUTS": 6
+        }
+    },
+    {
+        "question": "Who founded the Roland Corporation?",
+        "answer": [
+            [
+                "Ikutaro Kakehashi"
+            ]
+        ],
+        "elapsed": 0.679311990737915,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.6792435646057129,
+            "LLM_INPUTS": 222,
+            "LLM_OUTPUTS": 11
+        }
+    },
+    {
+        "question": "Who was the original actor who played Pinhead ?",
+        "answer": [
+            [
+                "Doug Bradley"
+            ]
+        ],
+        "elapsed": 0.5335805416107178,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5335049629211426,
+            "LLM_INPUTS": 226,
+            "LLM_OUTPUTS": 6
+        }
+    },
+    {
+        "question": "Who were the parents of Socrates ?",
+        "answer": [
+            [
+                "Sophroniscus",
+                " Phaenarete"
+            ]
+        ],
+        "elapsed": 0.5708327293395996,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5707533359527588,
+            "LLM_INPUTS": 224,
+            "LLM_OUTPUTS": 15
+        }
+    },
+    {
+        "question": "Who wrote Anne of Green Gables ?",
+        "answer": [
+            [
+                "Lucy Maud Montgomery"
+            ]
+        ],
+        "elapsed": 0.971407413482666,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.9713318347930908,
+            "LLM_INPUTS": 224,
+            "LLM_OUTPUTS": 8
+        }
+    },
+    {
+        "question": "Who wrote the poem Howl ?",
+        "answer": [
+            [
+                "Allen Ginsberg"
+            ]
+        ],
+        "elapsed": 0.8031046390533447,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.803025484085083,
+            "LLM_INPUTS": 223,
+            "LLM_OUTPUTS": 8
+        }
+    },
+    {
+        "question": "Who's the author of The Hellbound Heart ?",
+        "answer": [
+            [
+                "Clive Barker"
+            ]
+        ],
+        "elapsed": 0.49968767166137695,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.49961137771606445,
+            "LLM_INPUTS": 226,
+            "LLM_OUTPUTS": 7
+        }
+    },
+    {
+        "question": "Whom did Clara Westhoff marry?",
+        "answer": [
+            [
+                "Rainer Maria Rilke"
+            ]
+        ],
+        "elapsed": 0.9268457889556885,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.9267575740814209,
+            "LLM_INPUTS": 224,
+            "LLM_OUTPUTS": 10
+        }
+    },
+    {
+        "question": "what is the oldest film festival?",
+        "answer": [
+            [
+                "Venice Film Festival"
+            ],
+            [
+                "1932"
+            ]
+        ],
+        "elapsed": 0.5126180648803711,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5125405788421631,
+            "LLM_INPUTS": 223,
+            "LLM_OUTPUTS": 11
+        }
+    },
+    {
+        "question": "When was Athens founded?",
+        "answer": [
+            [
+                "c. 3000 BCE"
+            ]
+        ],
+        "elapsed": 0.4995424747467041,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.4994673728942871,
+            "LLM_INPUTS": 221,
+            "LLM_OUTPUTS": 10
+        }
+    },
+    {
+        "question": "which river is longer, the Seine or Elbe\uff1f",
+        "answer": [
+            [
+                "Elbe"
+            ]
+        ],
+        "elapsed": 0.4872143268585205,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.4871361255645752,
+            "LLM_INPUTS": 227,
+            "LLM_OUTPUTS": 6
+        }
+    },
+    {
+        "question": "which game is created earlier, super mario bros or Pac-Man?",
+        "answer": [
+            [
+                "Pac-Man",
+                "1980"
+            ],
+            [
+                "Super Mario Bros",
+                "1985"
+            ]
+        ],
+        "elapsed": 0.5440535545349121,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.543973445892334,
+            "LLM_INPUTS": 229,
+            "LLM_OUTPUTS": 16
+        }
+    },
+    {
+        "question": "who is the youngested member in g-idle?",
+        "answer": [
+            [
+                "Shuhua"
+            ]
+        ],
+        "elapsed": 1.2158691883087158,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.2158112525939941,
+            "LLM_INPUTS": 227,
+            "LLM_OUTPUTS": 7
+        }
+    },
+    {
+        "question": "who is older, Lionel Messi or Cristiano Ronaldo\uff1f",
+        "answer": [
+            [
+                "Cristiano Ronaldo"
+            ]
+        ],
+        "elapsed": 0.47019410133361816,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.47011613845825195,
+            "LLM_INPUTS": 226,
+            "LLM_OUTPUTS": 7
+        }
+    },
+    {
+        "question": "Is heidelberg university or university hamburg founded earlier?",
+        "answer": [
+            [
+                "Heidelberg University"
+            ]
+        ],
+        "elapsed": 0.4879615306854248,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.4878835678100586,
+            "LLM_INPUTS": 227,
+            "LLM_OUTPUTS": 8
+        }
+    },
+    {
+        "question": "which forest is bigger, Amazon Rainforest or Congo Basin?",
+        "answer": [
+            [
+                "Amazon Rainforest"
+            ]
+        ],
+        "elapsed": 0.5067324638366699,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5066537857055664,
+            "LLM_INPUTS": 228,
+            "LLM_OUTPUTS": 7
+        }
+    },
+    {
+        "question": "Does Samsung Electronics or Apple have more employees?",
+        "answer": [
+            [
+                "Samsung Electronics"
+            ]
+        ],
+        "elapsed": 0.5120000839233398,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5119328498840332,
+            "LLM_INPUTS": 225,
+            "LLM_OUTPUTS": 6
+        }
+    },
+    {
+        "question": "which company is founded later, samsung or sony?",
+        "answer": [
+            [
+                "Samsung"
+            ]
+        ],
+        "elapsed": 0.45868682861328125,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.4586179256439209,
+            "LLM_INPUTS": 226,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "who is taller, Lionel Messi or Cristiano Ronaldo\uff1f",
+        "answer": [
+            [
+                "Cristiano Ronaldo"
+            ]
+        ],
+        "elapsed": 0.5307972431182861,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5307033061981201,
+            "LLM_INPUTS": 226,
+            "LLM_OUTPUTS": 7
+        }
+    },
+    {
+        "question": "who has won more NBA awards, Michael Jordan or Kobe Bean Bryant\uff1f",
+        "answer": [
+            [
+                "Michael Jordan"
+            ]
+        ],
+        "elapsed": 0.4466891288757324,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.44660472869873047,
+            "LLM_INPUTS": 230,
+            "LLM_OUTPUTS": 6
+        }
+    },
+    {
+        "question": "Did Michael Jordan ever weigh more than Kobe Bean Bryant\uff1f",
+        "answer": [
+            [
+                "False"
+            ]
+        ],
+        "elapsed": 0.42873477935791016,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.4286665916442871,
+            "LLM_INPUTS": 227,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "Who is older, Sebastian Vettel or Lewis Hamilton?",
+        "answer": [
+            [
+                "Sebastian Vettel"
+            ]
+        ],
+        "elapsed": 0.9857954978942871,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.9857165813446045,
+            "LLM_INPUTS": 226,
+            "LLM_OUTPUTS": 7
+        }
+    },
+    {
+        "question": "which city is more populated, copenhagen or amsterdam?",
+        "answer": [
+            [
+                "Amsterdam"
+            ]
+        ],
+        "elapsed": 0.4432065486907959,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.4431321620941162,
+            "LLM_INPUTS": 228,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "How many things are part of the \"One Piece\" Franchise?",
+        "answer": [
+            [
+                "6"
+            ]
+        ],
+        "elapsed": 0.5239877700805664,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5239217281341553,
+            "LLM_INPUTS": 229,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "How many fictional female swordfighters are there?",
+        "answer": [
+            [
+                "Unknown"
+            ]
+        ],
+        "elapsed": 0.6129534244537354,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.6128861904144287,
+            "LLM_INPUTS": 225,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "which company started earlier, Black Diamond Equipment or la sportiva?",
+        "answer": [
+            [
+                "La Sportiva",
+                " 1928"
+            ],
+            [
+                "Black Diamond Equipment",
+                " 1957"
+            ]
+        ],
+        "elapsed": 0.566333532333374,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5662636756896973,
+            "LLM_INPUTS": 229,
+            "LLM_OUTPUTS": 19
+        }
+    },
+    {
+        "question": "which desert is bigger, sahara desert or arabian desert?",
+        "answer": [
+            [
+                "Sahara Desert"
+            ]
+        ],
+        "elapsed": 0.4698679447174072,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.46979212760925293,
+            "LLM_INPUTS": 229,
+            "LLM_OUTPUTS": 7
+        }
+    },
+    {
+        "question": "who lives longer, series black or bellatrix Lestrange?",
+        "answer": [
+            [
+                "Bellatrix Lestrange"
+            ]
+        ],
+        "elapsed": 0.5030727386474609,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5029580593109131,
+            "LLM_INPUTS": 229,
+            "LLM_OUTPUTS": 9
+        }
+    },
+    {
+        "question": "What is the area of the great lakes?",
+        "answer": [
+            [
+                "244000 km\u00b2"
+            ]
+        ],
+        "elapsed": 0.6495099067687988,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.6494011878967285,
+            "LLM_INPUTS": 225,
+            "LLM_OUTPUTS": 8
+        }
+    },
+    {
+        "question": "What is native name of the composer of the Japanese national anthem?",
+        "answer": [
+            [
+                "\u672b\u5f18 \u539a\u5a01"
+            ]
+        ],
+        "elapsed": 0.57253098487854,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5724608898162842,
+            "LLM_INPUTS": 229,
+            "LLM_OUTPUTS": 9
+        }
+    },
+    {
+        "question": "Who is the founder of the capital of Vietnam?",
+        "answer": [
+            [
+                "King L\u00fd Th\u00e1i T\u1ed5"
+            ]
+        ],
+        "elapsed": 0.5818302631378174,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5817511081695557,
+            "LLM_INPUTS": 226,
+            "LLM_OUTPUTS": 11
+        }
+    },
+    {
+        "question": "Who is the manager of the operator of Neumayer III?",
+        "answer": [
+            [
+                "Alfred-Wegener-Institut Helmholtz-Zentrum f\u00fcr Polar- und Meeresforschung"
+            ]
+        ],
+        "elapsed": 1.0065374374389648,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.006465196609497,
+            "LLM_INPUTS": 229,
+            "LLM_OUTPUTS": 24
+        }
+    },
+    {
+        "question": "How high is the mountain on which G\u00fcnther Messner died?",
+        "answer": [
+            [
+                "8000 meters"
+            ]
+        ],
+        "elapsed": 1.211686611175537,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.2116203308105469,
+            "LLM_INPUTS": 229,
+            "LLM_OUTPUTS": 7
+        }
+    },
+    {
+        "question": "What is the twitter name of Running Wild?",
+        "answer": [
+            [
+                "@RunningWild_"
+            ]
+        ],
+        "elapsed": 0.48983168601989746,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.48972249031066895,
+            "LLM_INPUTS": 225,
+            "LLM_OUTPUTS": 7
+        }
+    },
+    {
+        "question": "How many times did the Italian national soccer team win the Fifa World Cup?",
+        "answer": [
+            [
+                "4"
+            ]
+        ],
+        "elapsed": 0.5576047897338867,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.557528018951416,
+            "LLM_INPUTS": 232,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "What is the area of the capital of Spitsbergen?",
+        "answer": [
+            [
+                "54"
+            ]
+        ],
+        "elapsed": 0.5720551013946533,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5719845294952393,
+            "LLM_INPUTS": 228,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "What percentage of Andorra is covered with water?",
+        "answer": [
+            [
+                "0.13%"
+            ]
+        ],
+        "elapsed": 0.49507641792297363,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.49500250816345215,
+            "LLM_INPUTS": 226,
+            "LLM_OUTPUTS": 7
+        }
+    },
+    {
+        "question": "How many countries are located around the euorpean Lake Constance?",
+        "answer": [
+            [
+                "3"
+            ]
+        ],
+        "elapsed": 0.43308568000793457,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.4329795837402344,
+            "LLM_INPUTS": 231,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "With how many persons was Richard Burton married?",
+        "answer": [
+            [
+                "5"
+            ]
+        ],
+        "elapsed": 0.5320267677307129,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5319478511810303,
+            "LLM_INPUTS": 225,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "At what coordinates was the \"Sender Teutoburger Wald\" erected?",
+        "answer": [
+            [
+                "51.9991",
+                " 8.4166"
+            ]
+        ],
+        "elapsed": 0.646277904510498,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.646202564239502,
+            "LLM_INPUTS": 231,
+            "LLM_OUTPUTS": 14
+        }
+    },
+    {
+        "question": "Where is the poet Alexander Pope buried?",
+        "answer": [
+            [
+                "St Mary Church",
+                " Twickenham",
+                " London",
+                " England"
+            ]
+        ],
+        "elapsed": 0.8782143592834473,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.878136157989502,
+            "LLM_INPUTS": 224,
+            "LLM_OUTPUTS": 15
+        }
+    },
+    {
+        "question": "In what country is the Kandahar-downhill?",
+        "answer": [
+            [
+                "Afghanistan"
+            ]
+        ],
+        "elapsed": 0.5998191833496094,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.5997312068939209,
+            "LLM_INPUTS": 226,
+            "LLM_OUTPUTS": 6
+        }
+    },
+    {
+        "question": "Who founded the architectural firm who planned the Elbphilharmonie?",
+        "answer": [
+            [
+                "Herzog & de Meuron"
+            ],
+            [
+                "Jacques Herzog"
+            ],
+            [
+                "Pierre de Meuron"
+            ]
+        ],
+        "elapsed": 1.0004267692565918,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.0003387928009033,
+            "LLM_INPUTS": 231,
+            "LLM_OUTPUTS": 20
+        }
+    },
+    {
+        "question": "Where are the founders of the band Metallica from?",
+        "answer": [
+            [
+                "Los Angeles",
+                " California",
+                " USA"
+            ],
+            [
+                "San Francisco",
+                " California",
+                " USA"
+            ]
+        ],
+        "elapsed": 0.7054319381713867,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.7053496837615967,
+            "LLM_INPUTS": 227,
+            "LLM_OUTPUTS": 17
+        }
+    },
+    {
+        "question": "Where does the Granny Smith apple variety come from?",
+        "answer": [
+            [
+                "Australia"
+            ]
+        ],
+        "elapsed": 0.7421736717224121,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 0.7420856952667236,
+            "LLM_INPUTS": 226,
+            "LLM_OUTPUTS": 5
+        }
+    },
+    {
+        "question": "What is the Fujiyama made of?",
+        "answer": [
+            [
+                "Volcanic rock"
+            ],
+            [
+                "Lava"
+            ],
+            [
+                "Ash"
+            ],
+            [
+                "Pumice"
+            ],
+            [
+                "Pyroclastic materials"
+            ]
+        ],
+        "elapsed": 1.030287742614746,
+        "metrics": {
+            "SPARQL_CALLS": 0,
+            "SPARQL_TIME": 0,
+            "LLM_CALLS": 1,
+            "LLM_TIME": 1.030217170715332,
+            "LLM_INPUTS": 225,
+            "LLM_OUTPUTS": 23
+        }
+    }
+]
