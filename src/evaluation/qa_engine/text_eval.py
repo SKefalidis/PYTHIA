@@ -408,7 +408,7 @@ def query_has_results(endpoint_url, query, length = 0):
         query = materialize_query(query)
         results = execute_sparql_query(query, endpoint_url).convert()
         if "boolean" in results:
-            return results["boolean"] # Although this skips ASK queries that return False, it avoids counting queries that have missing triples in our version of the KG.
+            return True # Although this skips ASK queries that return False, it avoids counting queries that have missing triples in our version of the KG.
         else:
             has_anything = len(results["results"]["bindings"]) > 0
             # if length > 0:
