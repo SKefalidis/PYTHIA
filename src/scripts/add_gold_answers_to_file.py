@@ -1,27 +1,22 @@
-from math import e
+import os
 import re
 import json
-import time
-import yaml
-from src.engine.config import CONFIG
-from src.engine.gost_requests import validate_query
-from src.datasets.dataset import Dataset, DatasetFactory
-from src.knowledge_graphs.knowledge_graphs import KnowledgeGraphs
-from src.utils import execute_sparql_query, get_kgaqa_tracker, get_relative_path, endpoints_fill_parse_args
-from src.logging import create_logger, log, LoggingOptions, LogLevel, LogComponent, LogType, logging_fill_parse_args, logging_set_from_args
-from tqdm import tqdm
 import argparse
-import os
 
+from src.config import RUNTIME_SETTINGS
+from src.utils_gost import validate_query
+from src.dataloaders.dataset import Dataset, DatasetFactory
+from src.knowledge_graphs.knowledge_graphs import KnowledgeGraphs
+from src.utils import execute_sparql_query, get_relative_path
+from src.logging import create_logger, log, LoggingOptions, LogLevel, LogComponent, LogType
 
 names_cache = {}  
-
 
 # --------------------------------
 # ----- EVALUATION FUNCTIONS -----
 # --------------------------------
 
-def get_name_query(entity, endpoint_url):
+def get_name_query(entity, kg):
     # print(f"Getting names for entity {entity} from {endpoint_url}")
     
     if not isinstance(entity, str):
@@ -35,7 +30,7 @@ def get_name_query(entity, endpoint_url):
     
     def _run_query(query: str):
         try:
-            results = execute_sparql_query(query, endpoint_url, False).convert()
+            results = execute_sparql_query(query, kg, False).convert()
         except Exception:
             print("Handle error quietly. Returning empty names.")
             return []
@@ -50,35 +45,35 @@ def get_name_query(entity, endpoint_url):
             FILTER(LANG(?name) = "" || LANGMATCHES(LANG(?name), "en"))
     """
 
-    if "freebase" in endpoint_url:
+    if "freebase" in kg.endpoint:
         query = f"""
         SELECT ?name WHERE {{
             <{entity}> <http://rdf.freebase.com/ns/type.object.name> ?name .
             {english_filter}
         }}
         """
-    elif "wikidata" in endpoint_url:
+    elif "wikidata" in kg.endpoint:
         query = f"""
         SELECT ?name WHERE {{
             <{entity}> <http://www.w3.org/2000/01/rdf-schema#label> ?name .
             {english_filter}
         }}
         """
-    elif "dbpedia" in endpoint_url:
+    elif "dbpedia" in kg.endpoint:
         query = f"""
         SELECT ?name WHERE {{
             <{entity}> <http://www.w3.org/2000/01/rdf-schema#label> ?name .
             {english_filter}
         }}
         """
-    elif "beastiary" in endpoint_url or "bestiary" in endpoint_url:
+    elif "beastiary" in kg.endpoint or "bestiary" in kg.endpoint:
         print(entity)
         entity = entity.split("#")[-1]
         print(entity)
         name = re.sub(r'(?<=[a-z0-9])(?=[A-Z])', ' ', entity).lower()
         print(name)
         return [[name]]
-    elif "yago2geo" in endpoint_url:
+    elif "yago2geo" in kg.endpoint:
         query = f"""
         SELECT ?name WHERE {{
             VALUES ?prop {{ <http://yago-knowledge.org/resource/hasName>
@@ -99,18 +94,18 @@ def get_name_query(entity, endpoint_url):
     names = _run_query(query)
 
     # Fallback to any-language label if english-only returned nothing
-    if not names and ("wikidata" in endpoint_url or "dbpedia" in endpoint_url or "freebase" in endpoint_url):
+    if not names and ("wikidata" in kg.endpoint or "dbpedia" in kg.endpoint or "freebase" in kg.endpoint):
         fallback_query = query.replace(english_filter, "")
         names = _run_query(fallback_query)
     
     names_cache[entity] = names
     return names
     
-def run_sparql_query_values_only(endpoint_url, query):
+def run_sparql_query_values_only(kg, query):
     try:
-        results = execute_sparql_query(query, endpoint_url).convert()
+        results = execute_sparql_query(query, kg).convert()
     except Exception as e:
-        log(f"SPARQL query failed for endpoint {endpoint_url}: {e}", LogComponent.KNOWLEDGE_BASE, LogLevel.ERROR, LogType.NORMAL)
+        log(f"SPARQL query failed for endpoint {kg.endpoint}: {e}", LogComponent.KNOWLEDGE_BASE, LogLevel.ERROR, LogType.NORMAL)
         log(f"Query: {query}", LogComponent.KNOWLEDGE_BASE, LogLevel.ERROR, LogType.NORMAL)
         return []
 
@@ -125,15 +120,15 @@ def run_sparql_query_values_only(endpoint_url, query):
         for value in row:
             row_with_names.append(value)
             if value.startswith("http"):
-                names = get_name_query(value, endpoint_url)
+                names = get_name_query(value, kg)
                 if names:
                     row_with_names.append(names[0][0])  # add the first name found
         value_rows.append(tuple(row_with_names))
         # value_rows.append(row)
     return sorted(value_rows)
 
-def get_gold_answer( endpoint_url, gold_query):
-    gold = run_sparql_query_values_only(endpoint_url, gold_query)
+def get_gold_answer(kg, gold_query):
+    gold = run_sparql_query_values_only(kg, gold_query)
     gold_columns = [list(row) for row in zip(*gold)]
     
     return gold, gold_columns
@@ -224,7 +219,7 @@ def augment_file(dataset: Dataset, generated_file_path: str):
             skip_metrics = True
             continue
 
-        gold_answer, gold_answer_columns = get_gold_answer(KG.endpoint, gold_query)
+        gold_answer, gold_answer_columns = get_gold_answer(KG, gold_query)
 
         generated_entry = generated[question]
         # generated_entry['gold_answer'] = gold_answer
@@ -239,6 +234,7 @@ def augment_file(dataset: Dataset, generated_file_path: str):
     log(f"Final saving results and metrics...", LogComponent.QUERY_GENERATOR, LogLevel.INFO, LogType.NORMAL)
     save_to_file(run_results, output_file_path)
 
+
 if __name__ == "__main__":    
     
     # ----------------------------------
@@ -250,15 +246,12 @@ if __name__ == "__main__":
     )
 
     parser.add_argument("--generated_file", type=str, required=True, help="File to add gold answers to.")
-    
     DatasetFactory.fill_parse_args(parser)
-    
-    endpoints_fill_parse_args(parser)
+    RUNTIME_SETTINGS.endpoint_fill_parse_args(parser)
 
     args = parser.parse_args()
     
-    # Initialize configuration with parser arguments
-    CONFIG(args)
+    RUNTIME_SETTINGS.set_from_args(args)
         
     # ------------------------
     # ----- Load Dataset -----
@@ -270,7 +263,7 @@ if __name__ == "__main__":
     # ----- Setup Logging -----
     # -------------------------
 
-    create_logger("SPARQL_EVAL", ".", LoggingOptions.LOG_TO_CONSOLE, LogLevel.INFO)
+    create_logger("ADD_GOLD_ANSWERS", ".", LoggingOptions.LOG_TO_CONSOLE, LogLevel.INFO)
     
     # -----------------------------------------------------
     # ----- Safeguard from overwriting existing files -----

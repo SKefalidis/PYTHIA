@@ -1,0 +1,41 @@
+version: "1.0.0-dev"
+index_dir: "./indices/"
+
+# PYTHIA agent configuration
+agent:
+  # settings
+  settings:
+    max_tokens: 768
+    max_steps: 10
+    automate_last_step: true
+  # prompts
+  prompt:
+    basic_prompt: false
+    basic_relational_prompt: false
+    no_examples_prompt: false
+    grasp_prompt: false
+  # tool ablation options
+  tools:
+    no_find: false
+    no_graph_search: false
+    no_stepwise_search: false
+    no_get_predicates: false
+    no_empty_query_investigation: false
+
+# query database, used for few-shot learning
+qd:
+  top_k: 3
+
+# LLM inference provider
+llm:
+  provider: env(LLM_PROVIDER:openai)
+  model: env(LLM_MODEL:gpt-4.1-mini)
+
+# Graph search configuration
+graph_search:
+  endpoint: env(GRAPH_SEARCH_SERVER:http://localhost:5000)
+  filter_classes: true
+  timeout: null
+  load_on_construction: true  # whether to load the graph search index on construction of the GraphSearchManager.
+                              # alternatively, the graph search index can be loaded manually.
+  crash_on_misconfigured_server: true # whether to crash the program if the graph search server is misconfigured (i.e., does not have the correct graph search index loaded)

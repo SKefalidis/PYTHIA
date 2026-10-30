@@ -1,5 +1,4 @@
 from typing_extensions import override, Optional
-from src.engine.config import CONFIG
 from src.knowledge_graphs.knowledge_graph import KnowledgeGraph
 from src.utils import execute_sparql_query
 
@@ -78,7 +77,7 @@ class CustomKg(KnowledgeGraph):
 
         try:
             for q in (english_query, fallback_query):
-                results = execute_sparql_query(q, self.endpoint).convert()
+                results = execute_sparql_query(q, self).convert()
                 bindings = results.get("results", {}).get("bindings", [])
                 if bindings:
                     # print(bindings)

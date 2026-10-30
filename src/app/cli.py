@@ -1,7 +1,7 @@
 import argparse
-from src.engine.config import CONFIG
+from src.config import CONFIG
 from src.app.app import init_from_args, populate_parser_args, GENERAL_PREFIXES
-from src.utils import execute_sparql_query, return_sparql_query_results
+from src.utils import return_sparql_query_results
 
 
 def run_cli(pythia):

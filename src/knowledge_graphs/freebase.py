@@ -60,7 +60,7 @@ class Freebase(KnowledgeGraph):
         }}
         """    
         try:
-            results = execute_sparql_query(query, self.endpoint).convert()
+            results = execute_sparql_query(query, self).convert()
             if len(results["results"]["bindings"]) > 0:
                 return results["results"]["bindings"][0]["tailEntity"]["value"]
             else:

@@ -2,10 +2,12 @@ from enum import Enum
 from src.knowledge_graphs.knowledge_graph import KgComponent
 from src.knowledge_graphs.wikidata import Wikidata
 from src.knowledge_graphs.freebase import Freebase
-from src.knowledge_graphs.beastiary_kg import BeastiaryKg
+from src.knowledge_graphs.bestiary_kg import Bestiary
 from src.knowledge_graphs.dbpedia_2016_4 import Dbpedia4
 from src.knowledge_graphs.dbpedia_2016_10 import Dbpedia10
 from src.knowledge_graphs.custom_kg import CustomKg
+from src.knowledge_graphs.dbpedia_text2sparql import DbpediaT2S
+from src.knowledge_graphs.corporate_kg import Corporate
 
     
 class KnowledgeGraphs(Enum):
@@ -14,12 +16,26 @@ class KnowledgeGraphs(Enum):
     DBPEDIA = Dbpedia4()
     DBPEDIA10 = Dbpedia10()
     WIKIDATA = Wikidata()
-    BEASTIARY_KG = BeastiaryKg()
+    BESTIARY_KG = Bestiary()
+    T2S_DBPEDIA = DbpediaT2S()
+    CORPORATE_KG = Corporate()
     # CUSTOM = CustomKg() # For any other KG, not specifically supported.
     
     @property
     def endpoint(self):
         return self.value.endpoint
+    
+    @property
+    def endpoint_username(self):
+        return self.value.endpoint_username
+
+    @property
+    def endpoint_password(self):
+        return self.value.endpoint_password
+    
+    @property
+    def graph_search_index(self):
+        return self.value.graph_search_index
     
     @property
     def prefixes(self):
@@ -28,7 +44,7 @@ class KnowledgeGraphs(Enum):
     def get_kg_component(self, uri: str) -> KgComponent | None:
         return self.value.get_kg_component(uri)
     
-    def load(self, knowledge_graph_index_path: str):
+    def load(self, knowledge_graph_index_path: str = ''):
         self.value.load(knowledge_graph_index_path)
     
     def uri_to_uril(self, uri: str):# -> Any:

@@ -35,6 +35,7 @@ def was_cancelled(epoch_snapshot):
     return epoch_snapshot != _cancel_epoch
 
 # CONFIG
+ACTIVE_GRAPH = ''
 GRAPH_FILE = 'graph_encoded.txt'   # Your Java output
 GRAPH_CACHE = 'graph.gt'
 DB_FILE = 'mapping.db'             # Created by step 1
@@ -74,6 +75,7 @@ class GraphExplorer:
         self.g_base = None
 
         # Load basic graph
+        self.loaded_graph = source_dir.split('/')[-1]
         self.loaded_graph_dir = source_dir
         self.filter_classes = filter_classes
         self._load_graph(filter_classes)
@@ -587,7 +589,7 @@ app = Flask(__name__)
 @app.route("/load-graph", methods=["POST"])
 def load_graph_route():
     data = request.get_json(silent=True) or {}
-    source_dir = data.get("source_dir")
+    source_dir = os.path.join(args.indices_dir, data.get("source_dir"))
     filter_classes = data.get("filter_classes")
     if not source_dir:
         return jsonify({"status": "error", "error": "source_dir is required"}), 400
@@ -657,12 +659,24 @@ def cancel_requests_route():
     epoch = trigger_cancellation()
     return jsonify({"status": "ok", "message": "Cancellation signaled", "epoch": epoch})
 
+
+@app.route("/status", methods=["POST"])
+def status_route():
+    with explorer_lock:
+        if explorer is None:
+            return jsonify({"status": "ok", "graph": None})
+        else:
+            return jsonify({
+                "graph": explorer.loaded_graph
+            })
+
 # -----------------------
 # ----- Application -----
 # -----------------------
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Graph Path Explorer (web server or CLI).")
+    parser.add_argument("--indices-dir", type=str, required=False, default='./indices', help="Directory containing graph and database files (default: ./indices).")
     parser.add_argument("--source-dir", type=str, help="Directory containing graph and database files.")
     parser.add_argument("--host", type=str, default="0.0.0.0", help="Host for the web server (default: 0.0.0.0).")
     parser.add_argument("--port", type=int, default=65023, help="Port for the web server (default: 65023).")

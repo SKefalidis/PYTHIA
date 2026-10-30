@@ -2,7 +2,6 @@ from enum import Enum
 import os
 import atexit
 import argparse
-from src.utils import get_relative_path
 
 
 class Colors(Enum):
@@ -252,6 +251,7 @@ def logging_set_from_args(args) -> None:
         log_level = LogLevel.ERROR
     elif "critical" in args.log_level.lower():
         log_level = LogLevel.CRITICAL
-    
+        
+    from src.utils import get_relative_path    
     os.makedirs(get_relative_path(args.logs_dir), exist_ok=True)
     create_logger(args.dataset, args.logs_dir, log_option=log_option, log_level=log_level)

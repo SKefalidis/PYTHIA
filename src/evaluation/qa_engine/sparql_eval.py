@@ -1,21 +1,19 @@
-from math import e
+import os
 import re
 import json
-from src.engine.config import CONFIG
-from src.engine.gost_requests import validate_query
-from src.datasets.dataset import Dataset, DatasetFactory
+
+from src.config import RUNTIME_SETTINGS, PythiaArgParser
+from src.utils_gost import validate_query
+from src.dataloaders.dataset import Dataset, DatasetFactory
 from src.knowledge_graphs.knowledge_graphs import KnowledgeGraphs
-from src.utils import execute_sparql_query, get_kgaqa_tracker, get_relative_path, endpoints_fill_parse_args
-from src.logging import create_logger, log, LoggingOptions, LogLevel, LogComponent, LogType, logging_fill_parse_args, logging_set_from_args
-from tqdm import tqdm
-import argparse
-import os
+from src.utils import execute_sparql_query, get_relative_path
+from src.logging import create_logger, log, LoggingOptions, LogLevel, LogComponent, LogType
 
 
 names_cache = {}  
 
 
-def get_name_query(entity, endpoint_url):
+def get_name_query(entity, kg: KnowledgeGraphs):
     # print(f"Getting names for entity {entity} from {endpoint_url}")
     
     if not isinstance(entity, str):
@@ -29,7 +27,7 @@ def get_name_query(entity, endpoint_url):
     
     def _run_query(query: str):
         try:
-            results = execute_sparql_query(query, endpoint_url, False).convert()
+            results = execute_sparql_query(query, kg, False).convert()
         except Exception:
             print("Handle error quietly. Returning empty names.")
             return []
@@ -44,35 +42,35 @@ def get_name_query(entity, endpoint_url):
             FILTER(LANG(?name) = "" || LANGMATCHES(LANG(?name), "en"))
     """
 
-    if "freebase" in endpoint_url:
+    if "freebase" in kg.endpoint:
         query = f"""
         SELECT ?name WHERE {{
             <{entity}> <http://rdf.freebase.com/ns/type.object.name> ?name .
             {english_filter}
         }}
         """
-    elif "wikidata" in endpoint_url:
+    elif "wikidata" in kg.endpoint:
         query = f"""
         SELECT ?name WHERE {{
             <{entity}> <http://www.w3.org/2000/01/rdf-schema#label> ?name .
             {english_filter}
         }}
         """
-    elif "dbpedia" in endpoint_url:
+    elif "dbpedia" in kg.endpoint:
         query = f"""
         SELECT ?name WHERE {{
             <{entity}> <http://www.w3.org/2000/01/rdf-schema#label> ?name .
             {english_filter}
         }}
         """
-    elif "beastiary" in endpoint_url or "bestiary" in endpoint_url:
+    elif "beastiary" in kg.endpoint or "bestiary" in kg.endpoint:
         print(entity)
         entity = entity.split("#")[-1]
         print(entity)
         name = re.sub(r'(?<=[a-z0-9])(?=[A-Z])', ' ', entity).lower()
         print(name)
         return [[name]]
-    elif "yago2geo" in endpoint_url:
+    elif "yago2geo" in kg.endpoint:
         query = f"""
         SELECT ?name WHERE {{
             VALUES ?prop {{ <http://yago-knowledge.org/resource/hasName>
@@ -93,7 +91,7 @@ def get_name_query(entity, endpoint_url):
     names = _run_query(query)
 
     # Fallback to any-language label if english-only returned nothing
-    if not names and ("wikidata" in endpoint_url or "dbpedia" in endpoint_url or "freebase" in endpoint_url):
+    if not names and ("wikidata" in kg.endpoint or "dbpedia" in kg.endpoint or "freebase" in kg.endpoint):
         fallback_query = query.replace(english_filter, "")
         names = _run_query(fallback_query)
     
@@ -105,11 +103,11 @@ def get_name_query(entity, endpoint_url):
 # ----- EVALUATION FUNCTIONS -----
 # --------------------------------
     
-def run_sparql_query_values_only(endpoint_url, query):
+def run_sparql_query_values_only(kg: KnowledgeGraphs, query: str):
     try:
-        results = execute_sparql_query(query, endpoint_url).convert()
+        results = execute_sparql_query(query, kg).convert()
     except Exception as e:
-        log(f"SPARQL query failed for endpoint {endpoint_url}: {e}", LogComponent.KNOWLEDGE_BASE, LogLevel.ERROR, LogType.NORMAL)
+        log(f"SPARQL query failed for endpoint {kg.endpoint}: {e}", LogComponent.KNOWLEDGE_BASE, LogLevel.ERROR, LogType.NORMAL)
         log(f"Query: {query}", LogComponent.KNOWLEDGE_BASE, LogLevel.ERROR, LogType.NORMAL)
         return []
 
@@ -135,7 +133,7 @@ def run_sparql_query_values_only(endpoint_url, query):
                 for value in row:
                     row_with_names.append(value)
                     if value.startswith("http"):
-                        names = get_name_query(value, endpoint_url)
+                        names = get_name_query(value, kg)
                         if names:
                             try:
                                 row_with_names.append(names[0][0])  # add the first name found
@@ -154,14 +152,14 @@ def run_sparql_query_values_only(endpoint_url, query):
 
     return sorted(padded_value_rows)
 
-def compare_queries_loose(endpoint_url, query, gold_query, answer=None, gold_answer=None):
+def compare_queries_loose(kg: KnowledgeGraphs, query: str, gold_query: str, answer=None, gold_answer=None):
     if answer is None:
-        predicted = run_sparql_query_values_only(endpoint_url, query)
+        predicted = run_sparql_query_values_only(kg, query)
     else:
         predicted = answer
 
     if gold_answer is None:
-        gold = run_sparql_query_values_only(endpoint_url, gold_query)
+        gold = run_sparql_query_values_only(kg, gold_query)
     else:
         gold = gold_answer
     
@@ -234,9 +232,9 @@ def compute_metrics(tp: int, fp: int, fn: int):
                  if (precision + recall) else 0.0)
     return {"precision": precision, "recall": recall, "f1": f1}
 
-def query_has_results(endpoint_url, query, length = 0):
+def query_has_results(kg: KnowledgeGraphs, query: str, length = 0):
     try:
-        results = execute_sparql_query(query, endpoint_url).convert()
+        results = execute_sparql_query(query, kg).convert()
         if "boolean" in results:
             return True #results["boolean"]
         else:
@@ -248,7 +246,7 @@ def query_has_results(endpoint_url, query, length = 0):
             return has_anything # and has_less_than
     except Exception as e:
         # print(f"SPARQL query failed for endpoint {endpoint_url}: {e}")
-        log(f"SPARQL query failed for endpoint {endpoint_url}: {e}", LogComponent.KNOWLEDGE_BASE, LogLevel.ERROR, LogType.NORMAL)
+        log(f"SPARQL query failed for endpoint {kg.endpoint}: {e}", LogComponent.KNOWLEDGE_BASE, LogLevel.ERROR, LogType.NORMAL)
         log(f"Query: {query}", LogComponent.KNOWLEDGE_BASE, LogLevel.ERROR, LogType.NORMAL)
         return False
     
@@ -395,7 +393,7 @@ def evaluate_generated_file(dataset: Dataset, generated_file_path: str, end_idx:
             skip_metrics = True
             continue
 
-        if query_has_results(KG.endpoint, gold_query) == False:
+        if query_has_results(KG, gold_query) == False:
             log(f"Empty gold query: {gold_query}", LogComponent.QUERY_GENERATOR, LogLevel.INFO, LogType.NORMAL)
             metrics["empty_gold_queries"] += 1
             skip_metrics = True
@@ -436,7 +434,7 @@ def evaluate_generated_file(dataset: Dataset, generated_file_path: str, end_idx:
             log(f"Gold query: {gold_query}", LogComponent.OTHER, LogLevel.APPLICATION, LogType.GOLD)
             log(f"Generated query: {query}", LogComponent.OTHER, LogLevel.APPLICATION, LogType.NORMAL)
 
-            tp, fp, fn, hits_at_1, hits, lax_hits, laxxer_hits = compare_queries_loose(KG.endpoint, query, gold_query, answer=answer, gold_answer=gold_answer)
+            tp, fp, fn, hits_at_1, hits, lax_hits, laxxer_hits = compare_queries_loose(KG, query, gold_query, answer=answer, gold_answer=gold_answer)
 
             if tp > 0 and fp == 0 and fn == 0:
                 log(f"✅ Correct: {question}", LogComponent.OTHER, LogLevel.APPLICATION, LogType.NORMAL)
@@ -522,23 +520,20 @@ if __name__ == "__main__":
     # ----- Command Line Arguments -----
     # ----------------------------------
     
-    parser = argparse.ArgumentParser(
+    parser = PythiaArgParser(
         description="Perform evaluation for generated file."
     )
+    
+    DatasetFactory.fill_parse_args(parser)
 
     parser.add_argument("--generated_file", type=str, required=True, help="Path to the generated file containing SPARQL queries and/or answers.")
     parser.add_argument("--file_name", type=str, required=False, help="Used for directory input.")
     parser.add_argument("--end_idx", type=int, default=-1, help="Used to limit number of questions processed.")
     parser.add_argument("--disable_labels", action="store_true", help="Disable fetching labels for URIs in SPARQL results. This can speed up evaluation significantly, but results will be less interpretable.")
-    
-    DatasetFactory.fill_parse_args(parser)
-    
-    endpoints_fill_parse_args(parser)
+
+    RUNTIME_SETTINGS.endpoint_fill_parse_args(parser)
 
     args = parser.parse_args()
-    
-    # Initialize configuration with parser arguments
-    CONFIG(args)
         
     # ------------------------
     # ----- Load Dataset -----

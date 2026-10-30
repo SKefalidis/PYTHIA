@@ -1,7 +1,6 @@
 import argparse
-from src.datasets.dataset import DatasetFactory
-from src.elelem.provider import ProviderFactory
-from src.utils import LogLevel, endpoints_fill_parse_args
+from src.dataloaders.dataset import DatasetFactory
+from src.utils import LogLevel, endpoints_fill_parse_args, llm_fill_parse_args
 from src.logging import create_logger
 from src.knowledge_graphs.knowledge_graphs import KnowledgeGraphs
 
@@ -59,7 +58,7 @@ def populate_parser_args(parser: argparse.ArgumentParser) -> argparse.ArgumentPa
         help="Whether to execute SPARQL queries against the endpoint instead of just returning them.",
     )
     
-    ProviderFactory.fill_parse_args(parser)
+    llm_fill_parse_args(parser)
     endpoints_fill_parse_args(parser)
     
     return parser
@@ -75,8 +74,8 @@ def init_from_args(args):
         from src.engine.agent.agent_limited import AgentLimited
         pythia = AgentLimited(target_kg, args.kg_index_name, args.dataset_name, args.dataset_path)
     elif args.pythia_system == "agentic":
-        from src.engine.agent.agent_tools import AgentWithTools
-        pythia = AgentWithTools(target_kg, args.kg_index_name, args.dataset_name, args.dataset_path)
+        from src.engine.agent.agent_tools import PythiaAgent
+        pythia = PythiaAgent(target_kg, args.kg_index_name, args.dataset_name, args.dataset_path)
     else:
         raise ValueError(f"Unknown Pythia system: {args.pythia_system}")
     return pythia

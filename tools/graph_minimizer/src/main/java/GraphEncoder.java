@@ -82,7 +82,7 @@ public class GraphEncoder {
                 RDFDataMgr.parse(encoder, input.getAbsolutePath());
             } else if (input.isDirectory()) {
                 try (Stream<Path> paths = Files.list(Paths.get(inputPath))) {
-                    paths.filter(p -> p.toString().endsWith(".nt"))
+                    paths.filter(p -> p.toString().matches(".*\\.(nt|ttl|bz2)"))
                          .sorted() // Deterministic order
                          .forEach(path -> {
                              System.out.println("Parsing: " + path.getFileName());

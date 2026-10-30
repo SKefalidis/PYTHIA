@@ -1,0 +1,3 @@
+# application options
+general:
+  execute_sparql: true # whether to execute SPARQL queries against the endpoint instead of just returning them

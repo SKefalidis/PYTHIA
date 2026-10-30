@@ -6,20 +6,18 @@ import os
 from tqdm import tqdm
 from datetime import datetime
 
-from src.knowledge_graphs.knowledge_graphs import KnowledgeGraphs
-from src.elelem.provider import ProviderFactory
-from src.engine.config import CONFIG
+from src.config import CONFIG
 from src.utils import Similarity, endpoints_fill_parse_args, get_relative_path
 from src.logging import LoggingOptions, create_logger
-from src.engine.entity_linking.gold_entity_identifier import GoldEntityLinker
-from src.datasets.lc_quad_1_dataset import LcQuad1Dataset
-from src.datasets.beastiary_dataset import BeastiaryDataset
-from src.datasets.qald10_dataset import Qald10Dataset
-from src.datasets.qald9_dataset import Qald9Dataset
-from src.datasets.cwq_dataset import CwqDataset
-from src.datasets.webqsp_dataset import WebQSPDataset
-from src.datasets.graphquestions_dataset import GraphQuestionsDataset
-from src.datasets.grailqa_dataset import GrailQaDataset
+from src.linking.entity_linking.gold_entity_linker import GoldEntityLinker
+from src.dataloaders.lc_quad_1_dataset import LcQuad1Dataset
+from src.dataloaders.beastiary_dataset import BeastiaryDataset
+from src.dataloaders.qald10_dataset import Qald10Dataset
+from src.dataloaders.qald9_dataset import Qald9Dataset
+from src.dataloaders.cwq_dataset import CwqDataset
+from src.dataloaders.webqsp_dataset import WebQSPDataset
+from src.dataloaders.graphquestions_dataset import GraphQuestionsDataset
+from src.dataloaders.grailqa_dataset import GrailQaDataset
 from src.evaluation.evaluator import Evaluator
 
 
@@ -153,34 +151,34 @@ if __name__ == '__main__':
             # ----- Prepare model -----
             prediction_func = None
             if model == 'BELA':
-                from src.engine.entity_linking.bela_linker import Bela
+                from src.linking.entity_linking.bela_linker import Bela
                 # if bela_spec is None:
                 #     print("BELA is not installed. Skipping evaluation for BELA.")
                 #     continue
                 identifier = Bela(dataset.get_knowledge_graph())
             elif model == 'BM25':
-                from src.engine.index_retrievers.index_retrievers import Bm25IndexRetriever
+                from src.core.tools.direct_retrieval.index_retrievers.index_retrievers import Bm25IndexRetriever
                 index_path = os.path.join(CONFIG().get("index_dir", ""), index_name, 'entities_index_bm25')
                 identifier = Bm25IndexRetriever(index_path, k_value, threshold=0.0)
             elif model == 'BM25-LABELS':
-                from src.engine.index_retrievers.index_retrievers import Bm25IndexRetriever
+                from src.core.tools.direct_retrieval.index_retrievers.index_retrievers import Bm25IndexRetriever
                 index_path = os.path.join(CONFIG().get("index_dir", ""), index_name, 'entities_labels_index_bm25')
                 identifier = Bm25IndexRetriever(index_path, k_value, threshold=0.0)
             elif model == 'SIMSTRING-JW':
-                from src.engine.index_retrievers.index_retrievers import SimstringIndexRetriever
+                from src.core.tools.direct_retrieval.index_retrievers.index_retrievers import SimstringIndexRetriever
                 index_path = os.path.join(CONFIG().get("index_dir", ""), index_name, 'entities_labels_index_simstring')
                 print(index_path)
                 identifier = SimstringIndexRetriever(index_path, k_value, Similarity.JARO_WINKLER)
             elif model == 'SIMSTRING-LV':
-                from src.engine.index_retrievers.index_retrievers import SimstringIndexRetriever
+                from src.core.tools.direct_retrieval.index_retrievers.index_retrievers import SimstringIndexRetriever
                 index_path = os.path.join(CONFIG().get("index_dir", ""), index_name, 'entities_labels_index_simstring')
                 identifier = SimstringIndexRetriever(index_path, k_value, Similarity.LEVENSHTEIN)
             elif model == 'SIMSTRING-COS':
-                from src.engine.index_retrievers.index_retrievers import SimstringIndexRetriever
+                from src.core.tools.direct_retrieval.index_retrievers.index_retrievers import SimstringIndexRetriever
                 index_path = os.path.join(CONFIG().get("index_dir", ""), index_name, 'entities_labels_index_simstring')
                 identifier = SimstringIndexRetriever(index_path, k_value, Similarity.COSINE)
             elif model == 'FAISS':
-                from src.engine.index_retrievers.index_retrievers import FaissIndexRetriever
+                from src.core.tools.direct_retrieval.index_retrievers.index_retrievers import FaissIndexRetriever
                 index_path = os.path.join(CONFIG().get("index_dir", ""), index_name, 'entities_full_index_faiss')
                 identifier = FaissIndexRetriever(index_path, k_value)
             else:

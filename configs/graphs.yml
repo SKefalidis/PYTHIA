@@ -1,0 +1,26 @@
+wikidata:
+  rdf_store_endpoint_configuration: env(WD_ENDPOINT:wikidata-graphdb)
+  structural_index: env(WD_STRUCTURAL_INDEX:wikidata)
+  search_index: env(WD_SEARCH_INDEX:wikidata)
+
+# DBpedia (04/2016)
+dbpedia4:
+  rdf_store_endpoint_configuration: env(DB4_ENDPOINT:dbpedia4-graphdb)
+  structural_index: env(DB4_STRUCTURAL_INDEX:dbpedia4)
+  search_index: env(DB4_SEARCH_INDEX:dbpedia2016)
+
+# DBpedia (10/2016)
+dbpedia10:
+  rdf_store_endpoint_configuration: env(DB10_ENDPOINT:dbpedia10-graphdb)
+  structural_index: env(DB10_STRUCTURAL_INDEX:dbpedia10)
+  search_index: env(DB10_SEARCH_INDEX:dbpedia10)
+
+freebase:
+  rdf_store_endpoint_configuration: env(FB_ENDPOINT:freebase-graphdb)
+  structural_index: env(FB_STRUCTURAL_INDEX:freebase)
+  search_index: env(FB_SEARCH_INDEX:freebase)
+
+bestiary:
+  rdf_store_endpoint_configuration: env(BST_ENDPOINT:bestiary-graphdb)
+  structural_index: env(BST_STRUCTURAL_INDEX:bestiary)
+  search_index: env(BST_SEARCH_INDEX:bestiary)

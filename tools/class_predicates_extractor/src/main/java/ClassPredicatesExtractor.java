@@ -261,7 +261,7 @@ public class ClassPredicatesExtractor {
         System.out.println("Output written to " + outputFile);
 
         // Also write filtered popularity counts (outgoing excluding literals), same format
-        Path filteredOutput = Paths.get(outputFile.toString() + ".no_literals");
+        Path filteredOutput = Paths.get(outputFile.toString().replace(".tsv", "_no_literals.tsv"));
         try (BufferedWriter writer = Files.newBufferedWriter(filteredOutput)) {
             for (var classObj : classes.values()) {
                 class Row { String direction; String predicate; long count; Row(String d, String p, long c){ this.direction=d; this.predicate=p; this.count=c; } }
@@ -312,13 +312,14 @@ public class ClassPredicatesExtractor {
                 processTypeTriple(triple, entitiesToClassMap);
             }
 
-            @Override public void start() {}
             @Override public void quad(Quad quad) {
                 // Treat quads as triples by ignoring the graph component
                 if (quad != null) {
                     processTypeTriple(quad.asTriple(), entitiesToClassMap);
                 }
             }
+
+            @Override public void start() {}
             @Override public void base(String base) {}
             @Override public void prefix(String prefix, String iri) {}
             @Override public void finish() {}
@@ -326,10 +327,6 @@ public class ClassPredicatesExtractor {
 
         RDFParser.source(file.toString())
             .lang(Lang.NTRIPLES)
-            .parse(processor);
-
-        RDFParser.source(file.toString())
-            .lang(Lang.NQUADS)
             .parse(processor);
 
         System.out.println("Finished processing file: " + file + " in " + (System.currentTimeMillis() - time) + " ms");
@@ -414,8 +411,15 @@ public class ClassPredicatesExtractor {
                     }
                 }
             }
+
+            @Override 
+            public void quad(Quad quad) {
+                if (quad != null) {
+                    triple(quad.asTriple());
+                }
+            }
+            
             @Override public void start() {}
-            @Override public void quad(Quad quad) {}
             @Override public void base(String base) {}
             @Override public void prefix(String prefix, String iri) {}
             @Override public void finish() {}

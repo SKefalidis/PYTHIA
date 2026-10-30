@@ -3,16 +3,13 @@ import sys
 import json
 import argparse
 import tempfile
-from typing import Any, Dict, List
-
 import requests
-from scipy.special import entr
+
+from typing import Any, Dict, List
 from tqdm import tqdm
 
-from src.datasets.dataset import DatasetFactory
-from src.utils import execute_sparql_query
-
-from src.logging import create_logger, create_console_logger
+from src.dataloaders.dataset import DatasetFactory
+from src.logging import create_console_logger
 
 def atomic_write(filepath: str, data: Any, mode: str = "w") -> None:
     """Atomically write JSON data to filepath."""
@@ -70,58 +67,6 @@ def extract_metrics(resp: Dict[str, Any]) -> Dict[str, Any]:
     if isinstance(output, dict) and isinstance(output.get("metrics"), dict):
         return output["metrics"]
     return {}
-
-
-def run_sparql_query_values_only(endpoint_url: str, query: str | None) -> List[tuple]:
-    if not query:
-        return []
-    try:
-        results = execute_sparql_query(query, endpoint_url).convert()
-    except Exception as e:
-        print("Error executing SPARQL query:", e)
-        return []
-
-    if "boolean" in results:
-        return [[results["boolean"]]]
-
-    value_rows = []
-    for binding in results.get("results", {}).get("bindings", []):
-        row = tuple(v.get("value") for v in binding.values())
-        value_rows.append(row)
-    return sorted(value_rows)
-
-
-def compare_queries_loose(endpoint_url: str, query: str | None, gold_query: str | None) -> tuple[int, int, int, int]:
-    predicted = run_sparql_query_values_only(endpoint_url, query)
-    gold = run_sparql_query_values_only(endpoint_url, gold_query)
-
-    print("Predicted Results:", predicted)
-    print("Gold Results:", gold)
-
-    if not predicted or not gold:
-        return 0, len(predicted), len(gold), 0
-
-    predicted_columns = [list(row) for row in zip(*predicted)]
-    gold_columns = [list(row) for row in zip(*gold)]
-
-    best_tp, best_fp, best_fn = 0, 0, 0
-    for i in predicted_columns:
-        for j in gold_columns:
-            tp = len(set(i) & set(j))
-            fp = len(set(i) - set(j))
-            fn = len(set(j) - set(i))
-            if tp > best_tp: # FIXME: bug, does not count fp/fn correctly if tp is always 0, but it does not affect the metrics, so we ignore it for now
-                best_tp, best_fp, best_fn = tp, fp, fn
-
-    hits_at_1 = 0
-    for i in predicted[0]:
-        for j in gold_columns:
-            if i in j:
-                hits_at_1 = 1
-
-    print(f"Comparison - TP: {best_tp}, FP: {best_fp}, FN: {best_fn}, Hits@1: {hits_at_1}")
-
-    return best_tp, best_fp, best_fn, hits_at_1
 
 
 def compute_metrics(tp: int, fp: int, fn: int) -> Dict[str, float]:
@@ -283,7 +228,7 @@ def main() -> None:
     examples_db = None
     if args.examples and args.examples_dataset and args.examples_dataset_path:
         examples_dataset = DatasetFactory.create_dataset(args.examples_dataset, args.examples_dataset_path)
-        from src.engine.qa.query_generator.query_db import QueryDb
+        from src.query_index.query_db import QueryDb
         examples_db = QueryDb(examples_dataset) 
     elif args.examples:
         print("Examples dataset and path must be provided when --examples is set.")

@@ -5,7 +5,7 @@ import json
 
 # from src.utils import vllm_get_available_model
 from src.evaluation.evaluatable import Evaluatable
-from src.datasets.dataset import Dataset
+from src.dataloaders.dataset import Dataset
 
 class Evaluator:
     def __init__(self, task: str, model: Evaluatable, dataset: Dataset, gold_func, prediction_func = None):

@@ -25,8 +25,8 @@ $P/indices/
 
 Pre-built indices are currently available for:
 
-- [BESTIARY](https://figshare.com/s/e7d594a86683f20bfdf2)
-- [DBpedia (October 2016)](https://figshare.com/s/e7d594a86683f20bfdf2)
-- [Freebase](https://figshare.com/s/e7d594a86683f20bfdf2)
-
-*Note: Availability is limited due to Figshare size constraints (used for anonymous review).*
+- [BESTIARY](https://ai.di.uoa.gr/file-server/pythia/indices/bestiary.tar.xz)
+- [DBpedia (October 2016)](https://ai.di.uoa.gr/file-server/pythia/indices/dbpedia10.tar.xz)
+- [DBpedia (April 2016)](https://ai.di.uoa.gr/file-server/pythia/indices/dbpedia2016.tar.xz)
+- [Wikidata](https://ai.di.uoa.gr/file-server/pythia/indices/wikidata.tar.xz)
+- [Freebase](https://ai.di.uoa.gr/file-server/pythia/indices/freebase.tar.xz)

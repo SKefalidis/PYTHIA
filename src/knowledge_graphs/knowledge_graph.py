@@ -10,8 +10,8 @@ from abc import ABC, abstractmethod
 from typing import List, Optional, Dict
 
 # Assuming these exist in your project structure
-from src.engine.config import CONFIG
-from src.utils import is_uri, read_configuration, execute_sparql_query
+from src.config import GRAPH_CONFIGURATIONS, RUNTIME_SETTINGS, GENERAL_SETTINGS
+from src.utils import is_uri, execute_sparql_query
 
 from src.logging import log, LogComponent, LogLevel, LogType
 from src.metrics import get_kgaqa_tracker
@@ -212,12 +212,12 @@ class KgEntity(KgComponent):
     Extension of KgComponent for entities that fetches predicate details on demand.
     """
     
-    def get_predicates(self, sparql_endpoint: str, filter_literals: bool, limit: int = 0) -> List[PredicateInfo]:
-        return self.get_predicates_for_entity(self.uri, sparql_endpoint, filter_literals, limit)
+    def get_predicates(self, kg, filter_literals: bool, limit: int = 0) -> List[PredicateInfo]:
+        return self.get_predicates_for_entity(self.uri, kg, filter_literals, limit)
     
     @classmethod
     @lru_cache(maxsize=256)
-    def get_predicates_for_entity(cls, uri: str, sparql_endpoint: str, filter_literals: bool, limit: int = 0) -> List[PredicateInfo]:
+    def get_predicates_for_entity(cls, uri: str, kg, filter_literals: bool, limit: int = 0) -> List[PredicateInfo]:
         start_time = time.time()
         if not filter_literals:
             query = f"""
@@ -260,7 +260,7 @@ class KgEntity(KgComponent):
         
         try:
             print("Executing SPARQL query to get distinct predicates with limit =", limit)
-            query_result = execute_sparql_query(query, sparql_endpoint)
+            query_result = execute_sparql_query(query, kg)
             results = query_result.convert()
         except Exception as e:
             print("Error executing SPARQL query:", e)
@@ -380,10 +380,10 @@ class KgClass(KgComponent):
 class KnowledgeGraph(ABC):
     
     def __init__(self):
-        self.config = read_configuration("_config.yaml")
         self.db_path = None
         self.conn = None
-        self.index_path = None
+        
+        self._index_path = None
         
         self._class_cache = {}
         self._entity_cache = {}
@@ -438,17 +438,52 @@ class KnowledgeGraph(ABC):
 
         c.execute("CREATE TABLE IF NOT EXISTS uril_mappings (uri_id INTEGER PRIMARY KEY, uril_id INTEGER)")
         self.conn.commit()
+        
+    @property
+    def index_path(self):
+        if self._index_path is None:
+            raise ValueError("Knowledge graph index path is not set. Please load the knowledge graph first with the 'load' method.")
+        return self._index_path
 
     @property
     def endpoint(self):
-        endpoint_server: str|None = CONFIG().get("endpoint_server")
-        if endpoint_server == None:
-            raise ValueError("Endpoint server not configured. Please set 'endpoint_server' in the configuration.")
-        if endpoint_server.startswith("http://") or endpoint_server.startswith("https://"):
-            return endpoint_server
-        if self.__class__.__name__.lower() in self.config: # use default endpoint from KG config if available
-            return f"http://{endpoint_server}/repositories/" + self.config[self.__class__.__name__.lower()]['default_graphdb_endpoint']
-        raise ValueError(f"Invalid endpoint server configuration: {endpoint_server}")
+        if RUNTIME_SETTINGS.rdf_endpoint_url:
+            return RUNTIME_SETTINGS.rdf_endpoint_url
+        if self.__class__.__name__.lower() in GRAPH_CONFIGURATIONS: # use default endpoint from KG config if available
+            return GRAPH_CONFIGURATIONS[self.__class__.__name__.lower()].get_full_endpoint()
+        raise ValueError(f"No endpoint URL found for {self.__class__.__name__}. Please set it in the configuration or runtime settings.")
+        
+    @property
+    def endpoint_username(self):
+        if RUNTIME_SETTINGS.rdf_endpoint_username:
+            return RUNTIME_SETTINGS.rdf_endpoint_username
+        if self.__class__.__name__.lower() in GRAPH_CONFIGURATIONS:
+            return GRAPH_CONFIGURATIONS[self.__class__.__name__.lower()].get_endpoint_configuration().username
+        raise ValueError(f"No endpoint username found for {self.__class__.__name__}. Please set it in the configuration or runtime settings.")
+        
+    @property
+    def endpoint_password(self):
+        if RUNTIME_SETTINGS.rdf_endpoint_password:
+            return RUNTIME_SETTINGS.rdf_endpoint_password
+        if self.__class__.__name__.lower() in GRAPH_CONFIGURATIONS:
+            return GRAPH_CONFIGURATIONS[self.__class__.__name__.lower()].get_endpoint_configuration().password
+        raise ValueError(f"No endpoint password found for {self.__class__.__name__}. Please set it in the configuration or runtime settings.")
+    
+    @property
+    def structural_index(self):
+        if RUNTIME_SETTINGS.structural_index:
+            return RUNTIME_SETTINGS.structural_index
+        if self.__class__.__name__.lower() in GRAPH_CONFIGURATIONS:
+            return GRAPH_CONFIGURATIONS[self.__class__.__name__.lower()].structural_index
+        raise ValueError(f"No structural index found for {self.__class__.__name__}. Please set it in the configuration.")
+    
+    @property
+    def graph_search_index(self):
+        if RUNTIME_SETTINGS.search_index:
+            return RUNTIME_SETTINGS.search_index
+        if self.__class__.__name__.lower() in GRAPH_CONFIGURATIONS:
+            return GRAPH_CONFIGURATIONS[self.__class__.__name__.lower()].search_index
+        raise ValueError(f"No search index found for {self.__class__.__name__}. Please set it in the configuration.")
         
     @property
     def prefixes(self):
@@ -458,7 +493,7 @@ class KnowledgeGraph(ABC):
     def prefixes_map(self) -> Dict[str, str]:
         prefix_map = {}
         for line in self.prefixes.strip().split("\n"):
-            match = re.match(r'PREFIX\s+(\w+):\s+<([^>]+)>', line)
+            match = re.match(r'\s*PREFIX\s+(\w+):\s+<([^>]+)>', line)
             if match:
                 prefix, uri = match.groups()
                 prefix_map[prefix] = uri
@@ -505,6 +540,33 @@ class KnowledgeGraph(ABC):
         else:
             raise ValueError(f"Unknown KgComponentType: {type_str} for URI: {uri}")
         
+    def get_kg_components(self) -> List[KgComponent]:
+        if not self.conn:
+            raise Exception("Database not connected. Have you loaded the knowledge graph?")
+        cursor = self.conn.execute("SELECT id, type, label, description, out_c, in_c FROM nodes")
+        components = []
+        for row in cursor.fetchall():
+            uri_id, type_str, label, desc, out_c, in_c = row
+            if type_str == KgComponentType.CLASS.value:
+                components.append(KgClass(self.conn, uri_id, type_str, label, desc, out_c, in_c))
+            elif type_str == KgComponentType.ENTITY.value:
+                components.append(KgEntity(self.conn, uri_id, type_str, label, desc, out_c, in_c))
+            elif type_str == KgComponentType.PREDICATE.value:
+                components.append(KgComponent(self.conn, uri_id, type_str, label, desc, out_c, in_c))
+            else:
+                raise ValueError(f"Unknown KgComponentType: {type_str} for URI ID: {uri_id}")
+        return components
+    
+    def get_classes(self) -> List[KgClass]:
+        if not self.conn:
+            raise Exception("Database not connected. Have you loaded the knowledge graph?")
+        cursor = self.conn.execute("SELECT id, type, label, description, out_c, in_c FROM nodes WHERE type = ?", (KgComponentType.CLASS.value,))
+        classes = []
+        for row in cursor.fetchall():
+            uri_id, type_str, label, desc, out_c, in_c = row
+            classes.append(KgClass(self.conn, uri_id, type_str, label, desc, out_c, in_c))
+        return classes
+
     def is_class(self, node: str):
         if node in self._class_cache:
             return self._class_cache[node]
@@ -542,16 +604,19 @@ class KnowledgeGraph(ABC):
     
     # --- LOADING LOGIC ---
 
-    def load(self, knowledge_graph_index_path: str):
+    def load(self, knowledge_graph_index_path: str = ""):
         # Connect immediately to enable lookups
-        print(f"Loading knowledge graph from index at: {knowledge_graph_index_path}")
-        self.index_path = knowledge_graph_index_path
-        self.db_path = os.path.join(knowledge_graph_index_path, "kg_database.sqlite3")
+        if knowledge_graph_index_path:
+            self._index_path = knowledge_graph_index_path
+        else:
+            self._index_path = os.path.join(GENERAL_SETTINGS.index_dir, self.structural_index)
+        print(f"Loading knowledge graph from index at: {self.index_path}")
+        self.db_path = os.path.join(self.index_path, "kg_database.sqlite3")
         
         # 1. Check if DB exists and has data
         self._connect_db()
         try:
-            count = self.conn.execute("SELECT count(*) FROM nodes").fetchone()[0]
+            count = self.conn.execute("SELECT 1 FROM nodes LIMIT 1").fetchone()[0]
             if count > 0:
                 print("Knowledge graph already loaded.")
                 return
@@ -570,7 +635,7 @@ class KnowledgeGraph(ABC):
         self.conn.execute("PRAGMA locking_mode = EXCLUSIVE")
         self.conn.execute("PRAGMA temp_store = MEMORY")
         
-        self._import_data_optimized(knowledge_graph_index_path)
+        self._import_data_optimized(self.index_path)
         
         # 3. RESTORE SAFETY
         self.conn.execute("PRAGMA journal_mode = WAL")
@@ -588,6 +653,17 @@ class KnowledgeGraph(ABC):
 
     def _import_data_optimized(self, path: str):
         c = self.conn.cursor()
+        
+        # --- PHASE 0: PREPARE FILES ---
+        tsv_path = os.path.join(path, "all.tsv")
+        if not os.path.exists(tsv_path):
+            raise FileNotFoundError(f"Main KG index input not found at: {tsv_path}")
+        
+        if not os.path.exists(os.path.join(path, "classes_predicates.tsv")):
+            raise FileNotFoundError(f"Predicates index input not found at: {os.path.join(path, 'classes_predicates.tsv')}")
+    
+        if not os.path.exists(os.path.join(path, "classes_predicates_no_literals.tsv")):
+            raise FileNotFoundError(f"Predicates (no literals) index input not found at: {os.path.join(path, 'classes_predicates_no_literals.tsv')}")
         
         # --- PHASE 1: INIT TABLES (NO INDICES YET) ---
         print("[1/5] Creating Tables...")
@@ -618,8 +694,6 @@ class KnowledgeGraph(ABC):
         print("[2/5] Harvesting Strings (Memory Intensive)...")
         unique_strings = set()
         
-        tsv_path = os.path.join(path, "all.tsv")
-        
         # Helper to read TSV safely
         def valid_rows(p, min_cols):
             if not os.path.exists(p): return
@@ -641,6 +715,7 @@ class KnowledgeGraph(ABC):
                 print(f"      Processed {progress:,} nodes...", end="\r")
 
         # Scan predicates files
+        # TODO: Isn't this safe to remove? Since we already scanned nodes, we should have all predicates and classes in the strings set. But let's keep it for now.
         progress = 0
         print(f"    Scanning predicates...")
         for fname in ["classes_predicates.tsv", "classes_predicates_no_literals.tsv"]:
@@ -814,7 +889,7 @@ class KnowledgeGraph(ABC):
         log(f"are_triples_valid: {query}", LogComponent.PATH_EXTRACTOR, LogLevel.DEBUG)
         
         try:
-            query_result = execute_sparql_query(query, self.endpoint)
+            query_result = execute_sparql_query(query, self)
             result = query_result.convert()
             get_kgaqa_tracker()._are_triples_valid_time += time.time() - start_time
             get_kgaqa_tracker()._are_triples_valid_calls += 1
@@ -838,7 +913,7 @@ class KnowledgeGraph(ABC):
         log(f"has_no_value_connection: {query}", LogComponent.PATH_EXTRACTOR, LogLevel.DEBUG)
         
         try:
-            query_result = execute_sparql_query(query, self.endpoint)
+            query_result = execute_sparql_query(query, self)
             results = query_result.convert()
         except Exception as e:
             log(f"Error has_no_value_connection: {e}", LogComponent.PATH_EXTRACTOR, LogLevel.CRITICAL)
@@ -876,7 +951,7 @@ class KnowledgeGraph(ABC):
         LIMIT """ + str(k)
         # print(query)
         try:
-            results = execute_sparql_query(query, self.endpoint)
+            results = execute_sparql_query(query, self)
             results = results.convert()
             # Standard SPARQL JSON for SELECT looks like: { "results": { "bindings": [...] } }
             if 'results' in results:

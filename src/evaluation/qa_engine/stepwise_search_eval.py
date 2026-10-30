@@ -8,13 +8,9 @@ import itertools
 
 from typing import List, Dict, Tuple, Set
 
-from sentence_transformers import CrossEncoder
-from sklearn.metrics.pairwise import cosine_similarity
-
-from src.engine.config import CONFIG
-from src.elelem.provider import Provider, ProviderFactory
-from src.engine.qa.kg_explorer.stepwise_search_manager import StepwiseSearchManager, StepwiseSearchMetrics, StepwiseSearchResultEnum
-from src.engine.qa.kg_explorer.kg_path import KgPath
+from src.config import CONFIG
+from src.core.tools.graph_exploration.stepwise_search_manager import StepwiseSearchManager, StepwiseSearchMetrics, StepwiseSearchResultEnum
+from src.core.tools.graph_exploration.kg_path import KgPath
 from src.knowledge_graphs.knowledge_graphs import KnowledgeGraphs
 from src.knowledge_graphs.knowledge_graph import KnowledgeGraph
 from src.logging import log, LogComponent, LogLevel , create_console_logger
@@ -309,7 +305,7 @@ if __name__ == "__main__":
         data = load_dataset(dataset_path)
         
         print(f"Initializing StepwiseSearchManager for graph: {graph_string}")
-        stepwise_search_manager = StepwiseSearchManager(kg_enum, ProviderFactory.create_from_config(CONFIG()))
+        stepwise_search_manager = StepwiseSearchManager(kg_enum, CONFIG().get_litellm_model_endpoint())
         
         total_paths = len(data)
         tested_paths = 0

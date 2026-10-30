@@ -273,6 +273,10 @@ public class ElementsExtractor {
                 }
             }
 
+            var entityCount = 0;
+            var classCount = 0;
+            var predicateCount = 0;
+
             // Prepare writers
             try (BufferedWriter entW = Files.newBufferedWriter(outputEntities);
                  BufferedWriter entLblW = Files.newBufferedWriter(outputEntitiesLabels);
@@ -291,7 +295,7 @@ public class ElementsExtractor {
                     // Ensure preferred values
                     d.finalizeValues();
 
-                    System.out.println("Processing URI: " + d.getUri());
+                    // System.out.println("Processing URI: " + d.getUri());
 
                     if (d.isRedirect) {
                         // Skip redirects entirely
@@ -367,6 +371,7 @@ public class ElementsExtractor {
                         predFullW.newLine();
                         uriLabelsW.write(uri + "\t" + label);
                         uriLabelsW.newLine();
+                        predicateCount++;
                     } else if (d.isClass) {
                         if (!class_prefixes.isEmpty() && !d.satisfiesClassPrefixes) continue;
                         if (filter_classes && labelIsEmpty) continue;
@@ -381,12 +386,13 @@ public class ElementsExtractor {
                         clsFullW.newLine();
                         uriLabelsW.write(uri + "\t" + label);
                         uriLabelsW.newLine();
+                        classCount++;
                     } else { // entity
-                        System.out.println("Processing entity: " + d.getUri());
-                        System.out.println("  Label: " + label);
+                        // System.out.println("Processing entity: " + d.getUri());
+                        // System.out.println("  Label: " + label);
                         if (!entity_prefixes.isEmpty() && !d.satisfiesEntityPrefixes) continue;
                         if (filter_entities && labelIsEmpty) continue;
-                        System.out.println("  Passed filters");
+                        // System.out.println("  Passed filters");
                         var uri = d.getUri();
                         if (kgType.equals("wikidata") && isWikidataPropertyEntity(uri)) continue;
                         d.bestLabel = label;
@@ -399,6 +405,7 @@ public class ElementsExtractor {
                         entFullW.newLine();
                         uriLabelsW.write(uri + "\t" + d.labels.stream().collect(Collectors.joining("##")));
                         uriLabelsW.newLine();
+                        entityCount++;
                     }
                 }
 
@@ -499,6 +506,13 @@ public class ElementsExtractor {
                     fullWithTypesW.newLine();
                 }
             }
+
+            System.out.println("Finished writing output files.");
+            System.out.println("Total unique URIs: " + all.size());
+            System.out.println("- Total unique entities: " + entityCount);
+            System.out.println("- Total unique classes: " + classCount);
+            System.out.println("- Total unique predicates: " + predicateCount);
+
         } finally {
             executor.shutdown();
             executor.awaitTermination(100, TimeUnit.HOURS);
@@ -517,8 +531,12 @@ public class ElementsExtractor {
                 processTriple(triple, uris);
             }
 
+            @Override 
+            public void quad(Quad quad) {
+                processTriple(quad.asTriple(), uris);
+            }
+
             @Override public void start() {}
-            @Override public void quad(Quad quad) {}
             @Override public void base(String base) {}
             @Override public void prefix(String prefix, String iri) {}
             @Override public void finish() {}

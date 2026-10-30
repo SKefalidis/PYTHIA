@@ -1,0 +1,25 @@
+_templates:
+  default_graphdb: &graphdb_defaults
+    username: env(GRAPHDB_USERNAME:null)
+    password: env(GRAPHDB_PASSWORD:null)
+    base_url: env(GRAPHDB_BASE_URL:http://localhost:7200/repositories/)
+
+wikidata-graphdb:
+  <<: *graphdb_defaults
+  repository: env(WD_GRAPHDB_REPO:wikidata-qald-10)
+
+dbpedia4-graphdb:
+  <<: *graphdb_defaults
+  repository: env(DB4_GRAPHDB_REPO:dbpedia4)
+
+dbpedia10-graphdb:
+  <<: *graphdb_defaults
+  repository: env(DB10_GRAPHDB_REPO:dbpedia10)
+
+freebase-graphdb:
+  <<: *graphdb_defaults
+  repository: env(FB_GRAPHDB_REPO:freebase)
+
+bestiary-graphdb:
+  <<: *graphdb_defaults
+  repository: env(BST_GRAPHDB_REPO:beastiary)

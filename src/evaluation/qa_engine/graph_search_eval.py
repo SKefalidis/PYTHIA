@@ -11,10 +11,9 @@ from typing import List, Dict, Tuple, Set
 from sentence_transformers import CrossEncoder
 from sklearn.metrics.pairwise import cosine_similarity
 
-from src.engine.config import CONFIG
-from src.elelem.provider import Provider, ProviderFactory
-from src.engine.qa.kg_explorer.graph_search_manager import GraphSearchManager, GraphSearchMetrics
-from src.engine.qa.kg_explorer.kg_path import KgPath
+from src.config import CONFIG
+from src.core.tools.graph_exploration.graph_search_manager import GraphSearchManager, GraphSearchMetrics
+from src.core.tools.graph_exploration.kg_path import KgPath
 from src.knowledge_graphs.knowledge_graphs import KnowledgeGraphs
 from src.knowledge_graphs.knowledge_graph import KnowledgeGraph
 from src.logging import log, LogComponent, LogLevel , create_console_logger
@@ -401,7 +400,7 @@ if __name__ == "__main__":
             # print(f"Start: {item['start_uri']}, End: {item['end_uri']}, Path Type: {item['path_type']}, Tuples: {item['tuples']}")
         
         print(f"Initializing GraphSearchManager for graph: {graph_string}")
-        graph_search_manager = GraphSearchManager(kg_enum, ProviderFactory.create_from_config(CONFIG()))
+        graph_search_manager = GraphSearchManager(kg_enum, CONFIG().get_litellm_model_endpoint())
         
         total_paths = len(data)
         tested_paths = 0

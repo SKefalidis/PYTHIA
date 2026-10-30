@@ -1,1 +1,0 @@
-Minor changes made in the service API and utility files to support our evaluation scripts. Also added support for our DFSL setup.

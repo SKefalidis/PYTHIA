@@ -4,7 +4,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 import uvicorn
 import src.app.app as app_mod
-from src.engine.config import CONFIG
+from src.config import CONFIG
 from src.utils import execute_sparql_query, return_sparql_query_results
 from fastapi.responses import JSONResponse
 

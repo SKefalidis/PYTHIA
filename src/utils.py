@@ -3,21 +3,23 @@ import inspect
 import time
 import faiss
 import numpy as np
-import argparse
 import sys
 import jellyfish
 import Levenshtein
+import socket
+
 from typing import List
 from enum import Enum
 from SPARQLWrapper import SPARQLWrapper, JSON, CSV, POST
+from SPARQLWrapper.SPARQLExceptions import EndPointNotFound, Unauthorized
 from src.metrics import get_kgaqa_tracker
 from sklearn.metrics.pairwise import cosine_similarity
-from src.engine.config import CONFIG
+from urllib.error import URLError, HTTPError
 
-from litellm import completion, drop_params
+from litellm import completion
 from litellm.types.utils import Usage, ModelResponse
 from litellm.litellm_core_utils.streaming_handler import CustomStreamWrapper
-from litellm.exceptions import BadRequestError
+from litellm.exceptions import BadRequestError, AuthenticationError
 
 
 # -----------------------------
@@ -79,6 +81,9 @@ def llm_call(llm: str, prompt: str|List, max_tokens: int = 500, temperature: flo
                 max_tokens *= 2
             else:
                 raise e
+        except AuthenticationError as e:
+            print(f"Caught AuthenticationError: {e}")
+            exit(1)
         except Exception as e:
             get_kgaqa_tracker()._llm_time += time.time() - start_time
             print(f"Error calling LLM: {e} with {llm}")
@@ -159,25 +164,20 @@ def embed(text: str | List[str], is_query: bool = True):
 # ----- SPARQL Execution -----
 # ----------------------------
 
-import time
-from SPARQLWrapper import SPARQLWrapper, JSON
-import socket
-from urllib.error import URLError, HTTPError
-
 class AuthorisedSPARQLWrapper(SPARQLWrapper):
-    def __init__(self, endpoint_url):
+    def __init__(self, kg):
         """
         Initialize the SPARQLWrapper with the endpoint URL.
         """
-        super().__init__(endpoint_url)
-        self.setCredentials(CONFIG().get("endpoint_username"), CONFIG().get("endpoint_password"))
+        super().__init__(kg.endpoint)
+        self.setCredentials(kg.endpoint_username, kg.endpoint_password)
 
-def is_server_up(endpoint, test_query="ASK {}"):
+def is_server_up(kg, test_query="ASK {}"):
     """
     Sends a lightweight test query to check if the SPARQL endpoint is responsive.
     Returns True if the server responds, False otherwise.
     """
-    test_sparql = AuthorisedSPARQLWrapper(endpoint)
+    test_sparql = AuthorisedSPARQLWrapper(kg.endpoint)
     test_sparql.setReturnFormat(JSON)
     test_sparql.setQuery(test_query)
     test_sparql.setMethod(POST)
@@ -188,17 +188,17 @@ def is_server_up(endpoint, test_query="ASK {}"):
     except Exception:
         return False
 
-def execute_sparql_query(query, endpoint, max_wait_minutes=3, retry_interval=30, return_format=JSON):
+def execute_sparql_query(query, kg, max_wait_minutes=3, retry_interval=30, return_format=JSON):
     # print(query)
     get_kgaqa_tracker()._sparql_execs += 1
     start = time.time()
 
-    if endpoint is None or endpoint == "PLACEHOLDER" or endpoint.strip() == "":
+    if kg is None:
         print(query)
         print("ERROR: No endpoint URL provided. Please provide a valid SPARQL endpoint URL.", file=sys.stderr)
         sys.exit(1)
 
-    sparql = AuthorisedSPARQLWrapper(endpoint)
+    sparql = AuthorisedSPARQLWrapper(kg)
     sparql.setReturnFormat(return_format)
     sparql.setQuery(query)
     sparql.setMethod(POST)
@@ -209,14 +209,28 @@ def execute_sparql_query(query, endpoint, max_wait_minutes=3, retry_interval=30,
         query_result = sparql.query()
         get_kgaqa_tracker()._sparql_time += time.time() - start
         return query_result
-    except (HTTPError, URLError, socket.timeout, socket.error) as e:
+    except Unauthorized as e:
+        print(f"[ERROR] Unauthorized access: {e} (endpoint: {kg.endpoint})\n\tMake sure that you have set the correct username and password for the endpoint.", file=sys.stderr)
+        exit(1)
+    except EndPointNotFound as e:
+        print(f"[ERROR] Endpoint not found: {e} (endpoint: {kg.endpoint})", file=sys.stderr)
+        exit(1)
+    except URLError as e:
+        if isinstance(e.reason, ConnectionRefusedError):
+            print(f"[ERROR] Connection refused: {e} (endpoint: {kg.endpoint})\n\tMake sure that you have set an endpoint URL.", file=sys.stderr)
+            exit(1)
+        else:
+            # It's a timeout, DNS error, SSL issue, etc. Re-raise or handle differently.
+            print(f"[ERROR] URLError: {e} (endpoint: {kg.endpoint})", file=sys.stderr)
+            raise e
+    except (HTTPError, socket.timeout, socket.error) as e:
         exception = e
         print(f"[ERROR] SPARQL query error: {e}", file=sys.stderr)
         get_kgaqa_tracker()._sparql_time += time.time() - start
         log(f"[WARN] Query failed or timed out: {e}", "UTILITY")
-        while not is_server_up(endpoint):
+        while not is_server_up(kg):
             print("\a")  # beep
-            log(f"[WAIT] Server {endpoint} still down... retrying in {retry_interval} seconds", "UTILITY")
+            log(f"[WAIT] Server {kg.endpoint} still down... retrying in {retry_interval} seconds", "UTILITY")
             time.sleep(retry_interval)
         
         sparql.setQuery("SELECT ?x { ?s ?p ?o } LIMIT 1")  # lightweight test query
@@ -229,9 +243,9 @@ def execute_sparql_query(query, endpoint, max_wait_minutes=3, retry_interval=30,
 
     # Retry logic: poll the server every `retry_interval` until it becomes responsive
     log("[INFO] Checking for server recovery...", "UTILITY")
-    while not is_server_up(endpoint):
+    while not is_server_up(kg):
         print("\a")  # beep
-        log(f"[WAIT] Server {endpoint} still down... retrying in {retry_interval} seconds", "UTILITY")
+        log(f"[WAIT] Server {kg.endpoint} still down... retrying in {retry_interval} seconds", "UTILITY")
         time.sleep(retry_interval)
 
     raise exception  # Re-raise the last exception after retries
@@ -239,7 +253,7 @@ def execute_sparql_query(query, endpoint, max_wait_minutes=3, retry_interval=30,
 import csv
 import io
 
-def return_sparql_query_results(sparql_query, endpoint, return_error=False):
+def return_sparql_query_results(sparql_query, kg, return_error=False):
     try:
         is_ask = sparql_query.strip().upper().startswith("ASK")
         if is_ask:
@@ -248,11 +262,11 @@ def return_sparql_query_results(sparql_query, endpoint, return_error=False):
             return_format = CSV  # SELECT queries can return CSV for easier parsing
         if return_format == JSON:
             if is_ask:
-                query_result = execute_sparql_query(sparql_query, endpoint, return_format=return_format)
+                query_result = execute_sparql_query(sparql_query, kg, return_format=return_format)
                 results = query_result.convert()
                 return [[str(results['boolean'])]]
         elif return_format == CSV:
-            query_result = execute_sparql_query(sparql_query, endpoint, return_format=return_format)
+            query_result = execute_sparql_query(sparql_query, kg, return_format=return_format)
             results = query_result.convert()
             result_str = (results.decode() if isinstance(results, bytes) else results)
             rows = list(csv.reader(io.StringIO(result_str)))
@@ -264,8 +278,8 @@ def return_sparql_query_results(sparql_query, endpoint, return_error=False):
             return str(e)
         return []
 
-def has_results(sparql_query, endpoint):
-    results = return_sparql_query_results(sparql_query, endpoint)
+def has_results(sparql_query, kg):
+    results = return_sparql_query_results(sparql_query, kg)
 
     # ASK query: results look like [[True]] or [[False]]
     if sparql_query.strip().upper().startswith("ASK"):
@@ -277,18 +291,6 @@ def has_results(sparql_query, endpoint):
     if results and len(results) > 1:
         return True
     return False
-    
-def endpoints_fill_parse_args(parser: argparse.ArgumentParser) -> argparse._ArgumentGroup: 
-    endpoint_group = parser.add_argument_group("Endpoints")
-    endpoint_group.add_argument("--endpoint_server", type=str, required=False,
-                                help="Which GraphDB server to use")
-    endpoint_group.add_argument("--endpoint_server_manager", type=str, required=False,
-                                help="Which GraphDB Manager endpoint to use for repository management operations")
-    endpoint_group.add_argument("--endpoint_username", type=str, required=False, default=None,
-                                help="Username for the triplestore endpoint (if required)")
-    endpoint_group.add_argument("--endpoint_password", type=str, required=False, default=None,
-                                help="Password for the triplestore endpoint (if required)")
-    return endpoint_group
 
 # ---------------------------
 # ----- FAISS utilities -----
@@ -561,36 +563,37 @@ def is_type_predicate(str):
 # ---------------------------
 
 import requests
+from src.config import GRAPH_SEARCH_SETTINGS
 
-def setup_graphdb(endpoint: str):
-    from yarl import URL
-    server_manager_url = CONFIG().get("endpoint_server_manager")
-    if server_manager_url is None:
-        raise Exception("Endpoint server manager URL is not configured.")
-    graphdb_server_restart_endpoint = URL(server_manager_url) / "clear"
-    graphdb_server_load_endpoint = URL(server_manager_url) / "load"
+# def setup_graphdb(endpoint: str):
+#     from yarl import URL
+#     server_manager_url = CONFIG().get("endpoint_server_manager")
+#     if server_manager_url is None:
+#         raise Exception("Endpoint server manager URL is not configured.")
+#     graphdb_server_restart_endpoint = URL(server_manager_url) / "clear"
+#     graphdb_server_load_endpoint = URL(server_manager_url) / "load"
     
-    response = requests.post(graphdb_server_restart_endpoint)
-    if response.status_code != 200:
-        print(f"Failed to restart GraphDB server. Status code: {response.status_code}, Response: {response.text}")
-        raise Exception("Failed to restart GraphDB server.")
+#     response = requests.post(graphdb_server_restart_endpoint)
+#     if response.status_code != 200:
+#         print(f"Failed to restart GraphDB server. Status code: {response.status_code}, Response: {response.text}")
+#         raise Exception("Failed to restart GraphDB server.")
         
-    time.sleep(10)
+#     time.sleep(10)
     
-    payload = {
-        "endpoint": endpoint,
-    }
+#     payload = {
+#         "endpoint": endpoint,
+#     }
     
-    response = requests.post(graphdb_server_load_endpoint, json=payload)
-    if response.status_code != 200:
-        print(f"Failed to load repositories in GraphDB server. Status code: {response.status_code}, Response: {response.text}")
-        raise Exception("Failed to load repositories in GraphDB server.")
+#     response = requests.post(graphdb_server_load_endpoint, json=payload)
+#     if response.status_code != 200:
+#         print(f"Failed to load repositories in GraphDB server. Status code: {response.status_code}, Response: {response.text}")
+#         raise Exception("Failed to load repositories in GraphDB server.")
 
 
 def setup_graph_tool(graph_string: str) -> bool:    
     AVAILABLE_GRAPHS = ["dbpedia10", "dbpedia2016", "freebase", "wikidata"]
     
-    endpoint = CONFIG().get("endpoint_graph_search_server") + "load-graph"
+    endpoint = GRAPH_SEARCH_SETTINGS.endpoint + "load-graph" if GRAPH_SEARCH_SETTINGS.endpoint[-1] == "/" else GRAPH_SEARCH_SETTINGS.endpoint + "/load-graph"
     
     if graph_string not in AVAILABLE_GRAPHS:
         print(f"Graph {graph_string} is not available. Available graphs: {AVAILABLE_GRAPHS}")
@@ -601,7 +604,7 @@ def setup_graph_tool(graph_string: str) -> bool:
     }
     payload = {
         "source_dir": graph_string,
-        "filter_classes": "1",
+        "filter_classes": "1" if GRAPH_SEARCH_SETTINGS.filter_classes else "0",
     }
 
     response = requests.post(endpoint, json=payload, headers=headers)
